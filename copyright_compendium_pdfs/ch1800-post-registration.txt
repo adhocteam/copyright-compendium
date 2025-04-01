@@ -1,0 +1,2260 @@
+ 
+Chapter 18 00  :  1 01/28/2021  C O M P E N D I U M : Chapter 1800  
+Post -Registration Procedures  
+   
+1801  What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  4 
+1802  Supplementary Registration: Correcting or Amplifying the Information in a Registration  .................  4 
+1802.1  Who May File an Application for a Supplementary Registration?  ................................ ................................ .. 4 
+1802.2  When May an Application for a Supplementary Registration Be Filed?  ................................ .......................  5 
+1802.3  Records That May Be  Corrected or Amplified with a  Supplementary Registration  ................................  5 
+1802.4  Records That Cannot Be  Corrected or Amplified with a Supplementar y Registration ...........................  6 
+1802.5  What Type of Information May Be Corrected or Amplified with a Supplementary Registration? ..... 8 
+1802.6  Supplementary Registration Appropriate ................................ ................................ ................................ ................  9 
+1802.6(A)  Minor Errors in the Basic Registration  ................................ ................................ ................................ ......................  9 
+1802.6(B)  Change in Name or Address ................................ ................................ ................................ ................................ ...........  9 
+1802.6(C)  Title of the Work  ................................ ................................ ................................ ................................ .............................  10 
+1802.6(D)  Author(s) of the Work ................................ ................................ ................................ ................................ ...................  10 
+1802.6(E)  Work Made for Hire  ................................ ................................ ................................ ................................ .......................  12 
+1802.6(F)  Copyright Claimant(s)  ................................ ................................ ................................ ................................ ...................  12 
+1802.6(G)  Year of Completion  ................................ ................................ ................................ ................................ .........................  14 
+1802.6(H)  Citizenship, Domicile, and Nation of First Publication  ................................ ................................ .....................  14 
+1802.6(I)  Publication Issues  ................................ ................................ ................................ ................................ ...........................  14 
+1802.6(J)  The Claim to Copyright  ................................ ................................ ................................ ................................ .................  15 
+1802.7  Supplementary Registration Inappropriate  ................................ ................................ ................................ .........  16 
+1802.7(A)  Annotations  ................................ ................................ ................................ ................................ ................................ ....... 16 
+1802.7(B)  Ownership Issues ................................ ................................ ................................ ................................ ............................  16 
+1802.7(C)  Publication Issues  ................................ ................................ ................................ ................................ ...........................  17 
+1802.7(D)  Issues Involving the Deposit Copy(ies)  ................................ ................................ ................................ ..................  18 
+1802.7(E)  Issues Involving Derivative Works  ................................ ................................ ................................ ..........................  18 
+1802.7(F)  Issues Involving the Copyright Notice  ................................ ................................ ................................ ....................  18 
+1802.7(G)  Cancellation or Abandonment of a Basic Reg istration  ................................ ................................ .....................  19 
+1802.7(H)  Adverse Claims  ................................ ................................ ................................ ................................ ................................  19 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  2 01/28/2021  1802.8  Completing the Application  ................................ ................................ ................................ ................................ ........  19 
+1802.8(A)  Completing the Online Application  ................................ ................................ ................................ ..........................  21 
+1802.8(A)(1)  Eligibility Requirements  ................................ ................................ ................................ ................................ ..............  21 
+1802.8(A)(2)  Identifying the Basic Registration  ................................ ................................ ................................ ............................  22 
+1802.8(A)(3)  Identifying the Work(s) Covered by the Basic Registration  ................................ ................................ ..........  23 
+1802.8(A)(4)  Correcting and/or Amplifying the Basic Registration  ................................ ................................ ......................  26 
+1802.8(A)(5)  Explanation f or the Correction  ................................ ................................ ................................ ................................ .. 27 
+1802.8(A)(6)  Explanation for the Amplification  ................................ ................................ ................................ ............................  28 
+1802.8(A)(7)  Certification  ................................ ................................ ................................ ................................ ................................ ...... 28 
+1802.8 (A)(8)  Applicant’s Internal Tracking Number / Note to Copyright Office ................................ ..............................  29 
+1802.8(B)  Completing Form CA ................................ ................................ ................................ ................................ ......................  29 
+1802.8(B)(1)  Space A: Identifying the Basic Registration  ................................ ................................ ................................ ..........  30 
+1802.8(B)(2)  Space B: Correcting Errors in the Basic Registration ................................ ................................ ........................  30 
+1802.8(B)(3)  Space C: Clarifying Information in th e Basic Registration, Providing  Missing Information, or 
+Reflecti ng Changes or Events That Have Occurred Since the Basic Registration Was Made  ............  32 
+1802.8(B)(4)  Spaces D and E: More Space Needed  ................................ ................................ ................................ .......................  33 
+1802.8(B)(5)  Space F: Contact Information  ................................ ................................ ................................ ................................ ..... 34 
+1802.8(B)(6)  Space G: Certification  ................................ ................................ ................................ ................................ ....................  34 
+1802.8(B)(7)  Space H: Mailing Address for the Certificate of Supplementary Registration  ................................ .........  34 
+1802.8(C)  Filing Fee  ................................ ................................ ................................ ................................ ................................ ............  35 
+1802.8(D)   Copy of the Certificate of Registration for the Basic Registration  ................................ ..............................  35 
+1802.8(E)   Deposit Copy(ies) Not Required  ................................ ................................ ................................ ..............................  35 
+1802.9  Examination Guidelines  ................................ ................................ ................................ ................................ ...............  35 
+1802.9(A)  Errors Caused by the U.S. Copyright Office  ................................ ................................ ................................ ...........  35 
+1802.9(B)  Identifying the Basic Registration  ................................ ................................ ................................ ............................  36 
+1802.9(C)  Examination of the Certificate of Registration for the Basic Registration  ................................ ................  36 
+1802.9(D)  Reexamination of the Deposit Copy ................................ ................................ ................................ .........................  36 
+1802.9(E)  Multiple Corrections and Amplifications Submitted on the Same Application  ................................ ...... 36 
+1802.9(F)  Certification Requirements  ................................ ................................ ................................ ................................ .........  37 
+1802.9(G)  Adverse Claims / Actual or Prospective Litigation  ................................ ................................ ............................  38 
+1802.9(H)  Refusal to Register  ................................ ................................ ................................ ................................ .........................  39 
+1802.9(I)  Cancellation of a Basic Registration  ................................ ................................ ................................ ........................  39 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  3 01/28/2021  1802.10  Certificate of Supplementary Registration  ................................ ................................ ................................ ...........  39 
+1802.11  Cross -Referencing the Records for a Basic Registration and a Supplementary Registration  ...........  40 
+1802.12  Registration Decision Date and Effective Date of Supplementary Registration  ................................ ..... 40 
+1803  New Application for a New Basic Registration ................................ ................................ ................................ .... 41 
+1804  Referrals  ................................ ................................ ................................ ................................ ................................ .............  44 
+1805  Removal of Personally Identifiable Information  ................................ ................................ ................................  44 
+1805.1  Form of Request  ................................ ................................ ................................ ................................ ..............................  45 
+1805.1(A)  Name Change Requests  ................................ ................................ ................................ ................................ ................  46 
+1805.1(B)  Claimant Address Change Requests  ................................ ................................ ................................ ........................  46 
+1805.1(C)  Requests Submitted without Verifiable Substitute Information  ................................ ................................ .. 46 
+1805.2  Filing Fees  ................................ ................................ ................................ ................................ ................................ ..........  47 
+1805.3   Address for Delivery  ................................ ................................ ................................ ................................ .....................  47 
+1805.4  Requests for Reconsideration  ................................ ................................ ................................ ................................ .... 47 
+1805.5   No Expedited Review  ................................ ................................ ................................ ................................ ...................  48 
+1806  Abandonment  ................................ ................................ ................................ ................................ ................................ ... 48 
+1807  Cancellation ................................ ................................ ................................ ................................ ................................ ....... 48 
+1807.1  What Is Cancellation?  ................................ ................................ ................................ ................................ ....................  48 
+1807.2  What Types of Records May Be Cancelled by the U.S. Copyright Of fice?  ................................ ..................  48 
+1807.3  Situations Where the U.S. Copyright Office Will Cancel a Registration ................................ ......................  49 
+1807.4  Procedure for Cancelling a Registration  ................................ ................................ ................................ ................  49 
+1807.4(A)  Registrations Issued in the Wrong Class or Series  ................................ ................................ ............................  50 
+1807.4(B)  Registrations Cancelled for Fa ilure to Pay the Filing Fee ................................ ................................ ................  51 
+1807.4(C)  Registrations Cancelled for Lack of Copyrightable Authorship  ................................ ................................ .... 51 
+1807.4(D)  Registrations Cancelled for Substantive Defects in the Registration  ................................ .........................  52 
+1807.4(E)  Voluntary Cancellation  ................................ ................................ ................................ ................................ .................  54 
+1807.4(F)  Court Ordered Cancellation  ................................ ................................ ................................ ................................ ........  55 
+1807.5  [Reserved]  ................................ ................................ ................................ ................................ ................................ .........  55 
+1808  Adverse Claims  ................................ ................................ ................................ ................................ ................................  55 
+ 
+ 
+Chapter 18 00  :  4 01/28/2021  C O M P E N D I U M : Chapter 1800  
+Post -Registration Procedures  
+ 1801  What This Chapter Covers  
+This Chapter sets forth the practices and procedures for modifying the registration 
+record for a claim  after the U.S. Copyright Office has issued a certificate of registration . 
+The topics discussed in this Chapter include:  
+• Correcting or amplifying the information in a copyright registration.  
+• Requests to remove and replace certain types of personally identifiable information 
+that may appe ar in the online public record.  
+• Cancelling a copyright registration.  
+• Asserting an adverse claim to copyright.  
+For a discussion of the procedure for abandoning a registration, see Chapter 2300 , 
+Section 2311. For a discussion of the procedure for recording transfers  or other 
+documents pertaining to copyright, see Chapter 2300 , Section 2309.  
+ 1802  Supplementary Registration: Correcting or Amplifying the Information in a 
+Registration  
+A supplementary registration  is a special type of registrati on that may be used “to 
+correct an error in a copyright registration or to amplify the information given in a 
+registration.” 17 U.S.C. § 408(d) . 
+A supplementary registration identifies an error or omission in a basic registration  and 
+places the correct information or additional information in the public record. 
+Supplementary registrations may be used only to correct or amplify limited issues 
+involving certain types of registrations, which are listed in Section 1802.3  below. Id.; 37 
+C.F.R. § 202.6 . 
+When the U.S. Copyright Office issues a supplementary registration, it does not cancel or 
+replace the basic registration or the registration number for that registration . Likewise, 
+the Office will not change the information set forth in the basic registration or the public 
+record for that registration. Instead, the Office assigns a separate registration number 
+and effective date of registration  to the supplementary registration. The basic 
+registration and the supplementary registration coexist with each other in the public 
+record, and the supplementary registration augments — but does not supersede — the 
+informat ion set forth in the basic registration. 17 U.S.C. § 408(d) ; 37 C.F.R. § 202.6(f)(2) .  
+ 1802.1  Who May File an Appl ication for a Supplementary Registration?  
+The following parties may correct or amplify the information in a registration record:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  5 01/28/2021   
+ 
+• An author of the work.  
+• Any other party who is entitled to be named as a copyright claimant  (i.e., a copyright 
+owner who owns all of the rights that initially belonged to the author).  
+• An owner of one or more — but less than all — of the exclusive rights  in the work.  
+• A duly authorized agent  of any of the foregoing parties.  
+37 C.F.R. § 202.6(c) . No other party may file an application for supplementary 
+registration.  
+If there is no clear relationship between the applicant and the parties named in the basic 
+registration, the Office may ask the applicant to submit a sw orn declaration or other 
+evidence demonstrating that the applicant is an author of the work, a party who is 
+entitled to be named as a copyright claimant, an owner of one or more of the exclusive 
+rights in the work, or an authorized agent of one of the fore going parties. If the 
+applicant’s claim  appears to be implausible, the Office may decline to issue a 
+supplementary registration, and if appropriate, may suggest that the applicant assert an 
+adver se claim by submitting a new application for a new basic registration.  
+If the application for supplementary registration is approved, the Office will cross -
+reference the records for the supplementary registration and the basic registration. 
+Specifically, the Office will place a note in the public record for the basic registra tion that 
+identifies the registration number and the effective date of registration  for the 
+supplementary registration. In addition, the Office will place a note in the public record 
+for the supp lementary registration that identifies the registration number and the year 
+of registration for the basic registration. 37 C.F.R. §  202.6(f)(1) . The cross -references are 
+intended to notify any person who searches the Office’s records that the Office has 
+issued a supplementary registration that may contain additional information pertaining 
+to the basic registration, and that the records for both the ba sic registration and the 
+supplementary registration should be consulted. See Supplementary Registration, 81 
+Fed. Reg. 86,656, 86,660 & n.26 (Dec. 1, 2016) .  
+ 1802.2  When May an Application for a Supplementary Registration Be Filed?  
+An application to correct or amplify the information set forth in a basic registration may 
+be filed at any time after the registration has been issued by the U.S. Copyright Office 
+and at any time befor e the copyright has expired. See 37 C.F.R. § 202.6(d)(2), (3) ; 
+Supplementary Registration, 81 Fed. Reg. 86, 656, 86,660 & n.23 (Dec. 1, 2016) . 
+ 1802.3  Records That May Be Corrected or Amplified with a  
+Supplementary Registration  
+A supplementary registration may be used to correct or amplify the information set 
+forth in the following types of registrations:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  6 01/28/2021  • A ba sic registration issued on or after January 1, 1978 (including group 
+registrations ). 
+• A copyright registration or renewal registration  for a work that was registered or 
+first published  on or before December 31, 1977.  
+See 37 C.F.R. § 202.6(b)(1)(i) -(iii).  
+The U.S. Copyright Office may decline to issue a supplementary re gistration for a basic 
+registration for a work that was registered or first published on or before December 31, 
+1977, because those reg istrations have expired by now.  Allowing interested parties to 
+correct or amplify the information in a basic registration  after the initial term expired 
+creates a potential for error, mistake, or even fraud. See Supplementary Registration, 81 
+Fed. Reg. 86,656, 86,660 (Dec. 1, 2016) . A supplementar y registration could have 
+significant consequences in a legal dispute, given that a certificate of registration may 
+create an evidentiary presumption concerning the facts stated in the certificate. 17 U.S.C. 
+§ 410(c) . In exceptional circumstances, the Office may issue a supplementary 
+registration for a basic registration that covered the first twenty -eight years of the 
+copyright term, but only if the proposed correction or amplification  is supported by 
+clear, convincing, and objective documentation. See 37 C.F.R.  § 202.6(d)(6) . For 
+information concerning this option, see Chapter 2100 , Section 2131. For general 
+information concerning the practices and procedures for correcting or amending a 
+renewal registration, see Chapter 2100 , Section 2138.  
+A supplementary registration may be used to correct or amplify the information in one 
+basic registration or one renewal registration. The Office will not issue a  supplementary 
+registration that attempts to correct or amplify the information set forth in multiple 
+registrations. However, there is no limit on the number of supplementary registrations 
+that may be issued and cross -referenced with a basic registration o r a renewal 
+registration. See Supplementary Registration, 81 Fed. Reg. at 86,660 . 
+ 1802.4  Records That Cannot Be Corrected or Amplified with a  
+Supplementary Registration   
+A sup plementary registration cannot be used to correct or amplify the following types of 
+records:  
+Pending applications:  The U.S. Copyright Office will not issue a supplementary 
+registration to correct or amplify the information in a pending application.  If the 
+applicant discovers an error or omission in a pending application, the applicant should 
+not file an application for supplementary registration. Instead, the applicant should 
+contact the Office in writing using the form posted on the Office’s website , or if the 
+applicant receives a communication from a registration specialist  concerning a pending 
+application, the applicant should notify the specialist if the application is incorrect or 
+incomplete.  
+Applications that have been withdrawn or rejected:  The Office will not issue a 
+supplementary registration for an application that has been withdrawn by the applicant 
+or rejected by the Office.   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  7 01/28/2021  The online public record: The Office will not issue a supplementary registration to 
+correct an error that appears only in the online public record  for a particular 
+registration.  
+• If the online public record contains an error that does not appear in the 
+certificate of registration , the author, the claimant , or one of the other partie s 
+listed in Section 1802.1  should contact the Office in writing using the form 
+posted on the Office’s website , instead of filing an application for supplementary 
+registration.   
+NOTE:  Some entries in the online public record cannot be changed due to the 
+current limitations of the electronic registration system. For example, the 
+system cannot accept diacritical ma rks used in Spanish, French, German, or 
+other foreign languages, such as ç, à, ñ, or ü.  
+• If the online public record contains a social security number, credit card 
+number, driver’s license number, or bank account number, this information may 
+be removed thro ugh a procedure known as a “referral,” which is discussed in 
+Section 1804 . If the online public record contains any other type of personally 
+identifiable information, it may be possible to remove or replace that 
+information using t he procedure discussed in Section 1805 . 
+Basic registrations in the wrong class or series: The Office will not issue a supplementary 
+registration for a work that was registered in the wrong class or series. Instead, this 
+issue must be addressed with a procedure known as a “cancellation and substitution,” 
+which is discussed in Section 1806.4(A) .  
+Basic registrations for multiple works . When the Office registers multiple works under a 
+registration accommodati on, it will not accept an application that seeks to reclassify the 
+works under a different accommodation. For example, a supplementary registration 
+cannot be used to change a registration for  a group of published photographs into a 
+registration for a compi lation, a collective work, or a photographic database (or vice 
+versa ). Nor can it be used to transform a registration for an unpublished collection  or a 
+group of unpublished works into a registr ation for a single published work. These types 
+of changes would alter the fundamental nature of the claim, and would undermine the 
+legal  presumptions afforded to the initial examination of the works. And it would be 
+inconsistent with the statutory and regulatory provisions stating that a supplementary 
+registration augments – but does not supersede – the basic registration. See 17 U.S.C. § 
+408(d) ; 37 C.F.R. § 202.6(f)(2) ; Supp lementary Registration, 82 Fed. Reg. 27,424, 27,426 
+(June 15, 2017) . 
+Basic registrations that have been cancelled or abandoned:  The Office will not issue a 
+supplementary registration for a basic registration that has been cancelled or abandoned. 
+See 37 C.F.R. § 202.6(d)(4)(iii) ; Supplementary Registration, 81 Fed. Reg. 86,656, 86,660 
+n.24 (Dec. 1, 2016) .  
+Previ ous supplementary registrations:  A supplementary registration cannot be used to 
+correct or amplify the information in another supplementary registration. If the 
+information in the basic registration is correct and if the Office previously issued  a 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  8 01/28/2021  suppleme ntary registration to address a purported error in that registration, the author, 
+the claimant, or any of the other parties listed in Section 1802.1  may prepare a 
+declaration or affidavit stating that the information set forth in the basic registration is 
+correct and stating that the information set forth in the supplementary registration is 
+incorrect. The statement may be recorded with the Office usi ng the procedures 
+described in Chapter 2300 , Section 2309.  
+Preregistrations:  The Office will not issue a supplementary registration for a 
+preregistration  made under Section 408(f)  of the Copyright Act. If there is an error or 
+omission in a preregistration, the author, the claimant, or any of the other p arties listed 
+in Section 1802.1  may submit a new application for a new preregistration that contains 
+the correct or missing information. If the work has been completed, the applicant may 
+submit an application for a basic registrat ion that contains the correct or missing 
+information. For a detailed discussion of preregistration, see Chapter 1600 . 
+Certificates of registration for mask works : A supplementar y registration cannot be used 
+to correct or amplify the information in a registration for a mask work. See 37 C.F.R. § 
+211.4(f) ; Supplementary Registration, 81 Fed. Reg. at 86,658 n.10 . However, if the Office 
+made an error or omission in preparing the certificate, the Office will correct the 
+mistake and will issue a new certificate to the correspondent named in the certificate. 
+For additional information concerning this procedure, see Chapter 1200 , Section 1216.  
+Certificates of registration for vessel designs:  A supplementary registration canno t be 
+used to correct or amplify the information in a registration for a vessel design . If the 
+Office made a clerical or typographical error in preparing the certificate of registration  
+for a vess el design, the owner of the vessel design should contact the Office in writing 
+using the form posted on the Office’s website . If appropriate, the Office will correct the 
+error and will issue a new certificate to the correspondent named in the certificate. If 
+the applicant made a clerical or typographical error in the application for registration, 
+the owner of the registered des ign or its duly authorized agent  may submit an 
+application for a certificate of correction using Form DC. See 37 C.F.R. §  212.8(a)(3) , 
+(c)(2) . The procedure for correcting errors in a registration for a vessel design is similar 
+to the procedure for supplementary registration, except that the Office will iss ue a 
+certificate of correction only in cases involving clerical or typographical errors. See 
+Correction of Errors in Certificates of Registration of Vessel Hull Designs, 71 Fed. Reg. 
+46,402 , 46,402 (Aug. 14, 2006) . For additional information concerning this procedure, 
+see Chapter 1300 , Section 1317.  
+Recorded documents:  A supplementary registration cannot be used to  correct the 
+information set forth in a document that has been recorded with the Office. For a 
+discussion of the proper procedure for correcting an error in a recorded document, see 
+Chapter 2300 , Section 2308.  
+ 1802.5  What Type of Information May Be Corrected or Amplified with a 
+Supplementary Registration?  
+Supplementary registrations may be used for certain types of corrections and 
+amplifications. A registration may be corrected if “information in the basic registration 
+was incorrect at the time that basic registration was made.” 37 C.F.R. § 202.6(d)(2) . An 
+amplification may be used “[t]o supplement or clarify the information that was required 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  9 01/28/2021  by the application for the basic registration and should have been provided, such as the 
+identity of a co -author or co -claimant, but was omitted at the time the basic registration 
+was made.” Id. § 202.6(d)(3)(i) . An amplification may also be used “[t]o reflect changes 
+in facts, other  than those relating to transfer, license, or ownership of rights in the work, 
+that occurred since the basic registration was made.” Id. § 202.6(d)(3)(ii) . 
+For representative examples of situations where a supplementary registration can and 
+cannot be used to correct or amplify the information in a basic registration, see Sections 
+1802.6  and 1802.7 . 
+ 1802.6  Supplementary Registration Appropriate  
+This Section provides representative examples of situations where a supplementary 
+registration may be used to correct or amplify the information in a basic registration.  
+ 1802.6(A)  Minor Errors in the Basic Registrat ion  
+The U.S. Copyright Office will issue a supplementary registration even if the error in the 
+basic registration is extremely minor, such as a typographical mistake or missing article 
+such as “a,” “an,” or “the.” But in most cases it is not necessary to correct minor errors in 
+a basic registration, particularly if the correct or missing information appears elsewhere 
+in the registration record.  
+ 1802.6(B)  Change in Name or Address  
+A supplementary registration may be used to correct spelling errors or simi lar mistakes 
+in the author’s name, the claimant’s  name, or any other name that appears in the 
+registration record. Likewise, a supplementary registration may be used to reflect a 
+change in a name  or address that appears in the basic registration (although it cannot be 
+used to remove that information from the original record).  
+Examples:  
+• The U.S. Copyright Office issued a basic registration for a sound 
+recording  naming Dean Jonson as the author of the work. The 
+author’s name should have been spelled Dean Johnson. The error 
+may be corrected with a supplementary registration.  
+• The Office issued a basic registration for a technical drawing. Th e 
+certificate of registration  names Richard Oxley as the author of this 
+work, but the name given on the deposit copy  is Richard Drummo nd 
+Oxley. Richard may add his middle name to the registration record 
+with a supplementary registration.  
+• In 2001 Kara King submitted an application to register a painting. 
+Kara got married in 2011 and changed her name to Kara Mitchell. 
+Kara’s married name m ay be added to the registration record with a 
+supplementary registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  10 01/28/2021  • In 2008 Bethany Rolling registered a sound recording, naming 
+herself as the author and copyright claimant. At the time Bethany 
+was living in Damascus, Maryland, and she provided her home 
+address in the Name of Claimant field and the Rights and 
+Permissions field. Three years later Bethany moved to Providence, 
+Rhode Island. Bethany may add her new address to the registration 
+record with a supplementary registration.  
+ 1802.6(C)  Title of the Work  
+An error concerning the title of the work may be corrected with a supplementary 
+registration. Specifically, a supplementary registration may be used to correct the 
+title(s) of the work(s) listed in the basic registration, to add subtitle(s), prev ious or 
+alternative title(s), or contents title(s) that were not provided in the application for the 
+basic registration, or to reflect a change in the title(s) that has occurred since the basic 
+registration was made.  
+Examples:  
+• Richard Maguire registered a sound recording . The title given in the 
+certificate of registration  is “I’ll Love You,” but the title given on the 
+deposit copy  is “I’ll Love You (Forever).” Richard may add the longer 
+title to the registration record with a supplementary registration.  
+• Carrie Murtagh registered the first draft of her short story. At the 
+time, s he had not decided on the title for the story, so she entered “A 
+Warped Frustrated Old Man (Working Title)” in the Title field. 
+Three months later Carrie published  her story under the title 
+“Potter’s Field.” Carrie may add the new title to the registration  
+record with a supplementary registration, or preferably, by 
+registering the published version of her story and listing the prior 
+title in the Previous or Alternative Title field.  
+• Adams Baker & Co. submitted a compact disc that contains a dozen 
+sound reco rdings. The company registered this CD as an 
+unpublished collection , but failed to provide the titles of the 
+recordings that appear on the CD. The title of each recording may be 
+added to the regi stration record with a supplementary registration.  
+ 1802.6(D)  Author(s) of the Work  
+A supplementary registration can be used to correct an error or omission in a basic 
+registration involving the author(s) of the work. See 37 C.F.R. § 202.6(d)(3)(i) .  
+If two or more authors created the work and some of the authors were not named in the 
+basic registration, the names of the missing authors may be added to the registration 
+record with a supp lementary registration. The registration specialist  may ask the 
+applicant to provide documentation confirming that the other authors contributed 
+copyrightable  material to the work if the other authors are not listed in the deposit 
+copy(ies) , if there does not appear to be any conn ection between the other authors and 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  11 01/28/2021  the authors named in the basic registration, or if there is any other reason to question 
+the application. In addition, the specialist may ask the applicant to provide a transfer 
+statement  in the application for supplementary registration if a similar statement would 
+have been required if the other authors had been named in the application for the basic 
+registration.  
+The author’s real name may be added to the r egistration record with a supplementary 
+registration if the applicant provided a pseudonym  in the application for the basic 
+registration or if the basic registration states that the author is anonymous . For a 
+discussion of anonymous and pseudonymous works, see Chapter 600 , Sections 615.1 
+and 615.2.  
+If the wrong author is named in the basic registration, the correct name may be added to 
+the registration record with a supplementary registration, provided that the application 
+is filed by one of the parties listed in Section 1802.1 . In addition, a statement may be 
+added to the registration record to clarify that the person named in the basic 
+registration is not, in fact, the author of the work (although that name cannot be 
+removed from the original record). In some cases, the registrati on specialist may ask the 
+applicant to provide a declaration or other supporting evidence confirming that the 
+information set forth in the application for supplementary registration is correct.  
+Examples:  
+• Anne Duquesne and Phillip Craig are listed on the de posit copy as 
+co-authors of a ballad titled “Together Forever.” Anne registered the 
+song, naming herself as the sole author and claimant  of this work. 
+Anne may add Phillip’s name to the registrat ion record with a 
+supplementary registration.  
+• The U.S. Copyright Office issued a basic registration for a mash -up 
+video. The certificate of registration  states that the work was 
+created by an author who uses the pseudonym, “Garrett London.” 
+The author may add his real name to the registration record by 
+submitting an application for a supplementary registration.  
+• The Office registered a children’s book, whi ch was written by Sean 
+Gladhill and illustrated by Dawn Bradley. Sean registered the work 
+naming himself as the sole author and claimant of the “text.” Sean 
+attempts to add Dawn’s name to the registration record with a 
+supplementary registration. The regis tration specialist retrieves the 
+deposit copy from the Library of Congress. The specialist will 
+communicate with the applicant, because the copyright notice  states 
+“Text © Sean Gladhill and Artwo rk © Dawn Bradley” which 
+suggests that Sean owns the text and Dawn owns the artwork. If it is 
+determined that the text and the artwork are jointly owned, the 
+specialist may issue a supplementary registration. However, if the 
+text and the artwork are separa tely owned, the supplementary 
+registration will be refused. Instead, Dawn should submit a new 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  12 01/28/2021  application for a new basic registration  naming herself as the sole 
+author and copyright claimant for the artwork.  
+ 1802.6(E)  Work Made for Hire  
+If the applicant  failed to complete the work made for hire  section of the application for 
+basic registration, that information may be added to the registration record with a 
+supplementary registration. Likewise,  if the basic registration erroneously states that 
+the work is (or is not) a work made for hire, the correct information may be added to the 
+registration record with a supplementary registration.  
+In all cases, this determination should be based on the fac ts that existed at the time 
+when the basic registration was made. In some cases, a new transfer statement  may be 
+required if the author named in the application for supplementary registration and  the 
+claimant  named in the basic registration are not the same.  
+Examples:  
+• Jessica Fineman is a professional songwriter. She formed a closely 
+held corporation to manage her financial portfolio and  she routinely 
+assigns her copyrights to this entity for tax purposes. In 1978 
+Jessica registered a song titled “Termination Nation.” She named 
+Jessica Fineman, Inc. as the author and copyright c laimant  and she 
+checked the box indicating that the song was created as a work 
+made for hire. In 2013 Jessica submits an application for 
+supplementary registration stating that she should have named 
+herself as the author of this song and the work made for hire box 
+should have been checked “no,” because she did not write this work 
+as an employee of Jessica Fineman, Inc. Jessica also provides the 
+transfer statement “by written agreement” to explain that she 
+assigned the copyright in this song to her closely h eld corporation. 
+The registration specialist  will issue the supplementary registration.  
+• Julian Chariot is an amateur songwriter. In 2000 he registered a 
+song titled “Trust Me.” Julian named himse lf as the author and 
+claimant, but mistakenly checked the work made for hire box “yes,” 
+because he assumed that this is the best way to tell the world that 
+he wants to be hired as a songwriter. In 2013, Julian submits an 
+application for a supplementary reg istration stating that the work 
+made for hire box should have been checked “no.” The registration 
+specialist will issue the supplementary registration.  
+ 1802.6(F)  Copyright Claimant(s)  
+A supplementary registration may be used to correct an error in the ba sic registration 
+involving the copyright claimant . It may also be used to add the name of a co -claimant 
+who should have been listed in the application for a basic registration (regardless of 
+whet her the co -claimant is — or is not — a co -author of the work). See 37 C.F.R. § 
+202.6(d)(3)(i) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  13 01/28/2021  This determination should be based on the facts that existed at the time when the basic 
+registration was made. As discussed in Section 1802.7(B) , information about a claimant  
+or co -claimant who acquired the copyright after that date cannot be added to the 
+registration record with a supplementary registration. See Corrections and 
+Amplifications of Copyrigh t Registrations; Applications for Supplementary Registration, 
+63 Fed. Reg. 59,235, 59,235 (Nov. 3, 1998) . Recording a transfer  or other document 
+pertaining to copyright is the only means for addi ng subsequent information to the 
+registration record.  
+If the copyright was co -owned by two or more parties when the application for the basic 
+registration was submitted to the U.S. Copyright Office and if one or more of those co -
+owners was not listed in th e basic registration, their name(s) may be added to the 
+registration record with a supplementary registration. See 37 C.F.R. § 202.6(d)(3)(i) . 
+In some cases, the applicant may be asked t o provide a transfer statement  in the 
+application for supplementary registration or other documentation if a similar 
+statement would have been required if the other co -owner(s) had been named in the 
+application for the basic registration.  
+If an author of the work was listed in the basic registration as an author, but not as a 
+copyright claimant , the author’s name may be added as a claimant  to the registration 
+record with a supplementary registration. In the alternative, the author may file a new 
+application for a new basic registration that names the author as the copyright cla imant. 
+See Section 1803 . 
+If the wrong claimant was named in the basic registration, the correct name may be 
+added to the registration record with a supplementary registration, provided that the 
+application is filed by one of the pa rties listed in Section 1802.1 . In addition, a statement 
+may be added to the registration record to clarify that the name provided in the basic 
+registration is incorrect (although that name cannot be removed from the basic 
+registr ation). In some cases, the registration specialist  may ask the applicant to provide 
+a declaration or other supporting evidence confirming that the information set forth in 
+the application for sup plementary registration is correct.  
+Examples:  
+• Tracey Ebert and Karen Colby co -wrote a screenplay titled Hair 
+Force One . On July 1, 2006 Karen assigned her share of the copyright 
+to Graffiti Studios. On July 31, 2006 Tracey submitted an application 
+to regis ter the screenplay, naming herself as the sole copyright 
+claimant. Tracey may file an application for supplementary 
+registration naming Graffiti as a co -claimant. Tracey should provide 
+a transfer statement that explains how the company obtained the 
+copyrig ht in this work. In addition, the registration specialist may 
+ask Tracey to submit additional documentation concerning this 
+transfer.  
+• Kris Anderson and Karina Ramsey registered the songs “Be the 
+Best” and “Hornet’s Nest,” which were published  on the album 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  14 01/28/2021  Falling in Love in a Small Town . The basic registration named Kris 
+and Karina as the co -authors and co -claimants for these works. In 
+fact, Kris is the sole author and owner of “Be the Best,” and Karina is 
+the sole author and owner of “Hornet’s Nest.” If th e U.S. Copyright 
+Office had been aware of this when the application was filed, it 
+would have asked the applicant to exclude one of these songs from 
+the application. “Be the Best” or “Hornet’s Nest” may be removed 
+from the registration record with a supplem entary registration that 
+deletes the title of the work and removes Kris’s or Karina’s name 
+from the Author/Claimant fields. The song that has been removed 
+from the registration record may be registered separately by filing a 
+new application for a new basic  registration that names the correct 
+individual as the author and owner of that song.  
+ 1802.6(G)  Year of Completion  
+An error involving the year of completion may be corrected with a supplementary 
+registration. But the year given in the application for sup plementary registration must 
+be the same as — or earlier than — the year given as the effective date of registration  
+for the basic registration. Likewise, if the work has been published , the year of 
+completion given in the application for supplementary registration must be the same as 
+— or earlier than — the date of first publication given in the basic registration.  
+ 1802.6(H)  Citizenship, Domicile, and Nation of First Publication  
+If there is  an error in the basic registration concerning the author’s citizenship/domicile 
+or the nation of first publicatio n, the correct information may be added to the registration  
+record with a supplem entary registration. This determination should be based on the 
+facts that existed at the time when the basic registration was made.  
+If the work does not appear to be eligible for copyright protection in the United States 
+based on the information provided i n the application for supplementary registration, 
+the registration specialist  will communicate with the applicant. If the specialist 
+determines that the work was not eligible for copyright protec tion at the time the basic 
+registration was made, the application for supplementary registration may be refused 
+and the basic registration may be cancelled. See Section 1802.9(I) . 
+ 1802.6(I)  Publication Issues  
+As a general rule,  an error involving the date of publication  for the work may be 
+corrected with a supplementary registration. This determination should be based on the 
+facts that existed at the time when the basi c registration was made.  
+For instance, if the applicant mistakenly provided a date of publication for a work that 
+has not been published, a statement may be added to the registration record to clarify 
+that the work is actually unpublished . If the applicant provided the wrong date of 
+publication in the application for basic registration, the correct date may be added to the 
+registration record with a supplementary registration. However, the registration specialist  
+may ask the applicant to confirm that the deposit copies  submitted with the application 
+for the basic registration a re identical to the first published edition of that work.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  15 01/28/2021  Examples:  
+• Olivia Morland created a fabric design for her line of t -shirts. In the 
+application for basic registration, Olivia stated that the design was 
+first published on May 31, 2011, but in fact, she began selling her t -
+shirts on April 1, 2011. Olivia may add the correct date of 
+publication to the registration record with a supplementary 
+registration. The specialist may communicate with Olivia to confirm 
+that the deposit copies submitted with the application for the basic 
+registration are the copies that were first  published on April 1, 2011.  
+• Brigitte Byrne is the author of a choreographic work  that debuted at 
+the Kennedy Center on September 15, 2010. The next day she filed 
+an application to register her w ork with the U.S. Copyright Office. In 
+her application, Brigitte stated that work was published on 
+September 15, 2010, because she mistakenly assumed that a public 
+performance constitutes publication. Brigitte may correct this 
+mistake by filing an applicat ion for a supplementary registration 
+stating that the work is, in fact, unpublished.  
+In some cases an error involving the publication of the work cannot be corrected with a 
+supplementary registration. Instead, the applicant must submit a new application fo r a 
+new basic registration. These types of publication issues are discussed in Section 
+1802.7(C) . 
+ 1802.6(J)  The Claim to Copyright  
+A supplementary registration may be used to correct or amplify the claim  that has been 
+asserted in the basic registration. Specifically, it may be used to correct or amend the 
+information that appears on the certificate of registr ation  in the fields/spaces marked 
+Author Created, Limitation of Copyright Claim, Nature of Authorship , and/or Material 
+Added to This Work. If the specialist determines that the authorship described in the 
+application for supplementary registration is not registrable, he or she may 
+communicate with the applicant and may refuse to issue a supplementary regi stration.  
+Examples:  
+• Deanna Mueller registered an unpublished  journal, naming herself 
+as the author of the “text.” Deanna would like to add a claim in 
+“illustrations” to the registration record. The registration specialist  
+will retrieve the deposit copy  from the Office’s files to determine if 
+Deanna contributed a sufficient amo unt of artwork to this work. If 
+so, the specialist will issue a supplementary registration.  
+• Todoroff Designs registered a cookbook. The basic registration 
+identifies the New Material Included in the claim as “text, two -
+dimensional artwork” and the Material  Excluded from this claim as 
+“text, two -dimensional artwork.” Todoroff submits an application 
+for supplementary registration to clarify that this is the eighth 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  16 01/28/2021  edition of this cookbook and that the company intended to register 
+the text and artwork that app ears on pages 2, 12, and 60 -82 of this 
+edition. The registration specialist will retrieve the deposit copy to 
+determine if these pages contain a sufficient amount of new 
+copyrightable  authorship.  If so, the specialist will issue a 
+supplementary registration.  
+• Bennett James registered an unpublished album titled The Black 
+Dossier . The basic registration states that the author created “music, 
+lyrics, and musical arrangement.” Bennett submits an appli cation 
+for supplementary registration stating that he created the artwork 
+that appears on the album cover. The registration specialist 
+retrieves the deposit copy from the Office’s files and determines 
+that the artwork merely consists of the title of the al bum 
+superimposed on a black background. The specialist will refuse to 
+issue a supplementary registration, because the artwork that 
+appears on the album is not copyrightable.  
+ 1802.7  Supplementary Registration Inappropriate   
+This Section provides representa tive examples of situations where a supplementary 
+registration cannot be used to correct or amplify the information in a basic registration.  
+ 1802.7(A)  Annotations  
+As a general rule, the U.S. Copyright Office will not amend or remove an annotation  from 
+the registration record. The Office will refuse an application for supplementary 
+registration that purports to amend or remove an annotation.  
+ 1802.7(B)  Ownership Issues   
+A supplementary registrati on cannot be used to reflect the division, licensing, or 
+transfer  of rights in the work. Likewise, a supplementary registration cannot be used to 
+reflect a change in the ownership of the copyrigh t that occurred on or after the effective 
+date of registration  for the basic registration. 37 C.F.R. § 202.6(d)(4)(i) .  
+If th e rights in the work have been divided, licensed, or transferred, or if there has been 
+a change in ownership since the application for basic registration  was made, the 
+applicant should not submit  an application for supplementary registration. Instead, the 
+applicant should record the assignment, license , or other legal document that 
+transferred the copyright from one party to another.  
+Recording certain documents “gives all persons constructive notice of the facts stated in 
+the recorded document,” and it may have other important consequences in the event 
+that there is a conflicting transfer involving the same work. See 17 U.S.C. § 205(c) -(e). A 
+supplementary registration does not provide these benefits. See Corrections and 
+Amplificatio ns of Copyright Registrations; Import Statements; and Recordation of 
+Documents, 43 Fed. Reg. 771, 771 (Jan. 4, 1978) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  17 01/28/2021  Examples:  
+• Lorraine Pelowicz and Jody Keppler registered a song naming 
+themselves as the co -claimants of the work. They subsequently 
+submit  an application for supplementary registration stating that 
+Lorraine currently owns the publishing rights and that Jody 
+currently owns the right to perform the work in public. The 
+application will be refused. Instead , Lorraine and Jody should 
+record the le gal agreement that divided the ownership of the 
+copyright between the parties.  
+• Tonya Greenleaf registered a blog naming herself as the author and 
+claimant for this work. She subsequently submits an application for 
+supplementary registration stating that sh e assigned the copyright 
+in this work to the Pom Pom Publishing Company. The application 
+will be refused. Instead, Tonya should record the assignment with 
+the U.S. Copyright Office.  
+• Kimberly Browning registered a photograph naming herself as the 
+author and  claimant for this work. She subsequently submits an 
+application for supplementary registration stating that she licensed 
+this image to a photo library two days after  she submitted her 
+application for basic registration. The Office will not issue a 
+supplem entary registration. Instead, Kimberly should record the 
+legal document that licensed her image  to the photo library.  
+For guidance concerning the practices and procedures for recording a transfer or other 
+document with the Office, see Chapter 2300 . 
+ 1802.7(C)  Publication Issues   
+If the work was unpublished  when the application for the basic registration was 
+submitted to the  U.S. Copyright Office and then published  sometime thereafter, the date 
+of publication  cannot be added to the registration record with a supplementary 
+registration. Instead , the applicant should submit a new application for a new basic 
+registration for the first published edition of that work (even if the published version “is 
+substantially the same as the unpublished version”). See 17 U.S.C. § 408(e) ; 37 C.F.R. § 
+202.3(b)(11)(i) . 
+Ordinarily, if the work was published on or before the date that the claim was filed with 
+the Office, and if the applicant mistakenl y claimed that the work was unpublished as of 
+that date, the date of publication cannot be added to the registration record with a 
+supplementary registration. Instead, the applicant should submit a new application for a 
+new basic registration using the pro cedure described in Section 1803  (subject to the 
+limited exception discussed below).  
+These types of publication issues cannot be corrected with a supplementary registration 
+unless the deposit  requirement for a published work and an unpublished work are the 
+same. As a general rule, the applicant must submit two complete copies of the best 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  18 01/28/2021  edition  if the work was p ublished on or after January 1, 1978, but only one complete 
+copy is required for an unpublished work. See Chapter 1500 , Sections 1505.1 and 
+1505.2. By contrast, if an unpublished work was erroneously registered as a published 
+work, the date of publication may be corrected with a supplementary registration, 
+because the deposit copies for a published work usually satisfy th e deposit requirement 
+for an unpublished work. See Section 1802.6(I) .  
+There are limited exception s to this rule. If a published work was erroneously registered 
+as an unpublished work, the date of publication may be added to the registration record 
+with a supplementary registration, provided that (i) the work was published on or after 
+March 1, 1989, and  (ii) the deposit requirement for that type of work would be the same 
+regardless of whether the work was published or unpublished, such as architectural 
+blueprints, mechanical drawings, globes, greetings cards, postcards, commercial prints 
+and labels, as w ell as computer programs , databases , or other types of works that may 
+be registered with identifying material . 
+A date of publication cannot be added to the registration record for an unpublished 
+collection or a group of unpublished works. And  as discussed in Section 1802.4 , an 
+unpublished collection or  group registration cannot be transformed into a registration 
+for a single published work. But it may be possible to exclude a published work  from a 
+prior registration, and then submit a new application , deposit, and filing  fee for that 
+work.  
+ 1802.7(D)  Issues Involving the Deposit Copy(ies)  
+A supplementary registration may only be used to correct or amplify the information set 
+forth in a certificate of registration . The U.S. Copyrigh t Office will not issue a 
+supplementary registration to correct an error in the deposit copy(ies)  that were 
+submitted with the application for basic registration. See 37 C.F.R. § 202.6(d)(4)(ii) . 
+ 1802.7(E)  Issues Involving Derivative Works  
+If a work has been changed or revised since it was registered, the changes or revisions 
+cannot be added to the registration record with a s upplementary registration. See 37 
+C.F.R. § 202.6(d)(4)(ii) . Likewise, the Office will not issue a supplementary registration 
+for an entirely new work that has not been registered before (even if it is based on a 
+previously registered work). Instead, the applicant should submit a new application for 
+a new basic registration , together with an appropriate copy(ies) of the new or re vised 
+version of the work.  
+For a definition and discussion of derivative works, see Chapter 500 , Section 507.  
+ 1802.7(F)  Issues Involving the Copyright Notice  
+The U.S. Copyri ght Office will not issue a supplementary registration to add or correct 
+the copyright notice  on the deposit copy(ies)  that were submitted with the application 
+for a basic registration.  See 37 C.F.R. § 202.6(d)(4)(ii) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  19 01/28/2021   1802.7(G ) Cancellation or Abandonment of a Basic Registration  
+A basic registration cannot be cancelled or abandoned with a supplementary 
+registration. If the applicant asserts that the basic registration should be abandoned or 
+cancelled for any reason, the U.S. Co pyright Office will refuse to issue a supplementary 
+registration. For a discussion of the procedure for cancelling a basic registration, see 
+Section 1807 . For a discussion of the procedure for abandoning a basic registration, see 
+Chapter 2300 , Section 2311.  
+ 1802.7(H)  Adverse Claims  
+A supplementary registration cannot be used to question or challenge the validity of a 
+basic registration.  If an applicant asse rts that the U.S. Copyright Office issued a basic 
+registration to a party who is not eligible to be named as a copyright claimant  or that the 
+application for the basic registration was filed by a  party who was not authorized to 
+register the claim , the applicant should not submit an application for supplementary 
+registration. Instead, the applicant should assert an adverse claim in the co pyright by 
+submitting a new application for a new basic registration on behalf of the party who 
+should have been named as the copyright claimant. See 37 C.F.R. § 202.3(b)(11)(iii) . For 
+a discussion of the practices and procedures for asserting an adverse claim, see Section 
+1808 . 
+ 1802.8  Completing the Application  
+As a general rule, an applicant must use the online application to correct or amplify the 
+information s et forth in a basic registration – even if the work was originally registered 
+with a paper application. For guidance in completing the online application, see Section 
+1802.8(A) . 
+Specifically, the applicant must use the online application to correct or amplify a basic 
+registration for the following types of works:  
+• A literary work, such as fiction, nonfiction, poetry, memoirs, textbooks, computer 
+programs, and other nondramatic tex tual works . 
+• A work of the visual arts, such as two-dimensional or three -dimensional works of 
+fine, graphic, or applied art , prints, art reproductions, maps, technical drawings, and 
+architectural  works.   
+• A work of the performing arts, such as a musical work, dramatic work, 
+choreographic work, pantomime, motion picture, or other audiovisual work.  
+• A sound recording, such as an audiobook, a podcast, or a recording of a song.  
+• A single issue of a seria l publication, such as a periodical, magazine, newsletter, or 
+journal.  
+37 C.F.R. § 202.6(e)(1) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  20 01/28/2021  Likewise, applicants must use the online application to correct or amplify the 
+information  appearing in the following types of registrations:  
+• A registration for a compilation, a collective work, or a derivative work.  
+• A registration for an unpublished collection. See 37 C.F.R. § 202.6( e)(1) . 
+• A registration for a unit of publication. See 37 C.F.R. § 202.3( b)(4) ; 37 C.F.R. § 
+202.6( e)(1) . 
+• A registration for a group of serials. See 37 C.F.R. § 202.4(d) ; 37 C.F.R. § 202.6( e)(1) .   
+• A registration for a group of newspapers. See 37 C.F.R. § 202.4(e) ; 37 C.F.R. § 
+202.6(e)(1) . 
+• A registration for a group of newsletters. See 37 C.F.R. § 202.4(f) ; 37 C.F.R. § 
+202.6( e)(1) . 
+• A registration for a group of contributions to periodicals.  See 37 C.F.R. § 202.4( g); 37 
+C.F.R. § 202.6( e)(1) . 
+• A registration for a group of secure test items.  See 37 C.F.R. § 202.1 3; 37 C.F.R. § 
+202.4(k) . 
+• A registration for a group of unpublished photographs or a group of published 
+photographs.  See 37 C.F.R. § 202.4(h) -(i); 37 C.F.R. § 202.6(e)(1) . 
+Applicants must use the online application to co rrect or amplify the information in a 
+group registration for a database that predominantly consists of photographs. See 37 
+C.F.R. § 202.3(b)(5) . But before submitting the claim, the applicant  must contact the 
+Visual Arts Division at (202) 707 -8202 to obtain prior authorization and instructions 
+concerning the information that should be included in the application. See 37 C.F. R. § 
+202.6(e )(4). 
+Similarly, applicants must use the online application to correct or amplify the 
+information in a registration for a group of unpublished works , or a group o f short 
+online literary works . See 37 C.F.R. §  202.4(e)(2) . But before submitting the claim, the 
+applicant must contact the Office of Re gistration Policy & Practice at 
+copyinfo@ copyright.gov  to obtain prior authorization and instructions concerning the 
+information that should be included in the application.  For additional information, see 
+Supplementary Registration (Circu lar 8) . 
+By contrast, applicants must use a paper application submitted on Form CA  to correct or 
+amplify the information appearing in the following types of registrations:  
+• A group registration for  a database that does not predominantly consist of 
+photographs. See 37 C.F.R. § 202.3(b)(5) ; 37 C.F.R. § 202.6(e) (4).   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  21 01/28/2021  • A GATT registration for a foreign work restored to copyright protection under the 
+Uruguay Round Agreements Act.  See 37 C.F.R. § 202.12 ; 37 C.F.R. § 202.6(e) (4). 
+• A renewal registration for a work registered or first published before January 1, 
+1978. See 37 C. F.R. § 202.17 ; 37 C.F.R. § 202.6(e) (4). 
+For guidance in completing Form CA, see Section 1802.8(B) . 
+See generally Supplementary Registration, 82 Fed. Reg.  27,424 (June 15, 2017) ; 
+Supplementary Registration, 81 Fed. Reg. 86,656, 86,660 & n.26 (Dec. 1, 2016) . 
+ 1802.8(A)  Completing the Online Application   
+This Section provides guidance for completing the online application for supplementary 
+registration.  
+As discussed in Section 1802.8 , applicants must use the online application in most cases. 
+Applicants may submit a paper application only when correcting or amplifying the 
+information in a renewal registration, a GATT registration, or a registration for a 
+database that does not consist predominantly of photographs. If an applicant attempts 
+to use a paper application to correct or amplify any other type of registration, the U.S. 
+Copyright Office may return the application and filing fee  and instruct the applicant to 
+resubmit the claim usi ng the online application , or the Office may simply refuse 
+registration . 37 C.F.R. § 202.6(e) (4); Supplemen tary Registration, 81 Fed. Reg. 86,656, 
+86,658 (Dec. 1, 2016) . 
+NOTE:  In exceptional cases, the U.S. Copyright Office may waive the online filing 
+requirement, subject to such conditions that the Associate Register of Copyrights and 
+Director of the Office of  Registration Policy and Practice may impose on the applicant. 
+An applicant may submit a request to waive this requirement in writing. It should 
+explain why the applicant is unable to use the online application, and it should be sent to 
+the following addre ss: 
+Associate Register of Copyrights and  
+Director of Registration Policy & Practice  
+Registration Program  
+U.S. Copyright Office  
+101 Independence Avenue SE  
+Washington, DC 20559  
+See 37 C.F.R. § 202.6(e) (8); Supplementary Registration, 82 Fed. Reg. 27,424, 27,428 
+(June 15, 2017) . 
+1802.8(A)(1)  Eligibility Requirements  
+To seek a supplementary registration with the online applicat ion, the applicant  should 
+begin by clicking the phrase “Correct or Amplify an Existing Registration,” which 
+appears on the home page of the electronic registration system.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  22 01/28/2021  The system will generat e a brief statement that describes the eligibility requirements 
+for this application. If these requirements have been met, the applicant should check the 
+box that appears next to the following statement: “I agree that I have read, understood, 
+and meet all eligibility requirements described above for filing a Supplementary 
+Registration.”  
+1802.8(A)(2)  Identifying the Basic Registration  
+The applicant must identify the basic registration that will be corrected or amplified by 
+the supplementary registration. 17 U.S.C. § 408(d) . Specifically, the applicant must 
+provide the following information on the Original Registration screen:  
+• Registration number for the basic registration . This number app ears on the 
+certificate for the basic registration, and it typically begins with two or three letters, 
+such as “VA” or “VAu.” The applicant should provide this number in the field marked 
+“Registration Number of Basic Registration (e.g. TXu003234533).”  
+• Year of registration for the basic registration . This information appears on the 
+certificate for the basic registration under the heading marked effective date of 
+registration . The applicant should provide this information in the field marked “Year 
+of Basic Registration (YYYY).”  
+If the applicant fails to complete these fields, the application will not be accepted by the 
+electronic registration system.  
+When providing the registration number for the ba sic registration, the U.S. Copyright 
+Office strongly encourages applicants to use the format described below. This will 
+facilitate the examination of the claim and prevent unnecessary delays.   
+Specifically, the registration number should consist of a twel ve-character string without 
+spaces or hyphens. For published registration numbers, enter two letters followed by 
+ten digits. For unpublished registration numbers, enter three letters followed by nine 
+digits. Every letter of the alphabetic prefix should be capitalized and zeroes should be 
+inserted between the prefix and the numerical portion of the registration number so 
+that it contains a total of twelve characters.  
+For instance, the proper format for a registration for a published  sound recording 
+consistin g of the prefix “SR” and the numbers “123 -4-567” would be “SR0001234567.”  
+Examples:  
+• VAu 123 -456 should be entered as VAU000123456.  
+• VA 1 -357 -911 should be entered as VA0001357911.  
+If the applicant includes spaces, hyphens, or other punctuation in the regis tration 
+number (instead of using the format described above), the Office will remove these 
+characters and convert the number to the preferred format, which may delay the 
+registration decision.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  23 01/28/2021  1802.8(A)(3)  Identifying the Work(s) Covered by the Basic Regi stration  
+The U.S. Copyright Office has established various categories for the purpose of 
+registering works of authorship. These categories are merely administrative 
+classifications that do not affect the subject matter  of copyright or the exclusive rights  in 
+a work. See 17 U.S.C. § 408(c)(1) . 
+When completing the online application, the applicant should identify the category tha t 
+best describes the work(s) covered by the basic registration. These categories are listed 
+on the Original Registration screen under a drop down menu marked Type of Work. 
+Once a selection has been made, the system will provide a brief description and 
+repr esentative examples of the types of works that may be registered within each 
+category. If the applicant fails to make a selection, the application will not be accepted 
+by the electronic registration system.  
+The applicant should exercise care and judgment w hen completing this portion of the 
+application. The selection will dictate the options for correcting or amplifying the 
+information that appears in the basic registration. And if the claim is approved, it will 
+determine the registration number that will be  assigned to the supplementary 
+registration.  
+Once a selection has been made, the Type of Work field cannot be changed unless the 
+applicant discards the application and starts over again. If the applicant selects a 
+category that does not match the works covered by the basic registration, the 
+registration specialist may communicate with the applicant or refuse to issue a 
+supplementary registration.  
+• Select Literary Work  if the registration number assigned to the basic registration 
+begins with the lett ers TX or TXu, and if the registration covers a work that explains, 
+describes, or narrates a particular subject, theme, or idea through the use of 
+narrative, descriptive, explanatory, or instructional text (rather than dialog or 
+dramatic action). Examples of works that fit within this category include fiction, 
+nonfiction, poetry, short stories, memoirs, textbooks, reference works, directories, 
+catalogs, advertising copy, as well as computer program s. For additional 
+information concerning this category, see Chapter 700 , Section 703.  
+• Select Work of the Visual Arts  if the registration number assigned to the  basic 
+registration begins with the letters VA or VAu, and if the registration covers a 
+pictorial, graphic, or sculptural work. This category includes two-dimensional and 
+three -dimensional works of fine, graphic, or applied art ; prints and art 
+reproduction; maps, and technical drawings. Examples of works that fit within this 
+category include drawings, illustrations, posters, logos, sculptures, jewelry designs, 
+fabric designs, wallpaper designs, a nd architectural work s. For additional 
+information concerning this category, see Chapter 900 , Sections 903.1 and 903.2 . 
+• Select Work of the Performing Arts  if the registration number assigned to the basic 
+registration begins with the letters PA or PAu, and if the registration covers a 
+musical work, a dramatic work, a pantomime , or a choreographic work . Examples of 
+works that fit within this category include songs, musical arrangements, stage plays, 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  24 01/28/2021  screenplays, scripts, treatments, and ballets. For addit ional information concerning 
+this category, see Chapter 800 , Sections 802, 804, 805, and 806.  
+• Select Sound Recording  if the registration number assigned to the basic registra tion 
+begins with the letters SR or SRu, and if the registration covers a sound recording . 
+Examples of works that fit within this category include a recording of a singer 
+performing a song or an a udiobook, podcast, or live concert recording. Likewise, the 
+applicant should select this option if the registration covers both a sound recording 
+and the underlying work embodied in that recording, such as a registration that 
+covers a song and a recording of a musician performing that song. For additional 
+information concerning this category, see Chapter 800 , Section 803.  
+NOTE:  To add a claim in “sound recording” to a basic re gistration for a musical work, 
+dramatic work, or literary work, the applicant should select the option for Sound 
+Recording – even if the basic registration begins with the letters PA, PAu, TX, or TXu. 
+For information concerning this type of correction or amplification, see Section 
+1802.6(J) . If the Office determines that the work was registered in the wrong class 
+or series, it may cancel the initial registration a nd issue a new registration in the 
+correct class. For information concerning this procedure, see Section 1807.4(A) . 
+• Select Motion Picture/Audiovisual Work  if the registration number assigned to the 
+basic registration begins with the letters PA or PAu, and if the registration covers a 
+feature film, documentary film, animated film, television show, video, videogame , or 
+other audiovisual work, such as a slide presentation. For additional information 
+concerning this category, see Chapter 800 , Sections 807 and 808.  
+• When correcting or amplifying a basic registration for a compilation, a collective 
+work, or a derivative work, the applicant should select the category listed above that 
+best describes that work and the original registration number. For additional 
+information concerning these types of works, see Chapter 500 , Secti ons 507 through 
+509.  
+• When correcting or amplifying a basic registration for an unpublished collection  or a 
+unit of publication , the applicant should select the category listed above that best 
+describes the works included within that collection or unit and the original 
+registration number. For additional information concerning these types of 
+registrations, see Chapter 1100 . 
+• Select Single Serial Issue  if the registration number assigned to the basic registration 
+begins with the letters TX, and if the registration covers a single issue of a serial 
+publication. A serial is a work that is issued in successiv e parts bearing numerical or 
+chronological designations and is intended to be continued indefinitely. Examples 
+include a single issue of a newspaper, magazine, bulletin, newsletter, annual, 
+journal, and other similar works. Examples of works that do not fa ll within this 
+category include episodes of a television series, a series of online videos, a collection 
+of musical works, a group of manuscripts, an assortment of poetry, or a set of 
+advertising copies. For additional information concerning this category,  see Chapter 
+700, Section 712.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  25 01/28/2021  • Select Serial Issues  if the basic registration begins with the letters TX, and if it is a 
+group registration that covers two or more issues of a  serial publication. For 
+information concerning this group registration option, see Chapter 1100 , Section 
+1107. 
+• Select Daily Newspapers if the basic registration begins with the letters TX, and if it 
+is a group registration that covers a month of issues from the same newspaper. For 
+information concerning this group registration option, see Chapter 1100 , Section 
+1108. 
+• Select Daily Newsletters if the basic registration begins with the letters TX, and if it is 
+a group registration that covers multiple issues from the same newsletter. For 
+information  concerning this group registration option, see Chapter 1100 , Section 
+1109. 
+• Select Contributions to Periodicals TX if the basic registration begins with the let ters 
+TX, if it is a group registration that covers a group of contributions that were first 
+published in a periodical, and if the contributions primarily contain nondramatic 
+text. Examples of contributions that fit within this category include articles, ne ws 
+stories, columns, features, reviews, editorials, essays, fiction, verse, quizzes, puzzles, 
+and advertising copy. For information concerning this group registration option, see 
+Chapter 1100 , Section 111 0. 
+• Select Contributions to Periodicals VA if the basic registration begins with the letters 
+VA, if it is a group registration that covers a group of contributions that were first 
+published in a periodical, and if  the contributions primarily contain pictorial or 
+graphic material. Examples of contributions that fit within this category include 
+photographs, drawings, illustrations, cartoons, comic strips, prints, paintings, art 
+reproductions, charts, diagrams , maps, and pictorial advertisements. For 
+information concerning this group registration option, see Chapter 1100 , Section 
+1110. 
+• Select Published Photographs if the bas ic registration begins with the letters VA, and 
+if it is a registration for a group of published photographs. For information 
+concerning this group registration option, see Chapter 1100 , Section 111 4. 
+• Select Unpublished Photographs if the basic registration begins with the letters VA, 
+and if it is a registration for a group of unpublished photographs. For information 
+concerning this group registration option, see  Chapter 1100 , Section 111 4.  
+• Select Literary Work  if the registration number assigned to the basic registration 
+begins with the letters TX or TXu, and if it is a registration for a group of questions, 
+answers, and other items prepared for use in a secure test.  
+• The online application may be used to corre ct or amplify the information in a 
+registration for a group  of unpublished works , or a group of  short online literary 
+works . But before submitting the claim, the applicant must contact the Office of 
+Registration Policy & Practice at  copyinfo@copyright.gov  to obtain prior 
+authorization and instructions concerning the information that should be included 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  26 01/28/2021  in the application.  For additional information, see Supplementary Registration 
+(Circular 8) . 
+• Likewise, the online application may be used to correct or amplify the information 
+in a group registration for a photographic database. But before submitting the claim, 
+the applicant must contact the Visual Arts Divi sion at (202) 707 -8202 to obtain 
+prior authorization and instructions concerning the information that should be 
+included in the application. See 37 C.F.R. § 202.6(e) (3); Supplementary Registration, 
+81 Fed. Reg. 86,656, 86 ,658 n.9 (Dec. 1, 2016) . 
+1802.8(A)(4)  Correcting and/or Amplifying the Basic Registration  
+Once the applicant has selected the category  that best describes the works covered by 
+the basic registration, the applicant should (i) correct errors that appear in that 
+registration, and/or (ii) provide information needed to amplify the facts stated in the 
+basic registration. 37 C.F.R. § 202.6(d)(2) -(3). 
+To do so, the applicant should complete each screen that appears in the online 
+application. When completing these screens, the applicant should provide all of the 
+informat ion that should have been included in the basic registration when it was made. 
+If the registration contains information that is accurate and complete, the applicant 
+should include that same information in the online application.  
+Guidance for completing the various screens that appear in the online application may 
+be found in the following sections of the Compendium : 
+• For guidance on a supplementary registration involving a Literary Work , a Work  of 
+the Visual Arts , a Work of the Per forming Arts , a Sound Recording , a Motion 
+Picture/AV Work , a Single Serial Issue, or a Collective Work,  the applicant should 
+refer to the following sections:  
+• Titles screen: See Chapter 600 , Sections 610.1 through 610.5.  
+• Publication/Completion screen:  See Chapter 600 , Sections 611.1 and 612.6.  
+• Authors screen:  See Chapter 600 , Sections 613.9, 614.1, 615.1(B), 615.2(B), 
+616.3, 617.6, 618.4, 618.7(A), and 618.7(C).  
+• Claimants screen:  See Chapter 600 , Sections 619.12 and 620.9.  
+• Limitation of Claim screen:  See Chapter 60 0, Section 621.8.  
+• Rights & Permissions screen:  See Chapter 600 , Section 622.1.  
+• Correspondent screen: See Chapter 600 , Section 622.2.  
+• Mail Certificate screen:  See Chapter 600 , Section 622.4.  
+• Special Handling screen:  See Chapter 600 , Section 623.  
+   
+• For guidance on a supplementary registration involving a unit of publication , the 
+applicant should refer to Chapter 1100 , Section 1103 . For guidance on a 
+supplementary registration involving an unpublished collection , the applicant should 
+refer to Compendium of U.S. Copyright Office Practices  § 1106.3 (3d ed. 2017).  
+• For guidan ce on a supplementary registration involving a group registration of 
+serial issues , the applicant should refer to Chapter 1100 , Section 110 7.6. 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  27 01/28/2021  • For guidance on a supplementary registration involving a group registration of 
+newspaper issues , the applicant should refer to Chapter 1100 , Section 1108 .7. 
+• For guidance on a supplementary registration involving a group registration of 
+newsletter issues , the applicant should refer to Chapter 1100 , Section 1109. 6. 
+• For guidance on a supplementary registration involving a group registration of 
+Contributions to Periodicals , the applicant should refer t o Chapter 1100 , Section 
+1110.7. 
+• For guidance on a supplementary registration involving a group registration of 
+Unpublished Photographs or Published Photographs , the applicant should  refer to  
+Chapter 1100 , Section  111 4. 
+• For guidance on a supplementary registration involving a group registration for a 
+photographic database, the applicant should contact the Visual Arts Division at 
+(202) 707 -8202 . 
+• For guidance on a supplementary registration involv ing a group registration of 
+Unpublished Works  or a group of Short Online Literary Works , the applicant should 
+contact the Office of Registration Policy & Practice at copyinfo@coypright.gov  for 
+instructions concerning the information  that should be included in the application.  
+For additional information, see Supplementary Registration (Circular 8) . 
+1802.8(A)(5)  Explanation for the Correction  
+If the information in the basic registration was incorrect when the registration was 
+made, the applicant should provide the correct information in the relevant portions of 
+the online application. In addition, the applicant should provide a brie f statement that 
+identifies and explains the reason for the correction. This statement should be provided 
+on the Certification screen in the field marked Correction Explanation:  
+• The applicant should identify the section of the basic registration where the 
+incorrect information appears. The applicant may provide the heading for that 
+section, such as “Author Created” or “Material excluded from this claim.” If the 
+spaces on the certificate are numbered, the applicant may also provide the relevant 
+line number, such as “2(a)” or “6(b).”  
+• The applicant should provide the incorrect information that appears in the basic 
+registration.  
+• The applicant should provide the correct information that should have been 
+included in the basic registration.  
+If the changes reflecte d in the supplementary registration are intended to amplify the 
+information in the basic registration, the applicant should complete the Amplification 
+Explanation field. For guidance in completing this portion of the application, see Section 
+1802.8(A)(6) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  28 01/28/2021  1802.8(A)(6)  Explanation for the Amplification  
+As mentioned above, a supplementary registration may be used to clarify the 
+information that appears in the basic registr ation , to provide missing information that 
+should have been  included in the registration, or to reflect changes that have occurred 
+since the registration was made (other than a change in the ownership of the copyright).  
+The applicant should provide this information in the relevant portions of the online 
+applicati on. In addition, the applicant should provide a brief statement that identifies 
+and explains the reason for the amplification. This statement should be provided on the 
+Certification screen in the field marked Amplification Explanation:  
+• The applicant should  identify the section of the basic registration that should be 
+amplified. The applicant may provide the heading for that section, such as “Author” 
+or “Copyright Claimant.” If the spaces on the certificate are numbered, the applicant 
+may also provide the re levant line number, such as “4” or “5.”  
+• The applicant should provide a clear and succinct statement of the information that 
+should be added to the registration record.  
+If the changes reflected in the supplementary registration are intended to correct the 
+information in the basic registration, the applicant should complete the Correction 
+Explanation field. For guidance in completing this portion of the application, see Section 
+1802.8(A)(5) . 
+1802.8(A)(7)  Certification  
+An applicat ion for supplementary registration may be submitted by an author, a 
+copyright claimant , or an owner of one or more of the exclusive ri ghts  in the work, or a 
+duly authorized agent  of one of the foregoing persons. 37 C.F.R. § 202.6(c) . 
+Before submitting an online application, the applicant must certify the application by 
+providing the following information on the Certification screen:  
+• The applicant should provide his or her first and last name in the space marked 
+Name of Certifying Individual.  
+• Using the drop down menu marked Submission Authority, the applicant should 
+specify whether he or she is the author, a copyright claimant, or an owner of one or  
+more of the exclusive right(s) in the work.  
+• If the applicant is an authorized agent of the author, a copyright claimant, or an 
+owner of the exclusive right(s), the applicant should select that option from the drop 
+down menu and write the name of the part y he or she represents in the field marked 
+“Authorized agent of (name).”  
+The applicant should check the box that reads, “I certify that I am the author, copyright 
+claimant, or owner of exclusive rights, or the authorized agent of the author, copyright 
+claimant, or owner of exclusive rights of this work, that I reviewed the certificate of 
+registration for this work, and that the information given in this application is correct to 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  29 01/28/2021  the best of my knowledge.” There is no need to date the certification; the date  will be 
+added automatically when the application is received by the U.S. Copyright Office.  
+By checking this box, the applicant certifies that the information provided in the 
+application is correct to the best of his or her knowledge. In addition, the app licant 
+certifies that he or she reviewed the certificate of registration for the basic registration 
+before the application was submitted. See id.  § 202.6(e) (5). 
+Knowingly making a false representation of a material fact in an application for 
+supplementary registration, or in any written statement filed in connection with the 
+application, is a crime that is punishable under 17 U.S.C. § 506(e) . 
+1802.8(A)(8)  Applicant’s Internal Tracking Number / Note to Copyright Office  
+The applicant  may assign an internal tracking number to an online application by 
+completing  the field marked Applicant’s Internal Tracking Number on the Certification 
+screen.  
+Providing a tracking number is optional and this feature is intended solely for the 
+applicant’s convenience. The U.S. Copyright Office does not use these numbers to keep 
+track of pending applications, although the number will appear on the certificate of 
+supplementary registration.  
+The applicant may  provide any additional information that is relevant to the claim in the 
+field marked Note to Copyright Office. Currently, the t otal amount of text that may be 
+provided in this field is limited to 25,000 characters.  
+Statements provided in the Note to Copyright Office field will not appear on the 
+certificate of supplementary registration or the online public record . The Office will 
+maintain a copy of the note in the registration record . If the note contains material 
+information, the specialist may  add that information to the registration record with an 
+annotation , or may  add a note to the certificate of registration and the online public 
+record indicating that there is correspondence in the file.  
+ 1802.8(B)  Completing Form CA   
+This Section provides guidance for seeking a supplementary registration with a paper 
+application submitted on Form CA . 
+As discussed in Section 1802.8 , Form CA may only b e used to correct or amplify the 
+information appearing in a renewal registration, a GATT registration, or a registration 
+for a database that does not consist predominantly of photographs.  
+If an applicant attempts to use Form CA to correct or amplify any ot her type of 
+registration, the U.S. Copyright Office may return the application and filing fee  and 
+instruct the applicant to resubmit the claim using the online application  or the Office 
+may simply refuse registration . See 37 C.F.R. § 202.6(e)(1) -(4); 37 C.F.R. § 202.6(f)(2) ; 
+Supplementary Reg istration, 82 Fed. Reg. 27,424, 27,428 (June 15, 2017) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  30 01/28/2021  1802.8(B)(1)  Space A: Identifying the Basic Registration  
+An application for supplementary registration  “shall clearly identify the regist ration to 
+be corrected or amplified.” 17 U.S.C. § 408(d) . The applicant should identify the basic 
+registration by providing the following information in space A of Form CA:  
+• The title of  the work that appears in the basic registration (including the previous or 
+alternative title for the work, if any).  
+• The registration number that appears on the certificate of registration  for th e basic 
+registration.  
+• The year that the U.S. Copyright Office issued the basic registration. (This 
+information appears on the certificate of registration in the field marked effective 
+date of reg istration .) 
+• The name(s) of the author(s) listed in the basic registration.  
+• The name(s) of the copyright claimant(s)  listed in the basic registration.  
+The foregoing information should be copied ex actly as it appears on the certificate of 
+registration for the basic registration, even if that information is incorrect or 
+incomplete, even if the applicant intends to correct or amplify that information with a 
+supplementary registration, and even if that  information has been corrected or 
+amplified by an earlier supplementary registration.  
+1802.8(B)(2)  Space B: Correcting Errors in the Basic Registration  
+If the information set forth in the basic registration was incorrect when the registration 
+was made, the applicant should provide the following information in space B of Form 
+CA: 
+• In the space marked Line Heading or Description, the applicant should provide the 
+heading for the relevant section of the basic registration where the incorrect 
+information appea rs. If the spaces on the certificate of registration are numbered 
+one to nine, the applicant should also provide the relevant number in the space 
+marked “Line Number.” (If there are no numbers on the certificate of registration, 
+the Line Number space may b e left blank.)  
+• In the space marked “Incorrect Information as It Appears in Basic Registration,” the 
+applicant should provide the incorrect information exactly as it appears in the basic 
+registration.  
+• In the space marked “Corrected Information,” the applica nt should provide the 
+correct information that should have been provided in the application for the basic 
+registration.  
+The applicant may provide a brief explanation for the error or the correction in the 
+space marked “Explanation of Correction.”  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  31 01/28/2021  Examples : 
+• Lauren O’Neill published and registered her book of poems in 1971. 
+In 2000, the U.S. Copyright Office issued a renewal registration for 
+this work. Lauren later notices that her name is misspelled as 
+“Lawren” on the certificate for the renewal registratio n. The error 
+appears in the “Author” space and the “Renewal Term Ownership 
+Information, Name of Statutory Claimant” space. Lauren  may 
+correct this error by providing the following information in space B 
+of Form CA:  
+− Line Number : n/a.  
+− Line Heading or Description : Work or Material Claimed and 
+Author Information, Renewal Term Ownership Information, 
+Name of Statutory Claimant.  
+− Incorrect informatio n: Lawren O’Neill.  
+− Corrected information : Lauren O’Neill.  
+− Explanation of correction : Author’s first name was misspelled.  
+• Steven Albrechtsen was born in Sweden. Steven published a book in 
+Stockholm while he was attending university in another country. 
+Steven failed to renew the copyright at the end of the first term. 
+When the work was rest ored to copyright protection, he registered 
+his book using Form GATT. Steven correctly stated that he is a 
+Swedish citizen, but incorrectly stated that he was living in Sweden 
+when the work was first published. Steven may correct this error by 
+providing th e following information in space B of Form CA:  
+− Line Number : n/a.  
+− Line Heading or Description : Author, Domicile.  
+− Incorrect information : Domicile: Sweden.  
+− Corrected information : Domicile: Germany.  
+− Explanation of correction : The author was not living in Swede n 
+when the work was first published; he was living in Germany.  
+• Marco Systems created a database for a client named Multiverse, 
+LLC, and transferred the copyright in this work to that company 
+through a written agreement. In 2014, Multiverse sought a group 
+registration for the initial published version of the database, as well 
+as two months of revisions. The certificate of registration correctly 
+names Multiverse, LLC as the claimant, but incorrectly names that 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  32 01/28/2021  company as the author of the work. Multiverse may  correct this 
+error by providing the following information in space B of Form CA:  
+− Line number : n/a.  
+− Line Heading or Description : Author, Work Made For Hire, 
+Copyright Claimant.  
+− Incorrect information : Author: Multiverse, LLC; Work made for 
+hire: Yes.  
+− Correc ted information : Author: Marco Systems; Work made for 
+hire: No; Transfer statement: By written agreement.  
+− Explanation of correction : The database and its revisions were 
+not made for hire; Marco Systems should have been named as 
+the author. Multiverse, LLC obtained the copyright in this 
+database and its updates from the author by written agreement.  
+1802.8(B)(3)  Space C: Clarifying Information in the Basic Registration, Providing  
+Missing Information, or Reflecting Changes or Events That Have  
+Occurred Since  the Basic Registration Was Made  
+As mentioned above, a supplementary registration may be used to clarify the 
+information that appears in the basic registr ation , to provide missing information that 
+should have been included in the registration, or to refle ct changes that have occurred 
+since the registration was made (other than a change in the ownership of the copyright). 
+In such cases, the applicant should provide the following information in space C of Form 
+CA: 
+• In the space marked Line Heading or Descript ion, the applicant should provide the 
+heading for the relevant section of the basic registration that should be amplified. If 
+the spaces on the certificate of registration are numbered one to nine, the applicant 
+should also provide the relevant number in t he space marked “Line Number.” (If 
+there are no numbers on the certificate of registration, the Line Number space may 
+be left blank.)  
+• In the space marked “Amplified Information and Explanation of Information” the 
+applicant should provide a clear and succin ct statement of the information that 
+should be added to the registration record.  
+In addition, the applicant may provide a brief explanation for the amplification.  
+Examples:  
+• Danny Nelson registered his song in 1972. After he passed away in 
+2012, his childr en, Denise and Donald, filed a renewal registration 
+as statutory claimants. In 2014, Denise married and changed her 
+name. Denise may add her new name to the registration record by 
+providing the following information in space C of Form CA:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  33 01/28/2021  − Line Number : n/a.  
+− Line Heading or Description : Renewal Term Ownership 
+Information, Name of Statutory Claimant.  
+− Amplified Information and Explanation of Information : Renewal 
+Term Ownership Information, Name of Statutory Claimant: Due 
+to marriage, the name of the statutory c laimant entitled to claim 
+the renewal term as daughter of the author has changed from 
+Denise Nelson to Denise McArthur.  
+• In 1985, Kerry Blaire published a play in Israel without a copyright 
+notice. When her play was restored to copyright protection, she 
+registered the work using Form GATT. A year later, Kerry moved to 
+a new address. She may add her new address to the registration 
+record by providing the following information in space B of Form 
+CA: 
+− Line Number : 4. 
+− Line Heading or Description : Owner of U.S. C opyright.  
+− Amplified Information and Explanation of Information : Owner of 
+U.S. Copyright: The Owner of U.S. Copyright’s new address is 
+6401 Deerfield Lane, Miami, FL 32815.  
+• In December 2014, WWX Corporation registered a group of 
+revisions to its published database, but failed to mention that some 
+of the content was pre viously published in August of that year. 
+WWX may add a disclaimer to the registration record by providing 
+the following information in space C of Form CA:  
+− Line Number : n/a.  
+− Line Heading or Description : Limitation of Copyright Claim.  
+− Amplified Information and Explanation of Information : 
+Limitation of copyright claim: Some contributions previously 
+published in August 2014.  
+1802.8(B)(4)  Spaces D and E: More Space Needed  
+If the applicant needs more space t o correct or amplify the information that appears in 
+the basic registration, the applicant should provide the additional information in spaces 
+D and/or E of Form CA. Use space D if you need more room to explain a correction. Use 
+space E if you need more ro om to explain an amplification.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  34 01/28/2021  1802.8(B)(5)  Space F: Contact Information  
+In space F, the applicant should provide the name, address, telephone number, email 
+address, and fax number (if any) for the person or persons who should be contacted if 
+the registration specialist  has questions or concerns regarding the application for 
+supplementary registration. This person is known as the correspondent. The U.S. 
+Copyright Office will send all communicati ons concerning an application for a 
+supplementary registration to the correspondent at the address provided in Space F of 
+Form CA.  
+1802.8(B)(6)  Space G: Certification   
+Form CA must be submitted by an author, a copyright claimant  (including a vested 
+owner in the case of a supplementary registration for a renewal registration), an owner 
+of one or more of the exclusive rights  in the work,  or a dul y authorized agent  of one of 
+the foregoing persons. 37 C.F.R. § 202.6(c) . 
+Before submitting Form CA, the applicant m ust certify the application on Space G. 
+Specifically, the applicant should provide his or her signature under the heading 
+“Signature,” and his or her first and last name should be typed or printed in the space 
+marked “Typed or Printed Name and Date.”  
+The applicant should check one of the boxes on Form CA indicating whether he or she is 
+an author of the work, a copyright claimant, or an owner of one or more of the exclusive 
+right(s) in the work. If the applicant is an authorized agent of the author, copyrig ht 
+claimant, or owner of exclusive right(s), the applicant should provide the name of the 
+party he or she represents. Ordinarily, an application will be accepted if two or more of 
+the boxes in space G have been checked, unless there is reason to question t he 
+application.  
+By signing Form CA, the applicant certifies that the information provided in the 
+application is correct to the best of his or her knowledge. In addition, the applicant 
+certifies that he or she reviewed the certificate of registration for th e basic registration 
+before the application was submitted. See id . § 202.6(e) (5). 
+Knowingly making a false representation of a material fact in an application for 
+supplementary registrat ion, or in any written statement filed in connection with the 
+application, is a crime that is punishable under 17 U.S.C. § 506(e) . 
+1802.8(B)(7)  Space H: Mailing Address for the Certif icate of Supplementary Registration  
+The applicant should provide the first and last name of the individual and/or the name 
+of the organization to which the certificate of supplementary registration should be sent, 
+along with the street address, city, stat e, and zip code for that individual and/or 
+organization. This information should be provided in space H under the heading 
+“Certificate will be mailed in window envelope to this address.” This portion of the 
+application should be completed legibly; failure to provide a legible name and address 
+may delay the delivery of the certificate of supplementary registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  35 01/28/2021  The applicant should provide only one mailing address in space H of Form CA. The U.S. 
+Copyright Office will send a single copy of the certificate  to that address by first class 
+mail. Additional copies of the certificate may be obtained from the Office for an 
+additional fee. For instructions on how to request additional copies of a certificate of 
+supplementary registration, see Chapter 2400 , Section 2408.  
+ 1802.8(C)  Filing Fee  
+The filing fee  for an application for supplementary registration is set forth in the U.S. 
+Copyright Office’s fee schedule  under the heading “Supplementary registration.” For 
+information concerning the methods for  paying this filing fee, see Chapter 1400 , 
+Sections 14 12.4 and 14 12.5. 
+As a general rule, the filing fee is not refundable, regardless of whether the Office issues 
+a su pplementary registration. 37 C.F.R. § 201.6(c) . The Office will issue a refund if the 
+Office determines that the error in the basic registration was caused by its own action or 
+mistake. See Section 1802.9(A) . 
+1802.8(D)   Copy of the Certificate of Registration for the Basic Registration  
+As discussed in Sections 1802.8(A)(7)  and 1802.8(B)(6) , the applicant m ust certify that 
+he or she reviewed the certificate of registration for the basic registration before 
+seeking a supplementary registration. 37 C.F.R. § 202.6(e) (5). 
+If the applicant does  not have a copy of the certificate, he or she may request a copy 
+from the Records Research and Certification Section. For information concerning this 
+procedure, see Chapte r 2400 , Section 2408.  
+As discussed in Section 1802.9(C) , the applicant does not need to submit a copy of the 
+certificate unless the registration specialist  specifically  asks the applicant to do so.  
+1802.8(E)   Deposit Copy(ies) Not Required  
+As discussed in Section 1802.8(A) , the applicant should not submit copy(ies) of the work 
+unless the registration specialist  specifically instructs the applicant to do so. See 37 
+C.F.R. § 202.6(e) (7); see also  Section 1802.9(D) . 
+ 1802.9  Examination Guidelines  
+ 1802.9(A)  Errors Caused by the U.S. Copyright Office  
+If the Office discovers an error in a basic registration, and determines that the error was 
+caused by its own action or mistake, the Office will take appropriate measures to correct 
+the registration record. This procedure is known as a “referral.” In this situation, the 
+Office will refund the filing fee  without issuing a supplementary registration. See 37 
+C.F.R. § 202.6(a) ; Supplementary Registration, 81 Fed. Reg. 86,656, 86,660 (Dec. 1, 
+2016) . 
+For more information concerning referrals, see Section 1804 .  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  36 01/28/2021   1802.9(B)  Identifying  the Basic Registration  
+If the applicant fails to provide all of the information requested in the application for 
+supplementary registration or fails to include relevant information that appears in the 
+basic registration, the registration specialist  may add or correct that information with 
+an annotation , such as: “ Information added from Copyright Office records” or 
+“Information corrected  from Copyright Office records.” If the specialist is unable to 
+identify the basic registration based on the information provided in the application, the 
+specialist will communicate with the applicant.  
+ 1802.9(C)  Examination of the Certificate of Registrat ion for the Basic Registration  
+When the U.S. Copyright Office receives an application for a supplementary registration, 
+the registration specialist will compare the information in the application with the 
+information in the basic registration. If the Offic e has a digital copy of the certificate of 
+registration, the specialist should be able to conduct his or her review without obtaining 
+a physical copy of the certificate. If the supplementary registration corrects or amends a 
+registration that is not availa ble in digital form, the specialist will ask the applicant to 
+submit a copy of the certificate via email. If the applicant is unable to do so, the Office 
+will charge an additional fee to make a physical copy of the certificate. This fee is set 
+forth in the  Office’s fee schedule  under the heading “ Provision of an a dditional 
+certificate of registration.” See 37 C.F.R. §§ 201.3(c)(12) , 201.6(e)(5) ; Supplementary 
+Registration, 81 Fed. Reg. 86,656, 86,659 (Dec. 1, 2016) . 
+ 1802.9(D)  Reexamination of the Deposit Copy  
+In some cases, it may be necessary to compare the information provided in the 
+application for supplementary registration with the deposit copy(ies)  which were 
+submitted with the application for the basic registration, particularly if the 
+supplementary registration changes the publication  status of the work, adds additional 
+authors to the registration record, or makes changes to the certificate of registration  in 
+the fields/spaces marked Author Created, Limitation of Copyright Claim, Nature of 
+Authorship, or New Material Added to This Work.  
+If the U.S. Copyright Office does not have the deposit copy(ies) in its possession, or if the 
+deposit copy(ies) cannot be found within the collections of the Library of Congress, the 
+specialist will ask the applicant to submit a replacement deposit together wi th a written 
+declaration confirming that the replacement is identical to the deposit copy(ies) that 
+were submitted with the application for basic registration (including the copyright 
+notice  if the work was published  in the United States before March 1, 1989).  
+ 1802.9(E)  Multiple Corrections and Amplifications Submitted on the Same Application  
+If the applicant discovers errors in the basic registration and missing information that 
+should have be en included in the application for basic registration, the applicant may 
+correct and amplify the information that appears in the basic registration with one 
+application for supplementary registration.  
+If the applicant provides the corrected or amplified in formation in the wrong 
+field/space of the application ( such as  using the amplification field to identify an error in 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  37 01/28/2021  the basic registration), the registration specialist  may issue a supplementary  
+registration without communicating with the applicant. Likewise, the specialist may 
+issue a supplementary registration, even if the specialist disagrees with the applicant as 
+to whether the proposed change constitutes a “correction” or an “amplification.”  See 
+Corrections and Amplifications of Copyright Registrations; Import Statements; and 
+Recordation of Transfers and Other Documents, 43 Fed. Reg. 771, 771 (Jan. 4, 1978) . 
+Example:  
+• Farida Hazra Khan wrote a travelogue titled Get Your Groove On . In 
+2013 Farida’s agent registered the work, but she mistakenly 
+identified the author as Hazra Khan. In the Rights and Permissions 
+field the agent stated that requests to license  the work should be 
+sent to her address in Chicago. The agent subsequently moved to 
+Philadelphia. The author’s correct name and the agent’s current 
+address may be added to the registration record by providing the 
+following information in the online application:  
+− Individual  Author /First, Middle, Last Name : Farida Khan.  
+− Rights & Permissions Information/Address, City, State, Postal 
+Code : 1800 JFK Boulevard, Philadelphia, PA 19101.  
+− Correction Explanation : Author’s first name given incorrectly.  
+− Amplification Explanation : The address for rights and 
+permissions has been changed to 1800 JFK Boulevard, 
+Philadelphia, PA 19101.  
+ 1802.9(F)  Certifi cation Requirements  
+The registration specialist  will review the application for supplementary registration to 
+confirm that the applicant certified the application. The specialist will accept a 
+certification  that includes the name of the individual who certified the application, along 
+with the name of that person’s employer or the business or organization that the person 
+represents, but a  certification that merely recites the name of a business, company, 
+partnership, or other legal entity is unacceptable.  
+When examining an application submitted on Form CA, the specialist will accept a 
+handwritten, printed, or typed signature. The specialist will accept a photocopy of a 
+handwritten signature, a stamped signature , or a signature provided on a preprinted 
+label . Likewise, the specialist will accept a handwritten signature consisting solely of 
+initials or a monogram  if it is accompanied by the typed or printed name of the person 
+who certified the application . If the application has not been signed, the specialist  will 
+ask the applicant to sign space G of Form CA and resubmit the application.  
+On occasion, applicants submit an application for supplementary registration without 
+reviewing the information in the basic registration. In some cases, applicants review the 
+records that are posted on the U.S. Copyright Office’s online database, but those records 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  38 01/28/2021  do not contain all the information that appears in the certificate of registration for a 
+particular work. This may create a discrepancy between the registration recor d and the 
+changes proposed in the application for supplementary registration.  
+As discussed in Sections 1802.8(A)(7)  and 1802.8(B)(6) , the individual who certifies the 
+application must certify that he or she reviewed the certificate of registration for the 
+basic registration. If it appears that this individual did not review the certificate before 
+seeking a supplementary registration, the registration specialist may ask the applicant 
+to resubmit the cla im or may refuse registration.  
+See 37 C.F.R. § 202.6(e) (5); Supplementary Registration, 81 Fed. Reg. 86,656 , 86,660 
+(Dec. 1, 2016) .  
+ 1802.9(G)  Adverse Claims / Actual or Prospective Litigation  
+If the U.S. Copyright Office is aware that there is actual or prospective litigation or an 
+adverse claim  involving a basic registration, the Office may decline to issue a 
+supplementary registrati on until the applicant has confirmed in writing that the dispute 
+has been resolved. For example, the Office may decline to issue a supplementary 
+registration if it seems likely that the proposed change would be directly at issue in the 
+litigation or the ad verse claim. Similarly, the Office may decline to issue a supplementary 
+registration if it seems likely that the proposed change, correction, or amplification may 
+confuse or complicate the pending dispute.  
+Example:  
+• Michelle Peck registered an online video,  naming herself as the 
+author and copyright claimant . Mark Ferrell subsequently 
+registered the same video, naming himself as the author and 
+copyright claimant. Michelle submits an application for  a 
+supplementary registration stating that Mark’s name should be 
+added to her registration as a co -author and co -claimant. In a cover 
+letter, Michelle explains that the parties are involved in a lawsuit 
+concerning the ownership of the copyright. The author ship and 
+ownership of the work appear to be directly at issue in the litigation, 
+and if the Office added Mark’s name to the registration record for 
+Michelle’s registration it could upset the balance between the 
+competing registrations. As a result, the Off ice may decline to issue a 
+supplementary registration until the dispute has been resolved.  
+If the Office is aware that there is litigation or an adverse claim  involving a basic 
+registration, the Office may issue a supplementary registration if the applicant intends 
+to make a minor change to that registration. Similarly, the Office may issue a 
+supplementary registration if the proposed change does not appear to be directly at 
+issue in the dispute. Examples of minor changes or changes that are not likely to be at 
+issue in a legal dispute include spelling mistakes, clerical errors, or changes to the title of 
+the work.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  39 01/28/2021  Example:  
+• Olga Jensen registered a song titled “My Daddy Hated Those 
+Crutches,” namin g herself as the author and copyright claimant. 
+Olga submits an application for supplementary registration stating 
+that the title of the work should be changed to “My Daddy Never 
+Needed Those Crutches.” In the cover letter Olga explains that she 
+intends to  sue a radio station for playing this song without 
+permission. Although there is prospective litigation involving this 
+song, the registration specialist  may issue the supplementary 
+registration b ecause it appears that the title of the work has 
+changed since the registration was made.  
+For a general discussion of adverse claims, see Section 1808 . 
+ 1802.9(H)  Refusal to Register  
+If the U.S. Copyright Office determines that the  applicant is not authorized to file the 
+application for supplementary registration or that the other requirements for a 
+supplementary registration have not been met, the registration specialist  will refuse 
+registration. A  refusal to register only some of the elements in an application for 
+supplementary registration may be communicated in a telephone conversation, by 
+email, or by letter. A decision to reject the entire application will be made by a written 
+communication sent to the correspondent named in the application.  
+If the applicant disagrees with the Office’s decision, the applicant may appeal  that 
+decision within the Office. This is an administrative procedure known as a request for 
+reconsideration . To exercise this option, the applicant should follow the procedures set 
+forth in 37 C.F.R. § 202.5  and Chapter 1700 , Sections 1703 and 1708.  
+ 1802.9(I)  Cancellation of a Basic Registration  
+If the changes proposed in the appli cation for supplementary registration indicate that 
+the work does not constitute copyrightable  subject matter or that the other legal and 
+formal requirements for obtaining a basic registration ha ve not been met, the U.S. 
+Copyright Office may refuse to issue a supplementary registration and may issue a 
+proposal to cancel the basic registration.  
+Although the Office has the authority to cancel a basic registration if these requirements 
+are not met, it may decline to cancel a basic registration if the application for 
+supplementary registration was submitted by or on behalf of any party other than the 
+claimant  named in the basic registration.  
+For a discussion of the practices and procedures for cancelling a basic registration, see 
+Section 1807 .  
+ 1802.10  Certificate of Supplementary Registration  
+If the application to correct or amplify the registration record is appro ved, the U.S. 
+Copyright Office will issue a supplementary registration to the author, claimant , or 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  40 01/28/2021  exclusive licensee  named in the application. But the Office will not notify any other party 
+that a supplementary registration has been made, even if they are listed in the certificate 
+of registration  for the basic registration .  
+The Office will prepare a certificate of supplementary registration that contains 
+pertinent informatio n from the application. The certificate of supplementary 
+registration will be mailed to the address that the applicant provided in the application. 
+In addition, the Office will create a public record for the supplementary registration that 
+identifies and d escribes the changes or revisions that have been made to the registration 
+record.  
+The Office will assign a separate registration number to the supplementary registration. 
+In most cases, this number will begin with the same prefix that appears in the basic 
+registration.  
+ 1802.11  Cross -Referencing the Records for a Basic Registration and a Supplementary 
+Registration  
+As discussed in Section 1802.1 , the U.S. Copyright Office will place a note in the public 
+record for the supplementary  registration that cross -references the registration number 
+and the year of registration for the basic registration. In addition, the Office will place a 
+note in the public record for the basic registration that cross -references the registration 
+number and  the effective date of registration  for the supplementary registration. 37 
+C.F.R. § 202.6(f)(1) . 
+ 1802.12  Registration Decisi on Date and Effective Date of Supplementary Registration  
+The certificate of registration and the online public record for a supplementary 
+registration contain the registration number and effective date for that registration. The 
+certificate may also contain a registration decision date.  
+The “registration decision  date” is the date that the U.S. Copyright Office completed its 
+review of the application for supplementary registration and approved the claim. This 
+date appears on certificates issued on or after August 19, 2019, but it does not appear in 
+the online publ ic record for such claims.  
+The effective date of registration (“EDR”) is the day on which an acceptable application 
+and filing fee , which are later determined by the Register of Copyrights  or by a court of 
+competent jurisdiction to be acceptable for supplementary registration, have all been 
+received in the Copyright Office. ” See 17 U.S.C. § 410(d) .  
+As a general rule, if the applicant makes a reasonable, good faith effort to identify the 
+basic registration that needs to be corrected or amplified and completes the relevant 
+fields/spaces in the application, the effe ctive date of registration will be the date that the 
+Office received the application, provided that the applicant paid the applicable filing fee 
+as of that date.  
+The Office cannot assign an effective date of registration if the changes proposed in the 
+application are improper. See Sections 1802.5  through 1802.7(H) . Likewise, the Office 
+cannot assign an effective date of registration if the applicant submits an unacceptable 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  41 01/28/2021  form of payment, such as uncollectible checks, unsigned checks, postdated checks, 
+mutilated checks, illegible checks, fees made payable in a foreign currency, or the like. If 
+the Office issues a certificate of supplementary registration and if the payment for the 
+filing fee is ret urned for insufficient funds, or if the Office subsequently determines that 
+the registration should not have been issued, the supplementary registration will be 
+cancelled.  
+The effective date of registration for the basic registration and the effective date  of 
+registration for the supplementary registration will coexist with each other in the 
+registration record. The Office maintains both records to allow courts to decide (i) 
+whether the changes made by the supplementary registration are material, and (ii) 
+whether those changes should or should not be deemed effective as of the date that the 
+basic registration was made or the date that the supplementary registration was made.  
+ 1803  New Application for a New Basic Registration   
+This Section discusses the pract ices and procedures for correcting or amplifying the 
+information in a basic registration by filing a new application for a new basic 
+registration.  
+As a general rule, the U.S. Copyright Office will issue only one basic registration to the 
+same claimant  for the same work, and a supplementary registration is the preferred 
+method for correcting or amplifying the information in a basic registration. See 
+Applications for Registration of Claim to Copyright under Revised Copyright Act, 42 Fed. 
+Reg. 48,944, 48,945 (Sept. 26, 1977) .  
+As discussed in Section 1802.7 , there are some cases where a supplementary 
+registr ation cannot be used to correct or amplify the information in a basic registration. 
+In those cases, a new application for a new basic registration may be used to correct an 
+error or omission in a basic registration, instead of filing an application for a 
+supplementary registration.  
+• Claimant issues : If the Office issued a basic registration that correctly identifies an 
+individual as the author of the work, and names a different individual or legal entity 
+as the copyright claimant , the author may file a separate application naming himself 
+or herself as the copyright claimant for that work. See 37 C.F.R. § 202.3(b)(11)(ii) . 
+• Publicati on issues: Basic registration for an unpublished  work that is subsequently 
+published.  If the Office issued a basic registration for an unpublished work that was 
+published  sometime thereafter , the date of publication cannot be added with a 
+supplementary registration. Instead, the applicant may provide the date of publication  
+by submitting a new application for a new basic registration to register the first 
+published edition of the work (even i f the published version “is substantially the 
+same as the unpublished version”). 17 U.S.C. § 408(e) ; 37 C.F.R. § 202 .3(b)(11)(i) . 
+• Publication issues: Published work registered as an unpublished work.  If the applicant 
+incorrectly stated that the work was unpublished, when in fact, the work was 
+published, the date of publication may be added with a supplementary registration, 
+but only if the deposit requirement for the published work and the unpublished  work  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  42 01/28/2021  are the same. If the deposit requirements are different, the applicant cannot correct 
+this error with a supplementary registration. Instead, the applicant must submit a 
+new application for a new basic registration, together with the proper filing fee  and 
+deposit copies for the published edition of the work.  
+• Derivative work issues:  If a work has been changed or revised since it was registered, 
+the changes or revisions cannot be added to the registration record with a 
+supplementary registration. Likewi se, the Office will not issue a supplementary 
+registration for an entirely new work that has not been registered before (even if it 
+is based on a previously registered work). In such cases, the applicant should submit 
+a new application for a basic registra tion together with the proper filing fee and 
+deposit copy(ies) for the derivative work .  
+• Adverse claims:  If the applicant contends that the basic registration is invalid 
+because it was filed  by or on behalf of a party who was not authorized to register the 
+copyright or names the wrong author(s) and/or claimant(s), the applicant should 
+assert an adverse claim . Specifically, the appli cant should file a competing 
+application providing the name(s) of the party(ies) who should have been named as 
+the correct author(s) and/or copyright claimant(s). See 37 C.F.R. § 202.3(b) (11)(iii) . 
+For information concerning this procedure, see Section 1808 . 
+Ordinarily, the registration number and year of registration for the previous registration 
+should be provided in an application for a new basic registration. S pecifically, the 
+applicant should provide this information in the Previous Registration field (in the case 
+of an online application) or on space 5 (in the case of a paper application). But if an 
+applicant intends to assert an adverse claim, the applicant s hould not provide the 
+registration number for the other registration in the Previous Registration field/space. 
+Instead, the applicant should provide a brief statement in the Note to Copyright Office 
+field or in a cover letter indicating that the exact same  work has been registered by 
+another party. The registration specialist  may add a note to the certificate of registration  
+and the online public record  indicating the presence of correspondence in the file or 
+may add a note clarifying that the applicant has asserted an adverse claim.  
+Examples:  
+• Dennis Lockhart and Betty Patton co -wrote a ballad titled “Forever 
+Apart.” The Office issued a basic registration naming Dennis and 
+Betty as the co -authors and Dennis as the sole copyright claimant. 
+Dennis may add Betty’s name to the Name of Claimant field with a 
+supplementary registration.  In the alternative, Betty may file a new 
+application for a new basic registration naming herself as the 
+copyright claimant for this work if the work is jointly owned.  
+• Eliza Kuralt registered a bird watching guide as an unpublished 
+work. Two days later, E liza began selling copies of her guide over 
+the internet. The date of publication cannot be added to the basic 
+registration with a supplementary registration. Eliza may add the 
+date of publication to the registration record by submitting a new 
+application for a new basic registration together with two copies of 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  43 01/28/2021  the first published edition of her guide, even if the published version 
+is substantially the same as the unpublished version.  
+• Matt Bernaski registered a computer program  and mistakenly 
+claimed that the work had not been published before. In fact, Matt 
+distributed the program on a CD -ROM two days before he submitted 
+his application to the Office. The date of publication cannot be 
+added to the  basic registration with a supplementary registration, 
+because the deposit requirement for an unpublished program is not 
+the same as the deposit requirement for a program published on a 
+CD-ROM. However, Matt may file a new application for the 
+published ver sion of this work.  To do so, Matt should submit a 
+sample of the source code  for his program together with one copy of 
+the complete CD -ROM package. Matt should provide the registration 
+number and year of registration for the previous registration in the 
+Previous Registration field. In addition, he should provide the 
+following statement in the New Material Included field (in the case 
+of an online application) or on space 6(b) (in the case of a paper  
+application): “This registration is made to correct a registration that 
+was incorrectly made as unpublished.” If appropriate, the Office 
+may cancel the previous registration and issue a new basic 
+registration for the work.  
+• Tracy Monaghan registered a gene alogy that traces the history of 
+the Monaghan family. Tracy subsequently updated and revised the 
+genealogy after she discovered diaries, photographs, and other 
+information about a distant member of the family. The updates and 
+revisions cannot be added to t he basic registration with a 
+supplementary registration. However, Tracey may file a new 
+application for a new basic registration if the updates and revisions 
+contain a sufficient amount of copyri ghtable  authorship to qualify as 
+a derivative work . 
+A new application for a new basic registration may be filed at any time during the life of 
+the copyright and the application may be submitted b y any of the parties listed in 
+Chapter 400 , Section 402.  
+If the application for the new basic registration is approved, the Office will issue a 
+certificate of registration and will cr eate a public record for that registration. But the 
+Office will not cancel the previous registration or the registration number that has been 
+assigned to that registration, it will not change the information set forth in the previous 
+registration or the pu blic record for that registration, and it will not cross -reference 
+those records with the records for the new basic registration. Instead, the previous 
+registration and the new basic registration will coexist with each other in the public 
+record.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  44 01/28/2021   1804  Referrals  
+If the U.S. Copyright Office discovers an error or omission in a registration record that 
+was caused by its own action or mistake, the Office will correct the record on its own 
+initiative. 37 C.F.R. § 202.6(a) . This procedure is known as a “referral.” If appropriate, 
+the Office will issue a new certificate of registration  containing the correct or missing 
+information, update the online public record  for the claim, and cancel any erroneous 
+registrations that should not have been issued.  
+By contrast, if the applicant asks the Office to correct an error or omission that was 
+caused by the applicant’s action or mistake, the Office will not correct the record  
+through the referral procedure  – even if the registration specialist  should have 
+recognized that error or omission when he or she examined the claim. Instead, the 
+author, the claimant , or one of the other parties listed in Section 1802.1  must submit an 
+application for a supplementary registration, or a new basic registration (if 
+appropriate), together with the requisite filing fee. See Supplementary Registration, 81 
+Fed. Reg. 86,656, 86,660 -61 (Dec. 1, 2016) . 
+There is a limited exception to this rule. If a social security number, driver’s license 
+number, credit card number, or bank account number appears in the certificate of 
+registration  or the online public record , the author, the claimant , or one of the oth er 
+parties listed in Section 1802.1  should contact the Office using the form posted on the 
+U.S. Copyright Office’s website , instead of filing an application for supplementa ry 
+registration. The Office will remove a social security number, driver’s license number, 
+credit card number, or bank account number from the certificate of registration and 
+online public record upon written request. See 37 C.F.R. § 201.2(f) . Likewise, if the Office 
+discovers this type of information entirely on its own, it will remove that information 
+from the registration record without communicating with the applicant. See Removal of 
+Personally Identifiable Information From Registration Records, 82 Fed. Reg. 9004, 9005 
+(Feb. 2, 2017) . 
+For information concerning the procedure for removing and replacing other types of 
+personally identifiable information that may appear in the online public record, see 
+Section 1805 . 
+ 1805  Removal of Personally Identifiable Information  
+The U.S. Copyright Office may collect certain personally identifiable information (PII) as 
+part of the copyright registration application, including home addresses, personal 
+telephone and fax numbers, and personal email addresses. This information may be 
+included in the online public record maintained by the Off ice. 
+In general, an author, claimant of record, or the authorized representative of the author 
+or claimant of record may submit a request to remove or replace certain information in 
+the online public record. This procedure only applies to PII that is reque sted by the 
+Office as part of the registration process. For information about the Office’s policy for 
+handling extraneous PII, such as driver’s license numbers, social security numbers, 
+banking information, or credit card information, see Section 1804 . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  45 01/28/2021  A properly submitted request will be reviewed by the Associate Register of Copyrights 
+and Director of the Office of Public Information and Education to determine whether the 
+reque st should be granted or denied.  The Office’s decision t o grant or deny the request 
+will be made in writing and will be sent to the address indicated in the request.  
+If the request is granted, the Office will remove the information from the online public 
+record. Where substitute information is required and has been provided, the Office will 
+add that information to the online public record. In addition, the Office will add a note 
+indicating that the online record has been modified, and will issue a new certificate of 
+registration that reflects the modified inform ation. The Office will maintain a copy of the 
+original registration record in its offline records.  
+If a request to remove PII is denied, the requesting party may request reconsideration 
+using the procedure described in Section 180 5.4. 
+ 1805.1  Form of Request  
+A request to remove PII must be made in writing. It should be clearly labeled as a 
+“Request to Remove PII,” and it must include the following information:  
+• The copyright registration number(s) associated with the record(s) . 
+• The name of the author and/or claimant of record on whose behalf the request is 
+made.  
+• A statement identifying the specific PII that is to be removed or replaced . 
+NOTE: If the request involves the name of the author or claimant or the claimant’s 
+address, see Se ctions 1805.1(A)  and 1805.1(B)  for additional guidance.  
+• Verifiable substitute non -personally -identifiable information that should replace the 
+PII to be removed, where applicable.  
+• A statement providing the reasons supporting the request.  
+NOTE: If the request does not include verifiable substitute non -personally -
+identifiable information, see Section 1805.1(C)  for additional guidance.  
+• The statement “I declare under penalty of pe rjury that the foregoing is true and 
+correct.”  
+• If the request is submitted by an authorized representative of the author or claimant 
+of record, an additional statement that “I am authorized to make this request on 
+behalf of [name of author or claimant of r ecord].”  
+• A telephone number.  
+• An email address (if available).  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  46 01/28/2021  • A physical mailing address to which the Office’s response may be sent (if no email 
+address is provided).  
+The request must be signed and dated by the author, claimant of record, or the duly 
+autho rized agent of the author or claimant of record. It must be accompanied by the 
+filing fee described in Section 1805.2 , and these items must be sent to the address 
+specified in Section 1805.3 . 
+See generally 37 C.F.R. §  201.2(e)(3) . 
+ 1805.1(A)  Name Change Requests  
+Requests to substitute the name of an author or claimant with that person’s current 
+legal name must be accompanied by a copy of the official documentation of the legal 
+name change. 37 C. F.R. §  201.2(e)(2)(iii) . 
+In no case will the U.S. Copyright Office remove the name of an author or claimant from 
+the online public record. Similarly, the Office will not replace the name of an author or 
+claimant with a pseudonym. Id.  
+Under the Copyright Act, works by anonymous and pseudonymous authors have 
+different terms of copyright protection than works by authors whose real name is 
+revealed in the Office’s records. The term for works  by anonymous and pseudonymous 
+authors is 95 years following the year of first publication, or 120 years following the 
+year of creation, whichever term expires first. The term for works by authors whose 
+legal names are revealed in the Office’s records is t he life of the author plus 70 years. 17 
+U.S.C. §§ 302(a) , 302(c) . In addition, the Act specifically contemplates t hat if the real 
+name of the author of an anonymous or pseudonymous work is identified in the Office’s 
+records during the term of protection, that work will receive a term of life plus 70 years. 
+Id. § 302(c) . If the Office removed the author or claimant’s real name from the online 
+public record, or replaced that name with a pseudonym, it would be contrary to the 
+statutory scheme established by Congress and would likely create confusion re garding 
+the term of copyright protection for the work. See Removal of Personally Identifiable 
+Information From Registration Records, 81 Fed. Reg. 63,440, 63441 -42 (Sept. 15, 201 6). 
+ 1805.1(B)  Claimant Address Change Requests  
+Requests to remove the address of a copyright claimant must be accompanied by a 
+verifiable substitute address. 37 C.F.R. §  201.2(e)(2)(ii) . Removing the claimant’s 
+address from the online public record would impede the public’s ability to contact a 
+copyright owner to obtain permission to use the work. Therefore, the U.S. Copyright 
+Office will not remove this information unless a verifiable s ubstitute address is 
+provided. Id.; see also Removal of Personally Identifiable Information From Registration 
+Records, 81 Fed. Reg. 63,440, 63441 (Sept. 15, 2016) . 
+ 1805.1(C)  Requests Submitted without Verifiable Substitute Information  
+In general, the U.S. Copyright Office will grant a request to remove PII when the 
+requesting party provides verifiable, non -personally -identifiable substitute information, 
+unless the Office determines that the need to maintain the original info rmation in the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  47 01/28/2021  public record substantially outweighs the safety, privacy, or other concern stated in the 
+request.  
+When a requesting party does not provide verifiable substitute information, the Office 
+may grant the request only if the safety, privacy, or o ther stated concern substantially 
+outweighs the need for the information to remain in the public record. In such cases, the 
+requesting party must explain in detail why the presence of PII in the online public 
+catalog presents a specific threat to the indiv idual’s personal safety or personal security, 
+or presents other circumstances that support the request. 37 C.F.R. §  201.2(e)(3)(vi) .  
+ 1805.2  Filing Fees  
+The requesting party must submit  the appropriate filing fee together with the request to 
+remove PII or a request for reconsideration. 37 C.F.R. §  201.2(e)(3) . The current filing 
+fees are set forth in the U.S. Copyright  Office’s fee schedule  in the field marked “Removal 
+of PII from Registration Records.”  
+The requesting party must pay a separate fee for each registration record specified in 
+the request. See 37 C.F.R. § 201.3(c)(19) . In the case of a request for reconsideration the 
+requesting party may pay a flat fee, regardless of the number of registration records 
+involved.  
+Fees may be paid by check,  money order, or bank draft payable to the U.S. Copyright 
+Office, or they may be charged to a deposit account. For more information regarding 
+acceptable forms of payment, see Chapter 1400 , Section 14 12.4. 
+1805.3   Address for Delivery  
+A requesting to remove PII may be delivered to the U.S. Copyright Office by mail. The 
+request should be addressed on the outside of the envelope as follows:  
+Associate Register of Copyr ights and Director of the Office of Public Information 
+and Education  
+U.S. Copyright Office  
+P.O. Box 70400  
+Washington, DC 20024 -0400  
+ 1805.4  Requests for Reconsideration  
+If the request for removal of PII is denied, the requesting party may submit a request 
+reconsideration of that decision. However, the U.S. Copyright Office will consider only 
+one request for reconsideration for each denial.  
+The request must be made in writing and it must specifically address the reasons for 
+denying the request for removal. T he request must be made within thirty days from the 
+date set forth in the denial letter, and it should be clearly labeled as a “Request for 
+Reconsideration of a Denial of a Request to Remove PII.” The request must be 
+accompanied by the non -refundable filin g fee described in Section 1805.2 , and these 
+items must be sent to the address specified in Section 1805.3 .  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  48 01/28/2021  37 C.F.R. § 201.2(e)(7) . 
+1805.5   No Expedited Review  
+Special handling is a procedure for expediting the examination of an application to 
+register a claim to copyright or the recordation of a transfer or other document 
+pertaining to copyright. The U.S. Copyright Offi ce offers this service in certain 
+circumstances where a copyright owner or other interested parties have a compelling 
+reason for the expedited issuance of a certificate. However, the Office will not grant a 
+request for special handling in connection with a  request to remove PII or a 
+reconsideration of such a request.  
+ 1806  Abandonment  
+A basic registration cannot be abandoned with a supplementary registration or an 
+application for a new basic registration. However, the U.S. Copyright Office may record 
+an affidavit, a declaration, a statement, or any other document purporting to abandon a  
+copyright or any of the exclusive rights  granted to copyright owners under Sections 106  
+or 106A  of the Copyright Act. For a discussion of this procedure, see Chapter 2300 , 
+Section 2311.  
+ 1807  Cancellation  
+This Section discusses the  practices and procedures for cancelling a registration issued 
+by the U.S. Copyright Office.  
+ 1807.1  What Is Cancellation?  
+Cancellation is a procedure for invalidating a registration that has been issued by the 
+U.S. Copyright Office.  
+The Register of Copyrights  has the authority to cancel a registration if “the material 
+deposited does not constitute copyrightable subject matter” or if “the claim is invalid for 
+any other reason.” 17 U.S.C. § 410(b) ; see also  Sections 1807.4(B)  through 1807.4(D) . 
+Likewise, the Register has the authority to cancel a r egistration if the registration was 
+made in error or if the registration was issued in the wrong class or series. See Section 
+1807.4(A) . 
+“The Office views cancellation of invalid claims as a necessary measure to ensure the 
+integr ity of the copyright registration system and to ensure consistent application of its 
+regulations and practices.” Cancellation of Completed Registrations, 50 Fed. Reg. 40,833, 
+40,834 (Oct. 7, 1985) . “Without cancellation procedures, a copyright registration could 
+be given prima facie  effect in federal court where the Copyright Office knew the 
+registration to be invalid under its regulations or practices. This would place an unfair 
+burd en on the public and on defendants in copyright litigation to overcome the strong 
+presumption of validity that the courts have generally accorded copyright registrations.” Id. 
+ 1807.2  What Types of Records May Be Cancelled by the U.S. Copyright Office?  
+The Office may cancel the following types of records:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  49 01/28/2021  • A basic registration  issued under Sections 408(a)  or 408(c)(1)  of the Copyright Act.  
+• A supplementary registration  issued under Section 408(d)  of the Copyright Act.  
+• A renewal registration  issued under Section 304  of the Copyright Act or under title 
+17 of the United States Code as it existed before January 1, 1978.  
+• A registration for a mask work or vessel design issued under Sections 908  or 1313  
+of the Copyright Act.  
+The Office will not cancel the following types of records:  
+• A basic registration or renewal registration that has expired, such as a registration 
+issued on or before December 31, 1977 that covered t he first twenty -eight years of 
+the copyright term.  
+• A preregistration issued under Section 408(d)  of the Copyright Act.  
+• Any other type of record maintained by the Office, such as deposit copies  or 
+recorded documents.  
+ 1807.3  Situations Where the U.S. Copyright Office Will Cancel a Registration  
+The Office will cancel a registration only in the following situations:  
+• The Office ha s determined that the work was registered in the wrong class. See 
+Section 1807.4(A) . 
+• A check received in payment for the filing fee  was returned to the Office for 
+insufficient funds. See Section 1807.4(B) . 
+• The Office has determined that the registration should not have been issued because 
+the work does not constitute copyrightable  subject matter or fails to satisfy the 
+other legal and formal requirements for obtaining a copyright registration. See 
+Section 1807.4(C) . 
+• The Office has determined that the application, filing fe e, and/or the deposit 
+copy(ies)  do not satisfy the requirements of the Copyright Act and/or the Office’s 
+regulations and the Office is unable to correct the defect. See Section 1807.4(D) .  
+See 37 C.F.R. § 201.7(b) -(c).  
+ 1807.4  Procedure for Cancelling a Registration  
+The decision to cancel a registration under 37 C.F.R. § 201.7(c)(1)  or (c)(4)  will be made 
+by the Associate Register and Director of Registration Policy & Practice. The decision to 
+cancel a registration un der 37 C.F.R. § 201.7(c)(2)  or (c)(3)  will be made by an 
+appropriate member of the Office’s staff.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  50 01/28/2021  The Office will ame nd the public record to reflect the fact that the registration has been 
+cancelled and will specify the reason for the cancellation. The Office will not return the 
+deposit copy(ies)  or refund the filing fee  for the registration.  
+See generally  Cancellation of Completed Registrations, 50 Fed. Reg. 33,065, 33,065 -67 
+(Aug. 16, 1985) . 
+ 1807.4(A)  Registrations Issued in the Wrong Class or Series  
+If the U.S. Copyright Office determines that the work was registered in the wrong class 
+or series, it may cancel the initial registration and issue a new registration i n the correct 
+class. See 37 C.F.R. § 201.7(c)(3) . This procedure is known as a “cancellation and 
+substitution” or “can -sub.” In most cases the Office will conduct this procedure on its 
+own initiative and without providing advance notice to the claimant or the 
+correspondent named in the registration.  
+When selecting the appropriate class for the new registration, the Office will consider 
+the predominant type of authorship that appears in the work. The applicant’s 
+preferences will not be considered.  
+When the Office issues a cancellation and substitution, i t will cancel the initial 
+registration and add a note to the public record to reflect this change. Then it will create 
+a public record for the substitute registration and send a new certificate o f registration  
+to the mailing address that the applicant provided in the application for the initial 
+registration.   
+Both the certificate of registration and the online public record for the substitute 
+registration will contain the registration number and e ffective date for that registration. 
+The certificate may also contain a registration decision date.  The “registration decision 
+date” is the date that the Office cancelled the initial registration and issued the 
+substitute registration. This date appears on  certificates issued on or after August 19, 
+2019, but it does not appear in the online public record for such claims.  
+The “effective date of registration ” for the substitute registration will be the same as the 
+effective date of registration for the initial registration.  
+Examples:  
+• On April 10, 2005 Pick Up Sticks LLC submitted an application to 
+register an album and asserted a claim  in “music, lyrics, and sound 
+recording .” The Office registered the claim in class SR. Pick Up Sticks 
+subsequently filed an application for supplementary registration 
+stating that the company owns th e music and lyrics embodied in 
+this album, but does not own the copyright in the sound recording. 
+Pick Up Sticks should have registered this claim in class PA, rather 
+than class SR. The Office will cancel the initial registration and will 
+issue a new regis tration in class PA with an effective date of 
+registration of April 10, 2005.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  51 01/28/2021  • Tally Ho, Inc. submitted an application to register its website as a 
+literary work  and stated that the site has been  published  in the 
+United States. The Office issued a registration with an effective date 
+of registration of August 20, 2009 and numbered the registration in 
+series TX. On September 1, 2010 Tally Ho filed an application for 
+supplementary registration statin g that the website is, in fact, 
+unpublished ; therefore, the registration should have been 
+numbered in series TXu. The Office will not cancel the basic 
+registration, but instead, will issue a new registration in the correct 
+series with an effective date of registration of September 1, 2010.  
+ 1807.4(B)  Registrations Cancelled for Failure to Pay the Filing Fee   
+The U.S. Copyright Office will cancel a registration if a check received in payment of th e 
+filing fee  is returned to the Office for insufficient funds or is otherwise uncollectible. 37 
+C.F.R. § 201.7(c)(2) . 
+The appl icant will be notified in writing that the fee could not be collected  and that the 
+registration has been cancelled .  
+If the applicant would like to resubmit the work for registration, the applicant should 
+file a new application, together with new deposit copy(ies)  and the correct filing fee. In 
+appropriate cases, the Office reserves the right to require a certified check or money 
+order, and in all cases, the effective date of registration will be based on the date that the 
+new submission is received by the Office.  
+NOTE:  This practice supersedes the Policy Decision Regarding Immediate Cancellation of 
+Registration in Uncollectible Check Cases set forth in 46 Fed. Reg. 30,221, 30,221 (June 
+5, 1981) . 
+See generally Cancellation of Completed Registrations, 50 Fed. Reg. 33,065, 33,066 -67 
+(Aug. 16, 1985) . 
+ 1807.4(C)  Registrations Cancelled for Lack of Copyrightable Authorship  
+If the U.S. Copyright Office issues a registration and subsequently determines that the 
+work appears to be uncopyrightable, the Office will issue a notice of intent to cancel the 
+registration. The notice will be issued in writing and it will specify the reason(s) for 
+cancelling the registration.  
+The Office will send the notice to the correspondent named in the registration record 
+(including any supplementary registrations that have been cross -referenced with the 
+basic registration). In addition, the Office will send a  copy of the notice to the copyright 
+claimant(s)  at the address specified in the registration record. The Office will not search 
+its records to determine if the claimant has transferred the copyr ight to another party. 
+Likewise, the Office will not contact authors, claimants, or owners of exclusive rights  
+who are not listed in the certificate of registration , even if the Office has reason to 
+believe that they may be adversely affected by the Office’s decision.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  52 01/28/2021  The correspondent will be given thirty days from the date set forth in the notice to show 
+cause in writing why the regis tration should not be cancelled. See 37 C.F.R. § 
+201.7(c)(4) . If the deadline falls on a weekend, a holiday, or any other nonbusiness day 
+within Washington, DC or the federal government, the deadline will be extended until 
+the next federal work day. 17 U.S.C. § 703 . If a response was sent in a timely manner, but 
+arrived in the Office after the relevant deadline, the Off ice may apply the regulation on 
+postal disruptions to determine the timeliness of the response. See 37 C.F.R. § 201.8(b) . 
+If the correspondent fails to respond within thirty days, or if, after considering the 
+correspondent’s written response, the Office determines that the work is not 
+copyrightable , the Office will cancel the registration. See 37 C.F.R. § 201.7(c)(1) .  
+ 1807.4(D)  Registrations Cancelled for Substantive Defects in the Registration   
+If the U.S. Copyright Office registers a work that appears to be copyrightable  but 
+subsequently determines (i) that the statutory requirements for registration were not 
+met, (ii) that essential information was not provided in the application, (iii) that the 
+essential information provided in the application appe ars to be questionable, or (iv) that 
+the correct deposit copy(ies)  were not submitted, the Office may communicate with the 
+correspondent and/or the copyright claimant . 
+In such cases, the Office will send the communication to the correspondent named in the 
+registration record (including any supplementary registrations that have been cross -
+refer enced with the basic registration). In addition, the Office will send a copy of the 
+communication to the copyright claimant named in the basic registration at the address 
+specified in the registration record. The Office will not search its records to deter mine if 
+the claimant  has transferred the copyright to another party and the Office will not 
+contact authors, claimants, or owners of exclusive rights  who are not listed in the 
+certificate of registration , even if the Office has reason to believe that they may be 
+adversely affected by the Office’s decision.  
+The Office will desc ribe the substantive defect in the registration and will ask the 
+correspondent to submit the required information, to submit the correct deposit 
+copy(ies), or to clarify the information provided in the application. See 37 C.F.R. § 
+201.7(c)(4) . In addition, the Office will advise the correspondent that the registration 
+may be cancelled if the defect is not resolved.  
+The correspondent will be given thirty days from the date set forth in the 
+communication to resolve the defect in the registration. If the deadline falls on a 
+weekend, a holiday, or any other nonbusiness day within Washington, DC or the federal 
+government,  the deadline will be extended until the next federal work day. 17 U.S.C. § 
+703. If a written response was sent in a timely manner, but arrived in the Office after the 
+relevant deadline , the Office may apply the regulation on postal disruptions to 
+determine the timeliness of the response. See 37 C.F.R. § 201.8(b) . 
+If the correspondent’s written response resolves the def ect, the Office will correct the 
+registration record and may issue a new certificate of registration with a new 
+registration decision date and effective date of registration , if appropriate. If t he 
+correspondent fails to respond within thirty days, or if, after considering the written 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  53 01/28/2021  response, the Office determines that the defect has not been resolved, the Office will 
+cancel the registration. See 37 C.F.R. § 201.7(c)(4) . 
+Examples of substantive defects that may prompt the Office to cancel a registration 
+under § 201.7(c)(4)  of the regulations include:  
+• The work i s not eligible for copyright protection in the United States under Section 
+104 of the Copyright Act.  
+• The work was registered based on a claim  in material added to a preexisting work, 
+but the application as a whole indicates that the new material is not copyrightable.  
+• The author of the work is neither anonymous  nor pseudonymous , but the author 
+cannot be identified because there is a substantial variance  between the information 
+provided in the appli cation and/or the deposit copy(ies).  
+• The application does not identify the copyright claimant, or it appears from the 
+transfer statement  that the claimant named in the application does not have the 
+right to claim copyright.  
+• The copyright claimant cannot be adequately identified because there is a 
+substantial variance  between the  information provided in the application or the 
+information is unclear.  
+• The work was published in the United States before March 1, 1989, and none of the 
+exceptions set forth in Section  405(a)  of the Copyright Act apply.  
+• The work was published in the United States before January 1, 1978, but the deposit 
+copies do not contain a copyright notice  or the notice is defective.  
+• The Of fice issued a renewal registration  for a work registered or first published in 
+the United States before December 31, 1963, but the renewal application was 
+submitted before or after the statutory time limit.  
+• The Office issued a registration for a group of related works, but subsequently 
+determines that the applicable requirements for that option have not been met.  
+• The application and the deposit copy(ies) do not match each other, and the 
+copy(ies)  described in the application cannot be located elsewhere in the Office or 
+the Library of Congress.  
+• The work was published in violation of the manufacturing provisions of the 
+copyright law as it existed before July 1, 1986.  
+See 37 C.F.R. § 201.7(c)(4)(i) -(xi). 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  54 01/28/2021   1807.4(E)  Voluntary Cancellation  
+As a general rule, the decision to cancel a registration will be made solely by the U.S. 
+Copyright Office acting on its own initiative. However, th e Office may consider a request 
+to cancel a registration, provided that the request is made by the copyright claimant  
+named in the registration record or the claimant’s duly authorized agent  and provided 
+that the following requirements have been met:  
+• Content of the request : The request should identify the registration that will be 
+surrendered for cancellation, including the author(s), ti tle(s), claimant(s), and 
+registration number. The request should provide the full name of the individual who 
+signed the request and should state that that party is the claimant named in the 
+certi ficate of registration  or the claimant’s duly authorized agent. The request 
+should be legible and capable of being imaged or otherwise reproduced by the 
+technology employed by the Office at the time of its submission.  
+• Justification for the request : The req uest should demonstrate that the registration 
+should be cancelled because the work was registered in the wrong class, because the 
+filing fee  has not been paid, because the work is uncopyrightable , or because there is 
+a substantive defect in the registration.  
+• Signature : The request should be signed by the claimant named in the certificate of 
+registration or the claimant’s duly authorized agent. The Office will accept  a printed 
+or typed signature. Likewise, the Office will accept a handwritten signature or a 
+photocopy of a handwritten signature if it is accompanied by the typed or printed 
+name of the person who signed the request.  
+• Payment:  The request should be accompanied by the correct filing fee. See 37 C.F.R. § 
+201.3(d)(11) . The current fee is set forth in the Office’s fee schedule  under the 
+heading “Voluntary cancellation of registration.” The fee may be paid with a check or 
+deposit account. For additional information concerning these payment methods, see 
+Chapter 1400 , Section 1412.4 and 1412.5.  
+The request should be sent to the following address:  
+U.S. Copyright Office  
+RAC Division  
+P.O. Box 71380  
+Washington, DC 20024 -1380  
+If the Office determines that the registration is invalid under  37 C.F.R. § 201.7(c) , it will 
+cancel the registration and notify the claimant in writing.  
+The Office does not invite, and generally will not entertain, req uests to cancel a 
+registration by any party other than the claimant named in the certificate of registration. 
+If the Office receives a request to cancel a registration from a third party, the Office will 
+notify the claimant that the request was received an d will provide the claimant with a 
+copy of that request. However, the Office will not take any other action unless the 
+claimant subsequently submits a request for voluntary cancellation.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  55 01/28/2021  Examples:  
+• John Falcone registered a song titled “Let Us Prey.” The Of fice 
+subsequently receives a letter from Robin Goodwin asserting that 
+the registration should be cancelled, because John does not own the 
+copyright in this work. The Office will not cancel the registration, 
+although it will notify John that the request was  received and will 
+provide him with a copy of the letter. If Robin believes that she is 
+the rightful owner of the copyright, she may submit a separate 
+application to register the song in her own name.  
+• The Rational Group registered a work that contains a bl ank form 
+combined with a substantial amount of text. The Office receives a 
+letter from Entropy LLC stating that the registration should be 
+cancelled, because blank forms are not copyrightable  (citing § 
+202.1(c)  of the regulations).The Office will not cancel the 
+registration, although it will notify the Rational Group that the 
+request was received and will provide the claimant wit h a copy of 
+the letter.  
+The Office will not reinstate a registration after it has been voluntarily cancelled. If the 
+claimant would like to resubmit the claim , the claimant must submit a new appl ication, 
+new deposit copy(ies) , and the correct filing fee. The effective date of registration  will be 
+based on the date that the new submission is received by the Office.  
+ 1807.4(F)  Court Ordered Cancellation  
+Occasionally, the plaintiff(s) and/or defendant(s) in a copyright infringement  lawsuit 
+ask the court to issue an order directing a party to cancel his or her registration. When 
+requesting this type of relief, litigants should ask the court to issue the order to the 
+copyright claimant  named in the certificate of registration  or the claimant’s duly 
+authorized agent . In addition, litigants should ask the court to direct that party to cancel 
+the registration using the procedure described in Section 1807.4(E)  above. See 
+Brownstein v. Lindsay , 742 F.3d 55, 75 (3d Cir . 2014) (“Courts have no authority to 
+cancel copyright registrations because that authority resides exclusively with the 
+Copyright Office.”).  
+ 1807.5  [Reserved]  
+ 1808  Adverse Claims  
+This Section discusses the practices and procedures for asserting an adve rse claim  to 
+copyright. An adverse claim is a situation where:  
+• The U.S. Copyright Office receives two or more applications (either consecutively or 
+simultaneously) to register the exact same work , where each application was 
+certified and submitted by a different applicant, and each application contains 
+conflicting statements regarding the authorship and/or ownership of the work;  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  56 01/28/2021  or 
+• One party submits an application and asserts that another party’s  claim to copyright 
+is unauthorized or invalid.  
+The Office does not conduct interference or adversarial proceedings. Likewise, the Office 
+does not adjudicate factual or legal disputes involving claims to copyright. If there is a 
+dispute between two or mor e parties, it is the responsibility of each party to pursue 
+their claims in an appropriate court.  
+If a party asserts that another party registered the work without authorization or that a 
+previous registration is invalid for any reason, the Office may sugg est that the party 
+register the work in his or her own name by submitting a separate application, deposit 
+copy(ies) , and filing fee . Likewise, an adverse claim may be appropriate if the party does 
+not have the authority to correct or amend the information in the basic registration with 
+a supplementary registration. See Section 1802.1 . 
+When the Office examines an  application, it does not search its records to determine 
+whether the work has been registered before. If an applicant intends to assert an 
+adverse claim, the applicant should provide a brief statement in the Note to Copyright 
+Office field or in a cover le tter indicating that the exact same work has been registered 
+by another party. However, the applicant should not provide the registration number 
+for the other registration in the Previous Registration field/space. The registration 
+specialist  may add a note to the certificate of registration  and the public record 
+indicating the presence of correspondence in the file or may add a note clar ifying that 
+the applicant has asserted an adverse claim.  
+If the application appears to be in order, the Office will register the adverse claim. The 
+Office will notify the other party (or that party’s duly authorized agent) that the Office 
+received an adver se claim and that a separate registration has been issued to that party.  
+If the Office discovers that two or more parties are seeking to register the exact same 
+work, the Office will examine each application to determine if the statutory and 
+regulatory re quirements have been met. The sequence that each application is received 
+in the Office is irrelevant to this determination, and the Office will not conduct 
+opposition or interference proceedings to determine whether one application should be 
+given priority  over the other. See Cancellation of Completed Registrations, 50 Fed. Reg. 
+40,833, 40,835 (Oct. 7, 1985)  (noting the Office does not resolve factual disputes or 
+conduct adversarial procee dings). The Office will inform each party of the other party’s 
+claim. In addition, the Office may ask each party to notify the registration specialist if 
+that party does not wish to proceed with his or her application. If so, that party should 
+submit a req uest to withdraw his or her application using the procedure described in 
+Chapter 200 , Section  208. If a party does not respond to the Office’s inquiry, the Office 
+will p roceed with the examination of that party’s application.  
+In most cases, the Office will issue a separate registration to each party and will create a 
+separate public record for each registration. The Office will not cancel the other 
+registration or the reg istration number that has been assigned to that registration, it will 
+not change the information set forth in the other registration or the public record for 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  57 01/28/2021  that registration, and it will not cross -reference those records with the records for the 
+new regi stration. Instead, each registration will coexist with each other in the public 
+record.  
+Examples:  
+• BrandImage LLC created a logo for the Shenanigans Amusement 
+Park. Shenanigans registered the logo, naming itself as the sole 
+author and copyright claimant  and stating that the logo was created 
+for the amusement park as a work made for hire . BrandImage 
+claims that the registration is invalid , because a logo is not one of 
+the types of works that can be created as a work made for hire and 
+because BrandImage never assigned the copyright in this work to 
+Shenanigans. The information in the basic registration cannot be 
+corrected with a supplementar y registration. However, BrandImage 
+may file a new application for a new basic registration naming itself 
+as the sole author and the sole copyright claimant. If BrandImage 
+submits a new application, the Office may notify Shenanigans that 
+the filing has bee n made, provided that the Office is aware that 
+BrandImage is seeking to register the same work.  
+• Mark O’Meara registered a podcast, naming himself as the copyright 
+claimant. Buzz Allston subsequently sends a letter to the Office 
+stating that the registratio n is invalid, because Buzz (not Mark) 
+owns the copyright in this work. The Office will refuse to cancel or 
+amend Mark’s registration and will explain that the Office does not 
+resolve factual disputes or conduct adversarial proceedings. 
+Instead, the Office will suggest that Buzz submit an application to 
+register the podcast in his own name. If Buzz’s application is 
+approved, the Office will notify Mark that a separate registration has 
+been made.  
+• The registration specialist receives two applications to regist er the 
+same airbrush drawing. One application names ABC Graphics as the 
+author and copyright claimant and states that the company’s 
+employees created the drawing as a work made for hire. The other 
+application names an individual as the author and copyright  
+claimant and states that the drawing is not a work made for hire. 
+The specialist will communicate with each applicant. Both parties 
+assert that they are the correct author/claimant and provide a 
+plausible explanation for their respective positions. The re gistration 
+specialist will register both claims.  
+• Robb Bay submits an application to register a song, naming himself 
+as the author and copyright claimant. In the Note to Copyright Office 
+field, the applicant states that Charles Stabillac registered the song 
+without authorization and that the parties are engaged in a legal 
+dispute concerning the ownership of this work. If Robb’s application 
+satisfies the registration requirements, the specialist will register 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 800  :  58 01/28/2021  the claim. The specialist will notify Charles that a new basic 
+registration has been issued to Robb, and the specialist will notify 
+Robb that Charles has been made aware of this development.  
+ 

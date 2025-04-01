@@ -1,0 +1,1856 @@
+ 
+Chapter 1 000  :  1 01/28/2021  C O M P E N D IUM: Chapter 10 00 
+Websites and Website Content  
+   
+1001  What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  4 
+1002  Definitions  ................................ ................................ ................................ ................................ ................................ ............  4 
+1002.1  Website  ................................ ................................ ................................ ................................ ................................ ..................  4 
+1002.2  Website Conte nt ................................ ................................ ................................ ................................ ................................ . 5 
+1002.3  Hypertext  ................................ ................................ ................................ ................................ ................................ ..............  5 
+1002. 4 Hypertext Markup Language (HTML) ................................ ................................ ................................ ........................  5 
+1002.5  Cascading Style Sheets  ................................ ................................ ................................ ................................ .....................  6 
+1002.6  Databases  ................................ ................................ ................................ ................................ ................................ ..............  6 
+1003  Identifying the Authors of a Website  ................................ ................................ ................................ .........................  7 
+1003.1  Distinguishing Between Individual Authors, Joint Au thors,  and Works Made for Hire  ........................  7 
+1003.2  Distinguishing Between Authorship and / or Ownership When the Owner  of a Website Hires a 
+Third Party to Create Content for That Site  ................................ ................................ ................................ .............  7 
+1003.3  Copyrightable Content Contained in or Added to a Website  ................................ ................................ ............  8 
+1003.4  User Generated Content (UGC)  ................................ ................................ ................................ ................................ ..... 8 
+1004  Identifying the Owner of Website Content  ................................ ................................ ................................ ..............  9 
+1005  Transfer of Ownership by Terms of Service  ................................ ................................ ................................ .........  10 
+1006  Copyrightable Subject Matter  ................................ ................................ ................................ ................................ .... 10 
+1006.1  Literary Works  ................................ ................................ ................................ ................................ ................................ . 11 
+1006.1(A)  Hypertext Markup Language (HTML) ................................ ................................ ................................ .....................  12 
+1006.1(B)  Databases  ................................ ................................ ................................ ................................ ................................ ...........  13 
+1006.2  Visual Art Works  ................................ ................................ ................................ ................................ .............................  13 
+1006.3  Works of the Performing Arts  ................................ ................................ ................................ ................................ .... 14 
+1006.4  Compilation Authorship  ................................ ................................ ................................ ................................ ...............  14 
+1007  Uncopyrightable Material  ................................ ................................ ................................ ................................ ............  15 
+1007.1  Ideas for Websites, Website Operation, or Website Structure  ................................ ................................ ...... 15 
+1007.2  Domain Names and URLs  ................................ ................................ ................................ ................................ ............  15 
+100 7.3 Hypertext Links  ................................ ................................ ................................ ................................ ...............................  16 
+1007.4  Layout and Format  ................................ ................................ ................................ ................................ .........................  16 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  2 01/28/2021  1008  Registration Issues  ................................ ................................ ................................ ................................ .........................  17 
+1008.1  The Scope of a Registration for Website Content  ................................ ................................ ...............................  17 
+1008.2  Unclaimable Material Must Be Excluded from the Claim  ................................ ................................ ................  17 
+1008.3  Publication Issues  ................................ ................................ ................................ ................................ ...........................  18 
+1008.3(A)  What Constitutes Publication?  ................................ ................................ ................................ ................................ .. 18 
+1008.3(B) Reproduction and Distribution Distinguished from Performan ce  and Display  ................................ .... 19 
+1008.3(C)  The Authorization Requirement  ................................ ................................ ................................ ...............................  20 
+1008.3(D)  Implied Nonexclusive License or Authorization ................................ ................................ ................................ . 21 
+1008.3(E)  Intermediate or Buffer Copies Made in the Course of Stream ing ................................ ................................  22 
+1008.3(F)  Determining the Publication Status of a Work Made Available Only Online  ................................ ...........  23 
+1008.4  Identifying the Work(s) That May Be Included in the Claim  ................................ ................................ .........  24 
+1008.5  Identifying the Specific Version That May Be Included in the Claim  ................................ ..........................  25 
+1008.6  Distinguishing Between Published and Unpublished Content ................................ ................................ ...... 25 
+1008.6(A)  Published Website Content  ................................ ................................ ................................ ................................ .........  26 
+1008.6(B)  Unpublished Website Content  ................................ ................................ ................................ ................................ ... 27 
+1008.7  Statutory Damages  ................................ ................................ ................................ ................................ .........................  27 
+1009  Application Tips for Websites and Website Content  ................................ ................................ ........................  28 
+1009.1  Type of Work  ................................ ................................ ................................ ................................ ................................ .... 28 
+1009.2  Title of This Work  ................................ ................................ ................................ ................................ ...........................  29 
+1009.3  Year of Completion  ................................ ................................ ................................ ................................ .........................  30 
+1009.4  Date and Nation of First Publication  ................................ ................................ ................................ .......................  31 
+1009.4(A)  Date of Publication  ................................ ................................ ................................ ................................ .........................  32 
+1009 .4(A)(1)  Date of First Publication for the Original Version of a Work  ................................ ................................ .........  33 
+1009.4(A)(2)  Date of First Publication for Subsequent Versio ns of a Work  ................................ ................................ ....... 33 
+1009.4(A)(3)  Content Published Online and in Hard Copy Form  ................................ ................................ ............................  33 
+1009.4(B)  Nation of First Publication  ................................ ................................ ................................ ................................ ..........  33 
+1009.5  Name of Author  ................................ ................................ ................................ ................................ ...............................  34 
+1009.6  Author Created / Nature of Authorship Statements  ................................ ................................ .........................  35 
+1009.6(A)  Acceptable Terminology for an Application to Register a Website  or Website Content  ...................  36 
+1009.6(B)  Unclear Terminology for an Application to Register Website Content  ................................ .....................  37 
+1009.6(C)  Unacceptable Terminology for an Application to Register a  Website or Website Content  ..............  37 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  3 01/28/2021  1009.7  Claimant  ................................ ................................ ................................ ................................ ................................ .............  38 
+1009.8  Limitation of Claim  ................................ ................................ ................................ ................................ .........................  39 
+1010  Deposit Requirements for Website Content ................................ ................................ ................................ .........  41 
+1010.1  Deposit Requirements for Registration  ................................ ................................ ................................ .................  41 
+1010.2  Deposit Requirements for Works Published Online and in  Hard Copy Format  ................................ .... 43 
+1010.3  Deposit Requirements for Unpublished Works and Works  Published Solely Online  .........................  43 
+1010.4  Uploading Large Files or Large Numbers of Files to the Electronic Registration System  ..................  45 
+1010.5  The Deposit Material Must Match the Material Claimed in the Application  ................................ ............  45 
+1010.6  Deposit Requirements for Specific Types of Website Content  ................................ ................................ ...... 46 
+1010.6(A)  The Initial Version of a Published Website  ................................ ................................ ................................ ...........  46 
+1010.6(B)  Subsequent Versions of a Published Website  ................................ ................................ ................................ ...... 46 
+1010.6(C)  Revised Website Content  ................................ ................................ ................................ ................................ .............  46 
+1010.6(D)  Compilations  ................................ ................................ ................................ ................................ ................................ ..... 46 
+1010.6(E)  Hypertext Markup Language (HTML) ................................ ................................ ................................ .....................  47 
+1010.6(F)  Computer Programs Contained or Embedded Within a Website  ................................ ................................  47 
+1010.6(G)  Databases Contained or Embedded Within a Website  ................................ ................................ .....................  47 
+1010.6(H)  Electronic Serials  ................................ ................................ ................................ ................................ ............................  47 
+1010.7  Mandatory Deposit  ................................ ................................ ................................ ................................ .........................  47 
+ 
+Chapter 1 000  :  4 01/28/2021  C O M P E N D I U M : Chapter 1000  
+Websites and Website Content  
+ 1001  What This Chapter Covers  
+This Chapter  discusses the U.S. Copyright Office’s policies  and procedures for the 
+examination and registration of copyrightable  content contained on websites.  
+• For a general overview of the registration proc ess, see Chapter 200 . 
+• For a general discussion of copyrightable authorship, see Chapter 300. 
+• For a discussion of who may file an application, see Chapter 400 . 
+• For guidance in identifying the work that the appli cant  intends to register, see 
+Chapter 500 . 
+• For guidance in completing the fields/spaces of a basic application , see Chapter 600 . 
+• For guidance on the filing fee , see Chapter 1400 . 
+• For guidance on submitting the deposit copy , see Chapter 1500 . 
+For guidance concerning the practices and procedures relatin g to specific types of 
+works, see the following chapters:  
+• For a discussion of literary works , see Chapter 700 .  
+• For a d iscussion of works of the performing arts , see Chapter 800 .  
+• For a discussion of visual art works , see Chapter 900 .  
+ 1002  Definitions  
+This Section provides a brief definition for many of the terms that are used throughout 
+this Chapter.  
+ 1002.1 Website  
+For purposes of copyright registration, the U.S. Copyright Office defines the registrable 
+content of a “ website ” as a webpage or set of interconnected webpages, including a 
+homepage, located on the same computer or server ( i.e., fixed  together on that computer 
+or server), and prepared and maintained as a collection of information by a person, 
+group, or organization.   
+Members of the public access the information  and other w orks on a website by using a 
+uniform resource locator (“URL”) that is organized under a particular domain name. 
+Each URL address or file -path leads to a distinct webpage or file resource. When the 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  5 01/28/2021  user opens a webpage with a browser application, the user’s  computer retrieves data 
+from the URL and the browser assembles, coordinates, and arranges the data for 
+presentation as a screen display based on a set of layout instructions from the hypertext 
+markup language (“HTML”), style sheet, or other markup languag e for that page. The 
+actual content of the website may be embedded in the HTML or may be contained in a 
+file retrieved by the markup language.  
+A key element of a website is that the user can browse through the content on the site by 
+scrolling through each  webpage, by using internal hypertext links, or by using a search 
+feature. This is in contrast to a database , which does not disclose the underlying content 
+to the user but instead requires a sea rch query to find and access particular information 
+contained within the database that matches the parameters of each query.  
+ 1002.2  Website Content  
+For purposes of copyright registration, “website content” is material that is perceptible 
+to the users of a  particular  website . This may include literary or textual works (such as 
+news articles or literature) that are visibly displayed on a website, works of the 
+performing arts  (such as music, sound recordings , motion pictures , other audiovisual 
+works  and computer games) t hat are displayed or performed on a website, and two -
+dimensional visual art works  (such as drawings,  photographs , or illustrations) that are 
+displayed on a website.  
+A work that is perceptible to  the user only by downloading or separately purchasing 
+that particular work is not considered part of the website for registration purposes and 
+must be registered separately. Likewise, externally linked content ( i.e., content residing 
+on another website or  another server) is not considered part of the website’s content for 
+registration purposes.  
+ 1002. 3 Hypertext  
+Hypertext consists of text or graphics displayed on a webpage that allow the user to link 
+to other content or webpages. As a general rule, these links are dynamic addresses that 
+redirect the user to a particular part of the same page (in the manner of a bookmark), 
+another page within the  website  (i.e., an internal link), or an external website ( i.e., an 
+external link). In some cases, the exte rnal link may be an “inline” link that presents the 
+external content within a frame on the linking site ( i.e., “framing” the content).  
+ 1002. 4 Hypertext Markup Language (HTML)  
+Hypertext markup language (“HTML”) is the standard markup language used in the 
+design of websites . HTML establishes the format and layout of text and graphics when a 
+user views a website by instructing the user’s browser to present material in a specified 
+manner.  HTML may be hand -coded, but it is often generated by web design software  
+programs. For registration purposes, HTML is not considered a computer program.  
+For a definition and discussion of computer programs, see Chapter 700 , Section 721.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  6 01/28/2021   1002. 5 Cascading Style Sheets  
+Cascading Style Sheets (“CSS”) are a method of presenting structu red documents. They 
+are used to format and layout the organization and a uniform presentation  of webpages 
+written in a markup language , such as HTML . 
+ 1002.6  Databases  
+For purposes of copyright registration, the U.S. Copyright Office defines a “ database ” as a 
+compilation  of digital information comprised of data, information, abstracts, images, 
+maps, music, sound recordings , video, other digitized material, or references to a 
+particular subject or subjects. In all cases, the content of a database must be arranged in 
+a systematic manner and it must be accessed solely by m eans of an integrated 
+information retrieval program or system with the following characteristics:  
+• A query function must be used to access the content.  
+• The information retrieval program or system must yield a subset of the content or it 
+must organize the co ntent based on the parameters specified in each query.  
+In other words, a database generally consists of two fundamental elements: (i) a data set 
+or multiple data sets, and (ii) an information retrieval program or system that serves as 
+the sole entry point into the underlying data, information, or files. Typically, the party 
+that created the information retrieval program or system is not the same party that 
+created the copyrightable  content contain ed within the database. An application to 
+register a database typically covers the selection, coordination, and/or arrangement of 
+the data, information, or files, but does not cover the data, information, or files unless 
+they are specifically  claimed  in th e application.  
+Websites may contain databases, but they are not considered databases for the purpose 
+of copyright registration. Generally, users may access all the content on a website by 
+browsing through the pages of the website or its hierarchical struct ure. By contrast, 
+users generally cannot access the content of a database in its entirety. Instead, users 
+retrieve specific data, data sets, or other content from the database by using a query 
+function that fetches content that meets the particular criteri a provided by the user. 
+Whereas the content of  a website is wholly displayed online, the data contained within a 
+database is displayed only to the extent that it matches a particular query that a specific 
+user enters into the information retrieval system. Not all search functions qualify as 
+information retrieval programs or systems. For instance, a website may provide a 
+search feature to assist users in locating particular information on the site, but this does 
+not transform the website into a database beca use the search feature is not the sole 
+entry point for accessing the underlying data or files.  
+For additional information concerning databases, see Chapter 700 , Section 727.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  7 01/28/2021   1003  Identifying the Authors of a Website  
+ 1003.1  Distinguishing Between Individual Authors, Joint Authors,  
+and Works Made for Hire  
+Websites often contain multiple types of copyrightable  content , including literary  works , 
+visual art  works , and performing arts works . The authors of the content may include 
+visual artists, web designers, bloggers, coders, musicians, singer songwriters, among 
+others . These authors may be individual contributors to the website, multiple authors 
+who contributed to a group project, or employe es of a company .  
+When an individual creates a work  of authorship , generally he or she is considered the 
+author  of that work . If two or more individuals create a work, they are considered joint 
+authors and the work is considered a joint work . See 17 U.S.C. § 10 1 (definition of “joint 
+work”). When an individual creates a work during the course of his or her employment, 
+that indi vidual is not considered the author; the employer is considered the author and 
+the work is considered a work made for hire . See id. (definition of “work made for hire”).  
+For a definition and detailed discussion of joint works and works made for hire, see 
+Chapter 500, Sections 505 and 506 .  
+ 1003.2  Distinguishing Between Authorship and  / or Ownership  When the Owner  
+of a Website Hires a Thi rd Party to Create Content for T hat Site  
+When an employee of a business or other organization designs or creates content for the 
+employer’s  website  while acting within the scope of his or her employment, the 
+employe e’s contribution is considered a work made for hire . In such cases, the employer 
+is considered the author and the copyright owner of the website and the copyrightable  
+content created by the employee.  
+In many cases, an individual, organization, or company will hire another individual or 
+entity to create a website. In such cases, the hired individual or entity is considered an 
+independent  contractor and any authorship created by the independent contractor is 
+authored and owned by that individual or entity. This is the case even if the hiring party 
+paid the independent contractor to create the website, much like a bride and groom that 
+hired  a photographer to take photos at their wedding. In such cases, the photographer is 
+considered the author and the owner of the copyright in the  photos , even though the 
+bride and groom paid the photographer for his or her time and purchased copies of the 
+photos. Likewise, the author and owner of the copyright in a website may be distinct 
+from the owner of the tangible copies of that website content, notwithstanding the fact 
+that the hiring party purchased those copies or paid for the web designer’s services.  
+In such cases, the independent contractor always remains the author of the work 
+created. That individual or entity may transfer  ownership of the exclusive rights  
+comprising the copyright only by means of a signed, written agreement that transfers or 
+exclusively licenses those rights to another party.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  8 01/28/2021  Example:  
+• Wendy Genoa is a website designer who works as an independent 
+contractor. Val  Miller hired Wendy to create a website for his small 
+business. Wendy created the copyrightable backgrounds, banners, 
+and other graphics for the website, as well as the selection, 
+coordination, and arrangement of the pages of the site. Val submits 
+an appli cation to register the website naming himself as the author 
+and claimant . The deposit copies  clearly indicate that Wendy 
+contributed copyrightable authorship to the work and the 
+application contains no transfer sta tement . The registration 
+specialist  will communicate with the applicant , because Wendy 
+appears to be the author of this content and Va l does not appear to 
+be the proper claimant unless there was a valid transfer of 
+ownership via a signed written agreement.  
+For further information on issues involving the ownership of a website or website 
+content, see Section 1004 . 
+ 1003.3  Copyrightable Content Contained in or Added to a Website  
+Websites often contain contributions that constitute separate and independent works in 
+themselves, such as text, photographs , videos, sound recordings , and the like. In such 
+cases, the website is typically a form of collective work  in which a number of component 
+works are selected, coordinated, and/or arranged into a coll ective whole, while the 
+components works typically are contributions to the collective work.  
+The creator of the website may be the author and owner of the website as a whole, while 
+another party or parties may be the author(s) and owner(s) of particular works 
+contained within the site. In many cases, multiple applications  may be required to 
+regist er the copyright in all the works contained within a website, unless there has been 
+a valid transfer  of ownership for the copyright interest in each of the component works  
+(assuming those works w ere not previously published or registered) . 
+ 1003.4  User Generated Content (UGC)  
+Many  websites  allow users to post content that they created , such as comments, 
+reviews , photographs , or videos . This type of material is known as user generated 
+content (“UGC”).  
+As a general rule, t he user is the author of any original expression that he or she creates 
+and post s to a website, and the user own s the copyright in that material unless he or she 
+transfers  ownership of all the exclusive rights  to the website owner pursuant to a valid, 
+signed, written transfer of ownership.  
+For more information on ownership issues  involving UGC , see Section 1005. 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  9 01/28/2021   1004  Identifying the Owner of Website Content  
+For purposes of copyright registration, the owner of  website  content is either (i) the 
+author of the content or (ii) a copyright owner that owns all the exclusive rights  in that 
+content. When completing an application to register website content, the owner of the 
+content should be identified in the application as the “ claimant. ” Although the author of 
+the content or the copyright owner of that content are the only parties who are entitled 
+to claim  ownership of the copyright in that material, an application to register that claim 
+may be signed and submitted by any of the parties listed in Chapter 400 , Section 402.  
+The author of website content may be named a s a claimant even if the author 
+transferred some or all of the exclusive rights in that content  to another party. A 
+copyright owner that owns all of the exclusive rights in website content may be named 
+as a claimant, provided that the copyright in that content  was transferred to the owner 
+pursuant to a valid signed, written agreement. If the website contains content authored 
+by a third party and if the copyright in that content has not been fully transferred to the 
+claimant, the applicant  should expressly exclude that content from the claim.  
+If an individual, company, or organization hires an independent contractor to design a 
+website and/or create copyrightable  content for the website, the hiring party may have 
+a contractual or implied right to use the website and/or the content for the purpose for 
+which it was intended. However, the hiring party does not own the  copyright in that 
+content and cannot be named as a claimant unless there was a valid transfer  of 
+ownership in the copyright from the independent contractor to the hiring party.  
+Examples:  
+• Trashy Productions LLC operates a fashion blog called 
+“OneGirlsTrash;” Jake Rag is an employee of the company. Jake shot 
+a video of street fashion and uploaded it to the company’s website. 
+Jake submitted an application to register the video as a “ motion 
+picture ,” naming Trashy Productions as the author and claimant 
+with the work made for hire  box checked “yes.” The registration 
+specialist  will register the claim.  
+• Madge Pash enters into a signed, written agreement with a well -
+known artist granting Madge a nonexclusive license  to display the 
+artist’s drawings on her website. Madge submits an application to 
+register the content of her website, naming herself as the 
+claimant/owner of the drawings “by nonexclusive license.” The 
+registration specialist will refuse to register the cl aim in the 
+drawings, because a nonexclusive license is not a transfer of 
+ownership, and because Madge is neither the author of the drawings 
+or the owner of all the exclusive rights in those works.  
+For guidance in identifying the claimant and providing a transfer statement , see  Section 
+1009.7  and Chapter 600 , Sections 619 and 620. For inform ation on the procedure for 
+excluding third party material from a claim, see  Section 1009.8  and Chapter 600 , Section 
+621.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  10 01/28/2021   1005  Transfer of Ownersh ip by Terms of Service  
+In some cases, an individual author may be asked to accept the terms of service for a 
+website before the author uploads UGC to that site. If the terms of service state that the 
+website becomes the owner of all the exclusive rights  in any works that are lawfully 
+uploaded to that site, the author may be deemed to have transferred ownership of the 
+copyright in that UGC through a written, digitally -signed transfer  agreement. See 
+Metropolitan Regional Information Systems v. American Home Realty Network, Inc. , 722 
+F.3d 591 (4th Cir. 2013).  
+While this issue has not been addressed by many courts, at present  the U.S. Copyright 
+Office will accept an application that names the owner of a website as the claimant  for 
+UGC that has been uploaded to that site, but only if the applicant  identifies the authors of 
+that content in the application and confirms that the authors transferred their rights to 
+the claimant. The Office encourages applicants to name all the authors of the UGC that is 
+claimed i n the application. However, if the content was created by a large number of 
+authors, the Office will accept an application that provides representative names of 
+some of the authors and the number of additional authors who contributed to the 
+content that is  included in the claim  (e.g., “B.F. Pierce, John McIntyre, Hank Blake, Walter 
+O’Reilly, and 14 others”). In any claim of ownership involving a “click -through” 
+agreement or terms of service agreem ent, the claimant must know and have a  record of 
+the names of the authors who transferred ownership of all the exclusive rights to the 
+claimant. To verify this requirement, the registration speci alist  may request additional 
+information from the applicant. In such cases, the specialist will not accept transfers 
+from anonymous , pseudonymous , or unidentified authors as a valid transfer of 
+ownership.  
+ 1006  Copyrightable Subject Matter  
+Section 10 2(a)  of the Copyright Act states that copyright protection only exten ds to 
+“original works of authorship.” 17 U.S.C . § 102(a) . To satisfy this requirement, a work 
+must be fixed  in a tangible medium of expression, it must be created by a human being, 
+it must constitute copyrightable  subject matter, and it must contain a sufficient amount 
+of creative expression.  
+A websit e in and of itself is not explicitly recognized as copyrightable subject matter, 
+although it may contain copyrightable subject matter that falls within one or more of the 
+categories of authorship set forth in Section 102(a) , and/or it may qualify as a compilation , a 
+collective work , or a derivative work . A website is merely a medium of fixation  for 
+works of original authorship, but it is not a work of authorship in and of itself. In other 
+words, it is a vehicle for the dissemination of content, which may or may not be 
+copyrightable. Like any medium for copyrightable expression, such as a book, DVD, or 
+CD-ROM, it is the content of the website —not the medium of expression —that comprises  
+the copyrightab le authorship that may be registered with the U.S. Copyright Office.  
+Websites may contain three layers of potentially copyrightable authorship:  
+• Websites contain content that is made perceptible on the website’s pages in the 
+form of text or digital files. W ebsites usually contain multiple forms of content, such 
+as text, computer programs , photographs  and other two -dimensional artwork, 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  11 01/28/2021  musical works, sound recordings , dramatic works, and motion pictures  or other 
+audiovisual works . Website content may be registered if it constitutes copyrightable 
+subject matter and if it contains a sufficient amount of original authorship. The 
+Office applies the same rules when examining these types of works, regardless of 
+whether they are made ava ilable on a website or other online medium or whether 
+they are made available in a hard copy format.  
+• Websites may contain compilation authorship. Specifically, there may be authorship 
+in the way in which the copyrightable text and/or digital files are sel ected, 
+coordinated, and/or arranged on a particular webpage, or the way in which the 
+pages of the overall website are selected, coordinated, and/or arranged, such as the 
+manner or hierarchy in which the pages are connected or linked to each other. In 
+many cases, the author or claimant  of the selection, coordination, and/or 
+arrangement may not be the same as the author of the individual elements within 
+the website. If the selection, coordination, a nd/or arrangement is sufficiently 
+creative, the website may be registered as a compilation, collective work, or 
+derivative work.  
+• Websites contain underlying markup language or style sheets that structure, 
+arrange, and coordinate the manner in which the use r views or otherwise perceives 
+the content on the site through the his or her browser. The underlying markup 
+language for a website may or may not contain copyrightable authorship. Moreover, 
+markup language may or may not be authored by the creator of the website, but 
+instead may be generated by the website design software that the creator used to 
+create the website.  
+Websites are somewhat unique as vehicles for the dissemination of content. Unlike a 
+tangible object, such as a printed magazine or a roll of film, websites are not static 
+containers for content. They are dynamic containers that may change over time as often 
+and to the extent that the website owner wishes. In addition, websites are not linear 
+from beginning to end, but rather may be browsed i n many varied ways.  
+Although websites are dynamic, copyright protection in the United States extends only 
+to fixed  works of authorship that fall under the categories provided in  Section  102(a)  of 
+the Copyright Act. The Office will register a claim  in website content only as it exists at 
+the time that the application i s received. The Office will not register a claim in website 
+content as it may exist in the future if that content has not been fixed yet.  
+For information concerning specific types of website content, see Sections 1006.1  
+through 1006.4 . For general information on what constitutes copyrightable subject 
+matter and copyrightable authorship , see  Chapter 300 , Sections 307 and 308. For 
+general information concerning compilations, collective works, and derivative works, 
+see Chapter 300 , Sections 311 and 312, and Chapter 500 , Sections 507, 508, and 509.  
+ 1006.1  Literary Works  
+Websites typically contain some text or literary authorship. Websites also may include 
+specific types of literary works , such as poems, short stories, news articles, blog entries, 
+databases , and computer software. This type of website content may be claimed in an 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  12 01/28/2021  application if it is sufficiently creative. However, a claim in text or literary authorship 
+does not extend to titles, short phrases, s tandard navigational text, or other 
+insufficiently creative or functional elements.  
+ 1006.1(A)  Hypertext Markup Language (H TML ) 
+An applicant  may register HTML as a literary work  if it was created by a human being 
+(rather than a  website  design program) and if it contains a sufficient amount of creative 
+expression. The claim  may include the HTML underlying an entire website or it may be 
+limited to specific webpages. In all cases, the claimant  must be the author of the HTML 
+or must own all of the exclusive rights  in the HTML . If the HTML contains an appreciable 
+amount of previously published , previously registered, or public domain material, that 
+material should be excluded from the claim . For a definition and discussion of the 
+differences between an applicant, author, and claimant, see Chapter 400 . 
+The Office will not register HTML as a computer program , because HTML does not 
+constitute source code . HTML is a markup language that merely formats the text and 
+files on a webpage in much the same wa y that the codes in a word processing program  
+format the characters and spaces in a document.  
+Unlike computer programs that are hand -coded by programmers using computer 
+programming languages, HTML is frequently generated by website design software that 
+provides templates or WYSIWYG (“What You See Is What You Get”) functionality. If the 
+website design software automatically creates the HTML, the website designer is not 
+considered the author of the resulting markup language. By analogy, when an author 
+create s a document using a word processing program, the author may insert text, 
+spaces, and paragraphs, choose the font and the size of the letters, and select the color of 
+these elements, but those decisions do not constitute copyrightable  authorship. In such 
+cases, the author of the document cannot assert a claim in the codes generated by the 
+word processing program, because those codes were created by the program itself. The 
+same is true for HTML tha t is automatically generated by website design software.  
+The HTML for a website typically contains any text that is viewable on the site, because 
+the HTML formats, colors, sizes, and lays out the text on each webpage. If an applicant 
+intends to register th e text within a website, the applicant should submit the text as it is 
+rendered on the webpage; there is no reason to submit the HTML.  
+To register a claim in HTML the applicant must submit copy(ies) of the entire work . The 
+applicant may not rely on the re gulations governing computer programs, which allow 
+applicants to submit only a portion of the source code.  
+A registration for HTML and/or accompanying text will extend to the original text that is 
+embedded in the HTML (i.e., the series of letters and numbe rs, interspersed with file 
+names and/or text). However, it will not extend to the formatting and layout of text or 
+digital files on a webpage that may be dictated by the HTML or style sheets. A claim in a 
+computer program may cover the screen displays  and other content generated by the 
+program, but a claim in HTML does not extend to the screen displays or any content of 
+the files referred to in the HTML .  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  13 01/28/2021  For information concerning the practices a nd procedures for registering computer 
+programs see Chapter 700 , Section 721.  
+ 1006.1(B)  Databases  
+As discussed in Section 1002.6 , a website  is not considered a database  for the purpose of 
+copyright registration. The mere fact that a website contains a database of information 
+or the fact that the information on a website is searchabl e does not transform the website  
+into a database. For these reasons, the group registration  option for database updates 
+cannot be used to register websites or webpages, and at present there is no  group 
+registration option for website revisions that have b een made over a period of time.  
+If a website contains a database as part of its website content, the database may be 
+registered as a literary work  if it contains a sufficient amount of original authorship. The 
+Office applies the same rules when examining this type of work, regardless of whether 
+the database is made available through a website or in a hard copy format. For 
+information conc erning the practices and procedures for registering a database, see 
+Chapter 700 , Section 727. For information concerning the group registration option for 
+database updates, see Chapter 1100 , Section  1112 . 
+ 1006.2 Visual Art Works  
+Websites typically contain visual art works, such as  photographs , graphic designs, 
+drawings, illustrations, and other two -dimensional works. This type of website content 
+may be registered i f it is sufficiently original.  
+A visual art work may be registered on an individual basis if the claimant  is the author of 
+that website content or owns all the exclusive rights  in that content. In the alternative, 
+the two -dimensional visual arts content contained in a website may be registere d as a 
+collective work  if the author selected, coordinated, and/or arranged that content and if 
+the claimant is the author of the collective work or owns all the  exclusive rights in that 
+work.  
+Creative pictorial authorship that is contained in a standard design feature, such as a 
+background, button, banner, or template may be copyrightable  if it is sufficiently creative.  
+However, a claim  in the pictorial authorship contained on a website does not extend to 
+the standard placement of features on the webpages, such as elements that are part of 
+the template, including mere coloratio n, the use of borders, or the selection of typeface 
+and font.  
+Example:  
+• Mighty Oak Insurance creates an original logo design featuring the 
+image of a n oak tree  and incorporates the logo into the template for 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  14 01/28/2021  its website . The logo may be registrable as two -dimensional 
+artwork.  
+ 1006.3 Works of the Performing Arts  
+Works of the performing arts  that are perceptible on webpages may be registered if they 
+are sufficiently original , including musical works, sound recordings , dramatic works, 
+choreographic works , pantomimes , motion pictures , and other audiovisual works .  
+A work of the performing arts may be registered on an individual basis if the claimant  is 
+the author of that  website content or owns all the exclusive rights  in that content. In the 
+alternative, the performing arts content contained in a website may be registered as a 
+collective work  if the author selected, c oordinated, and/or arranged that content and if 
+the claimant is the author of the collective work or owns all of the  exclusive rights in 
+that work.  
+ 1006 .4 Compilation Authorship  
+The Copyright Act defines a “ compilation ” as “a work formed by the collection and 
+assembling of preexisting materials or of data that are selected, coordinated, or 
+arranged in such a way that the resulting work as a whole cons titutes an original work 
+of authorship.” 17 U.S.C. § 101 .  
+The content of a  website may qualify as a compilation if there is a sufficient amount of 
+creative expression in the selection,  coordination and/or arrangement of the content as 
+a whole. For example, there may be “selection” authorship involved in choosing the 
+material or data that will be included in the website. There may be coordination 
+authorship involved in classifying, categ orizing, ordering, or grouping the content. In 
+addition, there may be arrangement authorship involved in determining the placement 
+or arrangement of the content within the website as a whole.  
+To register a claim  to copyright in a compilation the applicant  should state “compilation 
+of __________” in the field marked Other, and should specify the type of website content 
+that the author se lected, coordinated, and/or arranged ( e.g., “compilation of text” or 
+“compilation of text and photographs ”). A registration for a compilation may cover each 
+type of authorship if it is sufficiently creative, but it does not cover any content that 
+appears w ithin the website unless that content is copyrightable  and is specifica lly 
+claimed in the application.  
+Example:  
+• Camilla Beret is the owner of a dating website called “Switch  and 
+Bait.” Camilla di d not create the individual listings that are posted 
+on the site, but she selected the fields that are included within each 
+listing and she created the arrangement of listings, headings, 
+graphics, and photographs  within the website as a whole. If the 
+selection and arrangement is sufficiently creative, the  registration 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  15 01/28/2021  specialist  may register Camilla’s authorship as a “compilation of 
+text, graphics, and photographs.”  
+For general information regarding compilations, see Chapter 500 , Section 508. For 
+infor mation regarding compilation authorship, see Chapter 300 , Section 312. For 
+information regarding the practices and procedures for registering a claim in a 
+compilation, se e Chapter 600 , Section 618.6 and 621.8(D).  
+ 1007 Uncopyrightable Material  
+A registration for a claim  in website content does not extend to any uncopyrightable 
+material contained within a website . In particular, t he U.S. Copyright Office will refuse to 
+register website content that does not constitute copyr ightable  subject matter or 
+content that lacks a sufficient amount of original authorship. Examples of 
+uncopyrightable material include, but are not limited to,  the following:  
+• Ideas, such as plans for future websites.  
+• Functional design elements.  
+• Domain na mes and hypertext links.  
+• The layout, format, or “look and feel” of a website.  
+• Common, unoriginal material, such as names, icons, or familiar symbols.  
+See 17 U.S.C. § 102(b) ; see also  37 C.F.R. § 202.1 .  
+This type of material is discussed in Sections 1007.1 through  1007.4. For a general 
+discussion of uncopyrighta ble material, see Chapter 300 , Section 313.  
+ 1007.1 Ideas f or Websites, Website Operation, or Website Structure  
+Section 102(b)  of the Copyright Act specifically states that copyright protection for an 
+original work of authorship does not “extend to any idea, procedure, process, system, 
+method of operation, concept, principle, or discovery… regardless of  the form in which it 
+is described, explained, illustrated, or embodied in such work.” 17 U.S.C. § 102(b) . For 
+example, copyright protection does not extend to the ideas for a  website , nor does it 
+extend to any ideas or concepts for the visual or operational design of a website, its user 
+interface, or the hyper link structure of the site.  
+ 1007.2 Domain Names and URLs  
+A domain name  or URL is the  address for a website  or webpage . It is  the online 
+equivalent of a mailing address or phone number. These elements are facts that are not 
+eligible for copyright  protection . See Feist Publications, Inc. v. Rural Telephone Service 
+Co., 499 U.S. 340 , 347  (1991)  (“No one may  claim  originality as to  facts  . . . because facts 
+do not owe their origin to an act of authorship. ”). In addition, domain names and URLs 
+are not protectable because they are merely words or short phrases that lack the 
+sufficient amount of creativity required for copyright protec tion. See 37 C.F.R. § 202.1(a) . 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  16 01/28/2021   1007.3 Hypertext Links  
+A hypertext link is generally a URL or bookmark within a website . These elements are 
+not copyrightable , because they are essentially addresses or facts and because they are 
+simply a method for acces sing content within a website.  
+Although a URL or bookmark in and of itself would not be protected by copyright, the 
+creative text or graphic that embodies a hypertext link may be copyrightable if that text 
+or graphic contains a sufficient  amount of original authorship.  
+ 1007.4 Layout and Format  
+The copyright law does not protect the overal l look and feel of a  website . It only protects 
+the specific copyrightable  expression found on a website on a  given date.  
+As a general rule, the selection, coordination, and/or arrangement  of part icular content  
+on a webpage may be copyrightable if it is sufficiently creative. However, the layout ( i.e., 
+spatial placement) or format of a webpage is not copyrightable in and of itself, 
+regardless of how many elements are  used in the layout or format. For example, a claim  
+based on the border width for a webpage, the placement of some banner, and a 
+placeholder for blocks of unspecified text or images would not be registrable. By 
+contrast, a clai m based on a particular banner, text, and images that are arranged in a 
+creative manner may be eligible for registration, but the claim would extend only to that 
+selection, coordination, and/or arrangement of those particular elements. It would not 
+extend to other elements that have been arran ged in the same or similar way.  
+The U.S. Copyright Office will not register the format and layout of a website because it 
+would impede the very purpose of copyright —to promote creativity —by limiting the 
+ways in which c reativity may be expressed. After conducting a formal rulemaking, the 
+Office determined that it cannot register the overall format or layout of a book or other 
+printed publication , including the choice of style and size of typeface, leading ( i.e., the 
+space between lines of type), the placement of the folio ( i.e., page numbers), the 
+arrangement of type on the pages, or the placement, spacing, and juxtaposition of 
+textual and illustrative matter in  the work. The Office cannot register these elements 
+because they fall within the realm of uncopyrightable  ideas. If the Office registered 
+claims in format or layout it would extend protection to the idea itself, because there are 
+only a limited number of ways to organize content within a publication. Barring these 
+types of claims thus serves the goal of copyr ight by ensuring that these building blocks 
+of expression are available to all creators. See Registration of Claims to Copyright: Notice 
+of Termination of Proposed Rulemaking Regarding Re gistration of Claims to Copyright 
+in the Graphic Elements involved in the Design of Books and Other Printed Publications, 
+46 Fed. Reg. 30,651, 30,65 3 (June 10, 1981) . 
+For the same reason, the Office will not register the standard arrangement or placement 
+of the common elements and features on a webpage. The decision to add or place a 
+banner, border, frame, sign -in box, title, footer, video screen, text blocks, or other 
+elements in certain positions cannot be registered in the absence of specific 
+copyrightab le content in those elements, because these types of choices do not 
+constitute original authorship. For instance, an original banner may be registered as a 
+pictorial work if it is sufficiently creative, but the registration will not extend to the 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  17 01/28/2021  placement  of that banner because there are a limited number of ways to layout that  type 
+of content on a webpage.  
+Style sheet languages, such as Cascading Style Sheets, are merely methods of formatting 
+and laying out the organization of documents written in a marku p language, such as 
+HTML. Because procedures, processes, and methods of operation are not copyrightable, 
+the Office generally will refuse to register claims based solely on CSS.  
+For a general discussion of layout and format, see Chapter 300 , Section 313.3(E) and 
+Chapter 900 , Section 906.5.  
+ 1008 Registration Issues  
+Claims  in website content are often delayed because the application contains inaccurate 
+or incomplete information and/or because there are discrepancies between the 
+statements provided in the application and the information or mat erial contained in the 
+deposit copy(ies) . This Section discusses issues that commonly arise in connection with 
+the registration of such works.  
+ 1008.1 The Scope of a Registration for Website Con tent 
+A registration for website content extends on ly to the following material:  
+• Material that contains a sufficient amount of copyrightable  expression,  
+• Material that is original to the author named in the application,  
+• Material that is owned by the claimant  named in the application,  
+• Material that is expressly described in the application, and  
+• Material contained in the deposit  accompanying the application.  
+ 1008.2 Unclaimable Material Must Be Excluded from the Claim  
+As with any type of work, a registration for  website content does not extend to any 
+unclaimable material  that may be contained within that content. For purposes of 
+registration, unclaimable material includes material that is not owned by the claimant , 
+material that is in the public domain , or material that was previously published  or 
+previously registered.  
+If the deposit  contains an appreciable amount of previously published, pr eviously 
+registered, public domain, or third party material, the applicant  must expressly exclude 
+that material from the claim  using t he procedure described in Chapter 600 , Section 621.8.  
+Asserting a claim in previously published material is one of the most common mistakes 
+that applicants make when complet ing an application to register website content.  
+The U.S. Copyright Office has a longstanding practice of precluding previously published 
+material from a claim in a collective work  or derivative work, even if the author of the 
+collective work or derivative work is the author of the previously published material 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  18 01/28/2021  and owns all of the rights in that material. The Office requires applicants to disclaim 
+previously published material for s everal reasons. Historically, publication  affected the 
+duration of the copyright in a work, and it continues to be implicated in the duration of 
+works made for hire , anonymous works , and pseudonymous works . Obtaining 
+information about the date and nation of first publ ication may be necessary to 
+determine if a particular work is eligible for copyright protection in the United States or 
+to determine if the applicant satisfied the applicable deposit requirements. To register a 
+published work an applicant may be required t o submit a complete copy of that work, 
+unless the Office’s regulations explicitly allow for the submission of identifying material . 
+Finally, this longstanding practice clarifies the date of publi cation for a particular work, 
+which may assist the courts in assessing the copyright owner’s eligibility for statutory 
+damages and attorney’s fees in an infringement  action.  For information conce rning 
+these issues, see Chapter 500 , Section 503.5.  
+ 1008.3 Publication Issues  
+ 1008.3(A)  What Constitutes Publication?  
+Publication is defined in the U.S. Copyright Act as: “[T]he distribution  of copies  or 
+phonorecords  of a work to the public  by sale or other transfer of ownership, or by rental, 
+lease, or lending. The offering to distribute copies or phonorecords to a group of persons  
+for purposes of further distribution, publ ic performance, or public display, constitutes 
+publication .” 17 U.S.C. § 101  (definition of “publication”) (emphases added). The statute 
+also states that “[a] public performance or disp lay of a work does not in itself constitute 
+publication.” Id.  
+To perform or display a work “publicly” means “(1) to perform or display it at a place 
+open to the public or at any place where a substantial number of persons outside of a 
+normal circle of a f amily and its social acquaintances is gathered; or (2) to transmit or 
+otherwise communicate a performance or display of the work to a place specified by 
+clause (1) or to the public, by means of any device or process, whether the members of 
+the public capab le of receiving the performance or display receive it in the same place or 
+in separate places and at the same time or at different times.” 17 U.S.C. § 101  (definition 
+of “to perform o r display a work ‘publicly’”).  
+Although, in the vernacular, the term “published” has acquired broad meaning, it has a 
+much narrower meaning as a term of ar t within the Copyright Act.  Moreover, 
+publication was part of the  copyright law long before the i nternet became a means of 
+public communication and dissemination. While t echnological developments have 
+blurred this traditional concept, the U.S. Copyright Office interprets  publication in a 
+manner consistent with congressi onal intent and with appreciation for the current 
+factual and legal distinctions that may inform the assessment of this issue. Specifically, 
+the Office views publication in light of the statutory definition of “publication,” the 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  19 01/28/2021  legislative history for the  Copyright Act, and a host of business practices premised on 
+divisible exclusive rights .1 
+For a detailed articulation of these definition s and a general discussion of publication , 
+see Chapter 1900 . For a general discussion of publication on the internet, see Sections 
+1008.3(B)  through 1008.3(F) . 
+ 1008.3(B) Repro duction and Distribution Distinguished from Performance  
+and Display  
+The statutory definition makes clear that publication  requires (i) the distribution of 
+copies  or phonorecords of a work to the public by sale or other transfer  of ownership, or 
+by rental, lease, or lending, or (ii) an offer  to distribute copies or phonorecords to a 
+group of persons for purposes of further distribution, public performance, or public 
+display.  17 U.S.C. § 101 .  
+As a general rule, the U.S. Co pyright Office considers a work “ published ” when it is made 
+available online if the copyright owner authorizes the end user to retain copies or 
+phonorecords of that work. For example, the fact that a work is expressly authorized for 
+reproduction or downloa d by members of the public or is expressly authorized for 
+distribution by the public creates a reasonable inference  that copies or phonorecords 
+have been distributed and  that publication has occurred.  
+Likewise, the Office generally considers a work “publis hed” when the copyright owner 
+makes copies or phonorecords available online and offers to distribute them to a group 
+of persons for purposes of further distribution, public performance, or public display. 
+For instance, the fact that a sound recording  has been offered for distribution to 
+multiple online streaming or download services, or the fact that a photographer offered 
+a photograph to multiple stock photo companies or website for purposes of f urther 
+distribution or public display creates a reasonable inference  that an offer to distribute  to 
+a group of persons  has been made and that publication has occurred.  
+It may seem odd that allowing the whole world to view or hear a work does not 
+constitute  publication of a work , but t he statutory definition is clear that the public 
+performance or public display of a work does not, in and of itself, constitute publication. 
+ 
+ 
+ 
+ 
+ 
+1  U.S. copyright law has long drawn a distinction between the reproduction and distribution right, 
+on the one hand, and the public performance and public display right on the other. Congress 
+explicitly embraced the concept of divisibility of the exclusive rights  of copyright when it enacted 
+the 1976 Act . H.R.  REP. NO. 94-1476, at 123 (1976) , reprinted in  1976 U.S.C.C.A.N. 5659, 5738 -39. 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  20 01/28/2021  A mere display or performance is not a distribution, because the end user does not 
+retain a “copy” or “phonorecord” of the work, as defined under the Copyright Act. See 17 
+U.S.C. § 101  (definition of “copies” and “phonorecords”).2  
+As a general rule, the Office does not  consider a work to be published if it is merely 
+displayed or performed online, unless the author or copyright owner clearly authorized 
+the reproduction or distribution of that work, or clearly offered to distribute the work to 
+a group of intermediaries fo r purposes of further distribution, public performance, or 
+public display.  
+ 1008.3(C)  The Authorization Requirement  
+A critical element of publication  is that the distribution of copies  or phonorecords to the 
+public must be authorized by the copyright owner. To be considered published , the 
+copyright owner must expressly or impliedly authorize users to make retainable copies 
+or phonorecords of the work, whether by downloadin g, printing, or by other means.  
+A distribution or offer to distribute that has not been authorized by the copyright owner 
+does not constitute publication. Thus, the mere fact  that a work is disclosed on the 
+internet does not “publish” the work. The end user’s technical capacity to copy, capture, 
+save, or otherwise reproduce a work in and of itself does not imply that the copyright 
+owner authorized the distribution or publicati on of that work, unless there is an express 
+or implied -in-fact authorization that supports such an inference. Likewise, the fact that 
+it may be possible for an end user to reproduce or distribute a work that has been 
+authorized only for public display or p ublic performance online does not mean  that 
+publication has occurred.  
+An unauthorized reproduction or distribution online may constitute copyright 
+infringement  or may be a fair use in certain cir cumstances, even if there are no 
+technological protection measures preventing the use of that work. While a fair use may 
+be lawful, it is not considered an authorized reproduction or distribution that publishes 
+the copyright owner’s work. Similarly, an inf ringing reproduction or distribution does 
+not constitute publication, even if the unauthorized copies or phonorecords are 
+dispersed  among large number of people.  
+ 
+ 
+ 
+ 
+ 
+2 The term “copies” is used interchangeably in this Chapter to refer to both “ copies ” and 
+“phonorecords ,” which are defined in  Section 101  of the Copyright Act.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  21 01/28/2021  While it is often a simple matter to determine whether a distribution of tangible copies 
+was authorized by the copyright owner, it is not always factually clear whether the 
+placement of works online is intended to be an authorized distribution of those works 
+or merely an authorized public performance or public display.  
+The answer to this question  may vary for different types of works or vary based on the 
+way in which works are placed online. For instance, posting a sound recording  online for 
+authorized downloading by the public may well provide evidence of publication, 
+whereas making a sound recording available for streaming may not constitute 
+publication  if the user does not receive a copy of the work . Similarly, posting an article 
+on a news  website that authorizes users to download arti cles or email them to a friend 
+may support a finding of publication for that particular article, whereas posting the 
+entire news website online would not constitute publication because the website as a 
+whole is intended only for public display. Indeed, the re would appear to be little basis 
+for inferring that a copyright owner authorized a user to copy and/or distribute an 
+entire website absent some indicati on to the contrary.  
+Because publication is premised on authorized distribution, it is ultimately for the 
+author or the copyright owner to determine whether a work is authorized for 
+distribution or is limited to public performance or public display. This choice may be 
+express ( e.g., an express statement that the works on a website may be downloaded or 
+that  they are available only for online display) or implied in fact ( e.g., a website that 
+provides a download option ).  
+Authors and copyright owners who wish to clarify the publication status of their works 
+should provide express information about what they ar e, or are not, authorizing others 
+to do with their works. For instance, explicitly authorizing downloading or reproduction 
+of all the content on a website would indicate that the works posted on that site have 
+been published. Implicitly authorizing downloa ding or transmission of copies of works 
+by offering copies for sale, free downloading, or transmission to others via email also 
+may suggest that works subject to that implicit authorization have been published. By 
+contrast, clearly stating that the content  on a particular is available only for public 
+display or public performance with an express prohibition on the reproduction, 
+distribution, or transmission of any of that content would indicate that the works on 
+that site are unpublished .  
+ 1008.3(D)  Implied Nonexclusive License or Authorization  
+To assess the publication  status of works placed online, it may be necessary to clarify 
+the scope of any implied license purportedly granted by the copyright owner of those 
+works. Courts have found that an implied, nonexclusive license or authorization may 
+exist where the circumst ances and the parties’ conduct reflected their intent or 
+understanding that the work would b e used for a specific purpose.  
+Courts have considered a wide variety of factors in determining whether a nonexclusive, 
+implied license may exist. In some cases, th e grant of a license may be implied by 
+objective conduct that “supports a finding that an implied license existed.” Effects 
+Associates, Inc. v. Cohen , 908 F.2d 555, 558 n.8 (9th Cir. 1990) (finding an implied license 
+where the author created special effect s for a horror movie and stated that the footage 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  22 01/28/2021  would be used for this purpose in both a written agreement and in its application to 
+register the footage). In other cases, a license may be implied by the totality of the 
+parties’ conduct. See, e.g., Falcon  Enterprises, Inc. v. Publishers Service, Inc. , 438 Fed. 
+App’x. 579, 581 (9th Cir. 2011) (holding that the parties’ conduct demonstrated the 
+existence of an ongoing nonexclusive, implied license where the plaintiff received a fee 
+each time he sent copyrigh ted images to the publisher for publication over a period of 
+several years). However, express or explicit limits on use may supersede an implied 
+license, particularly if the copyright owner conveys those limits before the work is 
+delivered to the licensee.  See Johnson v. Jones , 149 F.3d 494, 50 0-501  (6th Cir. 1998) 
+(finding no implied license where architect presented the client with proposed contracts 
+containing an express provision stating that the drawings could not be used without his 
+agreement or wit hout appropriate compensation).  
+A variety of factors may be relevant in determining whether a copyright owner 
+published  website content by impliedly authorizing users to make copies of that 
+content. Examples of factors that may be co nsidered include the foll owing:  
+• Whether there are indications on the website or webpage relevant to the work 
+indicating that the copyright owner intends for the work to be distributed to the 
+user via download, saving, printing, or emailing, such as the presence of a 
+“download,” “s ave,” or “email” button for a particular work.  
+• Whether the copyright owner expressly reserved copyright rights in the work or 
+explicitly prohibited the reproduction or distribution of the work in whole or in 
+part.  
+• Whether the copyright owner employed barriers to the reproduction or distribution 
+of the work, such as technological measures that disable or impair a web browser’s 
+print, copy, and/or save capabilities.  
+• Whether the copyright owner permitted the work to be streamed or displayed, but 
+did not expressly permit the work to be copied or downloaded.  
+ 1008.3(E)  Intermediate or Buffer Copies Made in the Course of Streaming  
+When a work is performed or displayed online through streaming or browsing, 
+temporary copies of that work are routinely m ade due to the way in which the internet 
+operates. These intermediate copies are necessary to perform or display the work 
+online. If the means of achieving a public performance or public display constituted a 
+distribution in all cases, the right of public performance and public display would cease 
+to be distinct and separate exclusive rights  in the online environment. That would be 
+contrary to Congress’s clear intention to explicitly recognize the  divisibility of exclusive 
+rights in the 1976 Act . 
+As discussed above, the U.S. Copyright Office does not consider a work “ published ” when 
+it is made available online through a public performance  or public display unless the 
+copyright owner authorizes the end user to retain copies of that work. The fact that the 
+user’s computer or other device makes intermediate copies, buffer copies, or other 
+temporary digital copies during a performance or displ ay of that work is irrelevant to 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  23 01/28/2021  this determination. Authorizing the performance or display of a work does not 
+necessarily mean that the copyright owner authorized the end user to retain copies of 
+the work. While temporary copies may or may not be fixed  in the user’s computer or 
+other device for a period of more than transitory duration, they are purely functional 
+copies made solely for the purpose of facilitating the technological delivery of the  
+performance or display. Typically the copyright owner does not intend for the user to 
+permanently retain those copies on his or her computer, and any further use of those 
+copies woul d be unauthorized by the owner.  
+Moreover, temporary copies made in the co urse of browsing websites do not reproduce 
+the entire site, but only the pages displayed in the user’s web browser. When a website 
+and its content are posted online, the copyright owner presumably gives users an 
+implied  license to create temporary copies f or the purpose of viewing that content in a 
+browser. But it is doubtful that an implied license would extend to authorizing the 
+permanent reproduction of an entire website or its contents without clear authoriza tion 
+from the copyright owner.  
+ 1008.3(F)  Determining the Publication Status of a Work Made Available Only Online  
+The applican t — not the U.S. Copyright Offic e — must determine whether a particular 
+work is published  or unpublished . This determination should be based on the facts that 
+exist at the time the application is filed with the Office.  As a general rule, the Office will 
+accept the applicant’s representation that  website content is published or unpublished, 
+unless that statement is implausible or is contradicted by information provided 
+elsewhere in the registration materials or in the Office’s records or by information that 
+is known to the registration specialist . 
+In making this determination, the applicant may wish to consider the following general 
+guidelines : 
+• Streamed -only content : Streaming is a performance, which  may  not constitute a 
+distribution of copies if the user does not receive a copy.  
+• Express authorization to download content : If a work is expressly made available for 
+download the work is deemed published, because a distribution occurs each time a 
+user downloads a copy, such as when MP3s of a sound recording  are offered for sale 
+on a website or where a copy of software or a videogame can be obtained by clicking 
+on a “download now” button or similar link.  
+• Downloading or reproduction expressly prohibited : If a work is posted and displayed 
+on a website and if there is a notice on the webpage, in the terms of service for the 
+site, or in another obvious place stating that the work and/or all content on the site 
+may not be downloaded, prin ted, or copied (or other statement to that effect), that 
+work(s) may be deemed unpublished, because any copies that may be downloaded, 
+printed, or otherwise distributed to the user have not been authorized by the 
+copyright owner.  
+• Work posted without the authority of the copyright owner : The fact that a work was  
+posted on a website without authorization from the copyright owner  has no impact 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  24 01/28/2021  on whether the work is published or unpublished (even if the work may be 
+downloaded or printed from the site), because  the copyright owner did not 
+authorize the work’ s availability on the website in the  first  instance.  
+• Implied license : If a work is posted on a website and there is no evident statement in 
+the terms of service for the site, on the webpage where the work is  displayed, or 
+elsewhere stating that the work may be downloaded, copied, forwarded, and/or 
+printed it may be unclear whether the copyright owner authorized the distribution 
+of that work. If downloading, reproducing, or retransmitting is facilitated in som e 
+manner by the website, there may or may not be an implied  license to distribute the 
+work, in which case the work may or may not be considered published.  
+• Work made available in electronic and hard copy format.  If the same work is posted 
+online and distrib uted in tangible copies, such as CDs, DVDs, or in printed formats, 
+the work will be deemed published, even if it has not been published online.  
+For complete certainty, authors or copyright owners may register website content as an 
+unpublished work before i t is distributed or placed online. Likewise, if a website has not 
+been posted online yet and if all of the content contained in the site has never been 
+distributed, the website may be registered as an unpublished work. A registration for an 
+unpublished wor k secures the statutory benefits for a work, such as the availability of 
+statutory damages and attorney’s fees for infringements  that occur after the effective 
+date of the registration for that w ork (regardless of whether the wo rk is subsequently 
+published).  
+ 1008.4 Identifying the Work(s) That May Be Included in the Claim  
+To register a claim  with the U.S. Copyright Office the applicant  should begin by 
+identifying the work(s) of authorship that will be included in the claim. This is especially 
+critical for websites , because they typi cally contain a number of discrete works of 
+authorship. Each work may present unique registration issues that the applicant may 
+need to consider when preparing the application and the deposit  mat erial.  
+For example, if the website contains a number of works that are owned by different 
+parties, it may be necessary to submit a separate application for each work. Separate 
+applications may be necessary if the applicant determines that the works have b een 
+published  and that each work was published on a different date. Likewise, separate 
+applications may be necessary if the applicant intends to register multiple versions of 
+the same work and if the applicant determines that the versions were published on  
+successive dates. Indeed, every work that is added to a website potentially may qualify 
+as a derivative work  or a new contribution to a collective work . In such cases, a separate 
+application and separate publication  date may be required for each date that new 
+content was uploaded to the website and authorized for distribution to the public.  
+By contrast, if the website qualifies as a collective work it may be possible to register the 
+entire site with one application, provided that the claimant  owns the copyright in the  
+site as a whole. It also may be possible to register the entire site together with the 
+component works contained therein if the claimant is the author of or owns the 
+copyright in those works. However, it is important to note that a website claimed as a 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  25 01/28/2021  collective work will only be eligible for one award of statutory damages no matter how 
+many discrete works within the website may be infringed. 17 U.S.C. § 504(c)(1) . For 
+information conc erning the registration options for collective works and contributions 
+to collective works, see Chapter 500 , Section 509.  
+In other cases, it may be possible to register a number  of works with one application by 
+using one of the group registration  options, such as the option for registering a group of 
+unpublished works, a group of short online literary works , or a group of published or 
+unpublished photographs, provided that the applicant satisfies the eligibility criteria for 
+these option s. For information concerning these registration options, see Chapter 1100  
+(Registration for Multiple Works).  
+ 1008.5 Identifying the Specific Version That May Be Included in the Claim  
+Many  websites are frequently updated and may change significantly over time. A 
+website may add content every hour, day, week, month, or year. To register a claim  with 
+the U. S. Copyright Office it is important to identify the specific version of the work(s) 
+that will be included in the claim.  
+As a general rule, each version of a work may be registered as a separate work if the 
+version contains a sufficient amount of new, copyrightable  authorship. See 17 U.S.C. § 
+101 (stating that “where the work has been prepared in different versions, each version  
+constitutes a separate work”). A registration for a specific version of a work covers the 
+new material that the author contributed to that version, including any copyrightable 
+changes, revisions, additions, or other modifications that the author contribut ed to that 
+version. But as discussed in Section 1008.2, the registration does not cover any 
+unclaimable material that appears in that version, including any material that has been 
+previously published  or previously registered with  the Office. Therefore, if the version 
+contains an appreciable amount of content that has been previously published and/or 
+previously registered, the applicant  should exclude that material from t he claim.  
+Example:  
+• Sam Bavard operates a duck hunting website called “Animal 
+Quackers.” Every three months Sam revises the website by adding 
+new text and photographs . When Sam submits an application to 
+register the latest version of the site he limits the  claim to the “new 
+text and photographs” that he added to the site, and he excludes the 
+photographs and text that were previously registered with the 
+Copyright Office.  
+For information concerning the procedure for excluding unclaimable material, see 
+Section  1009.8. For a general discussion of issues involving the registration of different 
+versions of a work, see  Chapter 500 , Section 512.  
+ 1008.6 Distinguishing Between Published and Unpublished Content  
+Published  and unpublished  website  content is treated differently for the purposes of 
+registration. Sections 1008.6(A)  and 100 8.6(B)  discuss some of the issues that should be 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  26 01/28/2021  considered when asserting a claim  in published or unpublished content. For guidance in 
+determining wheth er website content is published or unpublished, see Section 1008.3. 
+ 1008.6(A)  Published Website Content  
+If the applicant  determines that the content has been published , the applicant may 
+register all of the copyrightable  material that was first published on the date of 
+publication  specified in the application. If the content contains copyrightable material 
+that was published before that date, the applicant must exclude that previously 
+published material from the claim .  
+When preparing an application to register content that appears on a published website , 
+the applicant should do the following:  
+• Identify the content that the applicant intends to register.  
+• Identify the year that the content was created.  
+• Identify the year that  the content was completed.  
+• Identify the date ( e.g., month, day, and year) that the content was first published.  
+• Prepare an appropriate deposit  containing a complete copy of the content in the 
+form in which it was first published.  
+The date of first publication specified in the application must be limited to a single date, 
+and a registration for published website content only covers the content that was first 
+published on that date. Therefore, the deposit should contain a copy of the content as it 
+existed on the date of publication that is specified in the application. If the publication 
+date specified in the application is not the same as the publication date for the content 
+reflected in the deposi t, the registration specialist  will communicate with the applicant, 
+which will delay the examination of the claim.  
+If an author or copyright owner determines that a website has been published, th at 
+party is encouraged to preserve and maintain a copy of the website as it existed on each 
+day that copyrightable authorship is added or incorporated into the website. This will 
+ensure that a proper deposit may be prepared and submitted to the Office in t he event 
+that the author, the copyright owner, or other authorized party decides to register the 
+website or the content contained therein. It also may provide critical evidence in the 
+event there is an infringement  dispute involving that content. As discussed in Chapter 
+200, Section 202, the date of publication may be crucial in determining whether a 
+copyright owner is able to seek  statutory damages  and attorney’s fees in  an 
+infringement action.  
+If the applicant determines that a website has been published, it may be beneficial to 
+register the initial version of the content that appeared on the site on the date that t he 
+site was first published. If the applicant takes this approach, the registration will cover 
+that content as it existed on the date of publication specified in the initial application, 
+provided that the content (i) is contained within the deposit, (ii) i s owned by the 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  27 01/28/2021  claimant  named in the application, and (iii) has not been previously published or 
+previously registered with the Office.  
+If the applicant subsequently submits an application to re gister subsequent versions of 
+the website, the registration will cover the new or revised material that was first 
+published on the date specified in the subsequent application. As a general rule, the 
+applicant should submit a separate application for each separately published update or 
+revision to the website that the applicant wishes to register. If this is impracticable, the 
+applicant may decide to seek one or more strategic registrations that cover the 
+published content that is most valuable to the claim ant. 
+ 1008.6(B)  Unpublished Website Content  
+If the applicant  determines that the content was placed online solely for the purpose of 
+public display or public performance, the work may be deemed unpublished . If so, the 
+applicant may register all of the copyrightable  material that appears on the  website as of 
+the date that the ap plication is submitted, provided that the material (i) is reflected in 
+the deposit , (ii) is owned by the claimant  named in the application, and (iii) has not been 
+previously published  or previously registered with the Office. If the website contains an 
+appreciable amount of previously published, previ ously registered material, or material 
+that is owned by a third party, the applicant must exclude that material from the claim . 
+If copyrightable material is subsequently added to the website, the  applicant may seek a 
+new registration for the new or revised material when the claimant determines that 
+further protection is desirable.  
+In some cases, it may be possible to register a number of unpublished works with one 
+application  using the group registration  option  described in Chapter 1100 , Section 1106 . 
+It also may be possible to register a webs ite as an unpublished collective work , provided 
+that the site contains a sufficiently creative selection, coordination, and/or arrangement 
+of content. For a detailed discussion of collective work s, see Chapter 500 , Section 509.  
+ 1008.7 Statutory Damages  
+In determining whether to register the content of a  website  separately or together the 
+applicant  should consider the potential impact on the copyright owner’s ability to seek 
+damages in the event that a third party infringes that content.  
+It is possible to register vast amounts of ma terial that appear together on a website with 
+one application if the content qualifies as a compilation , a collective work , or 
+contribution to a collective work.  It also may be possible to register an updated version 
+of a website that contains vast amounts of new or revised content if it qualifies as a  
+derivative version of the original website. However, derivative works , compilations, and 
+collective works are considered one work for purposes of calculating  statutory damages . 
+See 17 U.S.C. § 504(c)(1)  (“For the purposes of this subsection, all the parts of a 
+compilation or derivative work constitute one work.”); 17 U.S.C. § 101  (“The term 
+‘compilation’ includes collective works.”). C onsequently, registering a number of self -
+contained works that appear on a website together as a compilation, collective work, or 
+derivative work may have significant consequences in a copyright infringement  action. 
+For example, when a website consisting predominantly of  photographs  is registered as a 
+compilation, a court may issue only one award of statutory damages for all the 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  28 01/28/2021  photographs covered by that registration. That is not necessarily the  case, however, if 
+the photographs are (i) unpublished  and are registered as a group of unpublished works 
+or unpublished photographs , or (ii) are published and are registered using the group 
+registration  option for published photographs. See 37 C.F.R. § 202.4(n) .  
+For information concerning the group registration optio ns for unpublished works , short 
+online literary works , unpublished photographs, and published photographs, see 
+Chapter 1100 , Sections 1106 , 1111,  and 1114 . For a discussion of derivative works, 
+compilations, and collective works, see Chapter 500 , Sections 507 through 509. For a 
+general discussion of publication  issues involving website content, see Section 1008.3. 
+ 1009 Application Tips for Websites and Website Content  
+This Section provides basic information on how to complete an  online  application or 
+paper application for a  website  or website content , as well as terms to use and terms to  
+avoid when describing  the authorship in such works.  
+For detailed information on how to complete an application, see  Chapter 600 . 
+ 1009.1 Type of Work  
+Many websites contain multiple forms of authorship, including text, images, artwork, 
+musical works, sound recordings , videogames , computer programs , audiovisual works , 
+among other types of works. Identifying the ty pe of work that will be submitted to the 
+U.S. Copyright Office is the first step  in completing an application.  
+The Register of Copyrights  has prescribed six classes of works that may be register ed 
+with the Office. The applicant  should select the class of work that is most appropriate for 
+the type of content that the applicant intends to register. When completing an online 
+application, t he applicant should select the appropriate class from the drop down menu 
+marked Type of Work. When completing a paper application, the applicant should use 
+the form that has been designated for the type of conte nt that appears in the work.  
+• Literary Works : When completing an online application, the applicant should select 
+“Literary Work” if the content primarily contains nondramatic text, such as articles, 
+blog entries, or the like, or if the content primary consists of computer programs, 
+databases , compilations of information, or other works that are expressed in 
+numbers or other verbal or numerical symbols or indicia.  
+• Works of the Visual Arts : When completing an online application, the applicant 
+should select “Work of the Visual Arts” if the content primarily contains or consists 
+of pictorial or graphic material, such as artwork, images, drawings, illustrations,  
+photographs , or the like. When c ompleting a paper application, the applicant should 
+use Form VA . 
+• Works of the Performing Arts : When completing an online application, the applicant 
+should select “Work of the Performing Arts” if the content primarily contains or 
+consists of music, lyrics, scripts, choreography, or other works that are intended to 
+be performed for an audience. When completing a paper application, the applicant 
+should use Form PA . 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  29 01/28/2021  • Sound Recordings : When completing an online application, the applicant must select 
+“Sound Recording” if the content contains or consists of recorded sound, even if the 
+work also contains other types of authorship, such as music or  lyrics. When 
+completing a paper application, the applicant must use Form SR .  
+NOTE:  There is a limited exception to this rule. If the content consists of sounds 
+accompanying a motion picture  or other audiovisual work , the applicant should 
+select “motion picture / audiovisual material” or should use Form PA . 
+• Motion Picture / Audiovisual Material : When completing an online application, the 
+applicant should select “Motion Picture / AV Work” if the content primarily contains 
+or consists of motion pictures or other audiovi sual works. When completing a paper 
+application, the applicant should use Form PA.  
+• Single Serial Issue : When completing an online application, the applicant should 
+select “Single Serial Issue” if the content consists of a single issue of a serial  
+publication , such as a newsletter  that is published  and distributed online or via 
+email as a self -contained, downloadable work. When completing a paper 
+application, the applicant should use Form SE . 
+If the content contains more than one type of a uthorship, the applicant should select the 
+option that is appropriate for the predominant form of authorship that appears in the 
+deposit copy(ies)  or phonorecord(s). For example, the applicant sh ould select “ literary 
+work ” to register a blog that mostly consists of text, even if the blog contains some 
+images that accompany the text. By contrast, the applicant should select “work of the 
+visual arts” to register a library of photographs or a website that p rimarily consists of 
+clip art.  
+For additional guidance in selecting the appropriate type of work, see Chapter 600 , 
+Section 609.2.  
+ 1009.2 Title of This Work  
+The applicant  should provide the title of the content that will be submitted for 
+registration, including any subtitles. When completing an onl ine application, the 
+applicant should provide this information on the Title screen in the field marked Title of 
+This Work. When completing a paper application, the applicant should provide this 
+information on space 1 of the application.  
+The Office strongly  encourages applicants to provide a title for each work that will be 
+submitted. Interested parties typically search for works by title and it may be extremely 
+difficult to find a particular work if the applicant fails to provide that information in the 
+application. If the author has not selected a formal title for the content, the applicant 
+may provide a descriptive title that identifies the author of the content, the type of 
+content that the author created, or other pertinent information that can be reason ably 
+identified in a search of the U.S. Copyright Office’s online database .  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  30 01/28/2021  Examples:  
+• Zehra Salim owns a  website  called “ Zehra's  Art Store,” which sells 
+art supplies. Zehra created a logo for the site that features a paint 
+brush superimposed on a compass. To register this logo the 
+applicant may provide a descriptive title, such as “Logo artwork for 
+Zehra's  Art Store,” “Paint brush / compass logo for Zehra's  Art 
+Store,” or the like.  
+• Cristine Prelle owns a fan website called “Wild About Oscar,” which 
+celebrates the career of Oscar Wilde. To register the entire content 
+of her website, Christine may provide the URL for the site or a 
+descriptive title for the site as a whole, such as “Oscar Wilde fan 
+website.”  
+The electronic registration system will accept titles consisting of Roman letters and/or 
+Arabic numerals , but it will not accept a title that has been underlined.  When providing 
+a URL as the title for a website, the applicant may include the suffix that identifies for 
+top level domain name for the site, such as .com, .net, or .org, but applicants should not 
+include the prefixes “www,” “http://” or other gene ric introductory phrases.  
+Examples:  
+• PetSupplies.com.  
+• Backtoschool.org  (2012 version).  
+• Irvington Historical Society website.  
+For additional guidance in completing the title field/space of the application, see 
+Chapter 600 , Section  610. 
+ 1009.3 Year of Completion  
+The applicant  must identify the year that the author completed the  website or website 
+content that the applicant intends to register.  The applicant should only provide a year 
+of completion for the specific version that will be submitted for registration. The 
+applicant should not provide a year of completion for any other version that will not be 
+submitted to the Office.  
+When completing an online application, the applicant should provide the year of 
+completion on the Publication/Creation screen; when completing a paper application 
+the applicant should provide this information in space 3(a). For guidance in completing 
+this portion of the a pplication, see Chapter 600 , Section 611.  
+The year of completion may vary depending on the type of content that the applicant 
+intends to register. If the content is a discre te work contained on a website, the year of 
+completion is typically the year that the author completed that work in its final form. If 
+the applicant intends to register multiple works that were created over a period of more 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  31 01/28/2021  than  one year, the applicant may  provide the year of completion for the most recent 
+work that will  be submitted for registration.  
+If the applicant intends to register the collective authorship in the website as a whole, 
+the year of completion may vary depending on whether the website is published  or 
+unpublished . If the website has been published, the year of completion must precede or 
+be the same as the date of first publication  for the specific content that is claimed in the 
+application. If the websit e is deemed unpublished ( i.e., a site that is authorized only for 
+public display or public performance), the Office will accept any year of completion that 
+precedes the date that  the application was submitted.  
+If the applicant intends to register content t hat is frequently revised or updated, such as 
+a news web site or blog, the applicant should provide the year of completion for the 
+content that is reflected in the deposit copy(ies)  (i.e., the mos t recent year that is 
+reflected in the deposit material) . If the applicant provides a year of completion for a n 
+earlier version of the website , but does not submit a deposit containing that version , or 
+provides a year of completion for any other content th at is not contained in the deposit 
+copy(ies) , the registration specialist  may communicate with the applicant, which will 
+delay the examination of the claim . 
+Example:  
+• Precious & Paulie LLC operates a website that features cat videos. 
+The company submits an application to register the entire content 
+of this site. The application states that the wo rk was completed in 
+2014, but the deposit  material contains a statement that reads “last 
+updated 2012.” The registration specialist will communicate with 
+the applicant to verify the year of compl etion.  
+ 1009.4 Date and Nation of First Publication  
+When completing an application, the applicant  — not the U.S. Copyright Office — must 
+determine whether the work is published  or unpublished . This may be difficult when 
+the applicant intends to register a  website or website content. Often times, the website 
+as a whole may be viewed as an unpublished work, but the particular content that 
+appears on the site may be deemed published if it has been explicitly authorized for 
+distribution ( e.g., with a button that enables users to “download” website content, an 
+icon that invites users to “save” website content, or a feature that allows users to  
+transmit con tent by email or other means).  
+As a general rule, the Office will accept the applicant’s representation that a work is 
+published or unpublished, unless that statement is implausible or is contradicted by 
+information provided elsewhere in the registration materials or in the Office’s  records 
+or by information that is known by the registration specialist . 
+If the applicant determines that the work has been authorized for distribution to  the 
+public, the applicant must identify the date and nation of first publication  for that work. 
+In most cases, the date of first publication is the date that the work was posted online 
+with the author ization of the copyright owner.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  32 01/28/2021  If the applicant intends to register multiple works and if those works were published on 
+successive dates, the applicant generally should submit a separate application with a 
+separate date of publication for each work.  Likewise, separate applications and separate 
+publication dates may be required if the applicant intends to register multiple versions 
+of the same work and if each version was distributed on a different date. Indeed, every 
+work that is added to a website m ay constitute a derivative work or a contribution to a 
+collective work , and a separate application and separate publication date may be 
+required for each date that new material has been authorized for distribution on that 
+site. In some cases the applicant may need to limit the claim  to each individual work that 
+was added to the website on a particular date, while in other cases the applicant may 
+need to exclude previously published material that was distributed on the website  on an 
+earlier date.  
+By contrast, if the applicant determines that the work was placed online solely for the 
+purpose of public display or public performance, the work may be deemed unpublished. 
+An application for an unpublished work may cover all of the copyrightable  material 
+contained in the deposit copy(ies)  that is owned by the copyright claimant , provided 
+that the  material has not been previously published or previously registered with the 
+Office. As discussed in Section 1008.6(B) , it may also be possible to register a number of 
+unpublished works with one application, one filing fee , and one set of deposit copies if 
+the applicant satisfies the requirements for registering the works as a group of 
+unpublished works or unpublished photographs . If the applicant subsequently decides to 
+register unpublished material that was  added to the website  at a later date, the applicant 
+may seek a new registration for the new material when the copyright owner determines 
+that further protection is desira ble.  
+ 1009.4(A)  Date of Publication  
+When completing an online application, the applicant  will be asked to provide 
+publication  information on the Publication / Completion screen. If the applicant 
+determines that the work has been published , the applicant should select “yes” in the 
+drop down menu marked “Has this work been published?” In addition, the applicant 
+should provide the month, day, and year that the work was published for the first time. 
+Specifically, the applicant should provide the date that the work was first distributed or 
+the date that the work was offered to a group of persons for the purpose of further 
+distribution , performance, or display (whichever is earlier). As a general rule, the 
+applicant should only provide a date of first publication for the specific version that will 
+be submitted for registration. The applicant should not provide a date of publication for 
+any other version of the work that will n ot be submitted to the Office.  
+If the applicant determines that the work is unpublished , the applicant should select 
+“no” on the Publication / Completion screen.  
+When completing a paper application the applicant should provide the date of first 
+publication in space 3(b) under the heading marked “Date and Nation of Publication of 
+This Particular Work.” If the work has not been published, s pace 3(b) should be  left blank.  
+For additional guidance concerning this portion of the application, see Chapter 600 , 
+Section 612.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  33 01/28/2021  1009.4(A)(1)  Date of First Publication for the Original Vers ion of a Work  
+If the applicant  intends to register a work that was published  on the original version of a 
+website , the applicant generally should provide the month, day, and year that the work  
+was first posted on that site.  
+Example:  
+• J.J. Cool created a website to promote his music career. On May 18, 
+2012 he uploaded several songs that have never been published 
+before, and he offered them for sale for $1.99 apiece. J.J. intends to 
+register t he words, lyrics, and sound recordings  embodied in these 
+songs. J.J. submits a separate application for each work, and in each 
+case, he states that the work was first published on May 18, 2012. 
+The registration specialist  will register the claims.  
+1009.4(A)(2)  Date of First Publication for Subsequent Versions of a Work  
+If the applicant  intends to register a revised version of a published  website , the 
+applicant generally should provide the month, day, and year that the revised content 
+was first posted on that site . 
+Example:  
+• Zeke Quarry operates a website called “Internal Revolut ion,” which 
+contains a compilation  of public domain  photographs from the Civil 
+War. Users may download content from the website if they pay a 
+subscription fee. Zeke launched the site on December 20, 2004, and 
+he intends to register the selection of images that he added to the 
+site on January 1, 2013, June 30, 2013, and  December 31, 2013. Zeke 
+submits a separate application for each batch of images, and he 
+states that these updates were first published on January 1, 2013, 
+June 30, 2013, and December 31, 2013. If each compilation contains 
+a sufficient amount of creative e xpression, the registration specialist  
+will register these claims.  
+1009.4(A)(3)  Content Published Online and in Hard Copy Form  
+If the applicant  determines that the work was published  both online and in hard copy 
+form ( e.g., in physical copies or  phonorecords ), the applicant should provide the date 
+that the work was first published, regardless of whether the first  publication  occurred 
+online or in hard copies.  
+ 1009.4(B)  Nation of First Publication  
+If the applicant  determines that the work has been published , the applicant must 
+identify the nation of first publication . The Office may use this information to determine 
+if the work is eligible for prote ction  under U.S. copyright law.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  34 01/28/2021  When completing an online application the applicant should identify the country where 
+the work was first published by selecting one of the countries listed in the drop down 
+menu marked Nation of first publication . When completing  a paper application, the 
+application should provide this information on space 3(b) next to the heading marked 
+Nation. For guidance in completing this portion of the application, see Chapter 600 , 
+Section 612.  
+As a general rule, the nation of first publication is the country where copies  or 
+phonorecords  of the work were first published with the authorization of the copyright 
+owner. This determination may be difficult when the applicant intends to register a 
+website or website content, because the law in this area is unsettled. If the website was 
+directed at users in a particular country ( e.g., a website written entirely in Danish with a 
+domain name ending in the suffix .dk), that country could be deemed the nation of first 
+publication for purposes of copyright registration. The location of the server where th e 
+work resides and/or the scope of the intended audience may also be relevant to this issue.  
+Upon request, the Office will provide the applicant with general information about the 
+Copyright Act and the legislative history for the statute, including the statutory 
+definition of publication and the provisions concerning nation of publication. However, 
+the Office will not give specific legal advice on whether a work has or has not been 
+published within a particular country. Instead, the Office leaves this determination to 
+the applicant and the courts, because they are in a better position to assess the complete 
+facts in any particular situation.  
+ 1009.5 Name of Author  
+The applicant  should identify all of the authors who created or co -created the 
+copyrightable  content that  is claimed in the application.  
+When completing an online application, the applicant should provide the aut hor’s full 
+name on the Authors screen. If the content was created by an individual, the applicant 
+should provide that person’s full name in the field marked Individual Author. If the 
+content was created by or on behalf of a legal entity, such as a corporat ion, partnership, 
+or other organization, the applicant should provide that entity’s name in the field 
+marked Organization. If the works were created by more than one author, the applicant 
+should complete the relevant fields, click the Save button, and then  repeat this  process 
+for the other authors.  
+If the author created the content as a work made for hire , the applicant should select 
+“yes” in response to the question “Is this author’s contribution  a work made for hire?” 
+(For a definition and discussion of works made for hire, see Chapter 500 , Section 506. ) If 
+the content was created by an employee acting within the scope  of his or her 
+employment , the employer should be named as the author (not the employee). If the 
+content was specially ordered or  commissioned  as a work made for hire, the person or 
+organization that ordered or commissioned the work should be listed as the  author 
+(rather than the individual who actually created the work).  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  35 01/28/2021  NOTE: When asserting a claim  in copyrightable web design authorship, the web 
+designer(s) should be named as the author unless the designer created the  website 
+under a work for hire agreement.  
+In all cases, the applicant should provide the author’s country of citizenship or domicile. 
+The Office may use this information to determine if the work is eligible for protection 
+under U.S. copyright law. If the applicant fails to provide this information, the application  
+will not be accepted by the electronic registration system. If the author’s citizenship or 
+domicile is unknown, the applicant may select “not known” from the drop down menu.  
+When completing a paper application, the applicant s hould provide the author’s full 
+name and his or her country of citizenship and/or domicile on space 2(a). If the content 
+was created by more than one author, the applicant should provide this information for 
+the other authors on spaces 2(b) and 2(c). If th e content was created by more than three 
+authors, the applicant should provide this information on Form CON . 
+If the content qualifies as an anonymous  work or pseudonymous  work, the applicant 
+may check the appropriate boxes that appear on the Authors screen of the online 
+application or in space 2 of the paper application. For a definition and discussion of 
+anonymous works and pseudonymous works, see Chapter 600 , Sections 615.1 and 615.2.   
+For additional guidance in providing the Author’s Name, see Chapter 600 , Section 613.9. 
+For guidance in providing the author’s citizenship and domicile, see Chapter 600 , 
+Section 617.  
+ 1009.6 Author Created / Nature of Authorship Statements  
+To register a  website or website content the applicant  must identify the copyrightable  
+authorship that will be submitted for registration and the applicant must assert a claim  
+to copyright in that authorship. If the content was created by  a single author, the 
+applicant should clearly identify the copyrightable authorship that the author 
+contributed to that work. If the content was created or co -created by two or more 
+authors, the applicant should clearly identify the copyrightable authorsh ip that each 
+author contributed to work. However, the applicant should not describe any 
+uncopyrightable material or de minimis  elements that appear in the content.  
+When completing an online application, the applicant should provide this information 
+on the Authors screen. Specifically, the applicant should check one or more of the boxes 
+in the Author Created field that accurately describe the author’s contribution to the 
+content . If none of these terms fully describe the content that will be submitted for 
+registration, the applicant should provide a more specific description in the field marked 
+“Other. ” For guidance on completing this field, see Chapter 600 , Section 618.4(A).  
+When completing a paper application, the applicant should provide this information in 
+the space marked Nature of Authorship. For guidance in completing this portion  of the 
+application, see Chapter 600 , Section 618.4(B).  
+NOTE:  The deposit copy(ies)  must contain all of the auth orship that is claimed in the 
+Author Created field or the Nature of Authorship space . If the applicant asserts a claim 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  36 01/28/2021  in content that does not appear in the deposit copy(ie s), the registration s pecialist  may 
+communicate with the applicant or may refuse to register that aspect of the claim. For 
+more information on the deposit requirements , see Section 1010. 
+ 1009.6(A) Acceptable Terminology for an Application to Register a Website  
+or Website Content  
+As a general rule, the following terms may be used to describe the copyrightable  content 
+on a  website , provided  that they accurately describe the authorship that appears in the 
+deposit copy(ies) . In most cases, the Office will accept combinations or variant forms of 
+these terms, unless they are contradict ed by information provided in the deposit 
+copy(ies) or elsewhere  in the registration materials.  
+Literary content:  
+• Text  
+Visual arts content:  
+• Artwork or 2 -D artwork  
+• Photographs  
+• Drawings  
+• Technical drawings  
+• Map  
+• Architectural work  
+Performing arts content:  
+• Musi c 
+• Lyrics  
+• Script  
+• Choreographic work   
+• Pantomime  
+Recorded sounds:  
+• Sound recording  
+Audiovisual content:  
+• Audiovisual work   
+• Motion picture  
+For a definition and discussion of these terms, see Chapter 600 , Section 618.4(C).  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  37 01/28/2021  To register a computer program  or a database  that is contained or embedded within a 
+website, the applicant  should follow the instructions set forth in Chapter 700 , Sections 
+721.9(F) and 727.3(D).  
+To register a derivative work, the applicant should describe the new material that the 
+author contributed to the website using appropriate terms, such as “n ew photographs,” 
+“updated text,” “revised artwork,” “additional music,” or the like .  
+If the applicant intends to register the authorship involved in selecting, coordinating, 
+and/or arranging the content that appears on a website, the applicant may use any  of the 
+terms listed below, provided that they accurately describe the copyrightable authorship 
+that appears in the deposit copy(ies) . In most cases, the Office will accept combinations 
+or varian t forms of these terms, unless they are contradicted by information provided in 
+the deposit copy(ies) or elsewhere in the registration materials.  
+• Compilation of [specify material that has been se lected, coordinated, and/or 
+arranged, e.g., “compilation of text and artwork”].  
+• Selection, coordination, a nd/or arrangement of [specify material that has been 
+selected, coordinated, and/or arranged, e.g. “selection and arrangement of text and 
+photographs”] . 
+For additional guidance in registering compilation authorship, see Chapter 600 , 
+Section  618.6.  
+NOTE: Websites often contain previously published  material, previously registered 
+material, public domain  material, or material owned by a third party. If the deposit 
+copy(ies) contain an appreciable amount of unclaimable material, then as disc ussed in 
+Section 1009.8 the applicant should exclude that material from the claim . For 
+information concerning this procedure, see Section 1009. 8. 
+ 1009.6(B) Unclear Terminology for an Application to Register Website Content  
+The applicant  should clearly identify the authorship that will be submitted for 
+registration and the claim  to copyright in that authorship should be clearly stated. 
+Specifically, the applicant should identify the copyrightable  authorship that the author 
+contributed to the  website or the website content, preferably using one or more of the 
+terms set forth in Section 1009.6(A). If the claim to copyright is unclear, the registration 
+specialist  may communicate with the applicant or may refuse registration. For 
+representative examples of unclear terms that may prompt a communi cation from the 
+registration specialist, see Chapter 600 , Sections 618.8(A)(1) through 618.8(A)(11).  
+ 1009.6(C)  Unacceptable Terminology for an Application to Register a  
+Website or Website Content  
+As discussed in Section 1006 , a website does not constitute copyrightable  subject matter 
+in and of itself. The applicant  should not use the term “website,” “webpage,” “screen,” or 
+the like in the Author Created field or the Nature of Authorship space, because these 
+terms are vague, misleading, and fail to identify the particular authorshi p that the 
+author contributed to the work.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  38 01/28/2021  If the applicant asserts a claim  in both the copyrightable and uncopyrightable features of 
+a website, the registration specialist  may annotate the application to indicate that the 
+registration does not extend to the uncopyrightable features. If the applicant expressly 
+asserts a claim to copyright in an y feature of the website that is uncopyrightable , the 
+specialist may communicate with the applicant or may refuse registration if the claim 
+appears to be based solely on those features. Examples of unacceptable terms include 
+the following or any combinatio n of the following:  
+• Concept  
+• Design(s)  
+• Format  
+• Layout  
+• Lettering  
+• Look and feel  
+• Website  
+• Website design  
+• Webpage  
+• Screen  
+• Entire work, entire website, or similar terms  
+• Hyperlinks  
+• Hyperlink structure  
+• Menu choices  
+• User interface  
+• Game play  
+ 1009.7 Claimant  
+The applicant  must provide the name and address of the owner or co -owners of the 
+copyrightable  authorship that is claimed in the application . This party is known as the 
+copyright claimant . The claimant(s) may be the author(s) of the work, or a party that 
+owns all of the exclusive rights  that initially belonged to the author of that work. If the 
+author and the claimant are not the same person, the applicant should provide a brief 
+statement that explains how the claimant acquired the rights that in itially belonged to 
+the autho r. 
+When completing an online application the applicant should provide this information on 
+the Author and Claimant screens; when completing a paper application the applicant 
+should provide this information on spaces 2 and 4. For guidance on completing these  
+portions of the application, see Chapter 600 , Sections 613 and 619.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  39 01/28/2021  Website owners frequently assume that they own the copyright in code or other content 
+that was created for them by an independent contractor, because the owner paid for the 
+content or paid the contractor to create that material. In such cases, the website owner 
+does not own the content unless the contractor agreed to create the content pursuant to 
+a work made for hire  agreement or executed a written agreement that assigned the 
+copyright in that material t o the website owner. Likewise, a website owner cannot 
+assert a claim  in website content if the owner merely owns a physical copy of that 
+content or merely has a nonexclusive license to use that m aterial.  
+Examples:  
+• Kari Crow is a web designer who created an illustration for a 
+gardening website. Kari is not an employee of the website owner 
+and she did not transfer  ownership of the copyrig ht to that party. 
+Therefore, the applicant should name Kari Crow as the author and 
+claimant for this illustration. If Kari contributed multiple illustrations  
+to the website, each illustration must be registered separately.  
+• Dizzy Dog LLC owns and operates a  website that sells dozens of 
+beats for use on hip hop tracks. The company employs two 
+producers who created these beats for the website. Dizzy Dog LLC 
+should be named as the author and claimant for each work, and in 
+each case the work made for hire box sh ould be checked “yes.”  
+ 1009.8 Limitation of Claim  
+As discussed in Section 1008.1, a registration for a website or website content covers 
+the copyrightable  material that  was created by the author(s) named in the application 
+that is owned by the claimant  named in the application, provided that the material is 
+expressly described in the application and is contained in the deposit copy(ies) .  
+A registration for a website or website content does no t cover any material that has 
+been previously published  or previously registered with the U.S. Copyright Office. Nor 
+does it cover material that is in the public domain  or material that is not ow ned by the 
+copyright claimant . If the website contains an appreciable amount of previously 
+published material, previously registered material, public domain material, or third 
+party material, the  applicant  should exclude that material from the claim .  
+• Previously published material : Frequently applicants submit websites or website 
+content that contain previously published material , but fail to exclude that material 
+from the claim. If the deposit copy(ies) contain material , that was published on any 
+day or twenty -four period prior to the date of first publication  specified in the 
+application, the applicant should exclude that material using the procedure 
+described in Chapter 600 , Section 621.8(B). When completing an online application, 
+the applicant should identify the previously published material on the Limitation of 
+Claim screen in the Material Excluded field. When completing a paper applicat ion, 
+the applicant should identify this material in space 6(a) under the heading marked 
+Preexisting Material.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  40 01/28/2021  • Previously registered material : If the deposit copy(ies) contain material that has 
+been previously registered, the applicant should exclude that m aterial from the 
+claim (regardless of whether the material is published or unpublished ). Specifically, 
+the applicant should provide the registration number and year of registration for 
+the previo usly registered material in the Previous Registration field of the online 
+application or in space 5 of the paper application. For guidance in completing this 
+portion of the application, see Chapter 600 , Section 621.8(F).  
+• Content owned by a third party : If the deposit copy(ies) contain content that is 
+owned by someone other than the claimant, the applicant should exclude that 
+content from the claim (regardless of whether the c ontent is published or 
+unpublished). When completing an online application, the applicant should identify 
+the third party content in the Material Excluded field. When completing a paper 
+application the applicant should provide this information in space 6(a ). For 
+guidance in completing this portion of the application, see Chapter 600 , Section s 
+621.7 and 621.8(B).  
+• Public domain material : If the deposit copy(ies) contain material that is in the public 
+domain, the applicant should identify that material in the Material Excluded field of 
+the online application or in space 6( b) of the paper application. For guidance in 
+completing this portion of the application, see Chapter 600 , Section s 621.7 and 
+621.8(B).  
+In addition , the applicant should identify the new copyrightable material that the author 
+contributed to the website or the website content . When completing an online 
+application, the applicant should provide this information on the Limitation of Claim 
+screen.  Specifically, the applicant should check one or more of the boxes in the New 
+Material Included field that accurately describes the aut hor’s contribution . If none of 
+these terms fully describe the new material that the author contributed to the website, 
+the applicant should provide a more specific description in the field marked Other. For 
+guidance on completing this field, see Chapter 600 , Section 621.8(C)(1).  
+When completing a paper application, the applicant should provide this information in 
+space 6(b) under the heading marked Material Added to This Wor k. For guidance in 
+completing this portion of the application, see Chapter 600 , Section 621.8(C)(2).  
+NOTE: The New Material Included field should be completed only if materi al has been 
+excluded from the claim i n the Material Excluded field. Likewise, space 6(b) of the paper 
+application should be complete d only if material has been excluded from the claim in 
+space 6(a).  
+As a general rule, the information that the applicant pro vides in the New Material 
+Included field should be identical to the information that the applicant provides in the 
+Author Created field. Likewise, the information that the applicant provides in space 6(a) 
+of the paper application should be identical to the  information that that the applicant 
+provides in space 2 under the headi ng marked Nature of Authorship.  
+The applicant should only identify the new material created by the author(s) named in 
+the application that is owned by the copyright claimant. The appli cant should not 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  41 01/28/2021  mention any material that is not owned by the claimant, material that will not be 
+submitted for registration, or material that does not appear in the deposit copy(ies). If 
+there is anything in the registration material that casts doubt on t he accuracy of the 
+claim, the registration specialist  may communicate with the applicant.  
+Example:  
+• Alexander Temple writes a blog called “Don’t Tread On Me.” The 
+blog contains musings about politics, together with  photographs 
+created by the Department of Homeland Security, the Department of 
+Defense, and other federal government agencies. Alexander submits 
+an online application along with printouts from his blog. In the 
+application, Alexander asserts a claim in his “website,” but he fails to 
+complete the Limitation of Claim screen. The registration specialist 
+will ask the applicant to describe the new material that he 
+contributed as “text” and “ compilation  of text and photographs ” in 
+the Author  Created and New Material Included field s. The 
+photographs appear to be in the public domain, because they were 
+created by employees of the U.S. government. Therefore, the 
+specialist will ask the applicant to exclude that material from the 
+claim by checkin g the box marked “photographs” in the Material 
+Excluded field.  
+ 1010 Deposit Requirements for Website Content  
+This Section provides basic information concerning the deposit  requirements for 
+regis tering a website or website content . For detailed information concerning these 
+requirements , see  Chapter 1500 . 
+For information concerning mandatory deposit, see Section 1010.7. 
+ 1010.1 Deposit Requirements for Registration  
+To register a  website or website content, the applicant  must submit a deposit  containing 
+the copyrightable  content that is claimed in the application.  
+When examining the deposit for a website or website co ntent, the U.S. Copyright Office 
+will apply the same rules that apply to any other type of work. For example, the 
+registration specialist  will consider the type of authorship that is claimed in t he 
+application, whether the work is published  or unpublished , and whether the applicant 
+satisfied the applicable deposit requirements for that type  of work.  
+If the work is unpublished, the deposit copy  may include all of the content that is owned 
+by the copyright claimant  as of the date that the application is submitted. If th e work has 
+been published, the deposit copies should include the content as it existed on the date of 
+first publication  specified in the application, and the claim  should be limited to the 
+content that was first published on the date.  
+The deposit must contain a complete copy of all the copyrightable authorship that is 
+claimed in the application or appropriate identifying material  (if identifying material is 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  42 01/28/2021  an acceptable form of deposit for that type of work). For example, to register an entire 
+website, the applicant should submit a deposit containing all the authorship that the  
+applicant intends to register, regardless of the number of pages or screens that appear 
+on the site. To register a particular work contained on a website, the applicant should 
+submit an appropriate deposit for that type of work. To register the authorship  involved 
+in selecting, coordinating, and/or arranging works on a website, the applicant must 
+submit a deposit that adequately displays the compilation authorship that is claimed in 
+the application.  
+In all cases, the applicant must submit fixed  copy(ies) or phonorecord(s) of the work 
+that the applicant intends to register. The U.S. Copyright Office will not accept a link to a 
+website or other online source that merely provides access to cont ent that continually 
+changes.  
+The fixed copy(ies) or phonorecord(s) should be submitted in a format that allows the 
+registration specialist to perceive the actual content and context where the work 
+appears on a given website or webpage. In other words, the  deposit should show how 
+the content would be perceived when a user accesses that content in the online 
+environment. The specialist may communicate with the applicant or may refuse 
+registration if the applicant submits separate files or folders containing unassembled 
+content or content that has been disassociated from the website or webpage  where it 
+originally appeared.  
+As the technological means of fixing and normalizing websites and their content evolve 
+into easier solutions and standardized formats, the Office will seek to provide additional 
+guidance on the fixation  of websites. At the present time, the PDF format standard is the 
+preferred means for submitting websites and website content. For information 
+concerning this format and the methods for submitting the deposit to the Office, see 
+Section 1010.3. 
+As a general rule, a registration for a website or for website content does not cover any 
+authorship or works that are not included in the deposit. However, there is a limited 
+exception to this rule. A registration for a computer program  or database  may cover the 
+entire work, even if the applicant submits only a portion of the source code  for that 
+program or a representative selection of the records from the database. For information 
+concerning the deposit requirements for these types of works, see Chapter 1500 , 
+Section s 1509.1(C) and 1509.1(D).  
+The registration specialist may communicate with the applicant if the deposit appears 
+incomplete. If the work is relatively short (based on the number of printed pages or 
+downloaded pages that wi ll be submitted), the applicant should submit the entire website  
+and should provide a brief statement confirming that the deposit contains the complete 
+site. This may avoid the need to communicate with the applicant to determine whether 
+the entire work has  been submitted. When completing an online application, the applicant  
+may provide this information in the Note to Copyright Office field. When completing a 
+paper application, the applicant may provide this  information in a cover letter.  
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  43 01/28/2021   1010.2 Deposit Requirements for Works Published  Online and in  
+Hard Copy Format  
+If the work was published  both online and in a hard copy form ( e.g., paper, discs, film, or 
+other physically tangible media), the applicant  generally should submit two complete 
+copy(ies)  or phonorecord(s)  of the work as it was first published in the hard c opy format.  
+See 37 C.F.R. § 202.20(b)(1) . For example, if a n article  was published simultaneously on 
+a website and in a magazine , the applicant must submit two complete copies of the 
+article as it appeared in the magazine . For information concerning the deposit  
+requirements for works published in hard copy formats, see Chapter 1500 , Sections 
+1507.1 and 1508.2.  
+In particular, the applicant should submit two complete copies of the best edition  if the 
+work was published in the United States on or after January 1, 1978. The criteria used to 
+determine the best edition for a particular work are listed in the “Best Edition 
+Statement ,” which is set forth in Appendix B to Part 202  of the Office’s regulations. It is 
+also posted on the Office’s website in Best Edition of Published Copyrighted Works for the 
+Collections of the Libr ary of Congress  (Circular 7b) . For more information concerning the 
+best edition requirement, see Chapter 1500 , Section 1504.  
+ 1010.3 Deposit Requirements for Unpublished Works and Work s  
+Published Solely Online  
+In most cases, the applicant  does not need to satisfy the best edition  requirement in 
+order to register a website or to register a work that has been published  solely online 
+(although as discussed in Section 1010.6(H) , there is a limited exception to this rule for 
+electronic s erials). Instead, the applicant may submit an electronic copy of the work, 
+provided that the applicant submits the deposit  in an acceptable file f ormat. A current 
+list of acceptable file formats is posted on the Office’s website . In the alternative, the 
+applicant may submit identifying material  that adequately represents the authors hip 
+claimed in the application.  
+The preferred formats and methods for submitting the deposit for an unpublished  work 
+or a work that is p ublished solely online, in order of preference, are as follows:  
+• Uploading electronic files to the electronic registration system : When submitting an 
+online application through the electronic registration system, the applicant may 
+upload a PDF -A, PDF file , PDF package, or PDF portfolio  that contains all of the 
+website content that is claimed  in the application . Any audio or audiovisual content 
+should be submitted in separate files. The deposit also should include a note that 
+identifies the URL(s) where such files reside. Additional guidance on uploading files  
+is provided on the Office’s website .  
+• Submitting electronic files by mail, commercial carrier, courier, or hand delivery : 
+When submitting an online application or a paper application, the applicant may 
+deposit a PDF -A file , PDF file , PDF package, or PDF portfolio  that contains all of the 
+website content that is claimed  in the application. Any  audio or audiovisual content 
+claimed should be submitted in separate files. All of the files should be burned onto 
+a computer dis c, and the deposit should include a note that identifies the URL(s) 
+where the files reside. The disc may be delivered to the Office by mail, commercial 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  44 01/28/2021  carrier, courier, or hand delivery.  For guidance on this procedure, see Chapter 1500 , 
+Section 1508. 3 through 1508.5.  
+• Identifying material : When submitting an online application or a paper application, 
+the applicant may deposit a printout of all the pages of the website  that are claimed 
+in the application, along with a dis c or other appropriate media containing any 
+audio or audiovisual content that is included in the claim . In the alternative, the 
+applicant may deposit identifying material  in the format  that is  most appropriate for 
+the type of authorship that is claimed in the application , provided that the 
+identifying material includes all of the authorship being claimed . For example, the 
+applicant may submit  printouts for websites that contain text and artwork , but do 
+not contain sound, music, or audiovisual elements . The applicant may submit audio 
+or audiovisual files  for websites containing sound, music, or audiovisual elements. A 
+site map may be used as the identifying material for a claim based on the 
+organization of the pages within a web site. However, a claim based on the selection, 
+coordination, and/or arrangement of audio or audiovisual files cannot be included 
+in the claim unless the selection, coordination, and/or arrangement  of the audio or 
+audiovisual files is provided . In all cases, id entifying material may be delivered to 
+the Office  by upload,  mail, commercial carrier, courier, or hand delivery. For 
+guidance on this procedure, see Chapter 1500 , Section 1508. 3 throu gh 1508.5.  
+NOTE:  When submitting an online application and delivering the deposit by mail, 
+commercial carrier, courier, or hand delivery, the applicant must attach a shipping slip  
+to each deposit . If the applicant fails to attach a shipping slip to each deposit, the Office 
+will be unable to connect the deposit with the application. For information concerning 
+this procedure, see Chapter 1500 , Section 1508.2.  
+Examples:  
+• Patrick O’Connor created all the text that appears on a website that 
+describes points of interest in the Shenandoah Valley. Users may 
+view this content, but the terms of service expressly state that the 
+site is onl y intended for public display. The text may be registered 
+as an unpublished work. Therefore, Patrick may upload this content 
+to the electronic registration system in one or more digital files, 
+provided that the text is submitted in an acceptable format, su ch 
+as .txt, .pdf, .docx, .wpf, and provided that the files contain all the 
+copyrightable text that is claimed in the application.  
+• On November 3, 2013 Joseph Andres posted dozens  of photographs  
+to a stock photography website that allows users to download o r 
+reproduce images for their own personal use. The photographs may 
+be registered as published works. Joseph may upload electronic 
+copies of these images through the electronic registration system, 
+either by submitting a separate application for each photog raph or 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  45 01/28/2021  by submitting an application to register a group of published 
+photographs.  
+ 1010.4 Uploading Large Files or Large Numbers of Files to the Electronic 
+Registration System  
+The electronic registration system will not accept any file that is more than 5 00 MB in 
+size. Before uploading a file to the system, the applicant should confirm that the file does 
+not exceed this size limit. The system also has a 120 minute “time out” feature that 
+automatically terminates the upload process if it takes more than two  hours to 
+complete.  
+If the applicant intends to upload a large number of files, the Office encourages the 
+applicant to submit the deposit  in one or more compressed ZIP files. If the applicant 
+intends to upload a very large file, the Office encourages the applicant to compress the 
+deposit in a ZIP file or to separate the deposit into two or more smaller files. 
+Alternatively, the applicant may upload the deposit during two or more upload sessions; 
+information concerning this procedure is available on the Office’s website .  
+If the applicant is unable to upload the deposit with these options, then as discussed in 
+Section 1010.3, the applicant may fix the deposit copy(ies)  on a disc and deliv er it to the 
+Office by mail, commercial carrier, courier, or hand delivery, together with a shipping 
+slip that connects the deposi t with the online application.  
+ 1010.5 The Deposit Material Must  Match the Material Claimed in th e Application  
+Frequently, applicants  seek to register published  website content, but fail to deposit  the 
+content that existed on the website as of the date of publication  specified in the 
+application. In some cases, the applicant provides the date that the website was first 
+published, but instea d of depositing the content that appeared on the site as of that date, 
+the applicant deposits the content that appeared on the website on the date that the 
+application was filed. In other cases, the applicant intends to register the most recent 
+version of a website, but instead of providing the date of first publication for that 
+version, the applicant provides the date that the website first appeared on the intern et. 
+To register material from the initial version or any subsequent version of a published 
+website, the applicant must deposit an acceptable copy  or phonorecord  of the specific 
+version that the applicant intends to register and the applicant must provide the correct 
+date of first publication for that version. If the date of publication specified in the 
+application does not match the version reflected in the deposit copy(ies) , the 
+registration specialist  may communicate with the applicant to determine if the corr ect 
+version has been submitted.  
+Examples:  
+• Capitol City Cupcakes owns a website that went live on June 1, 2009. 
+The company submits a copy of all the text, artwork, and other 
+copyrightable content that appeared on the site on June 1, 2009 and 
+states that the content was first published on that date. The 
+registration specialist will register the claim . The registration will 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  46 01/28/2021  cover the content as it existed on June 1, 2009, but it will not cover 
+any new material that has been added to the site since then.  
+• DC Doughnuts owns a website that first  appeared on the internet on 
+July 1, 2013. A year later the company decides to register all of the  
+photographs , illustrations, and other copyrightable content that 
+appeared on the initial version of the site. The applicant states that 
+the website was first  published on July 1, 2013, but submits a copy 
+of the website as it existed on July 1, 2014. The registration 
+specialist will communicate with the applicant to determine if the 
+date of publication is correct, and if so, to request an appropriate 
+copy of th e content that appeared on the site as of July 1, 2013.  
+ 1010.6 Deposit Requirements for Specific Types of Website Content  
+ 1010.6(A)  The Initial  Version of a Published Website  
+To register the initial version of a published  website , the applicant  should submit the 
+relevant webpages as they existed on the date that the initial version was first 
+published.  
+ 1010.6(B)  Subsequent Versions of a Published Website  
+To register subsequent versions of a published  website , the  applicant  should submit the 
+relevant webpages as they existed on the date that the subsequent  version was first 
+published.  
+ 1010.6(C)  Revised Website Content  
+To register new t ext, new photographs , new artwork, or other content that has been 
+added, modified, or revised on a  website , the applicant  should submit a complete copy  
+or phonorecord  of the new material. The deposit  should contain all of the new 
+copyrightable  material that i s described in the application.  
+Example:  
+• Artifax, LLC added a new page to its website that describes the 
+company’s products and services. Artifax submits an a pplication to 
+register the “new text” and “new illustrations” that appear on this 
+webpage, along with a PDF file  containing the new content. The  
+registration specialist will register the claim . 
+ 1010.6(D)  Compilations  
+If the applicant  asserts a claim  in the selection, coordination, and/or arrangement of 
+material within a website , the compilation authorship must be fully represented in th e 
+deposit . See Feist Publications, Inc. v. Rural Telephone Service Co., Inc. , 499 U.S. 340, 3 58 
+(1991) (“Originality requires only that the author make the selection or arrangement 
+independently . . . and that it display some minimal level of creativity) (emphasis added). 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  47 01/28/2021  For instance, the Office may register a website that contains a compilation of 
+photographs, provided that the author’s selection, coordination, and/or arrangement of 
+images is evident in the claim. If the author’s contribution is unclear, the registration 
+specialist  will communicate wit h the applicant.  
+ 1010.6(E)  Hypertext Markup Language (H TML ) 
+To register the HTML for a  website , the applicant  must deposit  the entire  HTML.  
+ 1010.6(F)  Computer Programs Contained or Em bedded Within a Website  
+To register a computer program  that is contained or embedded within a  website , the 
+applicant  must submit the appropriate deposit  material for that type of work. For a 
+discussion of the deposit requirements for computer programs, including derivative 
+computer programs and programs that contain trade secret material, see Chapter 1500 , 
+Section 1509.1(C).  
+ 1010.6(G)  Databases Contained or Embedded Within a Website  
+To register a database  that is contained or embedded within a  website , the applicant  
+must submit the appropriate deposit  material for that type of work.  
+For a discussion of the deposit requirements for a single -file or multi -file database, see 
+Chapter 1500 , Section 1509.1(D). For a discussion of the deposit requirements for 
+registering a group of updates or revisions to a database, see Chapter 1100 , Section 
+1112.7 . 
+ 1010.6(H)  Electronic Serials  
+As a general rule, the applicant  does not need to satisfy the best edition  requirement in 
+order to register a website or to register a work that has been publi shed  solely online. 
+However, there is a limited exception to this rule for electronic serials published in the 
+United S tates on or after February 24, 2010. If the U.S. Copyright Office has determined 
+that an electronic serial is subject to the mandatory  deposit  requirement, the applicant 
+may need to submit two complete copies of the best edition in order to register that 
+serial with the Office. For a definition of “electronic serial” and a discuss ion of the 
+mandatory deposit requirements for such works, se e Section 1010.7. 
+ 1010.7 Mandatory Deposit  
+Mandatory deposit is a statutory requirement for the benefit of the national collection of 
+the Library of Congress.  Section  407 of the Copyright Act states that the owner of 
+copyright or the owner of the exclusive right of publication  in a work published  in the 
+United States shall deposit two copies  or phonorecords  of the work within three months 
+after publication. 17 U.S.C. § 407(a) . 
+The mandatory deposit requirement generally does not apply to works published in the 
+United Sta tes that are available only online. However, there is a limited exception to this 
+rule. Electronic serials published on or after February 24, 2010 are subject to mandatory  
+deposit if the U.S. Copyright Office issues a written demand for a copy or phonoreco rd of 
+CO M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 000  :  48 01/28/2021  that work for the use or disposition of the Library of Congress. See 37 C.F.R. §§ 
+202.19(c)(5) , 202.24(a) .  
+For purposes of mandatory deposit, an “electronic serial” is defined as “an electronic 
+work published in the United States and available only online, issued or intended to be 
+issued on an established schedule in successive parts bearing numerical or 
+chronolo gical designations, without subsequent alterations, and intended to be 
+continued indefinitely.” Id. § 202.19(b)(4) . 
+For additional information concerning the mandatory deposit requiremen ts for 
+electronic serials, see Chapter 1500 , Section 1511. 6.  

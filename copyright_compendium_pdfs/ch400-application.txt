@@ -1,0 +1,293 @@
+ 
+Chapter 4 00  :  1 01/28/2021  C O M P E N D I U M : Chapter 400  
+Who May File an Application  
+   
+401 What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  2 
+402 Who Is the Applicant?  ................................ ................................ ................................ ................................ ......................  2 
+403 Who Is the Correspondent?  ................................ ................................ ................................ ................................ ...........  3 
+404 Who Is the Claimant?  ................................ ................................ ................................ ................................ ........................  3 
+405 Applications Filed by or on Behalf of the Author  ................................ ................................ ................................ .. 3 
+405.1  Joint Works ................................ ................................ ................................ ................................ ................................ ...........  4 
+405.2  Minors  ................................ ................................ ................................ ................................ ................................ ....................  4 
+405.3  Intellectually Disabled Persons  ................................ ................................ ................................ ................................ .... 5 
+405.4  Prisoners  ................................ ................................ ................................ ................................ ................................ ...............  5 
+405.5  Deceased Aut hors  ................................ ................................ ................................ ................................ ..............................  5 
+405.6  Foreign Authors ................................ ................................ ................................ ................................ ................................ .. 5 
+406 Applications Filed by or on Behalf of a Copyright Owner Who Owns All  of the Exclusive Rights  ..... 5 
+407 Applications Filed by an Owner of One or More — But Less than All —  of the Exclusive Rights  ..... 5 
+408 Exclusive Licensees and Nonexclu sive Licensees  ................................ ................................ ................................ . 6 
+409 Authorized Agents  ................................ ................................ ................................ ................................ .............................  6 
+410 Who May File the Application: At a Glance  ................................ ................................ ................................ ..............  7 
+ 
+ 
+Chapter 4 00  :  2 01/28/2021  C O M P E N D I U M : Chapter 400  
+Who May File an Application  
+ 401 What This Chapter Covers  
+This Chapter provides general information on who may file a copyright claim with the 
+Standard Application or a paper application. It also provides general information on 
+who may file an application for a group registration or supplementary registration.   
+For information on who may file a claim with the Single Application, or an application 
+for a renewal registration or GATT registration, see the following chapters:  
+• For the Single Application , see  Chapter 1400 , Section 140 5.   
+• For renewal registrations , see Chapter 2100 , Section 2115.5.  
+• For GATT registrations, see Chapter 2000 , Section 2007.2(A)( 2). 
+For information on who may file a claim for a mask work or vessel design  see:  Chapter 
+1200 , Section 1211, and   
+Chapter 1300 , Section 1311.2.For information on who may record a transfer of 
+ownership , a notice of termination, or other documents pertaining to copyright,  , see 
+Chapter 2300 , Sections 2309.4, 2310.6, 2311, 2312.1, 2313.5, and 2314.6.  
+ 402 Who Is the Applicant?  
+The applicant  is the party who signs the certification and submits the application to the 
+U.S. Copyright Office. Any of the following parties may certify and submit an application 
+to register a copyr ight claim:  
+• The author of the work;  
+• The owner of all the exclusive rights  in the work;  
+• The owner of one or more — but less than all — of the exclusive rights in the work; 
+or   
+• A duly authorized agent  of any of the foregoing parties.  
+No other parties are entitled to file an application for copyright registration. See 17 
+U.S.C. § 408(a)  (stating that “the owner of copyright or of any exclusive right in the work 
+may obtain registration of the copyright claim”); see also  37 C.F .R. § 202.3(c)(1)  (specifying  
+the parties who may submit an application for copyright registration); Registration of  
+Copyright: Definition of Claimant, 77 Fed. Reg. 29,257, 29,258 (May 17, 2012) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  3 01/28/2021   403 Who Is the Correspondent?  
+When completing an application, the applicant must provide the name, address, and 
+other contact information for the person or persons whom the Of fice should contact if 
+the registration specialist  has questions or concerns regarding the application. This 
+person is referred to as the correspondent.  
+In most cases, the correspondent and the applicant are the same person, because the 
+correspondent typically certifies and submits the application. In all cases, the 
+correspondent must be:  
+• An author of the work;  
+• An owner who owns all of the exclusive rights  in the work;  
+• An owner of one or more — but less than all — of the exclusive rights in the work; 
+or   
+• A duly authorized agent  of one or more of the foregoing parties.  
+As a ge neral rule, the U.S. Copyright Office will send all communications concerning an 
+application or a registration to the correspondent at the address provided in the 
+registration record.  
+For guidance in completing the Correspondent field/space of the applica tion, see 
+Chapter 600 , Section 622.2. For information on who may certify an application, see 
+Chapter 600 , Section 624.   
+ 404 Who Is the Claimant?   
+The only parties who are eligible to be the copyright claimant are (i) the author of the 
+work, or (ii) a copyright owner who owns all of the exclusive rights in the work. 37 
+C.F.R. § 202.3(a)(3) . A person or entity who owns one or more — but less than all — of 
+the exclusive rights in a work is not eligible to be a claimant. See Part 202 - Registration 
+of Claims to Copyright, 43 Fed. Reg. 965, 965 (Jan. 5, 1978) ; Registration of Copyright: 
+Definition of Claimant, 77 Fed. Reg. 29,257, 29,258 (May 17, 2012) . 
+Although the author or the copyright owner who owns all of the rights are the only 
+parties who are entitled to claim ownership of the copyright, an application to register 
+that claim may be certified and submitted by any of the parties listed in Sec tion 402. In 
+some cases, the applicant and the claimant may be the same party, while in other cases 
+they may be different.  
+ 405 Applications Filed by or on Behalf of the Author  
+An author is either (i) the person or persons who created the work, or (ii) the employer 
+or other person for whom the work was prepared, if the work was created during the 
+course of employment or commissioned as a work made for hire . The author may be 
+either a U.S. or a foreign citizen.   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  4 01/28/2021  If the author owns all of the rights under the copyright on the date that the application is 
+filed, the author must be named in the application as the copyright claimant. The author 
+or the author’s duly authorized agent  may certify and submit an application to register 
+that claim. In the situation where the author certifies and submits the application, the 
+author is considered both the applicant and the claimant. If the author’s duly authorized 
+agent certifies and submit s the application, the author is still the claimant but the 
+author’s agent is considered the applicant.  
+The author may always be named as the copyright claimant  even if the author has 
+transferred  the copyright or one or more of the exclusive rights  to another party, or 
+even if the author does not own any of the rights at the time the application is filed. See 
+generally  Registration of Copyright: Definition of Claimant, 77 Fed. Reg. 29,257, 29,258 
+(May 17, 2012) ; Registration of Claims to Copyright, 43 Fed . Reg. 965, 965 (Jan. 5, 1978) .  
+If the author transferred all of the rights in a work to another party, either the author or 
+the transferee may be named as the copyright claimant , and the applic ation may be 
+submitted by the author, the transferee, or their respective agents. If the author 
+transferred only some of his or her rights to another party, the author must be named as 
+the copyright claimant, and the application to register the copyright i n the author’s 
+name may be filed by any of the parties listed in Section 402 (i.e., the author, an owner of 
+one or more exclusive rights, or their respective agents).  
+ 405.1  Joint Works  
+The U.S. Copyright Office will accept an appli cation filed by or on behalf of one or more 
+authors of a joint work  if the application is otherwise proper and complete. The 
+application must identify all of the authors of the joint work.   
+If a joint author transferred all of his or her rights to a third party, either the joint author 
+or the transferee may be named as a copyright claimant , and the application may be 
+filed by the joint author, the transferee, or their respective agents. If a joint owner 
+transferred only some of his or her rights to a third party, the joint author must be 
+named as the copyright claimant, although the application to register the copyright in 
+the joint auth or’s name may be filed by the transferee or any of the other parties listed 
+in Section 402.  
+ 405.2  Minors   
+Minors may claim copyright, and the U.S. Copyright Office will accept applications 
+submitted either by or on behalf of a mi nor if the application is otherwise proper and 
+complete.  
+Minors may appoint a duly authorized agent  to file the application on their behalf, such 
+as a parent, guardian, or other qualified agent.  Because registration records are open to 
+the public, the applicant should not provide any private or confidential information in 
+the application that is not required for registration if the applicant does not wish to 
+make that information public. Any info rmation that is provided in the application may 
+be made available to the general public through the Office’s online database. Once the 
+Office issues a certificate of registration , in most cases i t cannot remove any information 
+from the registration record, including a minor’s name, address, or year of birth.   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  5 01/28/2021   405.3  Intellectually Disabled Persons    
+Intellectually disabled person s may claim copyright, and the U.S. Copyright Office will 
+accept app lications submitted either by or on behalf of such person s, provided the 
+application is otherwise proper and complete. If a committee or guardian has been 
+appointed for a person adjudged to be incompetent, such committee or guardian 
+generally should submit  the application as a duly authorized agent  of the applicant.  
+ 405.4  Prisoners  
+An incarcerated person may claim copyright, and the U.S. Copyright Office will accept 
+applications submitted eithe r by or on behalf of an inmate of a prison or other penal 
+institution if the application is otherwise proper and complete.  
+ 405.5  Deceased Authors  
+The U.S. Copyright Office will accept applications that name a deceased author as the 
+copyright claimant . Likewise, the Office will accept applications submitted by or on 
+behalf of a claimant who  owns all of the rights that initially belonged to a deceased 
+author, such as the author’s estate, a devisee, or an heir.  
+ 405.6  Foreign Authors  
+The U.S. Copyright Office will register works created by a foreign author if the work is 
+eligible for copyright  protection in the United States. U.S. copyright law protects the 
+unpublished  works of all authors (domestic or foreign) as long as the work is not in the 
+public domain . Published  works of foreign authors may be eligible for protection in the 
+United States if they satisfy the requirements described in Chapter 20 00, Section 2003.  
+ 406 Applications Filed by or on Behalf of a Copyright Owner Who Owns All  
+of the Exclusive Rights  
+A transferee who owns all of the rights in the copyright may be named in the application 
+as the copyright claimant . An application to register the copyright in the transferee’s 
+name may be certified and submitted by the author of the work, by the transferee, or by 
+their respective agents. In this situation, the transferee is conside red to be the claimant, 
+and—depending on who submitted the application —the author, the transferee, or the 
+authorized agent  of the author or the transferee is considered the applicant.  
+ 407 Appli cations Filed by an Owner of One or More — But Less than All —  
+of the Exclusive Rights  
+Any of the exclusive rights  that make up a copyright or any subdivision of those rights 
+can be transferred and owned separately. 17 U.S.C. § 201(d)(2) . A party who owns one 
+or more — but not all — of the rights that initially belonged to an author cannot be 
+named as a copyright claimant . See 37 C.F.R. § 202.3(a)(3) . However, an owner of one or 
+more of the exclusive rights may submit an application to register the copyright in the 
+author’s name. In this situation, the author is considered to be the claimant, and the 
+owner of the exclusive right(s) is considered the applicant . See generally  Registration of 
+Copyright: Definition of Claimant, 77 Fed. Reg. 29,257, 29,258 -59 (May 17, 2012) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  6 01/28/2021   408 Exclusive Licensees and Nonexclusive Licensees  
+An exclusive licensee  is a party who has been granted one or more of the exclusive 
+right s set forth in Section 106  of the Copyright Act, or any subdivision of those rights. 
+Exclusive licensees are considered owners of those right(s) during the term of the 
+license. A nonexclusive licensee  is a party who has the right to use a work or an 
+exclusive right in the work, but does not have the right to prevent others from using the 
+same work. Nonexclusive licensees are no t owners of the right(s) or parts thereof, but 
+rather, they are considered authorized users.  
+The Copyright Act states that only “the owner of copyright or of any exclusive right in 
+the work may obtain registration of the copyright claim.” 17 U.S.C. § 408(a) . Although an 
+exclusive licensee who owns one or more of the exclusive rights is entitled to submit an 
+application, only an exclusive licensee who owns all of the exclusive rights in a  work is 
+entitled to be named as a copyright claimant . 37 C.F.R. §  202.3(a)(3) . An exclusive 
+licensee with less than all right s may submit an application by naming the author as the 
+claimant.  
+As a general rule, a nonexclusive licensee is not entitled to be named as a copyright 
+claimant or to submit an application to register a copyright claim , because a 
+nonexclusive licensee is neithe r the “owner of copyright or of any exclusive right in the 
+work.” 17 U.S.C. §  408(a) ; see also  17 U.S.C. § 101  (definition of “transfer of copyright 
+ownership,” which explicitly excludes nonexclusive licenses). A nonexclusive licensee 
+may certify or submit an application to register the copyright only if the licensee is a 
+duly authorized agent  acting on behalf of the author or a person or entity that owns all 
+of the rights under copyright that initially belonged to the author.  
+ 409 Authorized Agents  
+An author, a copyright owner who owns all of the rights in t he work, or an owner of one 
+or more of the exclusive right(s)  may use a duly authorized agent  to submit an 
+application on their behalf. Examples of such agents include, but are not limited to, legal 
+guardians, business managers, literary agents, and attorneys.  
+In most cases, the correspondent is a duly authorized agent of one or more of the parti es 
+listed above, and as a general rule, the U.S. Copyright Office will direct all 
+communications concerning the application to that person. See Section 403 . 
+The Office imposes no special qualifications or tests for authorized agents  (including 
+attorneys) before they may file applications or otherwise conduct business with the 
+Office. Nor does the Office require applications to be prepared or submitted by an 
+attorney. In certain special cases the Office may suggest that the claimant c onsider 
+seeking legal advice, but the Office does not furnish the names of copyright attorneys, 
+publishers, agents, or other similar information. See 37 C.F.R. § 201.2(a)(2) .   
+As a gener al rule, the Office will accept the statement on the application certifying that 
+the person who signs the application is an authorized agent of the author or an owner of 
+the exclusive rights in the work. In some circumstances, the Office may ask an alleged  
+agent to submit documentation showing that he or she is in fact authorized to act for 
+one or more of those parties.   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  7 01/28/2021  410  Who May File the Application: At a Glance  
+The following chart is intended to assist potential applicants in determining who may 
+file an application and who may be named as a claimant:  
+ 
+Who owns the rights?  Who may be named as 
+claimant?  Who may file the application?  
+The author of the work 
+owns all of the rights  The author  The author  
+or 
+An authorized agent of the author  
+The author of the work 
+owns some  — but not all  — 
+of the rights  The author  The author  
+or 
+An owner of one or more of the exclusive 
+rights  
+or 
+An authorized agent of one or more of 
+the aforementioned parties  
+The author of the work 
+owns none  of the rights  The author  
+and/or  
+The transferee who owns 
+all of the rights  The author  
+or 
+The transferee who owns all of the 
+rights  
+or 
+An owner of one or more — but not all— 
+of the exclusive rights  
+or  
+An authorized agent of one or more of 
+the aforementioned parties  
+A transferee owns all of the 
+rights  The author  
+and/or  
+The transferee who owns 
+all of the rights  The author  
+or 
+The transferee who owns all of the 
+rights  
+or 
+An authorized agent of one or more of 
+the aforementioned parties  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 4 00  :  8 01/28/2021  Who owns the rights?  Who may be named as 
+claimant?  Who may file the application?  
+A transferee owns some  — 
+but not all — of the rights  The author  The author  
+or 
+An owner of one or more of the exclusive 
+rights  
+or 
+An authorized agent of one or more of 
+the aforementioned parties  
+An exclusive licensee owns 
+all of the rights  The author  
+and/or  
+The exclusive licensee who 
+owns all of the rights  The author  
+or 
+The exclusive licensee who owns all of 
+the rights  
+or 
+An authorized agent of one or more of 
+the aforementioned parties  
+An exclusive licensee owns 
+some  — but not all  — of the 
+rights  The auth or The author  
+or 
+An owner of one or more of the exclusive 
+rights  
+or 
+An authorized agent of one or more of 
+the aforementioned parties  
+ 
+ 

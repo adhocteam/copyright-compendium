@@ -1,0 +1,259 @@
+Introduction to the Third Edition of the
+COMPENDIUM OF U.S. COPYRIGHT OFFICE PRACTICES
+The Compendium of U.S. Copyright Office Practices, Third Edition (the “Compendium” or
+“Third Edition”) is the administrative manual of the Register of Copyrights concerning
+Title 17 of the United States Code and Chapter 37 of the Code of Federal Regulations. It
+provides instruction to agency staff regarding their statutory duties and provides expert
+guidance to copyright applicants, practitioners, scholars, the courts, and members of the
+general public regarding institutional practices and related principles of law. <a href="http://www.copyright.gov/title37/201/37cfr201-2.html">See 37</a>
+<a href="http://www.copyright.gov/title37/201/37cfr201-2.html">C.F.R. § 201.2(b)(7).</a>
+Effective Date of the Third Edition
+The Compendium, Third Edition was released and became effective on December 22,
+2014.
+The Compendium, Third Edition is a living, electronic document accessible on the official
+website of the U.S. Copyright Office. The Office publishes regular revisions, as
+appropriate, to reflect changes in the law and/or practices, which customers may access,
+download, or print. The most recent update was released on January 28, 2021. The
+version posted on the Office’s website at any given time should be consulted as the
+current official version. The Office maintains an archive of all revisions so released, as
+well as prior versions.
+Citing to the Compendium
+The full title of this manual is the “Compendium of U.S. Copyright Office Practices, Third
+Edition.” The full title may be abbreviated as the “Compendium.” The manual may be
+cited as follows:
+Full citation:
+• U.S. COPYRIGHT OFFICE, COMPENDIUM OF U.S. COPYRIGHT OFFICE PRACTICES § 101
+(3d ed. 2021).
+Short form citation:
+• COMPENDIUM (THIRD) § 101.1(A).
+What the Compendium Covers
+The Compendium documents and explains the many technical requirements, regulations,
+and legal interpretations of the U.S. Copyright Office with a primary focus on the
+registration of copyright claims, documentation of copyright ownership, and
+recordation of copyright documents, including assignments and licenses. It describes
+the wide range of services that the Office provides for searching, accessing, and
+Introduction : 1 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+retrieving information located in its extensive collection of copyright records and the
+associated fees for these services. The Compendium provides guidance regarding the
+contents and scope of particular registrations and records. And it seeks to educate
+applicants about a number of common mistakes, such as providing incorrect,
+ambiguous, or insufficient information, or making overbroad claims of authorship.
+The Compendium does not cover every principle of copyright law or detail every aspect
+of the Office’s administrative practices. The Office may, in exceptional circumstances,
+depart from its normal practices to ensure an outcome that is most appropriate.
+Standard of Deference for the Compendium
+The Compendium does not override any existing statute or regulation. The policies and
+practices set forth in the Compendium do not in themselves have the force and effect of
+law and are not binding upon the Register of Copyrights or Copyright Office staff.
+However, the Compendium does explain the legal rationale and determinations of the
+Copyright Office, where applicable, including circumstances where there is no
+controlling judicial authority.
+The Supreme Court recognized that courts may consider the interpretations set forth in
+administrative manuals, policy statements, and similar materials “to the extent that
+those interpretations have ‘the power to persuade.’” Christensen v. Harris County, 529
+U.S. 576, 587 (2000) (internal citations omitted); Georgia v. Public.Resource.Org, Inc.,
+140 S. Ct. 1498, 1510 (2020) (applying “power to persuade” standard to the
+Compendium). The weight of [the agency’s] judgment . . . in a particular case will depend
+upon the thoroughness evident in its consideration, the validity of its reasoning, its
+consistency with earlier and later pronouncements, and all those factors which give it
+power to persuade . . . .” Skidmore v. Swift & Co., 323 U.S. 134, 140 (1944).
+Courts have cited the Compendium in numerous copyright cases. See, e.g., Olem Shoe
+Corp. v. Washington Shoe Corp., 2015 U.S. App. LEXIS 434, at *20-21 (11th Cir. Jan 12,
+2015) (finding that the Compendium’s construction of the Copyright Act’s requirements
+for disclaiming preexisting works during registration “merits deference”); Alaska Stock,
+LLC v. Houghton Mifflin Harcourt Publishing Co., 747 F.3d 673, 684 (9th Cir. 2014)
+(finding the Compendium “persuasive” concerning the registration requirements for
+databases); Metropolitan Regional Information Systems, Inc. v. American Home Realty
+Network, Inc., 888 F. Supp. 2d 691, 706-07 (D. Md. 2012) (deferring to the Compendium
+concerning the registration requirements for collective works); Rogers v. Better Business
+Bureau of Metropolitan Houston, Inc., 887 F. Supp. 2d 722, 732 (S.D. Tex. 2012) (“The
+Copyright Office’s ‘policy statements, agency manuals, and enforcement guidelines’ do
+not carry ‘the force of law,’ but they are entitled to some deference given the ‘specialized
+experience and broader investigations and information’ of the agency.”); McLaren v.
+Chico’s FAS, Inc., 2010 U.S. Dist. LEXIS 120185, at **9-10 (S.D.N.Y. Nov. 9, 2010)
+(concluding that the Office’s interpretation of the unit of publication regulation “is
+particularly compelling”). A complete list of <a href="https://www.copyright.gov/comp3/docs/table-of-authorities.pdf">cases citing the first, second,</a>and third
+editions of the Compendium is provided in the <a href="https://www.copyright.gov/comp3/docs/table-of-authorities.pdf">Table of Authorities.</a>
+Introduction : 2 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+Compendium Chapters
+The Compendium’s chapter scheme addresses the following key areas:
+• Background on U.S. Copyright Office and general copyright law (Chapter <a href="http://copyright.gov/comp3/chap100/ch100-general-background.pdf">100).</a>
+• Overview of the registration process (Chapter <a href="http://copyright.gov/comp3/chap200/ch200-registration-process.pdf">200).</a>
+• What is copyrightable <a href="http://copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf">(Chapter 300).</a>
+• Who may file an application for copyright registration, and distinguishing between
+applicants, claimants, and correspondents (Chapter <a href="http://copyright.gov/comp3/chap400/ch400-application.pdf">400).</a>
+• What may be or is covered by a registration and legal concepts relating to the
+authorship and ownership of joint works, works made for hire, derivative works,
+compilations, and collective works (Chapter <a href="http://copyright.gov/comp3/chap500/ch500-identifying-works.pdf">500).</a>
+• How to complete an application, including general categories of works and
+standards for examination (Chapter <a href="http://copyright.gov/comp3/chap600/ch600-examination-practices.pdf">600).</a>
+• Guidance regarding the copyrightability and registrability of literary works, works
+of the performing arts, and visual art works (Chapters <a href="http://copyright.gov/comp3/chap700/ch700-literary-works.pdf">700,</a> <a href="http://copyright.gov/comp3/chap800/ch800-performing-arts.pdf">800,</a>and <a href="http://copyright.gov/comp3/chap900/ch900-visual-art.pdf">900).</a>
+• Guidance regarding the copyrightability and registrability of websites and website
+content (Chapter <a href="http://copyright.gov/comp3/chap1000/ch1000-websites.pdf">1000).</a>
+• When and how to register multiple works with one application, one filing fee, and
+one set of deposit copies <a href="http://copyright.gov/comp3/chap1100/ch1100-registration-multiple-works.pdf">(Chapter 1100).</a>
+• When and how to register mask works and vessel designs (Chapters <a href="http://copyright.gov/comp3/chap1200/ch1200-mask-works.pdf">1200</a>and
+<a href="http://copyright.gov/comp3/chap1300/ch1300-vessel-designs.pdf">1300).</a>
+• Types of applications and filing fees <a href="http://copyright.gov/comp3/chap1400/ch1400-applications-filing-fees.pdf">(Chapter 1400).</a>
+• <a href="http://copyright.gov/comp3/chap1500/ch1500-deposits.pdf">Identifying and</a>filing proper deposit copies for registration and mandatory deposit
+<a href="http://copyright.gov/comp3/chap1500/ch1500-deposits.pdf">(Chapter 1500).</a>
+• Conditions for, benefits of, and processes for preregistration (Chapter <a href="http://copyright.gov/comp3/chap1600/ch1600-preregistration.pdf">1600).</a>
+• How to request reconsideration of a refusal of a registration (Chapter <a href="http://copyright.gov/comp3/chap1700/ch1700-administrative-appeals.pdf">1700).</a>
+• How to modify a registration record, such as correcting or amplifying the
+information in a certificate of registration, <a href="http://copyright.gov/comp3/chap1800/ch1800-post-registration.pdf">cancelling a copyright</a>registration, or
+asserting an adverse claim to copyright <a href="http://copyright.gov/comp3/chap1800/ch1800-post-registration.pdf">(Chapter 1800).</a>
+• <a href="http://copyright.gov/comp3/chap1900/ch1900-publication.pdf">Guidance on the</a>meaning of publication and how to determine if a work is published
+<a href="http://copyright.gov/comp3/chap1900/ch1900-publication.pdf">(Chapter 1900).</a>
+Introduction : 3 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+• Registering a foreign work (Chapter <a href="http://copyright.gov/comp3/chap2000/ch2000-foreign-works.pdf">2000).</a>
+• How to seek a renewal registration for works first published or registered before
+January 1, 1978 (Chapter <a href="https://www.copyright.gov/comp3/chap2100/ch2100-renewal-registration.pdf">2100).</a>
+• Copyright notice and the works that are subject to the notice requirement
+(Chapter <a href="http://copyright.gov/comp3/chap2200/ch2200-notice.pdf">2200).</a>
+• Recording documents related to copyright ownership, notices of termination, and
+other documents that the Office records under Title 17 <a href="http://copyright.gov/comp3/chap2300/ch2300-recordation.pdf">(Chapter 2300).</a>
+• Accessing and obtaining Office records and other Office services (Chapter <a href="http://copyright.gov/comp3/chap2400/ch2400-office-services.pdf">2400).</a>
+First and Second Editions of the Compendium
+The first edition of the Compendium (commonly referred to as <a href="http://copyright.gov/history/comp/compendium-one.pdf">“Compendium I”)</a>
+governed the Office’s general practices for registration, recordation, and other matters
+arising under the Copyright Act of 1909. Largely an internal manual, it was directed to
+the Office’s examining staff. Compendium I was made available to the public for the first
+time in 1967 and it was last revised in 1973. See U.S. COPYRIGHT OFFICE, Introduction to
+COMPENDIUM OF U.S. COPYRIGHT OFFICE PRACTICES (1st ed. 1973); Inspection and Copying of
+Records and Other Documents, 32 Fed. Reg. 9314 (June 30, 1967).
+The second edition of the Compendium (commonly referred to as <a href="https://www.copyright.gov/comp3/prior-editions.html">“Compendium II”)</a>was
+also designed for internal use. Compendium II reflects the Copyright Office’s general
+practices for registration, recordation, and other matters arising under the Copyright
+Act of 1976, prior to the adoption of the Third Edition. It was first published in 1984 and
+revised in part in 1988 and 1998. In 1988 the Office added Chapter 600 (Registration
+Procedures) and Chapter 1900 (Records, Indexes and Deposits). In 1995 the Office
+amended Chapter 600, § 606.04, which discussed the procedure for requesting
+reconsideration of a refusal to register. In 1998 the Office revised Chapter 1600
+(Recordation of Transfers) and Chapter 1900 (Records, Indexes, and Deposits). See
+generally <a href="http://www.copyright.gov/fedreg/1998/63fr23475.pdf">Change in Procedure for Recording Certain Multiple Title Documents, 63 Fed.</a>
+<a href="http://www.copyright.gov/fedreg/1998/63fr23475.pdf">Reg. 23,475 (Apr. 29, 1998);</a> <a href="https://www.copyright.gov/fedreg/1995/60fr21983.html">Modification of Appeal Procedure, 60 Fed. Reg. 21,983</a>
+<a href="https://www.copyright.gov/fedreg/1995/60fr21983.html">(May 4, 1995);</a> <a href="https://cdn.loc.gov/copyright/history/mls/ML-386.pdf">Compendium of Copyright Office Practices, 53 Fed. Reg. 20,392 (June 3,</a>
+<a href="https://cdn.loc.gov/copyright/history/mls/ML-386.pdf">1988);</a> <a href="https://cdn.loc.gov/copyright/history/mls/ML-313.pdf">Compendium of Copyright Office Practices, 49 Fed. Reg. 23,125 (June 4, 1984).</a>
+Although the Copyright Act of 1909 was repealed effective January 1, 1978, Compendium
+II did not supersede Compendium I. The preface to Compendium II expressly stated that
+Compendium I continued “to apply to Copyright Office actions, in <a href="https://www.copyright.gov/history/comp/compendium-two.pdf">situations . . . where the</a>
+<a href="https://www.copyright.gov/history/comp/compendium-two.pdf">provisions of the Copyright Act of 1909, as amended, are dispositive.” U.S. Copyright</a>
+<a href="https://www.copyright.gov/history/comp/compendium-two.pdf">Office, Preface to Compendium of U.S. Copyright Office Practices (2d ed. 1984).</a>In other
+words, Compendium I remained the governing administrative manual for all
+registrations, renewals, and recordations issued by the Office prior to January 1, 1978. It
+also set forth the registration requirements for works published before January 1, 1978
+where the applicant subsequently sought to register the work for the original copyright
+term (i.e., the first twenty-eight years of the copyright), including issues involving
+copyright notice and the manufacturing clause.
+Introduction : 4 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+Compendiums I and II are available on the Office’s <a href="http://copyright.gov/comp3/prior-editions.html">website.</a>They are also available for
+inspection and copying in the Records, Research and Certification Section. <a href="http://www.copyright.gov/title37/201/37cfr201-2.html">See 37 C.F.R. §</a>
+<a href="http://www.copyright.gov/title37/201/37cfr201-2.html">201.2(b)(7).</a>
+Relationship Between the First, Second, and Third Editions of
+the Compendium
+This version of the Third Edition governs registrations and recordations issued by the
+U.S. Copyright Office on or after January 28, 2021. Registrations and recordations issued
+between December 22, 2014 and January 27, 2021 are generally governed by the prior
+versions of the Third Edition, except in cases where those versions have been
+superseded by an amendment to the regulations, intervening case law, or previously
+announced changes in practice.
+To the extent there is a conflict between the Third Edition and Compendiums I or II, the
+current version shall control. That said, the Third Edition does not comprehensively
+cover all of the Office’s practices under the prior copyright law. To the extent that issues
+arise that are not addressed by the Third Edition, Compendiums I and II remain in effect
+and continue to be the governing administrative manuals for practices involving those
+issues.
+In particular, the Third Edition generally does not address practices under the Copyright
+Act of 1909. Compendium I continues to be the controlling manual for registrations,
+renewals, and recordations issued by the Office prior to January 1, 1978, and for the
+registration requirements for works published before January 1, 1978 that were never
+registered for the original copyright term. For ease of reference, however, <a href="https://www.copyright.gov/comp3/chap2100/ch2100-renewal-registration.pdf">Chapter 2100</a>
+of the Third Edition summarizes most of the relevant practices from Compendium I
+concerning the registration and renewal of such works.
+Similarly, the Third Edition does not address all practices involving provisions of the
+Copyright Act of 1976 that have been amended or repealed since 1978. As a general
+rule, Compendium II continues to be the relevant administrative manual for
+registrations, renewals, and recordations issued by the Office between January 1, 1978
+and December 22, 2014. In particular, Chapter 1200 of Compendium II continues to be
+the governing manual concerning the manufacturing clause, although that Chapter only
+applies to works published before June 30, 1986, which is the date that the
+manufacturing clause expired.
+Using the Compendium
+The U.S. Copyright Office makes the Compendium available in PDF format. The complete
+manual may be accessed or downloaded in its entirety or on a chapter-by-chapter basis.
+Each chapter can be accessed through the link set forth in the table of contents for the
+Compendium as a whole. Additionally, the Compendium includes a glossary of terms that
+are commonly used in registration and recordation practice. These terms are defined
+and linked throughout the chapters. Certain frequently used phrases are defined for
+convenience.
+Introduction : 5 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+How to Search the Compendium
+You may search for specific terms in the Compendium by using the “find” features in
+Adobe Acrobat or Adobe Reader, or by using the search engine on the Office’s website.
+These features are described below.
+Basic Searching with Adobe Acrobat or Adobe Reader
+The “find” feature in Adobe Acrobat or Adobe Reader allows users to search for specific
+words or phrases within the entire Compendium or within specific chapters. To conduct
+a basic search, follow these steps:
+Step 1:
+• Select “Edit” from the toolbar at the top of your screen, and then select “Find” from
+the drop-down menu. In the alternative, you may press Ctrl+ F to activate the Find
+feature. A box labeled “Find” will appear on your screen.
+Step 2:
+• Enter the word or phrase you would like to find in the box labeled Find. To search
+for specific provisions of the Copyright Act, U.S. Copyright Office regulations, or the
+Compendium, enter the section number you would like to find, such as “409(1)” or
+“202.1.”
+Step 3:
+• Click the “previous” or “next” button. If the search term appears within the
+document it will be highlighted on your screen. If the search term appears
+elsewhere within the same document you may find it by clicking the “previous” or
+“next” buttons again. If the search term does not appear within the document the
+following message will appear: “Reader has finished searching the document. No
+matches were found.” To close the Find feature, click the “x” that appears in the
+upper right corner of that box.
+Advanced Searching with Adobe Acrobat or Adobe Reader
+Use the “advanced search” feature in Adobe Acrobat or Adobe Reader to identify all of
+the places where a specific word or phrase appears within the Compendium or within
+specific chapters. To conduct an advanced search, follow these steps:
+Step 1:
+• Save a copy of the entire Compendium or a specific chapter to your desktop.
+Step 2:
+• Open the document using Adobe Reader or Adobe Acrobat.
+Introduction : 6 01/28/2021
+
+C O M P E N D I U M O F U . S . C O P Y R I G H T O F F I C E P R A C T I C E S , Third Edition
+Step 3:
+• Select “Edit” from the toolbar at the top of your screen and then select “Advanced
+search” from the drop-down menu. In the alternative, you may press Shift+Ctrl+ F to
+activate the advanced search feature. A box labeled “Search” will appear on the left
+side of your screen.
+Step 4:
+• Enter the word or phrase you would like to find in the box marked “What word or
+phrase would you like to search for?” To search for specific provisions of the
+Copyright Act, U.S. Copyright Office regulations, or the Compendium, enter the
+section number you would like to find, such as “409(1)” or “202.1.”
+Step 5:
+• Click the “Search” button. If the search term appears within the document, it will
+appear in a box labeled “Results,” along with a brief excerpt from each sentence
+where that term appears. If the search term does not appear within the document
+the following message will appear: “0 document(s) with 0 instance(s).” To conduct
+another search click the “New Search” button. To close the advanced search feature,
+click the “x” that appears in the upper right corner of the Search box.
+How to Provide Comments on the Compendium
+The U.S. Copyright Office welcomes substantive input regarding the Compendium during
+formal notice and commenting periods. The Office also appreciates feedback on
+readability, clarity, coverage, and usability of the Compendium on an ongoing basis.
+These comments may be emailed by using the form posted on the Office’s <a href="http://www.copyright.gov/help/index.html">website.</a>
+Introduction : 7 01/28/2021

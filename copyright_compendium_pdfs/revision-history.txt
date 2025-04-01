@@ -1,0 +1,1093 @@
+REVISION HISTORY
+COMPENDIUM OF U.S. COPYRIGHT OFFICE PRACTICES
+On January 28, 2021 the U.S. Copyright Office released an updated version of the
+Compendium of U.S. Copyright Office Practices, Third Edition. The following is a list of the
+sections that were added, amended, renumbered, or removed in this release. Sections
+shown in blue were renumbered, but the content remains the same. Sections shown in
+red were removed.
+Introduction
+Page Heading
+1 Effective Date of the Third Edition
+1 Citing to the Compendium
+2 Standard of Deference for the Compendium
+4 First and Second Editions of the Compendium
+5 Relationship Between the First, Second, and Third Editions of the Compendium
+7 How to Provide Comments on the Compendium
+Chapter 100
+Section Heading
+101.2(G) Copyright Modernization Office
+101.2(H) Office of the Chief Financial Officer
+101.3(A) National Copyright Registration and Recordation System
+101.3(B) Regulatory Work
+102.4 Federal Court Decisions
+102.5 State Laws
+102.7 Timeline of Selected Historical Dates in U.S. Copyright Law
+
+Chapter 200
+Section Heading
+201 What This Chapter Covers
+202 Purposes and Advantages of Registration
+202.1 Types of Registrations
+202.2 Registration Distinguished from Preregistration
+203 Timing of Registration
+204 Required Elements for Registration
+204.1(A) Online Application
+204.1(B) Paper Applications
+204.1(B)(1) By Mail or Commercial Carrier
+204.2 Filing Fee
+204.3 Deposit Copy(ies)
+204.3(A) Deposit Copy(ies) Submitted in Electronic Format
+204.3(B) Deposit Copy(ies) Submitted in Physical Format
+207 Special Handling
+The Certificate of Registration, the Registration Decision Date, and the Effective Date of
+209
+Registration
+211 Registration Refused After Examination
+213 The Registration Process at a Glance
+Chapter 300
+Section Heading
+302 The Legal Framework
+305 The Fixation Requirement
+307 Copyrightable Subject Matter
+309.1 Prior Works and Prior Registrations
+
+310.3 Symbolic Meaning and Impression
+310.5 The Author’s Inspiration and Intent
+310.6 The Author’s Skill, Experience, and Artistic Judgment
+310.7 The Time, Effort, or Expense Required to Create the Work
+310.10 Commercial Appeal or Success
+310.11 Other Forms of Legal Protection
+311.2 The Originality Requirement for Derivative Works
+312.1 Copyrightable Subject Matter
+313.2 Works That Lack Human Authorship
+313.3(D) Typeface and Mere Variations of Typographic Ornamentation
+313.4(E) Measuring and Computing Devices
+313.4(H) Characters
+313.5 Specific Types of Works That May Contain Uncopyrightable Material
+313.6(C)(1) U.S. Government Works
+313.6(C)(2) Government Edicts
+Chapter 400
+Section Heading
+401 What This Chapter Covers
+405 Applications Filed by or on Behalf of the Author
+405.3 Persons with Intellectual Disabilities
+405.5 Deceased Authors
+Chapter 500
+Section Heading
+503.1(B) Copyrightable Subject Matter
+
+505.2 Determining Whether the Work is a Joint Work
+507.2 The Scope of the Copyright in a Derivative Work
+509 Collective Works and Contributions to Collective Works
+511 One Work Per Registration
+512.1 Unpublished Versions of the Same Work
+512.2 Published Versions of the Same Work
+Chapter 600
+Section Heading
+601 What This Chapter Covers
+602.4(E) Duplicate Claims
+602.6 General Policy Regarding Location of Information
+602.7 General Practices Regarding Missing Information
+603 Variances
+603.2 Material Variances
+Material Variances That May Be Resolved by Amending the Registration Record without
+603.2(A)
+Annotating
+Material Variances That May Be Resolved by Amending and Annotating the Registration
+603.2(B)
+Record
+Material Variances That Cannot Be Resolved by Amending or Annotating the Registration
+603.2(C)
+Record
+604.1 Addressing Variances in Registration Materials
+604.2 Adding Comments to the Registration Record
+604.3 Adding Missing Information to the Registration Record
+605.1 General Policies
+605.2(A) Note to Copyright Office
+605.2(B) Cover Letters
+605.3(A) The U.S. Copyright Office’s Email Addresses
+
+605.3(D) Communication from the U.S. Copyright Office May Address Multiple Issues
+Case Numbers, Service Request Numbers, THREAD ID Numbers, and Correspondence
+605.4
+Identification Numbers
+605.6(B) Email
+605.6(C) Email Requests for Deposit Copy(ies)
+605.6(D) Letters
+605.8 Procedure for Reopening a Closed Application
+605.9 Withdrawing an Application
+606 Warnings
+607 Registration Made Under the Rule of Doubt
+608 Refusal to Register
+609 Identifying the Work that the Applicant Intends to Register
+609.1 Online Application
+609.1(A) Question 1: Are You Registering One Work?
+through through
+609.1(C) Question 3: Does the Work You Are Sending Contain Material Created Only by This Author?
+609.2 Paper Applications
+609.3 Works Containing Multiple Forms of Authorship
+610.1 Title Types
+610.2 Title of Work Being Registered / Title of this Work
+Works Containing Separate and Independent Works: Units of Publication, Collective Works,
+610.4
+and Contributions to Collective Works
+610.4(A) Contents Title: Titles of Separate and Independent Works Included in a Larger Work
+610.4(B) Title of Larger Work
+610.6(A) Untitled Works
+610.6(B) Descriptive Titles That Appear to Be Incorrect
+Variances between the Title Provided in the Application and the Title That Appears on the
+610.6(D)(1)
+Deposit Copy(ies)
+Title That Appears on the Deposit Copy(ies) is More Complete Than the Title Provided in the
+610.6(D)(2)
+Application
+
+610.6(D)(3) Edition Number, Version Number, or Other Identifying Information Not Provided
+Material Variances Between the Title Provided in the Application and the Title That Appears
+610.6(D)(4)
+on the Deposit Copy(ies)
+611.1(A) Year of Completion for an Unpublished Work Created Over a Period of Time
+611.1(B) Year of Completion for Multiple Versions of the Same Work
+611.2(A) Year of Completion Apparently Incorrect
+611.2(B) Year of Completion Omitted
+612.2 What Constitutes Publication?
+612.3 Determining whether the Work is Published or Unpublished
+612.6(C) ISBN, ISSN, and Other Standard Numbers
+612.7(C) Nation of Publication Given in a Paper Application without a Date of Publication
+612.7(F) Exact Date of Publication Unknown
+612.7(G) Multiple Dates of Publication
+612.7(I) Impossible, Impractical, or Implausible Date of Publication
+612.7(J) Nation of First Publication: Works Published in Multiple Countries
+612.7(K) Nation of First Publication Unclear
+613.1 Who Is the Author?
+613.5 Identifying the Authors of a Joint Work
+613.7 Identifying the Author of a Compilation
+613.8 Identifying the Author of a Collective Work or a Contribution to a Collective Work
+613.9 Completing the Application: Name of Author
+613.10(A) Name of Author Unclear
+613.10(B) Name of Author Variances
+613.10(B)(1)(b) Material Variances
+Variance Between the Number of Authors Named in the Application and the Number of
+613.10(B)(2)
+Authors Named in the Deposit Copy(ies)
+613.10(C) Name of Author Not Required
+613.10(F) Name of an Author Omitted: Works Created by Large Numbers of Authors
+
+614.1 Completing the Application: Works Made for Hire
+614.1(E) Registering a Work Made for Hire as an Anonymous or Pseudonymous Work
+614.2 Examination Guidelines: Works Made for Hire
+614.2(B)(5) Organization Named as the Author of a Work Made for Hire
+614.2(B)(6) Individual Named as Author of a Work Made for Hire
+Individual and Unincorporated Organization Named Together as the Authors of a Work
+614.2(B)(8)
+Made for Hire
+615.1(B) Completing the Application: Anonymous Works
+615.2(A) What Is a Pseudonymous Work?
+615.2(B) Completing the Application: Pseudonymous Works
+616.3 Completing the Application: Author’s Year of Birth and Death
+617.3 Determining the Author’s Citizenship or Domicile for a Work Made for Hire
+617.6 Completing the Application: Citizenship and Domicile
+617.7(B) Citizenship and Domicile in Multiple Countries
+618.1 Asserting a Claim to Copyright
+618.4(A) The Online Application: Author Created Field
+618.4(B) Paper Applications: Nature of Authorship Space
+618.4(C) Recommended Terminology for Asserting a Claim to Copyright
+618.6 Compilations
+618.7 Collective Works
+618.7(B)(2) Registering a Collective Work and a Contribution to a Collective Work
+618.7(C) Asserting a Claim to Copyright in a Serial Publication
+Examples for Asserting a Claim to Copyright in a Collective Work and/or a Contribution to a
+618.7(D)
+Collective Work
+618.8(A) Authorship Unclear
+618.8(A)(1) Design
+618.8(A)(2) Game
+618.8(A)(4) Author, Artist, Writer, Songwriter, Editor, and Other Professional Designations
+
+618.8(A)(5) Story, Story Idea, Story Concept, Story Line
+618.8(A)(6) Conceived, Conception
+618.8(A)(7) Plot
+618.8(A)(8) Characters
+618.8(A)(9) Research
+618.8(A)(11) Entire Work and Other Unspecific Terms
+Uncopyrightable Material Claimed in the Author Created Field or the Nature of Authorship
+618.8(C)
+Space
+Deposit Copy(ies) Containing Copyrightable Authorship and Uncopyrightable Material; No
+618.8(C)(1)
+Claim Asserted in Uncopyrightable Material
+618.8(C)(2) Claim in Copyrightable Authorship and Uncopyrightable Material
+618.8(C)(3) Claim in Uncopyrightable Material: Deposit Copy(ies) Contain Copyrightable Authorship
+Claim in Uncopyrightable Material: Acceptable Authorship Statement Used to Describe
+618.8(C)(4)
+Uncopyrightable Material
+618.8(C)(6) Claim in Uncopyrightable Material: Registration Refused
+618.8(D) De Minimis Material Claimed in the Author Created Field or the Nature of Authorship Space
+Deposit Copy(ies) Contain Copyrightable Authorship and De Minimis Material; No Claim
+618.8(D)(1)
+Asserted in the De Minimis Material
+618.8(D)(2) Claim in Copyrightable Authorship and De Minimis Material
+618.8(D)(3) Claim in De Minimis Material: Works Created by Two or More Authors
+618.8(D)(4) Claim in De Minimis Material: Registration Refused
+Variances Between the Information Provided in the Application and Elsewhere in the
+618.8(E)
+Registration Materials
+Material Claimed in the Author Created Field or Nature of Authorship Space Not Found in
+618.8(F)
+the Deposit Copy(ies)
+618.8(H) Nature of Authorship Statement Omitted from a Paper Application
+618.8(I) Nature of This Work
+619 Name of Claimant
+619.12 Completing the Application: Name of Claimant
+619.13(A) Nicknames, First Names, Last Names, and Abbreviated Versions of the Claimant’s Name
+
+619.13(B) Initials
+619.13(C) Identifying the Author of a Pseudonymous Work as the Copyright Claimant
+619.13(D) Identifying the Author of an Anonymous Work as the Copyright Claimant
+619.13(E)(3) Individual Name Listed Above or Below the Name of a Legal Entity in a Paper Application
+Variances Between the Name Provided in the Name of Claimant Field / Space and Elsewhere
+619.13(K)
+in the Registration Materials
+619.13(Q) Deceased Individual or Defunct Entity Named as a Claimant
+619.13(T) Name of Claimant Omitted
+620.10(D)(1)(b) Partnerships
+620.10(D)(1)(c) Community Property States
+620.10(D)(2) Same Person Is Named as Author and Claimant
+621.8(B) Identifying Unclaimable Material That Should Be Excluded from the Claim
+621.8(C)(1) The Online Application: New Material Included Field
+621.8(C)(2) Paper Applications: Space 6(b)
+Completing an Application to Register a Compilation, a Collective Work, and/or a
+621.8(D)
+Contribution to a Collective Work
+621.9(A)(2) Applicant Has Not Asserted a Claim in Unclaimable Material
+621.9(A)(3) Unclaimable Material Described in the Application but Not Included in the Deposit Copy(ies)
+621.9(D)(1) Claim Clearly Defined by the Title of the Work
+621.9(D)(5) Claim Clarified by Information Provided in the Deposit Copy(ies)
+621.9(E) Uncopyrightable Material Claimed in the New Material Included Field or Space 6(b)
+Deposit Copy(ies) Contain Copyrightable Authorship and Uncopyrightable Material; No
+621.9(E)(1)
+Claim Asserted in the Uncopyrightable Material
+621.9(E)(2) Claim in Copyrightable Authorship and Uncopyrightable Material
+621.9(E)(3) Claim in Uncopyrightable Material: Deposit Copy(ies) Contain Copyrightable Authorship
+621.9(E)(6) Claim in Uncopyrightable Material: Registration Refused
+621.9(F) De Minimis Material Claimed in the New Material Included Field or Space 6(b)
+Deposit Copy(ies) Contain Copyrightable Authorship and De Minimis Material; No Claim
+621.9(F)(1)
+Asserted in the De Minimis Material
+
+621.9(F)(2) Claim in Copyrightable Authorship and De Minimis Material
+621.9(F)(4) Claim in De Minimis Authorship: Registration Refused
+621.9(G) Discrepancies Between the Limitation of Claim Fields and the Deposit Copy(ies)
+621.9(H)(2) Unpublished Works
+Discrepancies Involving the Registration Number or Year of Registration in a Paper
+621.9(I)
+Application
+621.9(J) Reference to Previous Registration Clearly Erroneous
+621.9(K) Reference to a Preregistration in the Previous Registration Field/Space
+622 Rights and Permissions Information / Correspondent / Mail Certificate
+623.4 Timeline for Special Handling Requests
+623.5 Procedure for Requesting Special Handling
+623.5(C) Requests Delivered by Commercial Carrier, Courier or by Mail
+Procedure for Requesting Special Handling for a Pending Application or a Pending
+623.5(D)
+Recordation
+623.6 Special Handling Fee
+623.7 Special Handling for Multiple Applications That Share the Same Deposit Copy
+624 Certification
+624.1 The Significance of the Certification
+624.2 Who May Certify the Application?
+624.3(A) Online Applications
+624.3(B) Paper Applications
+624.4(A) Signature Requirements
+624.4(B) Date of Certification in a Paper Application
+625 Registration Decision Date and Effective Date of Registration
+625.1 Minimum Requirements for an Acceptable Application
+625.2 Minimum Requirements for Acceptable Deposit Copy(ies)
+625.2(B) Unacceptable File Formats for the Deposit Copy(ies) Accompanying an Online Application
+625.2(D) Shipping Slips for Mailing Physical Deposit Copy(ies) to Accompany an Online Application
+
+625.3 Minimum Requirements for an Acceptable Filing Fee
+625.3(A) Forms of Payment
+Minimum Requirements for Establishing an Effective Date of Registration Distinguished
+625.4
+from the Requirements for Issuing a Certificate of Registration
+625.5 Differences Between an Application and a Certificate of Registration
+Chapter 700
+Section Heading
+705 Fixation of Literary Works
+709.3 Abridgements
+712 Monographs and Serials
+712.1 What Is a Literary Monograph?
+712.1(A) Copyrightable Authorship in Literary Monographs
+712.1(B) Application Tips for Registering a Literary Monograph
+712.2 What is a Serial?
+712.2(A) Copyrightable Authorship in Serials
+712.2(B) Application Tips for Registering a Single Issue of a Serial Publication
+712.3 ISBN and ISSN Numbers
+713 Book Jackets
+714 Games
+715.3 Application Tips for Genealogies
+716 Instructional Texts and Instructional Works
+717 Legal Matters
+717.1 Legal Publications
+721.5 Relationship Between Source Code and Object Code
+721.7 Copyrightable Authorship in a Computer Program
+721.9 Application Tips for Computer Programs
+
+721.9(B) Title of the Program
+721.9(D) Year of Completion
+721.9(H) Acceptable Terminology for an Application to Register a Computer Program
+721.10(C) Deposit Requirements for Screen Displays
+721.11 User Manuals and Other Documentation for a Computer Program
+722 Apps
+723 Computer Programs That Generate Typeface, Typefont, or Barcodes
+Spreadsheets, Reports, and Other Documents Generated
+725
+by a Computer Program
+727 Databases
+727.3 Application Tips for Databases
+727.4 Deposit Requirements
+Chapter 800
+Section Heading
+802.4(A) Copies
+802.4(B) Phonorecords
+802.4(C) Motion Pictures
+802.6 Derivative Musical Works
+802.8(A) A Registration for a Musical Work Distinguished from a Registration for a Sound Recording
+802.8(D) Name Individual Authors (Not Performing Groups) as the Author of a Musical Work
+802.8(E) Work Made for Hire Authorship
+802.8(G) [Reserved]
+802.8(H) [Reserved]
+802.8(I) [Reserved]
+803.5(D) Pre-1972 Sound Recordings
+A Registration for a Sound Recording Distinguished from a Registration for a Musical Work
+803.8(A)
+or Literary Work
+
+803.8(F)(4) Bonus Track Added to a Previously Published Album
+803.8(G) [Reserved]
+803.8(H) [Reserved]
+803.8(I) [Reserved]
+803.9(A) Type of Work
+803.9(D)(4) Beats/Music Track
+803.9(D)(6) Sound Effects
+804.3(F) Illustrations or Descriptions of Costumes, Scenery, Sets, Props, or Lighting
+804.5(B) Phonorecords
+804.8(B) Synopses
+804.8(C) Redacted Screenplay for a Motion Picture in Production
+805.2(B) Compositional Arrangement
+Ordinary Motor Activities, Non-Expressive Physical Activities, Competitive Maneuvers, Feats
+805.5(B)(3) of Physical Skill or Dexterity, and Other Uncopyrightable Movements in Choreographic
+Works
+Descriptions, Depictions, and Illustrations of Social Dances, Simple Routines, or Other
+805.8(D)
+Uncopyrightable Movements
+Ordinary Motor Activities, Non-Expressive Physical Activities, Competitive Maneuvers, Feats
+806.5(B)
+of Physical Skill or Dexterity, and Other Uncopyrightable Movements in Pantomimes
+807.5(C) Human Authorship
+808.10(D) Missing Authorship Elements
+808.10(G)(2)(a) Sounds Published on the Same Date
+Redacted Screenplay for a Motion Picture in Production
+808.10(D)
+through
+through
+The 1994 Uruguay Round Agreements Act (URAA) and the General Agreement on Tariffs
+808.10(J)(1)
+and Trade (GATT)
+808.10(J)(2) North American Free Trade Agreement (NAFTA)
+808.11(D) Unclear Authorship Terms
+808.11(E) Unacceptable Authorship Terms
+808.12 Deposit Requirements for Motion Pictures
+
+Chapter 900
+Section Heading
+901 What This Chapter Covers
+902 Visual Arts Division
+903.1 Pictorial, Graphic, and Sculptural Works
+903.2 Architectural Works
+904 Fixation of Visual Art Works
+905 Copyrightable Authorship in Visual Art Works
+906 Uncopyrightable Material
+906.1 Common Geometric Shapes
+906.3 Colors, Coloring, and Coloration
+906.4 Typeface, Typefont, Lettering, Calligraphy, and Typographic Ornamentation
+906.6 Blank Forms
+906.7 Naturally Occurring and Discovered Material
+906.8 Mechanical Processes and Random Selection
+906.9 Measuring and Computing Devices
+906.10 Useful Articles and the Mechanical or Utilitarian Aspects of Works of Artistic Craftsmanship
+908 Jewelry Designs
+908.1 What is Jewelry?
+908.2 Copyrightable Authorship in Jewelry
+908.3 Application Tips for Jewelry
+909.3 Uncopyrightable Material
+909.3(A) Photographic Reproductions, Digital Copying, and Digital Restoration
+909.3(B) X-Rays, Medical Imaging, and Non-Medical Echo Sonography
+910 Games, Toys, Dolls, Stuffed Animals, and Puppets
+911 Characters
+912 Cartoons, Comic Strips, and Comic Books
+
+913 Prints
+914 Trademarks, Logos, and Labels
+914.1 Copyrightable Authorship in Trademarks, Logos, and Labels
+914.2 Application Tips for Trademarks, Logos, and Labels
+915 Catalogs
+916 Retrospective Works and Exhibition Catalogs
+917 Art Reproductions
+917.1 Copyrightable Authorship in Art Reproductions
+917.2 Application Tips for Art Reproductions
+917.2(A) Distinguishing Art Reproductions from the Source Work and Identifying Material
+917.2(B) Authorship Unclear
+918 Installation Art
+919 Maps
+919.1 Copyrightable Authorship in Maps
+919.2 Derivative Maps
+920 Patterns, Stencils, and How-To Books
+920.1 Patterns for Making Articles
+920.2 Stencils and Templates
+920.3 How-to-Books, Project Books, and Crafts-Making Books
+920.4 Application Tips for Patterns, Stencils, and How-To Books
+921 Graphs, Charts, Tables, and Figures
+922 Technical and Scientific Drawings
+923 Models
+923.1 Copyrightable Authorship in Models
+923.2 Application Tips for Models
+924 Copyright Law Protects the Design Aspects of a Useful Article
+924.1 What Is a Useful Article?
+
+924.2 What is the Design of a Useful Article?
+924.3 The Separability Test
+924.3(A) The Separate-Identification Requirement
+924.3(B) The Independent-Existence Requirement
+924.3(C) Separable Features May Enhance the Functionality of the Useful Article
+924.3(D) Separable Features May Cover the Entire Surface of a Useful Article
+924.3(E) Separating the Design Feature from the Useful Article
+924.3(F) The Overall Shape of a Useful Article Is Not Protectable
+924.4 The Originality Test
+924.5 Guidelines for Applying the Separability and Originality Tests
+924.6 Application Tips for Registering the Design of a Useful Article
+924.6(A) One Application Per Article
+924.6(B) Completing the Application
+924.6(C) Preparing the Identifying Material
+925 Works of Artistic Craftsmanship
+925.1 What Is a Work of Artistic Craftsmanship?
+925.2 Copyrightable Authorship in Works of Artistic Craftsmanship
+925.3 Works of Artistic Craftsmanship Distinguished from a Useful Article
+926 Architectural Works
+926.1 Architectural Works Distinguished from Technical Drawings
+926.2 Copyrightable Authorship in Architectural Works
+926.2(A) Standard Configurations
+926.2(B) Functional Features
+926.2(C) Building Design Created Before December 1, 1990
+926.3 Application Tips for Architectural Works
+
+Chapter 1000
+Section Heading
+1006 Copyrightable Subject Matter
+1006.1(B) Databases
+1008.3(A) What Constitutes Publication?
+1008.3(B) Reproduction and Distribution Distinguished from Performance and Display
+1008.3(C) The Authorization Requirement
+1008.3(F) Determining the Publication Status of a Work Made Available Only Online
+1008.4 Identifying the Work(s) That May Be Included in the Claim
+1008.6(B) Unpublished Website Content
+1008.7 Statutory Damages
+1009.3 Year of Completion
+1009.4 Date and Nation of First Publication
+1009.8 Limitation of Claim
+1010.1 Deposit Requirements for Registration
+Deposit Requirements for Unpublished Works and Works
+1010.3
+Published Solely Online
+1010.4 Uploading Large Files or Large Numbers of Files to the Electronic Registration System
+1010.6(G) Databases Contained or Embedded Within a Website
+Chapter 1100
+Section Heading
+1101 What This Chapter Covers
+1102 [Reserved]
+1103 The Unit of Publication Option
+1103.1 What Is a Unit of Publication?
+1103.1(A) The Unit Must Contain Separately Fixed Component Works
+
+1103.1(B) The Unit Must Contain an Actual Copy or Phonorecord of the Works
+1103.1(C) The Works Must Be Physically Bundled in the Unit
+1103.1(D) The Works Must Be Distributed to the Public in the Unit
+1103.1(E) Works That Do Not Qualify as a Unit of Publication
+1103.2 Eligibility Requirements
+1103.3 Registration Requirements
+1103.4 Completing the Application
+1103.4(A) Type of Work
+1103.4(B) Title
+1103.4(C) Publication / Completion
+1103.4(D) Authors of the Component Works
+1103.4(E) Manufacturer, Publisher, Producer, Packager, or Creator of the Unit of Publication
+1103.4(F) Author Created / Nature of Authorship
+1103.4(G) Claimants / Transfer Statement
+1103.4(H) Limitation of Claim
+1103.4(I) Rights and Permissions Information
+1103.4(J) Correspondent / Mailing Address for the Certificate of Registration
+1103.4(K) Special Handling
+1103.4(L) Certification
+1104 The Sound Recording / Recorded Work Option
+1105 Group Registration
+1105.1 What Is a Group Registration?
+1105.2 Group Registration Options
+1105.3 Registration Requirements
+1105.4 The Scope of a Group Registration
+1106 Group Registration of Unpublished Works
+1106.1 Eligibility Requirements
+
+1106.1(A) The Group Must Be Limited to Unpublished Works
+1106.1(B) Works That May Be Registered with this Option
+1106.1(C) The Number of Works That May Be Included in the Group
+1106.1(D) The Works Must Be Registered in the Same Administrative Class
+1106.1(E) The Author and Claimant for Each Work Must Be the Same
+1106.2 Application Requirements
+1106.3 Filing Fee Requirements
+1106.3(A) Registration Process Overview
+through through
+1106.3(L) Certification
+1106.4 Deposit Requirements
+1106.5 Completing the Application: Group Registration of Unpublished Works
+1106.5(A) Types of Works
+1106.5(B) Titles of the Works
+1106.5(C) Year of Completion / Year of Creation
+1106.5(D) Authors / Claimants
+1106.5(E) Anonymous and Pseudonymous Works
+1106.5(F) Works Made for Hire
+1106.5(G) Author Created
+1106.5(H) Limitation of Claim
+1106.5(I) Rights and Permissions Information
+1106.5(J) Correspondent / Mailing Address for the Certificate of Registration
+1106.5(K) Special Handling
+1106.5(L) Certification
+1106.6 Unpublished Collections Eliminated March 15, 2019
+1107 Group Registration of Serials
+1107.1 What Is a Serial?
+1107.2 Eligibility Requirements
+
+1107.2(A) The Collective Work Requirement
+1107.2(B) Collective Work Authorship
+1107.2(C) All New Collective Works
+1107.2(D) Discrete, Self-Contained Collective works
+1107.3 Application Requirements
+1107.4 Filing Fee Requirements
+1107.5 Deposit Requirements
+1107.5(A) Digital Copies Required
+1107.5(B) File Naming Convention for Digital Copies
+1107.5(C) Uploading the Digital Files
+1107.5(D) Physical Copies Permitted Until December 31, 2019
+1107.5(D) Special Relief
+1107.6 Completing the Application: Group Registration of Serials
+1107.6(A) Type of Group
+1107.6(B) Identifying the Serial
+1107.6(C) International Standard Serial Number (ISSN)
+1107.6(D) Nation of First Publication / Author’s Citizenship
+1107.6(E) Volume, Number, Issue Date, and Date of Publication
+1107.6(F) Author / Claimant
+1107.6(G) Rights and Permissions Information
+1107.6(H) Correspondent / Mailing Address for the Certificate of Registration
+1107.6(I) Special Handling
+1107.6(J) Certification
+1107.7 Scope of Protection for Serial Issues Registered Under the Group Registration Option
+1108 Group Registration of Newspaper Issues
+1108.1 What Is a Newspaper?
+1108.2 Eligibility Requirements
+
+1108.2(A) The Collective Work Requirement
+1108.2(B) Collective Work Authorship
+1108.2(C) All New Collective Works
+1108.2(D) Discrete, Self-Contained Collective Works
+1108.3 Application Requirements
+1108.4 Filing Fee Requirements
+1108.5 Deposit Requirements
+1108.5(A) Digital Copies Required
+1108.5(A)(1) Final Edition Required; Early Editions and Local Editions Permitted
+1108.5(A)(2) PDF Format Required
+1108.5(A)(3) File Naming Convention
+1108.5(A)(4) Uploading the Digital Files
+1108.5(B) Special Relief from the Deposit Requirements
+1108.6 Completing the Application: Group Registration of Newspaper Issues
+1108.6(A) Type of Group
+1108.6(B) Identifying the Newspaper
+1108.6(C) International Standard Serial Number (ISSN)
+1108.6(D) Publication Dates for the Issues in the Group
+1108.6(E) Nation of First Publication
+1108.6(F) Number of Issues in the Group
+1108.6(G) Author / Claimant
+1108.6(H) Rights and Permissions Information
+1108.6(I) Correspondent / Mailing Address for the Certificate of Registration
+1108.6(J) Special Handling
+1108.6(K) Certification
+1108.7 Scope of Protection for Newspaper Issues Registered Under the Group Registration Option
+1109 Group Registration of Newsletters
+
+1109.1 What Is a Newsletter?
+1109.2 Eligibility Requirements
+1109.2(A) Each Work Must Be an All-New Issue or an All-New Collective Work
+1109.2(B) Discrete, Self-Contained Works
+1109.3 Application Requirements
+1109.4 Filing Fee Requirements
+1109.5 Deposit Requirements
+1109.5(A) Digital Copies Required
+1109.5(B) File Naming Convention
+1109.5(C) Uploading the Digital Files
+1109.5(D) Special Relief
+1109.6 Completing the Application: Group Registration of Newsletters Issues
+1109.6(A) Type of Group
+1109.6(B) Identifying the Newsletter
+1109.6(C) International Standard Serial Number (ISSN)
+1109.6(D) Publication Dates for the Issues in the Group
+1109.6(E) Nation of First Publication
+1109.6(F) Number of Issues in the Group
+1109.6(G) Author / Claimant
+1109.6(H) Rights and Permissions Information
+1109.6(I) Correspondent / Mailing Address for the Certificate of Registration
+1109.6(J) Special Handling
+1109.6(K) Certification
+1109.7 Scope of Protection for Newsletter Issues Registered Under the Group Registration Option
+1110 Group Registration for Contributions to Periodicals
+1110.1 What Is a Contribution to a Periodical?
+1110.2 Eligibility Requirements
+
+1110.3 Application Requirements
+1110.4 Filing Fee Requirements
+1110.5 Deposit Requirements
+1110.6 When May an Application for a Group Registration Be Filed?
+1110.7 Completing the Application: Group Registration of Contributions to Periodicals
+1110.7(A) Type of Group
+1110.7(B) Identifying the Works Included within the Group
+1110.7(B)(1) Identifying the Contributions
+1110.7(B)(2) Identifying the Periodicals
+1110.7(C) Identifying the Author
+1110.7(D) Identifying the Copyrightable Material that the Author Created
+1110.7(E) Identifying the Copyright Claimant
+1110.7(F) Rights and Permissions Information
+1110.7(G) Correspondent / Mailing Address for the Certificate of Registration
+1110.7(H) Special Handling
+1110.7(I) Certification
+1110.8 Contributions That Do Not Satisfy the Group Registration Requirements
+1111 Group Registration of Short Online Literary Works
+1111.1 What Is a Literary Work?
+1111.2 What Is a Short Online Literary Work?
+1111.3 Eligibility Requirements
+1111.3(A) All of the Works Must Be Short Online Literary Works
+1111.3(B) The Number of Works That May Be Included in the Group
+1111.3(C) The Number of Words in Each Work
+1111.3(D) All the Works Must Be First Published Online within Three Consecutive Calendar Months
+1111.3(E) The Author and Claimant for Each Work Must Be the Same Individual
+1111.4 Application Requirements
+
+1111.5 Filing Fee Requirements
+1111.6 Deposit Requirements
+1111.7 Completing the Application: Group Registration of Short Online Literary Works
+1111.7(A) Preparing the List of Titles, File Names, Publication Dates, and Word Counts
+1111.7(B) Type of Group
+1111.7(C) Title of the Group
+1111.7(D) Number of Works in the Group
+1111.7(E) Year of Completion
+1111.7(F) Earliest / Latest Publication Date
+1111.7(G) Nation of First Publication
+1111.7(H) File Name for the List
+1111.7(I) Titles of the Individual Works
+1111.7(J) Authors / Claimants
+1111.7(K) Anonymous and Pseudonymous Works
+1111.7(L) The Author’s Country of Citizenship or Domicile
+1111.7(M) Limitation of Claim
+1111.7(N) Rights and Permissions Information
+1111.7(O) Correspondent / Mailing Address for the Certificate of Registration
+1111.7(P) Special Handling
+1111.7(Q) Certification
+1112 Group Registration of Database Updates and Revisions
+1112.1 What Is a Database?
+1112.2 The Scope of a Group Registration for a Database
+1112.3 The Scope of a Group Registration for a Photographic Database
+1112.4 Eligibility Requirements
+1112.5 Application Requirements
+1112.6 Filing Fee Requirements
+
+1112.7 Deposit Requirements
+1112.7(A) Databases That Do Not Consist Predominantly of Photographs
+1112.7(B) Databases That Predominantly Consist of Photographs
+1112.7(C) Descriptive Statement
+1112.8 Completing the Application: Group Registration of Databases
+1112.8(A) Space 1: Title
+through through
+1112.8(F) Spaces 5 & 6: Previous Registration / Derivative Work or Compilation
+1112.8(G) Space 8: Certification
+1112.8(H) Spaces 7 & 9: Correspondent and Mailing Address for the Certificate
+1112.9 Effective Date of Registration for a Group of Revisions or Updates to a Database
+1112.10 Databases That Do Not Satisfy the Group Registration Requirements
+1113 [Reserved]
+1114 Group Registration of Photographs
+1114.1 Eligibility Requirements
+1114.2 Application Requirements
+1114.3 Filing Fee Requirements
+1114.4 Deposit Requirements
+1114.4(A) Digital Photographs and Mandatory Title List
+1114.4(B) Submitting the Digital Files and Mandatory Title List
+1114.4(C) Special Relief from the Deposit Requirements
+1114.5 When May an Application for a Group Registration Be Filed?
+1114.6 Completing the Application: Group Registration of Photographs
+1114.6(A) Preparing the Title List
+1114.6(B) Type of Group
+1114.6(C) Title of the Group
+1114.6(D) Title and Publication Information for Each Photograph
+1114.6(E) Number of Photographs in the Group
+
+1114.6(F) Year of Completion
+1114.6(G) Earliest / Latest Publication Date
+1114.6(H) Nation of Publication
+1114.6(I) Identifying the Author of the Photographs
+1114.6(I)(1) Photos Shot by an Individual Photographer
+1114.6(I)(2) Photos Created as Works Made For Hire
+1114.6(I)(3) The Author’s Country of Citizenship or Domicile
+1114.6(J) Identifying the Copyrightable Material that the Author Created
+1114.6(K) Identifying the Copyright Claimant
+1114.6(L) Rights and Permissions Information
+1114.6(M) Correspondent / Mailing Address for the Certificate of Registration
+1114.6(N) Special Handling
+1114.6(O) Certification
+1114.7 Photographs That Do Not Satisfy the Group Registration Requirements for GRUPH or GRPPH
+1115 [Reserved]
+1116 Serials, Newspapers, and Newsletters at a Glance
+1116.1 Eligibility Requirements
+1116.2 Application Requirements
+1116.3 Filing Fee Requirements
+1116.4 Deposit Requirements
+1116.6(A) Form VA
+1116.6(A)(1) Space 1: Title of this Work
+through through
+1116.6(A)(6) Spaces 5 through 9
+1116.6(B) Form GR/PPh/CON
+1116.6(B)(1) Space A: Identification of Author and Claimant
+through through
+1116.6(B)(2) Spaces B & C: Copyright Registration for a Group of Published Photographs
+1117 Photographs at a Glance
+
+Chapter 1200
+Section Heading
+1210.2(B) Filing Fee
+1212.10 Space 11: Certification
+1212.10(A) Signature Required
+through through
+1212.10(D) Certification Date
+1214 Submitting the Application, Filing Fee, and Identifying Material
+Chapter 1300
+Section Heading
+1302 Vessel Design Protection Distinguished from Copyright Protection
+1309.3 Name or Distinctive Identification of Owner
+1311.4 Filing Fees
+1313.1 Views and Use of Perspective
+1314 Submitting the Application, Filing Fee, and Deposit Material
+1317 Certificate of Correction for a Completed Registration
+Chapter 1400
+Section Heading
+1401 What This Chapter Covers
+1402 Applications
+1402.1 Statutory Basis for the Application
+1402.2 Statutory Requirements for Applications
+1402.3 Types of Applications
+1402.4(A) The Online Application
+through through
+
+1402.4(C) Multiple Types of Works
+1402.5 Single Applications
+1402.6 Group Registration Applications
+1402.6(A) Group Registration of Serials: Online Application / Form SE/Group
+through through
+1402.6(D) Group Registration of Published Photographs: Online Application / Form GR/PPh/CON
+1402.7 Supplementary Registration: Online Application/Form CA
+1402.8 Renewal Registration Applications: Form RE and RE/Addendum
+1402.9 GATT Registration Applications: Form GATT
+1402.10 Additional Information Regarding Paper Applications
+1402.10(A) Quality and Legibility of the Application
+through through
+1402.10(B) Continuation Sheets: Form CON
+1403 The Standard Application
+1404 Paper Applications
+1405 The Single Application
+1405.1 Who May File the Single Application?
+1405.2 Eligibility Requirements
+1405.3 Works That Cannot Be Registered with the Single Application
+1405.4 The One Work Requirement
+1405.5 The One Author Requirement
+1405.6 The One Owner Requirement
+1405.7 Content Requirements
+1406 Group Registration Applications
+1406.1 Group Registration of Unpublished Works (GRUW)
+1406.2 Group Registration of Serials (GRSE)
+1406.3 Group Registration of Newspapers (GRNP)
+1406.4 Group Registration of Newsletters (GRNL)
+1406.5 Group Registration of Contributions to Periodicals (GRCP)
+
+1406.6 Group Registration of Short Online Literary Works (GRTX)
+Group Registration of Published Photographs (GRPPH) and Group Registration of
+1406.7
+Unpublished Photographs (GRUPH)
+1406.8 Group Registration of Database Updates or Revisions
+Group Registration of Questions, Answers, and Other Items Prepared for Use in a Secure Test
+1406.9
+(GRSTQ)
+1407 Supplementary Registration: Online Application / Form CA
+1408 Renewal Registration Applications: Form RE and RE/Addendum
+1409 GATT Registration Applications: Form GATT
+1410 Preregistration
+1411 Waivers
+1412 Filing Fees
+1412.1 Statutory Basis for Setting Filing Fees
+1412.2 Where to Find Specific Filing Fee Information
+1412.3 Submitting Filing Fees
+1412.4 Acceptable Forms of Payment
+1412.5 Deposit Accounts
+1412.6 Refunds
+1412.7 Cancellation of Registration in Cases of Dishonored Checks
+1412.8 Special Handling Fees
+Chapter 1500
+Section Heading
+1504.1 Work Exempt from the Best Edition Requirement
+1506 Identifying Material
+1507.2 Electronic Format
+1508.1 Electronic Deposit Copy(ies)
+1508.2 Hard Copy Deposits
+
+1508.3 Submitting the Deposit by Mail or by Commercial Carrier
+1508.6 Screening Deposits for Anthrax and Other Contaminants
+1508.8(A) What Is Special Relief?
+1508.8(B) How to Request Special Relief
+1509.1 Deposit Requirements for Literary Works
+1509.1(A) Literary Monographs
+1509.1(B) Serials
+1509.1(C) Legal Publications
+1509.1(D) Book Jackets
+1509.1(E) Games
+1509.1(F) Computer Programs
+1509.1(F)(1) Source Code
+1509.1(F)(2) Derivative Computer Programs
+1509.1(F)(3) Source Code That Does Not Contain Trade Secret Material
+1509.1(F)(4) Source Code That Contains Trade Secret Material
+1509.1(F)(4)(a) Background
+1509.1(F)(4)(b) Computer Programs That Contain Trade Secret Material
+1509.1(F)(4)(c) Derivative Computer Programs That Contain Trade Secret Material
+1509.1(F)(4)(d) Appropriate Method for Blocking Out Source Code That Contains Trade Secret Material
+1509.1(F)(4)(e) Special Relief for Computer Programs Containing Trade Secrets
+1509.1(F)(5) Computer Programs Fixed in a CD-ROM
+1509.1(F)(6) Computer Screen Displays
+1509.1(F)(7) User Manuals and Other Documentation for a Computer Program
+1509.1(G) Databases
+through through
+1509.1(I) Instructional Works
+1509.1(J) Tests and Answer Material for Tests
+1509.1(K) Deposit Requirements for Group Registration Options
+
+1509.1(L) Foreign Literary Works
+1509.1(M) GATT Literary Works
+1509.1(N) Deposit Requirements for Literary Works: At a Glance
+1509.2 Deposit Requirements for Works of the Performing Arts
+1509.2(A) Musical Works
+1509.2(A)(2)(a) Musical Works Published in the United States in Phonorecords
+1509.2(A)(2)(b) Musical Works Published in the United States in Printed Copies
+1509.2(A)(2)(c) Musical Works First Published in a Foreign Country
+1509.2(B) Sound Recordings
+1509.2(B)(4) Sound Recordings First Published in a Foreign Country
+1509.2(E) Audiovisual Works
+1509.2(F) Motion Pictures
+1509.2(F)(2)(a) Motion Pictures Published in the United States on or After January 1, 1978
+1509.2(F)(3) Motion Pictures Contained in Formats That Cannot Be Viewed by the U.S. Copyright Office
+1509.2(G) Deposit Requirements for Group Registration Options
+1509.2(H) Foreign Works of the Performing Arts
+1509.2(I) GATT Works of the Performing Arts
+1509.2(J) Registration Deposit Requirements for Works of the Performing Arts: At a Glance
+1509.3 Visual Arts Works
+1509.3(A)(2) Published Works
+1509.3(A)(4) Works Reproduced in Sheet-like Materials
+1509.3(A)(12) Deposit Requirements for Group Registration Options
+1509.3(B)(1) Identifying Material Required
+1509.3(B)(2) Actual Copy(ies) Permitted in Some Exceptional Cases
+1509.3(D) Architectural Works
+1509.3(E)(3) GATT Visual Arts Works
+1509.3(F) Registration Deposit Requirements for Visual Arts Works: At a Glance
+
+1510 Storage of Deposits
+1510.1 Deposit Storage
+1511.6 Mandatory Deposit for Electronic Serials
+1511.7(D) Certificate of Receipt
+1511.8 Mandatory Deposit Requirements for Specific Categories of Works
+1511.8(A) Literary Monographs
+1511.8(B) Serials Published in a Physical Format
+1511.8(C) Published Newspapers
+1511.8(D) Computer Programs and Computerized Information Works
+1511.8(E) Musical Works
+1511.8(F) Motion Pictures
+1511.8(G) Published Multimedia Kits
+1511.8(H) Limited Edition Visual Arts Works
+1511.8(I) Globes and Other Three-Dimensional Cartographic Works
+1511.8(J) Architectural Works
+Chapter 1600
+Section Heading
+1601 What this Chapter Covers
+1603 Eligibility Requirements
+1604.1 Preregistration is a Temporary “Placeholder” for an Actual Registration
+1604.2 Uses of Preregistration
+Preregistration for a Sound Recording Distinguished from a Preregistration for a Musical
+1605
+Composition
+1606 Completing the Application
+1606.2 Type of Work
+1606.4 Author
+
+1606.10 Filing Fee
+1609 Effective Date of Preregistration
+Chapter 1700
+Section Heading
+1702 Registration Refused After Examination
+1705 Registration Decision Date and Effective Date of Registration
+1708.1 Filing Fees
+Chapter 1800
+Section Heading
+1802.4 Records That Cannot Be Corrected or Amplified with a Supplementary Registration
+1802.7(B) Ownership Issues
+1802.7(C) Publication Issues
+1802.8 Completing the Application
+1802.8(A) Completing the Online Application
+1802.8(A)(1) Eligibility Requirements
+1802.8(A)(3) Identifying the Work(s) Covered by the Basic Registration
+1802.8(A)(4) Correcting and/or Amplifying the Basic Registration
+1802.8(B) Completing Form CA
+1802.8(B)(5) Space F: Contact Information
+1802.8(B)(6) Space G: Certification
+1802.8(C) Filing Fee
+1802.8(D) Copy of the Certificate of Registration for the Basic Registration
+1802.8(E) Deposit Copy(ies) Not Required
+1802.9(B) Identifying the Basic Registration
+
+1802.9(C) Examination of the Certificate of Registration for the Basic Registration
+1802.9(F) Certification Requirements
+1802.12 Registration Decision Date and Effective Date of Supplementary Registration
+1803 New Application for a New Basic Registration
+1805.2 Filing Fees
+1807.4(A) Registrations Issued in the Wrong Class or Series
+1807.4(B) Registrations Cancelled for Failure to Pay the Filing Fee
+1807.4(D) Registrations Cancelled for Substantive Defects in Registration
+1807.4(E) Voluntary Cancellation
+Chapter 1900
+Section Heading
+1901 What This Chapter Covers
+1905 Distribution of Copies or Phonorecords of a Work
+1905.1 Distribution to the Public
+1906.1 Offering to Distribute Copies or Phonorecords to a Group of Persons
+Chapter 2000
+Section Heading
+2004.1 Multilateral Treaties
+2007.2(A) Form GATT
+2007.2(A)(1) Who May File Form GATT?
+2007.2(A)(2) Author of a Restored Work
+2007.2(A)(3) Publication of a Restored Work
+2007.2(A)(4) Owner of U.S. Copyright in a Restored Work
+2007.2(B) Filing Fees
+
+Chapter 2100
+Section Heading
+2101 What this Chapter Covers
+2102 Copyright Renewal
+2103 Intent, Purpose, and Impact on Renewal Registration
+2111.2 Complete Filing Fee
+2112.2 Two Filing Fees—One for Each Form
+2112.3 Deposit Material Required
+2115.3(C) Revisions / New Material in a Derivative Work
+2115.4 Author Information
+2115.4(C) Nationality and Domicile
+2115.5(B) Determining the Party in Whom the Renewal Copyright Vested
+2115.7 Certification Required
+2116.2 Author Information
+2116.2(A) Name of Eligible Author
+2116.5(A) Deposit Requirement
+2116.5(B) Alternative Deposit Material
+2116.5(B)(1) Identical to the Complete Work as First Published
+2116.5(E) Based on First Publication
+2118.7 Text and Illustrations Owned Separately for the Renewal Term
+2122.5 Sound Recordings
+2131 Corrected Original Registration Records
+2138 Correcting and / or Amplifying Information in a Renewal Registration Record
+Part VIII –
+Definition of
+Glossary of Terms
+“Unpublished
+collection”
+
+Chapter 2200
+Section Heading
+2203.3 Phonorecords
+2205.1(C) Antedated Notice: Date in the Notice Earlier than the Actual Year of First Publication
+2205.1(D) Postdated Notice: Date in the Notice Later than the Actual Year of First Publication
+2207 Location and Placement of the Notice
+2207.1(A) Literary Works Published in Book Form
+2207.1(B) Single Leaf Works
+2207.1(E) Periodicals or Other Serials
+2207.2 Contributions to Collective Works
+2207.3(A) Musical Works Embodied in Copies
+2207.6 Motion Pictures and Other Audiovisual Works
+2207.7 Pictorial, Graphic, and Sculptural Works
+2207.7(A) Works of Unusual Size or Characteristics
+2207.7(B) Works Consisting of Sheet-Like or Strip Material
+2207.7(C) Works with Separable Parts Published in a Permanent Container
+2207.9 Works Published in Machine-Readable Copies
+2209.2 Restricted Notice
+Chapter 2300
+Section Heading
+2309.11(B) The Fee for Additional Titles
+2309.14 Return Receipts for Transfers of Ownership or Other Documents Pertaining to Copyright
+2310.7(D) The Filing Fee Requirement
+
+Chapter 2400
+Section Heading
+2403 Contact Information for RRCS
+2405.2 Restricted Records
+2406.2(C) Search Fees
+2407.1(D)(2) Deposits
+2407.6 Inspection and Copying Fees
+2408.3 Fees for Additional Certificates of Registration or Renewal
+2409.4 Certification Fees
+2410.3 Full-Term Retention Fees
+2411.3 Fees for Expedited Service
+Glossary
+Page Heading
+1 Introduction
+1 1976 Copyright Act
+1 Applied art
+4 Copies
+4 Daily newsletter
+6 Design of a useful article
+6 EIDR
+7 Entertainment Identifier Registry
+8 Form CO
+8 Form G/DN
+8 Form GATT/CON
+8 Form GP/PPh/CON
+
+8 Form SE
+8 Form SE/Group
+9 Group registration
+10 Immaterial variance
+10 International Standard Audiovisual Number (“ISAN”)
+10 International Standard Book Number (“ISBN”)
+10 International Standard Music Number (“ISMN”)
+11 International Standard Musical Work Code (“ISWC”)
+11 International Standard Recording Code (“ISRC”)
+11 International Standard Serial Number (“ISSN”)
+11 International Standard Text Code (“ISTC”)
+11 Licensing Division
+12 Literary monograph
+13 Material Variance
+13 Newspaper
+13 Newsletter
+14 Periodical
+15 Phonorecords
+18 Secure test
+18 Secure test item
+19 Separability
+19 Serial
+19 Short online literary work
+22 Variance
+24 World Intellectual Property Organization (“WIPO”)

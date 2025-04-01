@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <?xml-stylesheet type="text/css" href="style.css"?>
+    <style>
+        /* --- Table of Authorities Specific Styles --- */
+
+/* Ensure the root element behaves as a block */
+table_of_authorities {
+    display: block;
+    /* Inherit font-family, line-height, color from body */
+}
+
+/* Style for the main groups (e.g., U.S. Constitution, Copyright Law...) */
+authority_group {
+    display: block;
+    margin-top: 2em; /* Space above each major group */
+    margin-bottom: 1em;
+}
+
+/* Title of each authority group */
+authority_group > title {
+    display: block;
+    font-weight: 600; /* Bolder than regular text */
+    font-size: 1.3em; /* Larger than subsection titles */
+    color: #003f5c; /* Match section title color */
+    margin-bottom: 1em;
+    border-bottom: 2px solid #003f5c; /* Add a bottom border */
+    padding-bottom: 0.3em;
+}
+
+/* Individual entry within a group */
+entry {
+    display: block;
+    margin-left: 1.5em; /* Indent entries */
+    margin-bottom: 0.8em; /* Space between entries */
+    line-height: 1.5; /* Slightly adjusted line height for readability */
+    /* Consider using flexbox or grid for more complex alignment if needed later */
+}
+
+/* The specific authority citation (e.g., 17 U.S.C. § 101) */
+authority {
+    display: inline; /* Keep on the same line as references */
+    /* Styling for the <ref> tag inside will be handled by the general 'ref' rule */
+}
+
+/* The list of Compendium references (e.g., 102.1, Chapter 2100...) */
+references {
+    display: inline;
+    margin-left: 0.75em; /* Space between the authority and its references */
+    color: #495057; /* Slightly lighter than main text, darker than default ref */
+    font-size: 0.95em; /* Slightly smaller than main text */
+}
+
+/* Override the general 'ref' style slightly for the authority section */
+/* Make citations within the 'authority' tag less visually intrusive than general refs */
+authority > ref {
+    font-style: normal; /* Override potential italics from general rule */
+    font-size: 1em; /* Match surrounding text size */
+    color: inherit; /* Inherit color from 'authority' (black) */
+    background-color: transparent; /* Remove background */
+    padding: 0;
+    border-radius: 0;
+    white-space: normal; /* Allow authority refs to wrap if needed */
+}
+
+/* Specific styling for case names within the authority tag */
+authority > ref[source='CASE'] {
+    font-style: italic; /* Re-apply italics specifically for case names */
+}
+
+/* Ensure the XML head title for the TOA is hidden */
+table_of_authorities > head > title {
+    display: none;
+}
+
+/* Optional: Adjust spacing if an entry starts with a title (though not typical in TOA) */
+entry > title {
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+    </style>
+</head>
+<body>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<table_of_authorities>
+    <head>
+        <title>Compendium: Table of Authorities</title>
+    </head>
+    <toc>
+        <level_title>Contents</level_title>
+        <tocitem label="U.S. Constitution"><a href="#grp-const">U.S. Constitution</a></tocitem>
+        <tocitem label="Copyright Law Enacted in the United States Code"><a href="#grp-usc-enacted">Copyright Law Enacted in the United States Code</a></tocitem>
+        <tocitem label="Other Provisions of the United States Code"><a href="#grp-usc-other">Other Provisions of the United States Code</a></tocitem>
+        <tocitem label="Public Laws and Statutes at Large Enacted After 1976"><a href="#grp-publaw-post1976">Public Laws and Statutes at Large Enacted After 1976</a></tocitem>
+        <tocitem label="Copyright Act of 1909 and Other Public Laws and Statutes at Large Enacted Before 1976"><a href="#grp-publaw-pre1976">Copyright Act of 1909 and Other Public Laws and Statutes at Large Enacted Before 1976</a></tocitem>
+        <tocitem label="International Treaties"><a href="#grp-treaties">International Treaties</a></tocitem>
+        <tocitem label="Cases: U.S. Supreme Court"><a href="#grp-cases-scotus">Cases: U.S. Supreme Court</a></tocitem>
+        <tocitem label="Cases: U.S. Courts of Appeals"><a href="#grp-cases-appeals">Cases: U.S. Courts of Appeals</a></tocitem>
+        <tocitem label="Cases: U.S. District Courts"><a href="#grp-cases-district">Cases: U.S. District Courts</a></tocitem>
+        <tocitem label="Cases: U.S. Bankruptcy Courts"><a href="#grp-cases-bankruptcy">Cases: U.S. Bankruptcy Courts</a></tocitem>
+        <tocitem label="Briefs for the United States as Amicus Curiae and Testimony of the Register of Copyrights"><a href="#grp-briefs">Briefs for the United States as Amicus Curiae and Testimony of the Register of Copyrights</a></tocitem>
+        <tocitem label="Cases Citing the Compendium of U.S. Copyright Office Practices, Third Edition"><a href="#grp-cases-citing-comp-3rd">Cases Citing the Compendium of U.S. Copyright Office Practices, Third Edition</a></tocitem>
+        <tocitem label="Cases Citing the Compendium of U.S. Copyright Office Practices, Second Edition"><a href="#grp-cases-citing-comp-2nd">Cases Citing the Compendium of U.S. Copyright Office Practices, Second Edition</a></tocitem>
+        <tocitem label="Cases Citing the Compendium of U.S. Copyright Office Practices, First Edition"><a href="#grp-cases-citing-comp-1st">Cases Citing the Compendium of U.S. Copyright Office Practices, First Edition</a></tocitem>
+        <tocitem label="Legislative Materials: Hearings"><a href="#grp-legis-hearings">Legislative Materials: Hearings</a></tocitem>
+        <tocitem label="Legislative Materials: Reports"><a href="#grp-legis-reports">Legislative Materials: Reports</a></tocitem>
+        <tocitem label="Legislative Materials: Floor Debates"><a href="#grp-legis-debates">Legislative Materials: Floor Debates</a></tocitem>
+        <tocitem label="Legislative Materials: Congressional Rules"><a href="#grp-legis-rules">Legislative Materials: Congressional Rules</a></tocitem>
+        <tocitem label="Administrative Materials: U.S. Copyright Office Regulations"><a href="#grp-admin-cfr">Administrative Materials: U.S. Copyright Office Regulations</a></tocitem>
+        <tocitem label="Administrative Materials: U.S. Copyright Office Administrative Manuals"><a href="#grp-admin-manuals">Administrative Materials: U.S. Copyright Office Administrative Manuals</a></tocitem>
+        <tocitem label="Administrative Materials: U.S. Copyright Office Studies"><a href="#grp-admin-studies">Administrative Materials: U.S. Copyright Office Studies</a></tocitem>
+        <tocitem label="Administrative Materials: U.S. Copyright Office Circulars and FAQs"><a href="#grp-admin-circulars">Administrative Materials: U.S. Copyright Office Circulars and FAQs</a></tocitem>
+        <tocitem label="Administrative Materials: U.S. Copyright Office Public Announcements, Policy Statements, and Interpretive Rules"><a href="#grp-admin-policy">Administrative Materials: U.S. Copyright Office Public Announcements, Policy Statements, and Interpretive Rules</a></tocitem>
+        <tocitem label="Treatises"><a href="#grp-treatises-list">Treatises</a></tocitem> <!-- Changed href to match new unique ID -->
+        <tocitem label="Other Authorities"><a href="#grp-other">Other Authorities</a></tocitem>
+    </toc>
+
+    <authority_group id="grp-const">
+        <title>U.S. Constitution</title>
+        <entry>
+            <authority><ref source="CONST" article="1" section="8" clause="8" cite="Article 1, Section 8, Clause 8">Article 1, Section 8, Clause 8</ref></authority>
+            <references>102.1</references>
+        </entry>
+    </authority_group>
+
+    <authority_group id="grp-usc-enacted">
+        <title>Copyright Law Enacted in the United States Code</title>
+        <!-- entries -->
+         <entry>
+            <authority><ref source="USC" title="17" section="26" year="1973" cite="17 U.S.C. § 26 (1973)">17 U.S.C. § 26 (1973)</ref></authority>
+            <references>Chapter 2100 Part VII (definition of "Phonorecord"), Glossary of Terms (definition of "Phonorecord")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'anonymous work'" cite="17 U.S.C. § 101 (definition of 'anonymous work')">17 U.S.C. § 101 (definition of "anonymous work")</ref></authority>
+            <references>614.1(E), 615.1(A), Chapter 2100 Part VIII (definition of "Anonymous work"), Glossary (definition of "Anonymous work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'architectural works'" cite="17 U.S.C. § 101 (definition of “architectural works')">17 U.S.C. § 101 (definition of “architectural works")</ref></authority>
+            <references>903.2, 926, 926.2, 1509.3(D), Glossary (definition of "Architectural work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'audiovisual works'" cite="17 U.S.C. § 101 (definition of “audiovisual works')">17 U.S.C. § 101 (definition of “audiovisual works")</ref></authority>
+            <references>807.1, 807.2(C), 807.3(C), 807.4, 1509.2(E), Glossary (definition of “Audiovisual work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'best edition'" cite="17 U.S.C. § 101 (definition of 'best edition')">17 U.S.C. § 101 (definition of "best edition")</ref></authority>
+            <references>1504, 1509.2(A)(2)(a), 1509.2(A)(2)(b), 1511.1, Glossary (definition of "Best edition")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'children'" cite="17 U.S.C. § 101 (definition of 'children')">17 U.S.C. § 101 (definition of "children")</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'collective work'" cite="17 U.S.C. § 101 (definition of “collective work')">17 U.S.C. § 101 (definition of “collective work")</ref></authority>
+            <references>312.3, 509.1, 613.8, 618.7, 711, 712.1(A), 712.2, 712.2(A), 801.10, 802.7, 802.8(E), 1107.2(A), 1107.6(F), 1108.2(A), 1108.2(B), 1109.2(A), 1109.6(G), Glossary (definition of "Collective work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'compilation'" cite="17 U.S.C. § 101 (definition of 'compilation')">17 U.S.C. § 101 (definition of "compilation")</ref></authority>
+            <references>307, 312.2, 312.3, 313.6(B), 508.1, 509.1, 613.7, 613.8, 618.6, 707.1, 710, 711, 801.9, 802.6(J), 802.7, 805.7, 1006.4, 1008.7, 1107.2(A), 1108.2(A), 1109.2(A), Glossary (definition of "Compilation")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'computer program'" cite="17 U.S.C. § 101 (definition of 'computer program')">17 U.S.C. § 101 (definition of "computer program")</ref></authority>
+            <references>721.1, 721.6, 724, Glossary (definition of "Computer program")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'copies'" cite="17 U.S.C. § 101 (definition of 'copies')">17 U.S.C. § 101 (definition of "copies")</ref></authority>
+            <references>305, 801.3(A), 1008.3(B), 1509.2(A), 2203.2, Glossary (definition of "Copies")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'created'" cite="17 U.S.C. § 101 (definition of 'created')">17 U.S.C. § 101 (definition of "created")</ref></authority>
+            <references>512, 611, 611.1(B), 721.8, 721.9(D), 1008.5, Glossary (definition of “Created")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'derivative work'" cite="17 U.S.C. § 101 (definition of “derivative work')">17 U.S.C. § 101 (definition of “derivative work")</ref></authority>
+            <references>507.1, 613.6, 618.5, 621.9(A)(2), 709, 709.3, 709.4, 718, 721.2, 721.8, 801.8, 805.6, 807.6, 808.8, 1105.4, 1107.7, 1108.7, 1109.7, 1509.2(A)(2)(b), Chapter 2100 Part VIII (definition of "Derivative work"), Glossary (definition of “Derivative work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'display'" cite="17 U.S.C. § 101 (definition of 'display')">17 U.S.C. § 101 (definition of "display")</ref></authority>
+            <references>Glossary (definition of "Display")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'fixed'" cite="17 U.S.C. § 101 (definition of 'fixed')">17 U.S.C. § 101 (definition of "fixed")</ref></authority>
+            <references>305, 705, 801.3, 802.4, 803.4, 803.4(A), 807.4, 904, 2003.2(C), Glossary (definition of "Fixed")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'joint work'" cite="17 U.S.C. § 101 (definition of 'joint work')">17 U.S.C. § 101 (definition of "joint work")</ref></authority>
+            <references>505.1, 613.5, 708, 801.6, 804.8(A), 808.10(A)(3), 1003.1, Chapter 2100 Part VIII (definition of "Joint work"), Glossary (definition of "Joint work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'literary works'" cite="17 U.S.C. § 101 (definition of 'literary works')">17 U.S.C. § 101 (definition of "literary works")</ref></authority>
+            <references>703, 706, 707.1, 721.1, 807.2(D), Glossary (definition of "Literary works")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'motion pictures'" cite="17 U.S.C. § 101 (definition of 'motion pictures')">17 U.S.C. § 101 (definition of "motion pictures")</ref></authority>
+            <references>808.1, 1603.1, 1605, Glossary (definition of "Motion pictures")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'perform or display a work publicly'" cite="17 U.S.C. § 101 (definition of 'perform or display a work \u0027publicly\u0027')">17 U.S.C. § 101 (definition of "perform or display a work 'publicly'")</ref></authority>
+            <references>805.5(B)(2), 1008.3(A), Glossary (definitions of "Perform" and "Public performance and public display")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'phonorecords'" cite="17 U.S.C. § 101 (definition of 'phonorecords')">17 U.S.C. § 101 (definition of "phonorecords")</ref></authority>
+            <references>305, 801.3(B), 1008.3(B), 1509.2(A), Chapter 2100 Part VIII (definition of "Phonorecord"), 2203.3, Glossary (definition of "Phonorecords")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'pictorial, graphic, and sculptural works'" cite="17 U.S.C. § 101 (definition of 'pictorial, graphic, and sculptural works')">17 U.S.C. § 101 (definition of "pictorial, graphic, and sculptural works")</ref></authority>
+            <references>808.11(D), 903.1, 906.8, 906.9, 906.10, 924, 924.3(F), 925, 925.1, 925.2, 925.3, Glossary (definitions of "Pictorial, graphic, and sculptural works" and "Design of a useful article")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'pseudonymous work'" cite="17 U.S.C. § 101 (definition of 'pseudonymous work')">17 U.S.C. § 101 (definition of "pseudonymous work")</ref></authority>
+            <references>614.1(E), 615.2(A), 615.2(B), Glossary (definition of "Pseudonymous work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'publication'" cite="17 U.S.C. § 101 (definition of 'publication')">17 U.S.C. § 101 (definition of "publication")</ref></authority>
+            <references>612.2, 721.9(E), 802.8(F), 803.8(F), 1008.3(A), 1008.3(B), 1603.4, 1902, 1905.1, 1906.1, 1906.2, 1907, 1908, 1908.1, 1908.2, 1908.3, 1908.4, 2310.3(C)(1), Glossary (definition of "Publication")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'registration'" cite="17 U.S.C. § 101 (definition of 'registration')">17 U.S.C. § 101 (definition of "registration")</ref></authority>
+            <references>Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'sound recordings'" cite="17 U.S.C. § 101 (definition of “sound recordings')">17 U.S.C. § 101 (definition of “sound recordings")</ref></authority>
+            <references>803.1, 803.2(B), 803.8(F)(1), 807.2(B), 808.2(B), 1603.1, Chapter 2100 Part VIII (definition of "Sound recordings"), Glossary (definition of "Sound recordings")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'transfer of copyright ownership'" cite="17 U.S.C. § 101 (definition of 'transfer of copyright ownership')">17 U.S.C. § 101 (definition of "transfer of copyright ownership")</ref></authority>
+            <references>408, 620.1, 2309.1, Glossary (definition of "Transfer of copyright ownership")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'treaty party'" cite="17 U.S.C. § 101 (definition of 'treaty party')">17 U.S.C. § 101 (definition of "treaty party")</ref></authority>
+            <references>Glossary (definition of "Treaty party")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'transmission program'" cite="17 U.S.C. § 101 (definition of 'transmission program')">17 U.S.C. § 101 (definition of "transmission program")</ref></authority>
+            <references>1511.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'United States work'" cite="17 U.S.C. § 101 (definition of 'United States work')">17 U.S.C. § 101 (definition of "United States work")</ref></authority>
+            <references>1602, Glossary (definition of "United States work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'useful article'" cite="17 U.S.C. § 101 (definition of 'useful article')">17 U.S.C. § 101 (definition of "useful article")</ref></authority>
+            <references>909.3(B), 910, 919.1, 920.1, 922, 923.1, 924.1, 924.2, 924.3(A), 924.3(B), 924.3(F), 924.6(A), 925.1, 925.3, Glossary (definition of "Useful article")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'widow or widower'" cite="17 U.S.C. § 101 (definition of “widow or widower')">17 U.S.C. § 101 (definition of “widow or widower")</ref></authority>
+            <references>Chapter 2100 Part VIII (definition of "Widow or widower”), 2310.3(B), Glossary (definition of “Widow or widower")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'work made for hire'" cite="17 U.S.C. § 101 (definition of 'work made for hire')">17 U.S.C. § 101 (definition of "work made for hire")</ref></authority>
+            <references>506.1, 613.4, 709.1, 710, 711, 716, 801.7, 802.8(E), 803.8(D), 808.10(A)(1), 1003.1, 1114.6(I)(2), 1606.4, Glossary (definition of "Work made for hire")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'work of the United States Government'" cite="17 U.S.C. § 101 (definition of “work of the United States Government')">17 U.S.C. § 101 (definition of “work of the United States Government")</ref></authority>
+            <references>Glossary (definition of "Work of the United States Government")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="101" note="definition of 'work of visual art'" cite="17 U.S.C. § 101 (definition of 'work of visual art')">17 U.S.C. § 101 (definition of "work of visual art")</ref></authority>
+            <references>901, 2314.1, 2314.2, Glossary (definition of “Work of visual art")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" cite="17 U.S.C. § 102">17 U.S.C. § 102</ref></authority>
+            <references>310.3, 1702</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="a" cite="17 U.S.C. § 102(a)">17 U.S.C. § 102(a)</ref></authority>
+            <references>102.2, 102.2(A), 102.4, 202, 302, 305, 307, 311.1, 312.1, 313.1, 313.2, 313.3, 313.4, 313.4(G), 502, 503.1(B), 503.1(C), 512, 608, 613.2, 623.1, 705, 707, 707.1, 710, 801.2, 802.4, 804.3(D)(1), 805.3(A), 805.3(C), 805.4, 805.4(C), 805.6, 805.7, 806.3(A), 806.3(C), 806.4(C), 904, 906, 924.4, 1006, 1509.1(F)(4)(d), 1603.2, 1603.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="a" paragraph="4" cite="17 U.S.C. § 102(a)(4)">17 U.S.C. § 102(a)(4)</ref></authority>
+            <references>102.2(A), 805.1, 805.4, 805.4(A), 805.5(B), 805.5(B)(2), 805.5(Β)(3), 805.7, 805.9, 806.1, 806.4, 806.5(B), 806.7</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="a" paragraph="5" cite="17 U.S.C. § 102(a)(5)">17 U.S.C. § 102(a)(5)</ref></authority>
+            <references>925.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="a" paragraph="6" cite="17 U.S.C. § 102(a)(6)">17 U.S.C. § 102(a)(6)</ref></authority>
+            <references>807.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="a" paragraph="8" cite="17 U.S.C. § 102(a) (8)">17 U.S.C. § 102(a) (8)</ref></authority>
+            <references>102.5, 926, 926.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="102" subsection="b" cite="17 U.S.C. § 102(b)">17 U.S.C. § 102(b)</ref></authority>
+            <references>313.3(A), 313.3(C), 313.3(D), 313.4(G), 313.4(K), 608, 618.8(A)(2), 618.8(A)(5), 618.8(A)(6), 618.8(A)(7), 618.8(C)(2), 618.8(C)(3), 618.8(C)(5), 621.2, 707.1, 714, 716, 717.1, 721.7, 721.8, 724, 725, 805.3(D)(1), 808.11(E), 905, 906.6, 910, 920.3, 922, 1007, 1007.1, 1603.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="103" cite="17 U.S.C. § 103">17 U.S.C. § 103</ref></authority>
+            <references>1702</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="103" subsection="a" cite="17 U.S.C. § 103(a)">17 U.S.C. § 103(a)</ref></authority>
+            <references>307, 313.6(B), 503.1(C), 507.2, 508.2, 509.2, 608, 802.6(A), 803.6(A), 803.6(B)(2), 803.6(B)(5), 803.6(B)(6), 1702</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="103" subsection="b" cite="17 U.S.C. § 103(b)">17 U.S.C. § 103(b)</ref></authority>
+            <references>311.2, 313.6(D), 507.2, 508.2, 509.2, 618.6, 710, 725</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" cite="17 U.S.C. § 104">17 U.S.C. § 104</ref></authority>
+            <references>608, 1702, 1807.4(D), 2003</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="a" cite="17 U.S.C. § 104(a)">17 U.S.C. § 104(a)</ref></authority>
+            <references>304, 313.6(A), 617.1, 617.7(D), 2003.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" cite="17 U.S.C. § 104(b)">17 U.S.C. § 104(b)</ref></authority>
+            <references>304, 313.6(A), 612.7(J), 612.7(L), 617.1, 2003.2(A), 2003.2(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="1" cite="17 U.S.C. § 104(b)(1)">17 U.S.C. § 104(b)(1)</ref></authority>
+            <references>617.7(C), 2003.2(A), 2005.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="2" cite="17 U.S.C. § 104(b)(2)">17 U.S.C. § 104(b)(2)</ref></authority>
+            <references>617.7(D), 2003.2(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="3" cite="17 U.S.C. § 104(b)(3)">17 U.S.C. § 104(b)(3)</ref></authority>
+            <references>2003.2(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="4" cite="17 U.S.C. § 104(b)(4)">17 U.S.C. § 104(b)(4)</ref></authority>
+            <references>2003.2(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="5" cite="17 U.S.C. § 104(b)(5)">17 U.S.C. § 104(b)(5)</ref></authority>
+            <references>313.6(C)(2), 2003.2(E)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="b" paragraph="6" cite="17 U.S.C. § 104(b)(6)">17 U.S.C. § 104(b)(6)</ref></authority>
+            <references>2003.2(F)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104" subsection="d" cite="17 U.S.C. § 104(d)">17 U.S.C. § 104(d)</ref></authority>
+            <references>2004.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" cite="17 U.S.C. § 104A">17 U.S.C. § 104A</ref></authority>
+            <references>202.1, 808.10(J)(1), 1409, 2144, Glossary (definition of "Eligible country")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="a" paragraph="1" subparagraph="B" cite="17 U.S.C. § 104A(a)(1)(B)">17 U.S.C. § 104A(a)(1)(B)</ref></authority>
+            <references>2144</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="3" cite="17 U.S.C. §104A(h)(3)">17 U.S.C. §104A(h)(3)</ref></authority> <!-- Corrected section format -->
+            <references>Glossary (definition of "Eligible country")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="e" paragraph="1" subparagraph="B" clause="ii" cite="17 U.S.C. § 104A(e)(1)(B)(ii)">17 U.S.C. § 104A(e)(1)(B)(ii)</ref></authority>
+            <references>2407.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="6" cite="17 U.S.C. § 104A(h) (6)">17 U.S.C. § 104A(h) (6)</ref></authority>
+            <references>2007.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="6" subparagraph="B" cite="17 U.S.C. § 104A(h)(6)(B)">17 U.S.C. § 104A(h)(6)(B)</ref></authority>
+            <references>2007.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="6" subparagraph="C" cite="17 U.S.C. § 104A(h)(6)(C)">17 U.S.C. § 104A(h)(6)(C)</ref></authority>
+            <references>2007.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="6" subparagraph="D" cite="17 U.S.C. § 104A(h)(6)(D)">17 U.S.C. § 104A(h)(6)(D)</ref></authority>
+            <references>2007.1, 2007.2(A)(2), 2007.2(A)(3)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="6" subparagraph="E" cite="17 U.S.C. § 104A(h)(6)(E)">17 U.S.C. § 104A(h)(6)(E)</ref></authority>
+            <references>2007.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="8" cite="17 U.S.C. § 104A(h)(8)">17 U.S.C. § 104A(h)(8)</ref></authority>
+            <references>Glossary (definition of “Source country")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="8" subparagraph="B" cite="17 U.S.C. § 104A(h)(8)(B)">17 U.S.C. § 104A(h)(8)(B)</ref></authority>
+            <references>Chapter 2100 Part VIII (definition of "Source country")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="104A" subsection="h" paragraph="8" subparagraph="C" cite="17 U.S.C. § 104A(h) (8) (C)">17 U.S.C. § 104A(h) (8) (C)</ref></authority>
+            <references>Chapter 2100 Part VIII (definition of "Source country")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="105" cite="17 U.S.C. § 105">17 U.S.C. § 105</ref></authority>
+            <references>313.6(C)(1), 608, 621.2, 2208</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="105" subsection="b" cite="17 U.S.C. § 105(b)">17 U.S.C. § 105(b)</ref></authority>
+            <references>313.6(C)(1)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="105" subsection="c" cite="17 U.S.C. § 105(c) [sic]">17 U.S.C. § 105(c) [sic]</ref></authority> <!-- Sic noted in original -->
+            <references>313.6(C)(1)</references>
+        </entry>
+         <entry>
+            <authority><ref source="USC" title="17" section="106" cite="17 U.S.C. § 106">17 U.S.C. § 106</ref></authority>
+            <references>102.2, 102.5, 408, 1806, 2311, Glossary (definition of "Exclusive rights")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106" paragraph="2" cite="17 U.S.C. § 106(2)">17 U.S.C. § 106(2)</ref></authority>
+            <references>801.8</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106" paragraph="3" cite="17 U.S.C § 106(3)">17 U.S.C § 106(3)</ref></authority>
+            <references>1902</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106A" cite="17 U.S.C. § 106A">17 U.S.C. § 106A</ref></authority>
+            <references>102.7, 901, 1806, 2311, 2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106A" subsection="a" paragraph="1" cite="17 U.S.C. § 106A(a)(1)">17 U.S.C. § 106A(a)(1)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106A" subsection="a" paragraph="2" cite="17 U.S.C. § 106A(a) (2)">17 U.S.C. § 106A(a) (2)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106A" subsection="a" paragraph="3" cite="17 U.S.C. § 106A(a)(3)">17 U.S.C. § 106A(a)(3)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="106A" subsection="c" cite="17 U.S.C. § 106A(c)">17 U.S.C. § 106A(c)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="107" cite="17 U.S.C. § 107">17 U.S.C. § 107</ref></authority>
+            <references>102.2, 102.2(A), 102.4, 1903, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="108" cite="17 U.S.C. § 108">17 U.S.C. § 108</ref></authority>
+            <references>102.2, 102.2(A), 1903, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="109" cite="17 U.S.C. § 109">17 U.S.C. § 109</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="110" cite="17 U.S.C. § 110">17 U.S.C. § 110</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="111" cite="17 U.S.C. § 111">17 U.S.C. § 111</ref></authority>
+            <references>101.2(H), 102.2, 2301, Glossary (definitions of "Exclusive rights;" "Infringement;” and “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="112" cite="17 U.S.C. § 112">17 U.S.C. § 112</ref></authority>
+            <references>102.2, Glossary (definitions of “Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="113" cite="17 U.S.C. § 113">17 U.S.C. § 113</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="113" subsection="b" cite="17 U.S.C. § 113(b)">17 U.S.C. § 113(b)</ref></authority>
+            <references>312.1, 906.9, 915, 920.1, 922, 923.1, 926.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="113" subsection="d" cite="17 U.S.C. § 113(d)">17 U.S.C. § 113(d)</ref></authority>
+            <references>2314.3, 2314.11</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="113" subsection="d" paragraph="2" cite="17 U.S.C. § 113(d)(2)">17 U.S.C. § 113(d)(2)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="113" subsection="d" paragraph="3" cite="17 U.S.C. § 113(d)(3)">17 U.S.C. § 113(d)(3)</ref></authority>
+            <references>2314.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="114" cite="17 U.S.C. § 114">17 U.S.C. § 114</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="114" subsection="b" cite="17 U.S.C. § 114(b)">17 U.S.C. § 114(b)</ref></authority>
+            <references>803.6, 803.6(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="115" cite="17 U.S.C. § 115">17 U.S.C. § 115</ref></authority>
+            <references>102.2, 101.2(H), 801.8, 802.6(B), 1903, Glossary (definitions of "Exclusive rights;” “Infringement;” and “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="115" subsection="a" paragraph="1" cite="17 U.S.C. § 115(a)(1)">17 U.S.C. § 115(a)(1)</ref></authority>
+            <references>802.6(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="115" subsection="a" paragraph="2" cite="17 U.S.C. § 115(a)(2)">17 U.S.C. § 115(a)(2)</ref></authority>
+            <references>802.6(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="115" subsection="c" paragraph="1" subparagraph="A" cite="17 U.S.C. § 115(c)(1)(A)">17 U.S.C. § 115(c)(1)(A)</ref></authority>
+            <references>2021</references> <!-- Note: Original text had "20217 U.S.C. § 116:", corrected -->
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="116" cite="17 U.S.C. § 116">17 U.S.C. § 116</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="117" cite="17 U.S.C. § 117">17 U.S.C. § 117</ref></authority>
+            <references>102.2, 102.7, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="118" cite="17 U.S.C. § 118">17 U.S.C. § 118</ref></authority>
+            <references>102.2, 1903, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="119" cite="17 U.S.C. § 119">17 U.S.C. § 119</ref></authority>
+            <references>101.2(H), 102.2, 2301, Glossary (definitions of "Exclusive rights;" "Infringement;" and "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="120" cite="17 U.S.C. § 120">17 U.S.C. § 120</ref></authority>
+            <references>102.2, Glossary (definitions of “Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="121" cite="17 U.S.C. § 121">17 U.S.C. § 121</ref></authority>
+            <references>102.2, 102.7, 1903, Glossary (definitions of “Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="121A" cite="17 U.S.C. § 121A">17 U.S.C. § 121A</ref></authority>
+            <references>102.2, 102.7, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="122" cite="17 U.S.C. § 122">17 U.S.C. § 122</ref></authority>
+            <references>102.2, Glossary (definitions of "Exclusive rights" and "Infringement")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="a" cite="17 U.S.C. § 201(a)">17 U.S.C. § 201(a)</ref></authority>
+            <references>503.4, 505.3, 613.2, 620.1, 708</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="b" cite="17 U.S.C. § 201(b)">17 U.S.C. § 201(b)</ref></authority>
+            <references>506.5, 613.2, 614.1(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="c" cite="17 U.S.C. § 201(c)">17 U.S.C. § 201(c)</ref></authority>
+            <references>509.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="d" cite="17 U.S.C. § 201(d)">17 U.S.C. § 201(d)</ref></authority>
+            <references>620.1, 2309.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="d" paragraph="1" cite="17 U.S.C. § 201(d)(1)">17 U.S.C. § 201(d)(1)</ref></authority>
+            <references>620.9(A), 2309.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="201" subsection="d" paragraph="2" cite="17 U.S.C. § 201(d)(2)">17 U.S.C. § 201(d)(2)</ref></authority>
+            <references>407</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="202" cite="17 U.S.C. § 202">17 U.S.C. § 202</ref></authority>
+            <references>619.4, 620.10(C)(4), 718, 721.6</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" cite="17 U.S.C. § 203">17 U.S.C. § 203</ref></authority>
+            <references>101.3(A), 102.2(A), 506.5, 2302, 2306.1, 2310, 2310.2, 2310.3(A), 2310.3(B), 2310.3(C), 2310.3(C)(3), 2310.3(D), 2310.3(D)(1), 2310.3(D)(3), 2310.6, 2310.7, 2310.9, 2310.11, 2310.13, 2310.13(A), 2310.13(B), 2310.13(C), Glossary (definition of "Date of recordation")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="1" cite="17 U.S.C. § 203(a)(1)">17 U.S.C. § 203(a)(1)</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="2" subparagraph="A" cite="17 U.S.C. § 203(a)(2)(A)">17 U.S.C. § 203(a)(2)(A)</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="2" subparagraph="B" cite="17 U.S.C. § 203(a)(2)(B)">17 U.S.C. § 203(a)(2)(B)</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="2" subparagraph="C" cite="17 U.S.C. § 203(a)(2)(C)">17 U.S.C. § 203(a)(2)(C)</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="2" subparagraph="D" cite="17 U.S.C. § 203(a)(2)(D)">17 U.S.C. § 203(a)(2)(D)</ref></authority>
+            <references>2310.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="3" cite="17 U.S.C. § 203(a)(3)">17 U.S.C. § 203(a)(3)</ref></authority>
+            <references>2310.3(C), 2310.3(C)(1), 2310.3(C)(2), 2310.9</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="4" cite="17 U.S.C. § 203(a)(4)">17 U.S.C. § 203(a)(4)</ref></authority>
+            <references>101.3(A), 2302, 2310.3(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="203" subsection="a" paragraph="4" subparagraph="A" cite="17 U.S.C. § 203(a)(4)(A)">17 U.S.C. § 203(a)(4)(A)</ref></authority>
+            <references>623.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="204" subsection="a" cite="17 U.S.C. § 204(a)">17 U.S.C. § 204(a)</ref></authority>
+            <references>503.4, 620.1, 620.10(C)(1), 2309.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" cite="17 U.S.C. § 205">17 U.S.C. § 205</ref></authority>
+            <references>101.3(A), 202.3, 2302, 2313.3, 2314.4, Glossary (definition of "Date of recordation")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="a" cite="17 U.S.C. § 205(a)">17 U.S.C. § 205(a)</ref></authority>
+            <references>2302, 2309.1, 2310.8, 2310.9</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="c" cite="17 U.S.C. § 205(c)">17 U.S.C. § 205(c)</ref></authority>
+            <references>623.1, 1802.7(B), 2309.3(A), 2309.9(D), 2309.9(E)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="c" paragraph="1" cite="17 U.S.C. § 205(c)(1)">17 U.S.C. § 205(c)(1)</ref></authority>
+            <references>202</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="c" paragraph="2" cite="17 U.S.C. § 205(c)(2)">17 U.S.C. § 205(c)(2)</ref></authority>
+            <references>202, Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="d" cite="17 U.S.C. § 205(d)">17 U.S.C. § 205(d)</ref></authority>
+            <references>1802.7(B), 2309.3(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="205" subsection="e" cite="17 U.S.C. § 205(e)">17 U.S.C. § 205(e)</ref></authority>
+            <references>1802.7(B), 2309.3(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="301" subsection="a" cite="17 U.S.C. § 301(a)">17 U.S.C. § 301(a)</ref></authority>
+            <references>102.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="301" subsection="b" cite="17 U.S.C. § 301(b)">17 U.S.C. § 301(b)</ref></authority>
+            <references>102.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="301" subsection="c" cite="17 U.S.C. § 301(c)">17 U.S.C. § 301(c)</ref></authority>
+            <references>102.5, 803.5(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="302" cite="17 U.S.C. § 302">17 U.S.C. § 302</ref></authority>
+            <references>203, 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="302" subsection="a" cite="17 U.S.C. § 302(a)">17 U.S.C. § 302(a)</ref></authority>
+            <references>102.2(A), 616.2, 1805.1(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="302" subsection="b" cite="17 U.S.C. § 302(b)">17 U.S.C. § 302(b)</ref></authority>
+            <references>505.3, 616.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="302" subsection="c" cite="17 U.S.C. § 302(c)">17 U.S.C. § 302(c)</ref></authority>
+            <references>102.2(A), 505.3, 506.5, 611, 614.1(D), 614.1(E), 615.1(A), 615.1(B), 615.2(A), 615.2(B), 616.2, 619.13(C), 619.13(D), 1106.5(E), 1805.1(A), 2301, 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="302" subsection="d" cite="17 U.S.C. § 302(d)">17 U.S.C. § 302(d)</ref></authority>
+            <references>2301, 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="303" cite="17 U.S.C. § 303">17 U.S.C. § 303</ref></authority>
+            <references>203</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="303" subsection="a" cite="17 U.S.C. § 303(a)">17 U.S.C. § 303(a)</ref></authority>
+            <references>616.2, 1903</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="303" subsection="b" cite="17 U.S.C. § 303(b)">17 U.S.C. § 303(b)</ref></authority>
+            <references>802.8(F), 2122.5(E)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" cite="17 U.S.C. § 304">17 U.S.C. § 304</ref></authority>
+            <references>202.1, 203, 621.5, 1807.2, 2302, 2306.1, 2310.4(D)(1)(c)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="a" cite="17 U.S.C. § 304(a)">17 U.S.C. § 304(a)</ref></authority>
+            <references>2101, 2102</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="a" paragraph="1" subparagraph="C" cite="17 U.S.C. § 304(a)(1)(C)">17 U.S.C. § 304(a)(1)(C)</ref></authority>
+            <references>2310.4(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="a" paragraph="3" subparagraph="A" cite="17 U.S.C. § 304(a)(3)(A)">17 U.S.C. § 304(a)(3)(A)</ref></authority>
+            <references>2108</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="a" paragraph="3" subparagraph="A" clause="ii" cite="17 U.S.C. § 304(a)(3)(A)(ii)">17 U.S.C. § 304(a)(3)(A)(ii)</ref></authority>
+            <references>2115.6</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="b" cite="17 U.S.C. § 304(b)">17 U.S.C. § 304(b)</ref></authority>
+            <references>2102</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" cite="17 U.S.C. § 304(c)">17 U.S.C. § 304(c)</ref></authority>
+            <references>101.3(A), 102.2(A), 506.5, 2310, 2310.2, 2310.3(D)(3), 2310.4(A), 2310.4(B)(1), 2310.4(B)(2), 2310.4(C), 2310.4(D), 2310.4(D)(1), 2310.4(D)(2), 2310.4(D)(3), 2310.5(A), 2310.5(B), 2310.5(D)(1), 2310.6, 2310.7, 2310.11, 2310.13, 2310.13(A), 2310.13(B), 2310.13(C), Glossary (definition of "Date of recordation")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="1" cite="17 U.S.C. § 304(c)(1)">17 U.S.C. § 304(c)(1)</ref></authority>
+            <references>2310.4(B)(1)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="2" cite="17 U.S.C. § 304(c)(2)">17 U.S.C. § 304(c)(2)</ref></authority>
+            <references>2310.4(B)(1)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="2" subparagraph="D" cite="17 U.S.C. § 304(c)(2)(D)">17 U.S.C. § 304(c)(2)(D)</ref></authority>
+            <references>2310.4(B)(1)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="3" cite="17 U.S.C. § 304(c)(3)">17 U.S.C. § 304(c)(3)</ref></authority>
+            <references>2310.9</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="4" cite="17 U.S.C. § 304(c)(4)">17 U.S.C. § 304(c)(4)</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="c" paragraph="4" subparagraph="A" cite="17 U.S.C. § 304(c)(4)(A)">17 U.S.C. § 304(c)(4)(A)</ref></authority>
+            <references>623.1, 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="d" cite="17 U.S.C. § 304(d)">17 U.S.C. § 304(d)</ref></authority>
+            <references>101.3(A), 102.2(A), 506.5, 2310, 2310.2, 2310.3(D)(3), 2310.4(D)(1), 2310.4(D)(2), 2310.5(A), 2310.5(B), 2310.5(C), 2310.5(D), 2310.5(D)(1), 2310.5(D)(2), 2310.5(D)(3), 2310.6, 2310.7, 2310.11, 2310.13, 2310.13(A), 2310.13(B), 2310.13(C), Glossary (definition of "Date of recordation")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="d" paragraph="1" cite="17 U.S.C. § 304(d)(1)">17 U.S.C. § 304(d)(1)</ref></authority>
+            <references>101.3(A), 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="304" subsection="d" paragraph="2" cite="17 U.S.C. § 304(d)(2)">17 U.S.C. § 304(d)(2)</ref></authority>
+            <references>2310.9</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="305" cite="17 U.S.C. § 305">17 U.S.C. § 305</ref></authority>
+            <references>203, 2102</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" cite="17 U.S.C. § 401">17 U.S.C. § 401</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="a" cite="17 U.S.C. § 401(a)">17 U.S.C. § 401(a)</ref></authority>
+            <references>2203.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="a" year="1978" cite="17 U.S.C. § 401(a) (1978)">17 U.S.C. § 401(a) (1978)</ref></authority>
+            <references>2203.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="b" cite="17 U.S.C. § 401(b)">17 U.S.C. § 401(b)</ref></authority>
+            <references>2204.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="b" paragraph="2" cite="17 U.S.C. § 401(b)(2)">17 U.S.C. § 401(b)(2)</ref></authority>
+            <references>2205.1(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="b" paragraph="3" cite="17 U.S.C. § 401(b)(3)">17 U.S.C. § 401(b)(3)</ref></authority>
+            <references>2205.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="c" cite="17 U.S.C. § 401(c)">17 U.S.C. § 401(c)</ref></authority>
+            <references>2206.2, 2206.7, 2207</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="401" subsection="d" cite="17 U.S.C. § 401(d)">17 U.S.C. § 401(d)</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" cite="17 U.S.C. § 402">17 U.S.C. § 402</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="a" cite="17 U.S.C. §402(a)">17 U.S.C. §402(a)</ref></authority>
+            <references>2203.1, 2203.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="a" year="1978" cite="17 U.S.C. § 402(a) (1978)">17 U.S.C. § 402(a) (1978)</ref></authority>
+            <references>2203.1, 2203.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="b" cite="17 U.S.C. § 402(b)">17 U.S.C. § 402(b)</ref></authority>
+            <references>2204.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="b" paragraph="2" cite="17 U.S.C. § 402(b)(2)">17 U.S.C. § 402(b)(2)</ref></authority>
+            <references>2205.1(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="b" paragraph="3" cite="17 U.S.C. § 402(b)(3)">17 U.S.C. § 402(b)(3)</ref></authority>
+            <references>2205.2(A), 2207.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="c" cite="17 U.S.C. § 402(c)">17 U.S.C. § 402(c)</ref></authority>
+            <references>2206.2, 2206.3, 2206.7, 2207.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="402" subsection="d" cite="17 U.S.C. § 402(d)">17 U.S.C. § 402(d)</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="403" cite="17 U.S.C. § 403">17 U.S.C. § 403</ref></authority>
+            <references>2208</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="405" cite="17 U.S.C. § 405">17 U.S.C. § 405</ref></authority>
+            <references>2204.3, 2206.2, Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="405" subsection="a" cite="17 U.S.C. § 405(a)">17 U.S.C. § 405(a)</ref></authority>
+            <references>1807.4(D), 2203.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="405" subsection="b" cite="17 U.S.C. § 405(b)">17 U.S.C. § 405(b)</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="405" subsection="c" cite="17 U.S.C. § 405(c)">17 U.S.C. § 405(c)</ref></authority>
+            <references>2203.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="406" cite="17 U.S.C § 406">17 U.S.C § 406</ref></authority>
+            <references>Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="406" subsection="a" cite="17 U.S.C. § 406(a)">17 U.S.C. § 406(a)</ref></authority>
+            <references>2202.2(A), 2205.2(E), 2205.2(I), 2309.3(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="406" subsection="b" cite="17 U.S.C. § 406(b)">17 U.S.C. § 406(b)</ref></authority>
+            <references>2205.1(C), 2205.1(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="406" subsection="c" cite="17 U.S.C. § 406(c)">17 U.S.C. § 406(c)</ref></authority>
+            <references>2205.1(C), 2205.1(D), 2205.2(F)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" cite="17 U.S.C. § 407">17 U.S.C. § 407</ref></authority>
+            <references>101.2(I), 202, 1505.2, Glossary (definition of “Mandatory deposit copy")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="a" cite="17 U.S.C. § 407(a)">17 U.S.C. § 407(a)</ref></authority>
+            <references>101.3(A), 1010.7, 1502</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="a" paragraph="1" cite="17 U.S.C. § 407(a)(1)">17 U.S.C. § 407(a)(1)</ref></authority>
+            <references>1511</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="a" paragraph="2" cite="17 U.S.C. § 407(a)(2)">17 U.S.C. § 407(a)(2)</ref></authority>
+            <references>1511</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="b" cite="17 U.S.C. § 407(b)">17 U.S.C. § 407(b)</ref></authority>
+            <references>1511, 1511.7(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="c" cite="17 U.S.C. § 407(c)">17 U.S.C. § 407(c)</ref></authority>
+            <references>1502, 1511.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="d" cite="17 U.S.C. § 407(d)">17 U.S.C. § 407(d)</ref></authority>
+            <references>1511, 1511.4, 1511.7(C), 1511.8(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="407" subsection="e" cite="17 U.S.C. § 407(e)">17 U.S.C. § 407(e)</ref></authority>
+            <references>1511.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" cite="17 U.S.C. § 408">17 U.S.C. § 408</ref></authority>
+            <references>101.3(A), 621.5, Glossary (definitions of “Mandatory deposit copy" and "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="a" cite="17 U.S.C. § 408(a)">17 U.S.C. § 408(a)</ref></authority>
+            <references>202, 203, 402, 408, 502, 511, 611.1(B), 619.10, 621.9(K), 623.1, 1402.1, 1503.2, 1807.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="b" cite="17 U.S.C. § 408(b)">17 U.S.C. § 408(b)</ref></authority>
+            <references>202, 1502, 1503.2, 1506, 1509.2(A)(2)(a)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="b" paragraph="1" cite="17 U.S.C. § 408(b)(1)">17 U.S.C. § 408(b)(1)</ref></authority>
+            <references>1503.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="b" paragraph="2" cite="17 U.S.C. § 408(b)(2)">17 U.S.C. § 408(b)(2)</ref></authority>
+            <references>1503.2, 1504, 1511.7(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="c" cite="17 U.S.C. § 408(c)">17 U.S.C. § 408(c)</ref></authority>
+            <references>Chapter 2100 Part VIII (definition of "Special relief")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="c" paragraph="1" cite="17 U.S.C. § 408(c)(1)">17 U.S.C. § 408(c)(1)</ref></authority>
+            <references>202.1, 609, 1101, 1105.1, 1112.1, 1402.1, 1402.2, 1502, 1509, 1802.8(A)(3), 1807.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="c" paragraph="2" cite="17 U.S.C. § 408(c) (2)">17 U.S.C. § 408(c) (2)</ref></authority>
+            <references>202.1, 1105.2, 1110</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="c" paragraph="2" subparagraph="B" cite="17 U.S.C. § 408(c)(2)(B)">17 U.S.C. § 408(c)(2)(B)</ref></authority>
+            <references>1110.7(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="c" paragraph="3" cite="17 U.S.C. § 408(c)(3)">17 U.S.C. § 408(c)(3)</ref></authority>
+            <references>2128</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="d" cite="17 U.S.C. § 408(d)">17 U.S.C. § 408(d)</ref></authority>
+            <references>202.1, 1402.2, 1802, 1802.4, 1802.8(A)(2), 1802.8(B)(1), 1807.2, 2131, 2138, Chapter 2100 Part VIII (definition of "Supplementary registration"), Glossary (definition of "Supplementary registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="e" cite="17 U.S.C. § 408(e)">17 U.S.C. § 408(e)</ref></authority>
+            <references>510.1, 619.11, 721.5, 1802.7(C), 1803</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" cite="17 U.S.C. § 408(f)">17 U.S.C. § 408(f)</ref></authority>
+            <references>621.9(K), 1802.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="1" cite="17 U.S.C. § 408(f)(1)">17 U.S.C. § 408(f)(1)</ref></authority>
+            <references>1402.2, 1602, 1603.1, 1603.4, 1603.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="2" cite="17 U.S.C. § 408(f)(2)">17 U.S.C. § 408(f)(2)</ref></authority>
+            <references>1602, 1603.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="3" cite="17 U.S.C. § 408(f)(3)">17 U.S.C. § 408(f)(3)</ref></authority>
+            <references>202, 1604.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="4" cite="17 U.S.C. § 408(f)(4)">17 U.S.C. § 408(f)(4)</ref></authority>
+            <references>1604.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="4" subparagraph="A" cite="17 U.S.C. § 408(f)(4)(A)">17 U.S.C. § 408(f)(4)(A)</ref></authority>
+            <references>1604.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="408" subsection="f" paragraph="4" subparagraph="B" cite="17 U.S.C. § 408(f)(4)(B)">17 U.S.C. § 408(f)(4)(B)</ref></authority>
+            <references>1604.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" cite="17 U.S.C. § 409">17 U.S.C. § 409</ref></authority>
+            <references>205, 511, 602.2, 602.3, 611.1(B), 618.1, 621.3, 1402.1, 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="1" cite="17 U.S.C. § 409(1)">17 U.S.C. § 409(1)</ref></authority>
+            <references>615.1(B), 615.2(B), 619.1, 619.13(C), 619.13(D), 1103.4(G), 1110.7(E), 1114.6(K), 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="2" cite="17 U.S.C. § 409(2)">17 U.S.C. § 409(2)</ref></authority>
+            <references>613.1, 616.2, 617.1, 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="3" cite="17 U.S.C. § 409(3)">17 U.S.C. § 409(3)</ref></authority>
+            <references>615.1(B), 615.2(B), 617.1, 619.13(C), 619.13(D), 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="4" cite="17 U.S.C. § 409(4)">17 U.S.C. § 409(4)</ref></authority>
+            <references>1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="5" cite="17 U.S.C. § 409(5)">17 U.S.C. § 409(5)</ref></authority>
+            <references>503.4, 614.1(F), 620.2, 620.4(B), 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="6" cite="17 U.S.C. § 409(6)">17 U.S.C. § 409(6)</ref></authority>
+            <references>610, 721.9(B), 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="7" cite="17 U.S.C. § 409(7)">17 U.S.C. § 409(7)</ref></authority>
+            <references>611, 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="8" cite="17 U.S.C. § 409(8)">17 U.S.C. § 409(8)</ref></authority>
+            <references>612.1, 1402.2, 1903</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="9" cite="17 U.S.C. § 409(9)">17 U.S.C. § 409(9)</ref></authority>
+            <references>618.5, 618.6, 721.8, 1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="409" paragraph="10" cite="17 U.S.C. § 409(10)">17 U.S.C. § 409(10)</ref></authority>
+            <references>1402.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="410" cite="17 U.S.C. § 410">17 U.S.C. § 410</ref></authority>
+            <references>101.3(A), 1509.1(F)(4)(d)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="410" subsection="a" cite="17 U.S.C. § 410(a)">17 U.S.C. § 410(a)</ref></authority>
+            <references>206, 209, 211, 302, 309, 602, 607, 625, 625.4, 625.5, 801.11, 1509.1(F)(4)(b)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="410" subsection="b" cite="17 U.S.C. § 410(b)">17 U.S.C. § 410(b)</ref></authority>
+            <references>302, 625, 1503.2, 1702, 1807.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="410" subsection="c" cite="17 U.S.C. § 410(c)">17 U.S.C. § 410(c)</ref></authority>
+            <references>101.3(A), 607, 625.5, 1108.7, 1114.6(D), 1802.3, 1903</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="410" subsection="d" cite="17 U.S.C. § 410(d)">17 U.S.C. § 410(d)</ref></authority>
+            <references>209, 625, 1112.9, 1705, 1802.12, Glossary (definitions of "Effective Date of Registration" and "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="411" cite="17 U.S.C. § 411">17 U.S.C. § 411</ref></authority>
+            <references>101.3(A), Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="411" subsection="a" cite="17 U.S.C. § 411(a)">17 U.S.C. § 411(a)</ref></authority>
+            <references>202, 203, 211, 623.1, 625, 1107.7, 1108.7, 1602, 1604.1, 1604.2, 1706</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="412" cite="17 U.S.C. § 412">17 U.S.C. § 412</ref></authority>
+            <references>101.3(A), 203, 623.1, 1110.6, 1114.5, 1509.1(G), 1602, 1604.1, 1604.2, 1903, 2313.3, 2314.4, Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="412" subsection="c" cite="17 U.S.C. § 412(c)">17 U.S.C. § 412(c)</ref></authority>
+            <references>202</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="504" cite="17 U.S.C. § 504">17 U.S.C. § 504</ref></authority>
+            <references>202</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="504" subsection="c" cite="17 U.S.C. § 504(c)">17 U.S.C. § 504(c)</ref></authority>
+            <references>1903</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="504" subsection="c" paragraph="1" cite="17 U.S.C. § 504(c)(1)">17 U.S.C. § 504(c)(1)</ref></authority>
+            <references>1008.4, 1008.7, 1105.4, 1112.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="504" subsection="c" paragraph="2" cite="17 U.S.C. § 504(c)(2)">17 U.S.C. § 504(c)(2)</ref></authority>
+            <references>2202.2(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="505" cite="17 U.S.C. § 505">17 U.S.C. § 505</ref></authority>
+            <references>202, 1903</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="506" subsection="a" cite="17 U.S.C. § 506(a)">17 U.S.C. § 506(a)</ref></authority>
+            <references>102.7</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="506" subsection="e" cite="17 U.S.C. § 506(e)">17 U.S.C. § 506(e)</ref></authority>
+            <references>212.1, 309.2, 602.4(C), 624.1, 1103.4(L), 1106.5(L), 1107.6(J), 1108.6(K), 1109.6(K), 1110.7(I), 1114.6(0), 1802.8(A)(7), 1802.8(B)(6), Glossary (definition of "Registration")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="512" cite="17 U.S.C. § 512">17 U.S.C. § 512</ref></authority>
+            <references>102.7</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="512" subsection="c" cite="17 U.S.C. § 512(c)">17 U.S.C. § 512(c)</ref></authority>
+            <references>101.3(A), 2301, 2302, 2304.1, 2312, 2407.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="512" subsection="c" paragraph="2" cite="17 U.S.C. § 512(c) (2)">17 U.S.C. § 512(c) (2)</ref></authority>
+            <references>2302, 2304.1(C), 2312</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="601" year="1976" cite="17 U.S.C. § 601 (1976)">17 U.S.C. § 601 (1976)</ref></authority>
+            <references>Glossary (definition of "Manufacturing Clause")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="701" cite="17 U.S.C. § 701">17 U.S.C. § 701</ref></authority>
+            <references>101.1, 101.3(C), 805.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="701" subsection="a" cite="17 U.S.C. § 701(a)">17 U.S.C. § 701(a)</ref></authority>
+            <references>805.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="701" subsection="c" cite="17 U.S.C. § 701(c)">17 U.S.C. § 701(c)</ref></authority>
+            <references>101.4, 2409</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="701" subsection="e" cite="17 U.S.C. § 701(e)">17 U.S.C. § 701(e)</ref></authority>
+            <references>101.3(B), 102.2(B), 102.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="702" cite="17 U.S.C. § 702">17 U.S.C. § 702</ref></authority>
+            <references>101.3(B), 102.2(B), 805.5, 1402.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="703" cite="17 U.S.C. § 703">17 U.S.C. § 703</ref></authority>
+            <references>1807.4(C), 1807.4(D)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="704" cite="17 U.S.C. § 704">17 U.S.C. § 704</ref></authority>
+            <references>1502</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="704" subsection="a" cite="17 U.S.C. § 704(a)">17 U.S.C. § 704(a)</ref></authority>
+            <references>1510.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="704" subsection="d" cite="17 U.S.C. § 704(d)">17 U.S.C. § 704(d)</ref></authority>
+            <references>713, 2410</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="704" subsection="e" cite="17 U.S.C. § 704(e)">17 U.S.C. § 704(e)</ref></authority>
+            <references>2410</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="705" subsection="a" cite="17 U.S.C. § 705(a)">17 U.S.C. § 705(a)</ref></authority>
+            <references>205, 1509.1(F)(4)(a), 1606.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="705" subsection="b" cite="17 U.S.C. § 705(b)">17 U.S.C. § 705(b)</ref></authority>
+            <references>205, 1509.1(F)(4)(a), 1606.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="706" subsection="b" cite="17 U.S.C. § 706(b)">17 U.S.C. § 706(b)</ref></authority>
+            <references>102.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="708" subsection="b" cite="17 U.S.C. § 708(b)">17 U.S.C. § 708(b)</ref></authority>
+            <references>1412.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="708" subsection="c" cite="17 U.S.C. § 708(c)">17 U.S.C. § 708(c)</ref></authority>
+            <references>2412</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="901" cite="17 U.S.C. § 901">17 U.S.C. § 901</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="901" subsection="a" paragraph="1" cite="17 U.S.C. § 901(a)(1)">17 U.S.C. § 901(a)(1)</ref></authority>
+            <references>1204.1, Glossary (definition of "Semi-conductor chip product")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="901" subsection="a" paragraph="2" cite="17 U.S.C. § 901(a) (2)">17 U.S.C. § 901(a) (2)</ref></authority>
+            <references>1202, Glossary (definition of "Mask work")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="901" subsection="a" paragraph="3" cite="17 U.S.C. § 901(a)(3)">17 U.S.C. § 901(a)(3)</ref></authority>
+            <references>1204.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="901" subsection="a" paragraph="5" cite="17 U.S.C. § 901(a)(5)">17 U.S.C. § 901(a)(5)</ref></authority>
+            <references>1204.4, 1213</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="902" cite="17 U.S.C. § 902">17 U.S.C. § 902</ref></authority>
+            <references>101.3(A), 1204</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="902" subsection="a" cite="17 U.S.C. § 902(a)">17 U.S.C. § 902(a)</ref></authority>
+            <references>1204.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="902" subsection="b" paragraph="1" cite="17 U.S.C. § 902(b)(1)">17 U.S.C. § 902(b)(1)</ref></authority>
+            <references>1205.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="902" subsection="b" paragraph="2" cite="17 U.S.C. § 902(b)(2)">17 U.S.C. § 902(b)(2)</ref></authority>
+            <references>1204.2, 1205.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="902" subsection="c" cite="17 U.S.C. § 902(c)">17 U.S.C. § 902(c)</ref></authority>
+            <references>1204.3, 1212.8(D), 1212.8(E)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="903" cite="17 U.S.C. § 903">17 U.S.C. § 903</ref></authority>
+            <references>101.3(A), 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="903" subsection="b" cite="17 U.S.C. § 903(b)">17 U.S.C. § 903(b)</ref></authority>
+            <references>1208.1, 1212.5(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="903" subsection="c" cite="17 U.S.C. § 903(c)">17 U.S.C. § 903(c)</ref></authority>
+            <references>2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="903" subsection="d" cite="17 U.S.C. § 903(d)">17 U.S.C. § 903(d)</ref></authority>
+            <references>1208.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="904" cite="17 U.S.C. § 904">17 U.S.C. § 904</ref></authority>
+            <references>101.3(A), 1206</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="905" cite="17 U.S.C. § 905">17 U.S.C. § 905</ref></authority>
+            <references>101.3(A), 1207</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="906" cite="17 U.S.C. § 906">17 U.S.C. § 906</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="906" subsection="a" cite="17 U.S.C. § 906(a)">17 U.S.C. § 906(a)</ref></authority>
+            <references>1207.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="906" subsection="b" cite="17 U.S.C. § 906(b)">17 U.S.C. § 906(b)</ref></authority>
+            <references>1207.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="907" cite="17 U.S.C. § 907">17 U.S.C. § 907</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="908" cite="17 U.S.C. § 908">17 U.S.C. § 908</ref></authority>
+            <references>101.3(A), 1807.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="908" subsection="a" cite="17 U.S.C. § 908(a)">17 U.S.C. § 908(a)</ref></authority>
+            <references>1204.5(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="908" subsection="e" cite="17 U.S.C. § 908(e)">17 U.S.C. § 908(e)</ref></authority>
+            <references>1204.5(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="908" subsection="f" cite="17 U.S.C. § 908(f)">17 U.S.C. § 908(f)</ref></authority>
+            <references>1204.5(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="909" cite="17 U.S.C. § 909">17 U.S.C. § 909</ref></authority>
+            <references>101.3(A), 1209</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="909" subsection="a" cite="17 U.S.C. § 909(a)">17 U.S.C. § 909(a)</ref></authority>
+            <references>1209</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="909" subsection="b" cite="17 U.S.C. § 909(b)">17 U.S.C. § 909(b)</ref></authority>
+            <references>1209.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="910" cite="17 U.S.C. § 910">17 U.S.C. § 910</ref></authority>
+            <references>101.3(A), 1204.5(C)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="911" cite="17 U.S.C. § 911">17 U.S.C. § 911</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="912" cite="17 U.S.C. § 912">17 U.S.C. § 912</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="913" cite="17 U.S.C. § 913">17 U.S.C. § 913</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="914" cite="17 U.S.C. § 914">17 U.S.C. § 914</ref></authority>
+            <references>101.3(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1001" cite="17 U.S.C. § 1001">17 U.S.C. § 1001</ref></authority>
+            <references>101.2(H), Glossary (definition of “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1002" cite="17 U.S.C. § 1002">17 U.S.C. § 1002</ref></authority>
+            <references>101.2(H), Glossary (definition of “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1003" cite="17 U.S.C. § 1003">17 U.S.C. § 1003</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1004" cite="17 U.S.C. § 1004">17 U.S.C. § 1004</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1005" cite="17 U.S.C. § 1005">17 U.S.C. § 1005</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1006" cite="17 U.S.C. § 1006">17 U.S.C. § 1006</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1007" cite="17 U.S.C. § 1007">17 U.S.C. § 1007</ref></authority>
+            <references>101.2(H), Glossary (definition of “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1008" cite="17 U.S.C. § 1008">17 U.S.C. § 1008</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1009" cite="17 U.S.C. § 1009">17 U.S.C. § 1009</ref></authority>
+            <references>101.2(H), Glossary (definition of “Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1010" cite="17 U.S.C. § 1010">17 U.S.C. § 1010</ref></authority>
+            <references>101.2(H), Glossary (definition of "Licensing Division")</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" cite="17 U.S.C. § 1301">17 U.S.C. § 1301</ref></authority>
+            <references>1304</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="a" paragraph="1" cite="17 U.S.C. § 1301(a)(1)">17 U.S.C. § 1301(a)(1)</ref></authority>
+            <references>1304</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="a" paragraph="2" cite="17 U.S.C. § 1301(a)(2)">17 U.S.C. § 1301(a)(2)</ref></authority>
+            <references>1304</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="1" cite="17 U.S.C. § 1301(b)(1)">17 U.S.C. § 1301(b)(1)</ref></authority>
+            <references>1304.1, 1303.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="2" cite="17 U.S.C. § 1301(b)(2)">17 U.S.C. § 1301(b)(2)</ref></authority>
+            <references>1303.7</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="3" cite="17 U.S.C. § 1301(b)(3)">17 U.S.C. § 1301(b)(3)</ref></authority>
+            <references>1303.8</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="4" cite="17 U.S.C. § 1301(b)(4)">17 U.S.C. § 1301(b)(4)</ref></authority>
+            <references>1303.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="5" cite="17 U.S.C. § 1301(b)(5)">17 U.S.C. § 1301(b)(5)</ref></authority>
+            <references>1303.6</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="6" cite="17 U.S.C. § 1301(b)(6)">17 U.S.C. § 1301(b)(6)</ref></authority>
+            <references>1303.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1301" subsection="b" paragraph="7" cite="17 U.S.C. § 1301(b)(7)">17 U.S.C. § 1301(b)(7)</ref></authority>
+            <references>1303.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1302" paragraph="1" cite="17 U.S.C. § 1302(1)">17 U.S.C. § 1302(1)</ref></authority>
+            <references>1305.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1302" paragraph="2" cite="17 U.S.C. § 1302(2)">17 U.S.C. § 1302(2)</ref></authority>
+            <references>1305.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1302" paragraph="3" cite="17 U.S.C. § 1302(3)">17 U.S.C. § 1302(3)</ref></authority>
+            <references>1305.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1302" paragraph="4" cite="17 U.S.C. § 1302(4)">17 U.S.C. § 1302(4)</ref></authority>
+            <references>1305.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1302" paragraph="5" cite="17 U.S.C. § 1302(5)">17 U.S.C. § 1302(5)</ref></authority>
+            <references>1304.2, 1304.4, 1305.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1303" cite="17 U.S.C. § 1303">17 U.S.C. § 1303</ref></authority>
+            <references>1304.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1304" cite="17 U.S.C. § 1304">17 U.S.C. § 1304</ref></authority>
+            <references>1306.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1305" subsection="a" cite="17 U.S.C. § 1305(a)">17 U.S.C. § 1305(a)</ref></authority>
+            <references>1306.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1305" subsection="b" cite="17 U.S.C. § 1305(b)">17 U.S.C. § 1305(b)</ref></authority>
+            <references>1306.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1306" cite="17 U.S.C. § 1306">17 U.S.C. § 1306</ref></authority>
+            <references>1312.9(A)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1306" subsection="a" cite="17 U.S.C. § 1306(a)">17 U.S.C. § 1306(a)</ref></authority>
+            <references>1309.1, 1309.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1306" subsection="b" cite="17 U.S.C. § 1306(b)">17 U.S.C. § 1306(b)</ref></authority>
+            <references>1309.1, 1309.4</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1308" cite="17 U.S.C. § 1308">17 U.S.C. § 1308</ref></authority>
+            <references>1307</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1309" cite="17 U.S.C. § 1309">17 U.S.C. § 1309</ref></authority>
+            <references>1307</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" cite="17 U.S.C. § 1310">17 U.S.C. § 1310</ref></authority>
+            <references>1311, 1312</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="a" cite="17 U.S.C. § 1310(a)">17 U.S.C. § 1310(a)</ref></authority>
+            <references>1310.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="b" cite="17 U.S.C. § 1310(b)">17 U.S.C. § 1310(b)</ref></authority>
+            <references>1303.3, 1304.4, 1310.1, 1312.6</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="c" cite="17 U.S.C. § 1310(c)">17 U.S.C. § 1310(c)</ref></authority>
+            <references>1311.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="d" cite="17 U.S.C. § 1310(d)">17 U.S.C. § 1310(d)</ref></authority>
+            <references>1312.2(B)</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="e" cite="17 U.S.C. § 1310(e)">17 U.S.C. § 1310(e)</ref></authority>
+            <references>1311.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="g" cite="17 U.S.C. § 1310(g)">17 U.S.C. § 1310(g)</ref></authority>
+            <references>1312.3</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1310" subsection="h" cite="17 U.S.C. § 1310(h)">17 U.S.C. § 1310(h)</ref></authority>
+            <references>1313.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1311" cite="17 U.S.C. § 1311">17 U.S.C. § 1311</ref></authority>
+            <references>1306.2, 1312, 1312.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1312" cite="17 U.S.C. § 1312">17 U.S.C. § 1312</ref></authority>
+            <references>1312</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1313" cite="17 U.S.C. § 1313">17 U.S.C. § 1313</ref></authority>
+            <references>1312, 1807.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1313" subsection="a" cite="17 U.S.C. § 1313(a)">17 U.S.C. § 1313(a)</ref></authority>
+            <references>1315</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1313" subsection="b" cite="17 U.S.C. § 1313(b)">17 U.S.C. § 1313(b)</ref></authority>
+            <references>1316</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1314" cite="17 U.S.C. § 1314">17 U.S.C. § 1314</ref></authority>
+            <references>1310.2, 1312, 1315</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1315" cite="17 U.S.C. § 1315">17 U.S.C. § 1315</ref></authority>
+            <references>1312, 1315</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1319" cite="17 U.S.C. § 1319">17 U.S.C. § 1319</ref></authority>
+            <references>1317</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1320" cite="17 U.S.C. § 1320">17 U.S.C. § 1320</ref></authority>
+            <references>2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1320" subsection="a" cite="17 U.S.C. § 1320(a)">17 U.S.C. § 1320(a)</ref></authority>
+            <references>1308</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1320" subsection="b" cite="17 U.S.C. § 1320(b)">17 U.S.C. § 1320(b)</ref></authority>
+            <references>1308.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1320" subsection="d" cite="17 U.S.C. § 1320(d)">17 U.S.C. § 1320(d)</ref></authority>
+            <references>1308.2, 2302</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1321" subsection="a" cite="17 U.S.C. § 1321(a)">17 U.S.C. § 1321(a)</ref></authority>
+            <references>1307, 1310.2</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1321" subsection="b" cite="17 U.S.C. § 1321(b)">17 U.S.C. § 1321(b)</ref></authority>
+            <references>1316</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1329" cite="17 U.S.C. § 1329">17 U.S.C. § 1329</ref></authority>
+            <references>1305.5</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1332" cite="17 U.S.C. § 1332">17 U.S.C. § 1332</ref></authority>
+            <references>1305.1</references>
+        </entry>
+        <entry>
+            <authority><ref source="USC" title="17" section="1401" subsection="f" paragraph="5" subparagraph="A" cite="17 U.S.C. § 1401(f)(5)(A)">17 U.S.C. § 1401(f)(5)(A)</ref></authority>
+            <references>608, 803.5(D)</references>
+        </entry>
+    </authority_group>
+
+    <authority_group id="grp-usc-other">
+        <title>Other Provisions of the United States Code</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-publaw-post1976">
+        <title>Public Laws and Statutes at Large Enacted After 1976</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-publaw-pre1976">
+        <title>Copyright Act of 1909 and Other Public Laws and Statutes at Large Enacted Before 1976</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-treaties">
+        <title>International Treaties</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-scotus">
+        <title>Cases: U.S. Supreme Court</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-appeals">
+        <title>Cases: U.S. Courts of Appeals</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-district">
+        <title>Cases: U.S. District Courts</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-bankruptcy">
+        <title>Cases: U.S. Bankruptcy Courts</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-briefs">
+        <title>Briefs for the United States as Amicus Curiae and Testimony of the Register of Copyrights</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-citing-comp-3rd">
+        <title>Cases Citing the Compendium of U.S. Copyright Office Practices, Third Edition</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-citing-comp-2nd">
+        <title>Cases Citing the Compendium of U.S. Copyright Office Practices, Second Edition</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-cases-citing-comp-1st">
+        <title>Cases Citing the Compendium of U.S. Copyright Office Practices, First Edition</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-legis-hearings">
+        <title>Legislative Materials: Hearings</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-legis-reports">
+        <title>Legislative Materials: Reports</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-legis-debates">
+        <title>Legislative Materials: Floor Debates</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-legis-rules">
+        <title>Legislative Materials: Congressional Rules</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-admin-cfr">
+        <title>Administrative Materials: U.S. Copyright Office Regulations</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-admin-manuals">
+        <title>Administrative Materials: U.S. Copyright Office Administrative Manuals</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-admin-studies">
+        <title>Administrative Materials: U.S. Copyright Office Studies</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-admin-circulars">
+        <title>Administrative Materials: U.S. Copyright Office Circulars and FAQs</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-admin-policy">
+        <title>Administrative Materials: U.S. Copyright Office Public Announcements, Policy Statements, and Interpretive Rules</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-treatises-list"> <!-- Changed ID to be unique -->
+        <title>Treatises</title>
+        <!-- entries -->
+    </authority_group>
+
+    <authority_group id="grp-other">
+        <title>Other Authorities</title>
+        <!-- entries -->
+    </authority_group>
+</table_of_authorities>
+</body>
+</html>

@@ -1,0 +1,229 @@
+/* --- Global Resets & Base Styles --- */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* From block 2 */
+	line-height: 1.7;           /* From block 2 */
+	margin: 0;                  /* From block 1 (Reset) */
+	padding: 0;                 /* From block 1 (Reset) */
+	background-color: #ffffff;  /* From block 2 */
+	color: #212529;              /* From block 2 */
+      }
+      
+      /* --- Grid Layout --- */
+      .grid-container {
+	display: grid;
+	/* Default (Desktop): Sidebar | Content */
+	grid-template-columns: 250px auto;
+	grid-template-rows: auto 1fr; /* Header, then Sidebar/Content fill height */
+	height: 100vh; /* Fill viewport height */
+      }
+      
+      .header {
+	grid-column: 1 / span 2; /* Span across both columns */
+	grid-row: 1; /* Explicitly first row */
+	/* USWDS header handles its own internal responsiveness */
+	/* Ensure header doesn't get pushed down by body margin/padding */
+	position: relative; /* Or adjust grid-template-rows if needed */
+	z-index: 10; /* Keep header above content scrollbars potentially */
+      }
+      
+      .sidenav {
+	grid-column: 1; /* First column */
+	grid-row: 2; /* Second row */
+	overflow-y: auto; /* Allow scrolling if content is long */
+	padding: 1rem;
+	border-right: 1px solid #dfe1e2; /* Optional: visual separator */
+	background-color: #f8f9fa; /* Light background for sidenav */
+      }
+      
+      .content {
+	grid-column: 2; /* Second column */
+	grid-row: 2; /* Second row */
+	padding: 1rem;
+	overflow-y: auto; /* Allow scrolling if content is long */
+	/* REMOVED: width: 800px; */
+	/* ADDED: Limit line length for readability */
+	max-width: 80ch; /* Use character units, adjust value as needed */
+	/* margin-inline: auto; /* Optional: Centers text if max-width is applied and space allows */
+      }
+      
+      /* --- Highlight Style --- */
+      .highlight {
+	background-color: yellow;
+      }
+      
+      /* --- Table of Contents Styling (from block 2) --- */
+      toc {
+	display: block; /* Ensure block layout */
+	border: 1px solid #dee2e6; /* Lighter border */
+	background-color: #f8f9fa; /* Very light gray background */
+	padding: 1.5em;
+	margin-bottom: 2.5em; /* More space after TOC */
+	border-radius: 8px; /* Softer corners */
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+      }
+      
+      toc tocitem {
+	display: block;
+	margin-bottom: 0.6em; /* Slightly more space between TOC items */
+      }
+      
+      tocitem[label*='\.'] { /* Indent subsections */
+	margin-left: 1.5em;
+      }
+      
+      tocitem[label*='('] { /* Indent provisions */
+	margin-left: 3em;
+      }
+      
+      tocitem a {
+	text-decoration: none;
+	color: #0d6efd; /* Standard link blue */
+	font-weight: 500; /* Slightly bolder links */
+      }
+      
+      tocitem a:hover,
+      tocitem a:focus { /* Add focus style for accessibility */
+	text-decoration: underline;
+	color: #0a58ca; /* Darker blue on hover/focus */
+      }
+      
+      /* --- Content Element Styling (from block 2) --- */
+      
+      /* Ensure custom elements are displayed correctly */
+      chapter, head, section, subsection, provision,
+      paragraph, list, item, toc, tocitem {
+	  display: block;
+      }
+      
+      /* General Title (for the document as a whole) */
+      chapter > title {
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 1em; /* Added top margin */
+	margin-bottom: 1.5em;
+	text-align: center;
+	color: #003f5c;
+      }
+      
+      /* Hide the XML head title if it's used for browser tab only */
+      chapter > head > title {
+	display: none;
+      }
+      
+      /* Heading Styling & Spacing */
+      section > section_title,
+      subsection > subsection_title,
+      provision > provision_title {
+	font-weight: 600; /* Bolder headings */
+	margin-top: 2em; /* Consistent top margin */
+	margin-bottom: 1em; /* Increased bottom margin for spacing */
+	color: #003f5c; /* Darker, desaturated blue */
+      }
+      
+      section > section_title {
+	font-size: 1.75em; /* Slightly larger */
+	border-bottom: 3px solid #003f5c;
+	padding-bottom: 0.3em;
+      }
+      
+      subsection > subsection_title {
+	font-size: 1.4em;
+	border-bottom: 1px solid #ced4da; /* Lighter gray border */
+	padding-bottom: 0.2em;
+      }
+      
+      provision > provision_title {
+	font-size: 1.15em;
+	color: #343a40; /* Slightly darker gray for provision titles */
+      }
+      
+      /* Content Elements */
+      paragraph {
+	margin-bottom: 1.2em; /* More spacing between paragraphs */
+	/* text-align: justify; /* Consider removing justify, often hinders readability */
+      }
+      
+      list {
+	margin-left: 2em;
+	margin-top: 0.8em;
+	margin-bottom: 1.2em;
+	padding-left: 1.5em; /* Ensure list markers have space */
+      }
+      
+      item {
+	display: list-item;
+	margin-bottom: 0.7em; /* More space between list items */
+	list-style-position: outside;
+      }
+      
+      item list { /* Nested lists */
+	margin-top: 0.7em;
+	margin-left: 1.5em;
+	margin-bottom: 0.7em;
+      }
+      
+      item list item {
+	margin-bottom: 0.5em; /* Slightly less space for nested items */
+      }
+      
+      /* Citation Styling */
+      ref {
+	font-style: normal; /* Citations not italic by default */
+	font-size: 0.9em; /* Slightly smaller */
+	color: #6c757d; /* Medium gray */
+	white-space: nowrap; /* Prevent citations from breaking */
+	background-color: #e9ecef; /* Subtle background highlight */
+	padding: 0.1em 0.3em;
+	border-radius: 3px;
+	display: inline; /* Keep citations inline with text */
+      }
+      
+      ref[source='CASE'] {
+	font-style: italic; /* Italicize case names */
+      }
+      
+      /* --- Accessibility Considerations --- */
+      /* Focus outline for keyboard navigation */
+      a:focus, button:focus, [tabindex]:not([tabindex="-1"]):focus {
+	outline: 2px solid #0d6efd;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+      }
+      
+      /* --- Responsive Adjustments --- */
+      /* Apply styles for screens 640px wide or narrower */
+      @media (max-width: 640px) { /* Adjust breakpoint as needed (e.g., USWDS's 40em) */
+	.grid-container {
+	  /* Stack elements vertically */
+	  grid-template-columns: 1fr; /* Single column */
+	  /* Header, then Sidenav, then Content */
+	  grid-template-rows: auto auto 1fr;
+	  height: auto; /* Allow height to grow with content */
+	  min-height: 100vh; /* Still try to fill screen */
+	}
+      
+	.header {
+	  grid-column: 1 / -1; /* Span full width */
+	  grid-row: 1; /* First row */
+	}
+      
+	.sidenav {
+	  grid-column: 1 / -1; /* Span full width */
+	  grid-row: 2; /* Second row */
+	  border-right: none; /* Remove side border */
+	  border-bottom: 1px solid #dfe1e2; /* Add bottom border */
+	  height: auto; /* Let it take needed height */
+	  overflow-y: visible; /* Reset overflow */
+	   /* Optional: Limit height on mobile if it gets too long and enable scroll */
+	  /* max-height: 40vh; */
+	  /* overflow-y: auto; */
+	}
+      
+	.content {
+	  grid-column: 1 / -1; /* Span full width */
+	  grid-row: 3; /* Third row */
+	  /* Adjust max-width on mobile if desired, or remove */
+	  /* max-width: none;  */
+	}
+      }

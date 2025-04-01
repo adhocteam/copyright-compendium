@@ -1,0 +1,1479 @@
+ 
+Chapter 300  :  1 01/28/2021  C O M P E N D I U M : Chapter 300  
+Copyrightable Authorship:  
+What Can Be Registered  
+   
+301 What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  4 
+302 The Legal Framework  ................................ ................................ ................................ ................................ ......................  4 
+303 Copyrightability Is Determined Based on U.S. Copyright Law  ................................ ................................ .........  5 
+304 Eligibility  ................................ ................................ ................................ ................................ ................................ ...............  5 
+305 The Fixation Requirement ................................ ................................ ................................ ................................ ..............  6 
+306 The Human Authorship Requirement  ................................ ................................ ................................ .......................  7 
+307 Copyrightable Subject Matter  ................................ ................................ ................................ ................................ ....... 7 
+308 The Originality Requirement  ................................ ................................ ................................ ................................ ........  8 
+308.1  Independent Creation  ................................ ................................ ................................ ................................ ......................  8 
+308.2  Creativity  ................................ ................................ ................................ ................................ ................................ ...............  9 
+309 Examining a Work for Copyrightable Authorship ................................ ................................ ................................ . 9 
+309.1  Prior Works and Prior Registrations  ................................ ................................ ................................ ......................  10 
+309.2  Facts Stated in the Application  ................................ ................................ ................................ ................................ .. 10 
+309.3  No Precedential Value  ................................ ................................ ................................ ................................ ...................  11 
+310 Factors That Will Not Be Considered in the Examination of Originality  ................................ ...................  11 
+310.1  Novelty or Ingenuity  ................................ ................................ ................................ ................................ ......................  11 
+310.2  Aesthetic Value, Artistic Merit, and Intrinsic Quality ................................ ................................ ........................  11 
+310.3  Symbolic Meaning and Impression  ................................ ................................ ................................ ..........................  12 
+310.4  Look and Feel  ................................ ................................ ................................ ................................ ................................ ... 12 
+310.5  The Author’s Inspiration and Intent  ................................ ................................ ................................ ........................  12 
+310.6  The Author’s Skill, Experience, and Artistic Judgment  ................................ ................................ .....................  13 
+310.7  The Time, Effort, or Expense Required to Create the Work  ................................ ................................ ...........  13 
+310.8  Design Alternatives  ................................ ................................ ................................ ................................ ........................  13 
+310.9  Material Composition of the Work  ................................ ................................ ................................ ...........................  14 
+310.10  Commercial Appeal or Success  ................................ ................................ ................................ ................................ .. 14 
+310.11  Other Forms of Legal Protection  ................................ ................................ ................................ ...............................  14 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  2 01/28/2021  311 Derivative Works  ................................ ................................ ................................ ................................ ............................  14 
+311.1  Copyrightable Subject Matter  ................................ ................................ ................................ ................................ .... 14 
+311.2  The Originality Requirement for Derivative Works  ................................ ................................ ..........................  15 
+312 Compilations and Collective Works  ................................ ................................ ................................ .........................  17 
+312.1  Copyrightable Subject Matter  ................................ ................................ ................................ ................................ .... 17 
+312.2  The Originality Requirement for Compilations ................................ ................................ ................................ ... 18 
+312.3  The Originality Requirement for Collective Works  ................................ ................................ ...........................  20 
+313 Uncopyrightable Material  ................................ ................................ ................................ ................................ ............  20 
+313.1  Works That Have Not Been Fixed ................................ ................................ ................................ .............................  20 
+313.2  Works That Lack Human Authorship  ................................ ................................ ................................ .....................  21 
+313.3  Works That Do Not Constitute Copyrightable Subject Matter  ................................ ................................ ...... 22 
+313.3(A)  Ideas, Procedures, Processes, Systems, Methods of Operation,  Concepts, Principles, or Discoveries
+................................ ................................ ................................ ................................ ................................ ................................  22 
+313.3(B)  Merger of Idea and Expression  ................................ ................................ ................................ ................................ .. 23 
+313.3(C)  Facts  ................................ ................................ ................................ ................................ ................................ .....................  24 
+313.3(D)  Typeface and Mere Variations of Typographic Ornamentation  ................................ ................................ ... 24 
+313.3(E)  Format and Layout  ................................ ................................ ................................ ................................ .........................  25 
+313.4  Works That Do Not Satisfy the Originality Requirement  ................................ ................................ ................  26 
+313.4(A)  Mere Copies ................................ ................................ ................................ ................................ ................................ ....... 26 
+313.4(B)  De Minimis Authorship ................................ ................................ ................................ ................................ ..................  27 
+313.4(C)  Words and Short Phrases  ................................ ................................ ................................ ................................ ............  28 
+313.4(D)  Works Consisting Entirely of Information That Is Common Property  ................................ .......................  29 
+313.4(E)  Measuring and Computing Devices  ................................ ................................ ................................ .........................  29 
+313.4(F)  Mere Listing of Ingredients or Contents  ................................ ................................ ................................ ................  30 
+313.4(G)  Blank Forms  ................................ ................................ ................................ ................................ ................................ ...... 30 
+313.4(H)  Characters  ................................ ................................ ................................ ................................ ................................ ..........  31 
+313.4(I)  Scènes à Faire ................................ ................................ ................................ ................................ ................................ .... 32 
+313.4(J)  Familiar Symbols and Designs  ................................ ................................ ................................ ................................ ... 32 
+313.4(K)  Mere Variations of Coloring  ................................ ................................ ................................ ................................ ........  33 
+313.5  Specific Types of Works That May Contain Uncopyrightable Material ................................ ......................  34 
+313.6  Other Types of Works That Cannot Be Registered with the  U.S. Copyright Office  ...............................  35 
+313.6(A)  Foreign Works That Are Not Eligible for Copyright Protection  in the United States  ..........................  35 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  3 01/28/2021  313.6(B)  Unlawful Use of Preexisting Material in a Derivative Work, a  Compilation, or a Collective Work  35 
+313.6(C)  Government Works  ................................ ................................ ................................ ................................ ........................  36 
+313.6(C)(1)  U.S. Government Works  ................................ ................................ ................................ ................................ ...............  36 
+313.6(C)(2)  Government Edicts  ................................ ................................ ................................ ................................ .........................  37 
+313.6(D)  Works in the Public Domain  ................................ ................................ ................................ ................................ ....... 38 
+314 Use of Protected Names, Characters, Slogans, Symbols, Seals,  Emblems, and Insignia ......................  38 
+315 Obscenity  ................................ ................................ ................................ ................................ ................................ ...........  39 
+316 Classified Material  ................................ ................................ ................................ ................................ ..........................  39 
+ 
+ 
+Chapter 3 00  :  4 01/28/2021  C O M P E N D I U M : Chapter 300  
+Copyrightable Authorship:  
+What Can Be Registered  
+ 301 What This Chapter Covers  
+This Chapter discusses the U.S. Copyright Office’s practices and procedures for 
+evaluating copyrightable  authorship. For guidance on practices and procedures relating 
+to specific types of works, see the following Chapters:  
+• For a general overview of the registration process, see Chapter 200 . 
+• For guidance in determining who may file an application and who may be named as 
+the copyright claimant , see Chapter 400 . 
+• For guidance in identifying the work that will be submitted for registration, see 
+Chapter 500 . 
+• For guidance in completing the application, see Chapter 600 . 
+• For a discussion of literary works , see Chapter 700 .  
+• For a discussion of works of the performing arts , see Chapter 800 .  
+• For a discussion of visual art works , see Chapter 900 .  
+• For a discussion of websites and website content, see Chapter 1000 .  
+• For a discussion of the options for registering certain groups of works, see  
+Chapter 1100 . 
+• For a discussion of renewal registrations , see Chapter 2100 .  
+ 302 The Legal Framework  
+The Copyright Act protects “original works of authorship fixed  in any tangible medium 
+of expression, now known or later developed, from which they can be perceived, 
+reproduced, or otherwise communicated, either directly or with the aid of a machine or 
+device.” 17 U.S.C. § 102(a) . 
+“A valid copyright extends only to copyrightable subject matter.” Star Athletica, LLC v. Varsity 
+Brands, Inc ., 137 S. Ct. 1002, 1005 (2017). Section 410(a)  of the statute states that the 
+Register of Copyrights  shall register a claim  to copyright and issue a certificate of 
+registration  if the U.S. Copyright Office determines that “the material deposited 
+constitutes copyrightable  subject matter and that the other legal and formal 
+requirements have been met.” If the Office determines that “the material deposited does 
+not constitute copyrightable subject matter or that the claim is invalid for any other 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  5 01/28/2021  reason, the Register shall refuse registration and shall notify the applicant  in writing of 
+the reasons for such refusal.” 17 U.S.C. § 410(b) . 
+In determining whether a work is copyrightable, the Office analyzes questions such as:  
+• Is the work eligible for copyright protection in the United States?  
+• Has the work been fixed in a tangible medium of expression?  
+• Was the work created by a human author?  
+• Does the work constitute copyrightable subject matter?  
+• Is the work sufficiently original?  
+• Was the work independently created?  
+• Does the work possess at least some minimal degree of creativity?  
+If the answer to all of these questions is “yes,” the work is copyrightable and the claim 
+may be registered, as long as there are no other issues in the registration materials that 
+raise questions concerning the claim and as long as the other legal and for mal 
+requirements have been met.  
+These questions are discussed in Sections 304  through 308  below. For information on 
+how the Office interprets these questions when examining derivative works , 
+compilations , and collective works , see Sections 311 and 312. 
+For information on how the Office interprets these questions when examining specific 
+types of literary works , works of the performing arts , and visual art works , see Chapters 
+700, 800, and 900 . 
+ 303 Copyrightability Is Determined Based on U.S. Copyright Law  
+The U.S. Copyright Act is the exclusive source of copyright protection in the United States.  
+To register a work with the U.S. Copyright Office, all applicants  — both foreign and 
+domestic — must satisfy the requirements of U.S. copyright law. In determining whether 
+a work is copyrightable , the Office applies U.S. copyright law pursuant to title 17 of the 
+U.S. Code, even if the work was created in a foreign country, first published  in a foreign 
+country, or created by a citizen, domiciliary, or habitual resident of a foreign country.  
+ 304 Eligibility  
+The U.S. Copyright Office may register a work of authorship if it is eligible for copyright 
+protection in the United States. All U.S. works — both published  and unpublished  — 
+created on or after January 1, 1978, are eligible for U.S. copyright protection. 17 U.S.C. § 
+104(a) , (b). Additionally, all unpublished foreign works  and most published foreign 
+works are eligible for U.S. copyright protection. Id. For more information on the 
+eligibility requirements for published foreign works, see Chapter 2000 , Section 2003.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  6 01/28/2021   305 The Fixation Requirement  
+To be copyrightable, a  work of authorship must be “fixed  in any tangible medium of 
+expression, now known or later developed, from which [it] can be perceived, 
+reproduced, or otherwise communicated, either directly or indirectly with the aid of a 
+machine or device.” 17 U.S.C. § 102(a) . Specifically, the work must be fixed in a copy  or 
+phonorecord  “by or under the authority of the author” and the work must be 
+“sufficiently permanent or stable to permit it to be perceived, reproduced, or otherwise 
+communicated for a period of more than transitory duration.” 17 U.S.C. § 101  (definition 
+of “fixed”).  
+The terms “copy” and “phonorecord” are very broad. They cover “all of the material 
+objects in which copyrightable works are capable of being fixed,” H.R.  REP. NO. 94-1476, 
+at 53 (1976) , reprinted in  1976 U.S.C.C.A.N 5659, 5666.1  
+• Copies are “material objects, other than phonorecords, in which a work is fixed by 
+any method now known or later developed, and from which the work can be 
+perceived, reproduced, or otherwise communicated, either directly or with the aid 
+of a machine or dev ice,” including the material object “in which the work is first 
+fixed.” 17 U.S.C. § 101 . 
+• Phonorecords are “material objects in which sounds, other than those 
+accompanying a motion picture or other audiovisual work, are fixed by any method 
+now known or later developed, and from which the sounds can be perceived, 
+reproduced, or otherwise communi cated, either directly or with the aid of a 
+machine or device,” including “the material object in which the sounds are first 
+fixed.” 17 U.S.C. § 101 . 
+There are countless ways that a work may be fixed in a copy or phonorecord and “it 
+makes no difference what the form, manner, or medium of fixation  may be.” H.R.  REP. NO. 
+94-1476,  at 52 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5666. For example, a work may 
+be expressed in “words, numbers, notes, sounds, pictures, or any other graphic or 
+symbolic indicia” and the author’s expression may be fixed “in a physical object in written,  
+printed, photographic, sculptural, punched, magnetic, or any other stable form.” Id.  
+Most works are fixed by their very nature, such as an article printed on paper, a song 
+recorded in a digital audio file, a sculpture rendered in bronze, a screenplay saved in a 
+data file, or an audiovisual work captured on film. Nevertheless, some works of  
+authorship may not satisfy the fixation requirement, such as an improvisational speech, 
+sketch, dance, or other performance that is not recorded in a tangible medium of 
+expression. Other works may be temporarily embodied in a tangible form, but may not 
+be sufficiently permanent or stable to warrant copyright protection, such as “purely 
+evanescent or transient reproductions such as those projected briefly on a screen, 
+shown electronically on a television,… or captured momentarily in the memory of a 
+ 
+1 The provisions of the House Report cited or quoted throughout this Chapter are identical to the 
+corresponding provisions set forth in Senate Report No. 94 -473 (1975) . 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  7 01/28/2021  computer.” H.R.  REP. NO. 94-1476,  at 53 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5666 
+(internal quotations marks omitted).  
+The Office rarely encounters works that do not satisfy the fixation requirement because 
+the Office requires applicants  to submit copies or phonorecords that contain a visually 
+or aurally perceptible copy of the work. However, the Office may communicate with the 
+applicant or may refuse registration if the work or the medium of expression only exists 
+for a transitory period  of time, if the work or the medium is constantly changing, or if 
+the medium does not allow the specific elements of the work to be perceived, 
+reproduced, or otherwise communicated in a consistent and uniform manner.  
+ 306 The Human Authorship Requirement  
+The U.S. Copyright Office will register an original work of authorship, provided that the 
+work was created by a human being.  
+The copyright law only protects “the fruits of intellectual labor” that “are founded in the 
+creative powers of the mind.” Trade -Mark Cases , 100 U.S. 82, 94 (1879). Because 
+copyright law is limited to “original intellectual conceptions of the author,” the Office 
+will refuse to register a claim  if it determines that a human being did not create the 
+work. Burrow -Giles Lithographic Co. v. Sarony , 111 U.S. 53, 58 (1884). For representative 
+examples of works that do not satisfy this requirement, see Section 313.2  below.  
+ 307 Copyrightable Subject Matter  
+A work of authorship may be registered with the U.S. Copyright Office, provided that it 
+constitutes copyrightable  subject matter.  
+Section 102(a)  of the Copyright Act states that the subject matter of copyright includes 
+the following categories of works:  
+• Literary works .  
+• Musical works, including any accompanying words.  
+• Dramatic works, including any accompanying music.  
+• Pantomimes  and choreographic works . 
+• Pictorial, graphic, and sculptural works . 
+• Motion pictures  and other audiovisual works . 
+• Sound recordings . 
+• Architectural works . 
+Section 103(a)  states that the subject matter of copyright includes compilations  (which 
+cover collective works ) and derivative works . See 17 U.S.C. § 103(a) ; see also  17 U.S.C. § 
+101 (explaining that “[t]he term ‘compilation’ includes collective works”). These types of 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  8 01/28/2021  works are a subset of the categories set forth in Section 102(a) , rather than separate and 
+distinct categories of works. In other words, derivative works, compilations, and 
+collective works may be registered, provided that the work falls within one or more of 
+the congressionally established categories of authorship und er Section 102(a) . See 
+Registration of Claims to Copyright, 77 Fed. Reg. 37,605, 37,606 (June 22, 2012) . 
+The categories of works set forth in Section 102(a)  “do not necessarily exhaust the 
+scope of ‘original works of authorship’ that the [Copyright Act] is intended to protect.” 
+H.R.  REP. NO. 94-1476,  at 53 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5666. The statute 
+“sets out the general area of copyrightable subject matter” with “sufficient flexibility to 
+free the courts from rigid or outmoded concepts of the scope of particular categories.” 
+Id. The categories are also “overlapping in the sense that a work falling within one class 
+may encompass works coming within some or all of the other categories.” Id. 
+Congress gave federal courts the flexibility to interpret the scope of the existing subject 
+matter categories, but only Congress has the authority to create entirely new categories 
+of authorship. “If the federal courts do not have the authority to establis h new 
+categories of subject matter, it necessarily follows that the Copyright Office also has no 
+such authority in the absence of any clear delegation of authority to the Register of 
+Copyrights .” 77 Fed. Reg. at 37,607 . 
+While the categories listed in Section 102(a)  are “very broad . . . there are 
+unquestionably other areas of existing subject matter that [the Copyright Act] does not 
+propose to protect . . . .” H.R.  REP. NO. 94-1476,  at 52 (1976) , reprinted in  1976 
+U.S.C.C.A.N. at 5665. If the Office determines that a work does not fall within the 
+categories of copyrightable subject matter, the Office will refuse to register the claim . 
+For representative examples of works that do not satisfy this requirement, see Sections 
+313.3  and 313.6(C)  below.  
+ 308 The Originality Requirement  
+Originality is “the bedrock principle of copyright” and “the very premise of copyright 
+law.” Feist Publications, Inc. v. Rural Telephone Service Co., Inc ., 499 U.S. 340, 347 (1991) 
+(citation omitted).  
+“To qualify for copyright protection, a work must be original to the author,” which 
+means that the work must be “independently created by the author” and it must possess 
+“at least some minimal degree of creativity.” Id. at 345 (citations omitted).  
+These requirements are discussed in Sections 308.1  and 308.2  below.  
+ 308.1  Independent Creation  
+The term “independent creation” means that the author created the work without 
+copying from other works. See Feist,  499 U.S. at 345.  
+The copyright law protects “those components of a work that are original to the author,” 
+but “originality” does not require “novelty.” Id. at 345, 348. A work may satisfy the 
+independent creation requirement “even though it closely resembles other works so 
+long as the similarity is fortuitous, not the result of copying.” Id. at 345. For example, if 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  9 01/28/2021  two authors created works that are similar or even identical, each work could be 
+registered provided that the authors did not copy expression from each other.  
+As a general rule, the Office will accept the applicant’s  representation that the work was 
+independently created by the author(s) named in the application, unless that statement 
+is implausible or is contradicted by information provided elsewhere in the registration 
+materials or in the Office’s records or by info rmation that is known to the registration 
+specialist . If the specialist determines that the work was not independently created, he 
+or she may communicate with the applicant or may refuse to register the claim .  
+For representative examples of works that do not satisfy the independent creation 
+requirement, see Section 313.4(A)  below.  
+ 308.2  Creativity  
+A work of authorship must possess “some minimal degree of creativity” to sustain a 
+copyright claim . Feist , 499 U.S. at 358, 362 (citation omitted).  
+ “[T]he requisite level of creativity is extremely low.” Even a “slight amount” of creative 
+expression will suffice. “The vast majority of works make the grade quite easily, as they 
+possess some creative spark, ‘no matter how crude, humble or obvious it mi ght be.’” Id. 
+at 346 (citation omitted).  
+An author’s expression does not need to “be presented in an innovative or surprising 
+way,” but it “cannot be so mechanical or routine as to require no creativity whatsoever.” 
+A work that it is “entirely typical,” “garden -variety,” or “devoid of even the sl ightest 
+traces of creativity” does not satisfy the originality requirement. Feist , 499 U.S. at 362. 
+“[T]here is nothing remotely creative” about a work that merely reflects “an age -old 
+practice, firmly rooted in tradition and so commonplace that it has com e to be expected 
+as a matter of course.” Id. at 363. Likewise, a work “does not possess the minimal 
+creative spark required by the Copyright Act” if the author’s expression is “obvious” or 
+“practically inevitable.” Id. at 363.  
+Although the creativity standard is low, it is not limitless. Id. at 362. “There remains a 
+narrow category of works in which the creative spark is utterly lacking or so trivial as to 
+be virtually nonexistent. Such works are incapable of sustaining a valid copyright.” Id. at 
+359 (citations omitted).  
+If the Office determines that a work possesses sufficient creativity, it will register the 
+claim and issue a certificate of registration . Conversely, if the Office determines that the 
+work does not possess some minimal degree of creativity, it will refuse registration.  
+For more information on works that do not satisfy the creativity requirement, see 
+Sections 313.4(A)  through 313.4(K)  below.  
+ 309 Examining a Work for Copyrightable Authorship  
+As discussed in Section 302, the U.S. Copyright Office will examine a work of authorship 
+to determine if “the material deposited constitutes copyrightable subject matter” and if 
+“the other legal and formal requirements have been met.” 17 U.S.C. § 410(a) . In 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  10 01/28/2021  determining whether a work is copyrightable, the registration specialist  will consider (i) 
+the application, (ii) the deposit copy(ies) , (iii) whether the correct the filing fee  was 
+submitted, as well as (iv) any communications between the applicant  and the Office 
+relating to the registration of the claim  or any other material that has been submitted to 
+the Office. Together, these items are referred to as the “ registration materials .”  
+As discussed in Sections 304 through 308 , a work may be copyrightable (i) if it is eligible 
+for copyright protection in the United States, (ii) if the work has been fixed  in a tangible 
+medium of expression, (iii) if the work was created by a human author, (iv) if the work 
+constitutes copyrightable subject matter, and (v) if the work contains at least a 
+minimum amount of creative authorship that is original to the author.  
+When examining a claim to copyright, the registration specialist will use objective 
+criteria to determine whether the work satisfies these requirements by reviewing the 
+information provided in the application and by examining the deposit copy(ies), 
+includi ng its individual elements as well as the work as a whole. The specific criteria 
+that the specialist will consider when examining a derivative work , a compilation , or a 
+collective work  are discussed in Sections 311 and 312 . The specific criteria that the 
+specialist will consider when examining a literary work , a work of the performing arts, 
+or a work of the visual arts are discussed in Chapters 700 , 800, and 900 . 
+ 309.1  Prior Works and Prior Registrations  
+As a general rule, the registration specialist  will not search the U.S. Copyright Office’s 
+records to determine if the work has been registered before, unless there is conflicting 
+information in the registration materials or other sources of information that are known 
+by the Office or the general publ ic. For purposes of determining copyrightability, the 
+specialist will not compare the deposit copy(ies)  with other works that have been 
+previously registered with the Office. Likewise, the specialist generally will not compare 
+the deposit copy(ies) with other works to determine whether the applicant  is 
+attempting to register a work that is substantially similar to another work of authorship, 
+unless the applicant appears to be asserting a claim  in a work that is unusually similar to 
+another work of authorship that is known to the specialist.  
+ 309.2  Facts Stated in the Application  
+The U.S. Copyright Office generally will accept the facts stated in the application and 
+other registration materials, unless they are implausible or conflict with information in 
+the registration materials, the Office’s records, or other sources of informat ion that are 
+known by the Office or the general public. Knowingly making a false representation of a 
+material fact in an application for copyright registration, or in any written statement 
+filed in connection with an application, is a crime that is punisha ble under 17 U.S.C. § 
+506(e) . 
+Ordinarily, the Office will not conduct its own factual investigation to confirm the truth 
+of the statements made in the application. However, the Office may  take administrative 
+notice of facts or matters that are known by the Office or the general public,  and may  
+communicate with the applicant  if the application appears to contain inaccurate or 
+erroneous information.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  11 01/28/2021   309.3  No Precedential Value  
+The determination of copyrightability will be made on a case -by-case basis. The fact that 
+the U.S. Copyright Office registered a particular work does not necessarily mean that the 
+Office will register similar types of works or works that fall within the sa me category. A 
+decision to register a particular work has no precedential value and is not binding upon 
+the Office when it examines any other application.  
+ 310 Factors That Will Not Be Considered in the Examination of Originality  
+As a general rule, the U.S. Copyright Office will not consider factors that have no bearing 
+on whether the originality requirement has been met. Examples of such factors are 
+discussed in Sections 310.1  through 310.10  below.  
+ 310.1  Novelty or Ingenuity  
+The U.S. Copyright Office will examine each work in isolation to determine whether it 
+satisfies the originality requirement. The fact that a work may be novel, distinctive, 
+innovative, or even unique is irrelevant to this analysis. See H.R.  REP. NO. 94-1476,  at 51 
+(1976) , reprinted in  1976 U.S.C.C.A.N. at 5664 (stating “the standard of originality 
+established by the courts . . . does not include requirements of novelty [or] ingenuity” 
+and that Congress did not intend “to enlarge the standard of copyright protection” to 
+impose these req uirements).  
+As discussed in Section 308, “originality requires independent creation plus a modicum 
+of creativity.” Feist , 499 U.S. at 346. The author’s expression does not need to be novel, 
+and it does not need to “be presented in an innovative or surprising way.” Id. at 362; see 
+also L. Batlin & Son v. Snyder , 536 F.2d 486, 490 (2d. Cir. 1976) (“Originality is . . . 
+distinguished from novelty; there must be independent creation, but it need not be 
+invention in the sense of striking uniqueness, ingeniousness, or novelty”). A work of 
+authorship may be original, even though it is neither new nor inventive or even if “it 
+closely resembles other works.” Feist , 499 U.S. at 345 (explaining that “[o]riginality  does 
+not signify novelty”). Conversely, the fact that a work is new, innovative, or even unique 
+does not necessarily mean that it contains a sufficient amount of creative expression to 
+satisfy the originality requirement.  
+ 310.2  Aesthetic Value, Artistic Merit, and Intrinsic Quality  
+In determining whether a work contains a sufficient amount of original authorship, the 
+U.S. Copyright Office does not consider the aesthetic value, artistic merit, or intrinsic 
+quality of a work. H.R.  REP. NO. 94-1476,  at 51 (1976)  , reprinted in  1976 U.S.C.C.A.N. at 
+5664. For example, the Office will not look for any particular style of creative 
+expression. Likewise, the Office will not consider whether a work is visually appealing 
+or written in elegant prose.  
+As the Supreme Court noted, “it would be a dangerous undertaking for persons trained 
+only to the law to constitute themselves final judges of the worth of pictorial 
+illustrations, outside of the narrowest and most obvious limits.” Bleistein v. Donaldson 
+Lithographing Co ., 188 U.S. 239, 251 (1903). The legislative history for the Copyright Act 
+recognizes that “the standard of originality established by the courts . . . does not include 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  12 01/28/2021  requirements of . . . esthetic merit” and expressly states that Congress did not intend “to 
+enlarge the standard of copyright protection” to impose this requirement. See H.R.  REP. 
+NO. 94-1476,  at 51 (1976)  , reprinted in  1976 U.S.C.C.A.N. at 5664.  
+For the same reasons, the Office will not consider the truth or falsity of the facts set forth 
+in a work of authorship. Nor will the Office consider the soundness or the unsoundness 
+of the views espoused in the work. See Belcher v. Tarbox , 486 F.2d 1087, 1088 (9th Cir. 
+1973) (“The gravity and immensity of the problems, theological, philosophical, 
+economic and scientific, that would confront a court if this view were adopted are 
+staggering to contemplate. It is surely not a task lightly to be assumed, and we  decline 
+the invitation to assume it.”) (footnote omitted).  
+ 310.3  Symbolic Meaning and Impression  
+When the U.S. Copyright Office examines a work of authorship, it determines whether 
+the work “possess[es] the minimal creative spark required by the Copyright Act and the 
+Constitution.” Feist , 499 U.S. at 363. The symbolic meaning or impression of a work is 
+irrelevant to this determination.  
+The Office will use objective criteria to determine whether a work constitutes 
+copyrightable  subject matter and satisfies the originality requirement. In making this 
+determination, the Office will consider the expression that is fixed  in the work itself and 
+is perceptible in the deposit copy(ies) . Specifically, the Office will focus only on the 
+actual appearance or sound of the work that has been submitted for registration, but 
+will not consider any meaning or significance that the work may evoke. See Star 
+Athletica,  137 S. Ct. at 1015  (“our inquiry is limited to how [the work is] perceived”). The 
+fact that creative thought may take place in the mind of the person who encounters a 
+work has no bearing on the issue of originality. See 17 U.S.C. § 102 . 
+ 310.4  Look and Feel  
+The U.S. Copyright Office will not consider the so -called “look and feel” of a work. 
+Invoking a work’s “feel” is not a viable substitute for an objective analysis of the work’s 
+fixed  and creative elements. See 4 MELVILLE & DAVID NIMMER , NIMMER ON Copyright §  
+13.03[A][1][c] (2013) (criticizing the use of “feel” as a “wholly amorphous referent” that 
+“merely invites an abdication of analysis”).  
+ 310.5  The Author’s Inspiration and Intent  
+When examining a work for original authorship, the U.S. Copyright Office will not 
+consider the author’s inspiration for the work, creative intent, or intended meaning. 
+Instead, the Office will focus solely on the appearance or sound of the work that has 
+been submitted for registration to determine whether it is original and creative within 
+the meaning of the statute and the relevant case law.  
+Evaluating the author’s inspiration or intent would require the Office “to consider 
+evidence of the creator’s design methods, purposes, and reasons.” Star Athletica, 137 S. 
+Ct. at 1015 . The Supreme Court has made it clear that copyrightability should be based 
+on how a work is perceived, not how or why it was designed. See id . 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  13 01/28/2021  Likewise, the fact that creative thought may take place in the mind of the person who 
+created a work (or a person viewing or listening to the work) has no bearing on the 
+issue of originality unless the work objectively demonstrates original authorship.  
+ 310.6  The Author’s Skill, Experience, and Artistic Judgment  
+When evaluating a work for copyrightable  authorship, the U.S. Copyright Office will not 
+consider the author’s skill, experience, or artistic judgment. The author’s personal or 
+professional history is irrelevant to the determination of copyrightability. See Star 
+Athletica, 137 S. Ct. at 1015 (declining to consider “the designer’s artistic judgment,” because 
+it is not “grounded in the text of the statute”). Instead, the Office will focus solely on the 
+appearance or sound of the work that has been submitted for registration to determine 
+whether it satisfies the originality requirement. See L. Batlin & Son , 536 F.2d at 491 
+(finding that “the requirement of originality [cannot] be satisfied simply by the 
+demonstration of ‘physical skill’ or ‘special training’” ).  
+ 310.7  The Time, Effort, or Expense Required to Create the Work  
+When examining a work for original authorship, the U.S. Copyright Office will focus on 
+the appearance or sound of the work that the author created  but will not consider the 
+amount of time, effort, or expense required to create the work. These issues have no 
+bearing on whether a work possesses the minimum creative spark required by the 
+Copyright Act and the Constitution. See, e.g., Feist , 499 U.S. at 352 -354, 364 (rejecting the 
+so-called “sweat of the brow” doctrine that provided copyright protection solely as a 
+“reward for the hard work” of creating a work); Star Athletica, 137 S. Ct. at 1015 (“our 
+inquiry is limited to how the [work is] perceived,” not how it was designed) . As Justice 
+O’Connor observed, “copyright rewards originality, not effort” and “[w] ithout a doubt, 
+the ‘sweat of the brow’ doctrine flouted basic copyright principles.” Feist,  499 U.S.  at 
+352, 354, 364.  
+ 310.8  Design Alternatives  
+When examining a work for original authorship, the U.S. Copyright Office will focus on 
+the appearance or sound of the work that has been submitted for registration, including 
+its individual elements and the work as a whole, to determine whether it contains a 
+sufficient amount of or iginal and creative authorship.  
+As a general rule, the Office will not consider possible design alternatives that the author 
+may have considered when he or she created the work. Likewise, the Office will not 
+consider potential variations in the use of the work, such as the fact that a wo rk could be 
+presented in a different color, in a different size, or with a different orientation.  
+The creative process often requires many choices involving the size, coloring, 
+orientation, proportion, configuration, perspective, or other constituent elements of the 
+work. These types of choices are present in every work of authorship. It is not the 
+variety of choices available to the author that must be evaluated, but the actual work 
+that the author created.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  14 01/28/2021   310.9  Material Composition of the Work  
+As a general rule, the materials used to create a work have no bearing on the originality 
+analysis. For example, the U.S. Copyright Office will not consider the fact that a jewelry 
+design was constructed with precious metals or gemstones, or the fact that a silk screen 
+was printed on a particular paper stock.  
+ 310.10  Commercial Appeal or Success  
+When examining a work for copyrightable authorship, the U.S. Copyright Office will not 
+consider the marketability or commercial success of the work. Likewise, the Office will 
+not consider “factors such as mass production” or the number of copies or 
+phonore cords that have been made. H.R.  REP. NO. 94-1476,  at 54 (1976) , reprinted in  
+1976 U.S.C.C.A.N. 5659, 5667 . 
+“Nothing in the statute suggests that copyrightability depends on market surveys.” Star 
+Athletica,  137 S. Ct. at 1015. “Works may experience commercial success even without 
+originality and works with originality may enjoy none whatsoever.” Paul Morelli Design, 
+Inc. v. Tiffany & Co. , 200 F. Supp. 2d 482, 488 (E.D. Pa. 2002).  
+“Moreover, asking whether some segment of the market would be interested in a given 
+work threatens to prize popular art over other forms, or to substitute judicial aesthetic 
+preferences for the policy choices embodied in the Copyright Act.” Star Athletica , 137 S. 
+Ct. at 1015.  
+ 310.11  Other Forms of Legal Protection  
+When examining a work of authorship, the U.S. Copyright Office will focus solely on the 
+requirements of U.S. copyright law. The fact that a work may or may not be protected by 
+a design patent, trademark registration, or other form of legal protection is irrelevant to 
+this determination. See Star Athletica, 137 S. Ct. at 1015; 37 C.F.R. § 202.10(a) , (b); H.R.  REP. 
+NO. 94-1476, at 54 (1976) , reprinted in  1976 U.S.C.C.A.N. 5659, 5667 . 
+ 311 Derivative Works  
+This Section discusses the U.S. Copyright Office’s practices and procedures for 
+evaluating the copyrightability of a derivative work .  
+For a definition and general discussion of derivative works, see Chapter 500 , Section 
+507. For specific instructions on how to prepare an application to register this type of 
+work, see Chapter 600 , Sections 613.6, 617.5, 618.5, 620.7, and 621.  
+ 311.1  Copyrightable Subject Matter  
+A derivative work  may be registered with the U.S. Copyright Office, provided that it 
+constitutes copyrightable  subject matter.  
+As discussed in Section 307 above, derivative works are a subset of the subject matter 
+categories, rather than a separate and distinct category of work. In other words, the new 
+material that the author contributed to the derivative work must fall “within one or 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  15 01/28/2021  more of the categories listed in section 102 [of the Copyright Act].” H.R.  REP. NO. 94-
+1476,  at 57 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5670. If the new material does not 
+fall within one or more of the congressionally established categories of authorship, the 
+registration specialist  may communicate with the applicant  if the authorship is 
+questionable or may refuse registration. For example, the Office may register a drawing 
+of a dress or a photograph of a garden, but it cannot register a “revised dress design” or 
+a “genetically modified plant,” because clothing and pl ants do not constitute 
+copyrightable subject matter under Section 102(a)  of the Copyright Act. Cf. Registration 
+of Claims to Copyright, 77 Fed. Reg. 37,605, 37,606 (June 22, 2012) . 
+In addition, the preexisting work that has been recast, transformed, or adapted, “must 
+come within the general subject matter of copyright set forth in section 102, regardless 
+of whether it is or was ever copyrighted.” H.R.  REP. NO. 94-1476,  at 57 (1976) , reprinted 
+in 1976 U.S.C.C.A.N. at 5670. In other words, the preexisting work must qualify as a 
+literary work ; a musical work; a dramatic work; a pantomime  or choreographic work ; a 
+pictorial, graphic or sculptural work ; a motion picture  or audiovisual work ; a sound 
+recording ; and/or an architectural work . For example, a ballet based on an epic poem 
+would be considered a derivative work, because a poem is a type of literary work. By 
+contrast, a photograph of a lake or a sculpture of a mountain would not be considered a 
+derivative work, because lakes and mo untains do not constitute copyrightable subject 
+matter.  
+The fact that the author incorporated uncopyrightable elements of a preexisting work 
+into his or her work does not necessarily mean that the author’s expression qualifies as 
+a derivative work. For example, merely incorporating a word, letter, number, or 
+common geometric shape from one or more preexisting works does not constitute 
+derivative authorship. Instead, the author of the derivative work must recast, transform, 
+or adapt some of the copyrightable portions of a preexisting work. See H.R.  REP. NO. 94-
+1476,  at 57 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5670 (explaining that a derivative 
+work “requires a process of recasting, transforming, or adapting ‘one or more 
+preexisting works’” and that “the ‘preexisting work’ must come within the general 
+subject matter of copyright” whereas “[ a] ‘compilation ’ results from a process of 
+selecting, bringing together, organizing and arranging previously existing material of all 
+kinds, regardless of whether the individual items in the material have been or ever 
+could have been subject to copyright.”).  
+ 311.2  The Originality Requirement for Derivative Works  
+Creating a derivative work  requires “a process of recasting, transforming, or adapting 
+‘one or more preexisting works.’” H.R.  REP. NO. 94-1476 , at 57 (1976) , reprinted in  1976 
+U.S.C.C.A.N. at 5670. Thus, derivative works contain two distinct forms of authorship:  
+• The authorship in the preexisting work(s) that has been recast, transformed, or 
+adapted within the derivative work; and  
+• The new authorship involved in recasting, transforming, or adapting those 
+preexisting work(s).  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  16 01/28/2021  The new authorship that the author contributed to the derivative work may be 
+registered, provided that it contains a sufficient amount of original expression, meaning 
+that the derivative work must be independently created and it must possess more than a 
+modicum of creativity. See Waldman Publishing Corp. v. Landoll, Inc.,  43 F.3d 775, 782 
+(2d Cir. 1994).  
+As discussed in Section 308.1 , independent creation means that the author(s) named in 
+the application created the new or revised material that the applicant  intends to 
+register, “and this in turn means that the work must not consist of actual copying.”  
+L. Batlin & Son , 536 F.2d at 490 (citation omitted).  
+The amount of creativity required for a derivative work is the same as that required for 
+a copyright in any other work. “All that is needed to satisfy both the Constitution and the 
+statute is that the ‘author’ contributed something more than a ‘merely triv ial’ variation, 
+something recognizably ‘his own.’” Alfred Bell & Co. v. Catalda Fine Arts, Inc. , 191 F.2d 99, 
+102-03 (2d Cir. 1951) (citing Chamberlin v. Uris Sales Corp ., 150 F.2d 512, 513 (2d. Cir. 
+1945)). Thus, “the key inquiry is whether there is suffi cient nontrivial expressive 
+variation in the derivative work to make it distinguishable from the [preexisting] work 
+in some meaningful way.” Schrock v. Learning Curve International, Inc. , 586 F.3d 513, 
+521 (7th Cir. 2009).  
+“While the quantum of originality that is required may be modest indeed,” courts have 
+recognized that derivative works “[l]acking even a modest degree of originality. . . are 
+not copyrightable.” L. Batlin & Son , 536 F.2d at 490; Durham Industries, Inc. v. Tomy 
+Corp.,  630 F.2d 905, 911 (2d Cir. 1980). Miniscule variations do not satisfy this 
+requirement, such as merely changing the size of the preexisting work. Merely recasting 
+a work from one medium to another alone does not support a claim  in derivative 
+authorship. See L. Batlin & Son , 536 F.2d at 491. “Nor can the requirement of originality 
+be satisfied simply by the demonstration of ‘physical skill’ or ‘special training.’” Id.  
+A registration for a derivative work only covers the new authorship that the author 
+contributed to that work. It does not cover the authorship in the preexisting work(s) 
+that has been recast, transformed, or adapted by the author of the derivative work. H.R.  
+REP. NO. 94-1476,  at 57 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5670.  
+Likewise, a registration for a derivative work does not cover any previously published  
+material, previously registered material, or public domain  material that appears in the 
+derivative work. Nor does it cover any material that is not owned by the copyright 
+claimant . See 17 U.S.C. § 103(b)  (stating that the copyright in a derivative work is 
+“independent of, and does not affect or enlarge the scope, duration, ownership, or 
+subsistence of, any copyright protection in the preexisting material”). If a derivative 
+work contains an appreciable amo unt of previously published material, previously 
+registered material, public domain material, or third party material, the applicant  
+should exclude that material from the claim using the procedure described in Chapter 
+600, Section 621. For additional information concerning the scope of the copyright in a 
+derivative work, see Chapter 500 , Section 507.2.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  17 01/28/2021   312 Compilations and Collective Works  
+This Section discusses the U.S. Copyright Office’s general practices and procedures for 
+evaluating the copyrightability of compilations  and collective works . 
+For a definition and general discussion of these types of works, see Chapter 500 , 
+Sections 508 and 509. For specific instructions on how to prepare an application to 
+register a compilation, see Chapter 600 , Sections 613.7, 617.5, 618.6, 620.7, and 
+621.8(C). For specific instructions on how to prepare an application to register a 
+collective work, see Chapter 600 , Sections 610.4, 613.8, 618.7, 620.8, and 621.8(D)  
+ 312.1  Copyrightable Subject Matter  
+A compilation  or a collective work  may be registered with the U.S. Copyright Office, 
+provided that it constitutes copyrightable  subject matter.  
+As discussed in Section 307, compilations and collective works are a subset of the 
+subject matter categories set forth in Section 102(a)  of the Copyright Act, rather than 
+separate and distinct categories of works. See Registration of Claims to Copyright, 77 
+Fed. Reg. 37,605, 37,606 (June 22, 2012) . Thus, a compilation or a collective work must 
+qualify as a literary work ; a musical work; a dramatic work; a pantomime  or 
+choreographic work ; a pictorial, graphic or sculptural work ; a motion picture  or 
+audiovisual work ; a sound recording ; and/or an architectural work . See id . If the 
+authorship involved in creating the compilation or collective work as a whole ( i.e., the 
+author’s selection, coordination, and/or arrangement) does not fall within one or more 
+of the congressionally established categories of authorship, the registration specialist  
+may communicate with the applicant  if the authorship appears questionable or may 
+refuse registration. Id. 
+Examples:  
+• The Office may register a sculptural work comprised of rocks that 
+are selected, coordinated, and arranged in a creative manner. 
+Likewise, the Office may register a photograph of a rock, a drawing 
+of a handtool, or a written expression of an idea. However, the Office 
+cannot register a mere “compilation of ideas,” a mere “selection and 
+arrangement of handtools,” or a mere “compilation of rocks,” 
+because ideas, handtools, and rocks do not constitute copyrightable 
+subject matter under Section 102(a)  of the Copyright Act.  
+• The Office may register a photograph of food if the photographer 
+exercised some minimal level of creativity in taking the picture. 
+However, the Office cannot register a “compilation of food” based on 
+a selection, coordination, and/or arrangement of items o n a plate, 
+because food does not constitute copyrightable subject matter 
+under Section 102(a)  of the Copyright Act. Although a sculptural 
+depiction of a plate of food may be copyrightable, that would not 
+prevent actual food from being arranged in the same way. See 17 
+U.S.C. § 113(b) . 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  18 01/28/2021  • The Office may register a claim  in a compilation containing the 
+names of the author’s fifty favorite restaurants. While a restaurant 
+or the name of a restaurant does not constitute copyrightable 
+subject matter under Section 102(a)  of the Act, a list of restaurant 
+names may constitute a literary work, which is one of the 
+congressionally established categories of authorship.  
+See 77 Fed. Reg. at 37,606 . 
+ 312.2  The Originality Requirement for Compilations  
+A compilation  may contain several distinct forms of authorship:  
+• Selection  authorship involved in choosing the material or data that will be included 
+in the compilation;  
+• Coordination  authorship involved in classifying, categorizing, ordering, or grouping 
+the material or data; and/or  
+• Arrangement  authorship involved in organizing or moving the order, position, or 
+placement of material or data within the compilation as a whole.  
+See Feist , 499 U.S. at 348.  
+In determining whether a compilation satisfies the originality requirement, the 
+registration specialist  should focus on the manner in which the materials or data “have 
+been selected, coordinated, and arranged” and “the principal focus should be on 
+whether the selection, coordination, and arrangement are sufficiently original to merit 
+protection.” Id. at 358.  
+The authorship involved in selecting, coordinating, and arranging the preexisting 
+material or data must be objectively revealed in the deposit copy(ies) . See id . 
+(“Originality requires only that the author make the selection or arrangement 
+independently . . . and that it display some minimal level of creativity”) (emphasis 
+added). For instance, a compilation of statistics is not copyrightable  if the author’s 
+selection, coordination, or arrangement of data is not evident in the claim . 
+While “[t]he originality requirement is not particularly stringent,” the Office cannot 
+register a compilation “in which the selection, coordination, and arrangement are not 
+sufficiently original to trigger copyright protection.” Id. The preexisting material or data 
+do not need to “be presented in an innovative or surprising way.” See id.  at 362. The 
+Office may register the claim if the author’s selection possesses some minimal degree of 
+creativity, even if the coordination and/or arrangement do not (or vice  versa ). However, 
+the more creative the selection, coordination, and/or arrangement, the more likely it is 
+that the author’s compilation will be registered. For example, the Office generally will 
+not register a compilation consisting of all the elements from a p articular set of data, 
+because the selection is standard or obvious. Likewise, the Office generally will not 
+register a compilation containing only two or three elements, because the selection is 
+necessarily de minimis . See H.R.  REP. NO. 94-1476,  at 122 (1976) , reprinted in  U.S.C.C.A.N. 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  19 01/28/2021  at 5737 (stating that a work does not qualify as a collective work  “where relatively few 
+separate elements have been brought together,” as in the case of “a composition 
+consisting of words and music, a work published with illustrations or front matter, or 
+three one -act plays”).  
+In determining whether the author’s compilation is sufficiently original, the U.S. 
+Copyright Office may consider the following factors:  
+• What type of material or data did the author compile?  
+• How is the material or data presented?  
+• Was the selection, coordination, and/or arrangement made from a large or diverse 
+pool of material or data?  
+• Was the coordination or arrangement standard?  
+• Is the selection exhaustive ( e.g., a parts catalog containing standard information for 
+all of the parts sold by a particular company)?  
+• Is the coordination or arrangement obvious ( e.g., is the information listed in 
+alphabetical, numerical, or chronological order)?  
+The statute also provides that preexisting material or data “must be selected, 
+coordinated, or arranged ‘in such a way’ as to render the work as a whole original. This 
+implies that some ‘ways’ will trigger copyright, but that others will not.” Feist , 499 U.S. at 
+358 (citing 17 U.S.C. § 101  definition of “compilation”).  
+Examples:  
+• Generally, a selection consisting of less than four items will be 
+scrutinized for sufficient authorship.  
+• A selection, coordination, and/or arrangement that is mechanical or 
+routine, such as an alphabetical list of items added to a catalog 
+within the past twelve months, a symmetrical arrangement of 
+stones on jewelry, arranging geometric shapes in a standard or 
+symmetrical manner, arranging notes in standard scales or in 
+standard melodic or harmonic intervals, or a musical work 
+consisting solely of a musical scale(s).  
+• A selection, coordination, and/or arrangement that is commonplace 
+such that it has come to be expected as a matter of course.  
+• A compilation that contains an obvious selection, coordination, 
+and/or arrangement of material, such as a complete list of stories 
+written by Zane Grey between 1930 and 1939, a complete collection 
+of Arthur Conan Doyle’s Sherlock Holmes stories, or a colle ction of a 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  20 01/28/2021  feature writer’s contributions to a particular newspaper over a 
+period of six months arranged in chronological order.  
+• A selection that is dictated by law, such as a law requiring a 
+telephone company to publish a directory containing the names, 
+addresses, and telephone numbers of its subscribers.  
+• A selection, coordination, and/or arrangement of data that is 
+practically inevitable, such as a standard organizational chart.  
+• Mailing or subscriber lists that contain standard information about 
+a predetermined group of people organized in an obvious manner, 
+such as an alphabetical list of all the names, telephone numbers, and 
+email addresses for the members of the graduating clas s of a 
+particular college or university.  
+• A compilation that contains an exhaustive selection of information 
+where the information is presented in sequential order, such as a 
+genealogy containing a comprehensive selection of public records 
+arranged in alphabetical or chronological order.  
+ 312.3  The Originality Requirement for Collective Works  
+A collective work  “is a species of ‘compilation’” that “by its nature, must involve the 
+selection, assembly, and arrangement of ‘a number of contributions.’” H.R.  REP. NO. 94-
+1476,  at 122 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5737 (discussing 17 U.S.C. § 101 ’s 
+definitions of “compilation” and “collective work”).  
+Because a collective work is a type of compilation, the U.S. Copyright Office will apply 
+the criteria set forth in Section 312.2  to determine whether the author’s selection, 
+coordination, and/or arrangement satisfies the originality requirement. When 
+examining a particular contribution that appears within a collective work, the Office will 
+apply the criteria set forth in Section 309.  
+ 313 Uncopyrightable Material  
+The U.S. Copyright Office has no authority to register works that are not protected by 
+copyright law. Some of the more common types of uncopyrightable material are 
+discussed in Sections 313.1  through 313.6  below.  
+Although uncopyrightable material, by definition, is not eligible for copyright protection, 
+the Office may register a work that contains uncopyrightable material, provided that the 
+work as a whole contains other material that qualifies as an original work of authorship 
+(e.g., a selection, coordination, and/or arrangement of uncopyrightable elements where 
+the resulting work as a whole constitutes an original work of authorship).  
+ 313.1  Works That Have Not Been Fixed  
+As discussed in Section 305, a work of authorship may be registered, provided that it 
+has been fixed  in a tangible medium of expression. See 17 U.S.C. § 102(a) . A work that 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  21 01/28/2021  has not been fixed is not protected by the Copyright Act and cannot be registered with 
+the U.S. Copyright Office, although it might be eligible for protection under state law.  
+Examples:  
+• Choreography that has never been filmed or notated.  
+• An extemporaneous speech that has not been filmed or recorded.  
+• A work communicated solely through conversation or a live 
+broadcast that has not been filmed, recorded, written, or 
+transcribed.  
+• A dramatic sketch or musical composition improvised or developed 
+from memory that has not been filmed, recorded, or transcribed.  
+See H.R.  REP. NO. 94-1476,  at 52, 131 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5747.  
+ 313.2  Works That Lack Human Authorship  
+As discussed in Section 306, the Copyright Act protects “original works of authorship .” 
+17 U.S.C. § 102(a)  (emphasis added). To qualify as a work of “authorship” a work must 
+be created by a human being. See Burrow -Giles Lithographic Co ., 111 U.S. at 58. Works 
+that do not satisfy this requirement are not copyrightable . 
+The U.S. Copyright Office will not register works produced by nature, animals, or plants. 
+Likewise, the Office cannot register a work purportedly created by divine or 
+supernatural beings, although the Office may register a work where the application or 
+the deposit copy(ies)  state that the work was inspired by a divine spirit.  
+Examples:  
+• A photograph taken by a monkey.  
+• A mural painted by an elephant.  
+• A claim based on the appearance of actual animal skin.  
+• A claim based on driftwood that has been shaped and smoothed by 
+the ocean.  
+• A claim based on cut marks, defects, and other qualities found in 
+natural stone.  
+• An application for a song naming the Holy Spirit as the author of the 
+work.  
+Similarly, the Office will not register works produced by a machine or mere mechanical 
+process that operates randomly or automatically without any creative input or 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  22 01/28/2021  intervention from a human author. The crucial question is “whether the ‘work’ is 
+basically one of human authorship, with the computer [or other device] merely being an 
+assisting instrument, or whether the traditional elements of authorship in the work 
+(literary, artistic, or musical expression or elements of selection, arrangement, etc.) 
+were actually conceived and executed not by man but by a machine.” U.S.  COPYRIGHT 
+OFFICE , REPORT TO THE LIBRARIAN OF CONGRESS BY THE REGISTER OF COPYRIGHTS  5 (196 5). 
+Examples:  
+• Reducing or enlarging the size of a preexisting work of authorship.  
+• Making changes to a preexisting work of authorship that are 
+dictated by manufacturing or materials requirements.  
+• Converting a work from analog to digital format, such as 
+transferring a motion picture  from VHS to DVD.  
+• Declicking or reducing the noise in a preexisting sound recording  or 
+converting a sound recording from monaural to stereo sound.  
+• Transposing a song from B major to C major.  
+• Medical imaging produced by x -rays, ultrasounds, magnetic 
+resonance imaging, or other diagnostic equipment.  
+• A claim based on a mechanical weaving process that randomly 
+produces irregular shapes in the fabric without any discernible 
+pattern.  
+ 313.3  Works That Do Not Constitute Copyrightable Subject Matter  
+As discussed in Section 307 above, a work of authorship may be registered, provided 
+that it falls within one or more of the categories of works set forth in Section 102(a)  of 
+the Copyright Act. In other words, a work may be eligible for copyright protection if it 
+qualifies as a literary work ; a musical work; a dramatic work; a pantomime ; a 
+choreographic work ; a pictorial, graphic, or sculptural work ; a motion picture  or other 
+audiovisual work ; a sound recording ; or an architectural work . Works that do not fall 
+within the existing categories of copyrightable  subject matter are not copyrightable and 
+cannot be registered with the U.S. Copyright Office. See Registration of Claims to 
+Copyright, 77 Fed. Reg. 37,605, 37,607 (June 22, 2012)  (“Congress did not delegate 
+authority to the courts [or the Copyright Office] to create new categories of authorship. 
+Congress reserved this option for itself.”).  
+ 313.3(A)  Ideas, Procedures, Processes, Systems, Methods of Operation,  
+Concepts, Principles, or Discoveries  
+Section 102(b)  of the Copyright Act expressly excludes copyright protection for “any 
+idea, procedure, process, system, method of operation, concept, principle, or discovery, 
+regardless of the form in which it is described, explained, illustrated, or embodied in 
+such wor k.” 17 U.S.C. § 102(b) ; see also  37 C.F.R. § 202.1(b) . As such, any work or 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  23 01/28/2021  portion of a work that is an idea, procedure, process, system, method of operation, 
+concept, principle, or discovery does not constitute copyrightable  subject matter and 
+cannot be registered.  
+Examples:  
+• The idea or concept for a work of authorship.  
+• The idea for a character.  
+• Ideas, procedures, processes, or methods for doing, making, or 
+building things.  
+• Scientific or technical methods or discoveries.  
+• Business operations or procedures.  
+• Mathematical principles, formulas, algorithms, or equations.  
+• DNA sequences and other genetic, biological, or chemical substances 
+or compounds, regardless of whether they are man -made or 
+produced by nature.  
+• An extrapolation or application of an idea or system that always 
+produces substantially the same result, such as a computation of 
+interest based upon a particular rate.  
+The Office may register a literary, musical, graphic, or artistic description, explanation, 
+or illustration of an idea, procedure, process, system, method of operation, concept, 
+principle, or discovery, provided that the work contains a sufficient amount o f original 
+authorship. See H.R.  REP. NO. 94-1476,  at 56 (1976) , reprinted in  1976 U.S.C.C.A.N. at 
+5669. However, the registration would be limited to the copyrightable literary, musical, 
+graphic, or artistic aspects of the work because copyright law does not give copyright 
+owners any exclusive rights  in the ideas, procedures, processes, systems, methods of 
+operation, concepts, principles, or discoveries described in their works. As such, 
+copyright owners do not have the right to prevent others from using the ideas, concepts, 
+principles, or discoveries  or from implementing the procedures, processes, systems, or 
+methods of operation described in such works. See Feist , 499 U.S. at 344 -45 (explaining 
+that “[t]he most fundamental axiom of copyright law is that ‘no author may copyright his 
+ideas or the facts he narrates.’” (quoting Harper & Row, Publishers, Inc. v. Nation 
+Enterprises , 471 U.S. 539, 556 (1985)).  
+ 313.3(B)  Merger of Idea and Expression  
+In some cases, there may be only one way or only a limited number of ways to express a 
+particular idea, procedure, process, system, method of operation, concept, principle, or 
+discovery. If the U.S. Copyright Office determines that extending copyright prot ection to 
+the author’s expression would effectively accord protection to the idea, procedure, process,  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  24 01/28/2021  system, method of operation, concept, principle, or discovery itself, the registration 
+specialist  may communicate with the applicant  or may refuse to register the claim . 
+For example, the Office cannot register a claim in the mere idea for a story that is based 
+on a common theme, such as “a quarrel between a Jewish father and an Irish father, the 
+marriage of their children, the birth of grandchildren and a reconciliation.” See Nichols v. 
+Universal Pictures Corp ., 45 F.2d 119, 122 (2d Cir. 1930). The Office cannot register a 
+claim based solely on standard programming techniques that are commonly used to 
+achieve a specific result in a computer program . See, e.g., Sega Enterprises, Ltd. v. 
+Accolade, Inc. , 977 F.2d 1510, 1524 (9th Cir. 1992). Likewise, the Office cannot register a 
+claim based solely on standard expressions that naturally follow from the idea for a work  
+of authorship, such as a sculpture that depicts a brightly colored jellyfish swimming in a 
+vertical orientation. See Satava v. Lowry , 323 F.3d 805, 811 (9th Cir. 2003).  
+ 313.3(C)  Facts  
+Facts are not copyrightable  and cannot be registered with the U.S. Copyright Office. “No 
+one may claim  originality as to facts . . . because facts do not owe their origin to an act of 
+authorship.” Feist , 499 U.S. at 347 (internal citation omitted). A person who finds and 
+records a particular fact does not create that fact; he or she merely discovers its 
+existence. As a result, facts “are never original” and Section 102(b)  of the Copyright Act 
+“is universally understood to prohibit any copyright in facts.” Id. at 356. “[This] is true of 
+all facts – scientific, historical, biographical, and news of the day.” Id. at 348.  
+For the same reason, theories, predictions, or conclusions that are asserted to be facts 
+are uncopyrightable, even if the assertion of fact is erroneous or incorrect. See, e.g., 
+Hoehling v. Universal City Studios, Inc. , 618 F.2d 972, 978 -79 (2d Cir. 1980); Nash v. CBS, 
+Inc., 899 F.2d 1537, 1541 (7th Cir. 1990).  
+Although facts are not copyrightable, a work of authorship that contains factual 
+information may be registered, provided that the work contains a sufficient amount of 
+original authorship. For example, a newspaper may be registered, but the registration 
+does not cover “[t]he news element – the information respecting current events 
+contained in the [publication],” because the news of the day “is not the creation of the 
+writer, but is a report of matter that ordinarily are publici juris .” International News 
+Service v. Associated Press,  248 U.S. 215, 234 (1918) abrogated on other grounds by Erie 
+Railroad Co. v. Tompkins,  304 U.S. 64, 58 (1938). Likewise, “a directory that contains 
+absolutely no protectable written expression, only facts,” may be protected by copyright 
+only “if it features an original selection or arrangement.” Feist , 499 U.S. at 348. The 
+copyright in such works only protects the compilation  expression that the author 
+contributed to the work. “No matter how original the format . . . the facts themselves do 
+not become original through association.” Id. at 349.  
+ 313.3(D)  Typeface and Mere Variations of Typographic Ornamentation  
+The copyright law does not protect typeface or mere variations of typographic 
+ornamentation or lettering. 17 U.S.C. § 102(b) ; 37 C.F.R. § 202.1(a) , (e).  
+A typeface is a set of letters, numbers, or other symbolic characters with repeating 
+design elements that are consistently applied in a notational system that is intended to 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  25 01/28/2021  be used in composing text or other combinations of characters.  H.R.  REP. NO. 94-1476,  at 
+55 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5668. Typeface includes typefonts, 
+letterforms, and the like. Registrability of Computer Programs that Generate Typefaces, 
+57 Fed. Reg. 6201, 6202 (Feb. 21, 1992) . 
+The U.S. Copyright Office cannot register a claim  to copyright in typeface or mere 
+variations of typographic ornamentation or lettering, regardless of whether the typeface 
+is commonly used or truly unique. Likewise, the Office cannot register a simple 
+combination of a few typefonts, letterforms, or typef ace designs with minor linear or 
+spatial variations. In Eltra Corp. v. Ringer,  579 F.2d 294 (4th Cir. 1978) the Office refused 
+to register a typeface design under the 1909 Act. Both the District Court and the Court of 
+Appeals affirmed the Office’s decision, noting that “typeface has never been considered 
+entitled to copyright under the provisions of [the 1909 Act].” 579 F.2d at 298. The 
+Fourth Circuit noted that many parties have asked “Congress to amend the law in order 
+to provide copyright protection to t ypeface” and “[j]ust as consistently Congress has 
+refused to grant the protection.” Id. Congress addressed this issue when it drafted the 
+1976 Act and concluded that typeface is not copyrightable . The House Report expressly 
+states: “The Committee does not regard the design of typeface, as thus defined, to be a 
+copyrightable ‘pictorial, graphic, or sculptural work’ within the meaning of this bill. . . .” 
+H.R.  REP. NO. 94-1476,  at 55 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5668 -69. 
+For the same reasons, the Office cannot register a claim that is based solely on 
+calligraphy because calligraphy is a stylized form of handwriting that is a mere variation 
+of typographic ornamentation. Although calligraphy in itself is not copyrightable, a  
+literary work , a pictorial work , or a graphic work  that contains a sufficient amount of 
+original authorship may be registered notwithstanding the fact that it is executed in 
+calligraphic form.  
+As a general rule, the mere arrangement of type on a page or screen is not copyrightable. 
+See Section 313.3(E) . However, if the arrangement produces an abstract or 
+representational image, such as an advertisement that uses letters to create a 
+representation of a person, the Office may register the claim provided that the resulting 
+image contains a sufficient amoun t of pictorial expression.  
+The Office may register computer programs  that generate typeface(s) provided that 
+they contain a sufficient amount of literary authorship. However, the registration does 
+not extend to any typeface or mere variations of typographic ornamentation or lettering 
+that may be generated by the program. See Registrability of Computer Programs that 
+Generate Typeface, 57 Fed. Reg. at 6202 . For a discussion of computer programs that 
+generate typeface, see Chapter 700 , Section 723.  
+ 313.3(E)  Format and Layout  
+As a general rule, the U.S. Copyright Office does not accept vague claims  of “format” 
+and/or “layout.” The general layout or format of a book, a page, a slide presentation, a 
+website, a webpage, a poster, a form, or the like, is not copyrightable  because it is a 
+template of expression. These terms should be avoided and, if used, will be questioned 
+by the registration specialist .  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  26 01/28/2021  Copyright protection may be available for the selection, coordination, and/or 
+arrangement of specific content, such as a compilation  of artwork or a compilation of 
+text, provided that the content is arranged in a sufficiently creative manner. However, 
+the claim would be limited to the selection, coordination, and/or arrangement of that 
+specific content, and it would not apply to the fo rmat and layout itself.  
+A standard or common selection, coordination, and/or arrangement of specific content 
+or simple variations thereof will not support a claim of compilation authorship and 
+cannot be registered with the Office. If the content that appears in the work is 
+copyri ghtable, but the selection, coordination, and/or arrangement of that content is 
+not, the claim should be limited to the copyrightable content that the author contributed 
+to the work ( e.g., text, artwork, etc.) and the compilation authorship should not be 
+included in the claim.  
+For a general discussion of format and layout, see Chapter 900 , Section 906.5.  
+ 313.4  Works That Do Not Satisfy the Originality Requirement  
+As discussed in Section 308, the Copyright Act protects “ original  works of authorship.” 
+17 U.S.C. § 102(a)  (emphasis added). To qualify as an “original” work of authorship, the 
+work must be independently created and must contain some minimal amount of 
+creativity. The U.S. Copyright Office will not register works that do not satisfy these 
+requirements.  
+ 313.4(A)  Mere Copies  
+A work that is a mere copy of another work of authorship is not copyrightable . The 
+Office cannot register a work that has been merely copied from another work of 
+authorship without any additional original authorship. See L. Batlin & Son , 536 F.2d at 
+490 (“one who has slavishly or mechanically copied from others may not claim to be an 
+author”); Bridgeman Art Library, Ltd. v. Corel Corp ., 36 F. Supp. 2d 191, 195 (S.D.N.Y. 
+1999) (“exact photographic copies of public domain works of art would not be 
+copyrightable under United States law because they are not original”).  
+As a general rule, the registration specialist  will not search the Office’s records or 
+conduct independent research to determine whether the work was created by the 
+author(s) named in the application because the existence of similar or identical works 
+will not preclude a claim in a work that was indep endently created. However, if the 
+applicant  asserts a claim in a work that is unusually similar to another work of 
+authorship that is known to the specialist, he or she may communicate with the 
+applicant. If the specialist determines that the author copied or incorporated another 
+work of authorship,  he or she may ask the applicant to exclude the preexisting work 
+from the claim or may refuse registration if the author did not contribute a sufficient 
+amount of additional original authorship to the work.  
+Examples:  
+• An exact reproduction of the Mona Lisa  that cannot be distinguished 
+from the original.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  27 01/28/2021  • A photocopy or scan of a photograph.  
+• Photocopying, scanning, or digitizing a literary work . 
+• Dubbing a sound recording  from a preexisting recording.  
+• A toy model that is an exact replica of an automobile, airplane, train, 
+or other useful article  where no creative expression has been added 
+to the existing design.  
+ 313.4(B)  De Minimis Authorship  
+The term “ de minimis ” comes from the legal principle “ de minimis non curat lex, ” which 
+means “the law does not take notice of very small or trifling matters.” As the Supreme 
+Court stated, “copyright protects only those constituent elements of a work that possess 
+more than a de minimis  quantum of creativity.” Feist , 499 U.S. at 363. Works that contain 
+no expression or only a de minimis  amount of original expression are not copyrightable  
+and cannot be registered with the U.S. Copyright Office.  
+Examples:  
+Literary Works:  
+ 
+• Substituting the pronouns “she” and “her” for “he” and “his” in a 
+preexisting work of authorship.  
+• Combining a coined term with a few short phrases that define the 
+term.  
+• A Venn diagram consisting of three overlapping circles containing 
+the names of various personality disorders and a few words and 
+short phrases that describe the symptoms of each condition.  
+• A standard form contract for a real estate transaction requesting 
+factual information from the buyer and containing standard legal 
+language for the release of the seller’s interest in the property.  
+• Editing that merely consists of spelling and grammatical 
+corrections.  
+Works of the Performing Arts:  
+ 
+• A synopsis consisting of a single sentence.  
+• A musical phrase consisting of three notes.  
+• A sound recording  consisting of a single tone.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  28 01/28/2021  Works of the Visual Arts:  
+ 
+• Solitaire rings, simple diamond stud earrings, simple hoop earrings, 
+and other jewelry designs that contain only a trivial amount of 
+authorship.  
+• Touching -up an aged or damaged photograph in order to restore it 
+to its original condition, without adding an appreciable amount of 
+authorship to the original image.  
+• A public domain  photograph of Winston Churchill combined with the  
+word “Commitment” and the quotation “Never, never, never give up.”  
+• An outline map of South Carolina with a blue heart in the center of 
+the design featuring the white crescent moon and white palmetto 
+tree from the state flag.  
+Specific categories of literary works , works of the performing arts , and works of the 
+visual arts  that contain a de minimis  amount of authorship are discussed in Chapters 
+700, 800, and 900 . 
+ 313.4(C ) Words and Short Phrases  
+Words and short phrases, such as names, titles, and slogans, are not copyrightable  
+because they contain a de minimis  amount of authorship. See 37 C.F.R. § 202.1(a) . The 
+U.S. Copyright Office cannot register individual words or brief combinations of words, 
+even if the word or short phrase is novel or distinctive or lends itself to a play on words. 
+See Kitchens of Sara Lee, Inc. v. Nifty Foods Corp ., 266 F.2d 541, 544 (2d Cir. 1959) 
+(concluding that the Office’s regulation barring the registration of short phrases is “a fair 
+summary of the law”).  
+Examples:  
+• The name of an individual (including pseudonyms, pen names, or 
+stage names).  
+• The name of a business or organization.  
+• The name of a band or performing group.  
+• The name of a product or service.  
+• A domain name or URL ( e.g., www.copyright.gov ). 
+• The title or subtitle of a work of authorship.  
+• The name of a character.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  29 01/28/2021  • Catchwords, catchphrases, mottoes, slogans, or other short 
+expressions.  
+For the same reasons, short musical phrases consisting of only a few musical notes 
+standing alone are not copyrightable and cannot be registered with the U.S. Copyright 
+Office, even if the phrase is novel or distinctive. See 37 C.F.R. § 202.1(a) . 
+Examples:  
+• Clock chimes.  
+• “Mi do re sol, sol re mi do.”  
+• A trademark consisting of three musical notes.  
+Similarly, individual numbers, letters, sounds, and short phrases consisting of such 
+elements are not copyrightable, because they do not contain sufficient creative 
+authorship. Id. 
+The Office maintains various databases, indexes, catalogs, and other records that contain 
+titles of works that have been registered with the Office. These titles are part of the 
+public record, but the titles themselves are not subject to copyright protecti on. 
+ 313.4(D)  Works Consisting Entirely of Information That Is Common Property  
+The U.S. Copyright Office cannot register works consisting entirely of information that is 
+common property because such works contain no original authorship. 37 C.F.R. § 
+202.1(d) . Examples of common property include, without limitation, standard calendars, 
+schedules of sporting events, and lists or tables taken from public documents or other 
+common sources. Id. For the same reasons, the Office cannot register a claim  in common 
+sayings, diatonic and chromatic musical scales, or common chord progressions that 
+merely consist of standard harmonies or common musical phrases.  
+ 313.4(E)  Measuring and Computing Devices  
+The U.S. Copyright Office cannot register devices that are designed for computing or 
+measuring or other useful articles  in and of themselves. See 37 C.F.R. § 202.1(d) . 
+Examples of such devices include, without limitation, height and weight charts, tape 
+measures and rulers, calculators, scales, and thermometers.  
+Although measuring and computing devices are not copyrightable , the Office may 
+register pictorial, graphic, or sculptural features that have been applied to a device, but 
+only if those features are separable from the article. For example, a drawing that 
+appears on the surface of a height and weight chart or a fancifu l graphic that appears on 
+the surface of a thermometer may be registered if the pictorial or graphic feature can be 
+perceived as a two -dimensional “work of art separate from the useful article” and would 
+qualify as a protectable pictorial or graphic work “ if it were imagined separately from 
+the useful article into which it is incorporated.” Star Athletica, LLC v. Varsity Brands, Inc ., 
+137 S. Ct. 1002, 1007 (2017).  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  30 01/28/2021  For a general discussion of useful articles, see Chapter 900 , Section 924.  
+ 313.4(F)  Mere Listing of Ingredients or Contents  
+A mere listing of ingredients or contents is not copyrightable  and cannot be registered 
+with the U.S. Copyright Office. 37 C.F.R. § 202.1(a) . 
+Examples:  
+• A list of ingredients for a recipe.  
+• A list of components for a formula, compound, prescription, or the 
+like.  
+• A list of musical tracks contained in a compact disc.  
+• A product label that merely lists the ingredients for the product, 
+merely describes the product, or merely describes the contents of 
+the product packaging.  
+The Office may register a work that explains how to perform a particular activity, such 
+as a cookbook or user manual, provided that the work contains a sufficient amount of 
+text, photographs, artwork, or other copyrightable expression. However, the 
+registr ation does not extend to any list of ingredients or contents that may be included 
+in the work. See Publications International v. Meredith Corp.,  88 F.3d 473, 480 (7th Cir. 
+1996) (“We do not view the functional listing of ingredients as original within the 
+meaning of the Copyright Act.”); see also  Policy Decision on Copyrightability of Digitized 
+Typefaces, 53 Fed. Reg. 38,110, 38,112 (Sept. 29, 1988)  (explaining that “the explanation 
+and illustration of recipes is copyrightable even though the end result – the food product 
+– is not”).  
+ 313.4(G)  Blank Forms  
+Blank forms that are designed for recording information and do not in themselves 
+convey information are not copyrightable . 37 C.F.R. § 202.1(c) . Likewise, the copyright 
+law does not protect the ideas or principles behind a blank form, the systems or 
+methods implemented by a form, or any functional layout, coloring, or design that 
+facilitates the use of a form. See Baker v. Selden , 101 U.S. 99 (1879).  
+Blank forms typically contain empty fields or lined spaces, as well as words or short 
+phrases that identify the content that should be recorded in each field or space. 
+Examples include, without limitation, time cards, graph paper, account books, diaries, 
+bank checks, scorecards, address books, report forms, order forms, and the like. 37 
+C.F.R. § 202.1(c) . 
+As a general rule, the Office will register a work of authorship that contains an 
+appreciable amount of written or artistic expression, even if it contains a blank form 
+that is designed for recording information. For example, bank checks may be registered 
+if they contain sufficient pictorial authorship that decorates the form. Likewise, 
+contracts, insurance policies, and other textual documents with “fill -in” spaces may be 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  31 01/28/2021  registered if they contain a sufficient amount of expressive, literary authorship that is 
+not standard or functional. However, the mere inclusion of a large number of terms on a 
+blank form may not satisfy the originality requirement if those terms are part  of a 
+system for recording information, such as a medical diagnostic form. See 17 U.S.C. § 
+102(b) . 
+When examining these types of works, the Office applies “a standard consistent with 
+that applied to all works submitted for registration: does the work evidence an 
+appreciable quantum of original, creative expression?” See Registration of Claims to 
+Copyright: Notice of Termination of Inquiry Regarding Blank Forms, 45 Fed. Reg. 63,297 
+(Sept. 24, 1980) . In applying this standard, the Office focuses on the textual or pictorial 
+expression that the author contributed to the work. In other words, does the form 
+qualify as a literary work, a pictorial work, or a work that contains an original 
+combination of l iterary and pictorial expression? If so, the Office will register the claim . 
+In all cases, the registration covers only the original textual or pictorial expression that 
+the author contributed to the work, but does not cover the blank form or other 
+uncopyrightable elements that the form may contain.  
+The Office cannot register the empty fields or lined spaces in a blank form. Likewise, the 
+Office cannot register the words, short phrases, or other de minimis  text that appears in 
+the headings for a blank form, even if the applicant  attempts to register the work as a 
+compilation  of uncopyrightable material. As discussed in Section 307, a compilation is a 
+subset of the subject matter categories listed in Section 102(a)  of the Copyright Act, 
+rather than a separate and distinct category of authorship. In other words, a compilation 
+may be registered, provided that the work as a whole falls within one or more of the 
+congressionally established categories of authorship. A bl ank form that merely contains 
+words, short phrases, or a de minimis  amount of text does not satisfy this requirement 
+because it does not qualify as a literary work, a pictorial work, a graphic work, or any of 
+the other categories of works listed in Section 102(a) . Cf. Registration of Claims to 
+Copyright, 77 Fed. Reg. 37,605, 37,607 (June 22, 2012) . 
+If a blank form poses an extensive number of questions or contains an exhaustive 
+checklist of information, the registration specialist  may communicate with the applicant 
+or may refuse registration if it appears that the applicant is asserting a claim in the 
+ideas, principles, systems, or methods implemented by the form.  
+ 313.4(H)  Characters  
+Although the copyright law does not protect the name or the general idea for a 
+character, a work that depicts or describes a particular character may be registered if it 
+contains a sufficient amount of original authorship.  
+A registration for a visual art work, a literary work , or a work of the performing arts that 
+depicts or describes a character covers the expression set forth in the deposit copy(ies) , 
+but it does not cover the character per se . In other words, the copyright in the registered 
+work protects the author’s expression of the character, but it does not protect the mere 
+concept of the character. The copyright in the character itself is limited to the artistic 
+rendition of the character  in visual form or the literary delineation of the character’s 
+specific attributes in textual form. (The trademark law may provide additional 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  32 01/28/2021  protection for the character’s name or other attributes if the character is sufficiently 
+distinctive and is used to identify the source of the trademark owner’s goods or 
+services.)  
+For a further discussion of characters, see Chapter 800 , Section 804.3(B) and Chapter 
+900, Section 911.  
+ 313.4(I)  Scènes à Faire  
+The copyright law does not protect stock characters, settings, or events that are 
+common to a particular subject matter or medium because they are commonplace and 
+lack originality. For example, the copyright for a work about the Hindenburg would not 
+cover elements that are “indispensable, or at least standard, in the treatment of” that 
+topic, such as scenes that take place in a German beer hall or characters who utter 
+common greetings of the period. See Hoehling , 618 F.2d at 979. The copyright for a work 
+about a police station in an urban slum would not cover elements that necessarily result 
+from the choice of that setting, such as scenes depicting drunks, prostitutes, vermin, and 
+derelict cars, or stock themes commonly linked to the genre of police fiction,  such as foot 
+chases or the “familiar figure of the Irish cop.” See Walker v. Time Life Films, Inc ., 784 
+F.2d 44, 50 (2d Cir. 1986). Likewise, the fact “[t]hat treasure might be hidden in a cave 
+inhabited by snakes, that fire might be used to repel the sna ke, that birds might frighten 
+an intruder in the jungle, and that a weary traveler might seek solace in a tavern . . . [are] 
+simply too general to be protectable.” See Zambito v. Paramount Pictures Corp ., 613 F. 
+Supp. 1107, 1112 (E.D.N.Y 1985).  
+While scènes à faire  cannot be registered by themselves, a work of authorship that 
+contains standard expressions or stock characters, settings, or events may be registered 
+provided that the work as a whole contains a sufficient amount of original expression.  
+ 313.4(J)  Familiar Symbols and Designs  
+Familiar symbols and designs are not copyrightable  and cannot be registered with the 
+U.S. Copyright Office, either in two -dimensional or three -dimensional form. 37 C.F.R. § 
+202.1(a) . Likewise, the Office cannot register a work consisting of a simple combination 
+of a few familiar symbols or designs with minor linear or spatial variations, either in 
+two-dimensional or three -dimensional form. Examples of familiar symbols and designs 
+include, without limitation:  
+• Letters.  
+• Punctuation.  
+• Symbols typically found on a keyboard, such as asterisks, ampersands, and the like.  
+• Abbreviations.  
+• Musical notes and symbols.  
+• Numbers.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  33 01/28/2021  • Mathematical symbols.  
+• Currency symbols.  
+• Arrows and other directional or navigational symbols.  
+• Common representational symbols, such as a spade, club, heart, diamond, star, yin 
+yang, fleur de lys, or the like.  
+• Common patterns, such as standard chevron, polka dot, checkerboard, or 
+houndstooth designs.  
+• Well -known and commonly used symbols that contain a de minimis  amount of 
+expression or that are in the public domain , such as the peace symbol, gender 
+symbols ( ♀ ♂), the symbols for “play, pause, stop, forward, back,” simple emoticons 
+such as the typical smiley face ( ☺), or the like.  
+• Standard industry designs, such as the caduceus, the barber pole, food labeling 
+symbols, hazard warning symbols, or the like.  
+• Familiar religious symbols such as crosses, stars, crescents, and the like.  
+• Common architecture moldings, such as the volute used to decorate Ionic and 
+Corinthian columns.  
+While familiar symbols and designs cannot be registered by themselves, a work of 
+authorship that incorporates one or more of these elements into a larger design may be 
+registered if the work as a whole contains a sufficient amount of creative expression.  
+For additional information concerning familiar symbols and designs, see Chapter 900 , 
+Section 906.2.  
+ 313.4(K)  Mere Variations of Coloring  
+Color is one of the basic building blocks for pictorial, graphic, and sculptural works. The 
+U.S. Copyright Office may register an original combination or arrangement of colors if it 
+results in a pictorial, graphic, or sculptural work that qualifies as an o riginal work of 
+authorship. See Copyright Registration for Colorized Versions of Black and White Motion 
+Pictures, 52 Fed. Reg. 23,443, 23,445 (June 22, 1987) . 
+The Office cannot register a claim  to copyright in color in and of itself or a system for 
+matching pairs and sets of colors. See 17 U.S.C. § 102(b) . Likewise, the Office cannot 
+register mere variations in coloring, regardless of whether the variations are made by 
+hand, by computer, or any other process. 37 C.F.R. § 202.1(a) . If the author merely 
+added or changed a few colors that appear in a preexisting work of authorship or merely 
+added, changed, or combined expected or familiar sets or pairs of colors, the Office may 
+communicate with the applicant  or may refuse to register the claim. Similarly, the Office 
+may communicate or refuse registration for a compilation  of colors if the colors merely 
+enhance the visual display of a chart, table, graph, device, or other article.  
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  34 01/28/2021  Examples:  
+• Creating a new version of a fabric design where the colors red and 
+blue are substituted for the colors yellow and green.  
+• Producing three greeting cards containing the same visual and 
+textual content where the only difference is that each card is printed 
+in a different color.  
+• Making a few minor changes in a preexisting work of authorship, 
+such as simple tone -overs or color overlays.  
+• Using color as a simple form of typographic ornamentation.  
+• Using color to enhance sonar imaging or x -rays, sonograms, 
+echocardiograms, magnetic resonance imaging, or the like.  
+• Removing all the color from a preexisting work of authorship.  
+For additional information concerning color, see Chapter 900 , Section 906.3.  
+ 313.5  Specific Types of Works That May Contain Uncopyrightable Material  
+The U.S. Copyright Office has adopted policies regarding the copyrightability of specific 
+types of literary works , works of the performing arts , and works of the visual arts . 
+For information concerning literary works that may be or may contain uncopyrightable 
+material, see Chapter 700 , Sections 707.1 (Numbers), 707.2 (Research), and 707.3 (Book 
+Design).  
+For information concerning works of the performing arts that may be or may contain 
+uncopyrightable material, see Chapter 800 : 
+• Common property musical scales and arpeggios (Section 802.5(A)).  
+• U.S. sound recordings  fixed  prior to February 15, 1972 (Section 803.5(D)).  
+• Social dances, simple routines, and other uncopyrightable movements (Sections 
+805.5(B) and 806.5(B)).  
+For information concerning works of the visual arts that may be or may contain 
+uncopyrightable material, see Chapter 900 : 
+• Geometric figures and shapes (Section 906.1).  
+• Bridges, canals, dams, tents, mobile homes, and other uncopyrightable structures 
+(Section  926.2 ). 
+• Interior design and landscape design (Section 926.2 ). 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  35 01/28/2021  • Useful articles  (Section 924).  
+ 313.6  Other Types of Works That Cannot Be Registered with the  
+U.S. Copyright Office  
+ 313.6(A)  Foreign Works That Are Not Eligible for Copyright Protection  
+in the United States  
+As discussed in Section 304, a work of authorship may be registered, provided that it is 
+eligible for copyright protection in the United States under Sections 104(a)  or 104(b)  of 
+the Copyright Act. Works that do not satisfy these requirements are not protected by 
+U.S. copyright law and cannot be registered with the U.S. Copyright Office. For more 
+information concerning these requirements, see Chapter 2000 , Section 2003.  
+ 313.6(B)  Unlawful Use of Preexisting Material in a Derivative Work, a  
+Compilation, or a Collective Work  
+Some derivative works , compilations , and collective works  cannot be registered with the 
+U.S. Copyright Office. Section 103(a)  of the statute states that copyright protection for a 
+compilation or derivative work “employing preexisting material in which copyright 
+subsists does not extend to any part of the work in which such material has been used 
+unlawfully.” 17 U.S.C. § 103(a) . This provision also applies to collective works because 
+“the term ‘compilation’ includes collective works.” 17 U.S.C. § 101  (definition of 
+compilation).  
+Section 103(a)  is intended to prevent “an infringer from benefiting, through copyright 
+protection, from committing an unlawful act.” H.R.  REP. NO. 94-1476,  at 57 (1976) , 
+reprinted in  1976 U.S.C.C.A.N. at 5671. At the same time, it allows the author of a 
+derivative work, a compilation, or a collective work to claim  copyright in “those parts of 
+the work that do not [unlawfully] employ the preexisting work.” Id. 
+Ordinarily, the Office will not examine the preexisting material that appears in a 
+derivative work, a compilation, or a collective work to determine whether that material 
+is protected by copyright or whether it has been used in a lawful manner. However, th e 
+registration specialist  may communicate with the applicant  if the preexisting material 
+has not been excluded from the claim and it is reasonably clear that the claimant  may 
+not own the copyright in that material, such as a mix tape containing a compilation of 
+well -known sound recordings . The Office also may question derivative claims that 
+appear to be unlawful and that are inseparable or intertwined with an underlying work, 
+such as stage directions for a dramatic work.  
+The Office may register a derivative work, a compilation, or a collective work that 
+contains preexisting copyrightable  material, provided that the author’s contribution to 
+that work can be separated from the preexisting material. For example, an anthology of 
+poetry may be registered as a collective work, even if the author accidentally included 
+one poem that was unauthori zed, because that poem could be severed from the 
+anthology without affecting the lawful aspects of the collective work as a whole. By 
+contrast, the Office may refuse registration if the preexisting material is inseparably 
+intertwined with the compilation o r the derivative work, such as an unauthorized 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  36 01/28/2021  translation  of a novel or an unauthorized arrangement of a song. See H.R.  REP. NO. 
+94-1476,  at 57 -58 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5671.  
+ 313.6(C)  Government Works  
+313.6(C)(1)  U.S. Government Works  
+Copyright protection under the Copyright Act is not available for “any work of the 
+United States Government,” regardless of whether it is published  or unpublished . 17 
+U.S.C. § 105 ; see also  H.R.  REP. NO. 94-1476,  at 58 (1976) , reprinted in  1976 U.S.C.C.A.N. at 
+5672.  
+“[T]he bar  on copyright protection for federal works . . . applies to works created by all 
+federal ‘officer[s] or employee[s],’ without regard for the nature of their position or 
+scope of their authority.” Georgia v. Public.Resource.Org, Inc ., 140 S. Ct. 1498, 1509 -10 
+(2020). This includes works created by the President; Congress ; the federal j udiciary ; 
+federal departments, agenc ies, boards, bureaus, or commissions; or any other officer or 
+employee of the U.S. federal government while acting within the course of his or her 
+official duties. It also includes works prepared by an officer or employee of the 
+government of the District of Columbia, the Commonwealth of Puerto Rico, or the 
+organized territories under the jurisdiction of the federal government.  
+If an applicant  states that the U.S. government or any of its agencies, officers, or 
+employees created the work while acting within the scope of their employment, the 
+registration specialist  may communicate with the applicant and may refuse registration, 
+even if the claimant  is a nongovernmental entity.  
+There are several exceptions to these rules:  
+• Although works prepared by officers or employees of the U.S. government within 
+the scope of their employment are not copyrightable , the federal government may 
+receive and hold “copyrights transferred to it by assignment, bequest, or otherwise.” 
+17 U.S.C. § 105 . For example, a U.S. government agency may register a website 
+created by a government contractor, provided that the contractor did not create the 
+website for the agency as a work made for hire  and provided that the contractor 
+transferred the copyright in that work to that agency.  
+• Works prepared by officers or employees of the U.S. Postal Service, the Corporation 
+for Public Broadcasting, the Public Broadcasting Services, or National Public Radio 
+are not considered works of the U.S. government. See H.R. Rep. No. 94 -1476, at 60 
+(1976),  reprinted in 1976 U.S.C.C.A.N. at 5674 (expressly exempting the U.S. Postal 
+Service).  
+• Works prepared by officers or employees of the Smithsonian Institution are not 
+considered works of the U.S. government if the author -employee was paid from the 
+Smithsonian trust fund.  
+• Literary works prepared for publication  in a scholarly press or journal by civilian 
+faculty members of the National Defense University, United States Military 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  37 01/28/2021  Academy, Army War College, United States Army Command and General Staff 
+College, United States Naval Academy, Naval War College, Naval Post Graduate 
+School, Marine Corps University, United States Air Force Academy, Air University, 
+Defense Language Institute, or United States Coast Guard Academy are not 
+considered U.S. government works.  17 U.S.C. § 105(b), ( c) [sic] . 
+• The U.S. Secretary of Commerce may secure copyright for a limited term not to 
+exceed five years in any standard reference data prepared or disseminated by the 
+National Technical Information Service. See 15 U.S.C. § 290e; H.R. Rep. No. 94 -1476, 
+at 59 -60 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5673.  
+• A work prepared by an officer or employee of the U.S. government may be 
+registered if the work was prepared at that person’s own volition and outside his or 
+her official duties, even if the subject matter focuses on the author’s work for the 
+government. See H.R.  REP. NO. 94-1476 , at 58 (1976) , reprinted in  1976 U.S.C.C.A.N. at 
+5671.  
+313.6(C)(2)  Government Edicts  
+Legislators and judges  “empowered to speak with the force of law cannot be the authors 
+of—and therefore cannot copyright —the works they create in the course of their official 
+duties.”  Georgia v. Public.Resource.Org, Inc ., 140 S. Ct. 1498, 1504 (2020). This is known 
+as the “government edi cts doctrine.” Id. at 1504, 1506.  
+The doctrine is based on the principle “that no one can own the law.” Id. at 1507. It “bars 
+the officials responsible for creating the law from being considered the ‘author[s]’ of 
+whatever work they perform in their capacity’ as lawmakers.” Id. (emphasis in original ; 
+citation omitted ). As a result, any “work that [a] judge or legislator produces in the 
+course of his [or her] judicial or legislative duties is not copyrightable,” regardless of 
+whether it “carries the force of law.” Id. at 1506, 1513.  
+The government edicts  doctrine  “applies to whatever work legislators perform in their 
+capacity as legislators. That of course includes final legislation, but it also includes 
+explanatory and procedural materials legislators create in the discharge of their 
+legislative duties.” Id. at 1508.  
+Likewise, judges “cannot be the ‘author’ of the works they prepare ‘in the discharge of 
+their judicial duties,’” because they “are vested with the authority to make and interpret 
+the law.” Id. at 1507  (citing Banks v. Manchester , 128 U.S. 244, 253 (1888 )). The doctrine 
+applies to binding opinions issued by any federal, state, local, or territorial court. Id. It 
+also applies to any concurrence, dissent, syllabus, headnote, statement of the case, or 
+other “non -binding, explanatory legal materials” a judge may  create “in his [or her] 
+judicial capacity.” Id. at 1504, 1507, 1509, 1511; Banks , 128 U.S. at 253.  
+The U.S. Copyright Office will not register a government edict that has been issued by 
+any federal, state, local, or territorial government, including legislative enactments, 
+judicial decisions, administrative rulings, public ordinances, or similar types of official 
+legal materials. Likewise, the Office will not register a government edict issued by any 
+foreign government or any translation  prepared by a government employee acting 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  38 01/28/2021  within the course of his or her official duties. See Banks , 128 U.S. at 253 (“there has 
+always been a judicial consensus, from the time of the decision in the case of Wheaton v. 
+Peters , 8 Pet. 591, that no copyright could under the statutes passed by Congress, be 
+secured in the products of the labor done by judicial officers in the discharge of their 
+judicial duties”); Howell v. Miller , 91 F. 129, 137 (6th Cir. 1898) (Harlan, J.) (“no one can 
+obtain the exclusive right to publish the laws of a state in a bo ok prepared by him”).  
+There is a limited exception to this rule. Section 104(b)(5)  of the Act states that works 
+first published  by the United Nations or any of its specialized agencies, or first published 
+by the Organization of American States are eligible for copyright protection in the 
+United States. See 17 U.S.C. § 104(b)(5) . 
+The Office may register annotations  or other explanatory materials that summarize or 
+comment upon an edict of government , if they were “prepared by a private party, or a 
+non-lawmaking official” “who lack[s] the authori ty to make or interpret the law ,” and if 
+they contain a sufficient amount of original authorship.  Georgia , 140 S. Ct. at 1507, 1509 , 
+1510; Callaghan v. Myers , 128 U.S. 617, 647 (1888) . 
+Other than works of the United States Government, a  work that does not constitute a 
+government edict may be registered, even if it was prepared by an officer or employee 
+of a state, local, territorial, or foreign government while acting within the course of his 
+or her official duties. For example, the Offi ce may register a tourist magazine written 
+and published by Arizona’s department of tourism or a map created and published by 
+the public transit authority for the city of Detroit. Georgia , 140 S. Ct. at 15 10.  
+ 313.6(D)  Works in the Public Domain  
+Works that are in the public domain  in the United States cannot be registered with the 
+U.S. Copyright Office. A copyrighted work enters the public domain in the United States 
+when “its full copyright term has expired.” Golan v. Holder , 565 U.S. 302, 307 (2012). 
+Works that do not comply with certain statutory formalities may also be in the public 
+domain, such as U.S. works published without a copyright notice  on or before March 1, 
+1989, or U.S. works published or registered on or before December 31, 1963 that were 
+not renewed in a timely manner. Likewise, works that are not copyrightable  are in the 
+public domain, such as works that have not been fixed  in a tangible medium of 
+expression or works that merely contain a de minimis  amount of  authorship.  
+A derivative work , compilation , or collective work  that contains public domain material 
+may be registered, provided that the new work contains a sufficient amount of original 
+authorship. The copyright in such works covers the compilation authorship or the new 
+material that the author contributed to the de rivative work, the compilation, or the 
+collective work, but it “is independent of, and does not affect or enlarge the scope, 
+duration, ownership, or subsistence of, any copyright protection in the [public domain] 
+material.” 17 U.S.C. § 103(b) . 
+ 314 Use of Protected Names, Characters, Slogans, Symbols, Seals,  
+Emblems, and Insignia  
+Occasionally, the U.S. Copyright Office receives works that contain names, characters, 
+slogans, symbols, seals, emblems, or insignia that may be restricted by federal law, such 
+C O M P E N D I U M  O F  T H E  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 300  :  39 01/28/2021  as “Olympic,” “Smokey Bear,” “Woodsy Owl,” “Give a Hoot, Don’t Pollute,” the 4 -H Club 
+Emblem, or the sign of the Red Cross. See, e.g ., 18 U.S.C. §§ 700 -716; 36 U.S.C. § 220506.  
+If the work contains a sufficient amount of original authorship and if the federally 
+protected material has been excluded from the claim , the registration specialist  may 
+register the claim without communicating with the applicant . By contrast, if the 
+specialist is aware that the work contains federally protected material that has not been 
+excluded from the claim, the specialist may notify the applicant that the material 
+appears to be restricted and may ask the applicant whether th at material has been used 
+in a lawful manner.  
+ 315 Obscenity  
+Pornographic works may be registered with the U.S. Copyright Office, provided that they 
+contain a sufficient amount of original authorship.  
+As a general rule, a registration specialist  will not examine a work or authorship to 
+determine whether it contains material that might be considered obscene. See Mitchell 
+Brothers Film Group v. Cinema Adult Theater , 604 F.2d 852, 858 (5th Cir. 1979) 
+(concluding that the 1909 Act protects “all creative works, obscene or non -obscene, that 
+otherwise meet the requirements of the [statute]” and that there is “no explicit or 
+implicit bar to the copyrighting of obscene mat erials”). However, if a work contains 
+material that appears to fall within the scope of the Child Protection Act, the specialist 
+will refer the work to the Associate Register of Copyrights and Directo r of Registration 
+Policy & Practice. If the Associate Register determines that the work clearly falls  within 
+the scope of Title 18, S ections 2251 -2255, and if the Register of Copyrights  concurs, the 
+application, deposit copy(ies),  and any other materials that have been submitted to the 
+Office will be referred to the U.S. Department of Justice. See Operating Guidelines 
+Regarding the Child Protection Act; Public Availability, 52 Fed. Reg. 10,177 (Mar. 30, 
+1987) . 
+ 316 Classified Material  
+If the U.S. Copyright Office is aware that the deposit copy(ies)  contain information that 
+has been classified by the U.S. government, the registration specialist  will refer the work 
+to the Associate Register of Copyrights and Director of Registration Policy & Practice. 
+The material should be held or disposed of in accordance with instructions from the 
+Associate Register, and the examination or other processing of the material by the Office 
+should be suspended until the matter has been resolved.   
+ 

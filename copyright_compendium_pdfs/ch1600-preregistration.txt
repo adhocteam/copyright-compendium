@@ -1,0 +1,708 @@
+ 
+Chapter 1 600  :  1 01/28/2021  C O M P E N D I U M : Chapter 1600  
+Preregistration  
+ 
+1601  What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  3 
+1602  What Is Preregistration?  ................................ ................................ ................................ ................................ .................  3 
+1603  Eligibility Requirements  ................................ ................................ ................................ ................................ .................  4 
+1603.1  Works That Are Eligible for Preregistration  ................................ ................................ ................................ ...........  4 
+1603.2  The Work Must Be Copyrightable  ................................ ................................ ................................ ...............................  6 
+1603.3  A Portion of the Work Must Be Fixed  ................................ ................................ ................................ .........................  6 
+1603.4  The Work Must Be Unpublished  ................................ ................................ ................................ ................................ .. 7 
+1603.5  The Work Must Be Intended for Commercial Distribution  ................................ ................................ ...............  7 
+1604  Preregistration Distinguished from Registration  ................................ ................................ ................................ .. 7 
+1604.1  Preregistration Is a Temporary “Placeholder” for an Actual Registration  ................................ ..................  7 
+1604.2  Uses of Preregistration  ................................ ................................ ................................ ................................ ....................  8 
+1605  Preregistration for a Sound Recording Distinguished from a Preregistration for a Musical 
+Composition  ................................ ................................ ................................ ................................ ................................ .........  9 
+1606  Completing the Application  ................................ ................................ ................................ ................................ ...........  9 
+1606.1 Confidentiality and Privacy Concerns  ................................ ................................ ................................ ........................  9 
+1606.2  Type of Work  ................................ ................................ ................................ ................................ ................................ .... 10 
+1606.3  Title  ................................ ................................ ................................ ................................ ................................ ......................  11 
+1606.4  Author  ................................ ................................ ................................ ................................ ................................ .................  11 
+1606.5  Copyright Claimant  ................................ ................................ ................................ ................................ ........................  12 
+1606.6  Key Dates  ................................ ................................ ................................ ................................ ................................ ...........  12 
+1606.6(A)  Date of Creation  ................................ ................................ ................................ ................................ ...............................  12 
+1606.6 (B) Expected Date of Completion  ................................ ................................ ................................ ................................ ..... 13 
+1606.6(C)  Expected Date of Commercial Distribution  ................................ ................................ ................................ ..........  13 
+1606.7  Description of the Work  ................................ ................................ ................................ ................................ ...............  14 
+1606.7(A)  Motion Pictures  ................................ ................................ ................................ ................................ ...............................  14 
+1606.7(B ) Sound Recordings  ................................ ................................ ................................ ................................ ...........................  14 
+1606.7(C)  Musical Compositions  ................................ ................................ ................................ ................................ ...................  15 
+1606.7(D)  Books  ................................ ................................ ................................ ................................ ................................ ...................  15 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  2 01/28/2021  1606.7(E)  Computer Programs and Videogames  ................................ ................................ ................................ ....................  15 
+1606.7(F)  Photographs  ................................ ................................ ................................ ................................ ................................ ...... 15 
+1606.8  Notification ................................ ................................ ................................ ................................ ................................ ........  16 
+1606.9  Certification  ................................ ................................ ................................ ................................ ................................ ...... 16 
+1606.10  Filing Fee  ................................ ................................ ................................ ................................ ................................ ............  16 
+1607  Examinati on Guidelines  ................................ ................................ ................................ ................................ ...............  17 
+1608  Notification of Preregistration ................................ ................................ ................................ ................................ ... 17 
+1609  Effective Date of Preregistration  ................................ ................................ ................................ ..............................  18 
+1610  Refusals ................................ ................................ ................................ ................................ ................................ ...............  18 
+1611  No Requests for  Reconsideration  ................................ ................................ ................................ .............................  18 
+1612  No Corrections or Cancellations  ................................ ................................ ................................ ...............................  19 
+ 
+ 
+Chapter 1 600  :  3 01/28/2021  C O M P E N D I U M : Chapter 1600  
+Preregistration  
+ 1601  What This Chapter Covers  
+This Chapter provides information on the U.S. Copyright Office’s practices and 
+procedures for preregistration .  
+A pregistration “allows the author of a work vulnerable to predistribution infringe ment 
+to enforce her exclusive rights in court before obtaining [a] registration or refusal” from 
+the Copyright Office. Fourth Estate Public Benefit Corp. v. Wall -Street.com, LLC , 139 S. Ct. 
+881, 889  (2019). This procedure is primarily intended to address s ituations where 
+copyrighted works are “distributed illegally via the Internet BEFORE they are even made 
+available for sale to the public [which] severely undercuts the ability of copyright 
+holders to receive fair and adequate compensation for their works.”  151 CONG. REC. S495 
+(daily ed. Jan. 25, 2005) (statement of Sen. Hatch).  
+For general information on the Office’s practices and procedures for registration, see the 
+following Chapters:  
+• Chapter 200 : An Overview of the Registration Process  
+• Chapter 300 : Copyrightable Authorship: What Can Be Registered  
+• Chapter 400 : Who May File an Application  
+• Chapter 500 : Identifying the Work(s) Covered by the Registration  
+• Chapter 600 : Examination Practices  
+• Chapter 1400 : Applications and Filing Fees  
+• Chapter 1500 : Deposit  
+ 1602  What Is Preregistration?  
+In cases involving the infringement of a United States work, copyright registration is a 
+prerequisite for filing an infringement action a nd for seeking an award of  statutory 
+damages  and attorney’s fees. See 17 U.S.C. §§ 101 , 411(a) , 412. Often, copyright owners 
+do not seek registration until the work has been completed and distributed to t he 
+public, which may limit the remedies that may be available in cases involving 
+“prerelease” infringement. See H.R.  REP. NO. 109-33, pt. 1, at 4 (2005) , reprinted in , 2005 
+U.S.C.C.A.N. 220, 223.  
+To address this concern, Congress created preregistration  — a procedure that allows 
+certain copyright owners to file an action for infringement and seek statutory dama ges 
+and attorney’s fees in cases where the work was infringed before  the copyright owner 
+completed the work and released it to the public. See 17 U.S.C. § 408(f)(1) -(2); see also  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  4 01/28/2021  Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 42,286, 42,286 
+(July 22, 2005) ; Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 
+61,905, 61,905 -06 (Oct. 27, 2005) .  
+ 1603  Eligibility Requirements  
+“If a copyright owner is preparing to distribute a work of a type vulnerable to 
+predistribution infringement . . . the owner may apply for preregistration.” Fourth Estate 
+Public Benefit Corp. , 139 S. Ct. at 885.  
+A work of authorship must satisfy the following criteria to qualify for this option : 
+• The work must be a motion picture ; a sound recording ; a musical composition; a 
+literary work  being prepared for publication  in book form; a computer program ; a 
+videogame ; or a  photograph  that is intended to advertise or market a particular 
+product or service;  
+• The work must be copyrightable ; 
+• The author must have begun to create the work;  
+• The work must be unpublished ; and  
+• The work  must be in the process of being prepared for commercial distribution.  
+37 C.F.R. § 202.16 . A work that satisfies all of these requirements is eligible for 
+preregistration, regardless of whether it is intended to be distributed in a physical or 
+electronic format. See 37 C.F.R. § 202.16(b)(3) ; see also  Preregistration of Certain 
+Unpublished Copyright Claims, 70 Fed. Reg. 42,286, 42,287 (July 22, 2005) ; 
+Preregistration of Certain Unpublished Copyright Claims, 7 0 Fed. Reg. 61,905, 61,905 -06 
+(Oct. 27, 2005) . These requirements are discussed in Sections 1603.1  through 1603.5 . 
+If the work described in the application does not meet these requirements, the Office 
+will reject the application. The Office typically receives fewer than 2,000 applications for 
+preregistration each year (compared with more than half a million applications for 
+registration), and the Office rejects many of these applications because the work i s not 
+eligible for this procedure.  
+ 1603.1  Works That Are Eligible for Preregistration  
+Congress directed the Register of Copyrights  to issue preregistrations  for any work of 
+authorship that falls within a class of works that has had a history of infringement prior 
+to the authorized commercial distribution by the copyright owner. 17 U.S.C. § 408(f)(1) -
+(2). The Office determined that there has been a substantial history of prerelease 
+infringement involving the following classes of works:  
+• Motion pictures . 
+• Sound recordings . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  5 01/28/2021  • Musical compositions.  
+• Literary works  being prepared for publication  in book form.  
+• Computer programs  (including  videogames ). 
+• Advertising or marketing photographs.  
+37 C.F.R. § 202.16(b)(1) . A work of authorship must fall within one or more of these 
+classes to be eligible for preregistration. The Office will refuse an application for 
+preregistration i f the work does not appear to fall within any of these classes.  
+Examples:  
+• The U.S. Copyright Office will accept an application to preregister a 
+motion picture . However, the Office will refuse to  preregister a 
+treatment, screenplay, storyboard, or shooting script for a motion 
+picture because these types of works do not fit within the statutory 
+definition of a “motion picture.” See 17 U.S.C. § 101  (defining motion 
+pictures as “ audiovisual works  consisting of a series of related 
+images which, when shown in succession, impart an impression of 
+motion, together with accompa nying sounds, if any”).  
+• As a general rule, a preregistration for a motion picture covers any 
+sounds that may be embodied in that work ( i.e., the soundtrack). 
+However, the U.S. Copyright Office may question an application that 
+asserts a claim  in both a motion picture and a sound recording , 
+because the soundtrack for a motion picture does not fit within the 
+statutory defi nition of a “sound recording.” See 17 U.S.C. § 101  
+(defining sound recordings as “works that result from the fixation  of 
+a series of musical, spoken, or other sounds, but not including the 
+sounds accompanying a motion picture or other audiovisual 
+work …”).  
+• A work of fiction or nonfiction that is intended to be published in 
+book form ( i.e., hardback books, paperback books, eboo ks, and the 
+like) may be eligible for preregistration, even if the work contains 
+material that would be ineligible for preregistration on its own, such 
+as drawings, illustrations, or other two -dimensional artwork.  
+• A work of fiction or nonfiction that is in tended to be published in 
+book form may be eligible for preregistration, even if the work will 
+be published exclusively online. However, the U.S. Copyright Office 
+will not accept an application to preregister a  website , because 
+websites are not published i n “book form.”  
+• A personal journal or a daily diary would be considered a literary 
+work , but these types of works are not eligible for preregistration, 
+because in most cases, they are not intended  to be published, nor 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  6 01/28/2021  are they intended for commercial distribution. See Sections 1603.4  
+and 1603.5 . 
+• The U.S. Copyright Office will accept an application to preregister a 
+computer program  that is intended for commercial distribution. 
+However, the Office will refuse to preregister a claim in the HTML 
+code for a  website , because HTML code is a markup language rather 
+than a computer programming lang uage, and thus coding in HTML 
+generally does not result in a computer program.  
+• A photograph that is intended to advertise or market a particular 
+product or service may be eligible for preregistration, but a family 
+portrait or a photograph taken on a person al vacation would not.  
+• A photograph of a famous celebrity caught in an embarrassing 
+situation would not be eligible for preregistration, because this type 
+of work does not advertise or market a particular product or 
+service.  
+For a definition and general di scussion of the types of works that are eligible for 
+preregistration, see Chapters 700 , 800, and 900 . 
+See generally Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 
+42,286, 42,288 (July 22, 2005) ; Preregistration of Certain Unpublished Copyright 
+Claims, 70 Fed. Reg. 61,905, 61,906 (Oct. 27, 2005) . 
+ 1603.2  The Work Must Be Copyrightable  
+The U.S. Copyright Office will not entertain an a pplication for preregistration  unless the 
+work constitutes copyrightable  subject matter under Section 102(a)  of the Copyright 
+Act. 37 C.F.R. § 202.16(c)(2) . 
+ 1603.3  A Portion of the Work Must Be Fixed  
+Copyright law protects “original works of authorship fixed  in a tangible medium of 
+expression” but it does not extend to “any idea, procedure, process, system, method of 
+operation, concept, principle, or d iscovery. ” 17 U.S.C. § 102(a) , (b). A work of authorship 
+is not eligible for preregistration  unless the author began to crea te the work on or 
+before the date that the application is submitted to the U.S. Copyright Office, and unless 
+at least a portion of the work has been fixed in a tangible medium of expression as of 
+that date. See 37 C.F.R. § 202.16(b)(2)(ii) . The amount of material needed to satisfy this 
+requirement varies depending upon the nature of the work:  
+• If the work is a motion picture , the filming of the work must have commenced.  
+• If the work is a sound recording , the recording of the sounds must have begun.  
+• In the case of a musical composition, at least some of the work must have  been fixed 
+either in the form of musical notation or in a copy or phonorecord embodying a 
+performance of some or all of the work.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  7 01/28/2021  • In the case of a literary work being prepared for publication  in book form, the actual 
+writing of the text of the book must be underway.  
+• For a computer program , at least some portion of the source code  or object code  
+must have been fixed.  
+• For an advertising or marketing photograph, the photograph must have been taken. 
+In the case of a group of photographs intended for simultaneous publicat ion, at least 
+one of the photographs in the group must have been taken.  
+37 C.F.R. § 202.16(b)(2)(ii)(A) -(F). Although a portion of the work must be fixed in a 
+tangible medium of expressi on in order to seek preregistration, the applicant  should not 
+submit a copy or phonorecord of the work or any portion of the work with the 
+application for preregistration. For a discussion of thi s issue, see Section 1606.7 . 
+ 1603.4  The Work Must Be Unpublished  
+Preregistration  protects unpublished  works that are being prepared for commercial 
+distribution. See 17 U.S.C. § 408(f)(1) . Therefore, the U.S. Copyrigh t Office will not 
+entertain an application for preregistration unless the work is unpublished as of the 
+date that the application is submitted. The Copyright Act defines publication  as “the 
+distr ibution of copies or phonorecords of a work to the public by sale or other transfer 
+of ownership, or by rental, lease, or lending.” 17 U.S.C. § 101 . In addition, “offering to 
+distribute  copies or phonorecords to a group of persons for purposes of further 
+distribution, public performance, or public display, constitutes publication.” For 
+example, a sound recording  is considered p ublished if it has been offered to a group of 
+disc jockeys for purposes of public air play, and a motion picture  is considered 
+published if it has been delivered to a number of distributors for p urposes of theatrical 
+exhibition. See Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 
+42,286, 42,287 (July 22, 2005) . 
+ 1603.5  The Work Must Be Intended for Commercial Distribution  
+To be eligible for preregistration , the work of authorship must be in the process of being 
+prepared for commercial distribution. See 17 U.S.C. § 408(f)(1) ; 37 C.F.R. § 
+202.16(b)(2)(ii) . To satisfy this requirement, the applicant  must certify that the work is 
+being prepared for commercial distribution and that there is a reasonable expectation 
+that the work will be commercially distributed to the public. See 37 C.F.R. § 
+202.16(b)(2)(i) .  
+ 1604  Preregistration Distinguished from Registration  
+ 1604.1  Preregistration Is a Temporary “Placeholder” for an Actual Registration  
+A preregistration  is merely a placeholder for or a prelude to an actual registration. 
+Specifically, a preregistration allows a copyright owner to institute an infringement 
+action “before the Register has granted or refused registration” if: (i) the work has been 
+preregistered prior to publication , and (ii) the work is registered within three months 
+after its first publication. Fourth Estate Public Benefit Corp ., 139 S. Ct. at 892 . However, if 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  8 01/28/2021  an in fringement occurred within two months after the first publication of the work, the 
+application, deposit, and filing fee must be received in proper form within one month 
+after the copyright owner learned of the infringement or within three months after the 
+first publication of the work  (whichever is earlier) . See 17 U.S.C. §§ 408(f)(3) , 411(a) , 
+412. 
+If a preregistered work is not registered within the prescribed time period, a district 
+court must dismiss any action involving an infringement that occurred before or within 
+two months after the first pu blication of that work. See 17 U.S.C. § 408(f)(4) . If the 
+infringement began more than two months after the first publication of a preregistered 
+work, this rule does not apply. In other  words, the failure to register a preregistered 
+work before the deadline specified in Sections 408(f)(4)(A)  and (B) of the Copyright Act 
+will not prevent a copyright owner from registering that work and pursuing an 
+infringement action, provided that the infringement occurred more than two months 
+after the first publication of that work. See generally Preregistration of Certain 
+Unpublished Copyright Claims, 70 Fed. Reg. 42,286, 42,286 -87, 42,290 (July 22, 2005) ; 
+Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 61,905, 61,905 
+(Oct. 27, 2005) . 
+ 1604.2  Uses of Preregistration  
+A preregistration  is not a registration. Nor is it a substitute for a registration. It “serves 
+only as a preliminary step prior to a full registration.” Fourth Estate Public Benefit Corp .  
+139 S. Ct. at 888 (internal quotation omitted) . 
+As discussed in Section 1604.1 , preregistration allows certain copyright owners to 
+satisfy the requirements of Sections 411(a)  and 412  of the Copyright Act by notifying 
+the U.S. Copyright Office that the work is being prepared for commercial distribution. 
+Copyright owners may benefit from this procedure if they have started to create a work 
+of authorship that has not yet been completed, and if it is likely that a third party may 
+infringe that work before it has been released to the public. But to preserve the benefits 
+of this procedure, the copyright owner must seek an actual registration for  the work 
+promptly after it has been published or infringed.  See id. at 888. 
+There are certain features that preregistration does not possess. Unlike a registration, a 
+preregistration does not constitute prima facie  evidence of the validity of the copyrigh t 
+or the facts stated in the application for preregistration or in the notification of 
+preregistration. Moreover, the fact that a work has been preregistered does not create 
+any presumption that the Office will register the work if the applicant  subsequently 
+submits an application for registration. 37 C.F.R. § 202.16(c)(13) ; see also 
+Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 42,286, 42,286, 
+42,289 -90 (July 22, 2005) . 
+Preregistration is neither a prerequisite nor a precondition f or copyright owners who 
+wish to register their works with the Office. In other words, an original work of 
+authorship may be registered regardless of whether that work has been preregistered 
+or not.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  9 01/28/2021  If an applicant submits an application to register a work that has been preregistered, the 
+application may or may not be assigned to the same registration specialist  who 
+examined the application for preregistration. However, the specialist will not comp are 
+the information provided in the application for registration with the preregistration 
+record to determine whether it is consistent with the information provided in the 
+application for preregistration.  
+ 1605  Preregistration for a Sound Recording Disting uished from a Preregistration 
+for a Musical Composition  
+As a general rule, a preregistration  for a motion picture  extends to any sound s that may 
+accompany that work, because a soundtrack falls within the statutory definition of a 
+“motion picture.” See 17 U.S.C. § 101  (stating that: “‘Motion pictures’ are au diovisual 
+works” and that “‘ Audiovisual works’ are works that consist of a series of related images 
+which are intrinsically intended to be shown by the use of machines or devices such as 
+projectors, viewers, or electronic equipment, together with accompanying sounds,  if 
+any”). A preregistration for a sound recording does not, in and of itself, constitute a 
+preregistration of the musical works that may be embodied in that recording. See H.R.  
+REP. NO. 109-33, pt. 1, at 5 (2005) , reprinted in  2005 U.S.C.C.A.N. 220, 224. However, a 
+claimant  that owns the copyright in both a sound recording and a musical work 
+embodied within tha t recording may preregister both the sound recording and the 
+musical work with the same application. See Preregistration of Certain Unpublished 
+Copyright Claims, 70 Fed. Reg . 42,286, 42,288, 42,290 (July 22, 2005) . 
+ 1606  Completing the Application  
+To preregister a work, the applicant  must submit an application through the U.S. 
+Copyright Office’s electronic preregist ration system. (The Office will not accept a paper 
+application for preregistration.) To access this system, the applicant should go to the 
+following link on the Office’s website ( www.copyright.gov/prereg/ ), then click the 
+“Continue” button which appears next to the phrase “Start the preregistration process 
+(Electronic Form PRE).”  
+In the application, the applicant must provide certain information about the work of 
+authorship, such as the date the author st arted to create the work and the date the work is 
+expected to be completed. These requirements are discussed in Sections 1606.2  through 
+1606.10 . The information provided in the application should be base d on the information 
+available at the time the application is submitted to the Office.  
+See 37 C.F.R. § 202.16(c)(3) ; see also  Preregistration of Certain Unpublished Copyright 
+Claims, 70 Fed. Reg. 42,286, 42,289, 42,290 (July 22, 2005) ; Preregistration of Certain 
+Unpublished Copyright Claims, 70 Fed. Reg. 61,905, 61,906 (Oct. 27, 2005) . 
+ 1606.1  Confidentiality and Privacy Concerns  
+Section 705  of the Copyright Act requires the Register of Copyrights  to prepare and 
+maintain “ records of deposits , registrations, recordations , and other actions” taken by 
+the U.S. Copyright Office, and states that these records “shall be open to public 
+inspection.” 17 U.S.C. §  705(a) , (b). 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  10 01/28/2021  Any information that the applicant  provides in an application for preregis tration  will 
+appear in the preregistration record for that work. The preregistration record will be 
+available to the public upon request, and the U.S. Copyright Office will post the 
+information that appears in the notification of preregistration in the online rec ord for 
+the work, which will be available to the public through the Office’s website. Because 
+these records are open to the public, an applicant should not provide information on the 
+application if the author, claimant , and/or applicant do not wish to make that 
+information public, including confidential information or personally identifiable 
+information. See Preregistration of Cer tain Unpublished Copyright Claims, 70 Fed. Reg. 
+61,905, 61,906 (Oct. 27, 2005) . 
+ 1606.2  Type of Work  
+As discussed in Section 1603.1 , there are six classes of works that are eligible for 
+preregistration . The applicant  should select the type of work that is most appropriate 
+for the work that the applicant intends to preregister. Specifically, the applicant should 
+check one or more of the boxes that appear on the Types of Work screen, depending on 
+whether the work is a musical composition, a sound recording , a literary work intended 
+to be published in book  form, a computer program , a videogame , a motion picture,  or an 
+advertising or marketing photograph.  
+The applicant may preregister two or more works with one application if the works are 
+owned by the same claimant  and if the works will be published on the same date in the 
+same unit  of publication . In this situation, the applicant should check the boxes that 
+describe each work that the applicant intends to preregister. However, if the applicant 
+intends to preregister two or more works t hat will be distributed on different dates, the 
+applicant must submit a separate application for each work. See 37 C.F.R. § 202.16(c)(4) ; 
+see also Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 42,286, 
+42,290 (July 22, 2005) . 
+Examples:  
+• River Rock Records  commissioned  twelve musical compositions 
+that have been embodied in a number of sound recording s. River 
+Rock owns the copyright in both the musical compositions and the 
+sound recordings. All of these works will be published for the first 
+time on the same compact disc.  The applicant may preregister these 
+works together by checking the boxes marked “Sound Recording” 
+and “Musical Composition.”  
+• Disco Fever Publishing owns a music video and a sound recording  
+that has been remixed from a previously published recording. The 
+music video and the remixed sound recording will be published for 
+the first time as a set consisting of a DVD and a super audio compact 
+disc. The applicant may preregister both of these works by c hecking 
+the boxes marked “Sound Recording” and “Motion Picture.”  
+• Lean Machine LLC is developing a new videogame. The packaging 
+for this videogame will feature several photographs that are 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  11 01/28/2021  intended to market the product. The applicant may preregister both 
+the videogame and the photographs by checking the boxes marked 
+“Computer Program (may include videogame)” and “Advertising or 
+Marketing Photograph.”  
+• Tween Publishing is preparing three novels that will feature the 
+same recurring characters. All three novels  may be preregistered 
+with the same application and filing fee if the entire series is 
+expected to be published in the same unit of publication  on the 
+same day. If each novel is expected to be p ublished on a different 
+date, a separate application and filing fee would be required for 
+each work.  
+• Scintillating Studio is developing a pilot for a new television 
+program and the network has ordered twelve additional episodes. 
+The applicant should submi t a separate application for the pilot and 
+each additional episode in the series, because each episode will be 
+released on a different date.  
+ 1606.3  Title  
+The applicant  should provide the current  title of the work in the box that appears on the 
+Title screen. The U.S. Copyright Office will accept a “working title,” even if it is not 
+expected to be the title of the work when it is distributed to the public. See 
+Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 61,905, 61,906 
+(Oct. 27, 2005) . 
+If the work is a musical composition or sound recording  that wi ll be published in an 
+album, the applicant should provide the title of the album on the Title screen. The titles 
+of the individual songs and/or tracks (if they are known) should be provided on the 
+Additional Title(s) screen.  
+ 1606.4  Author  
+The applicant  should provide the full name of the author or authors of the work on the 
+Authors screen. For the purposes of preregistration , the autho r is the person or 
+organization who is expected to be named as the author when (and if) the applicant 
+submits an application to register the work.  
+As a general rule, the author  is the person (or persons) who actually created the 
+material covered by the cop yright claim . See Community for Creative Non -Violence v. 
+Reid , 490 U.S. 730 (1989) (“[T]he author is the party who actually creates the work, that 
+is, the person who translates an idea into a fixed , tangible expression entitled to 
+copyright protection.”). However, there is an exception to this rule. If the work 
+described in the application for preregistration is a work made for hire , the person who 
+created that work is not necessarily the author. Instead, the employer or other person 
+for whom the work was prepared is considered the author if:  
+• The work was cr eated by an employee acting within the scope of his or her 
+employment, or  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  12 01/28/2021  • The work was specially ordered or  commissioned  as a work made for hire and fits 
+within one of the nine categories of works listed in the statutory definition.  
+17 U.S.C. § 101  (definition of “work made for hire”). For a general discussion of Works 
+Made for Hire, see Chapter 500 , Section 506.  
+If the work is expected to be published as a pseudonymous  work, the applicant may 
+provide the author’s real name or the author’s pseudonym (or both) . A work is considered 
+to be a pseudonymou s work if the author will be identified on copies  or phonorecords  of 
+the work under a fictitious name and the author’s real name will not appear anywhere on 
+the copies or phonorecords. If the author’s real name is expected to appear anywhere on 
+the copies or phonorecords, the work is not considered a pseudonymous work, even if the 
+author does not wish to reveal his or her identity in the  preregistration record  and even if 
+the author is generally known by his or her pseudonym. In this situation the author’s real 
+name should be provided in the application. For a detailed discussion of pseudonymous 
+works, see Chapter 600 , Section 615.2.  
+ 1606.5  Copyright Claimant  
+The applicant should provide the full legal name and address of the copyright claimant  
+on the Claimants  screen. For the purposes of preregistration , the claimant is the person 
+or organization who is expected to be named as a claimant when (and if) the applicant 
+submits an application to register the work.  
+For purposes of registration, the claimant is either the author of the work or a person or 
+organization that has obtained ownership of all rights under the copyright that i nitially 
+belonged to the author. 37 C.F.R. § 202.3(a)(3) . No other person or organization is 
+entitled to be named as a claimant in an application for copyright registration.  
+If the autho r is not the same person or organization as the claimant, the applicant need 
+not provide a transfer statement  explaining how the claimant obtained ownership of all 
+rights under the copyright that  initially belonged to the author (although this 
+information is required in an application for registration).  
+For a detailed discussion of claimants and transfers , see Chapter 600 , Sections 619 
+and 620.  
+ 1606.6  Key Dates  
+The applicant  should identify the date that the author started to create the work, the 
+date that the work is expected to be completed, and the date that the commercial 
+distribution of the work is expec ted to begin. This information should be provided in the 
+boxes that appear on the Key Dates screen.  
+ 1606.6(A)  Date of Creation  
+The applicant  should identify the date that the author started to c reate the work. 
+Specifically, the applicant should provide the month and year that the work was first 
+fixed  in a tangible medium of expression. Identifying the specific day that the first 
+fixation  occurred is encouraged, but not required. If the applicant cannot identify the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  13 01/28/2021  exact date of  creation , the applicant should provide a good faith estimate and check the 
+box marked “Approximate.”  
+The criteria for establishing the date of creation vary depending upon the nature of 
+the work:  
+• If the work is a motion picture , the date of creation is the date that filming began.  
+• If the work i s a sound recording , the date of creation is the date that recording 
+sessions began.  
+• If the work is a musical composition, the date of creation is the date that the author 
+began to write down or record the music and/or lyrics.  
+• If the work is a literary work  that is expected to be published in book form, the date 
+of creation is the date that the actual writing of the text of the book bega n. 
+• If the work is a computer program , the date of creation is the date that the author 
+began to write the code for the program.  
+• If the work is a videogame , the date of creation is the date that t he author began to 
+fix the visual aspects of the work.  
+• If the work is an advertising or marketing photograph, the date of creation is the 
+date that the photograph was taken. If the applicant intends to preregister a group 
+of photographs that are intended t o be published together, the date of creation is the 
+date that the author took the first photograph that will be included within the group.  
+ 1606.6(B)  Expected Date of Completion  
+The applicant  should identify the date that the work is expected to be completed. 
+Specifically, the applicant should provide the month and year that the work is expected 
+to be fixed  in the final form that is int ended for commercial distribution. Identifying the 
+specific day that the work is expected to be finished is encouraged, but not required. If 
+the applicant cannot identify the expected date of completion, the applicant should 
+provide a good faith estimate a nd check the box marked “Approximate.”  
+If the work is substantially finished except for the final editing, the applicant should 
+provide the month and year that the final editing is expected to be complete. In the case 
+of a motion picture , the applicant may provide the date when principal photography is 
+expected to be completed.  
+ 1606.6(C)  Expected Date of Commercial Distribution  
+The appl icant  should identify the date that the commercial distribution of the work is 
+expected to begin. Specifically, the applicant should provide the year that copies  or 
+phonorecords  of the work in its complete and finished form are expected to be 
+distributed to the public. Identifying the month and day that copies or phonorecords of 
+the work are expected to be dis tributed is encouraged, but not required. When an 
+application for preregistration  is submitted at an early stage of the creative process, the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  14 01/28/2021  anticipated release date is at best a prediction, rat her than a binding commitment. See 
+Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 61,905, 61,906 
+(Oct. 27, 2005) . Therefore, if the applicant cannot identify the exp ected date of 
+commercial distribution, the applicant should provide a good faith estimate and check 
+the box marked “Approximate.”  
+As discussed in Section 1603.4 , the work must be unpublished  as of the date that the 
+application is submitted. An application will be questioned if the date of expected 
+commercial distribution is the same as the date that the application is received in the 
+U.S. Copyright Office, but an applica tion received the day before the expected date of 
+commercial distribution will be accepted.  
+ 1606.7  Description of the Work  
+The applicant  should not submit a copy or phonorecord of the work or an y portion of 
+the work with the application for preregistration . Instead, the applicant should provide 
+a detailed description that reasonably identifies the work.  
+The description should be based on the information available at the time the application 
+is submitted, and it should contain no more than 2,000 characters (including spaces and 
+punctuation marks). At a minimum, the description should be sufficiently detailed and 
+specific to satisfy a cou rt in a copyright infringement action that the allegedly infringed 
+work is, in fact, the work described in the application for preregistration. Merely reciting 
+the title of the work or the type of work ( e.g., “motion picture ” or “ sound recording ”) is 
+not sufficient.  
+Because the description will be made available to the public through the U.S. Copyright 
+Office’s website, the applicant sho uld not include any portion of the work in that 
+description, such as the lyrics for a song or the lines of code for a computer program . 
+The specific requirements for describing a motion picture, sound recording, musical 
+composition, book, computer program,  videogame , or advertising or marketing 
+photograph , are discussed in Sections 1606.7(A)  through 1606.7(F) . 
+See 37 C.F.R. § 202.16(c)(6) ; see also  Preregistration of Certain Unpublished Copyright 
+Claims, 70 Fed. Reg. 42,286, 42,289, 42,290 (July 22, 2005) . 
+ 1606.7(A)  Motion Pictures  
+In the case of a motion picture , the description should include: the subject matter of the 
+work; a summary or outline of the plot; the names of the director and the primary 
+actors; the principal location of filming; and any other information that would assist in 
+identifying the work bei ng preregistered. 37 C.F.R. § 202.16(c)(6)(i) . 
+ 1606.7(B)  Sound Recordings  
+In the case of a sound recording , the description should include: the subject matter of 
+the work(s) recorded; the genre of the work(s) recorded ( e.g., classical, pop, musical 
+comedy, soft rock, heavy metal, gospel,  rap, hip -hop, blues, jazz); the title(s) and 
+composer(s) of any musical compositions embodied in the sound recording; the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  15 01/28/2021  name(s) of the performer or performing group(s) featured in the recording; the 
+principal location of the recording; and any other inf ormation that would assist in 
+identifying the work being preregistered, such as the name of the record label that is 
+expected to distribute the work. 37 C.F.R. § 202.16(c)(6)(ii) . 
+ 1606. 7(C) Musical Compositions  
+In the case of a musical composition, the description should include: the subject matter 
+of the lyrics (if any); the genre of the work ( e.g., classical, pop, musical comedy, soft rock, 
+heavy metal, gospel, rap, hip -hop, blues, jaz z); and any other information that would 
+assist in identifying the work being preregistered. In particular, if the musical 
+composition will be included in a sound recording  or a motion picture  that is being 
+prepared for commercial distribution, the description should include the name of the 
+performer(s) featured in the recording, the name of the record label or motion picture 
+that is exp ected to distribute the work, and the principal location of the recording. 37 
+C.F.R. § 202.16(c)(6)(iii) . 
+ 1606.7(D)  Books  
+In the case of a literary work being prepared for publication  in book form, the 
+description should include: the genre of the book ( e.g., biography, novel, history) and a 
+brief summary of the work, including the subject matter ( e.g., a biography of President  
+George W. Bush, a history of the war in Iraq, a fantasy novel); a description of the plot, 
+primary characters, events, or other key elements of the content of the work (if known); 
+and any other information that would assist in identifying the work being p reregistered, 
+such as whether it is a later edition or revision of a previous work. 37 C.F.R. § 
+202.16(c)(6)(iv) . 
+ 1606.7(E)  Computer Programs and Videogames  
+In the case of a computer program , the description should include: the nature, purpose, 
+and function of the program; the programming language that the author used to write 
+the program; whether the program has been created w ith any particular organization or 
+structure; the form in which the program is expected to be published ( e.g., as an online -
+only product); and the identities of the person(s) involved in the  creation  of the 
+program. In addition, the description should indi cate whether there are previous 
+versions of the program, and if so, the description should identify those versions.  
+If the work is a  videogame , the description should include the foregoing information, 
+along with the subject matter of the game ; the overall  object, goal, or purpose of the 
+game; the name(s) of the character(s) in the game (if any) ; and the general setting and 
+surrounding depicted in the game.  
+37 C.F.R. § 202.16(c)(6)(v) . 
+ 1606.7(F)  Photographs  
+In the case of advertising or marketing photographs, the description should include the 
+subject matter depicted in the photographs, including the particular product, event, 
+public figure, or other item or occurrence which the photograp h is intended to advertise 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  16 01/28/2021  or market. To the extent possible and applicable, the description should provide 
+additional information that will assist in  identifying the work, such as:  the party for 
+whom the photographs were taken; the approximate time period  when the photographs 
+were taken; the approximate number of photographs that may be included in the group; 
+any events associated with the photograph ( e.g., New York Fashion Week Fall 2011; 
+North American International Auto Show 2012; Baselworld 2013); and the location and 
+physical setting or surroundings depicted in the photographs. In addition, the applicant  
+may provide a general description of the photograph ( e.g., lighting, background scenery, 
+positioning of the subject matter depicted in the photograph) and any locations and 
+events (if applicable) associated with the photographs ( e.g., Super Bowl XXXIX). 37 C.F.R. 
+§ 202.16(c)(6)(vi) . 
+ 1606.8  Notification  
+On the Notification &  Certification  screen the applicant  should provide the  email 
+address to which the notification of preregistration  should be sent.  
+ 1606.9  Certification  
+On the Notification & Certification screen the applicant  will be asked to certify the 
+application. Specifically, the applicant should provide the first and last name of the 
+individual who is certifying the application and should check the box labeled “I agree.” 
+By checking this box, the appl icant certifies that he or she is the author, the copyright 
+claimant , the owner of one or more exclusive rights  of the work described in the 
+application, or the authorized agent  of the author, copyright  claimant , or owner of 
+exclusive rights. In addition, the applicant certifies that the work is being prepared for 
+commercial di stribution, that he or she has a reasonable expectation that the work will 
+be commercially distributed to the public, and that the information given in the 
+application is correct to the best of his or her knowledge. 37 C.F.R. § 202.16(c)(8) ; see 
+also  Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 61,905, 
+61,906 (Oct. 27, 2005) . 
+Certifications  are an important part of the preregistration  procedure. The following acts 
+constitute a crime that is punishable pursuant to Title 18, Secti on 1001 of the U.S. Code: 
+knowingly and willfully falsifying, concealing, or covering -up a material fact; making any 
+materially false, fictitious, or fraudulent statement or representation; or making or using 
+any false writing or document knowing that it c ontains any materially false, fictitious, or 
+fraudulent statement or entry in an application for preregistration.  
+ 1606.10  Filing Fee  
+The current filing fee  for an application for preregistration  is set forth in the U.S. 
+Copyright Office’s fee schedule  under the heading “Preregistration of certain 
+unpublished works .” For information concerning the methods for paying this filing fee, 
+see Chapter 1400 , Sections 1403.4 and 1403.5.  
+The Office will not refund the filing fee under any c ircumstances. Nor will the Office 
+credit the fee toward the filing fee for an application for a basic registration, even if the 
+applicant  intended to submit an application for registration but su bmitted an 
+application for preregistration by mistake. See 37 C.F.R. § 202.16(c)(5).  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  17 01/28/2021   1607  Examination Guidelines  
+Because a preregistration  does not constitute prima facie  evidence of the validity of the 
+copyright or the facts stated in the notification of preregistration, the registration 
+specialist  conducts only a li mited review of an application for preregistration. 
+Specifically, the specialist will ascertain whether the work described in the application 
+falls within one of the classes of works that have had a history of infringement prior to 
+authorized commercial re lease (as determined by the Register of Copyrights ) and 
+whether the applicant  provided all of the necessary information specified in t he 
+application.  
+As a general rule, the registration specialist will not pass judgment on the adequacy of 
+the written description of the work. However, the description is an important part of the 
+preregistration  record , and it is important to recognize that  this record cannot be 
+corrected, amended, or supplemented once the U.S. Copyright Office has issued a 
+notification of preregistration. See Section 1612 . In an action for infringement of a 
+preregistered work, the court may evaluate  the written description to determine 
+whether it actually describes the work that allegedly has been infringed, taking into 
+account the information available when the application was submitted and taking into 
+account the applicant’s legitimate interest in protecting confidential information 
+concerning the work.  
+See 37 C.F.R. § 202.16(c)(6) -(7); see also  Preregistration of  Certain Unpublished 
+Copyright Claims, 70 Fed. Reg. 42,286, 42,289 -90 (July 22, 2005) . 
+ 1608  Notification of Preregistration  
+If the application for preregistration  has been approved, the U.S. Co pyright Office will 
+issue a notification of preregistration to the person or organization named in the 
+application as the correspondent. The Office will send the notification to the email 
+address that the applicant  provided on the Notification &  Certification  section of the 
+application.  
+The notification will include the preregistration number that has been assigned to the 
+claim  and the effective date of the preregistration. Preregistration numbers are not 
+based on the nature of the work ( i.e., a number beginning with the letters VA for a work 
+of the visual arts or a number beginning with the letters PA for a work of the performing 
+arts). Instead, they are numbered consecutively beginning with the prefix PRE, 
+regardless of whether  the work in question is a motion picture , a sound recording , a 
+musical composition, a book, a computer program , a videogame , or an advertising or 
+marketing photograph.  
+The notification of preregistration will remind the correspondent that the work should 
+be registered in a timely manner to secure the full benefit of the preregistration, and 
+that the preregistration number should be included in the application for a basic 
+registration to ensure that the  records for the preregistration and the basic registration 
+will be cross -referenced with e ach other.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  18 01/28/2021  The notification of preregistration is the only  notice that the Office will provide to the 
+applicant or the claimant  indicating that a preregistration has been made. The Office 
+does no t issue paper certificates for preregistrations.  
+The Office will make the preregistration record available to the public through its Public 
+Catalog . This database is available through the Office ’s website . Additionally, the 
+Records, Research, and Certification Section will issue a certified copy of the notification 
+of preregistration upon written request. For more information, see Chapter 2400 , 
+Section 2407.  
+See 37 C.F.R. § 202.16(c)(10) -(12);  see also  Preregistration of Certain Unpublished 
+Copyright Claims, 70 Fed. Reg. 42,286, 42,290 (July 22, 2005) ; Preregistration of Certain 
+Unpublished Copyright Claims, 70 Fed. Reg. 61,90 5, 61,906 (Oct. 27, 2005) . 
+ 1609  Effective Date of Preregistration  
+The effective date of a preregistration  is the day on which the U.S. Copyright Office 
+receives the filing fee  and application for preregistration, which are later determined by 
+the U.S. Copyright Office or a court of competent jurisdiction to be acceptable for 
+preregistration. 37 C.F.R. § 202.16(c)(9).  
+“Once ‘preregistration . . . has been made,’ the copyright claimant may institute a suit for 
+infringement.” Fourth Estate Public Benefit Corp ., 139 S. Ct. at 888 (quoting 17 U.S.C. § 
+411(a)). But as d iscussed in Section 1604.1 , “[a]n infringement suit brought in reliance 
+on preregistration risks dismissal unless the copyright owner applies for registration 
+promptly after the preregistered work’s publication  or infringement.” Id.  
+ 1610  Refusals  
+If the registration specialist  determines that the work described in the application does 
+not constitute copyrightable  subject matter, that the work is not eligible for 
+preregistration , or that the claim  is invali d for any other reason, he or she will refuse to 
+preregister the claim. The specialist will notify the applicant  in writing of the refusal and 
+will specify the reasons for his or her decision.  
+ 1611 No Requests for Reconsideration  
+A refusal to preregister is not subject to administrative review. If an application for 
+preregistration is refused, the U.S. Copyright Office will not entertain a request for 
+reconsideration . See 37 C.F.R. § 202.5(a)  (stating that administrative review is only 
+available in cases involving a refusal to register a claim to copyright, a mask work , or a 
+vessel design ). If the applicant disagrees with the registration specialist’s  decision, the 
+applicant must submit a new application that addresses the issues identified in the 
+refusal to prereg ister. If the new application is determined to be acceptable for 
+preregis tration, the effective date of p reregistration will be the day on which the new 
+application and the new filing fee  were re ceived in the U.S. Copyright Office. See Section 
+1609 . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 1 600  :  19 01/28/2021   1612  No Corrections or Cancellations  
+The U.S. Copyright Office conducts only a limited review of an application for 
+preregistration , because a preregistration does not constitute prima facie  evidence of 
+the validity of the copyright or the facts stated in the notification of preregistration. 
+Consequently, a preregistration will not be cancelled, corrected, supplemente d, or 
+amended once it has been entered in the public record . For example, the Office will not 
+expunge a preregistration from its records if the applicant  incorrectly described the 
+work or made other errors in the application. Nor will the Office accept an application 
+for a supplementary registration  to correct or amplify the i nformation in the 
+preregistration record. See Chapter 1800 , Section 1802.4 . 
+To correct a preregistration record, the applicant may submit another application 
+containing the co rrected or omitted information. The new effective date of 
+preregistration is the day on which the Office receives the new filing fee  and the new 
+application, which are later determined by the U.S . Copyright Office or a court of 
+competent jurisdiction to be acceptable for preregistration. See Section 1609 .  
+If the work has been completed, the applicant may submit an application for a basic 
+registration that contains the cor rect or missing information, instead of submitting a 
+new application for a new preregistration.  
+See generally  Preregistration of Certain Unpublished Copyright Claims, 70 Fed. Reg. 
+42,286, 42,290 (July 22, 2005).  
+ 

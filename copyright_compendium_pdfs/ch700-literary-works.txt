@@ -1,0 +1,2432 @@
+ 
+Chapter 7 00  :  1 01/28/2021  C O M P E N D I U M : Chapter 700  
+Literary Works  
+  
+701 What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  4 
+702 The Literary Division ................................ ................................ ................................ ................................ ........................  4 
+703 What  Is a Literary Work?  ................................ ................................ ................................ ................................ ................  4 
+704 Literary Works Distinguished from Works of the Performing Arts  ................................ ...............................  5 
+705 Fixation of Literary Works  ................................ ................................ ................................ ................................ .............  6 
+706 Copyrightable Authorship in Literary Works  ................................ ................................ ................................ .........  6 
+707 Uncopyrightable Material  ................................ ................................ ................................ ................................ ...............  6 
+707.1  Numbers  ................................ ................................ ................................ ................................ ................................ ................  8 
+707.2  Research  ................................ ................................ ................................ ................................ ................................ ................  9 
+707.3  Book Design  ................................ ................................ ................................ ................................ ................................ .........  9 
+708 Joint Works ................................ ................................ ................................ ................................ ................................ ........  10 
+709 Derivative Literary Works ................................ ................................ ................................ ................................ ...........  10 
+709.1  Translations  ................................ ................................ ................................ ................................ ................................ ...... 11 
+709.2  Fictionalizations  ................................ ................................ ................................ ................................ ..............................  12 
+709.3  Abridgements  ................................ ................................ ................................ ................................ ................................ ... 13 
+709.4  Editorial Revisions, Annotations, Elaborations, or Other Modifications  ................................ ...................  13 
+710 Compilations  ................................ ................................ ................................ ................................ ................................ ..... 15 
+711 Collective W orks and Contributions to Collective Works  ................................ ................................ ...............  16 
+712 Monographs and Serials  ................................ ................................ ................................ ................................ ...............  17 
+712.1  What Is a Literary Monograph?  ................................ ................................ ................................ ................................ . 17 
+712.1(A)  Copyrightable Authorship in Literary Monographs  ................................ ................................ ..........................  18 
+712.1(B)  Application Tips for Registering a Literary Monograph  ................................ ................................ ..................  18 
+712.2  What Is a Serial?  ................................ ................................ ................................ ................................ ..............................  19 
+712.2(A)  Copyrightable Authorship in Serials  ................................ ................................ ................................ .......................  19 
+712.2(B)  Application Tips for Registering a Single Issue of a Serial Publication  ................................ ......................  19 
+712.3  ISBN and ISSN Numbers ................................ ................................ ................................ ................................ ...............  21 
+713 Book Jackets  ................................ ................................ ................................ ................................ ................................ ...... 21 
+714 Games  ................................ ................................ ................................ ................................ ................................ ..................  22 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  2 01/28/2021  715 Genealogies  ................................ ................................ ................................ ................................ ................................ ....... 23 
+715.1  What Is a Genealogy? ................................ ................................ ................................ ................................ .....................  23 
+715.2  Copyrightable Authorship in Genealogies ................................ ................................ ................................ .............  24 
+715.3  Application Tips for Genealogies  ................................ ................................ ................................ ..............................  24 
+716 Instructional Texts and Instructional Works  ................................ ................................ ................................ ....... 27 
+717 Legal Materials  ................................ ................................ ................................ ................................ ................................ . 29 
+717.1  Legal Publications ................................ ................................ ................................ ................................ ...........................  30 
+717.2  Legal Documents  ................................ ................................ ................................ ................................ .............................  31 
+717.3  Patents, Patent Applications, and Non -Patent Literature  ................................ ................................ ...............  32 
+718 Letters, Email, and Other Written Correspondence  ................................ ................................ ..........................  32 
+719 Interviews  ................................ ................................ ................................ ................................ ................................ ..........  33 
+720 [Reserved]  ................................ ................................ ................................ ................................ ................................ .........  35 
+721 Computer Programs  ................................ ................................ ................................ ................................ ......................  35 
+721.1  What Is a Computer Program?  ................................ ................................ ................................ ................................ .. 35 
+721.2  What Is a Derivative Computer Program?  ................................ ................................ ................................ ............  35 
+721.3  What Is Source Code?  ................................ ................................ ................................ ................................ ....................  36 
+721.4  What Is Object Code?  ................................ ................................ ................................ ................................ .....................  36 
+721.5  Relationship Between Source Code and Object Code  ................................ ................................ .......................  36 
+721.6  Relationship Between a Computer Program and a Work Created with a Computer or a Computer 
+Program  ................................ ................................ ................................ ................................ ................................ ..............  37 
+721.7  Copyrightable Authorship in a Computer Program  ................................ ................................ ..........................  37 
+721.8  Copyrightable Authorship in a Derivative  Computer Program  ................................ ................................ .... 38 
+721.9  Application Tips for Computer Programs  ................................ ................................ ................................ .............  41 
+721.9(A)  Identifying the Type of Work  ................................ ................................ ................................ ................................ ..... 42 
+721.9(B)  Title of the Program  ................................ ................................ ................................ ................................ .......................  42 
+721.9(C)  Name of Author / Name of Claimant  ................................ ................................ ................................ .......................  42 
+721.9(D)  Year of Completion  ................................ ................................ ................................ ................................ .........................  43 
+721.9(E)  Date of Publication  ................................ ................................ ................................ ................................ .........................  43 
+721.9(F)  Asserting a Claim to Copyright in a Computer Program ................................ ................................ ..................  44 
+721.9(G)  Limiting the Claim to Copyright in a Computer Program  ................................ ................................ ...............  45 
+721.9(H)  Acceptable Terminology for an Application to Register a Computer Program  ................................ ...... 46 
+721.9(I)  Unclear T erminology for an Application to Register a Computer Program  ................................ .............  47 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  3 01/28/2021  721.9(J)  Unacceptable Terminology for an Application to Register a Computer Program  ................................ . 48 
+721.10  Screen Displays  ................................ ................................ ................................ ................................ ................................  50 
+721.10(A)  Relationship Between Source Code and Screen Displays  ................................ ................................ ...............  50 
+721.10(B)  Copyrigh table Authorship in Screen Displays  ................................ ................................ ................................ ..... 51 
+721.10(C)  Deposit Requirements for Screen Displays  ................................ ................................ ................................ ..........  52 
+721.11  User Manuals and Other Documentation for a Computer Program  ................................ ............................  52 
+722 Apps  ................................ ................................ ................................ ................................ ................................ .....................  53 
+723 Computer Programs That Generate Typeface, Typefont, or Barcodes  ................................ ......................  53 
+724 Diagrams, Models, Outlines, Pseudo code, and Other Types of Works That Illustrate or Describe a 
+Computer Program  ................................ ................................ ................................ ................................ ........................  54 
+725 Spreadsheets, Reports,  and Other Documents Generated by a Computer Program  ............................  55 
+726 Videogames  ................................ ................................ ................................ ................................ ................................ ....... 57 
+727 Databases  ................................ ................................ ................................ ................................ ................................ ...........  57 
+727.1  What Is a Database?  ................................ ................................ ................................ ................................ .......................  57 
+727.2  Copyrightable Authorship in Databases  ................................ ................................ ................................ ................  58 
+727.3  Application Tips for Databases ................................ ................................ ................................ ................................ .. 59 
+727.3(A)  Name of Author / Name of Claimant  ................................ ................................ ................................ .......................  59 
+727.3(B)  Year of Completion  ................................ ................................ ................................ ................................ .........................  60 
+727.3( C) Date of Publication / Nation of Publication / Author’s Citizenship or Domicile  ................................ .... 60 
+727.3(D)  Asserting a Claim to Copyright in a Dat abase  ................................ ................................ ................................ ...... 60 
+727.4  Deposit Requirements  ................................ ................................ ................................ ................................ ..................  62 
+ 
+ 
+Chapter 7 00  :  4 01/28/2021  C O M P E N D I U M : Chapter 700  
+Literary Works  
+ 701 What This Chapter Covers  
+This Chapter discusses the U.S. Copyright Office’s practices and procedures for the 
+examination and registration of literary works . For information and instructions on 
+completing an application t o register a literary work (or any other type of work), see the 
+following Chapters:  
+• For a general overview of the registration process, see Chapter 200 . 
+• For a discussion of copyrightable  subject matter, see Chapter 300 .  
+• For guidance in determining who may file the application and w ho may be named as 
+the copyright claimant , see Chapter 400 . 
+• For guidance in identifying the work that will be submitted for registration, see 
+Chapter 500 . 
+• For instructions on completing the application, see Chapter 600 . 
+• For guidance on the filing fee , see Chapt er 1400 . 
+• For guidance on submitting the deposit copy(ies) , see Chapter 1500 . 
+ 702 The Literary Division  
+The Literary Divisi on (“LIT”) of the U.S. Copyright Office handles applications to register 
+literary works. The registration specialists  in this division specialize in the examination 
+and registration of these type s of works, including serials , databases , and computer 
+programs . 
+ 703 Wha t Is a Literary Work?  
+The Copyright Act defines a literary work  as “works, other than audiovisual works, 
+expressed in words, numbers, or other verbal or numerical symbols or indicia, 
+regardless o f the nature of the material objects, such as books, periodicals , manuscripts, 
+phonorecords , film, tapes, disks, or cards, in which they are embodied.” 17 U.S.C. § 101 . 
+A literary work is a nondramatic work that explains, describes, or narrates a particular 
+subject, theme, or idea through the use of narrative, descr iptive, or explanatory text, 
+rather than dialog or dramatic action. Generally, nondramatic literary works are 
+intended to be read; they are not intended to be performed before an audience. 
+Examples of nondramatic literary works include the following types of works:  
+ 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  5 01/28/2021  • Fiction  
+• Nonfiction  
+• Poetry  
+• Directories  
+• Catalogs  
+• Textbooks  
+• Reference works  
+• Advertising copy  
+• Compilations of information  
+• Computer programs  
+• Databases  
+See 37 C.F.R. § 202.3(b)(1)(i) ; H.R.  REP. NO. 94-1476,  at 54 (1976) , reprinted in  1976 
+U.S.C.C.A.N. 5659, 5667.  
+ 704 Literary Works Distinguished from Works of the Performing Arts  
+Textual works that are intended to be performed before an audience and textual works 
+that are intended to be used in a sound recording , motion picture , or other audiovisual 
+work  are considered works of the performing arts , rather than nondramatic literary 
+works. For a  definition and discussion of works of the performing arts, see Chapter 800 .  
+Examples:  
+• Julia Babcock is the author of a novel titled The Sisters. Cynthia 
+Cisneros is the author o f a Spanish -language play titled Las 
+Hermanas,  which is based on Julia’s novel. Anne Kennedy wrote an 
+article about the play that was published in a local newspaper. 
+Julia’s novel and Anne’s article could be registered as nondramatic 
+literary works, while Cynthia’s play could be registered as a work of 
+the performing arts.  
+• Leonard Edgemoor is the author of the novel Get Lucky , which was 
+published by the Mystery Press in a print and ebook edition. The 
+Mystery Press also published a recording of an actor reci ting the text 
+of the novel. Leonard’s novel could be registered as a nondramatic 
+literary work, while the recording of the novel could be registered as 
+either a literary work or a work of the performing arts.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  6 01/28/2021  • Mary Bentham was selected as the valedictorian of her graduating 
+class. In honor of this occasion she recited her original poem at the 
+graduation ceremony. Mary’s poem could be registered as either a 
+nondramatic literary work or a work of the performing arts.  
+ 705 Fixation of Literary Works  
+A literary work may be registered with the U.S. Copyright Office if it has been “fixed in 
+any tangible medium of expression, now known or later developed, from which [it] can 
+be perceived, reproduced, or otherwise communicated.” 17 U.S.C. § 102(a) . A literary 
+work is considered “fixed in a tangible medium of expression” when it has been 
+embodied “in a copy or phonorecord, by or under the authority of the author” that “is 
+sufficiently permanent or stable to permit [the work] to be perceived, reproduced, or 
+otherwise communicated for a period of more than a transitory duration.” 17 U.S.C. § 
+101 (definition of “fixed”).  
+There are countless ways that a literary work may be fixed in a tangible medium of 
+expression. Most literary works are fixed by their very nature, such as a poem written 
+on paper, a short story saved in a computer file, an article printed in a periodical, or a 
+novel  embodied in an audio recording. However, some copies or phonorecords may not 
+be sufficiently permanent or stable to warrant registration. The registration specialist  
+may communicate with the applicant  or may refuse registration if the work is fixed in a 
+medium that only exists for a transitory period of time, a medium that is constantly 
+changing, or a medium that does not allow the spec ific words, numbers, or other verbal 
+or numerical symbols or indicia that constitute the literary work to be perceived, 
+reproduced, or otherwise communicated in a consistent and uniform manner.  
+ 706 Copyrightable Authorship in Literary Works  
+A literary wo rk may be registered with the U.S. Copyright Office if it contains a certain 
+minimum amount of literary expression that originated with the author of that work.  
+When a registration specialist  examines a literary work, he or she determines whether 
+the work contains a sufficient amount of original authorship “expressed in words, 
+numbers, or other verbal or numerical symbols or indicia.” 17 U.S.C. § 101  (definition of 
+“literary works”). In making this determination, specialists apply the legal standards set 
+forth in the Copyright Act, the Office’s regulations, the Compendium , and the relevant 
+caselaw. However, specialists do not l ook for any particular style of literary authorship, 
+and they do not judge the “literary merit or qualitative value” of the work. H.R.  REP. NO. 
+94-1476,  at 54 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5667; S. REP. NO. 94-473, at 53 
+(1975) .  
+For a general discussion of these legal standards, see Chapter 300 , Sections 302 through 
+308.  
+ 707 Uncopyrightable Material  
+The U.S. Copyright Office is charged with administering the provisions of the Copyright 
+Act and with issuing regulations for the administration of the copyright system  that are 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  7 01/28/2021  consistent with the statute. The Office has no authority to register claims  to copyright in 
+works that fall outside the scope of federal statutory protection.  
+Section 102(a)  of the Copyright Act states that copyright protection extends only to 
+“original works of authorship.” Works that have not been fixed  in a tangible medium of 
+expression, works that have not been created by a human being, and works that are not 
+eligible for copyright protection in the United States do not satisfy this requirement. 
+Likewise, the copyright law does not protect works that do n ot constitute copyrightable  
+subject matter or works that do not contain a sufficient amount of original authorship, 
+such as the following:  
+• An idea, procedure, process, system, method of operation , concept, principle, or 
+discovery.  
+• Facts.  
+• Research.  
+• Typeface or mere variations of typographic ornamentations.  
+• Format and layout.  
+• Book designs.  
+• Works that contain an insufficient amount of authorship.  
+• Names, titles, slogans, or other short phrases.  
+• Numbe rs. 
+• Works consisting entirely of information that is common property, such as standard 
+calendars, height and weight charts, schedules of sporting events, and lists or tables 
+taken from public documents or other common sources.  
+• Measuring and computing devices.  
+• A mere listing of ingredients or contents.  
+• Blank forms.  
+• Scènes à faire . 
+• Familiar symbols and designs.  
+• Mere variations of coloring.  
+• U.S. government works . 
+• Government edicts.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  8 01/28/2021  • Works that are in the public domain . 
+For a discussion of numbers, research, and book designs, see Sections 707.1  through 
+707.3  below. For a discussion of other types of works that cannot be registered with the 
+Office, see Chapter 300 , Section 313.  
+ 707.1  Numbers  
+Individual numbers are not copyrightable  and cannot be registered with the U.S. 
+Copyright Office. Likewise, the Office cannot register a claim  to copyright in values 
+expressed in individual numbers, individual letters, or individual wo rds. 
+Individual numbers are never copyrightable for the same reason that an individual word 
+cannot be protected by copyright. See Southco, Inc. v. Kanebridge Corp ., 390 F.3d 276, 
+286-87 (3d Cir. 2004) (holding that the regulatory bar against registering “s hort 
+phrases” logically extends to short sequences of numbers). An individual number is a 
+common symbol that is not independently created and does not, in itself, reveal any 
+creativity. See 37 C.F.R. § 202.1(a) ; see also  Chapter 300 , Section 313.4(J). Nor does it fit 
+within the established categories of copyrightable subject matter set forth in Section 
+102(a)  of the statute. See 17 U.S.C. § 102(a) . While the Copyright Act states that literary 
+works may be expressed i n “numbers” or “numerical symbols,” a critical element in the 
+statutory definition is that there must be a “work” that is expressed in some 
+combination of “words, numbers, or other verbal or numerical symbols or indicia.” See 
+17 U.S.C. § 101  (definition of “literary works”). In other words, a work that includes 
+numbers may constitute a literary work, but it does not follow that a number contained 
+in the literary work alone contains suffi cient expression to constitute a work, or that 
+such an element alone constitutes copyrightable authorship.  
+A compilation  of numbers may be registered if there is a sufficient amount of creativity  
+in the author’s selection, coordination, and/or arrangement of data. However, the 
+registration for a compilation does not create a presumption that the individual 
+numbers are copyrightable as independent works or as independent authorship.  
+The authorship  involved in selecting, coordinating, and/or arranging the copyrightable 
+and uncopyrightable elements of a compilation must be perceptible in the deposit 
+copy(ies) . See Chapter 300 , Section 312.2. While the process of deriving a particular 
+number or value may be creative, any such creativity is not perceptible in a number 
+alone. An individual number in and of its elf never comprises sufficient authorship to be 
+copyrightable. Copyright protects expression, not ideas or processes, and an individual 
+number itself is not, and does not reveal, any copyrightable expression.  
+Moreover, the statutory definition of a compila tion states that the selection, 
+coordination, and/or arrangement of preexisting material or data must be done “in such 
+a way that the resulting work as a whole constitutes an original work of authorship.” 17 
+U.S.C. § 101 ; see also Feist Publications, Inc. v. Rural Telephone Service Co.,  499 U.S. 340, 
+358 (1991). The process of arriving at individual numbers or values may require 
+judgment, prediction, valuation, or expertise, but an indiv idual number does not express 
+any selection, coordination, or arrangement that results in an original work of 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  9 01/28/2021  authorship. Mental processes and methods of operations are unfixed and they are 
+exempt from copyright protection under Section 102(b)  of the statute.  
+ 707.2  Research  
+The U.S. Copyright Office cannot register a claim  in research, because it suggests that the 
+applicant  may be asserting a claim in the facts that appear in the work or the effort 
+involved in collecting that information.  
+The Supreme Court expressly rejected the “sweat of the brow” or “industrious 
+collection” doctrines, which made copyright protection a “reward for the hard work” 
+involved in creating a work. Feist , 499 U.S. at 352, 364. The Court concluded that 
+“[p]rotection for the fruits of such research…may in certain circumstances be available 
+under a theory of unfair competition,” but recognized that a claim to copyright “on this 
+basis alone distorts basic cop yright principles.” Id. at 354.  
+Although research is not copyrightable , the Office may register a work of authorship 
+that describes, explains, or illustrates factual research, provided that the w ork contains 
+a sufficient amount of original authorship. For example, a research paper, a scientific 
+journal, or a biopic may be registered if the work contains a sufficient amount of literary, 
+pictorial, graphic, or audiovisual expression. However, the re gistration does not extend 
+to the facts, ideas, procedures, processes, systems, methods of operation, concepts, 
+principles, or discoveries described in the work. “They may not be copyrighted and are 
+part of the public domain  available to every person.” Id. at 348 (quoting Miller v. 
+Universal City Studios, Inc. , 650 F. 2d 1365, 1369 (5th Cir. 1981).  
+For a further discussion on “research” as an authorship term, see Chapter 600 , Section 
+618.8(A)(9).  
+ 707.3  Book Design  
+The overall format or layout of a book or other printed publication cannot be registered 
+with the U.S. Copyright Office, regardless of whether the book is  published  in print or 
+electronic form. Book design includes all of the physical or visual attributes of a book or 
+printed publication, such as the choice of style and size of typeface, leading ( i.e., the 
+space between lines of type), the placement of the folio ( i.e., page numbers), the 
+arrangement of type on the pages, or the placement, spacing, and juxtaposition of 
+textual and illustrative matter in the work.  
+The copyright law does not protect t hese elements because they fall within the realm of 
+uncopyrightable ideas. Deciding how and where to place content in a book or printed 
+publication is merely a process or technique, regardless of the number of decisions 
+involved. The fact that “a work is d istinctive, unique or pleasing in appearance, and 
+embodies certain ideas of contrast or coloring does not necessarily afford a basis for 
+copyright protection.” Registration of Claims to Copy right: Notice of Termination of 
+Proposed Rulemaking Regarding Registration of Claims to Copyright in the Graphic 
+Elements involved in the Design of Books and Other Printed Publications, 46 Fed. Reg. 
+30,651, 30,652 (June 10, 1981) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  10 01/28/2021  For a further discussi on on “design” as an authorship term, see Chapter 600 , Section 
+618.8(A)(1).  
+ 708 Joint Works  
+A “joint work ” is a work “prepared by two or more authors with the intention that their 
+contributions be merged into inseparable or interdependent parts of a unitary whole.” 
+17 U.S.C. § 101 . A joint work may be registered as a nondramatic literary work if it 
+contains a sufficient amount of literary expression. Examples of works that may satisfy 
+this requirement include essays, artic les, textbooks, reference works, children’s books, 
+graphic novels, or any other work that may be jointly prepared by two or more authors.  
+Ordinarily, each author owns the copyright in the authorship that he or she contributed 
+to the work. In the case of a joint work, all of the authors jointly own the copyright in 
+each other’s contributions and each author owns an undivided interest in the copyright 
+for the work as a whole. See 17 U.S.C.  § 201(a) . 
+When asserting a claim  in a joint work, the applicant  should provide the name of each 
+author who contributed copyrightable  authorship to the work and should provide 
+specific authorship statements for each author. When completing an online application, 
+the authorship information should be provided in the A uthor Created field, and if 
+applicable, also in the New Material Included field. When completing a paper application 
+on Form TX , this information should be provided in space 2, and if applicable,  also in 
+space 6(b). For guidance on completing these portions of the application, see Chapter 
+600, Sections 618 and 621. In addition, the applicant should provide the name of the 
+claimant  who owns the copyright in that material. For guidance on completing this 
+portion of the application, see Chapter 600 , Section 619.  
+For a general discussion of joint works, see Chapter 500 , Section 505.  
+ 709 Derivative Literary Works  
+A derivative  literary work is a work tha t is based upon one or more preexisting works, 
+regardless of whether the preexisting work is a literary work, a work of the performing 
+arts, a sound recording , a pictorial, graphic, or sculptural  work, or any other type of 
+work. Typically, a derivative literary work is a new version of a preexisting work or a 
+work that contains new material combined with material that has been recast, 
+transformed, or adapted from a preexisting work. See 17 U.S.C. § 101  (definition of 
+“derivative work ”). 
+A derivative literary work may be registered with the U.S. Copyright Office if the author 
+contributed a sufficient amount of new authorship to the work. Making trivial changes 
+or additions to a preexisting work does not satisfy this requirement. See Alfred Bell & Co. 
+v. Catalda Fine Arts, Inc. , 191  F.2d 99, 103 (2d Cir. 1951). Examples of nondramatic 
+literary works that may be registered as a derivative work include translations , 
+fictionalizations, abridgements, editorial revisions, and a wide range of othe r works 
+such as:  
+ 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  11 01/28/2021  • A short story based on a preexisting poem.  
+• A children’s book featuring copyrightable characters from a preexisting children’s 
+book.  
+• The third edition of a previously published textbook.  
+• The fourth version of a previously published compute r program.  
+• New content that has been added to a preexisting website . 
+• A computer program that has been translated from C++ into the C# programming 
+language.  
+When asserting a claim  in a derivative literary work, the applicant  should provide the 
+name of each author who created the new material that the applicant intends to registe r, 
+and the applicant should provide the name of the claimant  who owns the copyright in 
+that new material. The Literary Division may accept a claim in “text” if the new material 
+contains a sufficient amount of textual expression, or a claim in “artwork” and/or 
+“photograph(s)” if the new material contains a sufficien t amount of pictorial or graphic 
+expression. The Literary Division may accept a claim in “revised computer program” if 
+the new material contains sufficient statements or instructions to be used directly or 
+indirectly in a computer in order to bring about a  certain result . When completing an 
+online application this information should be provided in the Author Created field and 
+the New Material Included field; when completing a paper application on Form TX  this 
+information should be provided in spaces 2 and 6(b). For guidance on completing these 
+portions of the application, see Chapter 600 , Sections 618.4 and 621.8.  
+For a discussion of translations, fictionalizations, abridgements, and editorial revisions, 
+see Sections 709.1  through 709.4  below. For a discussion of derivative computer 
+programs, see Sections 721.2  and 721.8  below. For a general discussion of the legal 
+standard for determining whether a derivative work contains a sufficient amount of 
+original expression to warrant registration, see Chapter 300 , Section 311.2.  
+ 709.1  Translations  
+A translation  is a rendering of a nondramatic literary work from one language into 
+another, such as a work that has been translated from English into Spanish, from 
+German into English, or from Hindi into Malayalam.  
+Translations are among the nine categories of works that can be specially ordered or 
+commissioned as a work made for hire , provided that the parties expressly agree in a 
+signed written instrument that the translation shall be considered a work made for hire. 
+See 17 U.S.C. § 101  (definition of “work made for hire,” Section 2). For a detailed 
+discussion of works made for hire, see Chapter 500 , Section 506.  
+A translation may b e registered if it contains a sufficient amount of original expression. 
+A translation that is performed by a computer program  that automatically converts text 
+from one language into another witho ut human intervention cannot be registered 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  12 01/28/2021  because the conversion is merely a mechanical act. For the same reason, a 
+transliteration or other process whereby the letters or sounds from one alphabet are 
+converted into a different alphabet cannot be register ed. See Signo Trading 
+International, Ltd. v. Gordon , 535 F. Supp. 362, 364 (N.D. Cal. 1981) (holding that a list of 
+words translated from English into Arabic and then transliterated from Arabic into 
+Roman letters “simply does not embody sufficient original ity to be copyrightable”).  
+Examples:  
+• A Portuguese translation of a Spanish language newspaper could be 
+registered as a derivative work.  
+• A Tagalog translation of The King James Bible  could be registered as 
+a derivative work, even though The King James Bible  is in the public 
+domain.  
+When submitting an application to register this type of work, the claim  should be limited 
+to the text of the translation, the applicant  should provide the name of the author who 
+translated the preexisting work from one language into another, and the applicant 
+should provide the name of the claimant  who owns the copyright in the translated text. 
+Applicants should use the term “translation” to describe this type of authorship, rather 
+than “text” or “editing.” When completing an online application, this information should 
+be provided in the Aut hor Created/Other field and the New Material Included/Other 
+field. When completing a paper application, this information should be provided in 
+spaces 2 and 6(b) of Form TX . For guidance on comple ting these portions of the 
+application, see Chapter 600 , Sections 618.4 and 621.8.  
+ 709.2  Fictionalizations  
+A fictionalization is a work of fiction that recasts, transforms,  or adapts the facts or 
+factual events that are described in one or more preexisting works. A work of fiction 
+that is only loosely based on the facts or events described in a preexisting work typically 
+would be considered a work of fiction, rather than a f ictionalization.  
+Examples:  
+• A children’s book about the life and times of Kit Carson would be 
+considered a fictionalization.  
+• A short story based on Stokely Carmichael’s experiences during the 
+Freedom Rides would be considered a fictionalization.  
+• A romance novel set during the Civil War featuring original 
+characters, situations, and dialog with occasional references to 
+historical persons or events would be considered a work of fiction 
+rather than a fictionalization.  
+When submittin g an application to register this type of work, the claim  should be limited 
+to the text of the fictionalization, the applicant  should provide the name of the author of 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  13 01/28/2021  that text, and the applicant should provide the name of the claimant  who owns the 
+copyright in that text. A pplicants should use the term “text” or “fictionalizat ion” to 
+describe this type of authorship, rather than “editing.” When completing an online 
+application, this information should be provided in the Author Created/Other field. 
+When completing a paper application on Form TX , this information should be provided 
+in space 2. For guidance on completing these portions of the application, see Chapter 
+600, Section 618.4.  
+If the fictionalization is based on or incorporates a preexisting work, such as a biography 
+or other work of authorship, the applicant should exclude that preexisting work from 
+the claim using the procedure described in Section 621.8. By contrast, if the 
+fictionalization is based solely on historical facts, persons, or events, or other 
+uncopyrightable material, there is generally no need to complete this portion of the 
+application.  
+ 709.3  Abridgements  
+An abridgment is a shortened or condensed version of a pre existing work that retains 
+the general sense and unity of the preexisting work. An abridgment of a nondramatic 
+literary work may be registered if the author contributed a sufficient amount of creative 
+authorship in the form of edits, revisions, or other mo difications to the preexisting work, 
+and if the work as a whole is sufficiently creative in adapting the preexisting work such 
+that it constitutes an original work of authorship. See 17 U.S.C. § 101  (definition of 
+“derivative work”). Trivial changes do not satisfy this requirement, such as merely 
+omitting a section from the beginning or end of a preexisting work.  
+Examples:  
+• An audiobook version of Leo Tolstoy’s Anna Karenina  that has been  
+abridged and condensed in order to fit into an eight –hour recording 
+could be registered as a derivative work.  
+• A book that contains an abridged and condensed edition of a novel 
+by Joseph Conrad could be registered as a derivative work.  
+When submitting an  application to register an abridgement, the claim  should be limited 
+to the condensed text that appears in the work, the applicant  should provide the name 
+of the author who condensed the preexisting work, and the applicant should provide the 
+name of the claimant  who owns the copyright in the condensed text. A pplicants should 
+use the term “abridged text” or the like to describe this type of authorship, rather than 
+“text,” “edits,” or “editing.” When completing an online application, this information 
+should be provided in the Author Created/Other field and the New Material 
+Include d/Other field. When completing a paper application on Form TX , this 
+information should be provided in spaces 2 and 6(b). For guidance on completing these 
+portions of the application, see Chapter 600 , Sections 618.4 and 621.8.  
+ 709.4  Editorial Revisions, Annotations, Elaborations, or Other Modifications  
+Editorial revisions, annotations, elaborations, or other modifications to a preexisting 
+work or the addenda or errata sheets for a published  work may be registered as a 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  14 01/28/2021  derivative  literary work if the author contributed a sufficient amount of new material to 
+the work, and if the derivative work as a whole sufficiently modifies or transforms the 
+preexisting work such that it constitutes an original work of authorship. See 17 U.S.C. § 
+101 (definition of “derivative work”). Specifically, the author must contribute new text 
+or revised text to the preexisting work, and the text must possess a sufficient amount of 
+written expression. Merely correcting errors in spelling, punctuation, grammar, o r 
+making other minor changes, revisions, or other modifications to a preexisting work do 
+not satisfy this requirement.  
+Examples:  
+• The Lifetime Consulting Group published a training manual for 
+pension benefit administrators. The following year the company 
+revised the manual to account for recent changes in the tax code 
+and added new chapters on individual retirement accounts and the 
+estate tax. The revised text and the additional text may be 
+registered as a derivative work if they contain a sufficient amount  of 
+new and revised material.  
+• Agatha Thornton is the author of the novel Bangers and Mash , which 
+was published in the United Kingdom. Before the work was 
+published in the United States, Agatha revised certain passages that 
+were likely to confuse an Americ an reader. The revisions to the 
+British edition may be registered as a derivative work if they 
+contain a sufficient amount of new and revised material.  
+• Herman Melville is the author of the novel Moby -Dick . Professor 
+Whalen wrote a brief introduction that a nalyzes the plot, setting, 
+characters, and theme of the novel. Professor Cetacean prepared 
+footnotes, endnotes, and other marginalia that explain the meaning 
+of certain words and phrases that appear in the novel. All of these 
+works were published together in a single volume and the copyright 
+is owned by the Leviathan Press. The introduction, footnotes, and 
+other annotations may be registered as a derivative work, because 
+they clearly contain a sufficient amount of new authorship.  
+When submitting an applicat ion to register this type of work, the claim  should be limited 
+to the new text or revised text that the author contributed to the work, the applicant  
+should provide the name of the author who created the new material, and the applicant 
+should provide the name of the claimant  who owns the copyright in that new material. 
+Applican ts should use the terms “new text” and/or “revised text” to describe this type of 
+authorship, rather than “text” or “editing.” When completing an online application, this 
+information should be provided in the Author Created/Other field and the New Material  
+Included/Other field. When completing a paper application on Form TX , this 
+information should be provided in spaces 2 and 6(b). For guidance on completing these 
+portions of the application, see Chapter 600 , Sections 618.4 and 621.8.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  15 01/28/2021   710 Compilations  
+The Copyright Act defines a “ compilation ” as “a work fo rmed by the collection and 
+assembling of preexisting materials or of data that are selected, coordinated, or 
+arranged in such a way that the resulting work as a whole constitutes an original work 
+of authorship.” 17 U.S.C. § 101 . 
+Compilations are among the nine categories of works that can be specially ordered or 
+commissioned as a work made for hire , provided that the parties ex pressly agree in a 
+signed written instrument that the compilation shall be considered a work made for 
+hire. See 17 U.S.C. § 101  (definition of “work made for hire,” Section 2). For a de tailed 
+discussion of works made for hire, see Chapter 500 , Section 506.  
+Typically, the author of a compilation selects the preexisting material or data that will be 
+included in the compilation, the author classifies, categorizes, or groups these elements 
+into particular sequences, and the author decides how these elements should be 
+arranged within the compilation as a whole. A compilation may be registered if the 
+author’s selecti on, coordination, and/or arrangement of preexisting material or data 
+was independently created, and if the selection, coordination, and/or arrangement 
+contains a sufficient amount of creativity. A registration for a compilation may cover the 
+author’s origi nal selection, coordination, and/or arrangement, but it does not cover any 
+preexisting material or data that is included in the compilation. See 17 U.S.C. § 103(b)  
+(“Copyright in a comp ilation . . . does not imply any exclusive right in the preexisting 
+material”).  
+The compilation must fall within one or more of the categories listed in Section 102(a)  
+of the Copyright Act. See H.R.  REP. NO. 94-1476,  at 57 (1976)  reprinted in  1976 
+U.S.C.C.A.N. at 5670;  S. REP. NO. 94-473, at 54 -55 (1975) . In other words, a compilation 
+may be registered if the selection, coordination, and/or arrangement as a whole would 
+be considered a literary work, a  musical work, or any other type of work listed in 17 
+U.S.C. § 102(a) . If the author’s selection, coordination, and/or arrangement does not fall 
+within one or more of the congressionall y established categories of authorship, the 
+registration specialist  may communicate with the applicant  or may refuse registration. 
+See Registration of Claims to Copyright, 77 Fed. Reg. 37,605, 37,606 (June 22, 2012) .  
+Examples of nondramatic literary works that may be registered as a compilation include 
+the following:  
+• Yellow pages directories, street directories, criss -cross directories, membership 
+lists, price lists, catalogs, financial reports, financial ratings, and the like may be 
+registered as a compilation, provided that the author contributed a sufficient 
+amount of selection, coordination, and/or arrangement authorship to the work.  
+• Charts, tables, graphs, figures, diagrams, and the like may be registered as a 
+compilation, provided that there is a sufficient amount of original authorship in the 
+selection, coordinat ion, and/or arrangement of data or other textual or numerical 
+elements.  
+• A populated database  that presents data in an organizational framework for 
+recording information may be registered as a com pilation, provided that there is a 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  16 01/28/2021  sufficient amount of original authorship in the selection, coordination, and/or 
+arrangement of data. If the author subsequently updates the database by inserting 
+new data into the original framework, it may be possible to  register the updates as a 
+derivative work, provided that the updates contain a sufficient amount of new data 
+and provided that the author contributed a substantial amount of new copyrightable  
+authorship in the selection, coordination, and/or arrangement of new data that 
+appears in each update.  
+When asserting a claim  in a compilation, the applicant should provide the name of each 
+author who created the selection, coordination, and/or arrangement that the applicant 
+intends to register, and the applicant should assert a claim to copyright in that material 
+using the procedures described in Chapter 600 , Sections 618.7, 618.6, and 621.8(D).  
+For a general discussion of the legal standard for determining whether a compilation 
+contains a sufficient amount of original expression to warrant registration, see Chapter 
+300, Section 312.2.  
+ 711 Collective Works and Contributions to Collective Works  
+The Copyright Act defines a “ collective work ” as a work “in which a number of 
+contributions, constituting separate and independent works in themselves, are 
+assembled into a collective whole.” 17 U.S.C. § 101 . A con tribution to a collective work is 
+a separate and independent work that has been included within a collective work.  
+Collective works are a subset of compilations . Consequently, the author must se lect, 
+coordinate, and/or arrange the component works in such a way that the resulting work 
+as a whole constitutes an original work of authorship. See 17 U.S.C. § 101  (definition of 
+“compilation” stating that “[t]he term ‘compilation’ includes collective works.”).  
+Both collective works and contributions to collective works are among the  nine 
+categories of works that can be specially ordered or commissioned as a work made for 
+hire , provided that the parties expressly agree in a signed written instrument that the 
+work shall be co nsidered a work made for hire. Compare  17 U.S.C. § 101  (definition of 
+“compilation”) (“The term ‘compilation’ includes collective works.”), with id . (definition 
+of “work made for hire”)  (“a ‘work made for hire’ is…a work specially ordered or 
+commissioned for use as a contribution to a collective work [or]…as a compilation...”). 
+For a detailed discussion of works made for hire, see Chapter 500 , Section 506.  
+Collective works and contributions to collective works may be registered as 
+nondramatic literary works, provided that they contain a sufficient amount of literary 
+expression. Examples of collective works that  may satisfy this requirement include a 
+periodical issue, an anthology, an encyclopedia, or any other work that contains a 
+number of separate and independent works that have been assembled into a collective 
+whole. See 17 U.S.C. § 101  (definition of “collective work”). Examples of a contribution to 
+a collective work that may satisfy this requirement include an article that has been 
+included within a periodical issue, an essay that has bee n included within an anthology, 
+or an entry that has been included within an online encyclopedia.  
+Collective works typically contain two different types of authorship:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  17 01/28/2021  • The authorship in the collective work as a whole, which may involve selecting, 
+coordinat ing, and/or arranging a number of separate and independent works and 
+assembling them into a collective work, and/or revising the collective work as a 
+whole.  
+• The authorship in the separate and independent works that have been included in 
+the collective work , which may contain literary expression and/or artistic 
+expression.  
+An applicant  may register a collective work together with the separate and independent 
+works contained therein (i) if the copyr ight in the contributions and the collective work 
+are owned by the same claimant, and (ii) if the component works have not been 
+previously published or registered. In no case may the claimant register a contribution 
+that is in the public domain . If the cop yright in the collective work and the contributions 
+to the collective work are owned by different parties, separate applications for each 
+work will be required. For additional information concerning collective works, see 
+Chapter 500 , Section 509.  
+When asserting a claim  in a collective work and/or a contribution to a collective work, 
+the applicant should identify the copyrightable  authorship that the applicant intends to 
+register, and the applicant should assert a claim to copyright in that material using the 
+procedures described in Chapter 600 , Sections 618.7 and 621.8(E).  
+For guidance on the deposit requirements for a contribution to a collective work, see 
+Chapter 1500 , Section 1505.5.  
+ 712 Monographs and Serials  
+This Section discusses the U.S. Copyright Office’s practices and procedures for 
+registering literary monographs . It also discusses the O ffice’s practices and procedures 
+for registering serial publications, such as a newspaper , magazine, newsletter,  or 
+journal.   
+NOTE : The Office has established a procedure that allows copyright owners to register a 
+group of serials , a gr oup of newspapers, or a group of newsletters with one application 
+and one filing fee . The requirements for these group registration  options are discussed 
+in Chapter 1100 , Sections 1109 through 1111.  
+ 712.1  What Is a Literary Monograph?  
+A literary monograph is a literary work that is “published in o ne volume or a finite 
+number of volumes.” 37 C.F.R. § 202.19(b)(5) . Examples of works that may qualify as a 
+monograph include fiction, nonfiction, poetry, short stories, memoirs, textbo oks, and 
+other types of nondramatic literary works.  
+Most monographs are published in a single volume, rather than a series of successive 
+issues or parts. Some monographs are published in separate volumes with each bearing 
+the same title and successive nume rical designations (as in the case of a multi -volume 
+encyclopedia). But typically the entire work is published in a limited number of volumes 
+that, taken together, constitute the work as a whole. See Simplifying Deposit 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  18 01/28/2021  Requirements for Certain Literary Works and Musical Compositions, 82 Fed. Reg. 
+38,859, 38,860 (Aug. 16, 2017) . 
+NOTE : Serials and legal publications are not considered monographs for purposes of 
+registration.  For information concerning the registration requirements for these types 
+of works, see Sections 712.2  and 717.1 . 
+ 712.1(A)  Copyrightable Authorship in Literary Monographs  
+When registering a literary monograph , the applicant may assert a claim in new and 
+original text, artwork, and/or photographs appearing in the work. The applicant  should 
+provide the name(s) of the author or co -authors who created that material, and the 
+name of the claimant  who owns the copyright in that material. The Literary Division 
+may accept a claim in  “text” if the work contains a sufficient amount of written 
+expression , and/ or a claim in “artwork” and/or “photograph(s)” if the work contains a 
+sufficient amount of pictorial or graphic expression.  
+A literary monograph may be considered a collective wor k if it contains “a number of 
+contributions, constituting separate and independent works in themselves, [that] are 
+assembled into a collective whole.” 17 U.S.C. § 101  (definition of “co llective work”). 
+Collective works typically contain the following types of authorship:  
+• The authorship in the compilation , which may involve selecting, coordinating, 
+and/or arranging a number of separate and independent works within the 
+monograph as a whole, and/or revising the monograph as a whole.  
+• The authorship in the separate and independent works that have been included 
+within the monograph, which may contain literary expression and /or artistic 
+expression.  
+As with any other type of collective work, an applicant  may register a monograph 
+together with the separate and independent works contained therein, (i) if the claimant 
+owns the copyright in the monograph and the contributions, and (ii) if those 
+contributions have not been previously published or registered. In no case may the 
+claimant register a contribution that is in the public domain.  
+ 712.1(B)  Application Tips for Re gistering a Literary Monograph  
+When completing an online application, the applicant should describe the work being 
+registered in the Author Created field, and if applicable, in the New Material Included 
+field. When completing a paper application on Form TX , this information should be 
+provided in space 2, and if applicable, in space 6(b). For guidance on completing these 
+portions of the application, see Chapter 600 , Sections 618.4 and 621.8.  
+For guidance concerning the deposit requirements for literary monographs , see  Chapter 
+1500 , Section 1509.1(A).  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  19 01/28/2021   712.2  What Is a Serial?  
+A serial is a work that is issued or intended to be issued in successive parts bearing 
+numerical or chronological designations that are intended to be conti nued indefinitely. 
+37 C.F.R. § 202.3(b) (1)(v) . Examples  include periodicals  (including newspapers ); 
+annuals; and the journals and proceedings of societies, and other similar works. 
+Examples of works that do not fall within this category include episodes of a television 
+series, a ser ies of online videos, a collection of musical works, a group of manuscripts, an 
+assortment of poetry, or a set of advertising copies.  
+“Periodicals” are considered “collective works” for purposes of registration, because 
+they contain “a number of contributi ons, constituting separate and independent works 
+in themselves, [that] are assembled into a collective whole.” 37 C.F.R. §  202.4(b)(3) ; 17 
+U.S.C. § 101  (definition of “collective work”).  
+Most serials are – but do not have  to be – collective works to qualify for registration. For 
+example, a newsletter that contains a single article and a single photograph would not 
+be c onsidered a collective work, because it does not contain sufficient contributions. 
+Nevertheless, it could still be registered as a “serial” if the requirements set forth in 
+Section 712.2(B)  have been met.  
+ 712.2(A)  Copyrightable A uthorship in Serials  
+Most serials are collective works , because they typically contain “a number of 
+contributions, constituting separa te and independent works in themselves, [that] are 
+assembled into a collective whole.” 17 U.S.C. § 101  (definition of “collective work”). As 
+such, they typically contain two different t ypes of authorship:  
+• The authorship in the compilation , which may involve selecting, coordinating, 
+and/or arranging a number of separate and independent works within the serial as 
+a whole, and/or revising the serial as a whole.  
+• The authorship in the separate and independent works that have been included 
+within the serial, which may contain literary expression and/or artistic expression.  
+As with any other type of collective work, an applicant  may register a serial together 
+with the separate and independent works contained therein, (i) if the claimant owns the 
+copyright in the serial and the contributions, and (ii) if those contributi ons have not 
+been previously published or registered. In no case may the claimant register a 
+contribution that is in the public domain.  
+A registration for a single issue of a serial publication  covers the particular issue that 
+has been submitted for regis tration, as well as any contributions that may be included 
+within the claim . The U.S. Copyright Office does not offer “blanket registrations” that 
+cover future issues or future contributions to t hat publication.  
+ 712.2(B)  Application Tips for Registering a Single Issue of a Serial Publication  
+An applicant  may register a single issue of a serial publication with the online 
+application by selecting the option for “ Single Serial Issue .” Alternatively, an applicant 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  20 01/28/2021  may submit a paper application using Form SE . An applicant may also register a serial 
+by selecting the option for “Lite rary Work” or by submitting a paper application using 
+Form TX. If the claim is approved, the U.S. Copyright Office will issue a certificate of 
+registration beginning with the prefix “TX,” regardless of whether the claim is submitted 
+as a “Literary Work” or  a “Single Serial Issue.”  
+Form SE and the  application for a “Single Serial Issue” may only be used to register an 
+issue that has been published. These applications may only be used to register a serial 
+that qualifies as a collective work. They also may be  used to register an individual 
+article, photograph, or other contribution to a serial publication, but only if the applicant 
+is registering that contribution together with the issue as a whole. If the registration 
+specialist determines that the issue does  not satisfy these requirements, he or she will 
+refuse to register the claim.  
+In all cases, the applicant should provide the title that appears on the serial, as well as 
+the volume number, issue number, and date (if any) that appears on the specific issue 
+that will be submitted for registration, as well as the frequency of publication  for that 
+serial, such as daily, weekly, monthly, etc. When completing an online application, an 
+applicant may pro vide this information in the Title field ( e.g., Home Cooking , Vol. 2, No. 
+17, February 2, 2013). When completing a paper application, t his information should be 
+provided in space 1. For guidance in completing this portion of the application, see 
+Chapter 600 , Section 610.  
+The applicant should identify the copyrightable  authorship that the applicant intends to 
+register, and the applicant should assert a claim  to copyright in that material. When 
+completing an online application, this information should be provid ed in the Author 
+Created field. When completing a paper application, this information should be provided 
+in space 2. For guidance on completing Form SE or the online application for a “Single 
+Serial Issue,” see Chapter 600 , Sections 618.7(C) and 618.7(D) . For Form TX or the 
+online application for a “Literary Work,” see Chapter 600 , Sections 618 .4(A), 618.4(B), 
+618.7(A), and 618.7(B)(2) . 
+If the applicant intends to register the authorship involved in creating the issue as a 
+whole, the applicant should assert a claim in the “collective work authorship.” If the 
+applicant intends to register the aut horship involved in creating the issue as a whole, as 
+well as the individual contributions that appear within that issue, the applicant should 
+assert a claim in the “collective work authorship and component work(s) authored or 
+fully owned by the Collective  Work Author.”  
+As mentioned above, an applicant may register an issue together with the articles, 
+photographs , or other contributions contained therein (i) if the claimant owns the 
+copyright in the individual contributions and the issue as a whole, and (ii ) if the 
+contributions have not been previously published or previously registered. See Morris v. 
+Business Concepts, Inc ., 259 F.3d 65, 71 (2d Cir. 2001), abrogated on other  grounds by 
+Reed Elsevier, Inc. v. Muchnick , 559 U.S. 154 (2010). In no case may th e claimant register 
+a contribution that is in the public domain.  
+If the copyright in the individual contributions and the issue as a whole are owned by 
+different parties, or if the contributions were previously published or previously 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  21 01/28/2021  registered, the appli cant generally must submit a separate application for each 
+contribution.  
+If the claimant is not the author of the issue as a whole or is not the author(s) of the 
+individual contributions that appear within that issue, the applicant should provide a 
+transfer statement  explaining how the claimant obtained the copyright in the issue as a 
+whole or a particular contribution, as appropriate. For guidance on completing this 
+portion of the application, se e Chapter 600 , Section 620.9(A).  
+If the issue contains an appreciable amount of previously published material, previously 
+registered material, public domain  material, or material that is not owned by the 
+copyright claimant, the applicant should exclude that material from the claim using the 
+procedure described in Chapter 600 , Section 621.8.  
+For guidance concerning the deposit requirements for serials , see Chapter 1500 , Section 
+1509.1(B).  
+  712.3  ISBN and ISSN Numbers  
+If an International Standard Book Number (“ISBN”) or International Standard Serial 
+Number (“ ISSN ”) has been assigned to a monograph or serial, the applicant  is strongly 
+encouraged to include that information in the online application. For guidance on 
+completing this portion of the applicati on, see Chapter 600 , Section 612.6(C). When 
+completing Form SE  or Form TX the applicant may include the ISSN number in the space 
+marked Previous or Alternative Titles.  
+If the applicant provides an ISBN or ISSN, the number will appear on the certi ficate of 
+registration  and the online public record . Providing this information is useful, because 
+the number may be used to search and retrieve the registration records for a particular 
+monograp h or serial. However, providing an ISBN or ISSN is optional and an application 
+will be accepted even if this portion of the application is left blank.  
+The U.S. Copyright Office does not assign ISBNs or ISSNs. In the United States, ISBNs are 
+administered b y R.R. Bowker ( www.bowker.com ). For information concerning the 
+procedure for obtaining an ISSN, applicants should write to the Serials Record Division 
+of the Library of Congress at the following address:  
+Library of Con gress  
+ISSN Publisher Liaison Section  
+101 Independence Avenue SE  
+Washington, DC 20540 -4284  
+Additional information, including the ISSN application form, is available on the ISSN 
+Publisher Liaison Section’s webpage . 
+ 713 Book Jackets  
+Book jackets often contain several types of authorship that is separate from the book 
+itself, such as text, illustrations, and photographs. If text is the predominant form of 
+authorship in the jacket, the work may be registered as a nondra matic literary work. If 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  22 01/28/2021  the predominant form of authorship consists of artwork, illustrations, or photographs, 
+the jacket may be registered as a work of the visual arts. See 37 C.F.R. § 2 02.3(b)(1)(i), (iii) .  
+When asserting a claim  in a book jacket, the applicant  should clearly indicate that the 
+claim extends to the copyrightable  material that appears on the jacket. Specifically, the 
+claim should be limited to the text, artwork, and/or photographs that appear on the 
+jacket, the applicant should provide the nam e of the author who created that material, 
+and the applicant should provide the name of the claimant  who owns the copyright in 
+that material. The Literary Division may accept a claim in “text” if the jacket contains a 
+sufficient amount of written expression, or a claim in “artwork” and/or “photograph(s)” 
+if the jacket contains a sufficient amount of pict orial or graphic expression. When 
+completing an online application, this information should be provided in the Author 
+Created field, and if applicable, also in the New Material Included field. When completing 
+a paper application on Form TX , this information should be provided in space 2, and if 
+applicable, also in space 6(b). For guidance on completing these portions of the 
+application, see Chapter 600 , Sections 618.4 and 621.8.  
+If the claim in the book jacket is based solely on the title of the work, the registration 
+specialist  will refuse to register the claim. If the claim is based solely on the 
+arrangement, spacing, juxtaposition, and layout of copyrightable or uncopyrightable 
+elements, the registration specialist  may communicate with the applicant or may refuse 
+to register the claim if the jacket merely  contains a standard arrangement that is not 
+sufficiently creative to support a compilation claim. See 37 C.F.R. § 202.1(a) ; Chapter 
+300, Section 313.3(E).  
+A book and a book jacket may be registered with the same application if the works can 
+be physically separated from each other, and if the copyright in both works is owned by 
+the same claimant. For more  information concerning this option, see Chapter 1100 , 
+Section 1103 . 
+In the alternative, the applicant may submit separate applications for the book and the 
+jack et. If the applicant submits a separate application for a jacket that has been 
+published , the Office will retain the jacket “for the longest period considered practicable 
+and desirable by the Register of Copyrights and the Librarian of Congress.” 17 U.S.C. § 
+704(d) . If the applicant submits an application to register a book that has been 
+published but does not assert a separate claim in the jacket, the Library of Congress may 
+add the boo k to its collection, but the jacket will be discarded. For a discussion of the 
+deposit requirements for book jackets, see Chapter 1500 , Section 1509.1 (D). 
+ 714 Games  
+A game may be regi stered as a literary work  if the predominant form of authorship in 
+the work consists of text . Examples of works that may satisfy this requirement include 
+word games, card games, party games, riddles, brain teasers, and similar diversions, 
+including the ins tructions or directions for playing a particular game. A game may be 
+registered as a work of the visual arts if the predominant form of authorship consists of 
+pictorial or sculptural authorship. Examples of works that may satisfy this requirement 
+include b oard games, playing cards, playing pieces, and the like. See 37 C.F.R. § 
+202.3(b)(1)(i) , (iii). 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  23 01/28/2021  When submitting an app lication to register a game, the claim  should be limited to the 
+text, artwork, and/or photographs that appear in the work (as applicable), the applicant  
+should provide the name of the author who created that material, and the applica nt 
+should provide the name of the claimant  who owns the copyright in that material. The 
+Literary Division may accept a claim in “text” if the game contains a sufficient amount of 
+written expressi on, or a claim in “artwork” and/or “photograph(s)” if the work contains 
+a sufficient amount of pictorial or graphic expression. When completing an online 
+application, this information should be provided in the Author Created field, and if 
+applicable, also in the New Material Included field. When completing a paper application 
+on Form TX , this information should be provided in space 2, and if applicable, also in 
+space 6(b). For guidance on completi ng these portions of the application, see Chapter 
+600, Sections 618.4 and 621.8.  
+A registration for a game covers all of the copyrightable  elements that appear in the 
+work, regardless of whether the game has been registered as a literary work or a work 
+of the visual arts. However, copyright does not protect the idea for a game, the name or 
+title of a game, or the pr ocedure, process, or method of operation for playing a game. 
+Nor does copyright protect any idea, system, method, or device involved in developing 
+or marketing a game. Once a game has been made available to the public, the copyright 
+law cannot be used to p revent others from developing another game based on similar 
+principles. Copyright protects only the particular expression that appears in the literary 
+or artistic elements that the work may contain. See 17 U.S.C. § 102(b) ; 37 C.F.R. § 202.1 . 
+If the game consists of separately fixed elements and works that were physically 
+bundled together by the claimant for distribution  to the public in the same integrated 
+unit, it may be possible to register them with one application and one filing fee  if all the 
+works were first published in that integrated unit and if the cl aimant owns the copyright 
+in those works. For information concerning the unit of publication  option, see Chapter 
+1100 , Section 1103 . 
+For a discussion of the practices and procedures for registering videogames, see Chapter 
+800, Section 807.7(A). For a discussion of the practices and p rocedures for registering 
+board games, see Chapter 900 , Section 910.  
+ 715 Genealogies  
+ 715.1  What Is a Genealogy?  
+A genealogy is a work that contains information about the history of a particular family. 
+These types of works typically contain a substantial amount of factual information, such 
+as the names of family members, dates of birth, marriage, death, and other si gnificant 
+events, as well as family trees illustrating the relationships between family members. 
+Frequently, this information is obtained from various sources, such as letters, diaries, 
+scrapbooks, photo albums, birth certificates, marriage licenses, churc h records, census 
+records, wills and probate records, gravestones, and the like. Much of this material may 
+be in the public domain , it may be previously published, it may be previously registered  
+with the U.S. Copyright Office, or it may be separately owned by another copyright 
+owner.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  24 01/28/2021   715.2  Copyrightable Authorship in Genealogies  
+Although facts are not copyrightable , a genealogy may be registered as a literary work if 
+it contains a sufficient amount of written expression. The application should be limited 
+to the text, artwork, and/or photographs that the author contributed to the work (as 
+applicable), the applicant  should provide the name of the author who created that 
+material, and the applicant should provide the name of the claimant  who owns the 
+copyright in that material. The Literary Division may accept a claim  in “text” if the work 
+contains a sufficient a mount of written expression, and may accept a claim in “artwork” 
+and/or “photograph(s)” if the work contains a sufficient amount of pictorial or graphic 
+expression. Likewise, the Literary Division may accept a claim in “ compilation ” if the 
+author exercised a sufficient amount of creativity in selecting, coordinating, and/or 
+arranging the information that appears in the genealogy.  
+ 715.3  Application Tips for Genealogies  
+Submitting an online applica tion is the preferred way to register a genealogy. When 
+completing the application, the applicant  should provide the name of the author who 
+created the genealogy on the Author screen. In the fiel d marked Author Created, the 
+applicant should check one or more of the boxes that accurately describe the material 
+that the author created.  
+Examples:  
+• The applicant should check the box marked “text” if the author 
+wrote the captions, footnotes, comments, b iographies, or other 
+textual expression that appears in the genealogy.  
+• If the author created any of the artwork or took any of the 
+photographs that appear in the genealogy, the applicant should 
+check the boxes marked “artwork” or “photograph(s),” as 
+appli cable.  
+• If the author selected, coordinated, and/or arranged the names, 
+dates, records, photographs, or other material that appears in the 
+genealogy, the applicant should provide a brief statement to that 
+effect in the field marked Other. For example, the L iterary Division 
+will accept a brief statement , such as: “selection, coordination, and 
+arrangement of family photographs, newspaper clippings, census 
+records, and other source material,” “selection and arrangement of 
+information obtained from family record s, court records, church 
+records, and gravestones,” “selection of family photos, coordination 
+of family names and relationships, and arrangement of facts and 
+historical information,” or the like.  
+For additional guidance on completing this portion of the a pplication, see Chapter 600 , 
+Section 618.4.  
+The applicant should provide the exact same information on the Limitation of Claim 
+screen in the field marked New Material Includ ed. In other words, if the applicant 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  25 01/28/2021  checked the box for “text” in the Author Created field, the applicant also should check 
+the box for “text” on the Limitation of Claim screen in the New Material Included field. If 
+the applicant stated “selection and arr angement of church records” on the Author 
+Created screen in the field marked Other, the applicant should state “selection and 
+arrangement of church records” on the Limitation of Claim screen in the field marked 
+Other. For additional guidance on completing these portions of the application, see 
+Chapter 600 , Section 621.8.  
+A registration for a genealogy does not cover any of the factual information that may be 
+included in the w ork. Nor does it cover material that is in the public domain , material 
+that has been previously published, material that has been previously registered, or 
+material that is owned by another perso n or legal entity. If the genealogy contains this 
+type of material the applicant should exclude it from the application by checking the 
+appropriate boxes that appear on the Limitation of Claim screen in the field marked 
+Material Excluded.  
+Examples:  
+• The app licant should check the box marked “text” if the genealogy 
+contains an appreciable amount of text that is in the public domain, 
+text that has been previously published, text that has been 
+previously registered, or text owned by a third party.  
+• The applicant  should check the box marked “photograph(s),” if the 
+genealogy contains an appreciable number of photos that are in the 
+public domain, photos that have been previously published, photos 
+that have been previously registered, or photos owned by a third 
+party . 
+• The applicant should check the box marked “artwork” if the 
+genealogy contains an appreciable amount of artwork that is in the 
+public domain, artwork that has been previously published, artwork 
+that has been previously registered, or artwork owned by a th ird 
+party.  
+If the genealogy contains an appreciable amount of material that has been registered 
+with the U.S. Copyright Office, the applicant should provide the registration number and 
+the year that the registration was issued in the field marked Previous Registration. For 
+additional guidance on completing this portion of the application, see Chapter 600 , 
+Section 621.8(F).  
+If the genealogy appears to contain an appreciable am ount of public domain material, 
+previously published material, previously registered material, or material that is owned 
+by another party, and if the applicant failed to exclude that material from the claim, the 
+registration specialist  may add an annotation  to the registration record, such as 
+“Regarding authorship information and limitation of claim: Registration does not extend 
+to previ ously registered, previously published, public domain, or separately owned 
+material, or to facts.”  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  26 01/28/2021  If it is unclear whether the author contributed text, artwork, photographs, or 
+compilation authorship to the genealogy, the registration specialist will comm unicate 
+with the applicant. If the genealogy does not contain a sufficient amount of original 
+authorship to warrant registration, the specialist may refuse to register the claim.  
+Examples:  
+• Jane Springer created a genealogy titled The Springers of Springfie ld, 
+Massachusetts.  She gathered information from local courthouses, 
+churches, cemeteries, and other sources; she assembled this 
+information into a book; and wrote a brief introduction for the 
+work. Jane may register the introduction by checking the box for  
+“text” in the Author Created and New Material Included fields. She 
+may register the compilation of information by stating “selection 
+and arrangement of family records” on the Author Created and 
+Limitation of Claim screens in the fields marked Other.  
+• Jenn ifer Smith submits an application to register a genealogy titled 
+The Smith Family of Hamilton County, Virginia . Jennifer wrote the 
+introduction for this work, the captions for each photograph, and a 
+short biography for each member of the family. The geneal ogy also 
+contains text and photographs created by other family members. On 
+the Author Created screen Jennifer checks the boxes for “text” and 
+states “selection, coordination, and arrangement of family records” 
+in the field marked Other. Jennifer should hav e provided this exact 
+same information on the Limitation of Claim screen in the New 
+Material Included field. In addition, she should have checked the 
+boxes for “text” and “photograph(s)” in the Material Excluded field 
+because the genealogy contains text or  photos created and owned 
+by other parties. The registration specialist will register the claim 
+with an annotation, such as: “Regarding authorship information: 
+Registration does not extend to previously registered, previously 
+published, public domain, or s eparately owned material, or to facts.”  
+• Thomas Henry submits an application to register a genealogy titled 
+The Henrys in Spokane County . On the Author Created screen he 
+checks the box for “text” and states “compilation of public records” 
+in the field marke d Other. In the Note to Copyright Office field, 
+Thomas explains that he wrote the introduction for this work and 
+he prepared a list of all the members of the Henry family who were 
+born in Spokane County. The names are listed in chronological 
+order based on  the individual’s date of birth. The registration 
+specialist will communicate with the applicant. Although the 
+introduction may be registered as “text,” the Office cannot register 
+the claim in “compilation,” because preparing a list of all of the 
+family me mbers from a particular county and organizing the names 
+in chronological order does not contain a sufficient amount of 
+compilation authorship to warrant registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  27 01/28/2021   716 Instructional Texts and Instructional Works  
+Textbooks and other instructional texts may be registered if the work contains a 
+sufficient amount of original authorship. The statute defines an “instructional text” as “a 
+literary, pictorial, or graphic work prepared for publication  and with the purpose of use 
+in systematic instructional activities.” See 17 U.S.C. § 101  (definition of “work made for 
+hire”). As the legislativ e history explains, this category includes “textbook material,” 
+regardless of whether the work is published  “in book form or prepared in the form of 
+text matter.” H.R.  REP. NO. 94-1476,  at 121 (1976)  reprinted in  1976 U.S.C.C.A.N. at 5737; 
+S. REP. NO. 94-473, at 105 (1975) . The “basic characteristic” of an instructional text is 
+that the work must be prepared for “use in systematic instructional activities,” rather 
+than a work “prepared for use by a general readership.” H.R.  REP. NO. 94-1476,  at 121 
+(1976)  reprinted in  1976 U.S.C .C.A.N. at 5737; S. REP. NO. 94-473, at 105 (1975) . 
+Instructional texts are among the nine categories of works that can be specially ordered 
+or commissioned as a work made for hire, prov ided that the parties expressly agree in a 
+signed written instrument that the work shall be considered a work made for hire. For a 
+discussion of works made for hire, see Chapter  500, Section 506.  
+Other types of instructional works may be registered with the U.S. Copyright Office, 
+provided that the work, taken as a whole, contains a sufficient amount of original 
+authorship. Examples of works that may satisfy this requirement inclu de cookbooks, 
+instructions for knitting, crocheting, or needlework, instructions for operating a 
+machine, appliance, or other device, and similar types of works.  
+If text is the predominant form of authorship, an instructional text or other instructional 
+work may be registered as a nondramatic literary work. If the predominant form of 
+authorship consists of artwork, illustrations, or photographs, the work may be 
+registered as a work of the visual arts. See 37 C.F.R. § 202.3(b)(1)(i) , (iii). For 
+information concerning the registration requirements for stencils, patterns, and how -to 
+books, see Chapter 900 , Section 920.  
+The Literary Division may register an instructional work that explains how to perform a 
+particular activity, provided that the work contains a sufficient amount of text, 
+photographs, artwor k, or other copyrightable  expression. Likewise, the Literary Division 
+may register an instructional work that illustrates or describes the end result for a 
+particular activity or technique, such as a drawing of a crochet pattern or a photograph 
+of a product that has been fully assembled.  
+When asserting a claim  in an instructional text or an instructional work, the claim 
+should be limite d to the text, artwork, and/or photographs that appear in the work, the 
+applicant  should provide the name of the author who created that material, and the 
+applicant should provide the name of the  claimant  who owns the copyright in that 
+material. The Literary Division may accept a claim in “text” if the work contains a 
+sufficient amount of written or editorial expression, or a claim in “a rtwork” and/or 
+“photograph(s)” if the work contains a sufficient amount of pictorial or graphic 
+expression. When completing an online application, this information should be provided 
+in the Author Created field, and if applicable, also in the New Material Included field. 
+When completing a paper application on Form TX , this information should be provided 
+in space 2, and if applicable, also in space 6(b). For guidance on completing these 
+portions of  the application, see Chapter 600 , Sections 618.4 and 621.8.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  28 01/28/2021  A registration for a cookbook covers the instructional text that appears in the work, as 
+well as any photographs or illustrations that are owned by the copyright claimant. 
+However, the registration does not cover the list of ingredients that appear in each  
+recipe. Likewise, a registration for a cookbook or other instructional work does not 
+cover the activities described in the work, because procedures, processes, or methods of 
+operation are not subject to copyright protection. See 17 U.S.C. § 102(b) ; 37 C.F.R. § 
+202.1(a) ; see also  Policy Decision on Cop yrightability of Digitized Typefaces, 53 Fed. Reg. 
+38,110, 38,112 (Sept. 29, 1988)  (“[T]he explanation and illustration of recipes is 
+copyrightable even though the end result — the food product — is not.”). The 
+registration specialist  may add an annotation, may communicate with the applicant, or 
+may refuse registration if the applicant appears to be asserting a claim to copyright in a 
+particular activity or a list of ingredients, if the work merel y illustrates the specific hand 
+or body movements for performing a particular activity, or if the instructions, taken as a 
+whole, are de minimis . 
+Examples:  
+• Martha Custer submits an application to  register a set of basic 
+instructions for knitting a sweater. In the Author Created field, she 
+checks the box for “text.” There are dozens of steps in the process, 
+and the instruction for each step is one sentence long. The 
+registration specialist will reg ister the claim, because the 
+instructional text, taken as a whole, contains a sufficient amount of 
+expression to support a registration.  
+• Jules Kinder submits an application to register a cookbook titled Pie 
+in the Sky . In the Author Created field, the appl icant asserts a claim 
+in “text, photographs, and compilation of ingredients.” Each recipe 
+contains a list of ingredients, instructions for making a pie, and a 
+photograph of the finished product. The claim in text and 
+photographs is acceptable, but the clai m in compilation is not, 
+because the applicant appears to be asserting a claim in a mere 
+listing of ingredients. The registration specialist may add an 
+annotation, such as: “Regarding authorship information: 
+Compilation is mere listing of ingredients or co ntents; not 
+copyrightable. 37 CFR 202.1.”  
+• The Abigail Adams Co. submits an application to register a set of 
+basic instructions for knitting  a scarf. In the Author Created field, 
+the applicant asserts a claim in “text, photographs, and artwork.” 
+The work co ntains illustrations, photographs, patterns, and other 
+artwork, but the instructional text is extremely basic, abbreviated, 
+and formulaic, such as “knit 1, purl 2.” The registration specialist 
+will communicate with the applicant. The claim in “artwork” and  
+“photographs” is acceptable, but the claim in “text” is not, because 
+the instructional text, taken as a whole, is de minimis . 
+• Paulina Neumann submits an application to register a recipe for a 
+caesar salad. In the Author Created field, the applicant assert s a 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  29 01/28/2021  claim in “text.” The work contains a list of eleven ingredients 
+together with the following instructions: “(1) puree anch ovies, 
+garlic, dijon, egg yolks;  (2) drizzle oil in gradually to emulsify; (3) 
+add lemon, parmesan cheese, salt, pepper, worcesters hire and 
+tobasco sauce.” The registration specialist will refuse to register the 
+claim, because the list of ingredients is not copyrightable and the 
+instructional text is de minimis . 
+For a discussion of the deposit requirements for an instructional work, s ee Chapter 
+1500 , Section 1509.1 (I). 
+ 717 Legal Materials  
+Certain types of legal materials may be registered with the U.S. Copyright Office  if they 
+were created by a private entity or n on-lawmaking official, and  if they contain a 
+sufficient amount of original expression. Examples of legal materials that may satisfy 
+this requirement are discussed in Sections 717.1  through 717.3  below.   
+Whe n submitting an application to register these types of works, the claim  should be 
+limited to the new material that appears in the work, the applicant  should provide the 
+name of the author who created that material, and the applicant should provide the 
+name of the claimant  who  owns the copyright in that material. The Literary Division 
+may accept a claim in “text” if the work contains a sufficient amount of written 
+expression, or a claim in “artwork” and/or “photograph(s)” if the work contains a 
+sufficient amount of pictorial or  graphic expression. When completing an online 
+application, this information should be provided in the Author Created field, and if 
+applicable, also in the New Material Included field. When completing a paper application 
+on Form TX , this information should be provided in space 2, and if applicable, also in 
+space 6(b). For guidance on completing these portions of the application, see Chapter 
+600, Sections 618.4 and 621.8.  
+Certain types of legal materials may be registered as a compilation  if the author 
+exercised a sufficient amount of creativity in selecting , coordinating, and/or arranging 
+the preexisting materials that appear within the deposit. When asserting a claim in a 
+compilation, the applicant should provide the name of the author who created the 
+selection, coordination, and/or arrangement that the app licant intends to register, and 
+the applicant should assert a claim to copyright in that material using the procedures 
+described in Chapter 600 , Section 618.6.  
+As discussed  in Sections 717.1  and 717.2 , legal materials often contain an appreciable 
+amount of content that is not eligible for copyright protection. They also may contain an 
+appreciable amount of content that is in the public domain , content that has been 
+previously published, content that has been previously registered, or content that is 
+owned by a third party. If so, the applicant should exclude this con tent from the 
+application using the procedure described in Chapter 600 , Section 621.8(F).  
+If the applicant asserts a claim in both the copyrightable  and uncopyrightable elements 
+of the work, the registration specialist  may annotate the application to indicate that the 
+registration does not extend to the un copyrightable elements. If the applicant asserts a 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  30 01/28/2021  claim to copyright in an element that is uncopyrightable , the registration specialist may 
+communicate with the applicant or may refuse registration if the claim appears to be 
+based solely on that element.  
+NOTE : The Office will not register legislative enactments, judicial decisions, 
+administrative rulings, public ordinances, or similar types of official legal materials that 
+have been issued by a federal, state, local, or territorial government . Likewise, the Office 
+will not register “non -binding, explanatory legal materials” created by a legislator or 
+legislative body “vested with the authority to make law” or by judges “who possess the 
+authority to make and interpret the law.” Georgia v. Publi c.Resource.Org, Inc ., 140 S. Ct. 
+1498, 1504 (2020).  This is known as the “government edi cts doctrine.” Id. at 1504, 1506.  
+For information concerning this doctrine, see Chapter 300 , Section 313.6(C)(2).  
+ 717.1  Legal Publications  
+A legal publication that analyzes, annotates, summarizes, or comments upon legislative 
+enactments, judicial decisions, executive orders, administrative regulations, or other 
+edicts of governmen t may be registered as a nondramatic literary work, if the 
+publication was “prepared by a private party, or a non -lawmaking official” “who lack[s] 
+the authority to make or interpret the law ,” and if it contains a sufficient amount of 
+original authorship . Georgia , 140 S. Ct. at 1507, 1509 , 1510.  Examples of legal 
+publications that may satisfy this requirement are listed below, but in no case does the 
+registration cover any government edict that may be included in the work. See id. at 
+1504 ; see also  Chapter 300 , Section 313.6(C)(2).  
+Examples:  
+• Annotated codes authored by a private entity  not acting under the 
+control of a legislative or judicial body  that summarize or comment 
+upon government edicts issued by a federal, state, local, or foreign 
+government.  
+• A compilation authored by a private entity  not acting under the 
+control of a legislative or judicial body  that contains legislative 
+enactments , judicial decisions, or other government edicts, provided 
+that the entity exercised a sufficient amount of creativity in 
+selecting, coordinating, and/or arranging this material.  
+• Treatises that analyze or review legal subjects.  
+• Dictionaries, anthologies, an d encyclopedias that define or describe 
+legal subjects.  
+• Legal periodicals that cover specific areas of the law, such as law 
+reviews, legal journals, legal newspapers, legal newsletters, and 
+the like.  
+• Casebooks containing a selection of legislative enactmen ts and 
+judicial decisions that have been abridged and/or annotated with 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  31 01/28/2021  comments and questions for use in systematic instructional 
+activities.  
+• Test materials that are used to determine eligibility for membership 
+in a bar association or other professional o rganization, as well as 
+study materials used to prepare for such tests.  
+The Office will consider an application to register a citator containing specialized 
+indexes for tracing the prior and subsequent history of a judicial decision; for identifying 
+decisi ons that have followed, explained, distinguished, criticized, or overruled a 
+previous judicial decision; or for researching a specific area of the law. This type of work 
+may be registered if it contains a sufficient amount of new text, such as an introduct ion 
+or a brief summary of the issues discussed in each case. Likewise, a citator may be 
+registered as a compilation, provided that the author exercised a sufficient amount of 
+creativity in selecting, coordinating, and/or arranging the categories that appea r within 
+the work. However, the registration specialist  may communicate with the applicant  or 
+may refuse registration if the claim  appears to be based solely on the selection of judicial 
+decisions, because citators typically list all of the subsequent decisions that cite the 
+same case. The specialist also may communicate or ref use registration if the claim 
+appears to be based solely on a system for conducting legal research or on any “idea, 
+procedure, process, system, method of operation, concept, principle, or discovery” that 
+may be reflected or implemented in the work. 17 U.S.C. § 102(b) . 
+ 717.2  Legal Documents  
+Contracts, insurance policies, or other legal documents may be registered if they contain 
+a sufficient amount of expression that is original to the a uthor. The U.S. Copyright Office 
+may register briefs, motions, prepared testimony, expert reports, or other legal 
+pleadings, provided that they contain a sufficient amount of expression that originated 
+with the author (regardless of whether the pleading ha s or has not been filed with a 
+judicial or administrative body). Likewise, the Office may register books that contain 
+sample forms used in preparing contracts, pleadings, or other legal documents.  
+Legal documents typically contain an appreciable amount of language that may have 
+been obtained from other sources, such as standard form contracts, prior pleadings, 
+form books, and the like. Much of this language may have been previously published, it 
+may be owned by other parties, or it may be in the public domain . Often the language 
+used in a legal document may be determined by the requirements of the relevant 
+statutory, regulatory, or decisional law. In some cases, the author may be required to 
+use sp ecific legal terminology or a specific sentence structure, such as the boilerplate 
+language found in a lease, bailment, chattel mortgage, security interest, or similar 
+transactions.  
+The Office may register a legal document that contains an appreciable amo unt of 
+unclaimable material, provided that the claim  is limited to the new material that the 
+author contributed to the work and provided that the unclaimable material has been 
+excluded from the c laim. For purposes of registration, unclaimable material includes 
+previously published material, previously registered material, public domain material, 
+or copyrightable  material that is owned by  another party.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  32 01/28/2021  When completing the application, t he applicant  should provide a brief statement that 
+describes the new material that the author contributed to the work, such as “new text,” 
+and a  brief statement that describes the unclaimable material that should be excluded 
+from the claim, such as “standard legal language.”  In the case of an online application, 
+this information should be provided in the Author Created, New Material Included, and 
+Material Excluded fields. In the case of a paper application submitted on Form TX , it 
+should be provided in spaces 2, 6(a), and 6(b). For guidance on completing these 
+portions of the application,  see Chapter 600 , Sections 618.4 and 621.8.  
+ 717.3  Patents, Patent Applications, and Non -Patent Literature  
+The U.S. Copyright Office may register a claim  to copyright in the written description for 
+an invention or the drawings or photographs set forth in a patent or a patent 
+application, provided that the work contains a sufficient amount of original authorship. 
+Likewise, the Office may register a claim to copyright in articles, publications, or other 
+non-patent literature that may be submitted with a patent application. However, the 
+copyright in a patent, a patent application, or non -patent literature does not exten d to 
+any “idea, procedure, process, system, method of operation, concept, principle, or 
+discovery” that may be disclosed in these works.  
+Under U.S. patent law, a patent application must be filed within one year after the 
+invention has been described in an y printed publication. See 35 U.S.C. § 102(a)(1),  
+(b)(1). Filing a patent application or non -patent literature with the U.S. Patent and 
+Trademark Office or the U.S. Copyright Office is not considered publication  within the 
+meaning of the copyri ght law. The U.S. Copyright Office takes no position on whether 
+filing an application to register the text and illustrations in a patent application or in 
+non-patent literature would be considered a publication within the meaning of the 
+patent law.  
+ 718 Letters, Email, and Other Written Correspondence  
+Letters, emails, journals, diaries, and other forms of written correspondence may be 
+registered if they contain a sufficient amount of copyrightable  expression and if the 
+claimant  owns the copyright in that material.   
+When submitting an application to register these types of works, the applicant  should 
+limit the claim  to the text, artwork, and/or photographs that appear in the work, the 
+applicant should provide the name of the author who created that material, and the 
+appl icant should provide the name of the claimant who owns the copyright in that 
+material. The Literary Division may accept a claim in “text” if the work contains a 
+sufficient amount of written expression, or a claim in “artwork” and/or “photograph(s)” 
+if the work contains a sufficient amount of pictorial or graphic expression. When 
+completing an online application, this information should be provided in the Author 
+Created field, and if applicable, also in the New Material Included field. When completing 
+a pape r application on Form TX , this information should be provided in space 2, and if 
+applicable, also in space 6(b). For guidance on completing these portions of the 
+application, see Chapter 600 , Sections 618.4 and 621.8.  
+As a general rule, the author of the correspondence —not the recipient —should be 
+named as the copyright claimant. The fact that a person owns or posses ses the original 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  33 01/28/2021  copy of a letter, a journal, diary, or other material object does not give that person the 
+right to claim copyright in that work, even if the material object was purchased or found. 
+Ownership of the copyright in a work, or of any of the exclusive rights  under a copyright, 
+is distinct from the ownership of any material object in which the work has been fixed . A 
+transfer  of ownership involving a material object does not convey any rights in the 
+copyrighted work, nor does the transfer of ownership of a copyright convey any 
+property rights in any material object (ab sent a written agreement to that effect). 17 
+U.S.C. § 202 . 
+A party that has obtained all of the rights under copyright that initially belonged to the 
+author may be named as the copyrigh t claimant for a letter, email, journal, diary, or 
+other written correspondence. When completing the application, the applicant should 
+provide a brief transfer statement  explaining how the claima nt obtained the copyright in 
+the work. For example, the registration specialist  may accept an application if the 
+applicant states that the claimant obtained the copyright “by inheritance” or “by written 
+agreement,” but the specialist will question an application if the applicant simply states 
+“I found this diary in the attic,” “my mother gave me this journal,” “my boyfriend sent me 
+these love letters,” or the like. These types of statements sugges t that the claimant may 
+own a material object ( i.e., a journal, a diary, a letter), but it is unclear whether the 
+claimant owns the copyright in the work that is embodied in those objects. For guidance 
+on identifying the copyright claimant, see Chapter 600 , Section 619. For guidance on 
+providing a transfer statement, see Chapter 600 , Section 620.  
+In some cases, journals, diaries, letters, or other written correspondence may be 
+published  with new material that introduces, illustrates, or expla ins the work, such as 
+forewords, afterwords, footnotes, annotations, or the like. As discussed in Section 709.4 , 
+this type of material may be registered as a derivative w ork if it contains a sufficient 
+amount of original authorship. See 17 U.S.C. § 101  (definition of “derivative work”). The 
+applicant should limit the claim to the new text that the autho r contributed to the work, 
+the applicant should provide the name of the author who created the new text, together 
+with the name of the claimant who owns the copyright in the new text. A pplicants 
+should use the terms “new text,” “text of introduction,” or t he like to describe this type of 
+authorship, rather than “text” or “editing.” If the new material contains an appreciable 
+amount of pictorial or graphic expression, applicants should use the term “artwork” 
+and/or “photograph(s)” to describe this type of au thorship. In all cases, the journal, 
+diary, letters, or other written correspondence should be excluded from the claim if that 
+material has been previously published, previously registered, if it is in the public 
+domain , or if the copyright in that material is owned by another party. For a discussion 
+of the procedure for excluding this type of material from a claim, see Chapter 600 , 
+Section 621.8.  
+ 719 Interviews  
+An interview is a written or recorded account of a conversation between two or more 
+individuals. Typically, the interviewer poses a series of questions that elicit a response 
+from the interviewee(s).  
+An int erview may be registered if the conversation has been fixed  in a tangible medium 
+of expression and if it contains a sufficient amount of creative expression in the form of 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  34 01/28/2021  questions and responses . Specifically, an interview may be registered as a literary work 
+if it has been fixed in a written transcript, an audio recording, a video recording, or other 
+medium of expression. An interview may be registered as a work of the performing arts 
+if the int erview was performed or is intended to be performed before an audience, such 
+as a television interview, radio interview, or onstage interview.  
+In all cases, the applicant  should provide the name  of the author who created the 
+questions and/or the author who created the responses that appear in the interview, 
+and the applicant should provide the name of the claimant  who owns the copyright  in 
+that material. The Literary Division may accept a claim  in “text” if the interview contains 
+a sufficient amount of written expression, or may accept a claim in “text by interviewer” 
+or “text by interviewee” if the claim is limited to the interviewer’s questions or the 
+interviewee’s responses. When completing an online application, this information 
+should be provided in the Author Created field, and if applicable, also in the New 
+Material Inclu ded field. When completing a paper application on Form TX , this 
+information should be provided in space 2, and if applicable, also in space 6(b). For 
+guidance on completing these portions of the application, see Chapter 600 , Sections 
+618.4 and 621.8.  
+The U.S. Copyright Office will assume that the interviewer and the interviewee own the 
+copyright in their respective questions and responses unless (i) the work is claimed as a 
+joint work , (ii) the applicant provides a transfer statement  indicating th at the 
+interviewer or the interviewee transferred his or her rights to the copyright claimant, or 
+(iii) the applicant indicates that the interview was created or commissioned as a work 
+made for h ire. If the applicant fails to provide a transfer statement or fails to answer the 
+work made for hire question, the registration specialist  may communicate with the 
+applicant if it appears that the interviewee or the interviewer is attempting to register 
+the entire interview instead of registering a claim in his or her contribution to the work. 
+For guidance on providing a transfer statement, see Chapter 600 , Section 620. For 
+guidance on answering the work made for hire question, see Chapter 600 , Section 614. 
+For guidance on joint works, see Chapter 500 , Section 505.  
+Examples:  
+• Michael Scorch submits an application to register his interview with 
+Major William Smith. The application names Michael and William as 
+authors of “text of interview questions” and “text of responses to 
+interview questions,” respectively. Michael is named as the sole 
+copyright claimant and the transfer statement indicates that he 
+obtained the copyright in William’s contribution “by written 
+agreement.” The registration specialist will register the claim.  
+• Beth McBride submits an application to register her interview with 
+Franklin Murphy. Beth is named as author of “text by interviewe r” 
+and Franklin is named as author of “text by interviewee.” Beth is 
+named as the sole copyright claimant, but a transfer statement has 
+not been provided and the work made for hire question has not 
+been answered. The registration specialist will communicat e with 
+the applicant to determine if Franklin transferred his copyright to 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  35 01/28/2021  Beth or if the interview was created or commissioned as a work 
+made for hire. If Beth does not own the copyright in Franklin’s 
+contribution, the specialist will ask her to limit the  claim to the “text 
+by interviewer.”  
+ 720 [Reserved]  
+ 721 Computer Programs  
+This Section discusses the U.S. Copyright Office’s practices and procedures for the 
+examination of computer programs .  
+For a discussion of databases , see Section 727. For a discussion of websites and website 
+content, see Chapter 1000 . For a discussion of videogames, see Section 726 and Chapter 
+800, Section 807.7(A).  
+ 721.1  What Is a Computer Program?  
+The Copyright Act defines a “ computer program ” as “a set of statements or instructions 
+to be used directly or indirectly in a computer in order to bring about a certain result.” 
+17 U.S.C. § 101 . Congress added this definition to the statute “to make it explicit that 
+computer programs, to the extent that they embody an author’s original creation, are 
+proper subject matter of copy right.” NATIONAL COMMISSION ON NEW TECHNOLOGICAL USES OF 
+COPYRIGHTED WORKS  (“CONTU”), FINAL REPORT 1 (1979) (CONTU REPORT ); see also  126 
+CONG. REC. 29,895 (1980) (statement of Rep. Kastenmeier) (explaining that the 
+legislation “eliminates confusion about t he legal status of computer software by 
+enacting the recommendations of [CONTU] clarifying the law of computer software”).  
+A claim  to copyright in a computer program may be based on the authorshi p “expressed 
+in words, numbers, or other verbal or numerical symbols or indicia,” regardless of 
+whether that expression has been fixed in tapes, disks, cards, or any other tangible 
+medium of expression. 17 U.S.C. § 101  (definition of “literary works”). However, the 
+fixed program must be used directly or indirectly in a computer. For purposes of 
+copyright registration, a “computer” is defined as a programmable electronic device that 
+can s tore, retrieve, and process data that is input by a user through a user interface, and 
+is capable of providing output through a display screen or other external output device, 
+such as a printer. “Computers” include mainframes, desktops, laptops, tablets, a nd 
+smart phones.  
+ 721.2  What Is a Derivative Computer Program?  
+A derivative  computer program is a program that is “based upon one or more 
+preexisting works.” 17 U.S.C. § 101  (definition of “derivative work”). Typically, a 
+derivative computer program is a new version of a preexisting program, or a program 
+that contains material from a preexisti ng work that has been revised, augmented, 
+abridged, or otherwise modified such that the modifications as a whole represent an 
+original work of authorship.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  36 01/28/2021  Example:  
+• Telamon Software submits an application to register a computer 
+program titled Ajax 4.0 . The  program corrects certain problems 
+found in previous versions of the same program. For instance, it 
+increases the number of file formats that can be processed by the 
+program, it doubles the speed for decoding graphics, and it allows 
+the program to work wit h other types of graphics cards and 
+semiconductor chips. Ajax 4.0  would be considered a derivative 
+computer program. See Montgomery v. Noga , 168 F.3d 1282, 1290 -
+91 (11th Cir. 1999).  
+ 721.3  What Is Source Code?  
+Source code  is a set of statements and instructions written by a human being using a 
+particular programming language, such as C, C++, FORTRAN, COBOL, PERL, Java, Basic, 
+PASCAL, LISP, LOGO, or other programming languages. These statements or instructions 
+are comprehensible to a person who is familiar with the relevant programming 
+language, but in most cases a computer or other electronic device cannot execute these 
+statements or instructions unless they have been converted into object code . This 
+conversion is performed by a separate program within the computer, which is known as 
+an interpreter, assembler, or compiler. See Apple Computer, Inc. v. Franklin Computer 
+Corp ., 714 F.2d 1240,  1243 (3d Cir. 1983); Williams Electronics, Inc. v. Artic International, 
+Inc., 685 F.2d 870, 876 n.7 (3d Cir. 1982) (quoting the CONTU REPORT at 21 n. 9, 28).  
+ 721.4  What Is Object Code?  
+Object c ode is the representation of a computer program in a machine language. It 
+typically consists of the numbers zero and one ( i.e., binary coding), the numbers zero 
+through seven ( i.e., octal coding), or a combination of letters and numbers ( i.e., ASCII or 
+hexadecimal coding). Object code is comprehensible to a computer or other electronic 
+device, but it is not intended to be read by human beings, and as a general rule, it is not 
+directly comprehensible to human beings. See Apple Computer, 714 F.2d at 1243.  
+ 721.5 Relationship Between Source Code and Object Code  
+The U.S. Copyright Office views source code  and object code  as two representation s of 
+the same work. See GCA Corp. v. Chance , 217 U.S.P.Q. 718, 719 -20 (N.D. Cal. 1982) 
+([b]ecause the object code is the encryption of the copyrighted source code, the two are 
+to be treated as one work…”).  
+As a general rule, the Office will not issue separ ate registrations for the source code and 
+object code versions of the same program. If a program was registered in unpublished  
+form based on a submission of object code, the Office may register t he first published  
+version of the same program based on a submission of source code (or vice versa ), even 
+if the published version “is substantially the same as the unpublished version.” 17 U.S.C. 
+§ 408(e) ; 37 C.F.R. § 202.3(b)(11)(i) . 
+For details concerning the deposit requirements for registering a computer program 
+with a submission of object code, see Chapter 1500 , Section 1509.1 (F)(4)(b).  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  37 01/28/2021   721.6  Relationship Between a Computer Program and a Work Created with a 
+Computer or a Computer Program  
+The ownership of the copyright in a work of authorship, or of any of the exclusive rights  
+under a copyright, is distinct from the ownership of any material object in which the 
+work has been fixed . A transfer  of ownership of a material object does not convey any 
+rights in the work, nor does the transfer of owner ship of a copyright convey property 
+rights in any material object (absent a written agreement to that effect). 17 U.S.C. § 202 . 
+Likewise, ownership of the copyright in a work is distinc t from ownership of any 
+material object that may be used to create that work. The fact that the author used a 
+computer to write an article, short story, or other nondramatic literary work does not 
+mean that the work is a computer program. The fact that the  author saved his or her 
+work onto a hard drive, flash drive, thumb drive, CD -ROM, or other electronic storage 
+device does not mean that the work is a computer program. A work only qualifies as a 
+computer program if it contains “a set of statements or inst ructions to be used directly 
+or indirectly in a computer in order to bring about a certain result.” 17 U.S.C. § 101  
+(definition of “computer program”). Moreover, when a work is created with a computer 
+program, any elements of the work that are generated solely by the program are not 
+registerable, such as formatting codes that are inserted by a word processing program.  
+ 721.7  Copyrightable Authorship in a Computer Program  
+A computer program may be registered with the U.S. Copyright Office if it contains a 
+sufficient amount of original authorship in the form of statements or instructions to a 
+computer.  
+Section 102(b)  of the Copyright Act “make[s] clear that the expression adopted by the 
+programmer is the copyrightable element in a computer program, and that the actual 
+processes or methods embodied in the program are not within the scope of the 
+copyright l aw.” H.R.  REP. 94-1476,  at 57 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5670; S. 
+REP. NO. 94-473, at 54 (1975) .  
+As a general rule, the Office does not distinguish between executable code and 
+nonexecuting comments or data that may appear in the source code  for a computer 
+program. Either element may support a claim  to copyright if the program contains a 
+sufficient amount of original statements or instructions, and both elements may be 
+registered with the same application. See Registration of Claims to Copyright Deposit 
+Requirements for Computer Programs Containing Trade Secrets and for Computer 
+Screen Displays, 54 Fed. Reg. 13,173, 13,174 n.2 (Mar. 31, 1989) ; see also  Registration 
+Decision: Registration and Deposit of Computer Screen Displays, 53 Fed. Reg. 21,817, 
+21,819 (June 10, 1988) . To register a claim in the executable code, the applicant should 
+check the box ma rked “computer program” in the Author Created field. To register a 
+claim in nonexecuting comments, the applicant may check the box marked “computer 
+program,” or may also check this box and state “nonexecuting comments” in the field 
+marked “Other.” In both cases, the applicant should avoid using the term “text,” either 
+alone or in combination with the term “computer program.” For guidance in completing 
+this portion of the application, see Section 721.9(F) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  38 01/28/2021  The copyright in a compute r program does not extend to any idea, procedure, process, 
+system, method of operation, concept, principle, or discovery, regardless of the form in 
+which it is described, explained, illustrated, or embodied in the program. 17 U.S.C. § 
+102(b) . As such, the Office will not register the functional aspects of a computer 
+program, such as the program’s algorithm, formatting, functions, logic, system design, or 
+the like. Likewise, the Office will communicate with the applicant and may refuse 
+registration if the applicant asserts a claim in uncopyrightable elements that may be 
+generated by a computer progr am, such as menu screens, layout and format, or the like.  
+ 721.8  Copyrightable Authorship in a Derivative Computer Program  
+A derivative  computer program may be registered if it contains new material that is 
+sufficiently different from the preexisting work such that the program qualifies as an 
+original work of authorship. See 17 U.S.C. § 101  (definition of “derivative work”). The 
+new material must be original and it must contain a suffici ent amount of copyrightable  
+authorship. Making only a few minor changes or revisions to a preexisting work, or 
+making changes or revisions of a rote nature that are predetermined by the functiona l 
+considerations of the hardware does not satisfy this requirement. In no case does the 
+copyright for a derivative computer program extend to any idea, procedure, process, 
+system, method of operation, concept, principle, or discovery, regardless of the for m in 
+which it is described, explained, illustrated, or embodied in the program. 17 U.S.C. § 
+102(b) . 
+Examples:  
+• Decrypt Corp. created a computer program titled Skeleton Key 
+version 5.0 . The program contains a substantial amount of new code 
+that did not appear in prior versions of the same program. The 
+additions and revisions that appear in the source code for version 
+5.0 may be r egistered as a derivative work.  
+• Pentathlon Games released a videogame titled World of Watercraft , 
+which is designed to run on the Sony PlayStation. A month later, the 
+company released another version of the game that is designed to 
+run on the Microsoft Xbo x. The source code for each version is 
+substantially different, and not simply the result of interoperability 
+or hardware compatibility, although the sounds and images that 
+appear in the videogame are exactly the same. The source code for 
+the Xbox version may be registered as a derivative work.  
+• Derrick Maxwell created a word processing program titled Linux 
+Write , which is designed to run on the Linux operating system. He 
+subsequently created another program titled Android Write , which 
+is designed to run on the Android operating system. Derrick submits 
+an application to register Android Write  and in the Author 
+Created/Other field he states that he “adapted this program to run 
+on a different operating system.” The registration specialist will 
+communicate with the applicant, because it is unclear whether the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  39 01/28/2021  author contributed a sufficient amount of copyrightable authorship 
+to this work.  
+• Shell Games LLC submits two applications for the same computer 
+program, one specifically for the source code and the other for  the 
+object code. Because there are no copyrightable differences 
+between the source code and the object code, there is no basis for 
+issuing a separate registration for each representation of the 
+program. Moreover, if the object code was created by a comput er 
+program, there would be no human authorship in the object code, 
+and no authorship that is distinct from the source code. The 
+registration specialist will register the claim in the source code, and 
+reject the claim in the object code.  
+Each version of a c omputer program that contains new, copyrightable authorship is 
+considered a separate work. See 17 U.S.C. § 101  (definition of “created;” stating that 
+“where the work has been prepared i n different versions, each version constitutes a 
+separate work”). A registration for a specific version of a computer program covers the 
+new material that the author contributed to that version, including any changes, 
+revisions, additions, or other modific ations that the author made to that version. See 
+H.R.  REP. NO. 94-1476,  at 57 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5670; S. REP. NO. 94-
+473, at 55 (1975)  (explaining that “copyright in a ‘new version’ covers only the material 
+added by the later author, and has no effect one way or the other on the copyright or 
+public domain  status of the preexisting material.”). However, a registration for a specific 
+version of a computer program does not cover any unclaimable material  that may 
+appear in that ve rsion. For purposes of registration, unclaimable material includes:  
+• Previously published material.  
+• Material that has been previously registered with the U.S. Copyright Office.  
+• Material that is in the public domain.  
+• Copyrightable material that is owned by a  third party ( i.e., an individual or legal 
+entity other than the claimant who is named in the application).  
+If the program contains an appreciable amount of unclaimable material, the applicant 
+should identify that material in the application and should ex clude it from the claim  
+using the procedure described in Section 721.9(G)  below. See 17 U.S.C. § 409(9)  (stating 
+that “[t]he application for copyright registration… shall include... in the case of a 
+compilation or derivative work, an identification of any preexisting work  or works that 
+it is based upon or incorporates, and a brief, general statement of the additional material 
+covered by the copyright claim being registered...”).  
+Examples:  
+• Excluding previously published material.  Softwear, Inc. submits an 
+application to reg ister a program titled Clothing Maker version 3.0 . 
+Version 3.0 contains an appreciable amount of code that appeared 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  40 01/28/2021  in versions 1.0 and 2.0 of the same program. Softwear distributed 
+copies of versions 1.0 and 2.0 to the public before it filed its 
+applicati on for registration of version 3.0. Versions 1.0 and 2.0 
+would be considered previously published works, even if the copies 
+only contained the object code for those versions and even if the 
+source code for those versions was never disclosed. Therefore, the  
+application should be limited to the new material that appears in 
+version 3.0, and any source code that appeared in versions 1.0 or 
+2.0 should be excluded from the claim using the procedure 
+described in Section 721.9(G) . 
+• Excludin g previously registered material.  Jesper Nielsen submits an 
+application to register a program titled Ink Blot version 5.0 . This 
+version contains an appreciable amount of source code that 
+appeared in versions 1.0 through 4.0 of the same program. The 
+prior v ersions have not been distributed to the public, but version 
+2.2.1 was previously registered with the Office as an unpublished 
+work. The registration for version 5.0 will cover the new material 
+that appears in that version, as well as any unpublished or 
+unregistered source code from versions 1.0 through 4.0 that appear 
+in version 5.0. However, the source code that appeared in version 
+2.2.1 should be excluded from the claim using the procedure 
+described in Section 721.9(G) . 
+• Excludin g third party material.  Vivek & Associates created an 
+operating system titled Architexture v. 9.0  using a software 
+development tool titled Picture This v. 2.50 . The source code for 
+Architexture v. 9.0  contains an appreciable number of modules, 
+subroutines,  and macros that were used with permission from the 
+company that produced Picture This . Vivek & Associates should 
+exclude those modules, subroutines, and macros from its 
+application to register Architexture v. 9.0 using the procedure 
+described in Section 721.9(G) , because the copyright in that 
+material is owned by a third party.  
+• No disclaimer required . CodeBuster LLC submits an application to 
+register a program titled Hackleberry Finn version 3.0 . Version 3.0 
+contains an appreciabl e amount of code that appeared in versions 
+1.1.1 and 2.2.2 of the same program. CodeBuster never registered 
+versions 1.1.1 and 2.2.2 and never distributed those versions to the 
+public. Therefore, the prior versions of the program need not be 
+disclaimed in the application to register version 3.0. The 
+registration for version 3.0 will cover all of the copyrightable 
+content that appears in that version, including any unpublished or 
+unregistered source code from versions 1.1.1 or 2.2.2 that have 
+been incorporat ed into version 3.0.  
+The registration specialist may communicate with the applicant if the program appears 
+to contain an appreciable amount of unclaimable material and if the applicant does not 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  41 01/28/2021  exclude that material from the claim. Examples of factors that  may prompt a specialist to 
+inquire whether a computer program contains unclaimable material include the 
+following:  
+• Multiple copyright notices . 
+• A copyright notice containing an earlier date than either the completion year or the 
+publication  date specified in the application.  
+• A copyright notice containing multiple dates.  
+• A copyright notic e containing a different name than the author or copyright 
+claimant named in the application.  
+• Multiple version numbers or multiple release numbers (if it appears that the 
+previous versions may have been published or registered or if they may be owned 
+by a party other than the copyright claimant).  
+• A revision history in the deposit indicating that changes were made to the program 
+after the year of completion or date of publication  specified in the application.  
+• An indication that the author created the work using another computer program as 
+an authoring tool.  
+If the deposit contains multiple dates or multiple version/release numbers, the 
+applicant should notify the registration specialist if those da tes or numbers refer to the 
+development history of the program or if they refer to previous versions of the program 
+that have not been published or registered before. When submitting an online 
+application, this information may be provided in the Note to Co pyright Office field; when 
+completing a paper application this information may be provided in a cover letter.  
+If the program contains only a minimal amount of unclaimable material or if the 
+program contains material that is uncopyrightable, there is no nee d to exclude that 
+material from the application. Unclaimable material should be excluded only if that 
+material is copyrightable and represents an appreciable portion of the work.  
+Example:  
+• Professor Barrakat submits an application for a computer program 
+titled BearCat 5.0 . The program contains 5,000 lines of entirely new 
+source code and 50 lines that appeared in a previously published 
+version of the same program. There is no need to exclude these 50 
+lines of code from the application, because they do not re present an 
+appreciable portion of the program code for BearCat 5.0 . 
+ 721.9  Application Tips for Computer Programs  
+This Section discusses the practices and procedures for completing an application to 
+register a computer program . For guidance concerning the deposit  requirements for 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  42 01/28/2021  computer programs, see Chapter 1500 , Section 1509.1 (F). For guidance concerning the 
+filing fee , see Chapter 1400 , Section 1412 . 
+ 721.9(A)  Identifying the Type of Work  
+Submitting an online appli cation through the U.S. Copyright Office’s electronic 
+registration system is the preferred way to register a computer program. T he first step 
+in completing the online application is to select the type of work that the applicant  
+intends to register. In the case of a computer program, the applicant should select 
+Literary Work from the drop down menu marked Type of Work.  
+When submitting a paper application, Form TX  should be used to register a claim  to 
+copyright in a computer program.  
+ 721.9(B)  Title of the Program  
+The application must provide the title of the computer program. 17 U.S.C. § 409(6) . The 
+title should include the version number or release number (if any) for the specific 
+version of the program that the applicant intends to register . The version num ber or 
+release number may be provided in the application as follows:  
+• Advantage Works v. 1.0  
+• Advantage Works (v. 2.0)  
+• Advantage Works version 3.5.1  
+• Advantage Works (release 4.1.1)  
+When completing an online application, the applicant  should provide the title of the 
+program on the Title screen. When completing a paper application, the applicant should 
+provide the title on space 1 of Form TX . For guidance on completing this portion of the 
+application, see Chapter 600 , Section 610.  
+If the applicant does not provide a version number or release number, the registration 
+specialist  may add that information to the Title field/space if the number appears on the 
+deposit  or elsewhere in the registration materials and if it is clear that the number 
+identifies th e specific version that has been submitted for registration. In such cases, the 
+specialists will add an annotation to the record, such as: “Regarding title information: 
+Added by Copyright Office  from deposit.” If the title contains multiple version numbers 
+(e.g., Scale Modeler v. 1.0, 2.0, 3.0, 4.50 ), the specialist may communicate with the 
+applicant if he or she is unable to identify the specific version that the applicant intends 
+to register.  
+ 721.9(C)  Name of Author / Name of Claimant  
+The applicant  should provide the name of the author(s) who created the specific version 
+of the program that the applicant intends to register. Specific ally, the applicant should 
+provide the name(s) of the person(s) or organization(s) who created the source code  for 
+the version that will be submitted for registration. In addition, the applicant should 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  43 01/28/2021  provide the name of the claimant  who owns the copyright in that version. When 
+completing an online application the applicant should provide this information on the 
+Author and Claimant scre ens; when completing a paper application the applicant should 
+provide this information in spaces 2 and 4 of Form TX .  
+For guidance on completing this portion of the application, see Chapter 600 , Sections 
+613 and 619. For guidance on identifying the author of a work made for hire , see 
+Chapter 600 , Section 614.  
+ 721.9(D)  Year of Completion  
+The applicant  should identify the year that the author completed the specific version of 
+the program that the applicant intends to register. As a general rule, the applicant 
+should provide a year of completion  only for the specific version of the program that 
+will be submitted for registration.  The applicant should not provide a year of completion 
+for the first version of the program or any other version of the program that is not 
+included in the application.  
+For the purpose of copyright registration, each version of a computer program is 
+consid ered a separate work. Each version of a program is considered complete when 
+that version has been fixed  in a tangible medium of expression for the first time. When a 
+program is prepared over a pe riod of time, the portion that has been fixed at any 
+particular time constitutes the version that has been completed as of that date. See 17 
+U.S.C. § 101  (definition of “created”); see also  37 C.F.R. § 202.3 (c)(4) (explaining that the 
+year of completion means “the latest year in which the creation of any copyrightable 
+element was completed”).  
+When completing an online application, the applicant should provide the year of 
+completion on the Publication /Creation scre en; when completing a paper application 
+the applicant should provide this information in space 3(a) of Form TX . For guidance on 
+completing this portion of the application, see Chapter 600 , Section 611.  
+If the year specified in the application does not match the year that is specified in the 
+copyright notic e for the program (if any) or if the copyright notice contains multiple 
+dates ( e.g., © Lionel Software 2010, 2011, 2012), the registration specialist  may 
+communicate with the applicant if he or s he is unable to identify the specific version that 
+the applicant intends to register.  
+ 721.9(E)  Date of Publication  
+If the version that the applicant  intends to register has been published  as of the date that 
+the application is filed with the U.S. Copyright Office, the applicant should provide the 
+month, day, and year that the version being registered was published for the first time. 
+As a general rule, the applicant should provide a date of first publication  only for the 
+specific version that will be submitted for registration. The applicant should not provide 
+a date of publi cation for the first version of the program or any other version of the 
+program that is not included in the application.  
+A computer program is considered published when copies of the program are 
+distributed “to the public by sale or other transfer of owner ship, or by rental, lease, or 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  44 01/28/2021  lending” or when copies of the program are offered “to a group of persons for purposes 
+of further distribution, public performance, or public display.” 17 U.S.C. § 101  (definition 
+of “publication”). As a general rule, a program is considered published if there has been 
+a general distribution of the program code, regardless of whether the copies are 
+distributed by purchase or license  and regardless of whether the copies are distributed 
+on a CD -ROM, DVD, or downloaded online. Likewise, a  program is considered published 
+even if the copies contained object code  rather than source code  and even if the source 
+code has not been disclosed to the public. See Midway Manufacturing Co. v. Strohon , 564 
+F. Supp. 741, 751 (N.D. Ill. 1983) (“the object code is nothing other than a direct 
+transformation of a computer program, composed... in source code”).  
+When completing an online application, the applicant should provide the date of first 
+publication  on the Publication/Completion screen. When completing a paper application 
+the applicant should provide this information on space 3(b) of Form TX . For guidance on 
+completing this portion of the application, see Chapter 600 , Section 612.  
+For a general discussion of publication and for specific guidance on  determining 
+whether a particular work has been published, see Chapter 1900 . 
+ 721.9(F)  Asserting a Claim to Copyright in a Computer Program  
+The applicant  should identify the copyrightable  authorship that the applicant intends to 
+register and should assert a claim  to copyright in that authorship. The information 
+provided in the application defines the claim that is being registered, rather than the 
+information given in the deposit copy(ies)  or el sewhere in the registration materials.  
+When completing an online application, the applicant should provide this information 
+on the Author screen in the field marked Author Created. When completing a paper 
+application, the applicant should provide this info rmation on space 2 of the application 
+under the heading Nature of Authorship. For guidance on completing this portion of the 
+application, see Chapter 600 , Section 618.4.  
+“Computer program” is the most appropriate term for registering a claim in this type of 
+work. If this term does not fully describe the copyrightable material that the applicant 
+intends to register, the applicant should provide a more specific description in t he 
+Author Created/Other field using the procedure described in Chapter 600 , Section 
+618.4(A). For a representative list of other terms that may be acceptable, see Section 
+721.9(H) . 
+“Revised computer program” is the most appropriate term for registering a claim in a 
+derivative computer program. If this term does not fully describe the copyrightable 
+material that the applicant intends to register, the applicant should provide a more 
+specific description using the procedures described in Chapter 600 , Section 621.8(C)(1) 
+and 621.8(C)(2). For a representative list of other terms that may be acceptable, see 
+Section 721.9(H) .  
+As discussed in Section 721.7 , an applicant may assert a claim in executable code as well 
+as the nonexecuting comment s that appear in the source code for a computer program. 
+Both claims may be registered with the same application. To register a claim in 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  45 01/28/2021  executable code, the applicant may check the box marked “computer program” in the 
+Author Created field. To register a c laim in nonexecuting comments, the applicant may 
+check the box marked “computer program,” or may also check this box and state 
+“nonexecuting comments” in the field marked Other. In both cases, the applicant should 
+avoid using the term “text,” either alone or in combination with the term “computer 
+program.”  
+If the claim is unclear, the registration specialist  may communicate with the applicant or 
+may refuse registration. For example, if the applica nt merely asserts a claim in “text” or 
+a claim in “text” and “computer program,” the specialist will communicate if it is unclear 
+whether the deposit copy(ies) contain text that is distinguishable from source code , 
+object code , or other statements or instructions that may be used directly or indirectly 
+in a computer in order to bring about a certain result. Likewise, the specialist may 
+communicate if the applicant merely asserts a claim in “computer program” that is not 
+discernable as a written language or a programming language.  
+If the applicant asserts a claim in both the copyrightable and uncopyrightable features of 
+the program, the sp ecialist may communicate with the applicant or may annotate the 
+application to indicate that the registration does not extend to the uncopyrightable 
+features. For representative examples that illustrate this practice, see Chapter 600 , 
+Section 618.8(C). If the claim appears to be based solely on the functional aspects or 
+other features that are not eligible for copyright protection, registration will be refused.  
+For a represen tative list of unclear terms that may be questioned, see Section 721.9(I) . 
+For a representative list of terms that will not be accepted, see Section 721.9(J) . 
+ 721.9(G)  Limiting the Claim to Copyright in a Computer Program  
+If the computer program contains an appreciable amount of unclaimable material, the 
+applicant  should exclude that material from the claim . As discussed in  Section 721.8 , this 
+category includes previously published  material, previously registered material, public 
+domain  material, or copyrightable  material that is owned by a party other than the 
+copyright claimant . 
+When completing an online application, the applicant should provide a brief statement 
+that identifies the unclaimable material that appears in the program. Specifically , the 
+applicant should provide this information on the Limitation of Claim screen by checking 
+one or more of the boxes that appear in the Material Excluded field that accurately 
+describe the unclaimable material.  When completing a paper application, the applicant 
+should provide this information on space 6(a) of Form TX . For guidance on completing 
+this portion of the application, see Chapter 600 , Section 621.8(B).  
+In addition, the applicant should provide a brief statement that identifies the new 
+material that the applicant intends to register. When completing an online application, 
+the applicant should provide this informatio n on the Limitation of Claim screen by 
+checking one or more of the boxes that appear in the New Material Included field that 
+accurately describe the new material that the author created.  When completing a paper 
+application, the applicant should provide thi s information on space 6(b) of Form TX. For 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  46 01/28/2021  guidance on completing this portion of the application, see Chapter 600 , Section 
+621.8(C).  
+The statement that the applicant provi des in the New Material Included field should be 
+identical to the statement that the applicant provided in the Author Created field. 
+Likewise, the statement that the applicant provides in space 6(b) of the paper 
+application should be identical to the state ment that the applicant provides in space 2. 
+Together, these statements define the claim in a derivative computer program.   
+If the program contains an appreciable amount of material that has been previously 
+registered with the U.S. Copyright Office, the ap plicant should identify the registration 
+number for that material and the year that the registration was issued. When 
+completing an online application, the applicant should provide this information on the 
+Limitation of Claim screen in the field marked Prev ious Registration. When completing a 
+paper application, the applicant should provide this information on space 5 of Form TX. 
+For guidance on completing this portion of the application, see Chapter 600 , Section 
+621.8(F).  
+ 721.9(H)  Acceptable Terminology for an Application to Register a Computer Program  
+This Section provides guidance for completing the Author Created/Other field and the 
+New Material Included/Other field of th e online application, as well as guidance for 
+completing spaces 2 and 6(b) of paper application Form TX .  
+The applicant  should provide a brief statement in this portion of the application that 
+describes the copyrightable  material that the applica nt intends to register. The applicant 
+should not describe any uncopyrightable elements or de minimis  elements that appear 
+in the program. Likewise, the applicant should not describe the material object in which 
+the program has been fixed .  
+The U.S. Copyright Office may accept the term “computer program” or any of the terms 
+listed below, provided that they accurately describe the copyrigh table authorship that 
+appears in the deposit copy(ies) . In most cases, the Office will accept combinations or 
+variant forms of these terms, unless they are contradicted by information provided in  
+the deposit copy(ies) or elsewhere in the registration materials.  
+• Computer program  
+• Computer code  
+• Computer software  
+• New computer program  
+• New computer code  
+• New computer software  
+• Program code  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  47 01/28/2021  • Program instructions  
+• Revised computer program  
+• Revised computer co de  
+• Revised computer software  
+• Revision of [specify nature of revision, e.g., revision of software subroutines, 
+revision of program code, etc.]  
+• Software code  
+• Software modifications  
+• Software module(s)  
+• Software program  
+• Software routine(s)  
+• Software subroutine(s)  
+• Software update(s)  
+• Source code  
+ 721.9(I)  Unclear Terminology for an Application to Register a Computer Program  
+The authorship that the applicant  intends to register should be clearl y identified in the 
+application, and the claim  to copyright in that authorship should be clearly stated. If the 
+claim to copyright is unclear, the registration specialist  may communicate with the 
+applicant or may refuse registration. Examples of unclear terms include the following or 
+any combination of the following:  
+• Adaptation (if it appears that the program was merely adapted to  
+run on different hardware)  
+• Automation  
+• Cells  
+• Commands  
+• Compilation  
+• Computerized  
+• Debugging  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  48 01/28/2021  • Editing  
+• Enhancements  
+• Entire program code  
+• Entire text  
+• Entire work  
+• Error corrections  
+• Features  
+• Macro(s)  
+• New programming text  
+• Patching  
+• Program text  
+• Programmer  
+• Programming text  
+• Search engine  
+• Text  
+• Text of computer program  
+• Text of computer game  
+If the applicant combines an acceptable authorship term with the term “text,” such as 
+“computer program and text” or “text and program code,” the registration specialist  will 
+examine the deposit copy(ies)  to determine if the work contains copyrig htable  text that 
+is not part of the computer program. If the work does not appear to contain 
+copyrightable text apart from the text of the computer program, the specialist may 
+communicate with the applicant or may refuse to register that aspect of the clai m. 
+ 721.9(J)  Unacceptable Terminology for an Application to Register a Computer Program  
+If the applicant  asserts a claim  in both the copyrightable  and uncopyrightable features of 
+the program, the specialist may annotate the application to indicate that the registration 
+does not extend to the uncopyrightable features. If the app licant asserts a claim to 
+copyright in any storage medium or any feature of the program that is uncopyrightable , 
+the registration specialist  may communicate with the applicant or may refuse 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  49 01/28/2021  regis tration if the claim appears to be based solely on those features. Examples of 
+unacceptable terms include the following or any combination of the following:  
+• Algorithm  
+• Analysis  
+• Cassette  
+• Chip  
+• Computation  
+• Computer language(s)  
+• Computerized  
+• Data  
+• Designed program  
+• Disk  
+• Drive  
+• Encrypting  
+• EPROM  
+• Flash drive  
+• Format  
+• Formatting  
+• Formula(s)  
+• Functions  
+• Hard drive  
+• Interface  
+• Language  
+• Layout  
+• Logic  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  50 01/28/2021  • Menu screens  
+• Mnemonics  
+• Models  
+• Object  
+• Object code  
+• Object listing  
+• Organization  
+• Peripheral(s)  
+• Printout  
+• PROM  
+• RAM (Random  Access Memory)  
+• ROM  
+• Protocol  
+• Software methodology  
+• System  
+• System design(er)  
+• Template  
+• Text of algorithm  
+• Thumbdrive  
+• Typeface  
+• Typefont  
+ 721.10  Screen Displays  
+ 721.10(A)  Relationship Between Source Code and Screen Displays  
+As a general rule, a computer program  and the screen displays  generated by that 
+program are considered the same work, because the prog ram code contains fixed 
+expression that produces the screen displays. If the copyright in the source code and the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  51 01/28/2021  screen displays are owned by the same claimant , the program and any related scree n 
+displays may be registered with the same application. The U.S. Copyright Office will not 
+knowingly issue a separate registration for a computer program and the screen displays 
+that may be generated by that program. Nor will the Office issue a supplementa ry 
+registration that purports to add a claim in screen displays to a basic registration for a 
+computer program.  
+By contrast, if the copyright in the code and the screen displays are owned by different 
+parties, separate applications will be required. The co mputer program should be 
+registered as a literary work, while the screen displays should be registered as an 
+audiovisual work, a pictorial work, or a graphic work, as appropriate.  
+If the applicant  states “computer program” in the Author Created/New Material 
+Included fields or in spaces 2 and 6(b), the registration will cover the copyrightable  
+expression in the program code and any copyrightable screen displays that may be 
+generated by that code, even if the applicant did not mention the screen displays and 
+even if the deposit copy(ies)  do not contain any screen displays. By contrast, if an 
+applicant states “screen displays” in the application, the registration will not cover the 
+computer program unless the applicant also asserts a claim in the “computer program” 
+and submits an appropriate deposit.  See Registration Decision: Registration and Deposit of 
+Compute r Screen Displays, (August, 1987 ).  
+This rule does not apply to the hypertext markup langu age (“HTML”) for a website, 
+because HTML is not a computer program or source code . If the applicant submits an 
+application to register HTML, the registration may cover the HTML itself, but it doe s not 
+cover any of the content that may appear on the website unless the applicant submits a 
+copy of the website content and expressly asserts a claim in that material. For a 
+discussion of HTML, see Chapter 1000 , Section 1006.1(A).  
+ 721.10(B)  Copyrightable Authorship in Screen Displays  
+When asserting a claim  in screen displays, the claim should be limited to the new 
+mater ial that appears in the screen displays, the applicant  should provide the name of 
+the author who created that material, and the applicant should provide the name of the 
+claimant  who owns the copyright in that material. The Literary Division may accept a 
+claim in “text” if the screen displays contain a sufficient amount of textual expression 
+that is not a part of the code, or a claim in “ artwork” and/or “photograph(s)” if the 
+screen displays contain a sufficient amount of artwork or photos that are not generated 
+by the computer program. When completing an online application, this information 
+should be provided in the Author Created field, and if applicable, also in the New 
+Material Included field. When completing a paper application on Form TX , this 
+information should be provided in space 2, and if applicable, also in space 6(b). For 
+guidance on completing these portions of the application, see Chapter 600 , Sections 
+618.4 and 621.8.  
+A registration for a computer program covers the copyrightable  expression that appears 
+in any screen that may be generated by the program, even if the applicant does not 
+submit identify ing material  depicting the screen displays or merely submits a 
+representative sampling of those displays. If the screen displays as a whole do not 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  52 01/28/2021  contain copyrightable authorship, the registrati on specialist  may communicate with the 
+applicant or may refuse registration. For example, if the claim is based solely on the 
+layout or format of a screen or if the deposit copy(ies)  consist sole ly of blank forms, de 
+minimis  menu screens, or other elements that are purely functional, registration will be 
+refused. See Registr ation Decision: Registration and Deposit of Computer Screen 
+Displays, 53 Fed. Re g. 21,817, 21,819 (August, 1987 ).  
+ 721.10(C)  Deposit Requirements for Screen Displays  
+For a discussion of the deposit requirements for computer screen displays, see Chapter 
+1500 , Section 1509.1 (F)(6). 
+ 721.11  User Manuals and Other Documentation for a Computer Program  
+User manuals, instructional booklets, flowcharts, and other documentation that explain 
+the development or operation of a computer program may be registered with the U.S. 
+Copyright Office, provided that they contain a sufficient amount of original authorship. If 
+text is the predominant form of authorship, the work may be registered as a 
+nondr amatic literary work. If the predominant form of authorship consists of artwork, 
+illustrations, or photographs, the work may be registered as a work of the visual arts. If 
+the predominant form of authorship consists of audiovisual material, the work may be  
+registered as a work of the performing arts. See 37 C.F.R. § 202.3(b)(1)(i) -(iii). 
+If the claimant owns the copyright in the program and the user manual or other 
+documentation for that program, and if the claimant physically bundled these items 
+together and distributed them to the public in the same, integrated unit (such as a 
+shrink -wra pped box containing a disk and booklet), it may be possible to register them 
+together with one application and one filing fee . For information concerning this option, 
+see Chapter 1100 , Section 1103 . By contrast, if the program and the documentation are 
+distributed online, if they are distributed separately from each other, or if they are 
+owned by differ ent claimants, each element is considered a separate work and a 
+separate application for each element is required.  
+When asserting a claim  in a user manual or other documentation, the claim should  be 
+limited to the new material that appears in the work, the applicant  should provide the 
+name of the author who created that material, and the applicant should provide the 
+name of the claimant who owns the copyright in that material. The Literary Division 
+may accept a claim in “text” if the work contains a sufficient amount of written 
+expression, or a claim in “artwork” and/or “photograph(s)” if the work contains a 
+sufficient amount of pictorial  or graphic expression. When completing an online 
+application, this information should be provided in the Author Created field, and if 
+applicable, also in the New Material Included field. When completing a paper application 
+on Form TX , this information should be provided in space 2, and if applicable, also in 
+space 6(b). For guidance on completing these portions of the application, see Chapter 
+600, Sections 618.4 and 621.8.  
+For a discussion of the deposit requirements for user manuals and other documentation, 
+see Chapter 1500 , Section 1509.1 (F)(7). 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  53 01/28/2021   722 Apps  
+An “app” is a computer program  that is used directly or indirectly in a computer or 
+handheld electronic device. An app may be registered if it contains a sufficient amount 
+of original authorship in the form of statements or instructions that bring about a 
+certain result in the computer  or device.  
+When asserting a claim  in an app, the applicant  should provide the name of the author 
+who created the work. Specifically, the applicant should provide the name(s) of the 
+person(s) or organization(s) who created the source code  for the specific version of the 
+app that the applicant intends to register. In addition, t he applicant should provide the 
+name of the claimant  who owns the copyright in that version.  
+“Computer program” is the most appropriate term for registering a claim in an app. As 
+discussed in Section 721.9(F) , this term should be provided in the Author Created field, 
+and if applicable, also in the New Material Included fi eld of the online application. When 
+completing a paper application on Form TX , this information should be provided in 
+space 2, and if applicable, also in space 6(b).  
+If the applicant registers t he app as a computer program and submits identifying 
+portions of the source code for that program, the registration will cover any 
+copyrightable  screen displays  generated by that work, provided t hat the app and the 
+screen displays are owned by the same claimant. If the applicant expressly asserts a 
+claim in the text, artwork, or screen displays generated by an app, the applicant must 
+submit a representative sampling of those screen displays togeth er with the identifying 
+portions of the source code.  
+For guidance in completing the application, see Section 721.9 . For a discussion of the 
+deposit  requirements for com puter programs  and screen displays , see Chapter 1500 , 
+Sections 1509.1 (F)(1) through 1509.1 (F)(6). 
+ 723 Computer Programs T hat Generate Typeface, Typefont, or Barcodes  
+Typeface and mere variations of typographic ornamentation or lettering are not 
+copyrightable . 37 C.F.R. § 202.1(a) , (e).  
+A computer program  that generates bar codes or a particular typeface, typefont, or 
+letterform may be registered if the program contains a sufficient amount of original 
+authorship in the form of statements or instructions to a computer. For example, 
+creating a scalable font output program that produces harmonious fonts consisting of 
+hundred s of characters may require numerous decisions in drafting the instructions that 
+drive a printer or other output device. If this expression contains a sufficient amount of 
+original authorship, the work may be registered as a computer program. However, the 
+registration would not cover any bar codes, typeface, typefont, letterform, or mere 
+variations of typographic ornamentation or lettering that may be generated by the 
+program. See Registrability of Computer Programs that Generate Typefaces, 57 Fed. Reg. 
+6201, 6202 (Feb. 21, 1992).   
+When asserting a claim  in a computer program that generates typeface, typefont, 
+letterform, or barcodes, the applicant  should identify the author(s) that created the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  54 01/28/2021  work. Specifically, the applicant should provide the n ame of the person(s) or 
+organization(s) that created the source code  for the program. The registration specialist  
+may communicate with  the applicant if it appears that the author merely assigned 
+coordinates to a particular letterform and then used a third party program to render 
+typeface or typefont from those coordinates (but did not create any of the source code 
+for that program).  
+“Com puter program” is the most appropriate term for registering a claim in this type of 
+work. As discussed in Section 721.9(F) , this information should be provided in the 
+Author Created field, and if applicable, also in the New Materi al Included field. When 
+completing a paper application on Form TX , this information should be provided in 
+space 2, and if applicable, also in space 6(b). The U.S. Copyright Office will not accept  an 
+application that asserts a claim in the “entire work,” “entire computer program,” “entire 
+text,” or the like, because these statements suggest that the applicant may be asserting a 
+claim in both the copyrightable and uncopyrightable elements of the pro gram. See 57 
+Fed. Reg. at 6202 . 
+To register a computer program that generates typeface, typefont, letterform, or 
+barcodes, the applicant must submit a portion of the source code for that program. If the 
+applicant merely submits a representation of the characters generated by the program 
+without providing any code, the registration specialist will communicate with the 
+applicant. For a discussion of the deposit requirements for computer prog rams, see 
+Chapter 1500 , Section 1509.1 (F). 
+ 724 Diagrams, Models, Outlines, Pseudocode, and Other Types of Works  
+That Illustrate or Describe a Computer Program  
+Diagrams, models, outli nes, pseudocode, or other types of works that illustrate or 
+describe the structure or order of operation for a computer program  may be registered 
+with the U.S. Copyright Office, provided that the y contain a sufficient amount of original 
+authorship. However, such illustrations or descriptions may not be claimed as computer 
+programs.  
+The Literary Division may accept a claim  in “text” if th e work contains a sufficient 
+amount of written expression, or a claim in “artwork,” “photograph(s) ,” “technical 
+drawing,” or “graphic work” if the work contains a sufficient amount of pictorial or 
+graphic expression. When completing an online application t his information should be 
+provided in the Author Created field, and if applicable, also in the New Material Included 
+field. When completing a paper application on Form TX , this information should  be 
+provided in space 2, and if applicable, also in space 6(b). For guidance on completing 
+these portions of the application, see Sections 721.9(F)  and 721.9(G) . When asserting a 
+claim in these types of w orks, the applicant  should provide the name of the author who 
+created the work and the name of the claimant  who owns the copyright in that work.  
+A registration for this type of work covers the copyrightable  expression that appears in 
+the deposit copy(ies) . However, it does not cover the computer program that may be 
+described in the deposit copy(ies) unless the applicant expressly asserts a claim in the 
+program and submits an a ppropriate selection of source code .  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  55 01/28/2021  As a general rule, these types of works do not contain “statements or instructions” that 
+may be used “directly or indirectly in a computer in order to bring about a certain 
+result,” nor do they contain any executable program code. 17 U.S.C. § 101  (definition of 
+“computer program”). In some cases, they may represent nothing more than an “ide a, 
+procedure, process, system, method of operation, concept, principle, or discovery.” 17 
+U.S.C. § 102(b) . Therefore, if an applicant attempts to register a diagram, model, outline, 
+or other type of work as a computer program, the registration specialist  may 
+communicate with the applicant or may refuse to register the claim.  
+ 725 Spreadsheets, Reports, and Other Documents Gener ated  
+by a Computer Program  
+Spreadsheets, reports, or other documents generated by a computer program  may be 
+registered with the U.S. Copyright Office if they contain a sufficient amount of origi nal 
+authorship. When asserting a claim  in this type of work, the applicant  should limit the 
+claim to the copyrightable  material that appears in the deposit copy(ies) , the applicant 
+should provide the name of the author who created that material, and the name of the 
+claimant  who owns the copyright in that material. The Literary Division may accept a 
+claim in “text” if the deposit copy(ies) contain a sufficient amount of written expression, 
+or a claim in “artwo rk” if the deposit copy(ies) contain a sufficient amount of pictorial or 
+graphic expression.  
+A computer program that may be used to generate spreadsheets or to perform 
+calculations or other functions within a spreadsheet, report, or other document may be 
+registered, provided that the applicant expressly asserts a claim in the “computer 
+program” and submits an appropriate selection of source code . When completing an 
+online application, this inform ation should be provided in the Author Created field, and 
+if applicable, also in the New Material Included field. When completing a paper 
+application on Form TX , this information should be provid ed in space 2, and also in 
+space 6(b) if applicable. For guidance on completing these portions of the application, 
+see Sections 721.9(F)  and 721.9(G) .  
+A claim in “text” or “artwork” covers the copyrighta ble expression that appears in the 
+deposit copy(ies), but it does not cover the computer program that may be used to 
+perform calculations or other functions within a spreadsheet, report, or other document. 
+While these types of documents may contain stateme nts or instructions that may be 
+used directly or indirectly in a computer in order to bring about a certain result, in most 
+cases the code that performs those functions was created by the author of the authoring 
+tool, rather than the author of the document  itself. Therefore, if an applicant attempts to 
+register a spreadsheet, report, or other document as a computer program but fails to 
+submit an appropriate selection of source code, the registration specialist  may 
+communicate with the applicant or may refuse to register the claim.  
+A spreadsheet, report, or other document may be registered as a compilation  if the 
+author exercised  a sufficient amount of creativity in selecting, coordinating, and/or 
+arranging the information that appears within the deposit copy(ies). When asserting a 
+claim in a compilation, the applicant should provide the name of the author who created 
+the selectio n, coordination, and/or arrangement that the applicant intends to register, 
+and the applicant should assert a claim to copyright in that material by using the 
+procedure described in Chapter 600 , Section 618.6.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  56 01/28/2021  As discussed in Section 710, a registration for a compilation covers the author’s 
+selection, coordination, and/or arrangement of information, but it does not cover any of 
+the information that ap pears in the deposit copy(ies). See 17 U.S.C. § 103(b) . It does not 
+cover the authoring tool that was used to create the work, nor does it cover any “idea, 
+procedure, process, system, m ethod of operation, concept, principle, or discovery” that 
+is reflected or implemented in the work. 17 U.S.C. § 102(b) . In s ome cases, it may be 
+unclear whether the applicant intends to register a spreadsheet, report, or other 
+document as a compilation or simply intends to register the information that appears in 
+the document itself. The fact that the deposit copy(ies) contain fictitious data may 
+indicate that the applicant is asserting a claim in selection, coordination, and/or 
+arrangement authorship, rather than a claim in any copyrightable material in the 
+deposit copy(ies). By contrast, if the deposit copy(ies) contain data t hat has been 
+entered by an actual user, it may be unclear whether the applicant is asserting a claim in 
+a compilation or a claim in any copyrightable text or artwork that may appear in the 
+deposi t.  
+In all cases, the authorship that the applicant intends to register should be clearly 
+identified in the application, and the claim to copyright in that authorship should be 
+clearly stated. Examples of unclear terms that will prompt the registration spe cialist to 
+annotate the application or to communicate with the applicant include “template” and 
+“data.”  
+Examples:  
+• The Office receives an application to register a report titled 2013 
+Annual Report of Tanley Corporation . In the Author Created field the 
+appl icant asserts a claim in “text,” “artwork,” and “coordination and 
+arrangement of financial data.” The registration specialist will 
+register the claim. The application is clearly limited to the text, 
+artwork, and compilation that appears in the report itsel f, but does 
+not extend to the authoring tool used to create that report.  
+• The Concordia Company submits an application to register a 
+spreadsheet that contains various graphs and tables of information. 
+In the Author Created and New Material Included fields the 
+applicant asserts a claim in “text.” The applicant excludes the 
+authoring tool from the application by checking the box for 
+“computer program” in the Material Excluded field. The registration 
+specialist will register the claim.  
+• Olympian Human Re sources submits an application to register a 
+report containing dozens of columns and rows. In the Author 
+Created field the applicant asserts a claim in “text.” In the Note to 
+Copyright Office field, the applicant explains that the report was 
+“created using  Microsoft Access.” The registration specialist may 
+add this information to the Material Excluded field and register the 
+claim with an annotation , such as: “Regarding material excluded: 
+Informati on added from Note to Copyright Office .” 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  57 01/28/2021  • AutoCrat LLC submits an application to register a spreadsheet that 
+contains graphs, tables of information, explanatory text, as well as 
+various formulas, such as “SUM (b12, c12, d12)/d13.” In the Author 
+Created and New Material Included fields the applicant asserts a 
+claim in “text.” In the Material Excluded/Other field the applicant 
+explains that the spreadsheet “uses Excel 5.2.” The registration 
+specialist will conclude that AutoCrat created the spreadsheet using 
+Excel 5.2 as an authoring tool. The claim will be registered.  
+• DentalSoft submits an application for a work titled PatientCare.  In 
+the Author Created field the applicant asserts a claim in “Report and 
+data to help dentists manage their practices.” The deposi t is a 
+spreadsheet that appears to contain fictitious data; no source code 
+has been submitted. The registration specialist will communicate 
+with the applicant. It is unclear whether the applicant intends to 
+register a computer program that generates these types of reports 
+or intends to register the selection, coordination, and/or 
+arrangement of data that is reflected in the deposit.  
+ 726 Videogames  
+The U.S. Copyright Office may issue separate registrations for the audiovisual material in 
+a videogame and the  computer program  that generates that material. For a discussion of 
+the practices and procedures for registering a videogame, see Chapter 800 , Section 
+807.7(A).  
+ 727 Databases  
+This Section discusses the practices and procedures for obtaining a registration for a 
+specific version of a single -file or multi -file database . In the case of an unpublished  
+database, an applicant  may register all of the copyrightable  material that appeared in 
+the database as of the date that the registration materials are received in the U.S. 
+Copyright Office. In the case of a published  database, an applicant may register all of the 
+copyrightable material that was first published on the date specified in the application.  
+A registration for a specific version of a database does not cover any previously 
+published or previously registered content that may be included in the database. 
+Likewise, a registration for a specific version of a database does not cover any 
+subsequent updates or revisions that may be made to the database (regardless of 
+whether the database is published or unpublished). Instead, the Office has est ablished a 
+special procedure that allows applicants to register a database together with the 
+subsequent updates or revisions that were made to that database within a period of 
+three months or less. The requirements for this group registration  option are discussed 
+in Chapter 1100 , Section 1112. 4. 
+ 727.1  What Is a Database?  
+For purposes of copyright registrati on, a “ database ” is defined as a compilation of digital 
+information comprised of data, information, abstracts, images, maps, music, sound 
+recordings, video, other digitized material, or reference s to a particular subject or 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  58 01/28/2021  subjects. In all cases, the content of a database must be arranged in a systematic manner, 
+and it must be accessed solely by means of an integrated information retrieval program 
+or system with the following characteristics:  
+• A query function must be used to access the content.  
+• The information retrieval program or system must yield a subset of the content, or it 
+must organize the content based on the parameters specified in each query.  
+A single -file database is a database comprise d of one data file that contains a group of 
+data records pertaining to a common subject, regardless of the size or amount of the 
+data that the records contain. A multi -file database is a database comprised of separate 
+and distinct groups of data records co vering multiple subjects. A data record contains all 
+of the information related to a particular unit of information within a database. A “data 
+file” is defined as a group of data records pertaining to a common subject matter, 
+regardless of the size of the records or the amount of data they contain. 37 C.F.R. § 
+202.20(c)(2)(vii)(D) (2). 
+As a general rule, databases are considered machine -readable works, because they are 
+fixed  or published  in optical discs, magnetic tapes, or similar storage media, and as a 
+result they cannot be perceived without the aid of a machine or de vice.  
+Websites may contain databases, but they are not considered databases for the purpose 
+of copyright registration. As discussed above, users retrieve sets of data or other content 
+from a database by using a query function that fetches content that mat ches the criteria 
+specified by the user. By contrast, users retrieve content from a website by using a 
+browser function that allows the user to locate and link to the specific pages of the 
+website where information or content is stored.  
+ 727.2  Copyrightabl e Authorship in Databases  
+The legislative history for the Copyright Act states that “computer databases” may be 
+protected by copyright “to the extent that they incorporate authorship in the 
+programmer’s expression of original ideas, as distinguished from t he ideas themselves.” 
+H.R.  REP. NO. 94-1476,  at 54 (1976) , reprinted in  1976 U.S.C.C.A.N. at 5667. Single -file or 
+multi -file databases typically contain the following forms of authorshi p:  
+• The selection authorship involved in choosing the material or data that is included 
+in the database.  
+• The coordination authorship involved in classifying, categorizing, ordering, or 
+grouping the material or data.  
+• The arrangement authorship involved in determining the placement or 
+arrangement of the material or data within the database as a whole.  
+• The authorship involved in creating the material or data that appears within the 
+database.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  59 01/28/2021  Each form of authorship may be registered with the Offi ce, provided that the database 
+contains a sufficient amount of original expression and provided that the claimant  owns 
+the copyright in that material.  
+ 727.3  Application Tips for Databases  
+A sing le-file or multi -file database may be registered as a literary work  if the 
+predominant form of authorship in the work consists of text . A database may be 
+registered as a work of the visual arts if the predominant form of authorship consists of 
+photographs or other forms of pictorial authorship.  
+As a general rule, an applicant  may register a specific version of a database by 
+submitting an online application. However, if the applicant intends to register a 
+database that predominantly consists of photographs, the applicant must contact the 
+Visual Arts Division at (202) 707 -8202 t o coordinate the filing and to obtain proper 
+guidance concerning the information that should be included in the online application 
+and the proper method for submitting the deposit copies . Applica nts will be permitted 
+to file an online application for a photographic database only if they obtain 
+authorization from the Visual Arts Division and follow the instructions from the 
+Division. See 37 C.F.R. §§ 202.3(b)(5)(ii)(A) , 202.20(c)(2)(vii)(D) (8); see also  
+Registration of Claims to Copyright, 76 Fed. Reg. 4072, 4075 (Jan. 24, 2011) , Group 
+Registration of Photographs, 81 Fed. Reg. 86,643, 86,652 (Dec. 15,  2016).  
+In the alternative, an applicant may register a specific version of a database with a paper 
+application. The applicant should use the form that is most appropriate for the subject 
+matter of the works that appear in the database. See 76 Fed. Reg.  at 4074 . For example, if 
+the works in the database consist primarily of words, numbers, or other verbal or 
+numerical symbols or indicia, the applicant should use Form TX . If the works consist 
+predominantly of photographs, the applicant should use Form VA . Id. 
+NOTE : The online application may be used to register a group of updates or revisions for 
+a database that  predominantly consists of photographs, but it cannot be used for 
+updates or revisions for any other type of database. For a discussion of the application 
+requirements for this group registration  option, see Chapter 1100 , Section 1112. 5. 
+ 727.3(A)  Name of Author / Name of Claimant  
+The applicant  should provide the name of the author(s) who created the specific version 
+of the database that the applicant intends to register. In addition, the applicant should 
+provide the name of the claimant  who owns the copyright in that version. When 
+completing an online application the applicant should provide this information on the 
+Author and Claimant screens; when completing a paper application the applicant should 
+provide this information on spaces 2 and  4.  
+For guidance on completing these portions of the application, see Chapter 600 , Sections 
+613 and 619. For guidance on identifying the author of a work made for hire , see 
+Chapter 600 , Section 614.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  60 01/28/2021   727.3(B)  Year of Completion  
+The applicant  should identify the year that the author completed the specific version of 
+the database  that is submitted for registration (even if other versions exist and even if 
+the author intends to update or revise the database in the future).  
+For guidance on completing this portion of the application, see Chapter 600 , Section 611.  
+ 727.3(C)  Date of Publication / Nation of Publication / Author’s Citizenship or Dom icile  
+If the version that the applicant  intends to register has been published  as of the date that 
+the application is filed with the U .S. Copyright Office, the applicant should provide the 
+month, day, and year that the version being registered was published for the first time. 
+As a general rule, the applicant should provide a date of first publication  only for the 
+specific version that is being submitted for registration. The applicant should not 
+provide a date of publication for the first version of the database or any other version of 
+the database that is not included with th e application.  
+In addition, the applicant should identify the nation where the database was first 
+published and the author’s country of citizenship or domicile. The Office will use this 
+information to determine whether the database is eligible for copyrigh t protection in 
+the United States.  For a definition and discussion of the nation of first publication, see 
+Chapter 600 , Section 612.5. For a definition and discussion of the  author’s citizenship 
+and domicile, see Chapter 600 , Section 617.  
+ 727.3(D)  Asserting a Claim to Copyright in a Database  
+In all cases, the applicant  should identify the copyrightable  authorship that the applicant 
+intends to register, and the applicant should assert a claim  to copyright in that material. 
+When completing an online application, this information should be provided on the 
+Author Created screen in the field marked Other. When completing a paper application, 
+this information should be p rovided in space 2 under the heading marked Nature of 
+Authorship. For guidance on completing this portion of the application, see Chapter 600 , 
+Sections 618.4.  
+To register the authorship involved in selecting, coordinating, and/or arranging the 
+material that appears in the database, t he applicant may use any of the terms listed 
+below, provided that they accurately describe the copyrightable authorship that appears 
+in the deposit copy(ies) . In most cases, the Office will accept combinations or variant 
+forms of these terms, unless they are contradicted by information provided in the 
+deposit copy(ies) or elsew here in the registration materials.  
+• Compilation of data  
+• Compilation of database information  
+• Compilation of photographs  
+• Compilation of artwork  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  61 01/28/2021  • Compilation and text  
+• Revised and updated compilation  
+The authorship that the applicant intends to register should be clearly identified in the 
+application, and the claim to copyright in that authorship should be clearly stated. If the 
+claim to copyright is unclear, the registration specialist  may communicate  with the 
+applicant or may refuse registration. Examples of unclear terms include the following or 
+any combination of the following:  
+• Data dictionary  
+• Data analysis  
+• Data insertion  
+• Data layout or format  
+• Data manipulation  
+• Database features  
+If the applicant asserts a claim in both the copyrightable and uncopyrightable features of 
+the database, the registration specialist may annotate the application to indicate that the 
+registration does not extend to the uncopyrightable features. If the appl icant asserts a 
+claim to copyright in any storage medium or any feature of the database that is 
+uncopyrightable , the specialist may communicate with the applicant or may refuse 
+registration if the claim appears to be based solely on those features. Example s of 
+unacceptable terms include the following or any combination of the following:  
+• Database design  
+• Database interface  
+• Database structure  
+• Data system  
+If the applicant intends to register other copyrightable material that appears in the 
+database, the applica nt should describe the specific form of authorship that the author 
+contributed to that material, such as “text,” “photographs,” “artwork,” or the like.  
+If the database contains an appreciable amount of previously published material, 
+previously registered material, public domain  material, or material that is not owned by 
+the copyright claimant , the applicant should exclude that material from the claim by 
+using the procedure described in Chapter 600 , Section 621.8.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 700  :  62 01/28/2021   727.4  Deposit Requirements  
+For a discussion of the deposit requirements for registering a sp ecific version of a 
+single -file or multi -file database, see Chapter 1500 , Section 1509.1 (G). 
+For a discussion of the deposit requirements for registering a group of updates or 
+revision s for a database, see Chapter 1100 , Section 1112.6 . 
+ 
+ 
+ 

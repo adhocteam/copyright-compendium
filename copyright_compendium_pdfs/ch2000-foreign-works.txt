@@ -1,0 +1,508 @@
+ 
+Chapter 20 00  :  1 01/28/2021  C O M P E N D I U M : Chapter 2000  
+Foreign Works: Eligibility and  
+GATT  Registration  
+   
+2001  What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  3 
+2002  Foreign Works  ................................ ................................ ................................ ................................ ................................ .... 3 
+2002.1  What Is a Foreign Work? ................................ ................................ ................................ ................................ .................  3 
+2002.2  Treatment of Foreign Works  ................................ ................................ ................................ ................................ .........  4 
+2003  Eligibility Requirements: How to  Determine if a Foreign Work Is  Eligible for Registration  
+with the U.S. Copyright Office  ................................ ................................ ................................ ................................ ....... 4 
+2003.1  Unpublished Works  ................................ ................................ ................................ ................................ ..........................  4 
+2003.2  Published Works  ................................ ................................ ................................ ................................ ................................  4 
+2003.2(A)  Eligibility Based on Nationality or Domicile  ................................ ................................ ................................ ...........  5 
+2003.2(B)  Eligibility Based on Location of First Publication  ................................ ................................ ................................ . 5 
+2003.2(C)  Eligibilit y for Sound Recordings  ................................ ................................ ................................ ................................ .. 6 
+2003.2(D)  Eligibility Based on Incorporation into Buildings or Other Structures  ................................ ........................  6 
+2003.2(E)  Eligibility of Works Publ ished by the United Nations or the Organization of American States  ..........  6 
+2003.2(F)  Eligibility Based on Presidential Proclamations  ................................ ................................ ................................ .... 6 
+2004  Treaties and Presidential Proclamations  ................................ ................................ ................................ .................  6 
+2004.1  Multilateral Treaties  ................................ ................................ ................................ ................................ .........................  7 
+2004.2   Bilateral Copyright Treaties and Presidential Proclamations  ................................ ................................ ..........  8 
+2005  Registration Issues  ................................ ................................ ................................ ................................ ............................  8 
+2005.1  Multiple Authors of a Foreign Work  ................................ ................................ ................................ ...........................  8 
+2005.2  Authors with Multiple Nationalities  ................................ ................................ ................................ ...........................  9 
+2005.3  Domicile or First Publication in the Territorial Areas of the United States  ................................ ................  9 
+2005.4  Stateless Persons  ................................ ................................ ................................ ................................ ...............................  9 
+2005.5  Works Made for Hire  ................................ ................................ ................................ ................................ ........................  9 
+2005.5(A)  Nationality and Domicile of Corporations and Similar Organizations  ................................ ..........................  9 
+2005.5(B)  Members  ................................ ................................ ................................ ................................ ................................ ...............  9 
+2005.5(C)  Doing Business ................................ ................................ ................................ ................................ ................................ . 10 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  2 01/28/2021  2005.6  Anonymous and Pseudonymous Works  ................................ ................................ ................................ ................  10 
+2005.7  Compilations and Derivative Works  ................................ ................................ ................................ .......................  10 
+2005.8  When Is Eligibility Determined?  ................................ ................................ ................................ ...............................  10 
+2005.8(A)  Works Initially Registered as Unpublished, but Ineligible for  Registrati on as Published Works  ... 10 
+2005.8(B)  Change in Nationality or Domicile after Publication  ................................ ................................ .........................  10 
+2005.9  Eligibility Unclear  ................................ ................................ ................................ ................................ ...........................  10 
+2006  Application Tips for Foreign Works  ................................ ................................ ................................ ........................  11 
+2007  Restored Works  ................................ ................................ ................................ ................................ ...............................  11 
+2007.1  What Is a Restored Work?  ................................ ................................ ................................ ................................ ...........  11 
+2007.2  Registration Requirements for Restored Works  ................................ ................................ ................................  13 
+2007.2(A)  Form GATT  ................................ ................................ ................................ ................................ ................................ ........  13 
+2007.2(A)(1)  Who May File Form GATT?  ................................ ................................ ................................ ................................ .........  13 
+2007.2(A)(2)  Author of a Restored Work  ................................ ................................ ................................ ................................ .........  14 
+2007.2(A)(3)  Publication of a Restored Work  ................................ ................................ ................................ ................................  14 
+2007.2(A)(4)  Owner of U.S. Copyright in a Restored Work  ................................ ................................ ................................ ....... 14 
+2007.2(B)  Filing Fees  ................................ ................................ ................................ ................................ ................................ ..........  14 
+2007.2(C)   Deposit Requirements  ................................ ................................ ................................ ................................ .................  14 
+ 
+ 
+Chapter 20 00  :  3 01/28/2021  C O M P E N D I U M : Chapter 2000  
+Foreign Works: Eligibility and  
+GATT  Registration  
+ 2001  What This Chapter Covers  
+This Chapter explains when authors of foreign works  may apply to register their works 
+with the U.S. Copyright Office. This Chapter applies to unpublished  works regardless of 
+when they were created, and to published  works that were first published on or after 
+January 1, 1978.  
+This Chapter also discusses Form GATT, which may be used to register a restored work 
+that is eligible for copyright protection under the Uruguay Round Agreements Act . 
+Restored works comprise a small subset of foreign works, and applicants  must use Form 
+GATT to register these types of wo rks with the Office.  
+• For a general overview of the registration process, see Chapter 200 . 
+• For a discussion of copyrightable  subject matter, see Chapter 300 .  
+• For guidance in determining who may file the application and who may be named as 
+the copyright claimant , see Chapter 400 . 
+• For guidance in identifying the work that will be submitted for registration, see 
+Chapter 500 . 
+• For instructions on completing the online application or a paper application (other 
+than an application submitted on Form GATT), see Chapter 600 . 
+• For guidance on the filing fee , see Chapter 1400 . 
+• For guidance on submitting the deposit copy(ies) , see Chapter 1500 . 
+• For guidance on publication , see Chapter 1900 . 
+ 2002  Foreign Works  
+ 2002.1  What Is a Foreign Work?  
+For purposes of copyright registration, the term “ foreign works ” generally refers to 
+works created by author(s) who are not U.S. citizens or U.S. nationals and/or works that 
+were first published  abroad. Generally, the author is the person or perso ns who actually 
+created the material that the applicant  intends to register. There is an exception to this 
+rule if the work is a work made for hire . For a definition and discussion of works made 
+for hire, see Chapter 500 , Section 506.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  4 01/28/2021  U.S. citizens are people who are citizens in accordance with the U.S. Consti tution or 
+federal statutes, including (i) people born in Guam, the U.S. Virgin Islands, and Puerto 
+Rico; and (ii) certain people who are by federal statute nationals, but not citizens of the 
+United States, including people born in the outlying possessions of the United States. All 
+U.S. citizens are also U.S. nationals. Works by U.S. citizens and nationals are not 
+considered foreign works, and generally they are eligible for U.S. copyright protection.  
+The types of works that may be protected under the Copyri ght Act include literary 
+works ; musical works, including any accompanying words; dramatic works, including 
+any accompanying music; pantomimes  and choreographic works ; pictorial, graphic, and 
+sculptural works ; motion pictures  and other audiovisual works ; sound recordings ; and 
+arch itectural works ; as well as derivative works , compilations , and collectiv e works . For 
+a definition and discussion of these types of works, see Chapter 500 , Sections 507 
+(Derivative Works), 508 (Compilations), and 509 (Collective Works), and Chapters 700  
+(Literary Works), 800 (Works of the Performing Arts), and 900  (Visual Art Works).  
+ 2002.2  Treatment of Foreign Works  
+In the vast majority of cases, a foreign work  may be registered with the U.S. Copyright 
+Office if it satisfies the eligibility requirements discussed in Section 2003 . However, this 
+does not mean that foreign works are treated exactly the s ame as domestic works. U.S. 
+law applies whenever a United States work  or a foreign work is involved in a copyright 
+infringement lawsuit in this country. Before the copyright owner can file a laws uit 
+involving an infringement of a U.S. work, the work must be registered with the Office or 
+the Office must issue a refusal to register that work. In addition, U.S. works must be 
+registered in a timely manner to seek statutory damages and attorney’s fees.  By 
+contrast, foreign works do not need to be registered (or refused registration) in order to 
+file an infringement lawsuit in the United States, though they must be registered in a 
+timely manner to seek statutory damages and attorney’s fees.  
+ 2003  Eligibi lity Requirements: How to Determine if a Foreign Work Is  
+Eligible for Registration with the U.S. Copyright Office  
+Section 104  of the Copyright Act sets forth the categories of foreign works that are 
+eligible for copyright protection under U.S. law. This Section describes each of these 
+categories.  
+ 2003.1  Unpublished Works  
+All unpublished  foreign works are eligible for registr ation with the U.S. Copyright Office. 
+17 U.S.C. § 104(a) . For a detailed explanation of when a work is considered published , 
+see Chapter 1900 . 
+ 2003.2  Published Works  
+Works first published in a foreign country are eligible for registration with the U.S. 
+Copyright Office if they satisfy one or more of the conditions described in Sections 
+2003.2(A)  through 2003.2(F) .   
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  5 01/28/2021   2003.2(A)  Eligibility Based on Nationality or Domicile  
+Section 104(b)(1)  of the Copyright Act protects foreign works if, upon the work’s first 
+publication , one or more author(s) of the work (i) is a national or domiciliary of the 
+United States; (ii) is a national, domiciliary, or sovereign authority of a treaty party ; or 
+(iii) is a stateless perso n wherever that person is domiciled.  
+A “sovereign authority” is a governmental agency or subdivision of a foreign nation, 
+such as a ministry of the government of Norway or a province of Canada. A “stateless 
+person” is a person who has no nationality, eith er as the result of never having acquired 
+nationality in any nation, or as the result of having effectively renounced or having been 
+deprived of his or her former nationality without having, as yet, become a national of 
+another nation.  
+Chapter 1900  generally discusses the concept of when a work is published . The concept 
+of “first publication” is further defined in Section 104(b)  of the Copyright Act, which 
+explains that “a work that is published in the United States or a treaty party within 
+thirty days after publication in a foreign nation that is not a treaty party shall be 
+considered to be first published in the United States or such treaty party, as the case 
+may be.”  
+This means that a foreign work may be eligible for copyright protection in a wide variety 
+of cases. Aside from U.S. nationals and domiciliaries, authors who are nationals or 
+domiciliaries of any trea ty party at the time of first publication can obtain U.S. 
+protection for a foreign work. As discussed in Section 2004 , the United States has 
+entered into treaty relations with all but a handful of countries, meaning that the 
+majori ty of foreign works will be eligible for protection under Section 104(b)  of the 
+Copyright Act.  
+ 2003.2(B)  Eligibility Based on Location of First Publication  
+Section 104(b)(2)  of the Copyright Act affords protection to all works that are first 
+published  in (i) the United States, or (ii) a foreign nation that, on the date of the first 
+publication , is a treaty party . In other words, regardless of the nationality or domicile of 
+the author(s), a work may be eligible for protection under the Copyright Ac t if it is first  
+published in the United States or in any nation that has a relevant treaty with the United 
+States at the time of the first publication. For more information on which countries are 
+treaty partners, see Section 2004 . 
+NOTE:  There is an exception to this rule. A work that was first published in a foreign 
+nation that has not entered into a treaty with the United States may be eligible for 
+protection in this country if the work was published within thirty days thereafter in the 
+United States or in a foreign nation that is a treaty party. This exception was added to 
+the Copyright Act effective October 28, 1998, and it applies to any work that was first 
+published on or after September 28, 1998. See Digital Millennium Copyright Act, Section 
+102, 112 Stat. 2860, 2862 (1998) (codified at 17 U.S.C. § 104(b) ).  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  6 01/28/2021   2003.2(C)  Eligibility for Sound Recordings  
+Section 104(b)(3)  of the Copyright Act protects sound recordings  that were first “ fixed ” 
+in a foreign country that is a treaty party . Specifically, the law protects sound recordings 
+that are embodied in phonorecord s that are su fficiently permanent or stable to permit 
+the work to be perceived, reproduced, or otherwise communicated for a period of more 
+than transitory duration. 17 U.S.C. § 101  (definition of “f ixed”). For more information on 
+fixation, see Chapter 300 , Section 305 and Chapter 800 , Secti on 803.4.  
+ 2003.2(D)  Eligibility Based on Incorporation into Buildings or Other Structures  
+Section 104(b)(4)  of the Copyright Act protects pictorial, graphic, or sculptural works 
+that are incorporated into a building or other structure, and architectural works that are 
+embodied in a building. The Copyright Act, however, only protects pictorial, graphic, 
+sculptur al, and architectural works if the building or structure in which they are 
+incorporated or embodied is located in the United States or a treaty party . 
+ 2003.2(E)  Eligibility of Works Published by  the United Nations or  
+the Organization of American States  
+Section 104(b)(5)  of the Copyright Act states that works first published  by the United 
+Nations (or any of its specialized age ncies) or by the Organization of American States 
+are eligible for protection under the Copyright Act. This provision is based on first 
+publication  by these organizations, regardless of the locat ion of the publication.  
+ 2003.2(F)  Eligibility Based on Presidential Proclamations  
+Section 104(b)(6)  of the Copyright Act protects works that come within the scope of 
+Presidential proclamations. This means that, in addition to the categories listed in 
+Sections 2003.2(A)  through 2003.2(E) , a work may b e eligible for protection in the 
+United States if the President finds that a particular foreign nation extends copyright 
+protection to works by nationals or domiciliaries of the United States or works that are 
+first published  in the United States “on subst antially the same basis as that on which the 
+foreign nation extends protection to works of its own nationals and domiciliaries and 
+works first published in that nation.” 17 U.S.C. § 104 (b)(6) . In such cases, the President 
+may issue a proclamation that extends copyright protection “to works of which one or 
+more of the authors is, on the date of first publication, a national, domiciliary, or 
+sovereign authority of that [foreign] nation, or  which was first published in that nation.” 
+Id. The President may revise, suspend, or revoke any such proclamation or impose any 
+conditions or limitations on protection under a proclamation.  
+ 2004  Treaties and Presidential Proclamations  
+U.S. protection of  foreign works often is based on the United States’ treaty relationships 
+with other countries. The United States has treaty relationships with all but a handful of 
+countries, as set forth in Inter national Copyright Relations of the United States (Circular 
+38a) . Some of these treaties are multilateral, meaning that there are more than two 
+parties to the treaty, while other treaties are bilateral, meaning that they are between 
+just the United States and one foreign country. It is important to note the date on which a 
+foreign country became a treaty party, because  U.S. law will apply only  to works either 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  7 01/28/2021  created or first published  (depending on which type of eligibility is used) on or after the 
+date th at the foreign country became a treaty party . Additionally, for a treaty to confer 
+eligibility, it must apply to the work at issue. For example, an author of a literary work  
+could not rely on the  existence of a copyright treaty that protects only satellite 
+broadcasts but not literary works.  
+ 2004.1  Multilateral Treaties  
+The United States is a party to a number of multilateral copyright treaties, including the 
+following:  
+• Buenos Aires Convention of 1910: This was an early treaty that provided certain 
+copyright protections for artistic and literary works  and was deposited with the 
+government of Argentina on May 1, 1911, and proclaimed by President Woodrow 
+Wilson on July 13, 1914.  
+• Berne Convention  for the Protection of Literary and Artistic Works (“Berne 
+Convention”): This treaty provides protection for certain literary and artistic works 
+and has been signed by most countries. The effective date for U.S. adherence to the 
+Berne Convention is March 1, 198 9. 
+• Convention for the Protection of Producers of Phonograms Against Unauthorized 
+Duplication of Their Phonograms, Geneva, 1971: The effective date for the United 
+States is March 10, 1974. Note that only sound recordings  are eligible for U.S. 
+copyright protection based on this treaty. 17 U.S.C. § 104(d) . 
+• Universal Copyright Convention, Geneva, 1952: This treaty protected certain 
+literary, artistic, and scientific works. The effective date for the United States is 
+September 16, 1955, the date the treaty entered into force. This treaty was revised, 
+and the United States is a party to the version as revised at Paris  in 1971 as of July 
+10, 1974.  
+• World Intellectual Property Organization  (“WIPO”) Copyright Treaty (“WCT”): The 
+WCT is a special agreement under the Berne Convention that protects Berne 
+Convention -covered works and includes specific language protecting computer 
+programs  and compilations  of data or other material. The effective date for the 
+United States is March 6, 2002, the date the treat y entered into force.  
+• WIPO Performances and Phonograms Treaty, Geneva, 1996 (“WPPT”): The WPPT 
+covers certain rights for performers and producers of phonograms. The effective 
+date for the United States is May 20, 2002, the date the treaty entered into forc e. 
+Note that only sound recordings are eligible for U.S. copyright protection based on 
+this treaty. 17 U.S.C. § 104(d) . 
+• The Agreement on Trade­Related Aspects of Intellectual Property R ights (“TRIPS”) 
+was entered into as part of the World Trade Organization (“WTO”), established 
+pursuant to the Marrakesh Agreement of April 15, 1994, which implemented the 
+Uruguay Round Agreements. TRIPS incorporated the Berne Convention in most 
+part, cover ed copyright and other intellectual property rights, and included 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  8 01/28/2021  provisions relating to enforcement of intellectual property rights. The effective date 
+of United States membership in the WTO is January 1, 1995.  
+• The Marrakesh Treaty to Facilitate Access to  Published Works for Persons Who Are 
+Blind, Visually Impaired or Otherwise Print Disabled (“Marrakesh VIP Treaty”) 
+provides an obligation for member nations to provide copyright limitations and 
+exceptions in order to permit reproduction, distribution and m aking available of 
+published works in formats designed to be accessible to visually impaired people, 
+and to permit exchange of these works across borders by eligible organizations that 
+serve those beneficiaries.  The provisions of this treaty were implement ed into U.S. 
+law with the Marrakesh Treaty Implementation Act on October 10, 2018. U.S. 
+membership in the treaty came into force on May 8, 2019. For more information on 
+the Marrakesh Treaty implementation in U.S. law, see the Copyright Office’s 
+Understandi ng the Marrakesh Treaty Implementation Act . 
+For information concerning the other countries that are parties to these treaties and the 
+date upon which a country became a treaty party, see Internatio nal Copyright Relations 
+of the United States (Circular 38a) . 
+ 2004.2  Bilateral Copyright Treaties and Presidential Proclamations  
+The United States has entered into bilateral treaties with some foreign countries. These 
+treaties often are in addition to mul tilateral treaties and try to provide a further layer of 
+protection. For a list of specific U.S. bilateral treaties, see International Copyright 
+Relations of the United States (Circular 38a) . 
+Addi tionally, there have been numerous Presidential proclamations throughout the 
+years specifying countries to which the United States has extended copyright law 
+protection. Presidential proclamations were especially common prior to the United 
+States’s adheren ce to the Berne Convention , which allowed the United States to provide 
+protection to foreign works more easily. These proclamations are included as part of the 
+“bilateral” agreements listed in Circular 38(a) .  
+ 2005  Registration Issues  
+This Section discusses frequent registration issues that arise in connection with foreign 
+works.  
+ 2005.1  Multiple Authors of a Foreign Work  
+If the foreign work  was created by multiple authors an d if eligibility is based on the 
+domicile or nationality of those authors, the work will be eligible for registration as long 
+as any one of the authors’ nationalities or domiciles is sufficient. For example, if the 
+work was created by three authors, two of  whom are from Iran (a country that has no 
+copyright treaties with the United States) and one of whom is from France (a country 
+that does have copyright relations with the United States), the work would be eligible 
+for registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  9 01/28/2021   2005.2  Authors with Multiple Nationalities  
+If a work’s eligibility is based on the author’s nationality and the author has more than 
+one nationality (for example, if the author has dual citizenship), the work will be eligible 
+for registration if either  of the author’s na tionalities satisfy the Copyright Act’s eligibility 
+requirements.  
+ 2005.3  Domicile or First Publication in the Territorial Areas of the United States  
+Domicile or first publication  in any of the territorial areas under the jurisdiction of the 
+U.S. government — other than the several states, the District of Columbia, and the 
+Commonwealth of Puerto Rico, and the organized territories — does not confer 
+eligibility for registration. Such areas include  the unorganized territories, the trust 
+territories, and other possessions of the United States. However, works by domiciliaries 
+of, or works first published in, these areas may be eligible on the basis of the nationality 
+of the author. Since U.S. national s include persons born in the outlying possessions of 
+the United States, eligibility in such cases may be conferred on that basis.  
+ 2005.4  Stateless Persons  
+A work by a stateless author is eligible for registration with the U.S. Copyright Office 
+regardless  of the author’s former or prospective nationality or domicile, and regardless 
+of the place of first publication of the work. 17 U.S.C. § 104(b)(1) . 
+ 2005.5  Works Made for Hire  
+In the c ase of a work made for hire , it is the nationality or domicile of the employer or 
+other person for whom the work was prepared, rather than the nationality or domicile 
+of the employee, which serve s as the basis for determining eligibility for registration.  
+ 2005.5(A)  Nationality and Domicile of Corporations and Similar Organizations  
+In the case of a work made for hire, where the employer or other person for whom the 
+work was prepared is not a nat ural person, but is an artificial person or legal entity such 
+as a corporation or similar organization, the nationality and domicile of that 
+organization is usually considered to be the nation under the laws of which the 
+organization was created for purpos es of copyright registration. For example, the 
+nationality and domicile of a corporation generally should be stated as the United States 
+if it was incorporated under the law of one of the several States, under federal law, or 
+under the law of the District of Columbia, the Commonwealth of Puerto Rico, or those 
+organized territories under the jurisdiction of the United States that have the power to 
+create corporations.  
+ 2005.5(B)  Members  
+A corporation or similar organization is ordinarily considered by law to  be separate and 
+distinct from the persons who are its members or shareholders. As a result, the 
+nationality or domicile of the organization may be different from that of its members or 
+shareholders.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  10 01/28/2021   2005.5(C)  Doing Business  
+A corporation may do business  in a particular nation without being a national or 
+domiciliary of that nation.  
+ 2005.6  Anonymous and Pseudonymous Works  
+Where eligibility depends on the nationality or domicile of the author, the applicant  
+must provide that information in the application, even if the work is anonymous  or 
+pseudonymous . The applicant does not, however, have to identify the author’s name in 
+such cases.  
+For a definition and general discussion of anonymous and pseudonymous works, see 
+Chapter 600 , Sections 615.1 and 6 15.2.  
+ 2005.7  Compilations and Derivative Works  
+The nationality or domicile of the author of a compilation  or derivative work  is used in 
+determining eligibility for registration, rather than the nationality or domicile of the 
+author(s) of the preexisting material used in that work.  
+ 2005.8  When Is Eligibility Determined?  
+If eligibility must be based on the author’s nationality o r domicile, the author’s 
+nationality or domicile and the status of the author’s country must be assessed as of the 
+date of first publication . 
+ 2005.8(A)  Works Initially Registered as Unpublished,  but Ineligible for  
+Registration as Published Works  
+Even though a work may have been registered as unpublished , it must be eligible at the 
+time of first publication  to be registrable as a published work. For example, if the author 
+is a national and domiciliary of Iraq (a nation with which the United States has no 
+copyright relations), the U.S. Copyright Office will register the work if  it is unpublished. 
+If the work is later published in another country with which the United States does not 
+have copyright treaty relations, and the author’s citizenship and domicile remain 
+unchanged, the Office will refuse to register the claim  in the published version.  
+ 2005.8(B)  Change in Nationality or Domicile after Publication  
+If a work was eligible for registration at the time of first publication  on the basis of the 
+author’s nationality or domicile, changes in nationality or domicile occurring after that 
+time will not impact the work’s eligibility.  
+ 2005.9  Eligibility Unclear  
+Sometimes the status of copyright relations between t he United States and a particular 
+nation is unclear. In cases where eligibility depends on the existence of copyright 
+relations with that country, but the relationship is unclear, the U.S. Copyright Office will 
+refuse registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  11 01/28/2021   2006  Application Tips f or Foreign Works  
+In most cases, eligible foreign works may be registered just like any other work. In other 
+words, an applicant  generally may submit an application using the electronic 
+registration system and selecting the type of work at issue ( e.g., literary work, work of 
+the performing arts, work of the visual arts, sound recording, or single serial issue) or by 
+using a paper a pplication ( e.g., Form TX , PA, VA, SR, SE, etc.). For specific guidance on 
+how to complete these applications, see Chapter 600  (Examination Practices). There are, 
+however, some foreign works that must be registered with a paper application 
+submitted on Form GATT. These works typically were created or published  before 1996 
+and are known as “restored works,” which are  discussed in Section 2007  below.  
+In all cases, the applicant should provide the name of the nation of which the author is a 
+national or domiciliary, and in the case of a published work, the name of the nation of 
+first publication  of the work. For guidance in identifying the author’s nationality or 
+domicile, see Chapter 600 , Secti on 617. For guidance in identifying the nation of first 
+publication, see Chapter 600 , Section 612.  
+Generally, the U.S. Copyright Office will not accept an application that l ists a territory or 
+other political subdivision, rather than the name of the nation itself.  
+Examples of acceptable statements:  
+• Great Britain  
+• England  
+• Wales  
+• France  
+• French  
+• Switzerland  
+• Swiss  
+Examples of unacceptable statements:  
+• British Protected Person  
+• Commonw ealth Citizen  
+• Worldwide  
+• Internet  
+ 2007  Restored Works  
+ 2007.1  What Is a Restored Work?  
+Previously, U.S. federal copyright law did not protect original works of authorship 
+immediately upon their fixation in a tangible medium of expression. Instead, author s 
+needed to take certain steps, such as publishing the work with a specific copyright 
+notice  and renewing the copyrights at particular times in order to obtain federal 
+copyright protection. These  types of requirements are called “formalities” and they 
+applied to both U.S. and foreign works.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  12 01/28/2021  In 1978, the current Copyright Act went into effect, which eliminated some of these 
+requirements. In 1989, the United States became a member of the Berne Convention , 
+and enacted the Uruguay Round Agreements Act , Pub. L. No. 103 –465, 108 Stat. 4809 
+(codified in scattered sections of the U.S.C .) (1994) (“URAA”), which implemented the 
+United States’ obligations under the Agreement on Trade -Related Aspects of Intellectual 
+Property Rights. This further relaxed some of the Copyright Act’s more restrictive 
+provisions.  
+Specifically, the URAA “restor ed” the copyright in foreign works that entered the public 
+domain because of a failure to comply with certain formalities, and thus provided 
+retroactive copyright protection for many works that were ineligible for protection 
+under the prior law. In 2012, t he U.S. Supreme Court held that the URAA does not violate 
+Article I, Section 8 or the First Amendment of the Constitution. Golan v. Holder , 565 U.S. 
+302 (2012).  
+Section 104A(h)(6)  of the Copyright Act specifies the requirements that must be met in 
+order to qualify as a “restored work.”  
+• Not in the public domain in the source country : The work must not be in the public 
+domain  in its source country  through the expiration of the term of protection. 17 
+U.S.C. § 104A(h)(6)(B) . As discussed in Chapter 100 , Section 102.2(A), the term of 
+protection is the length of time during which a work is protected by copyright law. 
+As discussed in Chapter 300 , Section 313.6(D), the term “public domain” means that 
+the work is not protected by copyright law. Thus, a restored work must be 
+copyright -protected and still within its term of protection in the foreign country.  
+• Fell into the public domain in the United  States : The work must be in the public 
+domain in the United States (i) because the work did not comply with certain 
+formalities (such as failing to place a proper notice  on the work, failing to renew the 
+copyright in a timely manner, or failing to comply with manufacturing requirements 
+under prior law); (ii) because the work is a sound recording  that was fixed  before 
+February 15, 1972, and as such, was not protected by U.S. federal copyright law; or 
+(iii) because of a lack of national eligibility (as discussed above generally). 17 U.S.C. 
+§ 104A(h)(6)(C) . 
+• Eligibility at time of creation or publication : At least one author or rightholder of the 
+work must have been (i) a national or domiciliary of an eligible country  at the time 
+of the work’s creation , and (ii) if the work is published , it must have been first 
+published in an eligible country and not published in the United States within thirty 
+days after the date of first publication . 17 U.S.C. § 104A(h)(6)(D) . 
+• Sound recordings : If the source country for the work is an eligible country solely by 
+virtue of its adherence to the WPPT, the restored work must be a sound recording. 
+17 U.S.C. § 104A(h)(6)(E) . 
+January 1, 1996 is the effective date of restoration of copyright for foreign works from 
+countries that were members of the WTO or the Berne Convention on that date. Most 
+restored works were restored on January 1, 1996, because many countries became 
+member s of the WTO or Berne Convention prior to that date. In all other cases, the 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  13 01/28/2021  effective date of restoration is the date a newly eligible country accedes to the WTO or 
+the Berne Convention or the date of a Presidential proclamation restoring U.S. copyright 
+protection to works of that country.  
+NOTE:  Restored works are subject to a variety of other legal requirements regarding 
+enforcement and remedies, which are not covered in this Compendium . For more 
+information on restored works, see Copyright Restoration Under the URAA (Circular 
+38b) . 
+ 2007.2   Registration Requirements for Restored Works  
+The Copyright Act protects restored works regardless of whether they are registered 
+with the U.S. Copyright Office, although registration does provide various benefits, 
+which are described in Chapter 200 , Section 202. This Section provides general 
+information for copyright owners that wish to register their restored works with the 
+Office.  
+A registration for a restored work (which is known as a “GATT registration”) covers an 
+individual work, and an applicant should prepare a separate application, filing fee, and 
+deposit for each work t hat is submitted to the Office.  See Fees, 71 Fed. Reg. 15,368, 
+15,369 (Mar. 28, 2006) .  
+ 2007.2(A)  Form GATT  
+To register a restored work, an applicant  must file a paper application using Form GATT . 
+Applicants cannot use the Office’s electronic registration system to register restored 
+works. Form GATT is designed to request information needed to determine whether a 
+work qualifies as a restored work and complies with U.S. legal requirements.  
+While man y parts of Form GATT are similar to the Office’s other applications, Form 
+GATT requires information that may be different than the information required by other 
+forms because of the differences in how the Copyright Act treats restored works. These 
+issues a re discussed in Sections 2007.2(A)(1)  through 2007.2(A)(4).  
+ 2007.2(A)(1)  Who May File Form GATT?  
+Form GATT may be filed by any of the following parties:  
+• An author of the work.  
+• The owner of all U.S. rights in the work.  
+• A duly authorized agent  of one of the foregoing parties.  
+See Restoration of Certain Berne and  WTO Works, 60 Fed. Reg. 50,414 , 50,418 (Sept. 29, 
+1995) . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+Chapter 20 00  :  14 01/28/2021   2007.2(A)(2)  Author of a Restored Work  
+When identifying the author of a restored work on Form GATT applicants should be 
+aware of the following issues:  
+• Timing matters : The applicant must determine whether, at the time the work was 
+created , the author was a national or domiciliary of a country that is now eligible for 
+protection  in the United States. See 17 U.S.C. § 104A(h)(6)(D) . 
+• Anonymous works:  To register an anonymous  work, the applicant may provide the 
+author’s legal name or the author’s pseudonym, as long as the pseudonym consists 
+of a name (rather than a number or symbol).  See Chapter 600 , Section 615.1(B).  
+ 2007.2(A)(3)  Publication of a Restored Work  
+To qualify for a GATT registration , a published work (i) must have at least one author or 
+rightholder who was a national or domiciliary of an eligible country  when the work was 
+crea ted, (ii) it must have been first published  in an eligible country, and (iii) it must not 
+have been published in the United States within thirty days after first publication  in that 
+country. See 17 U.S.C. § 104A(h)(6)(D) . 
+ 2007.2(A)(4)  Owner of U.S. Copyright in a Restored Work  
+A claim  in a restored work may be registered only in the name of the current owner of 
+all U.S. rights in that work. See Restoration of Certain Berne and WTO Works, 60 Fed. 
+Reg. 50,414, 50,418 (S ept. 29, 1995) .  
+ 2007.2(B)  Filing Fees  
+The applicant  must submit the correct filing fee  to register a restored work. See 37 C.F.R. 
+§ 202.3(c) (2). The current fee is set forth in the U.S. Copyright Office’s fee schedule  
+under the heading “ Registration of a claim i n a restored copyright ( Form GATT ).”  
+For information concerning the methods for paying the filing fee, see Chapter 1400 , 
+Sections 14 12.3 through 14 12.5. 
+ 2007.2(C)   Deposit Requirements  
+For specific deposit requirements for different types of restored works, see Chapter 
+1500 , Sections 1509.1(J) (Literary Works), 1509.2(H) (Works of the Performing Arts), 
+and 1509.3(E)(3) (Visual Art Works).  
+ 
+ 

@@ -1,0 +1,613 @@
+ 
+Chapter 2 00  :  1 01/28/2021  C O M P E N D I U M : Chapter 200  
+Overview of the Registration Process  
+201 What This Chapter Covers  ................................ ................................ ................................ ................................ ..............  3 
+202 Purposes and Advantages of Registration  ................................ ................................ ................................ ...............  4 
+202.1  Types of Registrations  ................................ ................................ ................................ ................................ .....................  5 
+202.2  Registration Distinguished from Preregistration  ................................ ................................ ................................ .. 6 
+202.3  Registration Distinguished from Recordation  ................................ ................................ ................................ ........  6 
+203 Timing of Registration  ................................ ................................ ................................ ................................ .....................  6 
+204 Required Elements for Registration  ................................ ................................ ................................ ...........................  7 
+204.1  Completed Application  ................................ ................................ ................................ ................................ ....................  7 
+204.1(A)  Online Application  ................................ ................................ ................................ ................................ .............................  7 
+204.1( B) Paper Applications  ................................ ................................ ................................ ................................ ............................  8 
+204.1(B)(1)  By Mail or Commercial Carrier  ................................ ................................ ................................ ................................ ..... 9 
+204.1(B)(2)  By Courier  ................................ ................................ ................................ ................................ ................................ .............  9 
+204.1(B)(3)  By Hand Delivery  ................................ ................................ ................................ ................................ ............................  10 
+204. 2 Filing Fee  ................................ ................................ ................................ ................................ ................................ ............  10 
+204.3  Deposit Copy(ies)  ................................ ................................ ................................ ................................ ...........................  11 
+204.3(A)  Deposit Copy(ies) Submitted in Electronic Format  ................................ ................................ ...........................  12 
+204.3(B)  Deposit Copy(ies) Submitted in Physical Format ................................ ................................ ...............................  12 
+205 Privacy  ................................ ................................ ................................ ................................ ................................ ................  13 
+206 General Overview of the Examination Process  ................................ ................................ ................................ ... 14 
+207 Special Handling  ................................ ................................ ................................ ................................ ..............................  14 
+208 Withdrawing an Application  ................................ ................................ ................................ ................................ ...... 15 
+209 The Certificate of Registration, the Registration Decision Date, and the Effective Date of 
+Registration ................................ ................................ ................................ ................................ ................................ ....... 15 
+210 When Does a Registration Expire?  ................................ ................................ ................................ ...........................  16 
+211 Registration R efused After Examination  ................................ ................................ ................................ ...............  16 
+212 General Policies Regarding Inaccuracies and Misrepresentations  ................................ ..............................  17 
+212.1  Material Misrepresentations  ................................ ................................ ................................ ................................ ...... 17 
+212.2  Immaterial Inaccuracies in the Application ................................ ................................ ................................ ..........  17 
+212.3  Errors or Omissions in a Certificate of Regi stration  ................................ ................................ .........................  17 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  2 01/28/2021  212.4  Cancellation ................................ ................................ ................................ ................................ ................................ ....... 17 
+213 The Registration Process at a Glance  ................................ ................................ ................................ ......................  18 
+ 
+ 
+ 
+Chapter 2 00  :  3 01/28/2021  C O M P E N D I U M : Chapter 200  
+Overview of the Registration Process  
+ 201 What This Chapter Covers  
+This Chapter provides a general overview of the copyright registration  system and the 
+practices and procedures for submitting an application to register a work created or 
+first published  on or af ter January 1, 1978. For a chart that illustrates the entire 
+registration process at a glance,  see Section 213. 
+For a detailed discussion of the U.S. Copyright Office’s registration practices, see the 
+following chapters:  
+• For the pra ctices and procedures for examining copyright claims , see Chapter 600 . 
+• For the practices and procedures for regi stering certain groups of works, see 
+Chapter 1100 .  
+• For a general discussion of filing fees and applications, including the Single 
+Application, which may be used to register one work by one author, see Chapter 
+1400 . 
+• For the practices and procedures for correcting or amplifying the information in an 
+existing copyright registration a nd for asserting an adverse claim to copyright, see 
+Chapter 1800 . 
+• For the practices and procedures for the renewal  of copyright claims, see Chapter 
+2100 .  
+For a detailed discussion of the Office’s practices and procedures for specific types of 
+works, see the following chapters:  
+• For literary works , see Chapter 700 .  
+• For works of the perfo rming arts , see Chapter 800 .  
+• For visual art  works, see Chapter 900 .  
+• For websites  and website content, see Chapter 1000 .  
+• For mask works , see Chapter 1200 .  
+• For vessel designs , see Chapter 1300 .  
+• For foreign works , see Chapter 2000 . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  4 01/28/2021   202 Purposes and Advantages of Regi stration  
+Under the current copyright law, a work of authorship is protected by copyright from 
+the moment it is created, provided that the work is original and has been fixed  in a 
+tangible medium  of expression. See 17 U.S.C. §§ 102(a) , 408(a) . Although registration is 
+not required for a work to be protected by copyright, it does provide several important 
+benefits:  
+• A registration creates a public record  that  includes key facts relating to  the 
+authorship and ownership of the claimed work, as well as information about the 
+work, such as title, year of creation, date of publication  (if any), and the type of 
+authorship that the work contains ( e.g., photographs, text, sound recordings ). 
+• A registration (or a refusal to register) is a prerequisite to filing a lawsuit for 
+copyr ight infringement  involving a United States work. See 17 U.S.C. § 411(a) . A 
+‘registration . . . has been made’ within the me aning of 17 U.S.C. § 411(a) . . . 
+when the Register has registered a copyright after examining a properly filed 
+application.” Fourth Estate Public Benefit Corp. v. Wall -Street.com, LLC, 139 S. Ct. 
+881, 892 (2019).  “[R]egistration is akin to an administrati ve exhaustion 
+requirement that the owner must satisfy before suing to enforce ownership 
+rights,” because “it is the Register’s action that triggers a copyright owner’s 
+entitlement to sue.” Id. at 887, 890.  “Once the Register grants or refuses 
+registration,  the copyright owner may also seek an injunction barring the 
+infringer from continued violation of her exclusive rights and an order requiring 
+the infringer to destroy infringing materials.” Id. (citing 17 U.S.C. §§ 502 , 
+503(b) ).  
+NOTE:  There are three exceptions to this rule . A registration or a refusal is not 
+need ed to file a lawsuit suit involving a foreign work. Id. at 891. Section 408(f)  of 
+the Copyright Act allows the owner of a work that is “especially susceptible to 
+prepublication infring ement . . . to institute suit before the Register has granted 
+or refused registration.” Id. at 892 . Section 411(c)  provides a similar exception 
+for infringements involving live broadca sts. “As to all other works , however,  § 
+411(a)’s general rule requires owners to await action by the Register before 
+filing suit for infringement.”  Id.  
+• To claim statutory damages or attorney’s fees in a copyright infringement lawsuit, 
+a work must be registered before the infringement began or within three months 
+after the first publication  of the work. See 17 U.S.C. §§ 412(c) , 504, 505. “If [the] 
+infringement occurs before a copyright owner applies for registration, that 
+owner may eventually recover [actual] damages for the past infringement  and 
+the infringer’s profits,” but if the claim involves a U nited States  work, the owner 
+must “app ly for registration and receive the Copyright Office’s decision on her 
+application before instituting suit.” Fourth Estate Public Benefit Corp., 139 S. Ct. 
+at 891.   
+• A registration constitutes prima facie  evidence of the validity of the copyright 
+and the facts stated in the certificate of registration , but only if the work is 
+registered before or within five years after the work is first publishe d. 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  5 01/28/2021  • A registration provides information to prospective licensees, such as the name 
+and address for obtaining permission to use the work.  
+• A document that has been recorded with the U.S. Copyright Office may provide 
+constructive notice of the facts stated the rein, but only if the document 
+specifically identifies a work of authorship and only if that work has been 
+registered. See 17 U.S.C. § 205(c)(1) -(2). 
+• The deposit copy(ies)  submitted with an application for registration of a 
+published work may satisfy the mandatory deposit requirement, provided that 
+the applicant  submi tted the best edition  of the work. See 17 U.S.C. §§ 407 , 408(b) . 
+• A registration is necessary to secure the full benefits of a preregistration  that 
+has been issued by the U.S. Copyright Office. See 17 U.S.C. § 408(f)(3) . 
+• The U.S. Customs and Border Protection Service may seize foreign pirated 
+copies of a copyright owner’s work, provided that the work has been registered 
+with the U.S. Copyright Office and the certificate of registr ation has been 
+recorded with the U.S. Customs and Border Protection Service.  
+• “To be entitled to receive royalties under [the section 115] compulsory license  
+for nondigital uses , the copyright owner must be identified in the registration or 
+other public records of the Copyright Office.” See 17 U.S.C. § 115(c)(1 )(A). 
+ 202.1  Types of Registrations  
+The U.S. Copy right Office registers claims to copyright in works of authorship. As a 
+general rule, the Office will issue one registration for each work that is submitted for 
+registration. Generally, the Office will not issue separate registrations for the constituent 
+elements or individual components of a work of authorship. And as discussed Chapter 
+500, Section 503.1(A), the Office generally will not issue separate registrations to each  
+author who contributed copyrightable expression to the work.  
+The U.S. Copyright Office currently offers the following types of registrations:  
+• Basic registrations . An application for a basic regi stration  is used to register a 
+copyright claim  in a work created or first published  on or after January 1, 1978, and 
+covers the full term of the copyright. This type of registration may be obtain ed with 
+a Standard Application, a Single Application (provided certain eligibility 
+requirements have been met), or a paper application. For a discussion of these 
+applications, see Chapter 1400 , Sections 1403  and 1405 . 
+• Group registrations . An application for a group registration  is used to register a 
+claim to copyright in a group of related works that qualify for a single registration. 
+See 17 U.S.C. § 408(c)(1), (2) . For a detailed discussion of group registra tion, see 
+Chapter 1100 . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  6 01/28/2021  • Supplementary registration . An application for a supplementary registration  may be 
+used to correct or amplify the information in a basic or renewal registration . 17 
+U.S.C. § 408(d) . For a detailed discussion of supplementary registration, see Chapter 
+1800 , Section 1802.  
+• GATT registration . An application for a GATT registration  is used to register a 
+copyright claim in a work in which U.S. copyright was restored by the 1994 Uruguay 
+Round Agreements Act  (URAA). See Uruguay Round Agreements Act, 103 P.L. 465, 
+108 Stat. 4809 (1994) (codified as amended at 17 U.S.C. § 104A ). For a discussion of 
+GATT regist ration, see Chapter 2000 , Section 2007.  
+• Renewal registration . An application for a renewal registration  is used to cov er the 
+renewal  term for works copyrighted before January 1, 1978. See 17 U.S.C. § 304 . For 
+a detailed discussion of renewal registration, see Chapter 2100 . 
+ 202.2  Registration Distinguished from Preregistration  
+Preregistration  is a special service that is intended for specific types of works that are 
+likely to be infringed before they are completed or before they are released for 
+commercial distribution, such as feature films. For more informa tion on preregistration, 
+see Chapter 1600 . 
+ 202.3  Registration Distinguished from Recordation  
+Registration  and recordation  are two separate procedures: claims  to copyright are 
+registered, while documents related to copyright claims, such as agreement s to transfer  
+or grant a mortgage in copyrights, are recorded. As discussed in Section 204, an 
+applicant  must submit an application, deposit copy(ies), and a filing fee  to register a 
+claim to copyright, and together these items are the primary source of information for 
+the claim. As a general rule, the a pplicant does not need to submit additional documents 
+substantiating the information provided in these materials.  
+Registering a claim to copyright is not a substitute for recording a document with the 
+U.S. Copyright Office, and recording a document is not  a substitute for registering a 
+claim to copyright. See 17 U.S.C. § 205 . For a detailed discussion of the practices and 
+procedures for recording a document with the Office, see Chapter 2300 . 
+ 203 Timing of Registration  
+Registration may be made at any time before the copyright has entered the public 
+domain . See 17 U.S.C. §§ 302 -305 and 408(a) . Generally speaking, a copyrighted work 
+enters the public domain in the United States when “its full copyright term has expired.” 
+Golan v. Holder , 565 U.S. 302, 307 (2012).  
+The U.S. Copyright O ffice strongly encourages copyright owners to submit their works 
+for registration in a timely manner. As discussed in Section 202 , a registration (or a 
+refusal to register) is a prerequisite for filing a lawsuit for copyright infringement  
+involving a U nited States  work. See 17 U.S.C. § 411(a) . It is also a prerequisite for seeking 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  7 01/28/2021  statutory damages and a ttorney’s fees in an infringement action. To pursue these 
+remedies, an unpublished  work must be registered before the infringement occurs, 
+while a published  work must be registered within three months after publication  or 
+before the infringement occurs. See 17 U.S.C. § 412 . Moreo ver, if the work is registered 
+before or within five years after the work is first published, the  registration constitutes 
+prima facie  evidence of the validity of the copyright and the facts stated in the certificate 
+of registration . 
+ 204 Required Elements for Registration  
+To register a claim  to copyright, an applicant  must sub mit the following items to the U.S. 
+Copyright Office:  
+• Completed application;  
+• Full filing fee; and  
+• The requisite deposit copy(ies) of the work.  
+A general discussion of each of these elements is set forth in Sections 204.1  through 
+204.3  below. For detailed information on the practices and procedures for completing 
+the application, see Chapter 600 . For detailed information  on the requirements for the 
+filing fee, see Chapter 1400 , Section 1412 . For detailed information on the requirements 
+for deposit copy(ies), see Chapter 1500 . 
+ 204.1  Completed Application  
+An applicant  must use the official applications provided by the U.S. Copyright Office. 
+Most claims  may be submitted online by using the Office’s electronic registration 
+system, and in some cases applicants are required to use the online application to seek a 
+registration.  
+Applicants generally may submit a paper application as an alternative to using t he 
+electronic system, although applicants are required to use a paper application for 
+certain types of claims.  
+Each type of application is discussed in Sections 204.1(A)  and 204.1(B)  below.  
+ 204.1(A)  Online Application  
+The U.S. Copyright Office’s electronic registration system may be accessed from the 
+Office’s website . 
+The Office strongly encourages applicants  to use the online application whenever 
+possible. The benefits to filing an online application include:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  8 01/28/2021  • Lower filing fees for online applications : The filing fee  for an online appl ication is 
+lower than the filing fee for a paper application. For a list of the current filing fees, 
+see the Office’s fee schedule . 
+• Faster processing : The Office typically processes electronic claims  much  sooner than 
+non-electronic claims. Current processing times are listed on the Office’s website . 
+• Multiple options for paying the filing fee : An applicant may pay the filing fee for an 
+online application by credit card, debit card, electronic check, or with a U.S. 
+Copyright Office deposit account, while in most cases an applicant may pay the filing 
+fee for a paper application only by check, money order, or deposit account.  
+• Easier submission of the deposit copy(ies) : For certain types of works, the applicant 
+may upload deposit copy(ies) directly to the online system as an electroni c file, 
+instead of having to submit physical deposit copies through the mail. The Office lists 
+the acceptable file types on its website . If the work is published  in hard copy form, 
+the appli cant may be required to mail a physical copy to the Office, but filing the 
+application electronically will expedite processing.  
+• The ability to track the status of the application : After submission, the online system 
+allows the applicant to log in and see w hether the online application is still pending 
+or whether it has been registered and closed.  
+For detailed information on completing an online application, see Chapter 600 . For 
+information on completing an online application for a group registration , see Chapter 
+1100 , Sections 1106  through 1114 . For information on completing an online application 
+for a supplementary registration , see Chapter 1800 , Section 1802.8(A).  
+Once the online application has been submitted, the Office automatically issues an email 
+confirming that the application has been received. If there are issues regarding the 
+claim, a registration specialist  may communicate with the applicant via telephone, email, 
+or mail to address those issues. For more information on communications between the 
+Office and the applicant, see Chapter 600 , Section 605.  
+ 204.1(B)  Paper Applications  
+At this time, applicants  must use a paper application to a pply for some types of 
+registrations, namely:  
+• A registration for a group of updates or revisions to a database  that does not consist 
+predominantly of photographs.  
+• Renewal registrations.  
+• GATT registrations.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  9 01/28/2021  • A supplementary registration  that corrects or amplifies the in formation in a renewal 
+registration, a GATT registration, or a registration for a database that does not 
+consist predominantly of photographs.  
+• Mask work  and vessel design registrations.  
+In such cases, the applicant must submit a paper application using the appropriate form. 
+For detailed information on these types of paper applications, see Chapter 1400 , Section 
+1404, 1406.8 , 1408 , and 1409 . 
+In all other cases, the Office strongly discourages applicants from using paper 
+applications for the reasons discussed in Section 204.1(A) .  
+Applicants may download paper applications from the Office’s website , or request the 
+forms from the Public Information Office via email, fax, telephone, or in pers on. Once 
+completed, the applicant may submit the paper application, along with the required 
+deposit copy(ies)  and filing fee , to the O ffice by mail, commercial carrier, courier, or 
+hand delivery.  
+For general information on how to complete a paper application, see the instructions 
+provided with each form. For specific information on how to complete each space of a 
+paper application, see Chapter 600 . For information on how to submit a paper 
+application by mail, commercial carrier, courier, or hand delivery, see Sections 
+204.1(B)(1)  through 204.1(B)(3)  below.  
+The address for submitting a paper application, filing fee , and deposit copy(ies ) to the 
+U.S. Copyright Office is set forth in space 9 of the paper application in the space marked 
+“Mail To,” which may be found at the bottom of every paper application.  
+Be advised that all packages that are submitted to the Office by mail, commercial carrier, 
+or courier will be screened for the presence of anthrax and other deadly contaminants. 
+This screening will delay the delivery of the registration materials, and, in some cases, it 
+could possibly damage the deposit copy(ies), which may cause additional delays. For 
+more information on this screening procedure, see Chapter 1500 , Section 1508.6.  
+204.1(B)(1)  By Mail or Commercial Carrier  
+A paper application may be sent to the U.S. Copyright Office by mail or by a commercial 
+carrier, such as Federal Express or United Parcel Service. The delivery address is set 
+forth in space 9 of the application in the space marked “Mail To,” which may be found at 
+the bottom of every paper application.  
+204.1(B)(2)  By Courier  
+To submit a paper application, filing fee , and deposit copy(ies)  by courier, an applicant  
+must include all of the required elements in a single package and deliver it to  the 
+Congressional Courier Acceptance Site (“CC AS”), which is located at 2nd and D Streets 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  10 01/28/2021  NE, Washington, DC. This location is open Monday through Friday from 8:30 a.m. to 4:30 
+p.m. Eastern Time, except for federal holidays .  
+Items delivered to this location typically are sent to the U.S. Copyright Office the next 
+working day. Registration materials submitted through a courier service do not receive 
+a dated receipt from the Office but instead will recei ve one dated by CCAS. The Office 
+considers the CCAS date of receipt as the date of receipt in the Office.  
+204.1(B)(3)  By Hand Delivery  
+To submit a paper application, filing fee , and deposit copy(ies)  in person, an applicant  
+must deliver all of the required elements to the U.S. Copyright Office’s Public 
+Information Office. This Office is open to the public Monday through Friday, from 8:30 
+a.m. to 5:00 p.m. Eastern Time, except federal holidays , and is located at the following 
+address:  
+Public Information Office (PIO)  
+Library of Congress, United States Copyright Office  
+James Madison Memorial Building, Room LM -401  
+101 Independence Avenue SE  
+Washi ngton DC 20559  
+An applicant who delivers registration materials to the Public Information Office will 
+receive a date -stamped receipt that lists the title of no more than one of the works listed 
+in the application.  
+NOTE:  Visitors to the U.S. Copyright Offic e must pass through security before entering 
+the building. Sealed packages or packages that are more than twenty -four inches wide 
+by fifteen inches high are not permitted.  
+ 204.2  Filing Fee  
+The current filing fees  for online and paper applications are set forth in the U.S. 
+Copyright Office’s fee schedule , which is posted on the Office’s website . All filing fees are 
+subject to change. For information concerning the types of payments that the Office will 
+accept,  see Chapter 1400 , Section 1412.4 . 
+If the applicant fails to submit the correct filing fee, a member of the Office’s staff will 
+notify the applicant in writing. If the applicant submits the correct filing fee within the 
+specified time frame, the effective date of registration  will be changed to reflect the date 
+that the funds were received. If the Office does not receive the correct filing fee within 
+the specified time frame, it will  close the file. If the applicant wishes  to resubmit the 
+claim, the applicant must file a new application, new deposit copy(ies), and the correct 
+filing fee. The effective date of registration  for a new claim will be based on the date that 
+the new submission is received by the Office.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  11 01/28/2021  For a discussion of the effective date of registration, see Section 209 below. For a 
+discussion of the Office’s practices and procedures for closing a file for failure to 
+respond to a written communication, see Chapter 600 , Sections 605.7 and 625.3(B).  
+ 204.3  Deposit Copy(ies)  
+The term “deposit” is frequently  misunderstood. It refers to the copy or copies of a work 
+that are submitted to the U.S. Copyright Office. It does not refer to the filing fee that must 
+be paid in order to register a work with the Office.  
+As a general rule, the applicant  must submit a complete copy or copies of the work to 
+register a claim  to copyright. In certain cases, the U.S. Copyright Office may accept 
+identifying material  in lieu of a complete copy, or the Office may grant special relief from 
+the deposit requirements.  (For a definition and discussion of identifying material and 
+special relief, see Chapter 1500 , Sections 1506 and 1508.8.) As discussed above, the 
+deposit copy(ies)  for a published  work also may satisfy the mandatory deposit 
+requirement for certain works that are published in the United States.  
+If the applicant fails to submit a complete copy of the work, fails to submit sufficient 
+identifying material, and/or fails to obtain speci al relief from the deposit requirements, 
+the registration specialist may communicate with the applicant  or may refuse 
+registration . If the specialist asks the applicant to resubmit the deposit copy(ies) but 
+does not receive the correct deposit within the s pecified time frame, the specialist will 
+close the file. If the applicant wishes  to resubmit the claim, the applicant must file a new 
+application, new deposit copy(ies), and the correct filing fee. The effective date of 
+registration  for a new claim will be based on the date that the new submission is 
+received by the Office.  
+In specific instances, the deposit copy(ies) may be submitted in digital or physical 
+format. The deposit copy(ies) must confo rm to certain requirements depending on the 
+type of work, the deposit requirements, and whether the work is published or 
+unpublished . As a general rule, the deposit copy(ies) should be clear and  should contain 
+all the authorship that the applicant intends to register. An application submitted with 
+an incomplete or unclear deposit copy(ies) may be delayed until the Office receives a 
+complete and/or clear copy  or may be refused . Delays due to incom plete and/or unclear 
+deposit copy(ies)  may affect the effective date of registration , which is discussed in 
+Section 209 below.  
+Once the Office receives the registration ma terials, a registration specialist  will examine 
+the deposit copy(ies) to determine if the work is eligible for registration. The Office will 
+not return the deposit copy(ies) or the identifying ma terial to the applicant.  
+General information on the procedure for submitting the deposit copy(ies) in digital or 
+physical format is set forth in Sections 204.3(A)  and 204.3(B)  below. For detailed 
+information on the deposit requirements for registration and the mandatory deposit 
+requirements, see Chapter 1500 . 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  12 01/28/2021   204.3(A)  Deposit Copy(ies) Submitted in Electro nic Format  
+The applicant  may submit deposit copy(ies)  electronically through the online 
+registration system if the work meets any of t he following requirements:  
+• The work is unpublished . 
+• The work has been published  only in a digital format.  
+• The work has been published and identifying material  is the appropriate deposit  for 
+that type of work. (For a detailed discussion of identifying material, see Chapter 
+1500 , Section 1506.)  
+• The work is eligible for a group registration, and electronic copies must be 
+submitted as a condition for using that option. (For a detailed discussion of the 
+deposit requirements for a group registration, see Chapter 1500 (Deposits) .) 
+In all cases, the applicant must submit the deposit copy(ies) in an acceptable file format. 
+The currently acceptable file formats are listed on the Office’s website . If the applicant 
+fails to comply with this requirement, the registration specialist will refuse registration .  
+If the work does not meet the requirements listed above, the applicant must submit 
+deposit copy(ies) in a physical format. For a discussion of the procedure for submitting 
+the deposit copy(ies) in physical format, see Section  204.3(B)  below.  
+ 204.3(B)  Deposit Copy(ies) Submitted in Physical Format  
+Physical depo sit copies  should be submitted to the U.S. Copyright Office by mail, 
+commercial carrier, courier, or hand delivery if (i) the work does not meet the 
+requirements listed in Section 204.3(A) , (ii) the applicant  is submitting a paper 
+application rather than an online application, or (iii) if the applicant prefers to submit 
+the deposit copy(ies) in a physical format rather than a digital format.  
+When completing an online appl ication, the applicant will be given an opportunity to 
+print a deposit copy shipping slip  that corresponds to the online application. The 
+applicant must print the shipping slip, attach it to each  deposit copy, and send all of 
+these items in a single package to the address specified on the shipping slip. (For further 
+information concerning this procedure, see Chapter  600, Section 625.2(D) and Chapter 
+1500 , Sections 1508.2 through 1508.5.) In such cases, the effective date of registration  is 
+based on the date the Office receives the deposit copy(ies) along with the corresponding 
+shipping slip. If an applicant does not include the shipping slip with each mailed physical  
+deposit  the Office will not be able to connect the deposit to an applic ation.  
+When submitting a paper application, an applicant should send the completed 
+application, proper filing fee , and complete and clear deposit copy(ies) in a single 
+package to the address spe cified in space 9 marked “Mail To,” which may be found at the 
+bottom of every paper application.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  13 01/28/2021   205 Privacy  
+The applicant  should not provide any private or confidential information in the 
+application that is not required for registration. All of the information that the applicant 
+provides in the application is a permanent part of the public record, and the U.S. 
+Copyright Off ice generally cannot remove any information from the public record once a 
+registration has been issued.  
+Section 705(a)  of the Copyright Act requires the Register of Copyrights to prepar e and 
+maintain “records of deposits , registrations, recordations , and other actions” taken by 
+the Office.  17 U.S.C. § 705(a) . Section  705(b)  states that all records maintained by the 
+Office in connection with a completed copyright registration “shall be open to public 
+inspection .” 17 U.S.C. §  705(b) . 
+With regard to copyright registrations, the Office requests and receiv es personally 
+identifiable information (“PII”), such as birth dates, addresses, and telephone 
+numbers. The collection of certain types of PII is mandated by statute or regulation, 
+while other requested information is optional for the applicant to provide. See 17 
+U.S.C. § 409 . Both types of information are collectively referred to as “Requested PII.”  
+The Office will make information provided in a copyright application available to the 
+general  public upon request, and much of this information will be available on the 
+Internet through the Office’s online database. For an example of the type of 
+information  that is typically displayed in the Office’s online database, see the privacy 
+page  on the Office’s website . 
+The Office does not request, but sometimes receives, additional PII, such as driver’s 
+license, social security, and credit card numbers. This type of information is unn ecessary 
+for copyright registration and is referred to in the Office’s regulations as “extraneous 
+PII.” See 37 C.F.R. § 201.2(f) .  
+Applicants should not provide extraneous PII in an appl ication. To protect the privacy of 
+applicants, the Office may remove this type of information from an application during 
+the examination process on its own initiative. If extraneous PII  is included within the 
+Office’s public records, an author or claimant may request removal of this information in 
+accordance with the Office’s regulations. There is no fee for this service. See id. 
+Additionally, applicants should not provide any other type of private or confidential 
+information in the application that is not required for registration, because it may also 
+be included in the Office’s online and offline public records.  
+Before submitting an application, an applicant should consider whether to include a 
+nickname, alias, or other personal information that is not re quired for registration. For 
+example, providing the name, address, telephone number, and email address of the 
+person who should be contacted for permission to use the work is optional, and the 
+Office will accept an application even if an applicant leaves t he Rights and Permissions 
+section blank. Although an applicant is encouraged to provide contact information for 
+rights and permission purposes, it is important to understand that if the applicant 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  14 01/28/2021  completes this portion of the application, the Office will i nclude this information in the 
+online database.  
+If an applicant wants to provide contact information for persons who may be interested 
+in using the work — but does not want to provide a home address or other personal 
+information — the applicant should cons ider providing the name of a designated agent, 
+a P.O. Box, or a designated email address in the Rights and Permissions field of the 
+application.  
+Modification of the information in the Office’s online public record (but not its offline 
+public record) is ava ilable where the author or claimant submits a written request to 
+remove or replace non -personally identifiable information for certain types of 
+Requested PII (such as replacing a home address with a P.O. Box number), and pays the 
+appropriate fee for this s ervice. See 37 C.F.R § § 201.1(c)(8) , 201.2(e) . For more 
+information on this procedure, see Chapter 1800 , Section 1805.  
+See generally Remov al of Personally Identifiable Information From Registration Records, 
+82 Fed. Reg. 9004 (Feb. 2, 2017) .  
+ 206 General Overview of the Examination Process  
+Once the U.S. Copyright Office receives the application, deposit copy(ies) , and filing fee , 
+the application and deposit copy(ies) will be sent to the Registration Program, where 
+they will be assigned to a registration specialist . The specialist will examine these 
+materials to determine whether the work constitutes copyrightable  subject matter and 
+if the applicant  has met the other legal and formal requirements, including those set 
+forth in the Copyright Act, the Copyright Office regulations, and the Compendium of U.S. 
+Copyright Office Practices . See 17 U.S.C. § 410(a) . For detailed information on this 
+process, see Chapter 600  (Examination Practice s). 
+ 207 Special Handling  
+Special handling  is a procedure for expediting the examination of an application to 
+register a claim  to copyright. There is an additional fee for this expedited service. For 
+information concerning this fee, see the Office’s fee schedule .  
+The U.S. Copyright Office offers this service in certain circum stances where a copyright 
+owner or other interested parties have a compelling reason for an expedited decision on 
+a pending application. Special handling may be requested for an online application or a 
+paper application in the following circumstances:  
+• Pend ing or prospective litigation;  
+• Customs matters; or  
+• Contract or publishing deadlines that necessitate the expedited issuance of a 
+certificate of registration.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  15 01/28/2021  A request for special handling may be made when the claim is submitted to the Office or 
+any time before the Office issues a certificate of registrat ion or a refusal. Once it has 
+received and approved a request for special handling, the Office will make every attempt 
+to process the application within five business days, although the Office cannot 
+guarantee that it will process all special handling appl ications within that time frame, 
+particularly if the claims present issues requiring correspondence.  
+For detailed information on special handling, see Chapter 600 , Section 623.  
+ 208 Withdrawing an Application  
+An applicant  may submit a request to withdraw a pending application at any time before 
+the U.S. Copyright Office has issued a certificate of registration or h as refused to register 
+the claim . The request should be made in writing and it should explain why the 
+applicant is seeking to withdraw the claim .  
+The request should be addressed to the “Associate Register of Copyrights and Director 
+of Registration Policy & Practice.” The applicant may email the request to the 
+registration specialist who has been assigned to the claim. Alternatively, the applicant 
+may mail the request to the following address:  
+Associate Register of Copyrights and  
+Director of Registration Policy & Practice  
+Registration Program  
+U.S. Copyright Office  
+101 Independence Avenue SE  
+Washington, DC 20559  
+The Office will use its discretion to d ecide whether to approve or deny a timely 
+withdrawal request. In making this decision, the Office will balance the interest of the 
+applicant with the public interest in maintaining the integrity of the registration record. 
+The Office does not routinely gra nt withdrawals , particularly where the request is made  
+merely  to avoid a refusal to register.  
+In the event that the Office approves a withdrawal request, the Office will not refund the 
+filing fee  and will not return  the deposit copy(ies) . The Office will not reinstate an 
+application once it has been withdrawn. If the applicant wishes  to resubmit the claim, 
+the applicant must file a new a pplication, new deposit copy(ies), and the correct filing 
+fee. The effective date of registration  for a new claim will be based on the date that the 
+new submission is received by the Office.  
+ 209 The Certificate of Registration , the Registration Decision Date,  and the 
+Effective Date of Registration  
+After conducting an examination, i f the  U.S. Copyright Office determines that the work 
+constitutes copyrightable subject matter and that  the other legal and formal 
+requirements  have been met , the Office will register the claim . The Office will issue a 
+certificate of registration which contains much of the information that the applicant 
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  16 01/28/2021  provide d in the application. In addition, the Office will create an online public record  for 
+the registration, which may be accessed through the Office’s online database. See 17 
+U.S.C. § 410(a) . 
+Both the certificate and the online public record contain a registration number and an 
+effective date of r egistration . The certificate may also contain a registration decision 
+date.  
+The “registration decision date” is the date that the registration specialist completed his 
+or her examination and approved the claim. The “effective date of registration ” is the 
+date on which the Office received an acceptable application, complete deposit copy(ies) , 
+and the proper filing fee . See 17 U.S.C. § 410(d) . For detailed information on this topic, 
+see Chapter 600 , Section 625.  
+ 210 When Does a Regi stration Expire?  
+Registrations and renewal registrations issued under the current statute (the 1976 Act) 
+expire when the work enters the public domain in the United States.  As discussed in 
+Section 203, a copyrighted work enters the  public domain in this country when the 
+copyright term for that work has expired under U.S. law.  
+Registrations issued under the prior statute (the 1909 Act) expire at the end of the first 
+twenty -eight years of the copyright term, and if the copyright is r enewed, the renewal 
+registration expires at the end of the renewal term. See Supplementary Registration, 81 
+Fed. Reg. 86,656, 86,660 n.23 (Dec. 1, 2016) .  
+The fact that a work has entered the public domain in a foreign jurisdiction does not 
+mean it has entered the public domain in the United States.  
+ 211 Registration Refused After Examination  
+The U.S. Copyright Office registers claims  to copyright and issues certificates of 
+registration only if the material deposited constitutes copyrightable subject matter and 
+the applicant  appears to meet the legal and formal requirements set forth in the 
+Copyright Act, the Copyright Office regulations, and the Compendium of U.S. Copyright 
+Office Practices . See 17 U.S.C. § 410(a) . 
+If the Office finds that the work is not copyrightable or that the applicant has not met the 
+legal and formal requirements for copyright registration, the Office will refuse to 
+register the claim and will specify the reasons for its  decision.  The Office will notify the 
+applicant by sending a written communication signed or initialed by the registration 
+specialist or supervisor assigned to the claim. The communication will be mailed to the 
+address provided in the Correspondent field/s pace of the application. For examples of 
+situations in which the Office will refuse to register a claim because of a failure to meet 
+the legal and/or formal requirements, see Chapter 600 , Section 608, and Chapter 1500 , 
+Section 1503.2.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  17 01/28/2021  An applicant may appeal  a refusal to register a copyright  claim. For more information on 
+the appeals process, see Chapter 1700 .  
+An applicant may institute a civil suit for copyright infringement  even if the Office has 
+refused to register a claim, provided that the applicant satisfies the requirements set 
+forth in  Section  411(a)  of the Copyright Act. For information concerning this topic, see 
+Chapter 1700 , Section 1706.  
+ 212 General Policies Regarding Inaccuracies and Misrepresentations  
+ 212.1  Material Misrepresentations  
+Knowingly making a false representation of a material fact in an application for 
+copyright registration, or in any written statement filed in connecti on with the 
+application, is a crime that is punishable under 17 U.S.C. § 506(e) .  
+ 212.2  Immaterial Inaccuracies in the Application  
+As a general rule, the registration specialist  may ignore immaterial inaccuracies in the 
+application that appear to be inadvertent and do not affect the registrability of the claim . 
+For information concerning the U.S. Copyright Office’s practices and procedures for 
+dealing with inaccuracies in an application, see Chapter 600 , Section 603.  
+ 212.3  Errors or Omissions in a Certificate of Registration  
+If the information set forth in the registration record is incorrect or incomplete, an 
+applicant  may be able to correct that error or omission by submit ting an application for 
+a supplementary registration , or under certain limited circumstances, by submitting a 
+new application for a new basic registration . For a discussion of these procedures, see 
+Chapter 1800 , Sections 1802 and 1803.  
+ 212.4  Cancellation  
+If the U.S. Copyright Office discovers an error or omission in the registration record, it 
+may contact the applicant  to correct the error, or it may cancel the registration if 
+warranted under the  Office’s cancellation regulations. See 37 C.F.R. § 201.7 . For a 
+discussion of cancellation, see Chapter 1800 , Section 1807.  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  18 01/28/2021   213 The Registration Process at a Glance   
+The following chart illustrates the registration process from start to finish:  
+C O M P E N D I U M  O F  U .S. C O P Y R I G H T  O F F I C E  P R A C T I C E S , Third Edition  
+ 
+Chapter 2 00  :  19 01/28/2021   
+

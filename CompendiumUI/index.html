@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Compendium Viewer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <header class="header">
+      <div class="usa-overlay"></div>
+      <header class="usa-header usa-header--basic">
+        <div class="usa-nav-container">
+          <div class="usa-navbar">
+            <div class="usa-logo">
+              <em class="usa-logo__text">
+                <a href="/" title="Compendium Viewer">Compendium Viewer</a>
+              </em>
+            </div>
+            <button type="button" class="usa-menu-btn">Menu</button>
+          </div>
+          <nav aria-label="Primary navigation" class="usa-nav">
+            <button type="button" class="usa-nav__close">
+              <img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+            </button>
+            <ul class="usa-nav__primary usa-accordion">
+              <li class="usa-nav__primary-item">
+                <button
+                  type="button"
+                  class="usa-accordion__button usa-nav__link usa-current"
+                  aria-expanded="false"
+                  aria-controls="basic-nav-section-one"
+                >
+                  <span>Chapters</span>
+                </button>
+                <ul id="basic-nav-section-one" class="usa-nav__submenu">
+                  <!-- Chapter list will be populated here -->
+                </ul>
+              </li>
+              <li class="usa-nav__primary-item">
+                <button
+                  type="button"
+                  class="usa-accordion__button usa-nav__link"
+                  aria-expanded="false"
+                  aria-controls="basic-nav-section-two"
+                >
+                  <span>Resources</span>
+                </button>
+                <ul id="basic-nav-section-two" class="usa-nav__submenu">
+                    <li><a href="#">Resource 1</a></li>
+                    <li><a href="#">Resource 2</a></li>
+                </ul>
+              </li>
+              <li class="usa-nav__primary-item">
+                <a href="#" class="usa-nav-link">
+                  <span>About</span>
+                </a>
+              </li>
+            </ul>
+            <section aria-label="Search component">
+              <form class="usa-search usa-search--small" role="search">
+                <label class="usa-sr-only" for="search-field">Search</label>
+                <input class="usa-input" id="search-field" type="search" name="search"  placeholder="Search (not yet implemented)"/>
+                <button class="usa-button" type="submit">
+                  <img
+                    src="https://designsystem.digital.gov/assets/img/usa-icons-bg/search--white.svg"
+                    class="usa-search__submit-icon"
+                    alt="Search"
+                  />
+                </button>
+              </form>
+            </section>
+          </nav>
+        </div>
+      </header>
+    </header>
+
+    <nav class="sidenav" aria-label="Side navigation">
+      <div id="section-list">
+        <!-- Hierarchical Section list will be populated here -->
+      </div>
+    </nav>
+
+    <main class="content" id="chapter-content">
+      <!-- Chapter content will be loaded here -->
+      <p>Select a chapter from the Chapters menu to view its content.</p>
+    </main>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds-init.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds.min.js"></script>
+  <!--script src="script.js"></script-->
+
+  <script>
+    const chapterContent = document.getElementById('chapter-content');
+    const sectionList = document.getElementById('section-list');
+    const searchForm = document.querySelector('.usa-search form');
+    const searchInput = document.getElementById('search-field');
+    const chapterListDropdown = document.querySelector('#basic-nav-section-one'); // get correct dom element
+
+    // Chapter data (replace with your actual chapter data)
+    const chapters = [
+  { number: "", title: "Introduction: Intro to the Compendium", filename: "introduction.html" },
+  { number: "100", title: "U.S. Copyright Office and the Copyright Law: General Background", filename: "ch100-general-background.html" },
+  { number: "200", title: "Overview of the Registration Process", filename: "ch200-registration-process.html" },
+  { number: "300", title: "Copyrightable Authorship: What Can Be Registered", filename: "ch300-copyrightable-authorship.html" },
+  { number: "400", title: "Who May File an Application", filename: "ch400-application.html" },
+  { number: "500", title: "Identifying the Work(s) Covered by a Registration", filename: "ch500-identifying-works.html" },
+  { number: "600", title: "Examination Practices", filename: "ch600-examination-practices.html" },
+  { number: "700", title: "Literary Works", filename: "ch700-literary-works.html" },
+  { number: "800", title: "Works of the Performing Arts", filename: "ch800-performing-arts.html" },
+  { number: "900", title: "Visual Art Works", filename: "ch900-visual-art.html" },
+  { number: "1000", title: "Websites and Website Content", filename: "ch1000-websites.html" },
+  { number: "1100", title: "Registration for Multiple Works", filename: "ch1100-registration-multiple-works.html" },
+  { number: "1200", title: "Mask Works", filename: "ch1200-mask-works.html" },
+  { number: "1300", title: "Vessel Designs", filename: "ch1300-vessel-designs.html" },
+  { number: "1400", title: "Applications and Filing Fees", filename: "ch1400-applications-filing-fees.html" },
+  { number: "1500", title: "Deposits", filename: "ch1500-deposits.html" },
+  { number: "1600", title: "Preregistration", filename: "ch1600-preregistration.html" },
+  { number: "1700", title: "Administrative Appeals", filename: "ch1700-administrative-appeals.html" },
+  { number: "1800", title: "Post-Registration Procedures", filename: "ch1800-post-registration.html" },
+  { number: "1900", title: "Publication", filename: "ch1900-publication.html" },
+  { number: "2000", title: "Foreign Works: Eligibility and GATT Registration", filename: "ch2000-foreign-works.html" },
+  { number: "2100", title: "Renewal Registration", filename: "ch2100-renewal-registration.html" },
+  { number: "2200", title: "Notice of Copyright", filename: "ch2200-notice.html" },
+  { number: "2300", title: "Recordation", filename: "ch2300-recordation.html" },
+  { number: "2400", title: "U.S. Copyright Office Services", filename: "ch2400-office-services.html" },
+  { number: "", title: "Glossary", filename: "glossary.html" },
+  { number: "", title: "Table of Authorities", filename: "table-of-authorities.html" },
+  { number: "", title: "Revision History", filename: "revision-history.html" }
+];
+
+    // Function to load a chapter
+    async function loadChapter(filename) {
+      try {
+        const response = await fetch(filename);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const html = await response.text();
+        chapterContent.innerHTML = html;
+
+        // After loading the chapter, generate the hierarchical navigation
+        generateHierarchicalNavigation();
+      } catch (error) {
+        console.error("Could not load chapter:", error);
+        chapterContent.innerHTML = `<p class="usa-alert usa-alert--error">Failed to load chapter.  Please check the console for more information.</p>`;
+      }
+    }
+
+
+    function generateHierarchicalNavigation() {
+        sectionList.innerHTML = ''; // Clear existing navigation
+        const nav = document.createElement('nav');
+        nav.setAttribute('aria-label', 'Chapter Sections');
+        const ul = document.createElement('ul');
+        ul.className = 'usa-sidenav';
+
+        const sections = chapterContent.querySelectorAll('section[label]'); // Select all <section> elements with a "label" attribute
+
+        sections.forEach(section => {
+            const sectionLabel = section.getAttribute('label');
+            const sectionTitle = section.querySelector('section_title')?.textContent || `Section ${sectionLabel}`;
+            const sectionId = section.id;
+
+            const sectionLi = document.createElement('li');
+            sectionLi.className = 'usa-sidenav__item';
+            const sectionA = document.createElement('a');
+            sectionA.href = `#${sectionId}`;
+            sectionA.textContent = `${sectionTitle}`; // Removed Section Number
+
+            sectionLi.appendChild(sectionA);
+
+            //Subsections
+            const subsectionUl = document.createElement('ul');
+            subsectionUl.className = 'usa-sidenav__sublist';
+
+              const subsections = section.querySelectorAll('subsection[label]'); //Subsections are scoped to the section
+              subsections.forEach(subsection => {
+                      const subsectionLabel = subsection.getAttribute('label');
+                      const subsectionTitle = subsection.querySelector('subsection_title')?.textContent || `Subsection ${subsectionLabel}`;
+                      const subsectionId = subsection.id;
+
+                      const subsectionLi = document.createElement('li');
+                      subsectionLi.className = 'usa-sidenav__item';
+                      const subsectionA = document.createElement('a');
+                      subsectionA.href = `#${subsectionId}`;
+                      subsectionA.textContent = `${subsectionTitle}`; //Removed section number
+                      subsectionLi.appendChild(subsectionA);
+
+                       //Provisions
+                        const provisionUl = document.createElement('ul');
+                        provisionUl.className = 'usa-sidenav__sublist';
+
+                        const provisions = subsection.querySelectorAll('provision[label]');  //Provisions scoped to the subsection
+
+                            provisions.forEach(provision => {
+
+                                    const provisionLabel = provision.getAttribute('label');
+                                    const provisionTitle = provision.querySelector('provision_title')?.textContent || `Provision ${provisionLabel}`;
+                                    const provisionId = provision.id;
+
+                                    const provisionLi = document.createElement('li');
+                                    provisionLi.className = 'usa-sidenav__item';
+                                    const provisionA = document.createElement('a');
+                                    provisionA.href = `#${provisionId}`;
+                                    provisionA.textContent = `${provisionTitle}`;  //Removed section number
+                                    provisionLi.appendChild(provisionA);
+                                    provisionUl.appendChild(provisionLi);
+
+                            });
+                       //End Provisions
+                       if(provisionUl.children.length > 0) {
+                           subsectionLi.appendChild(provisionUl);
+                       }
+                      subsectionUl.appendChild(subsectionLi);
+
+              });
+
+            if(subsectionUl.children.length > 0) {
+                sectionLi.appendChild(subsectionUl);
+            }
+            ul.appendChild(sectionLi);
+        });
+
+        nav.appendChild(ul);
+        sectionList.appendChild(nav);
+
+
+          // Add click listeners to scroll into view
+        const allLinks = sectionList.querySelectorAll('a[href^="#"]');
+        allLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1); // Remove the '#'
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                      // Remove 'usa-current' from all links
+                     document.querySelectorAll('#section-list .usa-sidenav__item a').forEach(el => {
+                        el.classList.remove('usa-current');
+                     });
+
+                    // Add 'usa-current' to the clicked link
+                     link.classList.add('usa-current');
+                }
+            });
+        });
+
+    }
+
+    function clearHighlighting() {
+      chapterContent.querySelectorAll('.highlight').forEach(el => {
+        el.classList.remove('highlight');
+        el.outerHTML = el.innerHTML; // Remove the span, keep the text
+      });
+    }
+
+
+    function performSearch(searchTerm) {
+      clearHighlighting(); // Clear previous search results
+      if (!searchTerm) return;
+
+      const regex = new RegExp(searchTerm, 'gi'); // 'g' for global, 'i' for case-insensitive
+      const textNodes = Array.from(chapterContent.querySelectorAll('*'))
+        .filter(node => node.childNodes.length === 1 && node.firstChild.nodeType === Node.TEXT_NODE); // Only direct text children
+
+      textNodes.forEach(node => {
+        const text = node.textContent;
+        let match;
+        let newHtml = "";
+        let lastIndex = 0;
+
+        while ((match = regex.exec(text)) !== null) {
+          newHtml += text.substring(lastIndex, match.index);
+          newHtml += `<span class="highlight">${match[0]}</span>`;
+          lastIndex = match.index + match[0].length;
+        }
+        newHtml += text.substring(lastIndex);
+
+        if (newHtml !== text) {
+          node.innerHTML = newHtml; // Set the modified HTML
+        }
+      });
+    }
+
+
+    // Populate the chapter list dropdown
+    chapters.forEach(chapter => {
+      const listItem = document.createElement('li');
+        listItem.classList.add('usa-nav__submenu-item');  // USWDS class
+        const link = document.createElement('a');
+        link.classList.add('usa-nav__link');
+        link.href = 'javascript:void(0);'; // Prevent page refresh
+      link.textContent = `${chapter.number} ${chapter.title}`;
+
+      link.addEventListener('click', () => {
+        loadChapter(chapter.filename);
+
+        //Remove highlighting from the chapter links in the menu
+        chapterListDropdown.querySelectorAll('.usa-nav__submenu-item a').forEach(el => {
+            el.classList.remove('usa-current');
+        });
+
+        // Add 'usa-current' to the clicked chapter link
+        link.classList.add('usa-current');
+
+         // Hide all sidenav content
+        document.querySelectorAll('.usa-sidenav').forEach(el => {
+          el.style.display = 'none';
+        });
+
+        // Show the sidenav for the selected chapter
+        sectionList.style.display = 'block';
+
+      });
+
+      listItem.appendChild(link);
+      chapterListDropdown.appendChild(listItem);
+    });
+
+    // Optionally load the first chapter by default
+    if (chapters.length > 0) {
+      const firstChapter = chapters[0];
+      loadChapter(firstChapter.filename);
+        chapterListDropdown.querySelector('.usa-nav__submenu-item a').classList.add('usa-current');
+
+            // Hide all sidenav content
+        document.querySelectorAll('.usa-sidenav').forEach(el => {
+          el.style.display = 'none';
+        });
+
+      sectionList.style.display = 'block'; // Ensure the first chapter's side nav is displayed.
+    }
+
+
+    // Basic Search Functionality
+    searchForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission and page refresh
+      const searchTerm = searchInput.value.toLowerCase();
+      performSearch(searchTerm); // Perform the search within the loaded chapter
+
+    });
+
+
+    // USWDS Menu Toggle (required for mobile navigation)
+    document.querySelector('.usa-header .usa-menu-btn').addEventListener('click', () => {
+      document.querySelector('.usa-overlay').classList.toggle('is-visible');
+      document.querySelector('.usa-header .usa-nav').classList.toggle('is-visible');
+    });
+
+    document.querySelector('.usa-header .usa-nav__close').addEventListener('click', () => {
+      document.querySelector('.usa-overlay').classList.remove('is-visible');
+      document.querySelector('.usa-header .usa-nav').classList.remove('is-visible');
+    });
+  </script>
+
+</body>
+</html>
