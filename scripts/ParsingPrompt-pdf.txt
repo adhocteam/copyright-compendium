@@ -1,7 +1,8 @@
 Process the provided pdf file (e.g. ch100-general-background.pdf) and convert it into a single, well-structured XML document representing one chapter of the Compendium. First, extract all of the text from the pdf verbatim. 
 
-For any hyperlinked text in the pdf (denoted by blue text that highlights when the cursor hovers over it), convert that to an <a> tag with an href attribute. Pay special attention to citations and other references, which are often hyperlinked in the text. For example, citations to the United States Code, 
-sections within the same chapter of the Compendium, or sections in other chapters of the compendium. Many free-standing words or phrases are linked to the glossary. These are linked to "https://copyright.gov/comp3/docs/glossary.pdf" -- instead, use the relative link `/glossary.html`.
+For any hyperlinked text in the pdf (denoted by blue text that highlights when the cursor hovers over it), convert that to an <a> tag with an href attribute. Pay special attention to citations and other references, which are often hyperlinked in the text. For example, citations to the United States Code, to legal Acts, cases, reports, 
+sections within the same chapter of the Compendium, or sections in other chapters of the compendium. For internal references to the compendium, link in the form: "/compendium/ch1500.html#sec-1511" or "#subsec-101-1" if it is within the same chapter. Look for the actual link in the pdf. If the link can't be found, wrap the reference in a <ref> instead of an <a> and create the appropriate attributes.
+For any words or phrases that are linked to the glossary ()"https://copyright.gov/comp3/docs/glossary.pdf") -- instead of the provided link, use the relative link `/glossary.html`.
 
 Next, convert the text to xml as described below.
 
@@ -19,7 +20,7 @@ Use `<section>` for major numbered sections (e.g., 101, 102). Add a `@label` att
 
 Use `<subsection>` for numbered subsections (e.g., 101.1, 101.2). Add a `@label` attribute with the subsection number (e.g., `label="101.1"`) and an `id` attribute (e.g., `id="subsec-101-1"`). Include the subsection title within a `<subsection_title>` element.
 
-Use <provision> for numbered or lettered sub-parts directly under a subsection (e.g., 101.2(A), 101.3(A), 102.2(A), 102.5(i)). Add a @label attribute with the identifier (e.g., label="101.2(A)") and an id attribute (e.g., id="prov-101-2-A"). Include the provision title within a <provision_title> element. 
+Use `<provision>` for numbered or lettered sub-parts directly under a subsection (e.g., 101.2(A), 101.3(A), 102.2(A), 102.5(i)). Add a @label attribute with the identifier (e.g., label="101.2(A)") and an id attribute (e.g., id="prov-101-2-A"). Include the provision title within a <provision_title> element. 
 
 For any other title, use a <level_title> element.
 
