@@ -10,6 +10,30 @@ Individual chapters of the Compendium were downloaded using the comp_download.py
 
 The pdf compendium includes in-line hyperlinks (largely to pdf source files on copyright.gov). After a number of attempts to programmatically extract and wrap these links, we reverted to uploading the pdf + prompt to the LLM and have the LLM accomplish both the extraction and conversion to xhtml. The file in ch2300-recordation.html demonstrates the results of this process. In the future, we may reprocess all files in this way to retan hyperlinks.
 
+The `scripts` directory includes a script to process pdfs from a directory using Gemini + a parsing prompt using the Gemini API. Note that using the API often fails (e.g. for a large document), and it is necessary to process these files one at a time through the Google Studio AI interface. To use the script, you will need to use Python 3.7+, have the `google-generativeai` package installed (`pip install google-generativeai`) and your API key set up. To set up the API key:
+API Key:
+
+* Get one from Google AI Studio: https://aistudio.google.com/app/apikey
+
+* Best Practice: Set your API key as an environment variable named GOOGLE_API_KEY. The script will automatically look for it.
+
+* Linux/macOS: export GOOGLE_API_KEY='YOUR_API_KEY'
+
+* Windows (Command Prompt): set GOOGLE_API_KEY=YOUR_API_KEY
+
+* Windows (PowerShell): $env:GOOGLE_API_KEY='YOUR_API_KEY'
+
+Here’s a quick example of how to use the script:
+
+```bash
+# Process PDFs in 'my_pdfs' directory, save output to the same directory
+python process_pdfs_gemini.py --directory my_pdfs
+```
+
+```bash
+# Process PDFs in 'my_pdfs', save output to a different 'output_html' directory
+python process_pdfs_gemini.py --directory my_pdfs --output-dir output_html
+```
 ## Future Work
 
 The current version of the Copyright Compendium web display is a proof of concept. There are several areas for improvement and additional features that could be implemented:

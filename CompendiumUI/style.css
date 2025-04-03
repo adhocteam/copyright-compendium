@@ -1,229 +1,314 @@
+/* --- START OF FILE style.css --- */
+
 /* --- Global Resets & Base Styles --- */
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* From block 2 */
-	line-height: 1.7;           /* From block 2 */
-	margin: 0;                  /* From block 1 (Reset) */
-	padding: 0;                 /* From block 1 (Reset) */
-	background-color: #ffffff;  /* From block 2 */
-	color: #212529;              /* From block 2 */
-      }
-      
-      /* --- Grid Layout --- */
-      .grid-container {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #212529;
+	/* Ensure body itself doesn't scroll unexpectedly with 100vh grid */
+	overflow: hidden;
+    }
+    
+    /* --- Grid Layout --- */
+    .grid-container {
 	display: grid;
 	/* Default (Desktop): Sidebar | Content */
-	grid-template-columns: 250px auto;
-	grid-template-rows: auto 1fr; /* Header, then Sidebar/Content fill height */
+	grid-template-columns: 250px auto; /* Fixed sidebar, flexible content */
+	/* Header row, Content row fills remaining height */
+	grid-template-rows: auto 1fr;
 	height: 100vh; /* Fill viewport height */
-      }
-      
-      .header {
+	/* Prevent grid container itself from scrolling */
+	overflow: hidden;
+    }
+    
+    .header {
 	grid-column: 1 / span 2; /* Span across both columns */
 	grid-row: 1; /* Explicitly first row */
-	/* USWDS header handles its own internal responsiveness */
-	/* Ensure header doesn't get pushed down by body margin/padding */
-	position: relative; /* Or adjust grid-template-rows if needed */
-	z-index: 10; /* Keep header above content scrollbars potentially */
-      }
-      
-      .sidenav {
+	position: relative; /* Needed for z-index */
+	z-index: 10; /* Keep header above content */
+	border-bottom: 1px solid #dfe1e2; /* Optional: visual separator below header */
+    }
+    
+    .sidenav {
 	grid-column: 1; /* First column */
 	grid-row: 2; /* Second row */
-	overflow-y: auto; /* Allow scrolling if content is long */
+	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within sidenav */
 	padding: 1rem;
-	border-right: 1px solid #dfe1e2; /* Optional: visual separator */
-	background-color: #f8f9fa; /* Light background for sidenav */
-      }
-      
-      .content {
+	border-right: 1px solid #dfe1e2;
+	background-color: #f8f9fa;
+	/* Ensure scrolling works smoothly */
+	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
+    }
+    
+    .content {
 	grid-column: 2; /* Second column */
 	grid-row: 2; /* Second row */
-	padding: 1rem;
-	overflow-y: auto; /* Allow scrolling if content is long */
-	/* REMOVED: width: 800px; */
-	/* ADDED: Limit line length for readability */
-	max-width: 80ch; /* Use character units, adjust value as needed */
-	/* margin-inline: auto; /* Optional: Centers text if max-width is applied and space allows */
-      }
-      
-      /* --- Highlight Style --- */
-      .highlight {
-	background-color: yellow;
-      }
-      
-      /* --- Table of Contents Styling (from block 2) --- */
-      toc {
-	display: block; /* Ensure block layout */
-	border: 1px solid #dee2e6; /* Lighter border */
-	background-color: #f8f9fa; /* Very light gray background */
-	padding: 1.5em;
-	margin-bottom: 2.5em; /* More space after TOC */
-	border-radius: 8px; /* Softer corners */
-	box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
-      }
-      
-      toc tocitem {
-	display: block;
-	margin-bottom: 0.6em; /* Slightly more space between TOC items */
-      }
-      
-      tocitem[label*='\.'] { /* Indent subsections */
-	margin-left: 1.5em;
-      }
-      
-      tocitem[label*='('] { /* Indent provisions */
-	margin-left: 3em;
-      }
-      
-      tocitem a {
-	text-decoration: none;
-	color: #0d6efd; /* Standard link blue */
-	font-weight: 500; /* Slightly bolder links */
-      }
-      
-      tocitem a:hover,
-      tocitem a:focus { /* Add focus style for accessibility */
-	text-decoration: underline;
-	color: #0a58ca; /* Darker blue on hover/focus */
-      }
-      
-      /* --- Content Element Styling (from block 2) --- */
-      
-      /* Ensure custom elements are displayed correctly */
-      chapter, head, section, subsection, provision,
-      paragraph, list, item, toc, tocitem {
-	  display: block;
-      }
-      
-      /* General Title (for the document as a whole) */
-      chapter > title {
-	display: block;
-	font-size: 2em;
+	padding: 1rem 2rem; /* Add more horizontal padding */
+	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within content */
+	/* Limit line length for readability */
+	max-width: 85ch; /* Character units, adjust as needed */
+	/* Ensure scrolling works smoothly */
+	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
+    }
+    
+    /* --- Sidenav Enhancements (Combine with USWDS classes) --- */
+    /* Style for the current item in the side nav */
+    /* USWDS puts .usa-current on the <a> tag */
+    .sidenav .usa-sidenav__item a.usa-current {
 	font-weight: bold;
-	margin-top: 1em; /* Added top margin */
-	margin-bottom: 1.5em;
-	text-align: center;
-	color: #003f5c;
-      }
-      
-      /* Hide the XML head title if it's used for browser tab only */
-      chapter > head > title {
+	/* USWDS default might use background/border, add custom style if desired */
+	/* Example: background-color: #e9ecef; */
+    }
+    
+    /* Ensure side nav links take adequate space and look consistent */
+    .sidenav .usa-sidenav__item a {
+	display: block; /* Make the whole item clickable */
+	padding: 0.5rem 1rem; /* Adjust padding */
+	text-decoration: none; /* Remove underlines */
+	color: #005ea2; /* USWDS link color */
+    }
+    .sidenav .usa-sidenav__item a:hover {
+	text-decoration: underline;
+	background-color: #dfe1e2; /* Subtle hover background */
+    }
+    
+    /* Indentation for sublists */
+    .sidenav .usa-sidenav__sublist {
+	 /* USWDS handles most sublist styling */
+	 /* Add padding adjustments if needed, but start without */
+    }
+    
+    .sidenav .usa-sidenav__sublist .usa-sidenav__item a {
+	padding-left: 2rem; /* Indent level 1 sub-items */
+    }
+    
+    .sidenav .usa-sidenav__sublist .usa-sidenav__sublist .usa-sidenav__item a {
+	padding-left: 3rem; /* Indent level 2 sub-sub-items */
+    }
+    
+    
+    /* --- Highlight Styles --- */
+    .highlight {
+	background-color: yellow;
+	padding: 0.1em;
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px yellow; /* Helps visibility on different backgrounds */
+    }
+    
+    /* Temporary highlight for scrolling target */
+    .temp-highlight {
+	animation: tempHighlightAnimation 1.5s ease-out;
+    }
+    @keyframes tempHighlightAnimation {
+	0% { background-color: rgba(255, 255, 0, 0.5); } /* Lighter yellow */
+	100% { background-color: transparent; }
+    }
+    
+    
+    /* --- Table of Contents Styling --- */
+    toc {
+	display: block;
+	border: 1px solid #dee2e6;
+	background-color: #f8f9fa;
+	padding: 1.5em;
+	margin-bottom: 2.5em;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    toc tocitem {
+	display: block;
+	margin-bottom: 0.6em;
+    }
+    
+    /* Indentation based on label structure */
+    tocitem[label*='.'] { /* Items with a dot (e.g., 101.1) */
+	margin-left: 1.5em;
+    }
+    
+    tocitem[label*='('] { /* Items with parentheses (e.g., 101.1(A)) */
+	margin-left: 3em;
+    }
+    
+    tocitem a {
+	text-decoration: none;
+	color: #0d6efd; /* Consider using USWDS color: #005ea2 */
+	font-weight: 500;
+    }
+    
+    tocitem a:hover,
+    tocitem a:focus {
+	text-decoration: underline;
+	color: #0a58ca; /* Consider using USWDS color: #1a4480 */
+    }
+    
+    /* --- Content Element Styling (Custom Tags) --- */
+    
+    /* Ensure custom elements are displayed correctly */
+    chapter, head, section, subsection, provision,
+    paragraph, list, item, toc, tocitem,
+    section_title, subsection_title, provision_title /* Explicitly block */
+    {
+	display: block;
+    }
+    
+    /* Hide potentially redundant head > title from XML */
+    chapter > head > title {
 	display: none;
-      }
-      
-      /* Heading Styling & Spacing */
-      section > section_title,
-      subsection > subsection_title,
-      provision > provision_title {
-	font-weight: 600; /* Bolder headings */
-	margin-top: 2em; /* Consistent top margin */
-	margin-bottom: 1em; /* Increased bottom margin for spacing */
-	color: #003f5c; /* Darker, desaturated blue */
-      }
-      
-      section > section_title {
-	font-size: 1.75em; /* Slightly larger */
-	border-bottom: 3px solid #003f5c;
+    }
+    
+    /* Chapter Title (Main Heading for the document/content area) */
+    chapter > title { /* Assuming this is the main H1 equivalent */
+	display: block;
+	font-size: 2.2em; /* Larger */
+	font-weight: bold; /* USWDS uses font-family Source Sans Pro */
+	margin-top: 0.5em; /* Less top margin if header provides space */
+	margin-bottom: 1.5em;
 	padding-bottom: 0.3em;
-      }
-      
-      subsection > subsection_title {
-	font-size: 1.4em;
-	border-bottom: 1px solid #ced4da; /* Lighter gray border */
+	border-bottom: 4px solid #003f5c; /* Stronger bottom border */
+	/* text-align: center; /* Optional: Keep centered if desired */
+	color: #1b1b1b; /* USWDS Heading color */
+    }
+    
+    /* Section/Subsection/Provision Titles */
+    section > section_title,
+    subsection > subsection_title,
+    provision > provision_title {
+	font-weight: bold; /* Use bold consistently */
+	margin-top: 2em;
+	margin-bottom: 1em;
+	color: #1b1b1b; /* USWDS Heading color */
+	line-height: 1.3; /* Standard heading line height */
+    }
+    
+    section > section_title {
+	font-size: 1.9em; /* H2 equivalent */
+	border-bottom: 2px solid #005ea2; /* USWDS Primary color */
+	padding-bottom: 0.3em;
+    }
+    
+    subsection > subsection_title {
+	font-size: 1.5em; /* H3 equivalent */
+	border-bottom: 1px solid #a9aeb1; /* USWDS Gray */
 	padding-bottom: 0.2em;
-      }
-      
-      provision > provision_title {
-	font-size: 1.15em;
-	color: #343a40; /* Slightly darker gray for provision titles */
-      }
-      
-      /* Content Elements */
-      paragraph {
-	margin-bottom: 1.2em; /* More spacing between paragraphs */
-	/* text-align: justify; /* Consider removing justify, often hinders readability */
-      }
-      
-      list {
-	margin-left: 2em;
+    }
+    
+    provision > provision_title {
+	font-size: 1.2em; /* H4 equivalent */
+	color: #1b1b1b; /* Consistent heading color */
+    }
+    
+    /* Content Elements */
+    paragraph {
+	margin-bottom: 1.2em;
+	max-width: 70ch; /* Slightly narrower for paragraph readability */
+    }
+    
+    list {
+	margin-left: 0; /* Remove default browser indent */
 	margin-top: 0.8em;
 	margin-bottom: 1.2em;
-	padding-left: 1.5em; /* Ensure list markers have space */
-      }
-      
-      item {
+	padding-left: 2.5em; /* Control indent consistently */
+	list-style-position: outside; /* Ensure markers are outside */
+    }
+    
+    item {
 	display: list-item;
-	margin-bottom: 0.7em; /* More space between list items */
-	list-style-position: outside;
-      }
-      
-      item list { /* Nested lists */
-	margin-top: 0.7em;
-	margin-left: 1.5em;
 	margin-bottom: 0.7em;
-      }
-      
-      item list item {
-	margin-bottom: 0.5em; /* Slightly less space for nested items */
-      }
-      
-      /* Citation Styling */
-      ref {
-	font-style: normal; /* Citations not italic by default */
-	font-size: 0.9em; /* Slightly smaller */
-	color: #6c757d; /* Medium gray */
-	white-space: nowrap; /* Prevent citations from breaking */
-	background-color: #e9ecef; /* Subtle background highlight */
-	padding: 0.1em 0.3em;
+    }
+    
+    /* Nested lists */
+    item list {
+	margin-top: 0.7em;
+	/* padding-left: is inherited or adjust if needed */
+	margin-bottom: 0.7em;
+    }
+    
+    item list item {
+	margin-bottom: 0.5em;
+    }
+    
+    /* Citation Styling */
+    ref {
+	font-style: normal;
+	font-size: 0.85em; /* Slightly smaller */
+	color: #565c65; /* USWDS Gray dark */
+	white-space: nowrap; /* Attempt to keep citations together */
+	background-color: #f0f0f0; /* USWDS Gray lightest */
+	padding: 0.1em 0.4em;
 	border-radius: 3px;
-	display: inline; /* Keep citations inline with text */
-      }
-      
-      ref[source='CASE'] {
-	font-style: italic; /* Italicize case names */
-      }
-      
-      /* --- Accessibility Considerations --- */
-      /* Focus outline for keyboard navigation */
-      a:focus, button:focus, [tabindex]:not([tabindex="-1"]):focus {
-	outline: 2px solid #0d6efd;
-	outline-offset: 2px;
-	box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
-      }
-      
-      /* --- Responsive Adjustments --- */
-      /* Apply styles for screens 640px wide or narrower */
-      @media (max-width: 640px) { /* Adjust breakpoint as needed (e.g., USWDS's 40em) */
+	display: inline; /* Keep inline */
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Monospace? Optional */
+    }
+    
+    ref[source='CASE'] {
+	font-style: italic;
+    }
+    
+    /* --- Accessibility Considerations --- */
+    /* Default focus styles provided by USWDS are generally good. */
+    /* Override if specific focus styling is needed beyond USWDS defaults */
+    /* a:focus, button:focus, [tabindex]:not([tabindex="-1"]):focus { */
+    /*   outline: 0.25rem solid #2491ff; USWDS focus color */
+    /*   outline-offset: 0; */
+    /* } */
+    
+    
+    /* --- Responsive Adjustments --- */
+    /* USWDS uses 40em (640px), 64em (1024px) breakpoints typically */
+    @media (max-width: 64em) { /* Adjust tablet breakpoint if needed */
 	.grid-container {
-	  /* Stack elements vertically */
-	  grid-template-columns: 1fr; /* Single column */
-	  /* Header, then Sidenav, then Content */
-	  grid-template-rows: auto auto 1fr;
-	  height: auto; /* Allow height to grow with content */
-	  min-height: 100vh; /* Still try to fill screen */
+	    /* Adjust sidebar width potentially */
+	    /* grid-template-columns: 200px auto; */
 	}
-      
+	 .content {
+	     padding: 1rem 1.5rem; /* Reduce horizontal padding */
+	 }
+    }
+    
+    
+    @media (max-width: 40em) { /* Mobile breakpoint (e.g., 640px) */
+	body {
+	    overflow: auto; /* Allow body to scroll on mobile */
+	}
+	.grid-container {
+	    /* Stack elements vertically */
+	    grid-template-columns: 1fr; /* Single column */
+	    /* Header, then Sidenav, then Content */
+	    grid-template-rows: auto auto 1fr;
+	    height: auto; /* Allow height to grow */
+	    min-height: 100vh;
+	    overflow: visible; /* Reset grid overflow */
+	}
+    
 	.header {
-	  grid-column: 1 / -1; /* Span full width */
-	  grid-row: 1; /* First row */
+	    grid-column: 1 / -1;
+	    grid-row: 1;
 	}
-      
+    
 	.sidenav {
-	  grid-column: 1 / -1; /* Span full width */
-	  grid-row: 2; /* Second row */
-	  border-right: none; /* Remove side border */
-	  border-bottom: 1px solid #dfe1e2; /* Add bottom border */
-	  height: auto; /* Let it take needed height */
-	  overflow-y: visible; /* Reset overflow */
-	   /* Optional: Limit height on mobile if it gets too long and enable scroll */
-	  /* max-height: 40vh; */
-	  /* overflow-y: auto; */
+	    grid-column: 1 / -1;
+	    grid-row: 2;
+	    border-right: none;
+	    border-bottom: 1px solid #dfe1e2;
+	    height: auto; /* Let it take needed height */
+	    overflow-y: visible; /* Disable internal scroll on mobile */
+	    /* Optional: Limit height & re-enable scroll if needed */
+	    /* max-height: 40vh; */
+	    /* overflow-y: auto; */
 	}
-      
+    
 	.content {
-	  grid-column: 1 / -1; /* Span full width */
-	  grid-row: 3; /* Third row */
-	  /* Adjust max-width on mobile if desired, or remove */
-	  /* max-width: none;  */
+	    grid-column: 1 / -1;
+	    grid-row: 3;
+	    max-width: none; /* Allow content to use full width */
+	    padding: 1rem; /* Adjust mobile padding */
+	    overflow-y: visible; /* Disable internal scroll on mobile */
 	}
-      }
+    }
+    
+    
+    /* --- END OF FILE style.css --- */
