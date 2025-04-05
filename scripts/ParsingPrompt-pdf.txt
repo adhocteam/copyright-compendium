@@ -1,8 +1,47 @@
 Process the provided pdf file (e.g. ch100-general-background.pdf) and convert it into a single, well-structured XML document representing one chapter of the Compendium. First, extract all of the text from the pdf verbatim. 
 
+If this is a `fragment` of the chapter, do not worry about the entire chapter; focus on parsing the fragment accurately. Maintain the integrity of the content and structure.
+
 For any hyperlinked text in the pdf (denoted by blue text that highlights when the cursor hovers over it), convert that to an <a> tag with an href attribute. Pay special attention to citations and other references, which are often hyperlinked in the text. For example, citations to the United States Code, to legal Acts, cases, reports, 
-sections within the same chapter of the Compendium, or sections in other chapters of the compendium. For internal references to the compendium, link in the form: "/compendium/ch1500.html#sec-1511" or "#subsec-101-1" if it is within the same chapter. Look for the actual link in the pdf. If the link can't be found, wrap the reference in a <ref> instead of an <a> and create the appropriate attributes.
-For any words or phrases that are linked to the glossary ()"https://copyright.gov/comp3/docs/glossary.pdf") -- instead of the provided link, use the relative link `/glossary.html`.
+sections within the same chapter of the Compendium, or sections in other chapters of the compendium. For internal references to the compendium, link in the form: "/compendium/ch1500-deposits.html#sec-1511" if the section is in a different chapter from the current chapter or "#subsec-101-1" if it is within the same chapter. 
+
+The chapter titles, for the purposes of internal linking are:
+ch1700-administrative-appeals
+ch1800-post-registration
+ch1200-mask-works
+ch1500-deposits
+revision-history
+ch1600-preregistration
+ch700-literary-works
+ch300-copyrightable-authorship
+ch100-general-background
+table-of-authorities
+ch1300-vessel-designs
+ch2400-office-services
+termination-table-section203de
+ch1000-websites
+ch1900-publication
+ch1400-applications-filing-fees
+ch2200-notice
+ch600-examination-practices
+ch800-performing-arts
+ch2300-recordation
+ch2100-renewal-registration
+ch2000-foreign-works
+ch900-visual-art
+glossary
+ch200-registration-process
+ch400-application
+ch500-identifying-works
+ch1100-registration-multiple-works
+introduction
+
+For other hyperlinks, look for the actual linked url in the pdf. If the link can't be found, wrap the reference in a <ref> instead of an <a> and create the appropriate attributes.
+For any words or phrases that are linked to the glossary ()"https://copyright.gov/comp3/docs/glossary.pdf") -- instead of the provided link, use the relative link `/compendium/glossary.html#word_or_phrase`, where `word_or_phrase` is the linked word or phrase. For example, if "copyright" is linked in the PDF to the glossary, it should be converted to `<a href="/glossary.html#copyright">copyright</a>`.
+
+Ensure that all citations and references are properly formatted and included in the XML output. If a citation is not linked in the pdf, use a `<ref>` element with appropriate attributes (e.g., `source`, `id`, `title`, etc.) to indicate the citation type and details.
+
+Finally, ensure that the XML document is valid and well-formed according to the structure outlined below.
 
 Next, convert the text to xml as described below.
 
@@ -14,6 +53,8 @@ XML Structure and Content:
 
 Root Element: The root element must be `<chapter>`.
 
+The title of the chapter should be included in a `<title>` element. If there is a <head> element, the <title> element should be placed within it. For example, `<head><title>Compendium: Chapter 100 - U.S. Copyright Office and the Copyright Law: General Background</title></head>`.
+
 Hierarchy:
 
 Use `<section>` for major numbered sections (e.g., 101, 102). Add a `@label` attribute with the section number (e.g., `label="101"`) and an `id` attribute suitable for linking (e.g., `id="sec-101"`). Include the section title within a `<section_title>` element.
@@ -24,7 +65,8 @@ Use `<provision>` for numbered or lettered sub-parts directly under a subsection
 
 For any other title, use a <level_title> element.
 
-For titles, if the section, subsection or provision title are available, parse them in a <num> element.
+For titles, if the section, subsection or provision numbers are available, parse them in a <num> element within the corresponding title element, with a space after the `</num>` and before the title text. For example:
+    `<section_title><num>1704</num> Registration Refused After Examination</section_title>`
 
 Use <paragraph> for all unnumbered blocks of text within <section>, <subsection>, or <provision> elements.
 
@@ -54,32 +96,16 @@ Each <tocitem> must have a @label attribute corresponding to the section/subsect
 
 Implement internal linking: Each <tocitem> should contain an <a> tag with an href attribute pointing to the id of the corresponding <section>, <subsection>, or <provision> element (e.g., <tocitem label="101"><a href="#sec-101">101 </a>The U.S. Copyright Office</tocitem>). The section number should be included in the text.
 
-Styling and Metadata:
-
-Include a `<head>` element at the beginning of the `<chapter>`, before the `<toc>`.
-
 Tables:
 If the original document contains any tables, represent them using `<table>`, `<tr>`, `<th>`, and `<td>` elements. Ensure that the table structure is maintained, and include any headers and data cells as per the original formatting.
 
-Within the `<head>`, add a `<title>` element for the document (e.g., "Compendium: Chapter 100 - U.S. Copyright Office and the Copyright Law: General Background").
-
-Include an <?xml-stylesheet> processing instruction to link to an external CSS file (e.g., `<?xml-stylesheet type="text/css" href="style.css"?>`).
-
-The CSS should provide basic styling for:
-
-Readability (e.g., serif/sans-serif fonts, line spacing, margins).
-
-Accessibility (e.g., sufficient color contrast).
-
-Structure (e.g., distinct styles/indentation for TOC items, section/subsection/provision titles, paragraphs, lists, citations).
-
-Ensure the CSS rules target the defined XML elements (chapter, toc, tocitem, section, title, subsection, title, provision, title, paragraph, list, item, ref, a).
+If the whole pdf document is profided, within the `<head>`, add a `<title>` element for the document (e.g., "Compendium: Chapter 100 - U.S. Copyright Office and the Copyright Law: General Background").
 
 Output:
 
-The final output must be a single, valid XML document incorporating all these requirements and functional internal links from the TOC. Ensure no text content from the original document (aside from headers/footers) is missed.
+If the input is not a fragment (e.g. it has a chapter heading and TOC), he final output must be a single, valid XML document incorporating all these requirements and functional internal links from the TOC. Ensure no text content from the original document (aside from headers/footers) is missed.
 
-For display purposes, this XML document should be wrapped in an html document with a proper doctype declaration and a link to the CSS file for styling:
+For display purposes, if this is not a fragment, this XML document should be wrapped in an html document with a proper doctype declaration and a link to the CSS file for styling:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,4 +117,8 @@ For display purposes, this XML document should be wrapped in an html document wi
 </body>
 </html>
 
-Your output should not include any preliminary text, explanation after the xhtml document and no CSS. 
+Otherwise, if the input is a fragment, simply output the XML document without the HTML wrapper. 
+
+VERY IMPORTANT: Make sure to include the numbering of sections, subsections, and provisions as they appear in the original document. As noted above, these should go into a `<num>` element.  This is crucial for maintaining the structure and integrity of the legal content.
+
+Your output should not include any preliminary text, no marking (e.g. ``` xml ) before or explanation after the xhtml document and no CSS. 

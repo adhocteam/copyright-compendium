@@ -31,6 +31,14 @@ body {
 	z-index: 10; /* Keep header above content */
 	border-bottom: 1px solid #dfe1e2; /* Optional: visual separator below header */
     }
+
+    /* Make the Chapters submenu scrollable if it gets too long */
+    #basic-nav-section-one {
+	max-height: 70vh; /* Limit height to 70% of the viewport height - adjust as needed */
+	overflow-y: auto;  /* Add vertical scrollbar only when content overflows */
+	/* Optional: Add some padding at the bottom if scrollbar feels too close */
+	padding-bottom: 1rem;
+      }
     
     .sidenav {
 	grid-column: 1; /* First column */
@@ -148,7 +156,7 @@ body {
     /* --- Content Element Styling (Custom Tags) --- */
     
     /* Ensure custom elements are displayed correctly */
-    chapter, head, section, subsection, provision,
+    main, chapter, head, section, subsection, provision,
     paragraph, list, item, toc, tocitem,
     section_title, subsection_title, provision_title /* Explicitly block */
     {
@@ -156,12 +164,12 @@ body {
     }
     
     /* Hide potentially redundant head > title from XML */
-    chapter > head > title {
+    main > level_title, chapter > head > title {
 	display: none;
     }
     
     /* Chapter Title (Main Heading for the document/content area) */
-    chapter > title { /* Assuming this is the main H1 equivalent */
+    main > title, chapter > title, chapter > level_title { /* Assuming this is the main H1 equivalent */
 	display: block;
 	font-size: 2.2em; /* Larger */
 	font-weight: bold; /* USWDS uses font-family Source Sans Pro */
