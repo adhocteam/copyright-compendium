@@ -10,10 +10,10 @@ body {
 	color: #212529;
 	/* Ensure body itself doesn't scroll unexpectedly with 100vh grid */
 	overflow: hidden;
-    }
-    
-    /* --- Grid Layout --- */
-    .grid-container {
+}
+
+/* --- Grid Layout --- */
+.grid-container {
 	display: grid;
 	/* Default (Desktop): Sidebar | Content */
 	grid-template-columns: 250px auto; /* Fixed sidebar, flexible content */
@@ -22,25 +22,25 @@ body {
 	height: 100vh; /* Fill viewport height */
 	/* Prevent grid container itself from scrolling */
 	overflow: hidden;
-    }
-    
-    .header {
+}
+
+.header {
 	grid-column: 1 / span 2; /* Span across both columns */
 	grid-row: 1; /* Explicitly first row */
 	position: relative; /* Needed for z-index */
 	z-index: 10; /* Keep header above content */
 	border-bottom: 1px solid #dfe1e2; /* Optional: visual separator below header */
-    }
+}
 
-    /* Make the Chapters submenu scrollable if it gets too long */
-    #basic-nav-section-one {
+/* Make the Chapters submenu scrollable if it gets too long */
+#basic-nav-section-one {
 	max-height: 70vh; /* Limit height to 70% of the viewport height - adjust as needed */
 	overflow-y: auto;  /* Add vertical scrollbar only when content overflows */
 	/* Optional: Add some padding at the bottom if scrollbar feels too close */
 	padding-bottom: 1rem;
-      }
-    
-    .sidenav {
+  }
+
+.sidenav {
 	grid-column: 1; /* First column */
 	grid-row: 2; /* Second row */
 	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within sidenav */
@@ -49,9 +49,9 @@ body {
 	background-color: #f8f9fa;
 	/* Ensure scrolling works smoothly */
 	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
-    }
-    
-    .content {
+}
+
+.content {
 	grid-column: 2; /* Second column */
 	grid-row: 2; /* Second row */
 	padding: 1rem 2rem; /* Add more horizontal padding */
@@ -60,64 +60,66 @@ body {
 	max-width: 85ch; /* Character units, adjust as needed */
 	/* Ensure scrolling works smoothly */
 	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
-    }
-    
-    /* --- Sidenav Enhancements (Combine with USWDS classes) --- */
-    /* Style for the current item in the side nav */
-    /* USWDS puts .usa-current on the <a> tag */
-    .sidenav .usa-sidenav__item a.usa-current {
+    /* Needed for absolute positioning of page numbers relative to content area */
+    position: relative;
+}
+
+/* --- Sidenav Enhancements (Combine with USWDS classes) --- */
+/* Style for the current item in the side nav */
+/* USWDS puts .usa-current on the <a> tag */
+.sidenav .usa-sidenav__item a.usa-current {
 	font-weight: bold;
 	/* USWDS default might use background/border, add custom style if desired */
 	/* Example: background-color: #e9ecef; */
-    }
-    
-    /* Ensure side nav links take adequate space and look consistent */
-    .sidenav .usa-sidenav__item a {
+}
+
+/* Ensure side nav links take adequate space and look consistent */
+.sidenav .usa-sidenav__item a {
 	display: block; /* Make the whole item clickable */
 	padding: 0.5rem 1rem; /* Adjust padding */
 	text-decoration: none; /* Remove underlines */
 	color: #005ea2; /* USWDS link color */
-    }
-    .sidenav .usa-sidenav__item a:hover {
+}
+.sidenav .usa-sidenav__item a:hover {
 	text-decoration: underline;
 	background-color: #dfe1e2; /* Subtle hover background */
-    }
-    
-    /* Indentation for sublists */
-    .sidenav .usa-sidenav__sublist {
+}
+
+/* Indentation for sublists */
+.sidenav .usa-sidenav__sublist {
 	 /* USWDS handles most sublist styling */
 	 /* Add padding adjustments if needed, but start without */
-    }
-    
-    .sidenav .usa-sidenav__sublist .usa-sidenav__item a {
+}
+
+.sidenav .usa-sidenav__sublist .usa-sidenav__item a {
 	padding-left: 2rem; /* Indent level 1 sub-items */
-    }
-    
-    .sidenav .usa-sidenav__sublist .usa-sidenav__sublist .usa-sidenav__item a {
+}
+
+.sidenav .usa-sidenav__sublist .usa-sidenav__sublist .usa-sidenav__item a {
 	padding-left: 3rem; /* Indent level 2 sub-sub-items */
-    }
-    
-    
-    /* --- Highlight Styles --- */
-    .highlight {
+}
+
+
+/* --- Highlight Styles --- */
+.highlight {
 	background-color: yellow;
 	padding: 0.1em;
 	border-radius: 2px;
 	box-shadow: 0 0 0 1px yellow; /* Helps visibility on different backgrounds */
-    }
-    
-    /* Temporary highlight for scrolling target */
-    .temp-highlight {
+}
+
+/* Temporary highlight for scrolling target */
+.temp-highlight {
 	animation: tempHighlightAnimation 1.5s ease-out;
-    }
-    @keyframes tempHighlightAnimation {
+}
+@keyframes tempHighlightAnimation {
 	0% { background-color: rgba(255, 255, 0, 0.5); } /* Lighter yellow */
 	100% { background-color: transparent; }
-    }
-    
-    
-    /* --- Table of Contents Styling --- */
-    toc {
+}
+
+
+/* --- Table of Contents Styling --- */
+toc {
 	display: block;
 	border: 1px solid #dee2e6;
 	background-color: #f8f9fa;
@@ -125,51 +127,51 @@ body {
 	margin-bottom: 2.5em;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    
-    toc tocitem {
+}
+
+toc tocitem {
 	display: block;
 	margin-bottom: 0.6em;
-    }
-    
-    /* Indentation based on label structure */
-    tocitem[label*='.'] { /* Items with a dot (e.g., 101.1) */
+}
+
+/* Indentation based on label structure */
+tocitem[label*='.'] { /* Items with a dot (e.g., 101.1) */
 	margin-left: 1.5em;
-    }
-    
-    tocitem[label*='('] { /* Items with parentheses (e.g., 101.1(A)) */
+}
+
+tocitem[label*='('] { /* Items with parentheses (e.g., 101.1(A)) */
 	margin-left: 3em;
-    }
-    
-    tocitem a {
+}
+
+tocitem a {
 	text-decoration: none;
 	color: #0d6efd; /* Consider using USWDS color: #005ea2 */
 	font-weight: 500;
-    }
-    
-    tocitem a:hover,
-    tocitem a:focus {
+}
+
+tocitem a:hover,
+tocitem a:focus {
 	text-decoration: underline;
 	color: #0a58ca; /* Consider using USWDS color: #1a4480 */
-    }
-    
-    /* --- Content Element Styling (Custom Tags) --- */
-    
-    /* Ensure custom elements are displayed correctly */
-    main, chapter, head, section, subsection, provision,
-    paragraph, list, item, toc, tocitem,
-    section_title, subsection_title, provision_title /* Explicitly block */
-    {
+}
+
+/* --- Content Element Styling (Custom Tags) --- */
+
+/* Ensure custom elements are displayed correctly */
+main, chapter, head, section, subsection, provision,
+paragraph, list, item, toc, tocitem,
+section_title, subsection_title, provision_title /* Explicitly block */
+{
 	display: block;
-    }
-    
-    /* Hide potentially redundant head > title from XML */
-    main > level_title, chapter > head > title {
+}
+
+/* Hide potentially redundant head > title from XML */
+chapter > head > title {
 	display: none;
-    }
-    
-    /* Chapter Title (Main Heading for the document/content area) */
-    main > title, chapter > title, chapter > level_title { /* Assuming this is the main H1 equivalent */
+}
+
+/* Chapter Title (Main Heading for the document/content area) */
+main > title, chapter > title, chapter > level_title { /* Assuming this is the main H1 equivalent */
 	display: block;
 	font-size: 2.2em; /* Larger */
 	font-weight: bold; /* USWDS uses font-family Source Sans Pro */
@@ -179,68 +181,69 @@ body {
 	border-bottom: 4px solid #003f5c; /* Stronger bottom border */
 	/* text-align: center; /* Optional: Keep centered if desired */
 	color: #1b1b1b; /* USWDS Heading color */
-    }
-    
-    /* Section/Subsection/Provision Titles */
-    section > section_title,
-    subsection > subsection_title,
-    provision > provision_title {
+}
+
+/* Section/Subsection/Provision Titles */
+level_title,
+section > section_title,
+subsection > subsection_title,
+provision > provision_title {
 	font-weight: bold; /* Use bold consistently */
 	margin-top: 2em;
 	margin-bottom: 1em;
 	color: #1b1b1b; /* USWDS Heading color */
 	line-height: 1.3; /* Standard heading line height */
-    }
-    
-    section > section_title {
+}
+
+section > section_title {
 	font-size: 1.9em; /* H2 equivalent */
 	border-bottom: 2px solid #005ea2; /* USWDS Primary color */
 	padding-bottom: 0.3em;
-    }
-    
-    subsection > subsection_title {
+}
+
+subsection > subsection_title {
 	font-size: 1.5em; /* H3 equivalent */
 	border-bottom: 1px solid #a9aeb1; /* USWDS Gray */
 	padding-bottom: 0.2em;
-    }
-    
-    provision > provision_title {
+}
+
+provision > provision_title {
 	font-size: 1.2em; /* H4 equivalent */
 	color: #1b1b1b; /* Consistent heading color */
-    }
-    
-    /* Content Elements */
-    paragraph {
+}
+
+/* Content Elements */
+paragraph {
 	margin-bottom: 1.2em;
 	max-width: 70ch; /* Slightly narrower for paragraph readability */
-    }
-    
-    list {
+}
+
+list {
 	margin-left: 0; /* Remove default browser indent */
 	margin-top: 0.8em;
 	margin-bottom: 1.2em;
 	padding-left: 2.5em; /* Control indent consistently */
 	list-style-position: outside; /* Ensure markers are outside */
-    }
-    
-    item {
+}
+
+item {
 	display: list-item;
 	margin-bottom: 0.7em;
-    }
-    
-    /* Nested lists */
-    item list {
+}
+
+/* Nested lists */
+item list {
 	margin-top: 0.7em;
 	/* padding-left: is inherited or adjust if needed */
 	margin-bottom: 0.7em;
-    }
-    
-    item list item {
+}
+
+item list item {
 	margin-bottom: 0.5em;
-    }
-    
-    /* Citation Styling */
-    ref {
+}
+
+/* Citation Styling */
+ref {
 	font-style: normal;
 	font-size: 0.85em; /* Slightly smaller */
 	color: #565c65; /* USWDS Gray dark */
@@ -250,24 +253,78 @@ body {
 	border-radius: 3px;
 	display: inline; /* Keep inline */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Monospace? Optional */
-    }
-    
-    ref[source='CASE'] {
+}
+
+ref[source='CASE'] {
 	font-style: italic;
+}
+
+/* --- Defined Term Styling --- */
+dt {
+	font-weight: bold; /* <<< This makes the term bold */
+	margin-top: 1em;   /* Space above each term */
+	/* You could add other styles like color here too */
+	/* color: #222; */
     }
-    
-    /* --- Accessibility Considerations --- */
-    /* Default focus styles provided by USWDS are generally good. */
-    /* Override if specific focus styling is needed beyond USWDS defaults */
-    /* a:focus, button:focus, [tabindex]:not([tabindex="-1"]):focus { */
-    /*   outline: 0.25rem solid #2491ff; USWDS focus color */
-    /*   outline-offset: 0; */
-    /* } */
-    
-    
-    /* --- Responsive Adjustments --- */
-    /* USWDS uses 40em (640px), 64em (1024px) breakpoints typically */
-    @media (max-width: 64em) { /* Adjust tablet breakpoint if needed */
+
+/* --- Page Number Styling --- */
+page {
+    /* Make the page tag a block-level element but visually hidden */
+    /* It serves as a positional anchor for the ::after pseudo-element */
+    display: block;
+    position: relative; /* Establish positioning context for ::after */
+    height: 0;          /* Take up no vertical space */
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;   /* Hide any potential content or borders */
+    visibility: hidden; /* Ensure it's not visible */
+}
+
+page::after {
+    /* Display the page number from the 'label' attribute */
+    content: attr(label);
+    /* Position absolutely relative to the parent .content */
+    position: absolute;
+    /* Align vertically with the (invisible) page tag's location */
+    top: 0;
+    /* Position it to the right, outside the main content flow */
+    /* Calculation:
+       - `right: 0;` would align its left edge with the right padding edge of .content
+       - We need to move it further right. Adjust the value as needed.
+       - Using `em` makes the distance relative to the font size.
+    */
+    right: -5em; /* Adjust this value to control distance from text */
+
+    /* Styling for the page number */
+    font-size: 0.9rem; /* Slightly smaller font */
+    color: #6c757d;    /* Muted color (gray) */
+    line-height: 1.4;  /* Ensure consistent line height */
+    white-space: nowrap; /* Prevent the number from wrapping */
+    visibility: visible; /* Make the pseudo-element visible */
+
+    /* Boundary line */
+    border-left: 1px solid #ced4da; /* Vertical line separator */
+    padding-left: 0.75em; /* Space between line and number */
+    margin-left: 0.75em;  /* Space between content area edge and line */
+
+    /* Ensure it's clickable/selectable if needed (though usually not) */
+    pointer-events: auto;
+}
+
+
+/* --- Accessibility Considerations --- */
+/* Default focus styles provided by USWDS are generally good. */
+/* Override if specific focus styling is needed beyond USWDS defaults */
+/* a:focus, button:focus, [tabindex]:not([tabindex="-1"]):focus { */
+/*   outline: 0.25rem solid #2491ff; USWDS focus color */
+/*   outline-offset: 0; */
+/* } */
+
+
+/* --- Responsive Adjustments --- */
+/* USWDS uses 40em (640px), 64em (1024px) breakpoints typically */
+@media (max-width: 64em) { /* Adjust tablet breakpoint if needed */
 	.grid-container {
 	    /* Adjust sidebar width potentially */
 	    /* grid-template-columns: 200px auto; */
@@ -275,10 +332,14 @@ body {
 	 .content {
 	     padding: 1rem 1.5rem; /* Reduce horizontal padding */
 	 }
-    }
-    
-    
-    @media (max-width: 40em) { /* Mobile breakpoint (e.g., 640px) */
+     /* Adjust page number position slightly for narrower screens if needed */
+     page::after {
+         right: -4em; /* Bring it slightly closer */
+     }
+}
+
+
+@media (max-width: 40em) { /* Mobile breakpoint (e.g., 640px) */
 	body {
 	    overflow: auto; /* Allow body to scroll on mobile */
 	}
@@ -291,12 +352,12 @@ body {
 	    min-height: 100vh;
 	    overflow: visible; /* Reset grid overflow */
 	}
-    
+
 	.header {
 	    grid-column: 1 / -1;
 	    grid-row: 1;
 	}
-    
+
 	.sidenav {
 	    grid-column: 1 / -1;
 	    grid-row: 2;
@@ -308,15 +369,21 @@ body {
 	    /* max-height: 40vh; */
 	    /* overflow-y: auto; */
 	}
-    
+
 	.content {
 	    grid-column: 1 / -1;
 	    grid-row: 3;
 	    max-width: none; /* Allow content to use full width */
 	    padding: 1rem; /* Adjust mobile padding */
 	    overflow-y: visible; /* Disable internal scroll on mobile */
+        position: static; /* Reset position for mobile layout */
 	}
+
+    /* Hide page numbers on mobile as they would likely overlap or go off-screen */
+    page::after {
+        display: none;
     }
-    
-    
-    /* --- END OF FILE style.css --- */
+}
+
+
+/* --- END OF FILE style.css --- */

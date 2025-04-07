@@ -49,9 +49,14 @@ For the introduction document, parse the text into header elements and `<paragra
 The `revision-history.txt` file should be parsed as an html table. Text that is not within the table should be parsed as headers and paragraphs.
 For chapters from the Compendium, follow these specific guidelines:
 
+For the `glossary.pdf`, convert each entry into a standard html format, using dl > dt@id > p > ul > li 
+where dl is the definition list, dt is the term being defined (with an id attribute that includes the term, e.g. id="copyright-notice"), and p is the definition. Use `<ul>` and `<li>` for any lists within the definitions.
+
 XML Structure and Content:
 
 Root Element: The root element must be `<chapter>`.
+
+Where possible, identify the page break and page number, and store it as <page label="page-number"></page> at the bottom of the page. It is important to close the page element, because it does not fit into the XML hierarchy of the document.
 
 The title of the chapter should be included in a `<title>` element. If there is a <head> element, the <title> element should be placed within it. For example, `<head><title>Compendium: Chapter 100 - U.S. Copyright Office and the Copyright Law: General Background</title></head>`.
 
@@ -96,6 +101,8 @@ Each <tocitem> must have a @label attribute corresponding to the section/subsect
 
 Implement internal linking: Each <tocitem> should contain an <a> tag with an href attribute pointing to the id of the corresponding <section>, <subsection>, or <provision> element (e.g., <tocitem label="101"><a href="#sec-101">101 </a>The U.S. Copyright Office</tocitem>). The section number should be included in the text.
 
+Do not include the dots or periods between the title and the page numbers in the TOC.
+
 Tables:
 If the original document contains any tables, represent them using `<table>`, `<tr>`, `<th>`, and `<td>` elements. Ensure that the table structure is maintained, and include any headers and data cells as per the original formatting.
 
@@ -121,4 +128,4 @@ Otherwise, if the input is a fragment, simply output the XML document without th
 
 VERY IMPORTANT: Make sure to include the numbering of sections, subsections, and provisions as they appear in the original document. As noted above, these should go into a `<num>` element.  This is crucial for maintaining the structure and integrity of the legal content.
 
-Your output should not include any preliminary text, no marking (e.g. ``` xml ) before or explanation after the xhtml document and no CSS. 
+Your output should not include any preliminary text, no marking (e.g. ``` xml ) before or explanation after the xhtml document and no CSS. Your output should also not include any "thinking" or reasoning. Just provide the XML document as per the instructions above.

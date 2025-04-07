@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    { number: "2400", title: "U.S. Copyright Office Services", filename: "ch2400-office-services.html" },
 	    { number: "", title: "Glossary", filename: "glossary.html" },
 	    { number: "", title: "Table of Authorities", filename: "table-of-authorities.html" }
+	    { number: "", title: "Revision History", filename: "revision-history.html" }
 	];
     
 	// --- State Variables (remains the same) ---
