@@ -39,6 +39,7 @@ python process_pdfs_gemini.py --directory my_pdfs --output-dir output_html
 The current version of the Copyright Compendium web display is a proof of concept. There are several areas for improvement and additional features that could be implemented:
 
 1. Check accuracy of conversion to XML, ensuring no text was lost during the transformation process.
+2. Correct structural issues in the xhtml files, for example, the hierarchy of chapter 800 has subsections that are not properly nested; this results in missing subsections from the side-nav.
 2. Develop server to navigate between chapters.
 3. Add links or popovers for glossary terms (which are already linked in the PDFs).
 4. Properly handle and embed images from the original document.
