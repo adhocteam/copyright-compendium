@@ -267,6 +267,66 @@ dt {
 	/* color: #222; */
     }
 
+/* style.css */
+
+/* ... other styles ... */
+
+/* Add this rule to hide the sidenav when it has the 'hidden' class */
+.sidenav.hidden {
+	display: none;
+      }
+      
+      /* Optional: Adjust grid layout when sidenav is hidden */
+      /* This assumes your grid uses 'sidenav' area name */
+      .grid-container {
+	  /* Default grid */
+	  grid-template-areas:
+	    "header header"
+	    "sidenav content"
+	    "footer footer";
+	   /* ... other grid properties ... */
+      }
+      
+      /* When sidenav has .hidden, change the grid layout */
+      .grid-container:has(.sidenav.hidden) {
+	  grid-template-columns: 1fr; /* Make content take full width */
+	  grid-template-areas:
+	    "header"
+	    "content"
+	    "footer"; /* Remove sidenav area */
+      }
+      
+      /* Ensure content area is correctly placed */
+      .content {
+	  grid-area: content;
+      }
+      
+      /* Make sure sidenav is placed correctly when *not* hidden */
+      .sidenav:not(.hidden) {
+	  grid-area: sidenav;
+      }
+      
+      /* Media query adjustments if needed */
+      @media (min-width: 64em) { /* Adjust breakpoint as needed */
+	  .grid-container {
+	      grid-template-columns: 1fr 3fr; /* Example default columns */
+	      /* Reset areas if needed */
+	      grid-template-areas:
+		"header header"
+		"sidenav content"
+		"footer footer";
+	  }
+      
+	  .grid-container:has(.sidenav.hidden) {
+	       /* Adjust columns when sidenav is hidden on larger screens */
+	      grid-template-columns: auto 1fr; /* Or just '1fr' if header spans */
+	      grid-template-areas:
+		"header header" /* Or just "header" if header doesn't span */
+		"content content" /* Make content span where sidenav was */
+		"footer footer";
+	  }
+      }
+
 /* --- Page Number Styling --- */
 page {
     /* Make the page tag a block-level element but visually hidden */
