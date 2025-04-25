@@ -926,7 +926,7 @@ autocomplete({
                             <div class="aa-ItemContentBody">
                               <div class="aa-ItemContentTitle">
                                 ${components.Highlight({ hit: item, attribute: 'sectionTitle' })}  </div>
-                              ${item._snippetResult?.description ? html`
+                              ${item._snippetResult?.content ? html`
                                 <div class="aa-ItemContentDescription">
                                    ${components.Snippet({ hit: item, attribute: 'content'})}
                                 </div>
