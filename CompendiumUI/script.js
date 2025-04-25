@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	    try {
             // --- Fetching and parsing content ---
-            const fetchPath = filename; // Assuming files are in the same directory or relative paths work
+            const fetchPath = filename.replace(/\s*\.html$/i, '-src.html'); // Assuming files are in the same directory or relative paths work
             console.log("Fetching:", fetchPath);
             const response = await fetch(fetchPath);
             console.log("Fetch response status:", response.status);
