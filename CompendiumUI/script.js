@@ -904,6 +904,8 @@ autocomplete({
               query,
               params: {
                 hitsPerPage: 8, // Limit the number of suggestions
+                highlightPreTag: '<mark>', // Highlight start tag
+                highlightPostTag: '</mark>', // Highlight end tag
                 attributesToHighlight: ['title', 'content'],
                 attributesToSnippet: ['content:10'], // Optional: Snippet relevant attributes
                 snippetEllipsisText: '...',
