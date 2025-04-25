@@ -921,6 +921,18 @@ autocomplete({
             // Customize how each suggestion item looks
             // Use components.Highlight to highlight matching text
             // Use item._snippetResult for snippets if configured
+            // --- Description/Snippet Part ---
+            // Get the raw snippet string from Algolia. This string contains
+            // the snippet text PLUS the raw HTML highlight tags (e.g., <em>...</em>)
+            const rawSnippetHtml = item._snippetResult?.content?.value;
+
+            // Conditionally create the description element using dangerouslySetInnerHTML
+            const contentElement = rawSnippetHtml ? html`
+                                      <div class="aa-ItemContentDescription"
+                                           dangerouslySetInnerHTML=${{ __html: rawSnippetHtml }}>
+                                        ${/* This placeholder content is replaced by innerHTML */}
+                                      </div>` : null; // Set to null if no snippet
+
             return html`<div class="aa-ItemWrapper">
                           <div class="aa-ItemContent">
                             <div class="aa-ItemContentBody">
@@ -928,7 +940,8 @@ autocomplete({
                                 ${components.Highlight({ hit: item, attribute: 'sectionTitle' })}  </div>
                               ${item._snippetResult?.content ? html`
                                 <div class="aa-ItemContentDescription">
-                                   ${components.Snippet({ hit: item, attribute: 'content'})}
+                                    ${contentElement || '' /* Render description or empty string */}
+                                   <!-- ${components.Snippet({ hit: item, attribute: 'content'})} -->
                                 </div>
                               ` : ''}
                             </div>
