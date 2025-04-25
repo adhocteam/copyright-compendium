@@ -1,4 +1,7 @@
 // --- START OF FILE script.js ---
+import * as algoliasearchLite from 'algoliasearch/lite';
+import { autocomplete } from '@algolia/autocomplete-js';
+import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -864,7 +867,103 @@ document.addEventListener('DOMContentLoaded', () => {
 	console.log("Running initial load sequence...");
 	handleInitialLoad(); // This triggers the first loadContent
     console.log("Initialization complete (event listeners attached, initial load started).");
+// --- Configuration ---
+// Replace with your actual Algolia credentials
+const ALGOLIA_APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID;
+const ALGOLIA_SEARCH_KEY = import.meta.env.VITE_ALGOLIA_SEARCH_KEY;
+const ALGOLIA_INDEX_NAME = 'copyright_compendium_vercel_app_v8o52jy05q_pages';
 
+if (!ALGOLIA_APP_ID || !ALGOLIA_SEARCH_KEY) {
+    console.error("Algolia environment variables are missing!");
+    // Potentially disable search functionality here
+  }
+
+// --- Initialize Algolia Client ---
+// Use algoliasearch.lite for search-only operations
+const searchClient = algoliasearchLite.liteClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
+
+// --- Initialize Autocomplete ---
+// Ensure the DOM is ready if not using defer or module imports
+// document.addEventListener('DOMContentLoaded', () => { ... });
+
+autocomplete({
+  container: '#autocomplete-search', // CSS selector for your container div
+  placeholder: 'Search sections...', // Placeholder text for the input
+  // openOnFocus: true, // Uncomment to show suggestions immediately on focus
+
+  // --- Define How to Get Suggestions ---
+  getSources({ query }) {
+    return [
+      {
+        sourceId: 'compendium', // Unique identifier for this source
+        getItems() {
+          // Fetch suggestions from your Algolia index
+          return searchClient.search([
+            {
+              indexName: ALGOLIA_INDEX_NAME,
+              query,
+              params: {
+                hitsPerPage: 8, // Limit the number of suggestions
+                attributesToHighlight: ['title', 'content'],
+                attributesToSnippet: ['content:10'], // Optional: Snippet relevant attributes
+                snippetEllipsisText: '...',
+              },
+            },
+          ])
+          .then(({ results }) => {
+              // Return the hits array from the results
+              return results[0].hits;
+          });
+        },
+        // --- Define How to Render Suggestions ---
+        templates: {
+          item({ item, components, html }) {
+            // Customize how each suggestion item looks
+            // Use components.Highlight to highlight matching text
+            // Use item._snippetResult for snippets if configured
+            return html`<div class="aa-ItemWrapper">
+                          <div class="aa-ItemContent">
+                            <div class="aa-ItemContentBody">
+                              <div class="aa-ItemContentTitle">
+                                ${components.Highlight({ hit: item, attribute: 'sectionTitle' })}  </div>
+                              ${item._snippetResult?.description ? html`
+                                <div class="aa-ItemContentDescription">
+                                   ${components.Snippet({ hit: item, attribute: 'content'})}
+                                </div>
+                              ` : ''}
+                            </div>
+                          </div>
+                        </div>`;
+          },
+          noResults() {
+             return 'No results found.';
+          },
+          // You can also customize header, footer, etc.
+        },
+         // --- Define What Happens On Select ---
+        onSelect({ item, setQuery, setIsOpen, refresh }) {
+          // Example: Navigate to a product page or log the selection
+          console.log('Selected:', item);
+          // If you have product URLs in your index (e.g., item.url)
+          if (item.url) {
+            window.location.href = item.url;
+          } else {
+            // Or maybe fill the input with the selected item's name
+             setQuery(item.name);
+             setIsOpen(false); // Close the dropdown
+             // You might want to trigger a full search here if needed
+          }
+        },
+      },
+      // You can add more sources here (e.g., searching multiple indices)
+    ];
+  },
+
+  // Optional: Customize Autocomplete appearance and behavior further
+  // See Autocomplete.js documentation for more options
+  // Example: Detached mode (dropdown appears separate from input)
+  // detachedMediaQuery: '', // Always detached
+});
 
 }); // End DOMContentLoaded
 

@@ -7,6 +7,7 @@
   <!-- <base href="/"> -->
 
   <title>Compendium Viewer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -46,38 +47,8 @@
                   <!-- Chapter list will be populated here -->
                 </ul>
               </li>
-              <li class="usa-nav__primary-item">
-                <button
-                  type="button"
-                  class="usa-accordion__button usa-nav__link"
-                  aria-expanded="false"
-                  aria-controls="basic-nav-section-two"
-                >
-                  <span>Resources</span>
-                </button>
-                <ul id="basic-nav-section-two" class="usa-nav__submenu" hidden>
-                    <li><a href="#">Resource 1 (Placeholder)</a></li>
-                    <li><a href="#">Resource 2 (Placeholder)</a></li>
-                </ul>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a href="#" class="usa-nav-link">
-                  <span>About</span>
-                </a>
-              </li>
-            </ul>
-            <section aria-label="Search component">
-              <form class="usa-search usa-search--small" role="search">
-                <label class="usa-sr-only" for="search-field">Search current chapter</label>
-                <input class="usa-input" id="search-field" type="search" name="search"  placeholder="Search chapter..."/>
-                <button class="usa-button" type="submit">
-                  <img
-                    src="https://designsystem.digital.gov/assets/img/usa-icons-bg/search--white.svg"
-                    class="usa-search__submit-icon"
-                    alt="Search"
-                  />
-                </button>
-              </form>
+            <section aria-label="Search component" id="search-component-wrapper">
+              <div id="autocomplete-search"></div>
             </section>
           </nav>
         </div>
@@ -96,11 +67,16 @@
     </main>
 
   </div> <!-- End grid-container -->
+  <!-- Algolia Search Client -->
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+
+  <!-- Algolia Autocomplete Core -->
+  <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds-init.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="script.js" defer></script>
 
 </body>
 </html>
