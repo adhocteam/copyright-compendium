@@ -930,8 +930,8 @@ autocomplete({
             const contentElement = rawSnippetHtml ? html`
                                       <div class="aa-ItemContentDescription"
                                            dangerouslySetInnerHTML=${{ __html: rawSnippetHtml }}>
-                                        ${/* This placeholder content is replaced by innerHTML */}
-                                      </div>` : null; // Set to null if no snippet
+                                        ${''/* This comment is converted to an empty string */} 
+                                        </div>` : null; // Set to null if no snippet
 
             return html`<div class="aa-ItemWrapper">
                           <div class="aa-ItemContent">
