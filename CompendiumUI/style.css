@@ -7,6 +7,10 @@
 	/* The theme usually does this, but it's good practice */
 	box-sizing: border-box !important; 
       }
+.aa-Panel {
+      z-index: 1000;
+      top: 60px !important;
+}
 #search-component-wrapper {
 	/* Ensure the search component wrapper is full width */
 	width: 280px;
