@@ -16,6 +16,27 @@
 	width: 280px;
 }
 
+/* --- Glossary Tooltip Styles --- */
+/* Basic Tooltip Styling */
+#glossary-tooltip {
+	position: absolute; /* Crucial for positioning */
+	display: none;      /* Hidden by default */
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	max-width: 300px;   /* Adjust as needed */
+	font-size: 0.9em;
+	z-index: 1000;      /* Ensure it's above other content */
+	pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+    }
+    
+    /* Optional: Style links within the tooltip if needed */
+    #glossary-tooltip a {
+	color: steelblue;
+    }
+
 /* --- Global Resets & Base Styles --- */
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

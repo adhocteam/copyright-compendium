@@ -980,6 +980,151 @@ autocomplete({
   // detachedMediaQuery: '', // Always detached
 });
 
+// ======================================================
+// START: Glossary Tooltip Functionality
+// Wrap the entire glossary script in an IIFE
+// ======================================================
+(function() {
+    'use strict'; // Optional: Enforces stricter parsing and error handling
+
+    // --- PASTE THE ENTIRE GLOSSARY TOOLTIP JAVASCRIPT CODE HERE ---
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const glossaryUrl = '/glossary.html';
+        const glossaryData = {}; // To store { id: definitionHTML }
+        let tooltipElement = null; // The single tooltip div
+        let glossaryFetched = false; // Flag to track fetch status
+
+        // --- 1. Create the Tooltip Element ---
+        function createTooltip() {
+            if (document.getElementById('glossary-tooltip')) return;
+            tooltipElement = document.createElement('div');
+            tooltipElement.id = 'glossary-tooltip';
+            tooltipElement.setAttribute('role', 'tooltip');
+            document.body.appendChild(tooltipElement);
+        }
+
+        // --- 2. Fetch and Parse Glossary ---
+        function fetchAndParseGlossary() {
+            fetch(glossaryUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status} for ${glossaryUrl}`);
+                    }
+                    return response.text();
+                })
+                .then(htmlText => {
+                    const parser = new DOMParser();
+                    const glossaryDoc = parser.parseFromString(htmlText, 'text/html');
+                    // *** Adjust this selector if needed ***
+                    const terms = glossaryDoc.querySelectorAll('body [id]');
+
+                    terms.forEach(termElement => {
+                        const termId = termElement.id;
+                        // *** Adjust this logic if needed ***
+                        const definitionElement = termElement.nextElementSibling;
+
+                        if (termId && definitionElement) {
+                            glossaryData[termId] = definitionElement.innerHTML;
+                        } else if (termId) {
+                            console.warn(`Glossary tooltip: No definition element found immediately after id="${termId}" in ${glossaryUrl}`);
+                        }
+                    });
+
+                    glossaryFetched = true;
+                    console.log(`Glossary data processed. Found ${Object.keys(glossaryData).length} terms.`);
+                    attachTooltipListeners();
+                })
+                .catch(error => {
+                    console.error('Error fetching or parsing glossary:', error);
+                    glossaryFetched = false;
+                });
+        }
+
+        // --- 3. Attach Listeners to Links ---
+        function attachTooltipListeners() {
+            const links = document.querySelectorAll(`a[href^="${glossaryUrl}#"]`);
+            links.forEach(link => {
+                link.addEventListener('mouseover', handleMouseOver);
+                link.addEventListener('mouseout', handleMouseOut);
+                link.addEventListener('mousemove', handleMouseMove);
+            });
+             console.log(`Attached tooltip listeners to ${links.length} glossary links.`);
+        }
+
+        // --- 4. Tooltip Event Handlers ---
+        function showTooltip(link, termId, event) {
+             if (!tooltipElement || !glossaryFetched) return;
+             const definitionHtml = glossaryData[termId];
+             if (definitionHtml) {
+                 tooltipElement.innerHTML = definitionHtml;
+                 positionTooltip(event);
+                 tooltipElement.style.display = 'block';
+                 link.setAttribute('aria-describedby', 'glossary-tooltip');
+             } else {
+                 console.warn(`Glossary tooltip: Definition for "${termId}" not found in stored data.`);
+                 hideTooltip(link);
+             }
+        }
+
+        function hideTooltip(link) {
+             if (tooltipElement) {
+                 tooltipElement.style.display = 'none';
+                 tooltipElement.innerHTML = '';
+                 link.removeAttribute('aria-describedby');
+             }
+        }
+
+        function positionTooltip(event) {
+             if (!tooltipElement || tooltipElement.style.display === 'none') return;
+             const offsetX = 15;
+             const offsetY = 15;
+             let x = event.pageX + offsetX;
+             let y = event.pageY + offsetY;
+             const tooltipRect = tooltipElement.getBoundingClientRect();
+             const viewportWidth = window.innerWidth;
+             const viewportHeight = window.innerHeight;
+             // Basic boundary check
+             if (x + tooltipRect.width > viewportWidth) {
+                 x = event.pageX - tooltipRect.width - offsetX;
+             }
+             if (y + tooltipRect.height > viewportHeight) {
+                  y = event.pageY - tooltipRect.height - offsetY;
+             }
+             tooltipElement.style.left = `${x}px`;
+             tooltipElement.style.top = `${y}px`;
+        }
+
+        // --- Event Handler Wrappers ---
+         function handleMouseOver(event) {
+             const link = event.currentTarget;
+             const href = link.getAttribute('href');
+             const termId = href.substring(href.indexOf('#') + 1);
+             if (termId) {
+                 showTooltip(link, termId, event);
+             }
+         }
+          function handleMouseOut(event) {
+              const link = event.currentTarget;
+              hideTooltip(link);
+          }
+           function handleMouseMove(event) {
+               positionTooltip(event);
+           }
+
+        // --- Main Execution within DOMContentLoaded ---
+        createTooltip();
+        fetchAndParseGlossary();
+
+    }); // End DOMContentLoaded listener
+
+    // --- END OF PASTED GLOSSARY TOOLTIP CODE ---
+
+})(); // Immediately invoke the function expression
+// ======================================================
+// END: Glossary Tooltip Functionality
+// ======================================================
+
 }); // End DOMContentLoaded
 
 // --- END OF FILE script.js ---
