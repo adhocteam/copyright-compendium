@@ -263,6 +263,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- End Scrolling ---
             console.log("loadContent try block finished successfully.");
 
+            // --- Glossary Tooltip Refresh ---
+            if (window.MyAppGlossary && typeof window.MyAppGlossary.refreshTooltips === 'function') {
+                console.log("Triggering glossary tooltip refresh.");
+                window.MyAppGlossary.refreshTooltips();
+            } else {
+                console.warn("Glossary tooltip refresh function not available.");
+                // This might happen if the glossary script failed to load or initialize
+            }
+
 	    } catch (error) {
             console.error("Error during loadContent:", error);
             if (chapterContent) { // Check if element exists before modifying
@@ -983,153 +992,221 @@ autocomplete({
 
 }); // End DOMContentLoaded
 
-// Wrap in IIFE if adding to an existing script.js
+// Wrap in IIFE to keep variables private unless explicitly exposed
 (function() {
     'use strict';
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const glossaryUrl = '/glossary-src.html';
-        const glossaryUrlBare = '/glossary.html'; 
-        const glossaryData = {}; // To store { id: definitionHTML }
-        let tooltipElement = null; // The single tooltip div
-        let glossaryFetched = false; // Flag to track fetch status
+    const glossaryUrl = '/glossary-src.html';
+    const glossaryUrlBare = '/glossary.html';
+    const glossaryData = {}; // To store { id: definitionHTML }
+    let tooltipElement = null; // The single tooltip div
+    let glossaryFetched = false; // Flag to track fetch status
+    let isFetching = false; // Prevent multiple fetches
 
-        // --- 1. Create the Tooltip Element (No changes needed) ---
-        function createTooltip() {
-            if (document.getElementById('glossary-tooltip')) return;
-            tooltipElement = document.createElement('div');
-            tooltipElement.id = 'glossary-tooltip';
-            tooltipElement.setAttribute('role', 'tooltip');
-            document.body.appendChild(tooltipElement);
+    // --- 1. Create the Tooltip Element (Run once) ---
+    function createTooltip() {
+        if (document.getElementById('glossary-tooltip')) {
+            tooltipElement = document.getElementById('glossary-tooltip');
+            return; // Already exists
+        }
+        tooltipElement = document.createElement('div');
+        tooltipElement.id = 'glossary-tooltip';
+        tooltipElement.setAttribute('role', 'tooltip');
+        // Ensure it's hidden initially if created dynamically later
+        tooltipElement.style.display = 'none';
+        document.body.appendChild(tooltipElement);
+    }
+
+    // --- 2. Fetch and Parse Glossary (Run once, ensures data readiness) ---
+    function fetchAndParseGlossary() {
+        // Prevent concurrent fetches and re-fetching if already done
+        if (glossaryFetched || isFetching) {
+             // If already fetched, potentially trigger attachment immediately
+             if (glossaryFetched) {
+                console.log("Glossary already fetched. Ready to attach listeners.");
+                // Optionally, call attachTooltipListeners here if needed on subsequent calls,
+                // but the primary mechanism is the exposed function.
+             }
+            return Promise.resolve(); // Return a resolved promise
         }
 
-        // --- 2. Fetch and Parse Glossary (UPDATED SECTION) ---
-        function fetchAndParseGlossary() {
-            fetch(glossaryUrl)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status} for ${glossaryUrl}`);
+        isFetching = true;
+        console.log("Fetching glossary data...");
+
+        return fetch(glossaryUrl) // Return the promise chain
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status} for ${glossaryUrl}`);
+                }
+                return response.text();
+            })
+            .then(htmlText => {
+                const parser = new DOMParser();
+                const glossaryDoc = parser.parseFromString(htmlText, 'text/html');
+                const terms = glossaryDoc.querySelectorAll('dt[id]'); // Specific selector
+
+                terms.forEach(termElement => {
+                    const termId = termElement.id;
+                    const nextSibling = termElement.nextElementSibling;
+                    if (termId && nextSibling && nextSibling.tagName === 'P') {
+                        glossaryData[termId] = nextSibling.innerHTML;
+                    } else if (termId) {
+                        console.warn(`Glossary tooltip: Expected <p> after <dt id="${termId}">, found ${nextSibling ? nextSibling.tagName : 'nothing'}.`);
                     }
-                    return response.text();
-                })
-                .then(htmlText => {
-                    const parser = new DOMParser();
-                    const glossaryDoc = parser.parseFromString(htmlText, 'text/html');
-
-                    // --- Glossary Structure Assumption UPDATED ---
-                    // Find only <dt> elements that have an ID attribute.
-                    const terms = glossaryDoc.querySelectorAll('dt[id]'); // More specific selector
-
-                    terms.forEach(termElement => {
-                        const termId = termElement.id;
-                        // Find the *next sibling element*
-                        const nextSibling = termElement.nextElementSibling;
-
-                        // --- Check if the next sibling exists AND is a <p> tag ---
-                        if (termId && nextSibling && nextSibling.tagName === 'P') {
-                            // Store the *HTML content* of the <p> element
-                            glossaryData[termId] = nextSibling.innerHTML;
-                        } else if (termId) {
-                            // Warn if an ID was found but the next sibling wasn't a <p>
-                            console.warn(`Glossary tooltip: Expected a <p> tag immediately after <dt id="${termId}"> but found ${nextSibling ? nextSibling.tagName : 'nothing'} in ${glossaryUrl}`);
-                        }
-                    });
-
-                    glossaryFetched = true;
-                    console.log(`Glossary data processed. Found ${Object.keys(glossaryData).length} terms with <p> definitions.`);
-                    // Now that data is ready, attach listeners
-                    attachTooltipListeners();
-                })
-                .catch(error => {
-                    console.error('Error fetching or parsing glossary:', error);
-                    glossaryFetched = false;
                 });
-        }
 
-        // --- 3. Attach Listeners to Links (No changes needed) ---
-        function attachTooltipListeners() {
-            const links = document.querySelectorAll(`a[href^="${glossaryUrlBare}#"]`);
-            links.forEach(link => {
-                link.addEventListener('mouseover', handleMouseOver);
-                link.addEventListener('mouseout', handleMouseOut);
-                link.addEventListener('mousemove', handleMouseMove);
+                glossaryFetched = true; // Mark as fetched *successfully*
+                isFetching = false;
+                console.log(`Glossary data processed. Found ${Object.keys(glossaryData).length} terms.`);
+                // Don't attach listeners here automatically anymore, wait for explicit call.
+                // The initial call will happen via DOMContentLoaded -> initializeGlossaryTooltips
+            })
+            .catch(error => {
+                console.error('Error fetching or parsing glossary:', error);
+                glossaryFetched = false; // Ensure flag is false on error
+                isFetching = false;
+                // Re-throw or handle error appropriately
+                throw error; // Allow calling code to know about the failure
             });
-             console.log(`Attached tooltip listeners to ${links.length} glossary links.`);
+    }
+
+    // --- 3. Attach Listeners to Links (THIS IS THE RE-RUNNABLE FUNCTION) ---
+    function attachTooltipListeners() {
+        // Ensure tooltip element exists (might be called before DOMContentLoaded finishes in rare cases)
+        if (!tooltipElement) {
+            createTooltip();
         }
 
-        // --- 4. Tooltip Event Handlers (No changes needed) ---
-        function showTooltip(link, termId, event) {
-             if (!tooltipElement || !glossaryFetched) return;
-             const definitionHtml = glossaryData[termId];
-             if (definitionHtml) {
-                 tooltipElement.innerHTML = definitionHtml;
-                 positionTooltip(event);
-                 tooltipElement.style.display = 'block';
-                 link.setAttribute('aria-describedby', 'glossary-tooltip');
-             } else {
-                 console.warn(`Glossary tooltip: Definition for "${termId}" not found in stored data (likely wasn't a <p> tag).`);
-                 hideTooltip(link); // Don't show empty tooltip
-             }
+        // IMPORTANT: Only proceed if glossary data is ready
+        if (!glossaryFetched) {
+            console.warn("attachTooltipListeners called, but glossary data is not ready yet.");
+            // Optionally, trigger fetch here if it hasn't started,
+            // but better to ensure fetch is triggered on init.
+            return;
         }
 
-        function hideTooltip(link) {
-             if (tooltipElement) {
-                 tooltipElement.style.display = 'none';
-                 tooltipElement.innerHTML = '';
-                 link.removeAttribute('aria-describedby');
-             }
-        }
+        console.log("Attaching/Re-attaching glossary tooltip listeners...");
+        const links = document.querySelectorAll(`a[href^="${glossaryUrlBare}#"]`);
 
-        function positionTooltip(event) {
-             if (!tooltipElement || tooltipElement.style.display === 'none') return;
-             const offsetX = 15;
-             const offsetY = 15;
-             let x = event.pageX + offsetX;
-             let y = event.pageY + offsetY;
-             // Use current tooltip dimensions for boundary check
-             const tooltipWidth = tooltipElement.offsetWidth;
-             const tooltipHeight = tooltipElement.offsetHeight;
-             const viewportWidth = window.innerWidth;
-             const viewportHeight = window.innerHeight;
+        // Keep track of attached listeners to potentially avoid duplicates if needed,
+        // though modern browsers handle duplicate identical listeners well.
+        // For simplicity, we'll re-query and attach. If performance becomes an issue
+        // on massive pages/updates, optimization might be needed (e.g., targeting only new links).
 
-             // Adjust position to prevent going off-screen
-             if (x + tooltipWidth > viewportWidth - offsetX) { // Subtract offset for buffer
-                 x = event.pageX - tooltipWidth - offsetX; // Flip to left
-                 if (x < offsetX) x = offsetX; // Prevent going off left edge
-             }
-             if (y + tooltipHeight > viewportHeight - offsetY) { // Subtract offset for buffer
-                  y = event.pageY - tooltipHeight - offsetY; // Flip above
-                  if (y < offsetY) y = offsetY; // Prevent going off top edge
+        links.forEach(link => {
+            // Check if listener is potentially already attached (simple check)
+            // Note: This isn't foolproof but can prevent redundant work in some cases.
+             if (link.dataset.glossaryListenerAttached === 'true') {
+                 return; // Skip if we've marked it
              }
 
-             tooltipElement.style.left = `${x}px`;
-             tooltipElement.style.top = `${y}px`;
-        }
+            link.removeEventListener('mouseover', handleMouseOver); // Remove potential old ones first
+            link.removeEventListener('mouseout', handleMouseOut);
+            link.removeEventListener('mousemove', handleMouseMove);
 
-        // --- Event Handler Wrappers (No changes needed) ---
-         function handleMouseOver(event) {
-             const link = event.currentTarget;
-             const href = link.getAttribute('href');
-             const termId = href.substring(href.indexOf('#') + 1);
-             if (termId) {
-                 showTooltip(link, termId, event);
-             }
+            link.addEventListener('mouseover', handleMouseOver);
+            link.addEventListener('mouseout', handleMouseOut);
+            link.addEventListener('mousemove', handleMouseMove);
+            link.dataset.glossaryListenerAttached = 'true'; // Mark as attached
+        });
+         console.log(`Listeners updated for ${links.length} glossary links.`);
+    }
+
+    // --- 4. Tooltip Event Handlers (Internal, no changes needed) ---
+    function showTooltip(link, termId, event) {
+         // Check flag *here* when the event actually fires
+         if (!tooltipElement || !glossaryFetched) return;
+         const definitionHtml = glossaryData[termId];
+         if (definitionHtml) {
+             tooltipElement.innerHTML = definitionHtml;
+             positionTooltip(event);
+             tooltipElement.style.display = 'block';
+             link.setAttribute('aria-describedby', 'glossary-tooltip');
+         } else {
+             console.warn(`Glossary tooltip: Definition for "${termId}" not found.`);
+             hideTooltip(link);
          }
-          function handleMouseOut(event) {
-              const link = event.currentTarget;
-              hideTooltip(link);
-          }
-           function handleMouseMove(event) {
-                // Only reposition if tooltip is visible
-               if (tooltipElement && tooltipElement.style.display === 'block') {
-                    positionTooltip(event);
-               }
+    }
+
+    function hideTooltip(link) {
+         if (tooltipElement) {
+             tooltipElement.style.display = 'none';
+             tooltipElement.innerHTML = '';
+             link.removeAttribute('aria-describedby');
+         }
+    }
+
+    function positionTooltip(event) {
+        // (Keep the positioning logic from the previous version)
+         if (!tooltipElement || tooltipElement.style.display === 'none') return;
+         const offsetX = 15;
+         const offsetY = 15;
+         let x = event.pageX + offsetX;
+         let y = event.pageY + offsetY;
+         const tooltipWidth = tooltipElement.offsetWidth;
+         const tooltipHeight = tooltipElement.offsetHeight;
+         const viewportWidth = window.innerWidth;
+         const viewportHeight = window.innerHeight;
+         if (x + tooltipWidth > viewportWidth - offsetX) {
+             x = event.pageX - tooltipWidth - offsetX;
+             if (x < offsetX) x = offsetX;
+         }
+         if (y + tooltipHeight > viewportHeight - offsetY) {
+              y = event.pageY - tooltipHeight - offsetY;
+              if (y < offsetY) y = offsetY;
+         }
+         tooltipElement.style.left = `${x}px`;
+         tooltipElement.style.top = `${y}px`;
+    }
+
+    // --- Event Handler Wrappers (Internal, no changes needed) ---
+     function handleMouseOver(event) {
+         const link = event.currentTarget;
+         const href = link.getAttribute('href');
+         const termId = href.substring(href.indexOf('#') + 1);
+         if (termId) {
+             showTooltip(link, termId, event);
+         }
+     }
+      function handleMouseOut(event) {
+          const link = event.currentTarget;
+          hideTooltip(link);
+      }
+       function handleMouseMove(event) {
+           if (tooltipElement && tooltipElement.style.display === 'block') {
+                positionTooltip(event);
            }
+       }
 
-        // --- Main Execution within DOMContentLoaded ---
-        createTooltip();
-        fetchAndParseGlossary();
+    // --- 5. Initialization and Exposure ---
 
-    }); // End DOMContentLoaded listener
+    // Function to be called initially and also exposed
+    function initializeGlossaryTooltips() {
+        createTooltip(); // Ensure tooltip div exists
 
-})(); 
+        // Fetch glossary if not already fetched, then attach listeners
+        fetchAndParseGlossary()
+            .then(() => {
+                // Now that glossary is fetched (or was already fetched), attach listeners
+                attachTooltipListeners();
+            })
+            .catch(error => {
+                console.error("Glossary initialization failed:", error);
+                // Decide how to handle failure - maybe disable the refresh function?
+            });
+    }
+
+    // Expose the function to refresh/reattach listeners
+    // Use a namespace or a unique name
+    window.MyAppGlossary = window.MyAppGlossary || {}; // Create namespace if doesn't exist
+    window.MyAppGlossary.refreshTooltips = attachTooltipListeners; // Expose the re-runnable part
+    // Optionally expose the full init if needed, though less common
+    // window.MyAppGlossary.initialize = initializeGlossaryTooltips;
+
+    // --- Initial Run ---
+    // Use DOMContentLoaded to ensure the body exists for createTooltip
+    // and that initial content is ready for the first listener attachment.
+    document.addEventListener('DOMContentLoaded', initializeGlossaryTooltips);
+
+
+})(); // End IIFE
