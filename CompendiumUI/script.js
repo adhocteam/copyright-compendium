@@ -997,7 +997,7 @@ autocomplete({
     'use strict';
 
     const glossaryUrl = '/glossary-src.html';
-    const glossaryUrlBare = '/glossary.html';
+    const glossaryUrlBare = '/compendium/glossary.html';
     const glossaryData = {}; // To store { id: definitionHTML }
     let tooltipElement = null; // The single tooltip div
     let glossaryFetched = false; // Flag to track fetch status
