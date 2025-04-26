@@ -980,14 +980,14 @@ autocomplete({
   // detachedMediaQuery: '', // Always detached
 });
 
+
+}); // End DOMContentLoaded
+
 // ======================================================
 // START: Glossary Tooltip Functionality
-// Wrap the entire glossary script in an IIFE
 // ======================================================
 (function() {
-    'use strict'; // Optional: Enforces stricter parsing and error handling
-
-    // --- PASTE THE ENTIRE GLOSSARY TOOLTIP JAVASCRIPT CODE HERE ---
+    'use strict';
 
     document.addEventListener('DOMContentLoaded', () => {
         const glossaryUrl = '/glossary.html';
@@ -1124,7 +1124,5 @@ autocomplete({
 // ======================================================
 // END: Glossary Tooltip Functionality
 // ======================================================
-
-}); // End DOMContentLoaded
 
 // --- END OF FILE script.js ---
