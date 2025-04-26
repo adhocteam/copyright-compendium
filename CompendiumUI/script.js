@@ -988,7 +988,7 @@ autocomplete({
     'use strict';
 
     document.addEventListener('DOMContentLoaded', () => {
-        const glossaryUrl = '/glossary.html';
+        const glossaryUrl = '/glossary-src.html';
         const glossaryData = {}; // To store { id: definitionHTML }
         let tooltipElement = null; // The single tooltip div
         let glossaryFetched = false; // Flag to track fetch status
