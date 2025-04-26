@@ -983,9 +983,7 @@ autocomplete({
 
 }); // End DOMContentLoaded
 
-// ======================================================
-// START: Glossary Tooltip Functionality
-// ======================================================
+// Wrap in IIFE if adding to an existing script.js
 (function() {
     'use strict';
 
@@ -995,7 +993,7 @@ autocomplete({
         let tooltipElement = null; // The single tooltip div
         let glossaryFetched = false; // Flag to track fetch status
 
-        // --- 1. Create the Tooltip Element ---
+        // --- 1. Create the Tooltip Element (No changes needed) ---
         function createTooltip() {
             if (document.getElementById('glossary-tooltip')) return;
             tooltipElement = document.createElement('div');
@@ -1004,7 +1002,7 @@ autocomplete({
             document.body.appendChild(tooltipElement);
         }
 
-        // --- 2. Fetch and Parse Glossary ---
+        // --- 2. Fetch and Parse Glossary (UPDATED SECTION) ---
         function fetchAndParseGlossary() {
             fetch(glossaryUrl)
                 .then(response => {
@@ -1016,23 +1014,29 @@ autocomplete({
                 .then(htmlText => {
                     const parser = new DOMParser();
                     const glossaryDoc = parser.parseFromString(htmlText, 'text/html');
-                    // *** Adjust this selector if needed ***
-                    const terms = glossaryDoc.querySelectorAll('body [id]');
+
+                    // --- Glossary Structure Assumption UPDATED ---
+                    // Find only <dt> elements that have an ID attribute.
+                    const terms = glossaryDoc.querySelectorAll('dt[id]'); // More specific selector
 
                     terms.forEach(termElement => {
                         const termId = termElement.id;
-                        // *** Adjust this logic if needed ***
-                        const definitionElement = termElement.nextElementSibling;
+                        // Find the *next sibling element*
+                        const nextSibling = termElement.nextElementSibling;
 
-                        if (termId && definitionElement) {
-                            glossaryData[termId] = definitionElement.innerHTML;
+                        // --- Check if the next sibling exists AND is a <p> tag ---
+                        if (termId && nextSibling && nextSibling.tagName === 'P') {
+                            // Store the *HTML content* of the <p> element
+                            glossaryData[termId] = nextSibling.innerHTML;
                         } else if (termId) {
-                            console.warn(`Glossary tooltip: No definition element found immediately after id="${termId}" in ${glossaryUrl}`);
+                            // Warn if an ID was found but the next sibling wasn't a <p>
+                            console.warn(`Glossary tooltip: Expected a <p> tag immediately after <dt id="${termId}"> but found ${nextSibling ? nextSibling.tagName : 'nothing'} in ${glossaryUrl}`);
                         }
                     });
 
                     glossaryFetched = true;
-                    console.log(`Glossary data processed. Found ${Object.keys(glossaryData).length} terms.`);
+                    console.log(`Glossary data processed. Found ${Object.keys(glossaryData).length} terms with <p> definitions.`);
+                    // Now that data is ready, attach listeners
                     attachTooltipListeners();
                 })
                 .catch(error => {
@@ -1041,7 +1045,7 @@ autocomplete({
                 });
         }
 
-        // --- 3. Attach Listeners to Links ---
+        // --- 3. Attach Listeners to Links (No changes needed) ---
         function attachTooltipListeners() {
             const links = document.querySelectorAll(`a[href^="${glossaryUrl}#"]`);
             links.forEach(link => {
@@ -1052,7 +1056,7 @@ autocomplete({
              console.log(`Attached tooltip listeners to ${links.length} glossary links.`);
         }
 
-        // --- 4. Tooltip Event Handlers ---
+        // --- 4. Tooltip Event Handlers (No changes needed) ---
         function showTooltip(link, termId, event) {
              if (!tooltipElement || !glossaryFetched) return;
              const definitionHtml = glossaryData[termId];
@@ -1062,8 +1066,8 @@ autocomplete({
                  tooltipElement.style.display = 'block';
                  link.setAttribute('aria-describedby', 'glossary-tooltip');
              } else {
-                 console.warn(`Glossary tooltip: Definition for "${termId}" not found in stored data.`);
-                 hideTooltip(link);
+                 console.warn(`Glossary tooltip: Definition for "${termId}" not found in stored data (likely wasn't a <p> tag).`);
+                 hideTooltip(link); // Don't show empty tooltip
              }
         }
 
@@ -1081,21 +1085,27 @@ autocomplete({
              const offsetY = 15;
              let x = event.pageX + offsetX;
              let y = event.pageY + offsetY;
-             const tooltipRect = tooltipElement.getBoundingClientRect();
+             // Use current tooltip dimensions for boundary check
+             const tooltipWidth = tooltipElement.offsetWidth;
+             const tooltipHeight = tooltipElement.offsetHeight;
              const viewportWidth = window.innerWidth;
              const viewportHeight = window.innerHeight;
-             // Basic boundary check
-             if (x + tooltipRect.width > viewportWidth) {
-                 x = event.pageX - tooltipRect.width - offsetX;
+
+             // Adjust position to prevent going off-screen
+             if (x + tooltipWidth > viewportWidth - offsetX) { // Subtract offset for buffer
+                 x = event.pageX - tooltipWidth - offsetX; // Flip to left
+                 if (x < offsetX) x = offsetX; // Prevent going off left edge
              }
-             if (y + tooltipRect.height > viewportHeight) {
-                  y = event.pageY - tooltipRect.height - offsetY;
+             if (y + tooltipHeight > viewportHeight - offsetY) { // Subtract offset for buffer
+                  y = event.pageY - tooltipHeight - offsetY; // Flip above
+                  if (y < offsetY) y = offsetY; // Prevent going off top edge
              }
+
              tooltipElement.style.left = `${x}px`;
              tooltipElement.style.top = `${y}px`;
         }
 
-        // --- Event Handler Wrappers ---
+        // --- Event Handler Wrappers (No changes needed) ---
          function handleMouseOver(event) {
              const link = event.currentTarget;
              const href = link.getAttribute('href');
@@ -1109,7 +1119,10 @@ autocomplete({
               hideTooltip(link);
           }
            function handleMouseMove(event) {
-               positionTooltip(event);
+                // Only reposition if tooltip is visible
+               if (tooltipElement && tooltipElement.style.display === 'block') {
+                    positionTooltip(event);
+               }
            }
 
         // --- Main Execution within DOMContentLoaded ---
@@ -1118,11 +1131,4 @@ autocomplete({
 
     }); // End DOMContentLoaded listener
 
-    // --- END OF PASTED GLOSSARY TOOLTIP CODE ---
-
-})(); // Immediately invoke the function expression
-// ======================================================
-// END: Glossary Tooltip Functionality
-// ======================================================
-
-// --- END OF FILE script.js ---
+})(); 
