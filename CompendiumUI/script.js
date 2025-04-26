@@ -989,6 +989,7 @@ autocomplete({
 
     document.addEventListener('DOMContentLoaded', () => {
         const glossaryUrl = '/glossary-src.html';
+        const glossaryUrlBare = '/glossary.html'; 
         const glossaryData = {}; // To store { id: definitionHTML }
         let tooltipElement = null; // The single tooltip div
         let glossaryFetched = false; // Flag to track fetch status
@@ -1047,7 +1048,7 @@ autocomplete({
 
         // --- 3. Attach Listeners to Links (No changes needed) ---
         function attachTooltipListeners() {
-            const links = document.querySelectorAll(`a[href^="${glossaryUrl}#"]`);
+            const links = document.querySelectorAll(`a[href^="${glossaryUrlBare}#"]`);
             links.forEach(link => {
                 link.addEventListener('mouseover', handleMouseOver);
                 link.addEventListener('mouseout', handleMouseOut);
