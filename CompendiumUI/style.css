@@ -27,25 +27,27 @@
 /* --- Header Chapter Title --- */
 .header-chapter-title {
     flex-grow: 1;
+    flex-shrink: 0;           /* Don't shrink below content width on desktop */
     text-align: center;
     font-weight: 700;
     font-size: 1.1rem;
     color: #162e51;
-    /* Allow wrapping to show full title */
-    white-space: normal;
-    line-height: 1.1; 
+    white-space: nowrap;      /* Single line on desktop */
+    line-height: 1.3; 
     padding: 0.5rem 1rem;
 }
 
-/* Adjust for smaller screens: reduce size, enforce truncation if really small */
+/* Medium screens: allow wrapping if needed */
 @media (max-width: 64em) {
     .header-chapter-title {
-        display: block; /* Ensure it's visible on tablets */
+        flex-shrink: 1;       /* Allow shrinking on smaller screens */
+        white-space: normal;  /* Allow wrapping */
         font-size: 1rem;
         padding: 0 0.5rem;
     }
 }
 
+/* Mobile: truncate with ellipsis */
 @media (max-width: 40em) {
     .header-chapter-title {
         white-space: nowrap;
