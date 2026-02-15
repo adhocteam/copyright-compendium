@@ -4,6 +4,7 @@ import { autocomplete } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
 
 import { chapters } from './chapters';
+import { version } from './package.json';
 
 // --- Type Definitions ---
 interface MarkOptions {
@@ -224,6 +225,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!sectionListContainer) console.warn("WARN: #section-list not found. Sidenav cannot be populated.");
     if (!sideNavElement) console.warn("WARN: .sidenav element not found. Sidenav hiding/showing might not work.");
 
+    // Version Display
+    const versionNumberElement = document.getElementById('version-number');
+    if (versionNumberElement) {
+        versionNumberElement.textContent = version;
+    }
+
 
     // --- Data ---
     // --- Data ---
@@ -289,13 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     el.removeAttribute('aria-current');
                 }
             });
-        }
-        const accordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
-        if (accordionButton) {
-            accordionButton.setAttribute('aria-expanded', 'false');
-            chapterListDropdown.setAttribute('hidden', '');
-        } else {
-            console.warn(`Could not find accordion button controlling #${chapterListDropdown.id} in updateTopNavCurrent`);
         }
     }
 
@@ -468,61 +468,94 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Navigation Dispatcher Function ---
     function generateNavigation(filename: string): void {
         // Determine if sidenav should be shown based on the result of generator functions
-        let shouldShowSidenav = false;
-
-        if (filename === 'glossary.html') {
-            console.log("Attempting to generate Glossary A-Z Navigation");
-            shouldShowSidenav = generateGlossaryNavigation();
-        } else {
-            console.log("Attempting to generate Hierarchical Navigation for:", filename);
-            shouldShowSidenav = generateHierarchicalNavigation();
-        }
+        // For the new design, we always want the side nav to be visible if we can generate it
+        const success = generateSideNav(filename);
 
         // Apply visibility class based on the result
         if (sideNavElement) {
-            if (shouldShowSidenav) {
+            if (success) {
                 sideNavElement.classList.remove('hidden');
-                console.log("Sidenav should be visible.");
             } else {
                 sideNavElement.classList.add('hidden');
-                console.log("Sidenav should be hidden.");
             }
-        } else {
-            // Warning logged at top if element is missing
         }
     }
 
-    // --- Glossary A-Z Navigation Function ---
-    // Returns true if navigation was successfully generated and added, false otherwise.
-    function generateGlossaryNavigation(): boolean {
-        // Check required elements before proceeding
-        if (!sectionListContainer) {
-            console.error("generateGlossaryNavigation: sectionListContainer not found. Cannot generate nav.");
-            return false; // Cannot generate
-        }
-        if (!chapterContent) {
-            console.error("generateGlossaryNavigation: chapterContent not found. Cannot find terms.");
-            return false; // Cannot generate
-        }
 
-        // Clear previous content first
+    function generateSideNav(currentFilename: string): boolean {
+        if (!sectionListContainer) return false;
+
         sectionListContainer.innerHTML = '';
-
         const nav = document.createElement('nav');
-        nav.setAttribute('aria-label', 'Glossary A-Z Navigation');
+        nav.setAttribute('aria-label', 'Side navigation');
         const ul = document.createElement('ul');
         ul.className = 'usa-sidenav';
 
-        const glossaryTerms = chapterContent.querySelectorAll('dt[id]');
+        chapters.forEach(chapter => {
+            const li = document.createElement('li');
+            li.className = 'usa-sidenav__item';
 
-        if (!glossaryTerms || glossaryTerms.length === 0) {
-            console.warn("generateGlossaryNavigation: No 'dt[id]' elements found in content.");
-            return false; // Nothing to generate
-        }
+            const a = document.createElement('a');
+            a.href = `/${chapter.filename}`;
+            a.innerHTML = `${chapter.number ? chapter.number + ' ' : ''}${chapter.title}`; // Using innerHTML to allow styling logic if needed, but textContent is safer. sticking to textContent-ish logic.
+            // Actually, keep it simple.
+            a.textContent = `${chapter.number ? chapter.number + ' ' : ''}${chapter.title}`;
+
+            if (chapter.filename === currentFilename) {
+                a.classList.add('usa-current');
+                li.classList.add('usa-current');
+                a.setAttribute('aria-current', 'page');
+            }
+
+            li.appendChild(a);
+
+            // If this is the active chapter, generate its specific content (sections)
+            if (chapter.filename === currentFilename) {
+                if (currentFilename === 'glossary.html') {
+                    // Glossary specific logic
+                    const glossaryUl = document.createElement('ul');
+                    glossaryUl.className = 'usa-sidenav__sublist';
+                    // ... (Use existing glossary generation logic here, but adapted to append to this LI) ...
+                    // Re-using the logic from generateGlossaryNavigation but targeting the sublist
+                    const glossaryGenerated = generateGlossaryItems(glossaryUl);
+                    if (glossaryGenerated) li.appendChild(glossaryUl);
+
+                } else {
+                    // Standard Hierarchical logic
+                    const subUl = document.createElement('ul');
+                    subUl.className = 'usa-sidenav__sublist';
+                    const hierarchyGenerated = generateHierarchicalItems(subUl);
+                    if (hierarchyGenerated) li.appendChild(subUl);
+                }
+            }
+
+            // Add click listener for navigation
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (chapter.filename !== currentFilename) {
+                    loadContent(chapter.filename, { updateHistory: true, isInitialLoad: false });
+                } else {
+                    chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+
+            ul.appendChild(li);
+        });
+
+        nav.appendChild(ul);
+        sectionListContainer.appendChild(nav);
+        return true;
+    }
+
+    // Helper to generate glossary items into a specific list
+    function generateGlossaryItems(targetList: HTMLUListElement): boolean {
+        if (!chapterContent) return false;
+        const glossaryTerms = chapterContent.querySelectorAll('dt[id]');
+        if (!glossaryTerms || glossaryTerms.length === 0) return false;
 
         const firstTermPerLetter: Record<string, string> = {};
         glossaryTerms.forEach(dt => {
-            const termText = dt.textContent.trim();
+            const termText = dt.textContent ? dt.textContent.trim() : '';
             if (termText) {
                 const firstChar = termText.charAt(0).toUpperCase();
                 if (/^[A-Z]$/.test(firstChar) && !firstTermPerLetter[firstChar]) {
@@ -531,40 +564,59 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        let foundLinks = false; // Track if any actual links are created
-        for (let i = 65; i <= 90; i++) { // ASCII codes for A-Z
+        let foundLinks = false;
+        for (let i = 65; i <= 90; i++) {
             const letter = String.fromCharCode(i);
-            const li = document.createElement('li');
-            li.className = 'usa-sidenav__item';
-
+            // Verify if we have terms for this letter
             if (firstTermPerLetter[letter]) {
+                const li = document.createElement('li');
+                li.className = 'usa-sidenav__item';
                 const a = document.createElement('a');
                 a.textContent = letter;
                 a.href = `#${firstTermPerLetter[letter]}`;
                 a.addEventListener('click', handleGlossaryLinkClick);
                 li.appendChild(a);
-                foundLinks = true; // Mark that we have at least one active link
-            } else {
-                // Use span for disabled items instead of link with aria-disabled
-                const span = document.createElement('span');
-                span.textContent = letter;
-                span.className = 'glossary-disabled';
-                span.setAttribute('aria-label', `Letter ${letter} - No glossary terms available`);
-                li.appendChild(span);
+                targetList.appendChild(li);
+                foundLinks = true;
             }
-            ul.appendChild(li);
+        }
+        return foundLinks;
+    }
+
+    // Helper to generate hierarchical items
+    function generateHierarchicalItems(targetList: HTMLUListElement): boolean {
+        if (!chapterContent) return false;
+
+        const firstLevelContent = chapterContent.firstElementChild;
+        if (!firstLevelContent) return false;
+
+        let topLevelSelector, itemType;
+        const tagNameLower = firstLevelContent.tagName.toLowerCase();
+
+        if (tagNameLower === 'chapter') {
+            topLevelSelector = ':scope > section[id]'; itemType = 'section';
+        } else if (tagNameLower === 'table_of_authorities') {
+            topLevelSelector = ':scope > authority_group[id]'; itemType = 'authority_group';
+        } else if (chapterContent.querySelector(':scope > section[id]')) {
+            topLevelSelector = ':scope > section[id]'; itemType = 'section';
+        } else {
+            return false;
         }
 
-        if (foundLinks) { // Only add nav if we actually have links
-            nav.appendChild(ul);
-            sectionListContainer.appendChild(nav);
-            console.log("Glossary navigation generated and added.");
-            return true; // Success - content was generated
-        } else {
-            console.warn("generateGlossaryNavigation: Terms found, but no terms started with A-Z.");
-            return false; // Technically generated, but no useful links added
-        }
+        const rootElement = (tagNameLower === 'chapter' || tagNameLower === 'table_of_authorities') ? firstLevelContent : chapterContent;
+        const topLevelItems = rootElement.querySelectorAll(topLevelSelector);
+
+        if (topLevelItems.length === 0) return false;
+
+        topLevelItems.forEach(item => buildNavItem(item, itemType, targetList, 0));
+
+        // Add scroll listeners for these new items
+        addSmoothScrollListeners(targetList);
+
+        return targetList.hasChildNodes();
     }
+
+
 
     // --- Event Handler for Glossary Links ---
     function handleGlossaryLinkClick(this: HTMLAnchorElement, e: Event): void {
@@ -594,75 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- Hierarchical Navigation Logic ---
-    // Returns true if navigation was successfully generated and added, false otherwise.
-    function generateHierarchicalNavigation(): boolean {
-        // Check required elements before proceeding
-        if (!sectionListContainer) {
-            console.error("generateHierarchicalNavigation: sectionListContainer not found. Cannot generate nav.");
-            return false;
-        }
-        if (!chapterContent) {
-            console.error("generateHierarchicalNavigation: chapterContent not found. Cannot find structure.");
-            return false;
-        }
 
-        // Clear previous content first
-        sectionListContainer.innerHTML = '';
-
-        const nav = document.createElement('nav');
-        const ul = document.createElement('ul');
-        ul.className = 'usa-sidenav';
-
-        const firstLevelContent = chapterContent.firstElementChild;
-        // Check for any possibility of navigation
-        if (!firstLevelContent) {
-            console.warn("generateHierarchicalNavigation: No first level content element found.");
-            return false; // Cannot determine structure
-        }
-
-        let topLevelSelector, itemType, navLabel;
-        const tagNameLower = firstLevelContent.tagName.toLowerCase();
-
-        // Determine structure based on top-level element or presence of sections
-        if (tagNameLower === 'chapter') {
-            navLabel = 'Chapter Sections'; topLevelSelector = ':scope > section[id]'; itemType = 'section';
-        } else if (tagNameLower === 'table_of_authorities') {
-            navLabel = 'Table of Authorities Groups'; topLevelSelector = ':scope > authority_group[id]'; itemType = 'authority_group';
-        } else if (chapterContent.querySelector(':scope > section[id]')) {
-            // Fallback if no specific root, but sections exist directly under content
-            navLabel = 'Sections'; topLevelSelector = ':scope > section[id]'; itemType = 'section';
-        } else {
-            console.warn("generateHierarchicalNavigation: No known navigable structure type detected.");
-            return false; // Unknown structure
-        }
-
-        nav.setAttribute('aria-label', navLabel);
-        // Use the specific root element if found, otherwise the main content container
-        const rootElement = (tagNameLower === 'chapter' || tagNameLower === 'table_of_authorities') ? firstLevelContent : chapterContent;
-        const topLevelItems = rootElement.querySelectorAll(topLevelSelector);
-
-        // Check if any top-level items were found
-        if (topLevelItems.length === 0) {
-            console.warn(`generateHierarchicalNavigation: Structure type '${itemType}' identified, but no items matching '${topLevelSelector}' found.`);
-            return false; // Structure type found, but no items
-        }
-
-        // Build the navigation items
-        topLevelItems.forEach(item => buildNavItem(item, itemType, ul, 0));
-
-        // Final check: Only add if items were actually added to the list
-        if (ul.hasChildNodes()) {
-            nav.appendChild(ul);
-            sectionListContainer.appendChild(nav);
-            addSmoothScrollListeners(nav);
-            console.log("Hierarchical navigation generated and added.");
-            return true; // Success - content generated
-        } else {
-            console.warn("generateHierarchicalNavigation: Top-level items found, but none resulted in list items (e.g., missing IDs?).");
-            return false; // Items found, but failed to generate list
-        }
-    }
 
     function buildNavItem(element: Element, type: string, parentUl: HTMLUListElement, level: number): void {
         const id = element.id;
