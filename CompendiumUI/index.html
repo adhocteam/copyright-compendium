@@ -53,10 +53,57 @@
             <section aria-label="Search component" id="search-component-wrapper">
               <div id="autocomplete-search"></div>
             </section>
+            <!-- Translation Controls -->
+            <section aria-label="Translation controls" id="translation-controls-wrapper">
+              <div class="translation-controls">
+                <label for="language-select" class="usa-label translation-label">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
+                  </svg>
+                  Translate
+                </label>
+                <select id="language-select" class="usa-select translation-select" aria-label="Select translation language">
+                  <option value="">English (Original)</option>
+                  <option value="es">Español (Spanish)</option>
+                  <option value="zh">中文 (Chinese)</option>
+                  <option value="fr">Français (French)</option>
+                  <option value="de">Deutsch (German)</option>
+                  <option value="ja">日本語 (Japanese)</option>
+                  <option value="ko">한국어 (Korean)</option>
+                  <option value="ru">Русский (Russian)</option>
+                  <option value="ar">العربية (Arabic)</option>
+                  <option value="pt">Português (Portuguese)</option>
+                  <option value="it">Italiano (Italian)</option>
+                  <option value="hi">हिन्दी (Hindi)</option>
+                  <option value="vi">Tiếng Việt (Vietnamese)</option>
+                </select>
+              </div>
+            </section>
           </nav>
         </div>
       </header>
     </header>
+
+    <!-- Translation Disclaimer Banner -->
+    <div id="translation-disclaimer" class="usa-alert usa-alert--warning usa-alert--slim" role="alert" style="display: none;">
+      <div class="usa-alert__body">
+        <p class="usa-alert__text">
+          <strong>⚠️ Experimental Translation:</strong> This is an automatically translated version and is not official. 
+          The translation may contain inaccuracies or errors. For authoritative information, please refer to the 
+          <a href="#" id="view-original-link" class="usa-link">original English version</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Browser Support Notice -->
+    <div id="translation-unsupported" class="usa-alert usa-alert--info usa-alert--slim" role="alert" style="display: none;">
+      <div class="usa-alert__body">
+        <p class="usa-alert__text">
+          <strong>ℹ️ Translation Unavailable:</strong> Your browser does not support in-browser translation. 
+          Please use a browser with Translation API support (Chrome 120+) or use your browser's built-in translation feature.
+        </p>
+      </div>
+    </div>
 
     <nav class="sidenav" aria-label="Side navigation">
       <div id="section-list">
