@@ -127,7 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Translation elements
 	const languageSelect = document.getElementById('language-select');
 	const translationDisclaimer = document.getElementById('translation-disclaimer');
-	const translationUnsupported = document.getElementById('translation-unsupported');
+	const translationControlsWrapper = document.getElementById('translation-controls-wrapper');
+	const translationInfoLinkWrapper = document.getElementById('translation-info-link-wrapper');
+	const translationInfoLink = document.getElementById('translation-info-link');
+	const translationInfoTooltip = document.getElementById('translation-info-tooltip');
 	const viewOriginalLink = document.getElementById('view-original-link');
 
     // --- Initial Checks ---
@@ -1140,14 +1143,24 @@ autocomplete({
 		const isSupported = await translationService.checkBrowserSupport();
 		
 		if (!isSupported) {
-			// Show unsupported message
-			if (translationUnsupported) {
-				translationUnsupported.style.display = 'block';
+			// Hide translation controls in menu
+			if (translationControlsWrapper) {
+				translationControlsWrapper.style.display = 'none';
 			}
-			// Optionally disable the select
-			if (languageSelect) {
-				languageSelect.disabled = true;
-				languageSelect.title = 'Translation not supported in this browser';
+			
+			// Show translation info link
+			if (translationInfoLinkWrapper) {
+				translationInfoLinkWrapper.style.display = 'flex';
+			}
+		} else {
+			// Show translation controls in menu
+			if (translationControlsWrapper) {
+				translationControlsWrapper.style.display = 'block';
+			}
+			
+			// Hide translation info link
+			if (translationInfoLinkWrapper) {
+				translationInfoLinkWrapper.style.display = 'none';
 			}
 		}
 	}
@@ -1182,8 +1195,8 @@ autocomplete({
 				// Perform translation
 				if (chapterContent) {
 					const success = await translationService.translateContent(chapterContent, selectedLanguage);
-					if (!success && translationUnsupported) {
-						translationUnsupported.style.display = 'block';
+					if (!success) {
+						console.warn('Translation failed');
 					}
 				}
 			}
@@ -1197,6 +1210,36 @@ autocomplete({
 			if (languageSelect) {
 				languageSelect.value = '';
 				languageSelect.dispatchEvent(new Event('change'));
+			}
+		});
+	}
+	
+	// Handle translation info link tooltip
+	if (translationInfoLink && translationInfoTooltip) {
+		// Toggle tooltip on click
+		translationInfoLink.addEventListener('click', (event) => {
+			event.stopPropagation();
+			const isVisible = translationInfoTooltip.style.display !== 'none';
+			translationInfoTooltip.style.display = isVisible ? 'none' : 'block';
+		});
+		
+		// Show tooltip on hover (desktop only)
+		if (window.innerWidth > 640) {
+			translationInfoLink.addEventListener('mouseenter', () => {
+				translationInfoTooltip.style.display = 'block';
+			});
+			
+			translationInfoLink.addEventListener('mouseleave', () => {
+				translationInfoTooltip.style.display = 'none';
+			});
+		}
+		
+		// Close tooltip when clicking outside
+		document.addEventListener('click', (event) => {
+			if (translationInfoTooltip.style.display === 'block' &&
+				!translationInfoLink.contains(event.target) &&
+				!translationInfoTooltip.contains(event.target)) {
+				translationInfoTooltip.style.display = 'none';
 			}
 		});
 	}
