@@ -218,6 +218,36 @@
 	margin: 0.25rem 0;
 }
 
+/* --- Version Display --- */
+.version-display {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #71767a;
+	background-color: #f0f0f0;
+	border-radius: 0.25rem;
+	order: 1;
+}
+
+.usa-navbar {
+	display: flex;
+	align-items: center;
+}
+
+.usa-menu-btn {
+	order: 2;
+}
+
+@media (max-width: 64em) {
+	.version-display {
+		display: none;
+	}
+}
+
+
 /* Responsive adjustments for translation controls */
 @media (max-width: 64em) {
 	#translation-controls-wrapper {
