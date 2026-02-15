@@ -55,11 +55,15 @@ The Compendium viewer now includes experimental browser-based translation suppor
 - Edge Canary (with experimental flags enabled)
 - More browsers coming in 2024-2025
 
+## Quality Assurance
+
+An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. See [QA.md](QA.md) and [tests/README.md](tests/README.md) for details.
+
 ## Future Work
 
 The current version of the Copyright Compendium web display is a proof of concept. There are several areas for improvement and additional features that could be implemented:
 
-1. Check accuracy of conversion to XML, ensuring no text was lost during the transformation process.
+1. ~~Check accuracy of conversion to XML, ensuring no text was lost during the transformation process.~~ → Automated QA engine implemented in `tests/`
 2. Correct structural issues in the xhtml files, for example, the hierarchy of chapter 800 has subsections that are not properly nested; this results in missing subsections from the side-nav.
 2. Develop server to navigate between chapters.
 3. Add links or popovers for glossary terms (which are already linked in the PDFs).

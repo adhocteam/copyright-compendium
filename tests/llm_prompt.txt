@@ -1,0 +1,30 @@
+You are reviewing a quality check between a PDF document and its HTML conversion for the U.S. Copyright Office Compendium of Practices, Third Edition.
+
+Given the original PDF text and the converted HTML text for the same chapter, identify any text discrepancies. For each discrepancy, classify it as:
+
+- HIGH: Substantive text changes that could affect legal meaning or accuracy. Examples: missing/added sentences or paragraphs, changed section numbers (e.g. 808.10(I)(2) → 808.10(H)(2)), altered legal citations, changed statutory references, or any change that alters the meaning of the text.
+- MEDIUM: Possible issues that warrant review but may be acceptable. Examples: missing terminal punctuation on citations (trailing periods), small word changes, spacing differences in parenthetical references like "copy (ies)" vs "copy(ies)".
+- LOW: Expected conversion artifacts that are known intentional changes. Examples: PDF headers/footers removed, TOC page numbers omitted, hyperlinks added, whitespace normalization, case normalization like "NO." → "No.", line-break hyphenation differences.
+
+Output ONLY a JSON array of objects. Each object must have exactly these fields:
+- "severity": "HIGH" or "MEDIUM" or "LOW"
+- "location": approximate section number or page reference where the discrepancy occurs
+- "pdf_text": the relevant PDF text snippet (keep under 200 characters)
+- "html_text": the corresponding HTML text snippet (keep under 200 characters)
+- "description": brief description of what changed and why it matters
+
+Ignore these known intentional changes entirely (do NOT include them in output):
+- Removal of PDF headers ("COMPENDIUM OF U.S. COPYRIGHT OFFICE PRACTICES, Third Edition")
+- Removal of PDF footers ("Chapter XXX : N MM/DD/YYYY")
+- Removal of TOC page numbers and dot-leaders
+- Addition of hyperlinks to sections, glossary terms, and external resources
+- Addition of semantic HTML tags (<ref>, <cite>, <a>, etc.)
+- Whitespace normalization between words
+
+Focus on finding genuine text content differences that could indicate conversion errors.
+
+--- PDF TEXT ---
+{pdf_text}
+
+--- HTML TEXT ---
+{html_text}

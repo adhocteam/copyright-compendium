@@ -1,5 +1,23 @@
 ## Quality Assurance
 
+### Automated Content Checking
+
+An automated QA engine in [`tests/`](tests/README.md) compares HTML content against the original PDF text. It supports both algorithmic (character-level diff) and LLM-based (Gemini API) checks, with severity classification (HIGH/MEDIUM/LOW).
+
+```bash
+# Install and run
+pip install -r tests/requirements.txt
+python -m tests.run_qa --algo --chapters ch200 --format console
+```
+
+See [`tests/README.md`](tests/README.md) for full documentation.
+
+A [GitHub Actions workflow](.github/workflows/qa-content-check.yml) runs these checks automatically on merges to `main` that affect HTML source files.
+
+---
+
+### Manual LLM Review
+
 It is necessary to compare the output html with the original pdf to determine any discrepancies in text. A review using the same LLM identified very small, expected discrepancies (e.g. headings and footers that were intentionally removed), and noted some small spacing issues. Overall, this review indicates that the conversion was very accurate.
 
 Prompt:

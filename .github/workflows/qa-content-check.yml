@@ -1,0 +1,98 @@
+name: QA Content Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'CompendiumUI/public/**-src.html'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      chapters:
+        description: 'Chapters to check (space-separated, e.g. "ch200 ch800"). Leave empty for auto-detect.'
+        required: false
+        default: ''
+
+jobs:
+  content-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Need parent commit to detect changes
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r tests/requirements.txt
+
+      - name: Detect changed chapters
+        id: detect
+        run: |
+          if [ -n "${{ github.event.inputs.chapters }}" ]; then
+            echo "chapters=${{ github.event.inputs.chapters }}" >> $GITHUB_OUTPUT
+            echo "Using manually specified chapters: ${{ github.event.inputs.chapters }}"
+          else
+            CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'CompendiumUI/public/*-src.html' || true)
+            if [ -z "$CHANGED" ]; then
+              echo "No chapter HTML files changed."
+              echo "chapters=" >> $GITHUB_OUTPUT
+            else
+              echo "Changed files:"
+              echo "$CHANGED"
+              echo "changed_files<<EOF" >> $GITHUB_OUTPUT
+              echo "$CHANGED" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Run algorithmic QA check
+        if: steps.detect.outputs.chapters != '' || steps.detect.outputs.changed_files != ''
+        run: |
+          ARGS="--algo --format all --output-dir tests/reports"
+
+          if [ -n "${{ steps.detect.outputs.chapters }}" ]; then
+            ARGS="$ARGS --chapters ${{ steps.detect.outputs.chapters }}"
+          elif [ -n "${{ steps.detect.outputs.changed_files }}" ]; then
+            FILES=$(echo '${{ steps.detect.outputs.changed_files }}' | tr '\n' ' ')
+            ARGS="$ARGS --changed-files $FILES"
+          fi
+
+          python -m tests.run_qa $ARGS || true
+
+      - name: Run LLM QA check
+        if: (steps.detect.outputs.chapters != '' || steps.detect.outputs.changed_files != '') && env.GOOGLE_API_KEY != ''
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          ARGS="--llm --format all --output-dir tests/reports"
+
+          if [ -n "${{ steps.detect.outputs.chapters }}" ]; then
+            ARGS="$ARGS --chapters ${{ steps.detect.outputs.chapters }}"
+          elif [ -n "${{ steps.detect.outputs.changed_files }}" ]; then
+            FILES=$(echo '${{ steps.detect.outputs.changed_files }}' | tr '\n' ' ')
+            ARGS="$ARGS --changed-files $FILES"
+          fi
+
+          python -m tests.run_qa $ARGS || true
+
+      - name: Upload QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-reports
+          path: tests/reports/
+          if-no-files-found: ignore
+
+      - name: Post summary
+        if: always() && hashFiles('tests/reports/qa_report.md') != ''
+        run: |
+          echo "## QA Content Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat tests/reports/qa_report.md >> $GITHUB_STEP_SUMMARY
