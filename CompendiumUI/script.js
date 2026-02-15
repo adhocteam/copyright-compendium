@@ -376,8 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const span = document.createElement('span');
                 span.textContent = letter;
                 span.className = 'glossary-disabled';
-                span.style.color = 'grey'; // Basic disabled style
-                span.setAttribute('aria-hidden', 'true'); // Hide from screen readers
+                span.setAttribute('aria-label', `Letter ${letter} - No glossary terms available`);
                 li.appendChild(span);
             }
             ul.appendChild(li);
