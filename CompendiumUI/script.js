@@ -796,6 +796,32 @@ document.addEventListener('DOMContentLoaded', () => {
             chapterListDropdown.appendChild(listItem);
 		});
         console.log(`✅ Finished population. Added ${chapters.length} items to #${chapterListDropdown.id}.`);
+		
+		// Add accordion toggle functionality for the Chapters button
+		// This is needed because USWDS JS may not load in some environments
+		const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
+		if (chaptersAccordionButton) {
+			chaptersAccordionButton.addEventListener('click', (e) => {
+				e.preventDefault();
+				const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
+				
+				if (isExpanded) {
+					// Collapse the menu
+					chaptersAccordionButton.setAttribute('aria-expanded', 'false');
+					chapterListDropdown.setAttribute('hidden', '');
+					chapterListDropdown.setAttribute('aria-hidden', 'true');
+				} else {
+					// Expand the menu
+					chaptersAccordionButton.setAttribute('aria-expanded', 'true');
+					chapterListDropdown.removeAttribute('hidden');
+					chapterListDropdown.setAttribute('aria-hidden', 'false');
+				}
+				console.log(`Chapters menu toggled. Now ${isExpanded ? 'collapsed' : 'expanded'}.`);
+			});
+			console.log('✅ Chapters accordion toggle listener attached.');
+		} else {
+			console.warn('Could not find accordion button for chapters menu.');
+		}
 	} else {
 		// Error already logged at the top
 	}
@@ -991,6 +1017,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	console.log("Running initial load sequence...");
 	handleInitialLoad(); // This triggers the first loadContent
     console.log("Initialization complete (event listeners attached, initial load started).");
+
 // --- Configuration ---
 // Replace with your actual Algolia credentials
 const ALGOLIA_APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID;
