@@ -244,6 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- State Variables ---
     let highlightMarkInstance: MarkInstance;
     let currentFilename: string | null = null;
+    // Persist chapter toggle (expanded/collapsed) state across navigation rebuilds
+    const chapterToggleState = new Map<string, boolean>(); // filename -> isExpanded
 
     // --- Functions ---
 
@@ -511,81 +513,78 @@ document.addEventListener('DOMContentLoaded', () => {
         ul.className = 'usa-sidenav';
 
         chapters.forEach(chapter => {
+            const isActive = chapter.filename === currentFilename;
             const li = document.createElement('li');
             li.className = 'usa-sidenav__item';
 
             const a = document.createElement('a');
             a.href = `/${chapter.filename}`;
-            a.innerHTML = `${chapter.number ? chapter.number + ' ' : ''}${chapter.title}`; // Using innerHTML to allow styling logic if needed, but textContent is safer. sticking to textContent-ish logic.
-            // Actually, keep it simple.
             a.textContent = `${chapter.number ? chapter.number + ' ' : ''}${chapter.title}`;
 
-            if (chapter.filename === currentFilename) {
+            if (isActive) {
                 a.classList.add('usa-current');
                 li.classList.add('usa-current');
                 a.setAttribute('aria-current', 'page');
             }
 
-            // If this is the active chapter, generate its specific content (sections)
-            if (chapter.filename === currentFilename) {
-                let subUl: HTMLUListElement | null = null;
-                let hasSubItems = false;
+            // Build sublist for active chapter (sections), empty for others
+            const subUl = document.createElement('ul');
+            subUl.className = 'usa-sidenav__sublist';
 
+            if (isActive) {
                 if (currentFilename === 'glossary.html') {
-                    // Glossary specific logic
-                    subUl = document.createElement('ul');
-                    subUl.className = 'usa-sidenav__sublist';
-                    hasSubItems = generateGlossaryItems(subUl);
+                    generateGlossaryItems(subUl);
                 } else {
-                    // Standard Hierarchical logic
-                    subUl = document.createElement('ul');
-                    subUl.className = 'usa-sidenav__sublist';
-                    hasSubItems = generateHierarchicalItems(subUl);
+                    generateHierarchicalItems(subUl);
                 }
-
-                if (hasSubItems && subUl) {
-                    // Wrap link + toggle in a flex container
-                    const innerDiv = document.createElement('div');
-                    innerDiv.className = 'usa-sidenav__item-inner';
-                    innerDiv.style.display = 'flex';
-                    innerDiv.style.alignItems = 'center';
-                    innerDiv.style.justifyContent = 'space-between';
-
-                    a.style.flex = '1';
-                    innerDiv.appendChild(a);
-
-                    // Add toggle button
-                    const toggleBtn = document.createElement('button');
-                    toggleBtn.className = 'usa-sidenav__toggle'; // starts expanded
-                    toggleBtn.setAttribute('aria-expanded', 'true');
-                    toggleBtn.setAttribute('aria-label', `Toggle ${chapter.title}`);
-                    toggleBtn.innerHTML = `
-                        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
-                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
-                        </svg>
-                    `;
-                    toggleBtn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        toggleSidenavItem(toggleBtn);
-                    });
-                    innerDiv.appendChild(toggleBtn);
-
-                    li.appendChild(innerDiv);
-                    // Sublist starts expanded for active chapter
-                    li.appendChild(subUl);
-                } else {
-                    li.appendChild(a);
-                }
-            } else {
-                li.appendChild(a);
             }
+
+            // Determine toggle state: use saved state, or default (active=expanded, others=collapsed)
+            const savedState = chapterToggleState.get(chapter.filename);
+            const isExpanded = savedState !== undefined ? savedState : isActive;
+
+            // Wrap link + toggle in a flex container
+            const innerDiv = document.createElement('div');
+            innerDiv.className = 'usa-sidenav__item-inner';
+
+            a.style.flex = '1';
+            innerDiv.appendChild(a);
+
+            // Add toggle button to every chapter
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = isExpanded ? 'usa-sidenav__toggle' : 'usa-sidenav__toggle is-collapsed';
+            toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+            toggleBtn.setAttribute('aria-label', `Toggle ${chapter.title}`);
+            toggleBtn.innerHTML = `
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
+                </svg>
+            `;
+            toggleBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleSidenavItem(toggleBtn);
+                // Persist state
+                const nowExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                chapterToggleState.set(chapter.filename, nowExpanded);
+            });
+            innerDiv.appendChild(toggleBtn);
+
+            li.appendChild(innerDiv);
+
+            // Apply hidden state to sublist
+            if (!isExpanded) {
+                subUl.setAttribute('hidden', '');
+            }
+            li.appendChild(subUl);
 
             // Add click listener for navigation
             a.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (chapter.filename !== currentFilename) {
+                    // When navigating to a new chapter, set it to expanded
+                    chapterToggleState.set(chapter.filename, true);
                     loadContent(chapter.filename, { updateHistory: true, isInitialLoad: false });
                 } else {
                     chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
