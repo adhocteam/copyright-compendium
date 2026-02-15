@@ -34,6 +34,27 @@ python process_pdfs_gemini.py --directory my_pdfs
 # Process PDFs in 'my_pdfs', save output to a different 'output_html' directory
 python process_pdfs_gemini.py --directory my_pdfs --output-dir output_html
 ```
+## Features
+
+### Translation (Experimental)
+
+The Compendium viewer now includes experimental browser-based translation support for 12 languages. This feature uses the emerging Translation API for privacy-preserving, on-device translation.
+
+**📖 See [TRANSLATION_FEATURE_README.md](TRANSLATION_FEATURE_README.md) for user documentation**
+
+**🔧 See [TRANSLATION_IMPLEMENTATION.md](TRANSLATION_IMPLEMENTATION.md) for technical documentation**
+
+**Key highlights:**
+- On-device translation (no data sent to servers)
+- 12 supported languages (Spanish, Chinese, French, German, Japanese, Korean, Russian, Arabic, Portuguese, Italian, Hindi, Vietnamese)
+- Clear disclaimers about non-official translations
+- Graceful fallback for unsupported browsers
+
+**Browser Requirements:**
+- Chrome 120+ (with experimental flags enabled)
+- Edge Canary (with experimental flags enabled)
+- More browsers coming in 2024-2025
+
 ## Future Work
 
 The current version of the Copyright Compendium web display is a proof of concept. There are several areas for improvement and additional features that could be implemented:
