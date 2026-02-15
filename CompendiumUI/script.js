@@ -900,6 +900,10 @@ const searchClient = algoliasearchLite.liteClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH
 autocomplete({
   container: '#autocomplete-search', // CSS selector for your container div
   placeholder: 'Search sections...', // Placeholder text for the input
+  autoFocus: false, // Don't auto-focus on page load
+  inputAttributes: {
+    'aria-label': 'Search the Copyright Compendium sections',
+  },
   // openOnFocus: true, // Uncomment to show suggestions immediately on focus
 
   // --- Define How to Get Suggestions ---
