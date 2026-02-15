@@ -801,24 +801,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		// This is needed because USWDS JS may not load in some environments
 		const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
 		if (chaptersAccordionButton) {
-			chaptersAccordionButton.addEventListener('click', (e) => {
-				e.preventDefault();
+			chaptersAccordionButton.addEventListener('click', () => {
 				const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
 				
 				if (isExpanded) {
 					// Collapse the menu
 					chaptersAccordionButton.setAttribute('aria-expanded', 'false');
 					chapterListDropdown.setAttribute('hidden', '');
-					chapterListDropdown.setAttribute('aria-hidden', 'true');
 				} else {
 					// Expand the menu
 					chaptersAccordionButton.setAttribute('aria-expanded', 'true');
 					chapterListDropdown.removeAttribute('hidden');
-					chapterListDropdown.setAttribute('aria-hidden', 'false');
 				}
-				console.log(`Chapters menu toggled. Now ${isExpanded ? 'collapsed' : 'expanded'}.`);
 			});
-			console.log('✅ Chapters accordion toggle listener attached.');
 		} else {
 			console.warn('Could not find accordion button for chapters menu.');
 		}
