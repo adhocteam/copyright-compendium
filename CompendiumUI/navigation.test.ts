@@ -429,5 +429,82 @@ describe('DOM Navigation Utilities', () => {
       expect(() => toggleSidenavItem(btn)).not.toThrow();
       expect(btn.getAttribute('aria-expanded')).toBe('true');
     });
+
+    // --- Regression tests: conditional toggle presence ---
+
+    it('should NOT have a toggle button on items without children', () => {
+      // Simulate chapter item with no sub-content (e.g., "About This Site")
+      const li = document.createElement('li');
+      li.className = 'usa-sidenav__item';
+
+      const a = document.createElement('a');
+      a.href = '/about.html';
+      a.textContent = 'About This Site';
+
+      // No sub-items: append link directly (no wrapper div, no toggle)
+      li.appendChild(a);
+      testContainer.appendChild(li);
+
+      const toggleBtn = li.querySelector('.usa-sidenav__toggle');
+      expect(toggleBtn).toBeNull();
+
+      const innerDiv = li.querySelector('.usa-sidenav__item-inner');
+      expect(innerDiv).toBeNull();
+
+      // The link should be a direct child of the li
+      expect(li.firstElementChild).toBe(a);
+    });
+
+    it('should have a toggle button on items WITH children', () => {
+      const { li, toggleBtn, subList } = createToggleItem('100 General Background');
+      testContainer.appendChild(li);
+
+      // Toggle button should exist
+      expect(toggleBtn).not.toBeNull();
+      expect(toggleBtn.classList.contains('usa-sidenav__toggle')).toBe(true);
+
+      // Wrapper div should exist
+      const innerDiv = li.querySelector('.usa-sidenav__item-inner');
+      expect(innerDiv).not.toBeNull();
+
+      // Sublist should exist
+      expect(subList).not.toBeNull();
+      expect(subList.className).toBe('usa-sidenav__sublist');
+      expect(subList.hasChildNodes()).toBe(true);
+    });
+
+    it('items without children should be plain links in the li', () => {
+      // Build two items: one with children, one without
+      const nav = document.createElement('ul');
+      nav.className = 'usa-sidenav';
+
+      // Item WITH children
+      const { li: liWith } = createToggleItem('Chapter 100');
+      nav.appendChild(liWith);
+
+      // Item WITHOUT children (plain link)
+      const liWithout = document.createElement('li');
+      liWithout.className = 'usa-sidenav__item';
+      const plainLink = document.createElement('a');
+      plainLink.href = '/introduction.html';
+      plainLink.textContent = 'Introduction';
+      liWithout.appendChild(plainLink);
+      nav.appendChild(liWithout);
+
+      testContainer.appendChild(nav);
+
+      // Item with children has toggle
+      expect(liWith.querySelector('.usa-sidenav__toggle')).not.toBeNull();
+      expect(liWith.querySelector('.usa-sidenav__sublist')).not.toBeNull();
+
+      // Item without children has no toggle, no sublist
+      expect(liWithout.querySelector('.usa-sidenav__toggle')).toBeNull();
+      expect(liWithout.querySelector('.usa-sidenav__sublist')).toBeNull();
+      expect(liWithout.querySelector('.usa-sidenav__item-inner')).toBeNull();
+
+      // Plain link is direct child
+      expect(liWithout.firstElementChild?.tagName).toBe('A');
+      expect(liWithout.firstElementChild?.textContent).toBe('Introduction');
+    });
   });
 });

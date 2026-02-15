@@ -539,45 +539,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Determine toggle state: use saved state, or default (active=expanded, others=collapsed)
-            const savedState = chapterToggleState.get(chapter.filename);
-            const isExpanded = savedState !== undefined ? savedState : isActive;
+            const hasSubItems = subUl.hasChildNodes();
 
-            // Wrap link + toggle in a flex container
-            const innerDiv = document.createElement('div');
-            innerDiv.className = 'usa-sidenav__item-inner';
+            if (hasSubItems) {
+                // Determine toggle state: use saved state, or default (active=expanded, others=collapsed)
+                const savedState = chapterToggleState.get(chapter.filename);
+                const isExpanded = savedState !== undefined ? savedState : isActive;
 
-            a.style.flex = '1';
-            innerDiv.appendChild(a);
+                // Wrap link + toggle in a flex container
+                const innerDiv = document.createElement('div');
+                innerDiv.className = 'usa-sidenav__item-inner';
 
-            // Add toggle button to every chapter
-            const toggleBtn = document.createElement('button');
-            toggleBtn.className = isExpanded ? 'usa-sidenav__toggle' : 'usa-sidenav__toggle is-collapsed';
-            toggleBtn.setAttribute('aria-expanded', String(isExpanded));
-            toggleBtn.setAttribute('aria-label', `Toggle ${chapter.title}`);
-            toggleBtn.innerHTML = `
-                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
-                </svg>
-            `;
-            toggleBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                toggleSidenavItem(toggleBtn);
-                // Persist state
-                const nowExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-                chapterToggleState.set(chapter.filename, nowExpanded);
-            });
-            innerDiv.appendChild(toggleBtn);
+                a.style.flex = '1';
+                innerDiv.appendChild(a);
 
-            li.appendChild(innerDiv);
+                // Add toggle button only when sub-items exist
+                const toggleBtn = document.createElement('button');
+                toggleBtn.className = isExpanded ? 'usa-sidenav__toggle' : 'usa-sidenav__toggle is-collapsed';
+                toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+                toggleBtn.setAttribute('aria-label', `Toggle ${chapter.title}`);
+                toggleBtn.innerHTML = `
+                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
+                    </svg>
+                `;
+                toggleBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleSidenavItem(toggleBtn);
+                    // Persist state
+                    const nowExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                    chapterToggleState.set(chapter.filename, nowExpanded);
+                });
+                innerDiv.appendChild(toggleBtn);
 
-            // Apply hidden state to sublist
-            if (!isExpanded) {
-                subUl.setAttribute('hidden', '');
+                li.appendChild(innerDiv);
+
+                // Apply hidden state to sublist
+                if (!isExpanded) {
+                    subUl.setAttribute('hidden', '');
+                }
+                li.appendChild(subUl);
+            } else {
+                // No sub-items: simple link without toggle
+                li.appendChild(a);
             }
-            li.appendChild(subUl);
 
             // Add click listener for navigation
             a.addEventListener('click', (e) => {
