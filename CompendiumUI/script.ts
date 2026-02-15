@@ -3,178 +3,216 @@ import * as algoliasearchLite from 'algoliasearch/lite';
 import { autocomplete } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
 
+import { chapters } from './chapters';
+
 // --- Type Definitions ---
-interface Chapter {
-	number: string;
-	title: string;
-	filename: string;
+interface MarkOptions {
+    element?: string;
+    className?: string;
+    separateWordSearch?: boolean;
+    accuracy?: string;
+    ignoreJoiners?: boolean;
+    exclude?: string[];
+    done?: (counter: number) => void;
+    filter?: (textNode: Text, term: string, marks: number, counter: number) => boolean;
+    each?: (element: Element) => void;
+    debug?: boolean;
+    log?: object;
+}
+
+interface MarkInstance {
+    mark(keyword: string | string[], options?: MarkOptions): void;
+    unmark(options?: { element?: string; className?: string; done?: () => void }): void;
+}
+
+declare const Mark: {
+    new(context: string | HTMLElement | NodeList | HTMLElement[]): MarkInstance;
+};
+
+// Algolia Types
+interface AlgoliaResult {
+    hits: AlgoliaItem[];
+}
+
+interface AlgoliaItem {
+    objectID: string;
+    title: string;
+    content: string;
+    url?: string;
+    sectionTitle?: string;
+    [key: string]: any;
+    _snippetResult?: {
+        content?: {
+            value: string;
+        };
+    };
 }
 
 interface LoadContentOptions {
-	updateHistory?: boolean;
-	isInitialLoad?: boolean;
-	targetHash?: string | null;
-	forceReload?: boolean;
+    updateHistory?: boolean;
+    isInitialLoad?: boolean;
+    targetHash?: string | null;
+    forceReload?: boolean;
 }
 
 interface GlossaryData {
-	[termId: string]: string;
+    [termId: string]: string;
 }
 
 // Translation API types (experimental browser API)
 interface TranslationAPI {
-	canTranslate(options: { sourceLanguage: string; targetLanguage: string }): Promise<string>;
-	createTranslator(options: { sourceLanguage: string; targetLanguage: string }): Promise<Translator>;
+    canTranslate(options: { sourceLanguage: string; targetLanguage: string }): Promise<string>;
+    createTranslator(options: { sourceLanguage: string; targetLanguage: string }): Promise<Translator>;
 }
 
 interface Translator {
-	translate(text: string): Promise<string>;
+    translate(text: string): Promise<string>;
 }
 
 declare global {
-	interface WindowOrWorkerGlobalScope {
-		translation?: TranslationAPI;
-	}
-	
-	interface Window {
-		MyAppGlossary?: {
-			refreshTooltips?: () => void;
-		};
-	}
+    interface WindowOrWorkerGlobalScope {
+        translation?: TranslationAPI;
+    }
+
+    interface Window {
+        MyAppGlossary?: {
+            refreshTooltips?: () => void;
+        };
+    }
 }
 
 // --- Translation Service ---
 class TranslationService {
-	private currentLanguage: string;
-	private translator: Translator | null;
-	private canTranslate: boolean;
+    private currentLanguage: string;
+    private translator: Translator | null;
+    private canTranslate: boolean;
 
-	constructor() {
-		this.currentLanguage = '';
-		this.translator = null;
-		this.canTranslate = false;
-		this.checkBrowserSupport();
-	}
+    constructor() {
+        this.currentLanguage = '';
+        this.translator = null;
+        this.canTranslate = false;
+        this.checkBrowserSupport();
+    }
 
-	async checkBrowserSupport(): Promise<boolean> {
-		// Check for Translation API support
-		// The Translation API is currently experimental in Chrome 120+
-		if ('translation' in self && self.translation && 'createTranslator' in self.translation) {
-			try {
-				// Check if we can create a translator
-				const canTranslate = await self.translation.canTranslate({
-					sourceLanguage: 'en',
-					targetLanguage: 'es'
-				});
-				this.canTranslate = canTranslate === 'readily' || canTranslate === 'after-download';
-				console.log('Translation API available:', this.canTranslate);
-			} catch (error) {
-				console.warn('Translation API check failed:', error);
-				this.canTranslate = false;
-			}
-		} else {
-			console.warn('Translation API not supported in this browser');
-			this.canTranslate = false;
-		}
-		return this.canTranslate;
-	}
+    async checkBrowserSupport(): Promise<boolean> {
+        // Check for Translation API support
+        // The Translation API is currently experimental in Chrome 120+
+        if ('translation' in self && self.translation && 'createTranslator' in self.translation) {
+            try {
+                // Check if we can create a translator
+                const canTranslate = await self.translation.canTranslate({
+                    sourceLanguage: 'en',
+                    targetLanguage: 'es'
+                });
+                this.canTranslate = canTranslate === 'readily' || canTranslate === 'after-download';
+                console.log('Translation API available:', this.canTranslate);
+            } catch (error) {
+                console.warn('Translation API check failed:', error);
+                this.canTranslate = false;
+            }
+        } else {
+            console.warn('Translation API not supported in this browser');
+            this.canTranslate = false;
+        }
+        return this.canTranslate;
+    }
 
-	async translateContent(element: HTMLElement, targetLanguage: string): Promise<boolean> {
-		if (!this.canTranslate) {
-			console.warn('Translation not available');
-			return false;
-		}
+    async translateContent(element: HTMLElement, targetLanguage: string): Promise<boolean> {
+        if (!this.canTranslate) {
+            console.warn('Translation not available');
+            return false;
+        }
 
-		if (!targetLanguage || targetLanguage === '') {
-			// Reset to original
-			this.currentLanguage = '';
-			return true;
-		}
+        if (!targetLanguage || targetLanguage === '') {
+            // Reset to original
+            this.currentLanguage = '';
+            return true;
+        }
 
-		try {
-			// Create translator if needed
-			if (!this.translator || this.currentLanguage !== targetLanguage) {
-				if (!self.translation) return false;
-				this.translator = await self.translation.createTranslator({
-					sourceLanguage: 'en',
-					targetLanguage: targetLanguage
-				});
-				this.currentLanguage = targetLanguage;
-			}
+        try {
+            // Create translator if needed
+            if (!this.translator || this.currentLanguage !== targetLanguage) {
+                if (!self.translation) return false;
+                this.translator = await self.translation.createTranslator({
+                    sourceLanguage: 'en',
+                    targetLanguage: targetLanguage
+                });
+                this.currentLanguage = targetLanguage;
+            }
 
-			// Translate text nodes in the element
-			await this.translateElement(element);
-			return true;
-		} catch (error) {
-			console.error('Translation failed:', error);
-			return false;
-		}
-	}
+            // Translate text nodes in the element
+            await this.translateElement(element);
+            return true;
+        } catch (error) {
+            console.error('Translation failed:', error);
+            return false;
+        }
+    }
 
-	async translateElement(element: HTMLElement): Promise<void> {
-		// Walk through text nodes and translate them
-		const walker = document.createTreeWalker(
-			element,
-			NodeFilter.SHOW_TEXT,
-			{
-				acceptNode: (node) => {
-					// Skip empty text nodes and nodes in script/style tags
-					if (!node.textContent || !node.textContent.trim()) return NodeFilter.FILTER_REJECT;
-					const parent = node.parentElement;
-					if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
-						return NodeFilter.FILTER_REJECT;
-					}
-					return NodeFilter.FILTER_ACCEPT;
-				}
-			}
-		);
+    async translateElement(element: HTMLElement): Promise<void> {
+        // Walk through text nodes and translate them
+        const walker = document.createTreeWalker(
+            element,
+            NodeFilter.SHOW_TEXT,
+            {
+                acceptNode: (node) => {
+                    // Skip empty text nodes and nodes in script/style tags
+                    if (!node.textContent || !node.textContent.trim()) return NodeFilter.FILTER_REJECT;
+                    const parent = node.parentElement;
+                    if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                    return NodeFilter.FILTER_ACCEPT;
+                }
+            }
+        );
 
-		const textNodes = [];
-		let node;
-		while (node = walker.nextNode()) {
-			textNodes.push(node);
-		}
+        const textNodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+            textNodes.push(node);
+        }
 
-		// Translate each text node
-		for (const textNode of textNodes) {
-			try {
-				if (!this.translator || !textNode.textContent) continue;
-				const translatedText = await this.translator.translate(textNode.textContent);
-				textNode.textContent = translatedText;
-			} catch (error) {
-				console.warn('Failed to translate text node:', error);
-			}
-		}
-	}
+        // Translate each text node
+        for (const textNode of textNodes) {
+            try {
+                if (!this.translator || !textNode.textContent) continue;
+                const translatedText = await this.translator.translate(textNode.textContent);
+                textNode.textContent = translatedText;
+            } catch (error) {
+                console.warn('Failed to translate text node:', error);
+            }
+        }
+    }
 
-	isSupported(): boolean {
-		return this.canTranslate;
-	}
+    isSupported(): boolean {
+        return this.canTranslate;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// --- Element Selection ---
-	const chapterContent = document.getElementById('chapter-content');
-	const sectionListContainer = document.getElementById('section-list');
+    // --- Element Selection ---
+    const chapterContent = document.getElementById('chapter-content');
+    const sectionListContainer = document.getElementById('section-list');
     const sideNavElement = document.querySelector('.sidenav'); // Select the outer nav element
-	const headerSearchForm = document.querySelector('.usa-header .usa-search');
-	const headerSearchInput = document.getElementById('search-field');
-	const chapterListDropdown = document.querySelector('#basic-nav-section-one');
-	const uswdsMenuButton = document.querySelector('.usa-header .usa-menu-btn');
-	const uswdsNavCloseButton = document.querySelector('.usa-header .usa-nav__close');
-	const uswdsOverlay = document.querySelector('.usa-overlay');
-	const uswdsNav = document.querySelector('.usa-header .usa-nav');
-	const homeLink = document.querySelector('.usa-logo a');
-	
-	// Translation elements
-	const languageSelect = document.getElementById('language-select');
-	const translationDisclaimer = document.getElementById('translation-disclaimer');
-	const translationControlsWrapper = document.getElementById('translation-controls-wrapper');
-	const translationInfoLinkWrapper = document.getElementById('translation-info-link-wrapper');
-	const translationInfoLink = document.getElementById('translation-info-link');
-	const translationInfoTooltip = document.getElementById('translation-info-tooltip');
-	const viewOriginalLink = document.getElementById('view-original-link');
+    const headerSearchForm = document.querySelector('.usa-header .usa-search');
+    const headerSearchInput = document.getElementById('search-field');
+    const chapterListDropdown = document.querySelector('#basic-nav-section-one');
+    const uswdsMenuButton = document.querySelector('.usa-header .usa-menu-btn');
+    const uswdsNavCloseButton = document.querySelector('.usa-header .usa-nav__close');
+    const uswdsOverlay = document.querySelector('.usa-overlay');
+    const uswdsNav = document.querySelector('.usa-header .usa-nav');
+    const homeLink = document.querySelector('.usa-logo a');
+
+    // Translation elements
+    const languageSelect = document.getElementById('language-select');
+    const translationDisclaimer = document.getElementById('translation-disclaimer');
+    const translationControlsWrapper = document.getElementById('translation-controls-wrapper');
+    const translationInfoLinkWrapper = document.getElementById('translation-info-link-wrapper');
+    const translationInfoLink = document.getElementById('translation-info-link');
+    const translationInfoTooltip = document.getElementById('translation-info-tooltip');
+    const viewOriginalLink = document.getElementById('view-original-link');
 
     // --- Initial Checks ---
     // Check for elements critical for basic functionality
@@ -187,54 +225,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!sideNavElement) console.warn("WARN: .sidenav element not found. Sidenav hiding/showing might not work.");
 
 
-	// --- Data ---
-	const chapters: Chapter[] = [
-        { number: "", title: "About This Site", filename: "about.html" },
-        { number: "", title: "Introduction: Intro to the Compendium", filename: "introduction.html" },
-	    { number: "100", title: "U.S. Copyright Office and the Copyright Law: General Background", filename: "ch100-general-background.html" },
-	    { number: "200", title: "Overview of the Registration Process", filename: "ch200-registration-process.html" },
-	    { number: "300", title: "Copyrightable Authorship: What Can Be Registered", filename: "ch300-copyrightable-authorship.html" },
-	    { number: "400", title: "Who May File an Application", filename: "ch400-application.html" },
-	    { number: "500", title: "Identifying the Work(s) Covered by a Registration", filename: "ch500-identifying-works.html" },
-	    { number: "600", title: "Examination Practices", filename: "ch600-examination-practices.html" },
-	    { number: "700", title: "Literary Works", filename: "ch700-literary-works.html" },
-	    { number: "800", title: "Works of the Performing Arts", filename: "ch800-performing-arts.html" },
-	    { number: "900", title: "Visual Art Works", filename: "ch900-visual-art.html" },
-	    { number: "1000", title: "Websites and Website Content", filename: "ch1000-websites.html" },
-	    { number: "1100", title: "Registration for Multiple Works", filename: "ch1100-registration-multiple-works.html" },
-	    { number: "1200", title: "Mask Works", filename: "ch1200-mask-works.html" },
-	    { number: "1300", title: "Vessel Designs", filename: "ch1300-vessel-designs.html" },
-	    { number: "1400", title: "Applications and Filing Fees", filename: "ch1400-applications-filing-fees.html" },
-	    { number: "1500", title: "Deposits", filename: "ch1500-deposits.html" },
-	    { number: "1600", title: "Preregistration", filename: "ch1600-preregistration.html" },
-	    { number: "1700", title: "Administrative Appeals", filename: "ch1700-administrative-appeals.html" },
-	    { number: "1800", title: "Post-Registration Procedures", filename: "ch1800-post-registration.html" },
-	    { number: "1900", title: "Publication", filename: "ch1900-publication.html" },
-	    { number: "2000", title: "Foreign Works: Eligibility and GATT Registration", filename: "ch2000-foreign-works.html" },
-	    { number: "2100", title: "Renewal Registration", filename: "ch2100-renewal-registration.html" },
-	    { number: "2200", title: "Notice of Copyright", filename: "ch2200-notice.html" },
-	    { number: "2300", title: "Recordation", filename: "ch2300-recordation.html" },
-	    { number: "2400", title: "U.S. Copyright Office Services", filename: "ch2400-office-services.html" },
-	    { number: "", title: "⚠️ Experimental: Registration Guide", filename: "experimental-registration-guide.html" },
-	    { number: "", title: "Glossary", filename: "glossary.html" },
-	    { number: "", title: "Table of Authorities", filename: "table-of-authorities.html" },
-	    { number: "", title: "Revision History", filename: "revision-history.html" }
-	];
+    // --- Data ---
+    // --- Data ---
+    // imported from chapters.ts
 
-	// --- State Variables ---
-	let highlightMarkInstance: any;
-	let currentFilename: string | null = null;
+    // --- State Variables ---
+    // --- State Variables ---
+    let highlightMarkInstance: MarkInstance;
+    let currentFilename: string | null = null;
 
-	// --- Functions ---
+    // --- Functions ---
 
-	function scrollElementIntoView(targetElement: HTMLElement | null, highlight = false, blockOption: ScrollLogicalPosition = 'start'): boolean {
+    function scrollElementIntoView(targetElement: HTMLElement | null, highlight = false, blockOption: ScrollLogicalPosition = 'start'): boolean {
         if (!targetElement) return false;
         let parent = targetElement.parentElement;
-        while (parent) { 
-            if (parent.tagName === 'DETAILS' && !(parent as HTMLDetailsElement).open) { 
-                (parent as HTMLDetailsElement).open = true; 
-            } 
-            parent = parent.parentElement; 
+        while (parent) {
+            if (parent.tagName === 'DETAILS' && !(parent as HTMLDetailsElement).open) {
+                (parent as HTMLDetailsElement).open = true;
+            }
+            parent = parent.parentElement;
         }
         setTimeout(() => {
             targetElement.scrollIntoView({ behavior: 'smooth', block: blockOption });
@@ -246,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-	function updateSideNavCurrent(targetId: string | null): boolean {
+    function updateSideNavCurrent(targetId: string | null): boolean {
         if (!sectionListContainer) return false;
         sectionListContainer.querySelectorAll('.usa-sidenav__item.usa-current, .usa-sidenav__item a.usa-current').forEach(el => el.classList.remove('usa-current'));
         if (targetId) {
@@ -265,8 +274,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     }
 
-	function updateTopNavCurrent(filename: string | null): void {
-	    if (!chapterListDropdown) {
+    function updateTopNavCurrent(filename: string | null): void {
+        if (!chapterListDropdown) {
             // console.warn("updateTopNavCurrent called but chapterListDropdown element not found."); // Already logged
             return;
         }
@@ -281,57 +290,57 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-	    const accordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
-	    if (accordionButton) {
+        const accordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
+        if (accordionButton) {
             accordionButton.setAttribute('aria-expanded', 'false');
             chapterListDropdown.setAttribute('hidden', '');
-	    } else {
+        } else {
             console.warn(`Could not find accordion button controlling #${chapterListDropdown.id} in updateTopNavCurrent`);
         }
-	}
+    }
 
 
-	// --- loadContent ---
-	async function loadContent(filename: string, options: LoadContentOptions = {}): Promise<void> {
+    // --- loadContent ---
+    async function loadContent(filename: string, options: LoadContentOptions = {}): Promise<void> {
         const { updateHistory = true, isInitialLoad = false, targetHash = null, forceReload = false } = options;
 
         // --- Same-page hash scrolling logic ---
         if (!forceReload && filename === currentFilename && !isInitialLoad) {
             console.log(`Content ${filename} already loaded.`);
-			if(targetHash) {
-				const targetElement = document.getElementById(targetHash);
-				if (targetElement) {
-					scrollElementIntoView(targetElement, true, 'start');
+            if (targetHash) {
+                const targetElement = document.getElementById(targetHash);
+                if (targetElement) {
+                    scrollElementIntoView(targetElement, true, 'start');
                     if (filename !== 'glossary.html') {
-					    updateSideNavCurrent(targetHash);
+                        updateSideNavCurrent(targetHash);
                     }
-					if (updateHistory) {
-						const state = { filename: filename, hash: targetHash }; const title = document.title; const url = `/${filename}#${targetHash}`;
-						if (history.state && history.state.filename === filename) { history.replaceState(state, title, url); }
-						else { history.pushState(state, title, url); }
-						// console.log(`History ${history.state && history.state.filename === filename ? 'replaceState' : 'pushState'} (hash update):`, state, title, url);
-					}
-				}
-			} else {
-				 if (!isInitialLoad && chapterContent) {
-                     chapterContent.scrollTo({ top: 0, behavior: 'smooth' });
-                     if (filename !== 'glossary.html') {
-                         updateSideNavCurrent(null);
-                     }
-                     // Remove hash from URL on scroll to top
-                     history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
-                 }
-			}
-			return;
+                    if (updateHistory) {
+                        const state = { filename: filename, hash: targetHash }; const title = document.title; const url = `/${filename}#${targetHash}`;
+                        if (history.state && history.state.filename === filename) { history.replaceState(state, title, url); }
+                        else { history.pushState(state, title, url); }
+                        // console.log(`History ${history.state && history.state.filename === filename ? 'replaceState' : 'pushState'} (hash update):`, state, title, url);
+                    }
+                }
+            } else {
+                if (!isInitialLoad && chapterContent) {
+                    chapterContent.scrollTo({ top: 0, behavior: 'smooth' });
+                    if (filename !== 'glossary.html') {
+                        updateSideNavCurrent(null);
+                    }
+                    // Remove hash from URL on scroll to top
+                    history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
+                }
+            }
+            return;
         }
         // --- End same-page logic ---
 
-	    console.log(`Loading content: ${filename}, updateHistory: ${updateHistory}, isInitialLoad: ${isInitialLoad}, targetHash: ${targetHash}`);
-	    clearHighlighting();
-	    if (headerSearchInput) (headerSearchInput as HTMLInputElement).value = '';
+        // console.log(`Loading content: ${filename}, updateHistory: ${updateHistory}, isInitialLoad: ${isInitialLoad}, targetHash: ${targetHash}`);
+        clearHighlighting();
+        if (headerSearchInput) (headerSearchInput as HTMLInputElement).value = '';
 
         // Clear previous side nav content *before* loading new main content
-	    if (sectionListContainer) sectionListContainer.innerHTML = '';
+        if (sectionListContainer) sectionListContainer.innerHTML = '';
         // Ensure sidenav is hidden by default before attempting to load/generate
         if (sideNavElement) {
             sideNavElement.classList.add('hidden');
@@ -341,17 +350,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Set loading message for main content
         if (!chapterContent) {
-             console.error("Cannot load content: chapterContent element not found.");
-             return; // Stop if main content area is missing
+            console.error("Cannot load content: chapterContent element not found.");
+            return; // Stop if main content area is missing
         }
-	    chapterContent.innerHTML = `<p class="usa-prose">Loading ${filename}...</p>`;
+        chapterContent.innerHTML = `<p class="usa-prose">Loading ${filename}...</p>`;
 
-	    try {
+        try {
             // --- Fetching and parsing content ---
             const fetchPath = filename.replace(/\s*\.html$/i, '-src.html'); // Assuming files are in the same directory or relative paths work
-            console.log("Fetching:", fetchPath);
+            // console.log("Fetching:", fetchPath);
             const response = await fetch(fetchPath);
-            console.log("Fetch response status:", response.status);
+            // console.log("Fetch response status:", response.status);
             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status} for ${fetchPath}`);
             const html = await response.text();
             const parser = new DOMParser();
@@ -364,9 +373,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- End fetching/parsing ---
 
             console.log("Updating currentFilename and title");
-			currentFilename = filename;
-			const chapterTitle = findChapterTitle(filename);
-			document.title = `Compendium Viewer - ${chapterTitle || filename}`;
+            currentFilename = filename;
+            const chapterTitle = findChapterTitle(filename);
+            document.title = `Compendium Viewer - ${chapterTitle || filename}`;
 
             // --- Generate navigation AND handle visibility ---
             console.log("Calling generateNavigation");
@@ -395,33 +404,33 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- End History update ---
 
             console.log("Calling updateTopNavCurrent");
-			updateTopNavCurrent(filename); // Update top nav highlighting
+            updateTopNavCurrent(filename); // Update top nav highlighting
 
-			// --- Scrolling logic ---
+            // --- Scrolling logic ---
             console.log("Handling scrolling");
             const finalHashToScroll = targetHash || (isInitialLoad ? location.hash.substring(1) : null);
             if (finalHashToScroll) {
                 // Use a slightly longer delay to ensure layout potentially settles after sidenav show/hide
                 setTimeout(() => {
                     const targetElement = document.getElementById(finalHashToScroll);
-                    if(targetElement) {
+                    if (targetElement) {
                         console.log("Scrolling to target:", finalHashToScroll);
                         scrollElementIntoView(targetElement, true, 'start');
-                         if (filename !== 'glossary.html') {
+                        if (filename !== 'glossary.html') {
                             updateSideNavCurrent(finalHashToScroll);
-                         }
+                        }
                     } else {
                         console.warn(`Target element ID "${finalHashToScroll}" not found after loading content.`);
-                         if (filename !== 'glossary.html') {
+                        if (filename !== 'glossary.html') {
                             updateSideNavCurrent(null);
-                         }
+                        }
                     }
                 }, 200); // Increased delay
             } else if (!isInitialLoad) {
-                 // Clear side nav current state if navigating to a non-glossary page without a hash
-                 if (filename !== 'glossary.html') {
+                // Clear side nav current state if navigating to a non-glossary page without a hash
+                if (filename !== 'glossary.html') {
                     updateSideNavCurrent(null);
-                 }
+                }
             }
             // --- End Scrolling ---
             console.log("loadContent try block finished successfully.");
@@ -435,11 +444,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // This might happen if the glossary script failed to load or initialize
             }
 
-	    } catch (error) {
+        } catch (error) {
             console.error("Error during loadContent:", error);
             const errorMessage = error instanceof Error ? error.message : 'Unknown error';
             if (chapterContent) { // Check if element exists before modifying
-                 chapterContent.innerHTML = `<p class="usa-alert usa-alert--error">Failed to load content: ${errorMessage}. Check console for details.</p>`;
+                chapterContent.innerHTML = `<p class="usa-alert usa-alert--error">Failed to load content: ${errorMessage}. Check console for details.</p>`;
             }
             // Ensure sidenav remains hidden on error
             if (sectionListContainer) sectionListContainer.innerHTML = '';
@@ -447,8 +456,8 @@ document.addEventListener('DOMContentLoaded', () => {
             currentFilename = null; // Reset state
             document.title = "Compendium Viewer - Error";
             updateTopNavCurrent(null); // Ensure nav state is cleared on error
-	    }
-	}
+        }
+    }
 
     // --- Find Chapter Title ---
     function findChapterTitle(filename: string): string | null {
@@ -476,7 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("Sidenav should be visible.");
             } else {
                 sideNavElement.classList.add('hidden');
-                 console.log("Sidenav should be hidden.");
+                console.log("Sidenav should be hidden.");
             }
         } else {
             // Warning logged at top if element is missing
@@ -488,10 +497,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateGlossaryNavigation(): boolean {
         // Check required elements before proceeding
         if (!sectionListContainer) {
-             console.error("generateGlossaryNavigation: sectionListContainer not found. Cannot generate nav.");
-             return false; // Cannot generate
+            console.error("generateGlossaryNavigation: sectionListContainer not found. Cannot generate nav.");
+            return false; // Cannot generate
         }
-         if (!chapterContent) {
+        if (!chapterContent) {
             console.error("generateGlossaryNavigation: chapterContent not found. Cannot find terms.");
             return false; // Cannot generate
         }
@@ -552,8 +561,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Glossary navigation generated and added.");
             return true; // Success - content was generated
         } else {
-             console.warn("generateGlossaryNavigation: Terms found, but no terms started with A-Z.");
-             return false; // Technically generated, but no useful links added
+            console.warn("generateGlossaryNavigation: Terms found, but no terms started with A-Z.");
+            return false; // Technically generated, but no useful links added
         }
     }
 
@@ -590,10 +599,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateHierarchicalNavigation(): boolean {
         // Check required elements before proceeding
         if (!sectionListContainer) {
-             console.error("generateHierarchicalNavigation: sectionListContainer not found. Cannot generate nav.");
-             return false;
+            console.error("generateHierarchicalNavigation: sectionListContainer not found. Cannot generate nav.");
+            return false;
         }
-         if (!chapterContent) {
+        if (!chapterContent) {
             console.error("generateHierarchicalNavigation: chapterContent not found. Cannot find structure.");
             return false;
         }
@@ -621,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (tagNameLower === 'table_of_authorities') {
             navLabel = 'Table of Authorities Groups'; topLevelSelector = ':scope > authority_group[id]'; itemType = 'authority_group';
         } else if (chapterContent.querySelector(':scope > section[id]')) {
-             // Fallback if no specific root, but sections exist directly under content
+            // Fallback if no specific root, but sections exist directly under content
             navLabel = 'Sections'; topLevelSelector = ':scope > section[id]'; itemType = 'section';
         } else {
             console.warn("generateHierarchicalNavigation: No known navigable structure type detected.");
@@ -681,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (titleOnlyText) {
                 displayTitle = titleOnlyText;
             } else if (numberText) {
-                 displayTitle = numberText;
+                displayTitle = numberText;
             }
         } else {
             const typeDisplay = type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -713,7 +722,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function addSmoothScrollListeners(navContainer: HTMLElement): void {
         // This listener is specifically for hierarchical nav items
         navContainer.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(this: HTMLAnchorElement, e: Event) {
+            link.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
                 e.preventDefault();
                 const href = this.getAttribute('href');
                 if (!href) return;
@@ -744,41 +753,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Highlighting and Search ---
     function clearHighlighting(): void {
-        // @ts-expect-error - Mark.js is loaded via CDN, no TypeScript definitions available
         if (typeof Mark === 'undefined') return;
         if (highlightMarkInstance) {
             highlightMarkInstance.unmark();
         } else if (chapterContent) {
             try { // Add try/catch around Mark instantiation
-                 // @ts-expect-error - Mark.js is loaded via CDN, no TypeScript definitions available
-                 new Mark(chapterContent).unmark();
-            } catch(e) {
-                 console.warn("Error clearing highlights with Mark.js:", e);
-                 // Manual fallback cleanup
-                 chapterContent?.querySelectorAll('span.highlight').forEach(el => {
-                     if (el.parentNode) el.outerHTML = el.innerHTML;
-                 });
+                new Mark(chapterContent).unmark();
+            } catch (e) {
+                console.warn("Error clearing highlights with Mark.js:", e);
+                // Manual fallback cleanup
+                chapterContent?.querySelectorAll('span.highlight').forEach(el => {
+                    if (el.parentNode) el.outerHTML = el.innerHTML;
+                });
             }
         }
         // Ensure manual cleanup runs even if Mark.js instance existed but failed
         chapterContent?.querySelectorAll('span.highlight').forEach(el => {
-           if(el.parentNode) el.outerHTML = el.innerHTML;
+            if (el.parentNode) el.outerHTML = el.innerHTML;
         });
     }
 
     function performSearch(searchTerm: string): void {
         clearHighlighting();
-        // @ts-expect-error - Mark.js is loaded via CDN, no TypeScript definitions available
         if (!searchTerm || searchTerm.trim() === '' || typeof Mark === 'undefined') {
             return;
         }
-         if (!chapterContent) {
-             console.warn("performSearch: chapterContent element not found.");
-             return;
-         }
+        if (!chapterContent) {
+            console.warn("performSearch: chapterContent element not found.");
+            return;
+        }
 
         try { // Add try/catch around Mark.js usage
-            // @ts-expect-error - Mark.js is loaded via CDN, no TypeScript definitions available
             highlightMarkInstance = new Mark(chapterContent);
             highlightMarkInstance.mark(searchTerm.trim(), {
                 element: "span",
@@ -799,106 +804,106 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
                 },
-                 filter: (textNode: Text) => {
-                     const parent = textNode.parentNode;
-                     if (!parent || (parent as Element).closest?.('script, style, noscript, nav, .usa-sidenav, .usa-identifier, [aria-hidden="true"]')) {
-                         return false;
-                     }
-                     return true;
-                 }
+                filter: (textNode: Text) => {
+                    const parent = textNode.parentNode;
+                    if (!parent || (parent as Element).closest?.('script, style, noscript, nav, .usa-sidenav, .usa-identifier, [aria-hidden="true"]')) {
+                        return false;
+                    }
+                    return true;
+                }
             });
         } catch (e) {
             console.error("Error during Mark.js execution:", e);
         }
     }
 
-	// --- Initialization and Event Listeners ---
+    // --- Initialization and Event Listeners ---
 
-	// Populate Chapters menu
-	if (chapterListDropdown) {
+    // Populate Chapters menu
+    if (chapterListDropdown) {
         console.log(`Starting population of #${chapterListDropdown.id}...`);
-		chapters.forEach((chapter) => {
-			const listItem = document.createElement('li');
+        chapters.forEach((chapter) => {
+            const listItem = document.createElement('li');
             listItem.classList.add('usa-nav__submenu-item');
-			const link = document.createElement('a');
+            const link = document.createElement('a');
             link.href = `/${chapter.filename}`; // Use relative path
             link.textContent = `${chapter.number}${chapter.number ? ': ' : ''}${chapter.title}`;
             link.dataset.filename = chapter.filename; // Store filename for easy access
 
-			link.addEventListener('click', (e) => {
-				e.preventDefault(); // Prevent default link navigation
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link navigation
                 const filename = link.dataset.filename;
                 // Only load if it's a different chapter
-				if (filename !== currentFilename) {
+                if (filename !== currentFilename) {
                     console.log("Chapter link clicked, calling loadContent for:", filename);
-					if (filename) {
+                    if (filename) {
                         loadContent(filename, { updateHistory: true, isInitialLoad: false });
                     }
-				} else {
+                } else {
                     // If same chapter, scroll to top and clear side nav highlight
                     console.log("Chapter link clicked for current chapter, scrolling top.");
                     chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
-                     if (filename !== 'glossary.html') {
-                         updateSideNavCurrent(null);
-                     }
-                     // Also update URL to remove hash if any
-                     history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
+                    if (filename !== 'glossary.html') {
+                        updateSideNavCurrent(null);
+                    }
+                    // Also update URL to remove hash if any
+                    history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
                 }
-                 // Close mobile menu if open
-				if (uswdsNav && uswdsNav.classList.contains('is-visible')) {
+                // Close mobile menu if open
+                if (uswdsNav && uswdsNav.classList.contains('is-visible')) {
                     uswdsOverlay?.classList.remove('is-visible');
                     uswdsNav.classList.remove('is-visible');
                     if (uswdsMenuButton) uswdsMenuButton.setAttribute('aria-expanded', 'false');
                 }
-			});
+            });
             listItem.appendChild(link);
             chapterListDropdown.appendChild(listItem);
-		});
+        });
         console.log(`✅ Finished population. Added ${chapters.length} items to #${chapterListDropdown.id}.`);
-		
-		// Add accordion toggle functionality for the Chapters button
-		// This is needed because USWDS JS may not load in some environments
-		const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
-		if (chaptersAccordionButton) {
-			chaptersAccordionButton.addEventListener('click', () => {
-				const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
-				
-				if (isExpanded) {
-					// Collapse the menu
-					chaptersAccordionButton.setAttribute('aria-expanded', 'false');
-					chapterListDropdown.setAttribute('hidden', '');
-				} else {
-					// Expand the menu
-					chaptersAccordionButton.setAttribute('aria-expanded', 'true');
-					chapterListDropdown.removeAttribute('hidden');
-				}
-			});
-		} else {
-			console.warn('Could not find accordion button for chapters menu.');
-		}
-	} else {
-		// Error already logged at the top
-	}
 
-	// Home link listener
-	if (homeLink) {
+        // Add accordion toggle functionality for the Chapters button
+        // This is needed because USWDS JS may not load in some environments
+        const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
+        if (chaptersAccordionButton) {
+            chaptersAccordionButton.addEventListener('click', () => {
+                const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    // Collapse the menu
+                    chaptersAccordionButton.setAttribute('aria-expanded', 'false');
+                    chapterListDropdown.setAttribute('hidden', '');
+                } else {
+                    // Expand the menu
+                    chaptersAccordionButton.setAttribute('aria-expanded', 'true');
+                    chapterListDropdown.removeAttribute('hidden');
+                }
+            });
+        } else {
+            console.warn('Could not find accordion button for chapters menu.');
+        }
+    } else {
+        // Error already logged at the top
+    }
+
+    // Home link listener
+    if (homeLink) {
         homeLink.addEventListener('click', (e) => {
             e.preventDefault();
             if (chapters.length > 0) {
                 const firstChapter = chapters[0];
                 const firstChapterFilename = firstChapter ? firstChapter.filename : null;
                 if (!firstChapterFilename) return;
-                 console.log("Home link clicked, checking chapter:", firstChapterFilename);
+                console.log("Home link clicked, checking chapter:", firstChapterFilename);
                 if (firstChapterFilename !== currentFilename) {
-                     console.log("Loading first chapter:", firstChapterFilename);
+                    console.log("Loading first chapter:", firstChapterFilename);
                     loadContent(firstChapterFilename, { updateHistory: true, isInitialLoad: false });
                 } else {
-                     console.log("Already on first chapter, scrolling top.");
+                    console.log("Already on first chapter, scrolling top.");
                     chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
-                     if (firstChapterFilename !== 'glossary.html') {
-                         updateSideNavCurrent(null);
-                     }
-                     history.replaceState({ filename: firstChapterFilename, hash: null }, document.title, `/${firstChapterFilename}`);
+                    if (firstChapterFilename !== 'glossary.html') {
+                        updateSideNavCurrent(null);
+                    }
+                    history.replaceState({ filename: firstChapterFilename, hash: null }, document.title, `/${firstChapterFilename}`);
                 }
             } else {
                 console.warn("Home link clicked, but no chapters defined.");
@@ -907,8 +912,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } // Warning logged at top if not found
 
 
-	// Content link listener
-	if (chapterContent) {
+    // Content link listener
+    if (chapterContent) {
         chapterContent.addEventListener('click', (event) => {
             if (!event.target) return;
             const link = (event.target as HTMLElement).closest('a');
@@ -941,33 +946,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             // Handle same-page anchor links within the loaded content
             else if (potentialFilename === currentFilename && hash) {
-                 event.preventDefault();
-                 const targetHash = hash.substring(1);
-                 const targetElement = document.getElementById(targetHash);
-                 if (targetElement) {
-                     scrollElementIntoView(targetElement, true, 'start');
-                     if (currentFilename !== 'glossary.html') {
+                event.preventDefault();
+                const targetHash = hash.substring(1);
+                const targetElement = document.getElementById(targetHash);
+                if (targetElement) {
+                    scrollElementIntoView(targetElement, true, 'start');
+                    if (currentFilename !== 'glossary.html') {
                         updateSideNavCurrent(targetHash);
-                     }
-                     const state = { filename: currentFilename, hash: targetHash };
-                     const title = document.title;
-                     const url = `/${currentFilename}#${targetHash}`;
-                     history.replaceState(state, title, url);
-                 }
+                    }
+                    const state = { filename: currentFilename, hash: targetHash };
+                    const title = document.title;
+                    const url = `/${currentFilename}#${targetHash}`;
+                    history.replaceState(state, title, url);
+                }
             }
         });
     } // Error logged at top if not found
 
 
-	// Initial load logic
-	function handleInitialLoad(): void {
+    // Initial load logic
+    function handleInitialLoad(): void {
         console.log("handleInitialLoad started.");
         // Determine initial file based on URL path
         const baseHref = document.querySelector('base')?.href || window.location.origin + '/';
         let pathInput = window.location.href.substring(baseHref.length).replace(/^#/, '');
         let pathWithoutHash = pathInput.split('#')[0] || ''; // Remove hash part for filename matching
         let path = pathWithoutHash.replace(/\/$/, ''); // Remove trailing slash
-	    let filenameFromPath = path.split('/').pop(); // Get last segment
+        let filenameFromPath = path.split('/').pop(); // Get last segment
 
         const matchedChapter = chapters.find(c => c.filename === filenameFromPath);
         const firstChapter = chapters.length > 0 ? chapters[0] : null;
@@ -975,9 +980,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ? (firstChapter ? firstChapter.filename : null)
             : matchedChapter.filename;
 
-	    if (!initialFilename) {
+        if (!initialFilename) {
             console.error("handleInitialLoad: No initial chapter filename could be determined.");
-            if(chapterContent) chapterContent.innerHTML = "<p class='usa-alert usa-alert--error'>No content specified.</p>";
+            if (chapterContent) chapterContent.innerHTML = "<p class='usa-alert usa-alert--error'>No content specified.</p>";
             updateTopNavCurrent(null);
             // Hide sidenav if it exists
             if (sideNavElement) sideNavElement.classList.add('hidden');
@@ -985,13 +990,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const initialHash = window.location.hash.substring(1); // Get hash from original URL
-	    console.log(`handleInitialLoad: Requesting initial load for filename='${initialFilename}', hash='${initialHash}'`);
-	    loadContent(initialFilename, { updateHistory: true, isInitialLoad: true, targetHash: initialHash });
+        console.log(`handleInitialLoad: Requesting initial load for filename='${initialFilename}', hash='${initialHash}'`);
+        loadContent(initialFilename, { updateHistory: true, isInitialLoad: true, targetHash: initialHash });
         console.log("handleInitialLoad finished.");
-	}
+    }
 
-	// Popstate listener (Handles browser back/forward)
-	window.addEventListener('popstate', (event) => {
+    // Popstate listener (Handles browser back/forward)
+    window.addEventListener('popstate', (event) => {
         console.log("Popstate event:", event.state, location.pathname, location.hash);
         let filenameToLoad = null;
         let hashToLoad = location.hash.substring(1);
@@ -1000,11 +1005,11 @@ document.addEventListener('DOMContentLoaded', () => {
             filenameToLoad = event.state.filename;
             hashToLoad = event.state.hash || hashToLoad;
         } else {
-             const baseHref = document.querySelector('base')?.href || window.location.origin + '/';
-             let path = window.location.pathname.substring(baseHref.replace(window.location.origin, '').length);
-             path = path.replace(/\/$/, '');
-             let filenameFromPath = path.split('/').pop();
-             const matchedChapter = chapters.find(c => c.filename === filenameFromPath);
+            const baseHref = document.querySelector('base')?.href || window.location.origin + '/';
+            let path = window.location.pathname.substring(baseHref.replace(window.location.origin, '').length);
+            path = path.replace(/\/$/, '');
+            let filenameFromPath = path.split('/').pop();
+            const matchedChapter = chapters.find(c => c.filename === filenameFromPath);
 
             if (matchedChapter) {
                 filenameToLoad = matchedChapter.filename;
@@ -1036,15 +1041,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadContent(defaultChapter.filename, { updateHistory: false, forceReload: true, targetHash: null, isInitialLoad: false });
                 }
             } else {
-                if(chapterContent) chapterContent.innerHTML = "<p class='usa-alert usa-alert--error'>Cannot determine content to load.</p>";
+                if (chapterContent) chapterContent.innerHTML = "<p class='usa-alert usa-alert--error'>Cannot determine content to load.</p>";
                 updateTopNavCurrent(null);
-                if(sideNavElement) sideNavElement.classList.add('hidden');
+                if (sideNavElement) sideNavElement.classList.add('hidden');
             }
         }
     });
 
-	// Search listener
-	if (headerSearchForm && headerSearchInput) {
+    // Search listener
+    if (headerSearchForm && headerSearchInput) {
         headerSearchForm.addEventListener('submit', (e) => {
             e.preventDefault();
             performSearch((headerSearchInput as HTMLInputElement).value);
@@ -1054,23 +1059,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearHighlighting();
             }
         });
-         headerSearchInput.addEventListener('keyup', (e) => {
+        headerSearchInput.addEventListener('keyup', (e) => {
             if (e.key === 'Enter') {
                 performSearch((headerSearchInput as HTMLInputElement).value);
             }
         });
     } else {
-         console.warn("Header search form or input not found.");
+        console.warn("Header search form or input not found.");
     }
 
-	// Mobile menu toggles
-	if (uswdsMenuButton && uswdsNavCloseButton && uswdsOverlay && uswdsNav) {
-         const toggleMenu = () => {
+    // Mobile menu toggles
+    if (uswdsMenuButton && uswdsNavCloseButton && uswdsOverlay && uswdsNav) {
+        const toggleMenu = () => {
             const isExpanded = uswdsNav.classList.toggle('is-visible');
             uswdsOverlay.classList.toggle('is-visible', isExpanded);
             uswdsMenuButton.setAttribute('aria-expanded', String(isExpanded));
         };
-         const closeMenu = () => {
+        const closeMenu = () => {
             uswdsOverlay.classList.remove('is-visible');
             uswdsNav.classList.remove('is-visible');
             uswdsMenuButton.setAttribute('aria-expanded', 'false');
@@ -1079,259 +1084,259 @@ document.addEventListener('DOMContentLoaded', () => {
         uswdsNavCloseButton.addEventListener('click', closeMenu);
         uswdsOverlay.addEventListener('click', closeMenu);
     } else {
-         console.warn("One or more USWDS mobile menu elements not found.");
+        console.warn("One or more USWDS mobile menu elements not found.");
     }
 
 
-	// --- Start the application ---
-	console.log("Running initial load sequence...");
-	handleInitialLoad(); // This triggers the first loadContent
+    // --- Start the application ---
+    console.log("Running initial load sequence...");
+    handleInitialLoad(); // This triggers the first loadContent
     console.log("Initialization complete (event listeners attached, initial load started).");
 
-// --- Configuration ---
-// Replace with your actual Algolia credentials
-const ALGOLIA_APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID;
-const ALGOLIA_SEARCH_KEY = import.meta.env.VITE_ALGOLIA_SEARCH_KEY;
-const ALGOLIA_INDEX_NAME = 'copyright_compendium_vercel_app_v8o52jy05q_pages';
+    // --- Configuration ---
+    // Replace with your actual Algolia credentials
+    const ALGOLIA_APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID;
+    const ALGOLIA_SEARCH_KEY = import.meta.env.VITE_ALGOLIA_SEARCH_KEY;
+    const ALGOLIA_INDEX_NAME = 'copyright_compendium_vercel_app_v8o52jy05q_pages';
 
-if (!ALGOLIA_APP_ID || !ALGOLIA_SEARCH_KEY) {
-    console.error("Algolia environment variables are missing!");
-    // Potentially disable search functionality here
-  }
+    if (!ALGOLIA_APP_ID || !ALGOLIA_SEARCH_KEY) {
+        console.error("Algolia environment variables are missing!");
+        // Potentially disable search functionality here
+    }
 
-// --- Initialize Algolia Client ---
-// Use algoliasearch.lite for search-only operations
-const searchClient = algoliasearchLite.liteClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
+    // --- Initialize Algolia Client ---
+    // Use algoliasearch.lite for search-only operations
+    const searchClient = algoliasearchLite.liteClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
 
-// --- Initialize Autocomplete ---
-// Ensure the DOM is ready if not using defer or module imports
-// document.addEventListener('DOMContentLoaded', () => { ... });
+    // --- Initialize Autocomplete ---
+    // Ensure the DOM is ready if not using defer or module imports
+    // document.addEventListener('DOMContentLoaded', () => { ... });
 
-autocomplete<any>({
-  container: '#autocomplete-search', // CSS selector for your container div
-  placeholder: 'Search sections...', // Placeholder text for the input
-  autoFocus: false, // Don't auto-focus on page load
-  // openOnFocus: true, // Uncomment to show suggestions immediately on focus
+    autocomplete<AlgoliaItem>({
+        container: '#autocomplete-search', // CSS selector for your container div
+        placeholder: 'Search sections...', // Placeholder text for the input
+        autoFocus: false, // Don't auto-focus on page load
+        // openOnFocus: true, // Uncomment to show suggestions immediately on focus
 
-  // --- Define How to Get Suggestions ---
-  getSources({ query }: { query: string }) {
-    return [
-      {
-        sourceId: 'compendium', // Unique identifier for this source
-        getItems() {
-          // Fetch suggestions from your Algolia index
-          return searchClient.search([
-            {
-              indexName: ALGOLIA_INDEX_NAME,
-              params: {
-                query: query,
-                hitsPerPage: 8, // Limit the number of suggestions
-                highlightPreTag: '<mark>', // Highlight start tag
-                highlightPostTag: '</mark>', // Highlight end tag
-                attributesToHighlight: ['title', 'content'],
-                attributesToSnippet: ['content:10'], // Optional: Snippet relevant attributes
-                snippetEllipsisText: '...',
-              },
-            },
-          ])
-          .then(({ results }) => {
-              // Return the hits array from the results
-              return (results[0] as any)?.hits || [];
-          });
-        },
-        // --- Define How to Render Suggestions ---
-        templates: {
-          item({ item, components, html }) {
-            // Customize how each suggestion item looks
-            // Use components.Highlight to highlight matching text
-            // Use item._snippetResult for snippets if configured
-            // --- Description/Snippet Part ---
-            // Get the raw snippet string from Algolia. This string contains
-            // the snippet text PLUS the raw HTML highlight tags (e.g., <em>...</em>)
-            const rawSnippetHtml = (item as any)._snippetResult?.content?.value;
+        // --- Define How to Get Suggestions ---
+        getSources({ query }: { query: string }) {
+            return [
+                {
+                    sourceId: 'compendium', // Unique identifier for this source
+                    getItems() {
+                        // Fetch suggestions from your Algolia index
+                        return searchClient.search([
+                            {
+                                indexName: ALGOLIA_INDEX_NAME,
+                                params: {
+                                    query: query,
+                                    hitsPerPage: 8, // Limit the number of suggestions
+                                    highlightPreTag: '<mark>', // Highlight start tag
+                                    highlightPostTag: '</mark>', // Highlight end tag
+                                    attributesToHighlight: ['title', 'content'],
+                                    attributesToSnippet: ['content:10'], // Optional: Snippet relevant attributes
+                                    snippetEllipsisText: '...',
+                                },
+                            },
+                        ])
+                            .then(({ results }) => {
+                                // Return the hits array from the results
+                                return (results[0] as unknown as AlgoliaResult)?.hits || [];
+                            });
+                    },
+                    // --- Define How to Render Suggestions ---
+                    templates: {
+                        item({ item, components, html }) {
+                            // Customize how each suggestion item looks
+                            // Use components.Highlight to highlight matching text
+                            // Use item._snippetResult for snippets if configured
+                            // --- Description/Snippet Part ---
+                            // Get the raw snippet string from Algolia. This string contains
+                            // the snippet text PLUS the raw HTML highlight tags (e.g., <em>...</em>)
+                            const rawSnippetHtml = item._snippetResult?.content?.value;
 
-            // Conditionally create the description element using dangerouslySetInnerHTML
-            const contentElement = rawSnippetHtml ? html`
+                            // Conditionally create the description element using dangerouslySetInnerHTML
+                            const contentElement = rawSnippetHtml ? html`
                                       <div class="aa-ItemContentDescription"
                                            dangerouslySetInnerHTML=${{ __html: rawSnippetHtml }}>
                                         </div>` : null; // Set to null if no snippet
 
-            return html`<div class="aa-ItemWrapper">
+                            return html`<div class="aa-ItemWrapper">
                           <div class="aa-ItemContent">
                             <div class="aa-ItemContentBody">
                               <div class="aa-ItemContentTitle">
                                 ${components.Highlight({ hit: item, attribute: 'sectionTitle' })}  </div>
-                              ${(item as any)._snippetResult?.content ? html`
+                              ${item._snippetResult?.content ? html`
                                 <div class="aa-ItemContentDescription">
                                     ${contentElement || '' /* Render description or empty string */}
-                                   <!-- ${components.Snippet({ hit: item, attribute: 'content'})} -->
+                                   <!-- ${components.Snippet({ hit: item, attribute: 'content' })} -->
                                 </div>
                               ` : ''}
                             </div>
                           </div>
                         </div>`;
-          },
-          noResults() {
-             return 'No results found.';
-          },
-          // You can also customize header, footer, etc.
+                        },
+                        noResults() {
+                            return 'No results found.';
+                        },
+                        // You can also customize header, footer, etc.
+                    },
+                    // --- Define What Happens On Select ---
+                    onSelect({ item, setQuery, setIsOpen }) {
+                        // Example: Navigate to a product page or log the selection
+                        console.log('Selected:', item);
+                        // If you have product URLs in your index (e.g., item.url)
+                        if (item.url) {
+                            window.location.href = item.url;
+                        } else {
+                            // Or maybe fill the input with the selected item's name
+                            setQuery(item.title);
+                            setIsOpen(false); // Close the dropdown
+                            // You might want to trigger a full search here if needed
+                        }
+                    },
+                },
+                // You can add more sources here (e.g., searching multiple indices)
+            ];
         },
-         // --- Define What Happens On Select ---
-        onSelect({ item, setQuery, setIsOpen }) {
-          // Example: Navigate to a product page or log the selection
-          console.log('Selected:', item);
-          // If you have product URLs in your index (e.g., item.url)
-          if ((item as any).url) {
-            window.location.href = (item as any).url;
-          } else {
-            // Or maybe fill the input with the selected item's name
-             setQuery((item as any).name);
-             setIsOpen(false); // Close the dropdown
-             // You might want to trigger a full search here if needed
-          }
-        },
-      },
-      // You can add more sources here (e.g., searching multiple indices)
-    ];
-  },
 
-  // Optional: Customize Autocomplete appearance and behavior further
-  // See Autocomplete.js documentation for more options
-  // Example: Detached mode (dropdown appears separate from input)
-  // detachedMediaQuery: '', // Always detached
-});
+        // Optional: Customize Autocomplete appearance and behavior further
+        // See Autocomplete.js documentation for more options
+        // Example: Detached mode (dropdown appears separate from input)
+        // detachedMediaQuery: '', // Always detached
+    });
 
-	// --- Translation Initialization ---
-	const translationService = new TranslationService();
-	let originalContent = '';
-	
-	// Initialize translation controls
-	async function initializeTranslation() {
-		const isSupported = await translationService.checkBrowserSupport();
-		
-		if (!isSupported) {
-			// Hide translation controls in menu
-			if (translationControlsWrapper) {
-				translationControlsWrapper.style.display = 'none';
-			}
-			
-			// Show translation info link
-			if (translationInfoLinkWrapper) {
-				translationInfoLinkWrapper.style.display = 'flex';
-			}
-		} else {
-			// Show translation controls in menu
-			if (translationControlsWrapper) {
-				translationControlsWrapper.style.display = 'block';
-			}
-			
-			// Hide translation info link
-			if (translationInfoLinkWrapper) {
-				translationInfoLinkWrapper.style.display = 'none';
-			}
-		}
-	}
-	
-	// Handle language selection change
-	if (languageSelect) {
-		languageSelect.addEventListener('change', async (event) => {
-			const selectedLanguage = (event.target as HTMLSelectElement).value;
-			
-			if (!selectedLanguage || selectedLanguage === '') {
-				// Reset to original
-				if (translationDisclaimer) {
-					translationDisclaimer.style.display = 'none';
-				}
-				// Restore original content if saved
-				if (originalContent && chapterContent) {
-					// Reload the current page to get original content
-					const currentFile = currentFilename || 'introduction.html';
-					loadContent(currentFile, { updateHistory: false, forceReload: true });
-				}
-			} else {
-				// Save original content before translating
-				if (chapterContent) {
-					originalContent = chapterContent.innerHTML;
-				}
-				
-				// Show disclaimer
-				if (translationDisclaimer) {
-					translationDisclaimer.style.display = 'block';
-				}
-				
-				// Perform translation
-				if (chapterContent) {
-					const success = await translationService.translateContent(chapterContent, selectedLanguage);
-					if (!success) {
-						console.warn('Translation failed');
-					}
-				}
-			}
-		});
-	}
-	
-	// Handle "view original" link
-	if (viewOriginalLink) {
-		viewOriginalLink.addEventListener('click', (event) => {
-			event.preventDefault();
-			if (languageSelect) {
-				(languageSelect as HTMLSelectElement).value = '';
-				languageSelect.dispatchEvent(new Event('change'));
-			}
-		});
-	}
-	
-	// Handle translation info link tooltip
-	if (translationInfoLink && translationInfoTooltip) {
-		// Media query for responsive behavior
-		const mobileBreakpoint = window.matchMedia('(max-width: 40em)');
-		
-		// Toggle tooltip on click
-		translationInfoLink.addEventListener('click', (event) => {
-			event.stopPropagation();
-			const isVisible = translationInfoTooltip.style.display !== 'none';
-			const newVisibility = isVisible ? 'none' : 'block';
-			translationInfoTooltip.style.display = newVisibility;
-			// Update ARIA attribute for accessibility
-			translationInfoLink.setAttribute('aria-expanded', newVisibility === 'block' ? 'true' : 'false');
-		});
-		
-		// Show tooltip on hover (desktop only) - use media query
-		const handleMouseEnter = () => {
-			if (!mobileBreakpoint.matches) {
-				translationInfoTooltip.style.display = 'block';
-				translationInfoLink.setAttribute('aria-expanded', 'true');
-			}
-		};
-		
-		const handleMouseLeave = () => {
-			if (!mobileBreakpoint.matches) {
-				translationInfoTooltip.style.display = 'none';
-				translationInfoLink.setAttribute('aria-expanded', 'false');
-			}
-		};
-		
-		translationInfoLink.addEventListener('mouseenter', handleMouseEnter);
-		translationInfoLink.addEventListener('mouseleave', handleMouseLeave);
-		
-		// Close tooltip when clicking outside
-		document.addEventListener('click', (event) => {
-			if (translationInfoTooltip.style.display === 'block' &&
-				!translationInfoLink.contains(event.target as Node) &&
-				!translationInfoTooltip.contains(event.target as Node)) {
-				translationInfoTooltip.style.display = 'none';
-				translationInfoLink.setAttribute('aria-expanded', 'false');
-			}
-		});
-	}
-	
-	// Initialize translation on page load
-	initializeTranslation();
+    // --- Translation Initialization ---
+    const translationService = new TranslationService();
+    let originalContent = '';
+
+    // Initialize translation controls
+    async function initializeTranslation() {
+        const isSupported = await translationService.checkBrowserSupport();
+
+        if (!isSupported) {
+            // Hide translation controls in menu
+            if (translationControlsWrapper) {
+                translationControlsWrapper.style.display = 'none';
+            }
+
+            // Show translation info link
+            if (translationInfoLinkWrapper) {
+                translationInfoLinkWrapper.style.display = 'flex';
+            }
+        } else {
+            // Show translation controls in menu
+            if (translationControlsWrapper) {
+                translationControlsWrapper.style.display = 'block';
+            }
+
+            // Hide translation info link
+            if (translationInfoLinkWrapper) {
+                translationInfoLinkWrapper.style.display = 'none';
+            }
+        }
+    }
+
+    // Handle language selection change
+    if (languageSelect) {
+        languageSelect.addEventListener('change', async (event) => {
+            const selectedLanguage = (event.target as HTMLSelectElement).value;
+
+            if (!selectedLanguage || selectedLanguage === '') {
+                // Reset to original
+                if (translationDisclaimer) {
+                    translationDisclaimer.style.display = 'none';
+                }
+                // Restore original content if saved
+                if (originalContent && chapterContent) {
+                    // Reload the current page to get original content
+                    const currentFile = currentFilename || 'introduction.html';
+                    loadContent(currentFile, { updateHistory: false, forceReload: true });
+                }
+            } else {
+                // Save original content before translating
+                if (chapterContent) {
+                    originalContent = chapterContent.innerHTML;
+                }
+
+                // Show disclaimer
+                if (translationDisclaimer) {
+                    translationDisclaimer.style.display = 'block';
+                }
+
+                // Perform translation
+                if (chapterContent) {
+                    const success = await translationService.translateContent(chapterContent, selectedLanguage);
+                    if (!success) {
+                        console.warn('Translation failed');
+                    }
+                }
+            }
+        });
+    }
+
+    // Handle "view original" link
+    if (viewOriginalLink) {
+        viewOriginalLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (languageSelect) {
+                (languageSelect as HTMLSelectElement).value = '';
+                languageSelect.dispatchEvent(new Event('change'));
+            }
+        });
+    }
+
+    // Handle translation info link tooltip
+    if (translationInfoLink && translationInfoTooltip) {
+        // Media query for responsive behavior
+        const mobileBreakpoint = window.matchMedia('(max-width: 40em)');
+
+        // Toggle tooltip on click
+        translationInfoLink.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isVisible = translationInfoTooltip.style.display !== 'none';
+            const newVisibility = isVisible ? 'none' : 'block';
+            translationInfoTooltip.style.display = newVisibility;
+            // Update ARIA attribute for accessibility
+            translationInfoLink.setAttribute('aria-expanded', newVisibility === 'block' ? 'true' : 'false');
+        });
+
+        // Show tooltip on hover (desktop only) - use media query
+        const handleMouseEnter = () => {
+            if (!mobileBreakpoint.matches) {
+                translationInfoTooltip.style.display = 'block';
+                translationInfoLink.setAttribute('aria-expanded', 'true');
+            }
+        };
+
+        const handleMouseLeave = () => {
+            if (!mobileBreakpoint.matches) {
+                translationInfoTooltip.style.display = 'none';
+                translationInfoLink.setAttribute('aria-expanded', 'false');
+            }
+        };
+
+        translationInfoLink.addEventListener('mouseenter', handleMouseEnter);
+        translationInfoLink.addEventListener('mouseleave', handleMouseLeave);
+
+        // Close tooltip when clicking outside
+        document.addEventListener('click', (event) => {
+            if (translationInfoTooltip.style.display === 'block' &&
+                !translationInfoLink.contains(event.target as Node) &&
+                !translationInfoTooltip.contains(event.target as Node)) {
+                translationInfoTooltip.style.display = 'none';
+                translationInfoLink.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    // Initialize translation on page load
+    initializeTranslation();
 
 }); // End DOMContentLoaded
 
 // Wrap in IIFE to keep variables private unless explicitly exposed
-(function() {
+(function () {
     'use strict';
 
     const glossaryUrl = '/glossary-src.html';
@@ -1359,12 +1364,12 @@ autocomplete<any>({
     function fetchAndParseGlossary(): Promise<void> {
         // Prevent concurrent fetches and re-fetching if already done
         if (glossaryFetched || isFetching) {
-             // If already fetched, potentially trigger attachment immediately
-             if (glossaryFetched) {
+            // If already fetched, potentially trigger attachment immediately
+            if (glossaryFetched) {
                 console.log("Glossary already fetched. Ready to attach listeners.");
                 // Optionally, call attachTooltipListeners here if needed on subsequent calls,
                 // but the primary mechanism is the exposed function.
-             }
+            }
             return Promise.resolve(); // Return a resolved promise
         }
 
@@ -1434,9 +1439,9 @@ autocomplete<any>({
         links.forEach(link => {
             // Check if listener is potentially already attached (simple check)
             // Note: This isn't foolproof but can prevent redundant work in some cases.
-             if ((link as HTMLElement).dataset.glossaryListenerAttached === 'true') {
-                 return; // Skip if we've marked it
-             }
+            if ((link as HTMLElement).dataset.glossaryListenerAttached === 'true') {
+                return; // Skip if we've marked it
+            }
 
             link.removeEventListener('mouseover', handleMouseOver); // Remove potential old ones first
             link.removeEventListener('mouseout', handleMouseOut);
@@ -1447,75 +1452,75 @@ autocomplete<any>({
             link.addEventListener('mousemove', handleMouseMove as EventListener);
             (link as HTMLElement).dataset.glossaryListenerAttached = 'true'; // Mark as attached
         });
-         console.log(`Listeners updated for ${links.length} glossary links.`);
+        console.log(`Listeners updated for ${links.length} glossary links.`);
     }
 
     // --- 4. Tooltip Event Handlers (Internal, no changes needed) ---
     function showTooltip(link: HTMLAnchorElement, termId: string, event: MouseEvent): void {
-         // Check flag *here* when the event actually fires
-         if (!tooltipElement || !glossaryFetched) return;
-         const definitionHtml = glossaryData[termId];
-         if (definitionHtml) {
-             tooltipElement.innerHTML = definitionHtml;
-             positionTooltip(event);
-             tooltipElement.style.display = 'block';
-             link.setAttribute('aria-describedby', 'glossary-tooltip');
-         } else {
-             console.warn(`Glossary tooltip: Definition for "${termId}" not found.`);
-             hideTooltip(link);
-         }
+        // Check flag *here* when the event actually fires
+        if (!tooltipElement || !glossaryFetched) return;
+        const definitionHtml = glossaryData[termId];
+        if (definitionHtml) {
+            tooltipElement.innerHTML = definitionHtml;
+            positionTooltip(event);
+            tooltipElement.style.display = 'block';
+            link.setAttribute('aria-describedby', 'glossary-tooltip');
+        } else {
+            console.warn(`Glossary tooltip: Definition for "${termId}" not found.`);
+            hideTooltip(link);
+        }
     }
 
     function hideTooltip(link: HTMLAnchorElement): void {
-         if (tooltipElement) {
-             tooltipElement.style.display = 'none';
-             tooltipElement.innerHTML = '';
-             link.removeAttribute('aria-describedby');
-         }
+        if (tooltipElement) {
+            tooltipElement.style.display = 'none';
+            tooltipElement.innerHTML = '';
+            link.removeAttribute('aria-describedby');
+        }
     }
 
     function positionTooltip(event: MouseEvent): void {
         // (Keep the positioning logic from the previous version)
-         if (!tooltipElement || tooltipElement.style.display === 'none') return;
-         const offsetX = 15;
-         const offsetY = 15;
-         let x = event.pageX + offsetX;
-         let y = event.pageY + offsetY;
-         const tooltipWidth = tooltipElement.offsetWidth;
-         const tooltipHeight = tooltipElement.offsetHeight;
-         const viewportWidth = window.innerWidth;
-         const viewportHeight = window.innerHeight;
-         if (x + tooltipWidth > viewportWidth - offsetX) {
-             x = event.pageX - tooltipWidth - offsetX;
-             if (x < offsetX) x = offsetX;
-         }
-         if (y + tooltipHeight > viewportHeight - offsetY) {
-              y = event.pageY - tooltipHeight - offsetY;
-              if (y < offsetY) y = offsetY;
-         }
-         tooltipElement.style.left = `${x}px`;
-         tooltipElement.style.top = `${y}px`;
+        if (!tooltipElement || tooltipElement.style.display === 'none') return;
+        const offsetX = 15;
+        const offsetY = 15;
+        let x = event.pageX + offsetX;
+        let y = event.pageY + offsetY;
+        const tooltipWidth = tooltipElement.offsetWidth;
+        const tooltipHeight = tooltipElement.offsetHeight;
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        if (x + tooltipWidth > viewportWidth - offsetX) {
+            x = event.pageX - tooltipWidth - offsetX;
+            if (x < offsetX) x = offsetX;
+        }
+        if (y + tooltipHeight > viewportHeight - offsetY) {
+            y = event.pageY - tooltipHeight - offsetY;
+            if (y < offsetY) y = offsetY;
+        }
+        tooltipElement.style.left = `${x}px`;
+        tooltipElement.style.top = `${y}px`;
     }
 
     // --- Event Handler Wrappers (Internal, no changes needed) ---
-     function handleMouseOver(event: Event): void {
-         const link = event.currentTarget as HTMLAnchorElement;
-         const href = link.getAttribute('href');
-         if (!href) return;
-         const termId = href.substring(href.indexOf('#') + 1);
-         if (termId) {
-             showTooltip(link, termId, event as MouseEvent);
-         }
-     }
-      function handleMouseOut(event: Event): void {
-          const link = event.currentTarget as HTMLAnchorElement;
-          hideTooltip(link);
-      }
-       function handleMouseMove(event: MouseEvent): void {
-           if (tooltipElement && tooltipElement.style.display === 'block') {
-                positionTooltip(event);
-           }
-       }
+    function handleMouseOver(event: Event): void {
+        const link = event.currentTarget as HTMLAnchorElement;
+        const href = link.getAttribute('href');
+        if (!href) return;
+        const termId = href.substring(href.indexOf('#') + 1);
+        if (termId) {
+            showTooltip(link, termId, event as MouseEvent);
+        }
+    }
+    function handleMouseOut(event: Event): void {
+        const link = event.currentTarget as HTMLAnchorElement;
+        hideTooltip(link);
+    }
+    function handleMouseMove(event: MouseEvent): void {
+        if (tooltipElement && tooltipElement.style.display === 'block') {
+            positionTooltip(event);
+        }
+    }
 
     // --- 5. Initialization and Exposure ---
 
