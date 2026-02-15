@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// --- Data ---
 	const chapters = [
+        { number: "", title: "About This Site", filename: "about.html" },
         { number: "", title: "Introduction: Intro to the Compendium", filename: "introduction.html" },
 	    { number: "100", title: "U.S. Copyright Office and the Copyright Law: General Background", filename: "ch100-general-background.html" },
 	    { number: "200", title: "Overview of the Registration Process", filename: "ch200-registration-process.html" },
