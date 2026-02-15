@@ -3,6 +3,112 @@ import * as algoliasearchLite from 'algoliasearch/lite';
 import { autocomplete } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
 
+// --- Translation Service ---
+class TranslationService {
+	constructor() {
+		this.currentLanguage = '';
+		this.isTranslating = false;
+		this.translator = null;
+		this.canTranslate = false;
+		this.checkBrowserSupport();
+	}
+
+	async checkBrowserSupport() {
+		// Check for Translation API support
+		// The Translation API is currently experimental in Chrome 120+
+		if ('translation' in self && 'createTranslator' in self.translation) {
+			try {
+				// Check if we can create a translator
+				const canTranslate = await self.translation.canTranslate({
+					sourceLanguage: 'en',
+					targetLanguage: 'es'
+				});
+				this.canTranslate = canTranslate === 'readily' || canTranslate === 'after-download';
+				console.log('Translation API available:', this.canTranslate);
+			} catch (error) {
+				console.warn('Translation API check failed:', error);
+				this.canTranslate = false;
+			}
+		} else {
+			console.warn('Translation API not supported in this browser');
+			this.canTranslate = false;
+		}
+		return this.canTranslate;
+	}
+
+	async translateContent(element, targetLanguage) {
+		if (!this.canTranslate) {
+			console.warn('Translation not available');
+			return false;
+		}
+
+		if (!targetLanguage || targetLanguage === '') {
+			// Reset to original
+			this.isTranslating = false;
+			this.currentLanguage = '';
+			return true;
+		}
+
+		try {
+			// Create translator if needed
+			if (!this.translator || this.currentLanguage !== targetLanguage) {
+				this.translator = await self.translation.createTranslator({
+					sourceLanguage: 'en',
+					targetLanguage: targetLanguage
+				});
+				this.currentLanguage = targetLanguage;
+			}
+
+			// Translate text nodes in the element
+			await this.translateElement(element);
+			this.isTranslating = true;
+			return true;
+		} catch (error) {
+			console.error('Translation failed:', error);
+			return false;
+		}
+	}
+
+	async translateElement(element) {
+		// Walk through text nodes and translate them
+		const walker = document.createTreeWalker(
+			element,
+			NodeFilter.SHOW_TEXT,
+			{
+				acceptNode: (node) => {
+					// Skip empty text nodes and nodes in script/style tags
+					if (!node.textContent.trim()) return NodeFilter.FILTER_REJECT;
+					const parent = node.parentElement;
+					if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
+						return NodeFilter.FILTER_REJECT;
+					}
+					return NodeFilter.FILTER_ACCEPT;
+				}
+			}
+		);
+
+		const textNodes = [];
+		let node;
+		while (node = walker.nextNode()) {
+			textNodes.push(node);
+		}
+
+		// Translate each text node
+		for (const textNode of textNodes) {
+			try {
+				const translatedText = await this.translator.translate(textNode.textContent);
+				textNode.textContent = translatedText;
+			} catch (error) {
+				console.warn('Failed to translate text node:', error);
+			}
+		}
+	}
+
+	isSupported() {
+		return this.canTranslate;
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
 	// --- Element Selection ---
@@ -17,6 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	const uswdsOverlay = document.querySelector('.usa-overlay');
 	const uswdsNav = document.querySelector('.usa-header .usa-nav');
 	const homeLink = document.querySelector('.usa-logo a');
+	
+	// Translation elements
+	const languageSelect = document.getElementById('language-select');
+	const translationDisclaimer = document.getElementById('translation-disclaimer');
+	const translationUnsupported = document.getElementById('translation-unsupported');
+	const viewOriginalLink = document.getElementById('view-original-link');
 
     // --- Initial Checks ---
     // Check for elements critical for basic functionality
@@ -996,6 +1108,78 @@ autocomplete({
   // detachedMediaQuery: '', // Always detached
 });
 
+	// --- Translation Initialization ---
+	const translationService = new TranslationService();
+	let originalContent = '';
+	
+	// Initialize translation controls
+	async function initializeTranslation() {
+		const isSupported = await translationService.checkBrowserSupport();
+		
+		if (!isSupported) {
+			// Show unsupported message
+			if (translationUnsupported) {
+				translationUnsupported.style.display = 'block';
+			}
+			// Optionally disable the select
+			if (languageSelect) {
+				languageSelect.disabled = true;
+				languageSelect.title = 'Translation not supported in this browser';
+			}
+		}
+	}
+	
+	// Handle language selection change
+	if (languageSelect) {
+		languageSelect.addEventListener('change', async (event) => {
+			const selectedLanguage = event.target.value;
+			
+			if (!selectedLanguage || selectedLanguage === '') {
+				// Reset to original
+				if (translationDisclaimer) {
+					translationDisclaimer.style.display = 'none';
+				}
+				// Restore original content if saved
+				if (originalContent && chapterContent) {
+					// Reload the current page to get original content
+					const currentFile = currentFilename || 'introduction.html';
+					loadChapter(currentFile);
+				}
+			} else {
+				// Save original content before translating
+				if (chapterContent && !translationService.isTranslating) {
+					originalContent = chapterContent.innerHTML;
+				}
+				
+				// Show disclaimer
+				if (translationDisclaimer) {
+					translationDisclaimer.style.display = 'block';
+				}
+				
+				// Perform translation
+				if (chapterContent) {
+					const success = await translationService.translateContent(chapterContent, selectedLanguage);
+					if (!success && translationUnsupported) {
+						translationUnsupported.style.display = 'block';
+					}
+				}
+			}
+		});
+	}
+	
+	// Handle "view original" link
+	if (viewOriginalLink) {
+		viewOriginalLink.addEventListener('click', (event) => {
+			event.preventDefault();
+			if (languageSelect) {
+				languageSelect.value = '';
+				languageSelect.dispatchEvent(new Event('change'));
+			}
+		});
+	}
+	
+	// Initialize translation on page load
+	initializeTranslation();
 
 }); // End DOMContentLoaded
 
@@ -1214,6 +1398,5 @@ autocomplete({
     // Use DOMContentLoaded to ensure the body exists for createTooltip
     // and that initial content is ready for the first listener attachment.
     document.addEventListener('DOMContentLoaded', initializeGlossaryTooltips);
-
 
 })(); // End IIFE

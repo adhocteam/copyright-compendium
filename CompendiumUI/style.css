@@ -79,6 +79,70 @@
 	width: 280px;
 }
 
+/* --- Translation Controls Styles --- */
+#translation-controls-wrapper {
+	padding: 0.5rem 1rem;
+	border-top: 1px solid #dfe1e2;
+}
+
+.translation-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.translation-label {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	margin-bottom: 0.25rem;
+	color: #1b1b1b;
+}
+
+.translation-label .usa-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	fill: currentColor;
+}
+
+.translation-select {
+	width: 100%;
+	font-size: 0.875rem;
+	padding: 0.5rem;
+	border: 1px solid #565c65;
+	border-radius: 0.25rem;
+	background-color: #ffffff;
+	color: #1b1b1b;
+}
+
+.translation-select:focus {
+	outline: 0.25rem solid #2491ff;
+	outline-offset: 0;
+}
+
+/* Translation disclaimer positioning */
+#translation-disclaimer,
+#translation-unsupported {
+	margin: 0;
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
+/* Responsive adjustments for translation controls */
+@media (max-width: 64em) {
+	#translation-controls-wrapper {
+		padding: 1rem;
+	}
+	
+	.translation-controls {
+		flex-direction: column;
+	}
+}
+
+
 /* --- Glossary Tooltip Styles --- */
 /* Basic Tooltip Styling */
 #glossary-tooltip {
