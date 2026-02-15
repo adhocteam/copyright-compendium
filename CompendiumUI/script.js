@@ -2,6 +2,11 @@
 import * as algoliasearchLite from 'algoliasearch/lite';
 import { autocomplete } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
+import packageJson from './package.json';
+
+// --- Version Display ---
+const APP_VERSION = packageJson.version;
+
 
 // --- Translation Service ---
 class TranslationService {
@@ -132,6 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const translationInfoLink = document.getElementById('translation-info-link');
     const translationInfoTooltip = document.getElementById('translation-info-tooltip');
     const viewOriginalLink = document.getElementById('view-original-link');
+
+    // Version display element
+    const versionNumberElement = document.getElementById('version-number');
+
+    // Populate version number
+    if (versionNumberElement) {
+        versionNumberElement.textContent = APP_VERSION;
+    }
 
     // --- Initial Checks ---
     // Check for elements critical for basic functionality
@@ -387,6 +400,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 console.warn("Glossary tooltip refresh function not available.");
                 // This might happen if the glossary script failed to load or initialize
+            }
+
+            // --- Update About page version ---
+            if (filename === 'about.html') {
+                const aboutVersionElement = document.getElementById('about-version-number');
+                if (aboutVersionElement) {
+                    aboutVersionElement.textContent = APP_VERSION;
+                }
             }
 
         } catch (error) {
