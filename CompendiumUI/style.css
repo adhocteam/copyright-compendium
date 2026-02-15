@@ -1,5 +1,34 @@
 /* --- START OF FILE style.css --- */
 
+/* --- Header & Logo Branding --- */
+.usa-logo__text a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: #1b1b1b;
+}
+
+.logo-main {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #162e51;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+}
+
+.logo-sub {
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: #005ea2;
+	margin-top: 0.1rem;
+	letter-spacing: 0.01em;
+}
+
+.usa-logo__text a:hover .logo-main,
+.usa-logo__text a:hover .logo-sub {
+	color: #1a4480;
+}
+
 /* --- Skip Navigation Link Styles --- */
 .usa-skipnav {
 	position: absolute;
@@ -62,12 +91,12 @@
 
 /* --- Global Resets & Base Styles --- */
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	line-height: 1.7;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+	line-height: 1.65;
 	margin: 0;
 	padding: 0;
-	background-color: #ffffff;
-	color: #212529;
+	background-color: #f0f0f0;
+	color: #1b1b1b;
 	/* Ensure body itself doesn't scroll unexpectedly with 100vh grid */
 	overflow: hidden;
 }
@@ -89,7 +118,9 @@ body {
 	grid-row: 1; /* Explicitly first row */
 	position: relative; /* Needed for z-index */
 	z-index: 10; /* Keep header above content */
-	border-bottom: 1px solid #dfe1e2; /* Optional: visual separator below header */
+	border-bottom: 3px solid #005ea2; /* Stronger blue border for authority */
+	background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 /* Make the Chapters submenu scrollable if it gets too long */
@@ -104,17 +135,18 @@ body {
 	grid-column: 1; /* First column */
 	grid-row: 2; /* Second row */
 	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within sidenav */
-	padding: 1rem;
-	border-right: 1px solid #dfe1e2;
-	background-color: #f8f9fa;
+	padding: 1.5rem 1rem;
+	border-right: 2px solid #d9e8f6;
+	background: linear-gradient(to right, #f8f9fa 0%, #ffffff 100%);
 	/* Ensure scrolling works smoothly */
 	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
+	box-shadow: 2px 0 4px rgba(0, 0, 0, 0.04);
 }
 
 .content {
 	grid-column: 2; /* Second column */
 	grid-row: 2; /* Second row */
-	padding: 1rem 2rem; /* Add more horizontal padding */
+	padding: 2rem 3rem; /* More generous padding */
 	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within content */
 	/* Limit line length for readability */
 	max-width: 85ch; /* Character units, adjust as needed */
@@ -122,27 +154,36 @@ body {
 	-webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
     /* Needed for absolute positioning of page numbers relative to content area */
     position: relative;
+	background-color: #ffffff;
+	box-shadow: -2px 0 8px rgba(0, 0, 0, 0.04);
 }
 
 /* --- Sidenav Enhancements (Combine with USWDS classes) --- */
 /* Style for the current item in the side nav */
 /* USWDS puts .usa-current on the <a> tag */
 .sidenav .usa-sidenav__item a.usa-current {
-	font-weight: bold;
-	/* USWDS default might use background/border, add custom style if desired */
-	/* Example: background-color: #e9ecef; */
+	font-weight: 700;
+	background-color: #d9e8f6; /* Light blue background */
+	color: #1a4480; /* Darker blue text */
+	border-left: 4px solid #005ea2; /* Strong left border indicator */
+	padding-left: calc(1rem - 4px); /* Adjust for border */
 }
 
 /* Ensure side nav links take adequate space and look consistent */
 .sidenav .usa-sidenav__item a {
 	display: block; /* Make the whole item clickable */
-	padding: 0.5rem 1rem; /* Adjust padding */
+	padding: 0.6rem 1rem; /* Slightly more padding */
 	text-decoration: none; /* Remove underlines */
 	color: #005ea2; /* USWDS link color */
+	border-radius: 4px; /* Rounded corners */
+	transition: all 0.2s ease; /* Smooth transitions */
+	font-weight: 500;
 }
 .sidenav .usa-sidenav__item a:hover {
-	text-decoration: underline;
-	background-color: #dfe1e2; /* Subtle hover background */
+	text-decoration: none;
+	background-color: #e7f2f5; /* Lighter blue hover */
+	color: #1a4480; /* Darker blue on hover */
+	transform: translateX(2px); /* Subtle shift on hover */
 }
 
 /* Style for disabled glossary items (spans instead of links) */
@@ -189,17 +230,18 @@ body {
 /* --- Table of Contents Styling --- */
 toc {
 	display: block;
-	border: 1px solid #dee2e6;
-	background-color: #f8f9fa;
-	padding: 1.5em;
-	margin-bottom: 2.5em;
+	border: 2px solid #97d4ea;
+	background: linear-gradient(to bottom, #f1f8fc 0%, #ffffff 100%);
+	padding: 2em;
+	margin-bottom: 3em;
 	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
 }
 
 toc tocitem {
 	display: block;
-	margin-bottom: 0.6em;
+	margin-bottom: 0.8em;
+	line-height: 1.6;
 }
 
 /* Indentation based on label structure */
@@ -213,14 +255,15 @@ tocitem[label*='('] { /* Items with parentheses (e.g., 101.1(A)) */
 
 tocitem a {
 	text-decoration: none;
-	color: #0d6efd; /* Consider using USWDS color: #005ea2 */
+	color: #005ea2; /* USWDS primary blue */
 	font-weight: 500;
+	transition: color 0.2s ease;
 }
 
 tocitem a:hover,
 tocitem a:focus {
 	text-decoration: underline;
-	color: #0a58ca; /* Consider using USWDS color: #1a4480 */
+	color: #1a4480; /* Darker blue on hover */
 }
 
 /* --- Content Element Styling (Custom Tags) --- */
@@ -241,14 +284,15 @@ chapter > head > title {
 /* Chapter Title (Main Heading for the document/content area) */
 main > title, chapter > title, chapter > level_title { /* Assuming this is the main H1 equivalent */
 	display: block;
-	font-size: 2.2em; /* Larger */
-	font-weight: bold; /* USWDS uses font-family Source Sans Pro */
-	margin-top: 0.5em; /* Less top margin if header provides space */
-	margin-bottom: 1.5em;
-	padding-bottom: 0.3em;
-	border-bottom: 4px solid #003f5c; /* Stronger bottom border */
-	/* text-align: center; /* Optional: Keep centered if desired */
-	color: #1b1b1b; /* USWDS Heading color */
+	font-size: 2.5em; /* Larger, more authoritative */
+	font-weight: 700; /* Bolder */
+	margin-top: 0; /* No top margin for cleaner look */
+	margin-bottom: 1.2em;
+	padding-bottom: 0.5em;
+	border-bottom: 4px solid #162e51; /* Darker, more authoritative border */
+	color: #162e51; /* Official dark blue */
+	line-height: 1.2;
+	letter-spacing: -0.02em; /* Tighter letter spacing for headlines */
 }
 
 /* Section/Subsection/Provision Titles */
@@ -264,39 +308,46 @@ provision > provision_title {
 }
 
 section > section_title {
-	font-size: 1.9em; /* H2 equivalent */
-	border-bottom: 2px solid #005ea2; /* USWDS Primary color */
-	padding-bottom: 0.3em;
+	font-size: 2em; /* H2 equivalent */
+	border-bottom: 3px solid #005ea2; /* USWDS Primary color */
+	padding-bottom: 0.4em;
+	margin-top: 2.5em;
+	color: #1a4480;
 }
 
 subsection > subsection_title {
-	font-size: 1.5em; /* H3 equivalent */
-	border-bottom: 1px solid #a9aeb1; /* USWDS Gray */
-	padding-bottom: 0.2em;
+	font-size: 1.6em; /* H3 equivalent */
+	border-bottom: 2px solid #73b3e7; /* Lighter blue */
+	padding-bottom: 0.3em;
+	margin-top: 2em;
+	color: #1a4480;
 }
 
 provision > provision_title {
-	font-size: 1.2em; /* H4 equivalent */
-	color: #1b1b1b; /* Consistent heading color */
+	font-size: 1.3em; /* H4 equivalent */
+	color: #005ea2; /* Consistent heading color */
+	margin-top: 1.8em;
 }
 
 /* Content Elements */
 paragraph {
-	margin-bottom: 1.2em;
+	margin-bottom: 1.4em;
 	max-width: 70ch; /* Slightly narrower for paragraph readability */
+	line-height: 1.75;
 }
 
 list {
 	margin-left: 0; /* Remove default browser indent */
-	margin-top: 0.8em;
-	margin-bottom: 1.2em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
 	padding-left: 2.5em; /* Control indent consistently */
 	list-style-position: outside; /* Ensure markers are outside */
 }
 
 item {
 	display: list-item;
-	margin-bottom: 0.7em;
+	margin-bottom: 0.8em;
+	line-height: 1.7;
 }
 
 /* Nested lists */
@@ -313,14 +364,15 @@ item list item {
 /* Citation Styling */
 ref {
 	font-style: normal;
-	font-size: 0.85em; /* Slightly smaller */
+	font-size: 0.88em; /* Slightly larger */
 	color: #565c65; /* USWDS Gray dark */
 	white-space: nowrap; /* Attempt to keep citations together */
 	background-color: #f0f0f0; /* USWDS Gray lightest */
-	padding: 0.1em 0.4em;
-	border-radius: 3px;
+	padding: 0.15em 0.5em;
+	border-radius: 4px;
 	display: inline; /* Keep inline */
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Monospace? Optional */
+	font-family: 'Roboto Mono', Consolas, Monaco, 'Courier New', monospace;
+	border: 1px solid #dfe1e2;
 }
 
 ref[source='CASE'] {
@@ -329,11 +381,29 @@ ref[source='CASE'] {
 
 /* --- Defined Term Styling --- */
 dt {
-	font-weight: bold; /* <<< This makes the term bold */
-	margin-top: 1em;   /* Space above each term */
-	/* You could add other styles like color here too */
-	/* color: #222; */
-    }
+	font-weight: 700; /* Bolder for emphasis */
+	margin-top: 1.2em;   /* Space above each term */
+	color: #1a4480; /* Official blue color */
+	font-size: 1.05em; /* Slightly larger */
+}
+
+/* --- Content Link Styling --- */
+.content a {
+	color: #005ea2;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 94, 162, 0.3);
+	text-underline-offset: 0.15em;
+	transition: all 0.2s ease;
+}
+
+.content a:hover {
+	color: #1a4480;
+	text-decoration-color: #1a4480;
+}
+
+.content a:visited {
+	color: #54278f; /* Purple for visited links */
+}
 
 /* style.css */
 
