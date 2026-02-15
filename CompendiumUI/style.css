@@ -310,7 +310,7 @@ main > title, chapter > title, chapter > level_title { /* Assuming this is the m
 	display: block;
 	font-size: 2.5em; /* Larger, more authoritative */
 	font-weight: 700; /* Bolder */
-	margin-top: 0; /* No top margin for cleaner look */
+	margin-top: 0; /* Prevents double spacing after header's bottom padding */
 	margin-bottom: 1.2em;
 	padding-bottom: 0.5em;
 	border-bottom: 4px solid #162e51; /* Darker, more authoritative border */
@@ -426,7 +426,7 @@ dt {
 }
 
 .content a:visited {
-	color: #54278f; /* Purple for visited links */
+	color: #4c2c92; /* WCAG AA compliant purple for visited links (contrast ratio 5.8:1) */
 }
 
 /* style.css */
