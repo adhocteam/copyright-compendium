@@ -1,189 +1,242 @@
 #!/usr/bin/env python3
 """
-Fix chapter structure by nesting subsections under their parent sections.
+Fix chapter structure by nesting subsections and provisions under their parent sections/subsections.
 
-This script fixes the XML structure where subsections are siblings to sections
-instead of being nested children. It moves subsections under their parent section
-based on the numbering (e.g., subsection 602.1 belongs under section 602).
+This script fixes the XML structure where subsections and provisions are siblings
+instead of being nested children.
 """
 
-import re
+try:
+    import re2 as re
+except ImportError:
+    import re
+    print("Warning: google-re2 not installed, falling back to standard re module")
 from pathlib import Path
 import sys
 
+def find_closing_tag(content, start_pos, tag_name):
+    """Find the closing tag for a given opening tag, handling nesting."""
+    open_tag = f'<{tag_name} '
+    close_tag = f'</{tag_name}>'
+    depth = 1
+    pos = start_pos
+    
+    while depth > 0 and pos < len(content):
+        if content[pos:pos+len(open_tag)] == open_tag:
+            depth += 1
+        elif content[pos:pos+len(close_tag)] == close_tag:
+            depth -= 1
+            if depth == 0:
+                return pos, pos + len(close_tag)
+        pos += 1
+    
+    return None, None
+
+def get_parent_id_candidates(child_id):
+    """Get list of possible parent IDs for a child, in priority order."""
+    candidates = []
+    
+    if child_id.startswith('prov-'):
+        # Remove the 'prov-' prefix to get the number part
+        num_part = child_id[5:]  # Everything after 'prov-'
+        
+        # Split by dash
+        parts = num_part.split('-')
+        
+        # Try removing segments from the end to find parent
+        # For prov-1009-4-A-1, try: prov-1009-4-A, then subsec-1009-4-A, then subsec-1009-4
+        for i in range(len(parts) - 1, 0, -1):
+            parent_num = '-'.join(parts[:i])
+            # First try as another provision
+            candidates.append(f'prov-{parent_num}')
+            # Then try as a subsection
+            candidates.append(f'subsec-{parent_num}')
+    
+    elif child_id.startswith('subsec-'):
+        # subsec-602-1 -> sec-602
+        # subsec-1108-6-B -> subsec-1108-6 or sec-1108
+        num_part = child_id[7:]  # Everything after 'subsec-'
+        parts = num_part.split('-')
+        
+        # Try removing segments from the end
+        for i in range(len(parts) - 1, 0, -1):
+            parent_num = '-'.join(parts[:i])
+            # First try as another subsection (for nested subsections)
+            if i > 1:  # Only if there's more than just the section number
+                candidates.append(f'subsec-{parent_num}')
+            # Then try as a section
+            if i == 1:  # Just the section number
+                candidates.append(f'sec-{parent_num}')
+    
+    return candidates
+
+def get_parent_id(child_id, all_element_ids):
+    """Find the actual parent ID from candidates that exist in the document."""
+    candidates = get_parent_id_candidates(child_id)
+    for candidate in candidates:
+        if candidate in all_element_ids:
+            return candidate
+    return None
+
 def fix_chapter_structure(file_path, dry_run=False):
-    """Fix chapter structure by nesting subsections under their parent sections."""
+    """Fix chapter structure by nesting children under their parents."""
     
     with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+        original_content = f.read()
     
-    # Check if this file needs fixing (has sibling subsections)
-    # Look for pattern: </section> followed by <subsection
-    if not re.search(r'</section>\s*<subsection', content):
-        return False, "No sibling subsections found"
+    # Check if this file needs fixing
+    needs_fixing = (
+        re.search(r'</section>\s*<subsection', original_content) or
+        re.search(r'</section>\s*<provision', original_content) or
+        re.search(r'</subsection>\s*<provision', original_content)
+    )
+    
+    if not needs_fixing:
+        return False, "No sibling subsections or provisions found"
     
     print(f"\nProcessing: {file_path.name}")
     
-    # Extract section number from subsection ID
-    # Examples: subsec-602-1 -> 602, subsec-1004-1-A -> 1004
-    def get_parent_section_num(subsec_id):
-        match = re.match(r'subsec-(\d+)', subsec_id)
-        if match:
-            return match.group(1)
-        return None
+    current_content = original_content
+    total_moved = 0
+    pass_num = 0
     
-    # Find all sections and subsections with their positions
-    sections = []
-    subsections = []
-    
-    for match in re.finditer(r'<section id="([^"]*)"[^>]*>', content):
-        sections.append({
-            'id': match.group(1),
-            'start': match.start(),
-            'tag_end': match.end()
-        })
-    
-    for match in re.finditer(r'<subsection id="([^"]*)"[^>]*>', content):
-        subsections.append({
-            'id': match.group(1),
-            'start': match.start(),
-            'tag_end': match.end()
-        })
-    
-    print(f"  Found {len(sections)} sections and {len(subsections)} subsections")
-    
-    # Find closing tags for sections
-    for section in sections:
-        # Find the closing </section> tag for this section
-        # We need to count nested sections
-        depth = 1
-        pos = section['tag_end']
-        while depth > 0 and pos < len(content):
-            if content[pos:pos+9] == '<section ':
-                depth += 1
-            elif content[pos:pos+10] == '</section>':
-                depth -= 1
-                if depth == 0:
-                    section['end'] = pos
-                    section['close_tag_end'] = pos + 10
-                    break
-            pos += 1
+    # Loop until no more elements need to be moved
+    while True:
+        pass_num += 1
         
-        if depth != 0:
-            print(f"  Warning: Could not find closing tag for section {section['id']}")
-            return False, f"Could not find closing tag for section {section['id']}"
-    
-    # Extract section numbers
-    for section in sections:
-        match = re.match(r'sec-(\d+)', section['id'])
-        if match:
-            section['num'] = match.group(1)
-    
-    # Group subsections by their parent section
-    subsections_to_move = {}
-    for subsec in subsections:
-        parent_num = get_parent_section_num(subsec['id'])
-        if parent_num:
-            if parent_num not in subsections_to_move:
-                subsections_to_move[parent_num] = []
-            subsections_to_move[parent_num].append(subsec)
-    
-    print(f"  Subsections to move: {sum(len(v) for v in subsections_to_move.values())}")
-    
-    # Build the new content
-    # We'll process the file in reverse order to maintain positions
-    new_content = content
-    
-    # For each section, find subsections that should be nested
-    for section in reversed(sections):
-        if 'num' not in section:
-            continue
+        # Find all elements (sections, subsections, provisions) with their positions
+        elements = {}
         
-        section_num = section['num']
-        if section_num not in subsections_to_move:
-            continue
+        for tag_type in ['section', 'subsection', 'provision']:
+            pattern = rf'<{tag_type} id="([^"]*)"[^>]*>'
+            for match in re.finditer(pattern, current_content):
+                element_id = match.group(1)
+                start_pos = match.start()
+                tag_end = match.end()
+                
+                # Find closing tag
+                close_start, close_end = find_closing_tag(current_content, tag_end, tag_type)
+                
+                if close_start is None:
+                    if pass_num == 1:  # Only warn on first pass
+                        print(f"  Warning: Could not find closing tag for {tag_type} {element_id}")
+                    continue
+                
+                elements[element_id] = {
+                    'id': element_id,
+                    'type': tag_type,
+                    'start': start_pos,
+                    'tag_end': tag_end,
+                    'close_start': close_start,
+                    'close_end': close_end
+                }
         
-        # Find subsections that come after this section closes
-        subsecs_for_this_section = []
-        section_close_pos = section['close_tag_end']
+        # Now determine parent relationships
+        all_element_ids = set(elements.keys())
+        for elem_id, elem in elements.items():
+            elem['parent_id'] = get_parent_id(elem_id, all_element_ids)
         
-        for subsec in subsections_to_move[section_num]:
-            if subsec['start'] >= section_close_pos:
-                # This subsection is after the section closes, so it needs to be moved
-                subsecs_for_this_section.append(subsec)
+        # Build parent-child relationships
+        for elem_id, elem in elements.items():
+            if elem['parent_id'] and elem['parent_id'] in elements:
+                parent = elements[elem['parent_id']]
+                if 'children' not in parent:
+                    parent['children'] = []
+                parent['children'].append(elem_id)
         
-        if not subsecs_for_this_section:
-            continue
+        # Find elements that need to be moved (children that are outside their parents)
+        to_move = []
+        for elem_id, elem in elements.items():
+            if elem['parent_id'] and elem['parent_id'] in elements:
+                parent = elements[elem['parent_id']]
+                # Check if this element is outside its parent (starts after parent closes)
+                if elem['start'] >= parent['close_end']:
+                    to_move.append(elem_id)
         
-        # Sort by position
-        subsecs_for_this_section.sort(key=lambda x: x['start'])
+        if not to_move:
+            if pass_num == 1:
+                print("  No elements need to be moved")
+                return False, "No elements need moving"
+            else:
+                break  # Done - no more elements to move
         
-        # Find the end of each subsection to extract the full content
-        for subsec in subsecs_for_this_section:
-            depth = 1
-            pos = subsec['tag_end']
-            while depth > 0 and pos < len(new_content):
-                if new_content[pos:pos+12] == '<subsection ':
-                    depth += 1
-                elif new_content[pos:pos+13] == '</subsection>':
-                    depth -= 1
-                    if depth == 0:
-                        subsec['end'] = pos
-                        subsec['close_tag_end'] = pos + 13
-                        break
-                pos += 1
+        if pass_num == 1:
+            print(f"  Found {len(to_move)} elements to move (pass {pass_num})")
         
-        # Extract subsection content and remove from original position (in reverse order)
-        subsec_contents = []
-        for subsec in reversed(subsecs_for_this_section):
-            if 'close_tag_end' not in subsec:
-                print(f"  Warning: Could not find closing tag for subsection {subsec['id']}")
-                continue
+        # Sort elements to move by their position (reverse order for safe removal)
+        to_move.sort(key=lambda eid: elements[eid]['start'], reverse=True)
+        
+        # Group by parent
+        by_parent = {}
+        for elem_id in to_move:
+            parent_id = elements[elem_id]['parent_id']
+            if parent_id not in by_parent:
+                by_parent[parent_id] = []
+            by_parent[parent_id].append(elem_id)
+        
+        # Process the content
+        new_content = current_content
+        
+        # Extract and remove elements (in reverse order to maintain positions)
+        extracted = {}
+        for elem_id in to_move:
+            elem = elements[elem_id]
             
-            # Extract the full subsection including whitespace before it
-            start = subsec['start']
-            # Look back for whitespace/newlines
+            # Find whitespace before element
+            start = elem['start']
             while start > 0 and new_content[start-1] in ' \n\t':
                 start -= 1
             
-            subsec_content = new_content[start:subsec['close_tag_end']]
-            subsec_contents.insert(0, subsec_content)  # Insert at beginning to maintain order
+            # Extract the full element
+            elem_text = new_content[start:elem['close_end']]
+            extracted[elem_id] = elem_text
             
-            # Remove from original position
-            new_content = new_content[:start] + new_content[subsec['close_tag_end']:]
+            # Remove from content
+            new_content = new_content[:start] + new_content[elem['close_end']:]
+            
+            # Update positions of remaining elements
+            removed_length = elem['close_end'] - start
+            for other_id, other in elements.items():
+                if other['start'] > start:
+                    other['start'] -= removed_length
+                    other['tag_end'] -= removed_length
+                    other['close_start'] -= removed_length
+                    other['close_end'] -= removed_length
         
-        # Re-find the section closing tag position (it may have shifted)
-        # Search for </section> before the position where we removed content
-        section_pattern = f'<section id="{section["id"]}"[^>]*>'
-        section_match = re.search(re.escape(section_pattern).replace(r'\[', '[').replace(r'\]', ']'), new_content)
-        if not section_match:
-            # Try without escaping special chars in ID
-            section_match = re.search(f'<section id="{re.escape(section["id"])}"[^>]*>', new_content)
+        # Insert elements into their parents
+        for parent_id in sorted(by_parent.keys(), key=lambda pid: elements[pid]['start'], reverse=True):
+            parent = elements[parent_id]
+            children_ids = sorted(by_parent[parent_id], key=lambda eid: original_content.find(f'id="{eid}"'))
+            
+            # Combine all children text
+            children_text = ''.join(extracted[cid] for cid in children_ids)
+            
+            # Find current parent closing position
+            insert_pos = parent['close_start']
+            
+            # Insert children before the closing tag
+            new_content = new_content[:insert_pos] + children_text + new_content[insert_pos:]
+            
+            # Update positions
+            inserted_length = len(children_text)
+            for other_id, other in elements.items():
+                if other['start'] > insert_pos:
+                    other['start'] += inserted_length
+                    other['tag_end'] += inserted_length
+                    other['close_start'] += inserted_length
+                    other['close_end'] += inserted_length
+            
+            total_moved += len(children_ids)
+            print(f"  Moved {len(children_ids)} {children_ids[0].split('-')[0]}(s) into {parent_id}")
         
-        if section_match:
-            # Find the closing tag
-            depth = 1
-            pos = section_match.end()
-            while depth > 0 and pos < len(new_content):
-                if new_content[pos:pos+9] == '<section ':
-                    depth += 1
-                elif new_content[pos:pos+10] == '</section>':
-                    depth -= 1
-                    if depth == 0:
-                        insert_pos = pos
-                        # Insert subsections before the closing </section> tag
-                        subsec_text = ''.join(subsec_contents)
-                        new_content = new_content[:insert_pos] + subsec_text + new_content[insert_pos:]
-                        print(f"  Moved {len(subsec_contents)} subsections into section {section['id']}")
-                        break
-                pos += 1
+        current_content = new_content
     
     if not dry_run:
         with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        print(f"  ✓ File updated successfully")
+            f.write(current_content)
+        print(f"  ✓ File updated successfully ({total_moved} elements moved in {pass_num} passes)")
     
-    return True, "Fixed"
+    return True, f"Fixed - moved {total_moved} elements"
 
 def main():
     dry_run = '--dry-run' in sys.argv
@@ -210,15 +263,14 @@ def main():
             if success:
                 fixed_count += 1
             else:
-                if "No sibling subsections" in message:
-                    skipped_count += 1
+                skipped_count += 1
+                if not "No sibling" in message and not "No elements" in message:
                     print(f"\nSkipping {ch_file.name}: {message}")
-                else:
-                    error_count += 1
-                    print(f"\nError processing {ch_file.name}: {message}")
         except Exception as e:
             error_count += 1
             print(f"\nException processing {ch_file.name}: {e}")
+            import traceback
+            traceback.print_exc()
     
     print(f"\n{'='*60}")
     print(f"Summary:")
