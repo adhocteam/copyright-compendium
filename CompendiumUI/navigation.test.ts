@@ -34,10 +34,10 @@ describe('DOM Navigation Utilities', () => {
       expect(details.open).toBe(false);
 
       // Simulate opening parent details when scrolling to target
-      let parent = target.parentElement;
+      let parent: HTMLElement | null = target.parentElement;
       while (parent) {
-        if (parent.tagName === 'DETAILS' && !parent.open) {
-          parent.open = true;
+        if (parent.tagName === 'DETAILS' && !(parent as HTMLDetailsElement).open) {
+          (parent as HTMLDetailsElement).open = true;
         }
         parent = parent.parentElement;
       }
@@ -70,10 +70,10 @@ describe('DOM Navigation Utilities', () => {
       expect(inner.open).toBe(false);
 
       // Open all parent details
-      let parent = target.parentElement;
+      let parent: HTMLElement | null = target.parentElement;
       while (parent) {
-        if (parent.tagName === 'DETAILS' && !parent.open) {
-          parent.open = true;
+        if (parent.tagName === 'DETAILS' && !(parent as HTMLDetailsElement).open) {
+          (parent as HTMLDetailsElement).open = true;
         }
         parent = parent.parentElement;
       }
@@ -90,10 +90,10 @@ describe('DOM Navigation Utilities', () => {
 
       // Should not throw when no details elements exist
       expect(() => {
-        let parent = target.parentElement;
+        let parent: HTMLElement | null = target.parentElement;
         while (parent) {
-          if (parent.tagName === 'DETAILS' && !parent.open) {
-            parent.open = true;
+          if (parent.tagName === 'DETAILS' && !(parent as HTMLDetailsElement).open) {
+            (parent as HTMLDetailsElement).open = true;
           }
           parent = parent.parentElement;
         }
