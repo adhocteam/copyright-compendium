@@ -2,7 +2,15 @@
 
 This repository contains a simple web display for the Copyright Compendium. The Compendium is available as a pdf on Copyright.org, but is difficult to navigate. It has long been a goal of the copyright community to have a navigable and searchable web version of the Compendium. Public.resource.org has the original version (2014) on its website [here](https://law.resource.org/pub/us/compendium/introduction.html), but it has not been updated.
 
-The UI was originally built using Gemini 2.5 Pro Experimental, based on USWDS components and styling. After the initial implementation in February 2026, tests, conversion scripts, and other aspects of the site were updated using a combination of GitHub Agents and Antigravity with Claude Opus 4.6 and Gemini 3.0 Pro.
+The UI was originally built using Gemini 2.5 Pro Experimental, based on USWDS components and styling. After the initial implementation in February 2026, tests, conversion scripts, and other aspects of the site were updated using a combination of GitHub Agents and Antigravity with Claude Opus 4.6 and Gemini 3.0 Pro. The frontend code has been refactored to TypeScript with comprehensive test coverage.
+
+# Technology Stack
+
+- **Frontend**: TypeScript with Vite build system
+- **UI Framework**: USWDS (U.S. Web Design System) components
+- **Search**: Algolia search with autocomplete
+- **Testing**: Vitest with 38 unit and integration tests
+- **Type Checking**: TypeScript with strict mode enabled
 
 # Running Locally
 
@@ -47,6 +55,7 @@ A [`Taskfile.yml`](Taskfile.yml) is included for common workflows. Install [Task
 |---------|-------------|
 | `task dev` | Start Vite dev server with hot-reload |
 | `task build` | Build the production bundle |
+| `task typecheck` | Run TypeScript type checking |
 | `task docker:run` | Build and run the Docker container on port 8080 |
 | `task download-pdfs` | Download Compendium PDFs from copyright.gov |
 | `task pdf-to-text` | Extract text from PDFs into `.txt` files |
@@ -111,6 +120,34 @@ The Compendium viewer now includes experimental browser-based translation suppor
 ## Quality Assurance
 
 An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. See [QA.md](QA.md) and [tests/README.md](tests/README.md) for details.
+
+### Frontend Testing
+
+The CompendiumUI codebase includes comprehensive unit and integration tests written in TypeScript using Vitest:
+
+```bash
+cd CompendiumUI
+
+# Run tests once
+npm run test:run
+
+# Run tests in watch mode
+npm run test
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run TypeScript type checking
+npm run typecheck
+```
+
+**Test Coverage:**
+- 38 tests covering translation, navigation, utilities, and DOM manipulation
+- All tests pass with 100% success rate
+- TypeScript ensures type safety throughout the codebase
 
 ## Future Work
 

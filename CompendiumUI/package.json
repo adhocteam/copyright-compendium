@@ -7,11 +7,22 @@
     "algoliasearch": "^5.23.4"
   },
   "devDependencies": {
-    "vite": "^6.3.3"
+    "@types/node": "^25.2.3",
+    "@vitest/ui": "^4.0.18",
+    "happy-dom": "^20.6.1",
+    "jsdom": "^28.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.3",
+    "vitest": "^4.0.18"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
   }
 }
