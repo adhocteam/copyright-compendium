@@ -2,7 +2,7 @@
 
 This repository contains a simple web display for the Copyright Compendium. The Compendium is available as a pdf on Copyright.org, but is difficult to navigate. It has long been a goal of the copyright community to have a navigable and searchable web version of the Compendium. Public.resource.org has the original version (2014) on its website [here](https://law.resource.org/pub/us/compendium/introduction.html), but it has not been updated.
 
-The UI was originally built using Gemini 2.5 Pro Experimental, based on USWDS components and styling. It was updated (February 2026) using Github Agents and Claude Opus 4.6 in Antigravity.
+The UI was originally built using Gemini 2.5 Pro Experimental, based on USWDS components and styling. After the initial implementation in February 2026, tests, conversion scripts, and other aspects of the site were updated using a combination of GitHub Agents and Antigravity with Claude Opus 4.6 and Gemini 3.0 Pro.
 
 # Running Locally
 
