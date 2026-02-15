@@ -273,6 +273,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (chapterListDropdown.hasChildNodes()) {
             chapterListDropdown.querySelectorAll('a').forEach(el => {
                 if (el.dataset.filename === filename) {
+                    el.classList.add('usa-current');
+                    el.setAttribute('aria-current', 'page');
                 } else {
                     el.classList.remove('usa-current');
                     el.removeAttribute('aria-current');
@@ -1152,7 +1154,6 @@ autocomplete<any>({
             const contentElement = rawSnippetHtml ? html`
                                       <div class="aa-ItemContentDescription"
                                            dangerouslySetInnerHTML=${{ __html: rawSnippetHtml }}>
-                                        ${''/* This comment is converted to an empty string */} 
                                         </div>` : null; // Set to null if no snippet
 
             return html`<div class="aa-ItemWrapper">

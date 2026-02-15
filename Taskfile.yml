@@ -39,6 +39,13 @@ tasks:
     cmds:
       - npm run preview
 
+  typecheck:
+    desc: Run TypeScript type checking
+    dir: CompendiumUI
+    cmds:
+      - npm install
+      - npm run typecheck
+
   # ── PDF processing ─────────────────────────────────────
   download-pdfs:
     desc: Download Compendium PDFs from copyright.gov
