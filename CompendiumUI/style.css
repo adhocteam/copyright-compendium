@@ -24,6 +24,37 @@
 	letter-spacing: 0.01em;
 }
 
+/* --- Header Chapter Title --- */
+.header-chapter-title {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #162e51;
+    /* Allow wrapping to show full title */
+    white-space: normal;
+    line-height: 1.1; 
+    padding: 0.5rem 1rem;
+}
+
+/* Adjust for smaller screens: reduce size, enforce truncation if really small */
+@media (max-width: 64em) {
+    .header-chapter-title {
+        display: block; /* Ensure it's visible on tablets */
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 40em) {
+    .header-chapter-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.9rem;
+    }
+}
+
 .usa-logo__text a:hover .logo-main,
 .usa-logo__text a:hover .logo-sub {
 	color: #1a4480;
@@ -135,7 +166,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin-left: auto;
+	/* margin-left: auto; <-- Removed to allow title to grow */
 	margin-right: 1rem;
 }
 
@@ -401,7 +432,8 @@ body {
 	font-weight: 700;
 	background-color: #d9e8f6; /* Light blue background */
 	color: #1a4480; /* Darker blue text */
-	border-left: 4px solid #005ea2; /* Strong left border indicator */
+	/* Border left is handled by parent li in some designs, but let's keep it here if li isn't sufficient */
+	border-left: 4px solid #005ea2; 
 	padding-left: calc(1rem - 4px); /* Adjust for border */
 }
 
@@ -415,6 +447,50 @@ body {
 	transition: all 0.2s ease; /* Smooth transitions */
 	font-weight: 500;
 }
+
+.sidenav .usa-sidenav__item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidenav .usa-sidenav__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    color: #565c65;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav .usa-sidenav__toggle:hover {
+    color: #1a4480;
+    background-color: #e7f2f5;
+    border-radius: 4px;
+}
+
+.sidenav .usa-sidenav__toggle .usa-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+    transition: transform 0.2s ease;
+}
+
+/* Rotate icon when collapsed: point right (-90deg). Default (expanded) points down (0deg). */
+.sidenav .usa-sidenav__toggle.is-collapsed .usa-icon {
+    transform: rotate(-90deg);
+}
+
+/* Ensure hidden sublists are truly hidden */
+.sidenav .usa-sidenav__sublist[hidden] {
+    display: none !important;
+}
+
+
 .sidenav .usa-sidenav__item a:hover {
 	text-decoration: none;
 	background-color: #e7f2f5; /* Lighter blue hover */
@@ -434,6 +510,11 @@ body {
 .sidenav .usa-sidenav__sublist {
 	 /* USWDS handles most sublist styling */
 	 /* Add padding adjustments if needed, but start without */
+}
+
+/* Hide hidden sublists */
+.sidenav .usa-sidenav__sublist[hidden] {
+    display: none;
 }
 
 .sidenav .usa-sidenav__sublist .usa-sidenav__item a {

@@ -101,12 +101,15 @@ class TranslationService {
         if ('translation' in self && self.translation && 'createTranslator' in self.translation) {
             try {
                 // Check if we can create a translator
+                // We must check if it's actually usable, not just present
                 const canTranslate = await self.translation.canTranslate({
                     sourceLanguage: 'en',
                     targetLanguage: 'es'
                 });
-                this.canTranslate = canTranslate === 'readily' || canTranslate === 'after-download';
-                console.log('Translation API available:', this.canTranslate);
+
+                // If the API returns 'no', it means it's not available for this pair or at all
+                this.canTranslate = canTranslate !== 'no';
+                console.log('Translation API available status:', canTranslate, '->', this.canTranslate);
             } catch (error) {
                 console.warn('Translation API check failed:', error);
                 this.canTranslate = false;
@@ -205,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const uswdsOverlay = document.querySelector('.usa-overlay');
     const uswdsNav = document.querySelector('.usa-header .usa-nav');
     const homeLink = document.querySelector('.usa-logo a');
+    const headerChapterTitle = document.getElementById('header-chapter-title');
 
     // Translation elements
     const languageSelect = document.getElementById('language-select');
@@ -375,7 +379,22 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Updating currentFilename and title");
             currentFilename = filename;
             const chapterTitle = findChapterTitle(filename);
+
+            // Update document title
             document.title = `Compendium Viewer - ${chapterTitle || filename}`;
+
+            // Update Header Title
+            if (headerChapterTitle) {
+                if (chapterTitle) {
+                    headerChapterTitle.textContent = chapterTitle;
+                } else if (filename === 'glossary.html') {
+                    headerChapterTitle.textContent = 'Glossary';
+                } else if (filename === 'introduction.html') {
+                    headerChapterTitle.textContent = 'Introduction';
+                } else {
+                    headerChapterTitle.textContent = ''; // Clear or default
+                }
+            }
 
             // --- Generate navigation AND handle visibility ---
             console.log("Calling generateNavigation");
@@ -645,6 +664,26 @@ document.addEventListener('DOMContentLoaded', () => {
         // Do NOT call updateSideNavCurrent for A-Z links
     }
 
+    // --- Helper to toggle Sidenav Items ---
+    function toggleSidenavItem(button: HTMLButtonElement): void {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!isExpanded));
+
+        // Button is inside .usa-sidenav__item-inner (div), so we look for the UL which is a sibling of that div
+        const wrapperDiv = button.closest('.usa-sidenav__item-inner');
+        const subList = wrapperDiv ? wrapperDiv.nextElementSibling : null;
+
+        if (subList && subList.tagName === 'UL') {
+            if (!isExpanded) {
+                subList.removeAttribute('hidden');
+            } else {
+                subList.setAttribute('hidden', '');
+            }
+        }
+        // Toggle icon rotation class
+        button.classList.toggle('is-collapsed', isExpanded);
+    }
+
 
 
 
@@ -685,20 +724,58 @@ document.addEventListener('DOMContentLoaded', () => {
         const li = document.createElement('li');
         li.className = 'usa-sidenav__item';
 
+        // Check for children first to decide if we need a toggle
+        let hasChildren = false;
+        if (type === 'section' || type === 'subsection') {
+            const children = element.querySelectorAll(':scope > subsection[id], :scope > provision[id]');
+            if (children.length > 0) hasChildren = true;
+        }
+
+        const div = document.createElement('div');
+        div.className = 'usa-sidenav__item-inner';
+        div.style.display = 'flex';
+        div.style.alignItems = 'center';
+        div.style.justifyContent = 'space-between';
+
         const a = document.createElement('a');
         a.href = `#${id}`;
         a.textContent = displayTitle;
-        li.appendChild(a);
+        a.style.flex = '1'; // Allow link to take available space
+
+        div.appendChild(a);
+
+        if (hasChildren) {
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'usa-sidenav__toggle is-collapsed';
+            toggleBtn.setAttribute('aria-expanded', 'false'); // Default collapsed
+            toggleBtn.setAttribute('aria-label', `Toggle ${displayTitle}`);
+
+            // Inline SVG chevron (pointing right when collapsed, rotates down when expanded)
+            toggleBtn.innerHTML = `
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" 
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
+                </svg>
+            `;
+
+            toggleBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleSidenavItem(toggleBtn);
+            });
+            div.appendChild(toggleBtn);
+        }
+
+        li.appendChild(div);
 
         // Recursively build sub-navigation for sections and subsections
-        if (type === 'section' || type === 'subsection') {
+        if (hasChildren) {
             const children = element.querySelectorAll(':scope > subsection[id], :scope > provision[id]');
-            if (children.length > 0) {
-                const subUl = document.createElement('ul');
-                subUl.className = 'usa-sidenav__sublist';
-                children.forEach(child => buildNavItem(child, child.tagName.toLowerCase(), subUl, level + 1));
-                if (subUl.hasChildNodes()) li.appendChild(subUl);
-            }
+            const subUl = document.createElement('ul');
+            subUl.className = 'usa-sidenav__sublist';
+            subUl.setAttribute('hidden', ''); // Default collapsed
+            children.forEach(child => buildNavItem(child, child.tagName.toLowerCase(), subUl, level + 1));
+            li.appendChild(subUl);
         }
         parentUl.appendChild(li);
     }
@@ -849,7 +926,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // This is needed because USWDS JS may not load in some environments
         const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown.id}"]`);
         if (chaptersAccordionButton) {
-            chaptersAccordionButton.addEventListener('click', () => {
+            // Close when clicking outside
+            document.addEventListener('click', (event) => {
+                const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
+                if (isExpanded && !chapterListDropdown.contains(event.target as Node) && !chaptersAccordionButton.contains(event.target as Node)) {
+                    chaptersAccordionButton.setAttribute('aria-expanded', 'false');
+                    chapterListDropdown.setAttribute('hidden', '');
+                }
+            });
+
+            chaptersAccordionButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent immediate closing from document listener
                 const isExpanded = chaptersAccordionButton.getAttribute('aria-expanded') === 'true';
 
                 if (isExpanded) {
