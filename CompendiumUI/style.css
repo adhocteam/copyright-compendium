@@ -123,12 +123,99 @@
 }
 
 /* Translation disclaimer positioning */
-#translation-disclaimer,
-#translation-unsupported {
+#translation-disclaimer {
 	margin: 0;
 	border-radius: 0;
 	border-left: none;
 	border-right: none;
+}
+
+/* --- Translation Info Link (for unsupported browsers) --- */
+.translation-info-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 1rem;
+}
+
+.translation-info-link {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.5rem 0.75rem;
+	background-color: transparent;
+	border: 1px solid #dfe1e2;
+	border-radius: 4px;
+	color: #565c65;
+	font-size: 0.875rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.translation-info-link:hover,
+.translation-info-link:focus {
+	background-color: #f0f0f0;
+	border-color: #71767a;
+	color: #1b1b1b;
+}
+
+.translation-info-link .usa-icon {
+	width: 1rem;
+	height: 1rem;
+	fill: currentColor;
+}
+
+.translation-info-tooltip {
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	right: 0;
+	min-width: 300px;
+	max-width: 400px;
+	background-color: #ffffff;
+	border: 2px solid #005ea2;
+	border-radius: 6px;
+	padding: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	z-index: 1000;
+	font-size: 0.875rem;
+	line-height: 1.6;
+}
+
+.translation-info-tooltip::before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: 1rem;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #005ea2;
+}
+
+.translation-info-title {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #1b1b1b;
+}
+
+.translation-info-tooltip p {
+	margin: 0.5rem 0;
+	color: #1b1b1b;
+}
+
+.translation-info-tooltip ul {
+	margin: 0.5rem 0;
+	padding-left: 1.5rem;
+	color: #1b1b1b;
+}
+
+.translation-info-tooltip li {
+	margin: 0.25rem 0;
 }
 
 /* Responsive adjustments for translation controls */
@@ -139,6 +226,44 @@
 	
 	.translation-controls {
 		flex-direction: column;
+	}
+	
+	.translation-info-wrapper {
+		margin-right: 0.5rem;
+	}
+	
+	.translation-info-tooltip {
+		right: 0;
+		min-width: 280px;
+	}
+}
+
+@media (max-width: 40em) {
+	.translation-info-wrapper {
+		position: static;
+	}
+	
+	.translation-info-link span {
+		display: none;
+	}
+	
+	.translation-info-link {
+		padding: 0.5rem;
+	}
+	
+	.translation-info-tooltip {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		right: auto;
+		max-width: calc(100vw - 2rem);
+		min-width: auto;
+		width: calc(100vw - 2rem);
+	}
+	
+	.translation-info-tooltip::before {
+		display: none;
 	}
 }
 
