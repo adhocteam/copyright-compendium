@@ -2,7 +2,60 @@
 
 This repository contains a simple web display for the Copyright Compendium. The Compendium is available as a pdf on Copyright.org, but is difficult to navigate. It has long been a goal of the copyright community to have a navigable and searchable web version of the Compendium. Public.resource.org has the original version (2014) on its website [here](https://law.resource.org/pub/us/compendium/introduction.html), but it has not been updated.
 
-The UI was built using Gemini 2.5 Pro Experimental, based on USWDS components and styling.
+The UI was originally built using Gemini 2.5 Pro Experimental, based on USWDS components and styling. It was updated (February 2026) using Github Agents and Claude Opus 4.6 in Antigravity.
+
+# Running Locally
+
+The web UI lives in the `CompendiumUI/` directory. You can run it with or without Docker.
+
+### Without Docker (Vite dev server)
+
+Requires [Node.js](https://nodejs.org/) (v18+).
+
+```bash
+cd CompendiumUI
+npm install
+npm run dev
+```
+
+Vite will start a dev server (usually at `http://localhost:5173`) with hot-reload.
+
+To build a production bundle:
+
+```bash
+npm run build    # outputs to CompendiumUI/dist/
+npm run preview  # preview the production build locally
+```
+
+### With Docker
+
+A multi-stage `Dockerfile` is included in `CompendiumUI/`. It installs dependencies, builds the Vite app, and serves the output with nginx.
+
+```bash
+# From the repository root
+docker build -t copyright-compendium ./CompendiumUI
+docker run --rm -p 8080:80 copyright-compendium
+```
+
+The site will be available at `http://localhost:8080`.
+
+### Task Runner
+
+A [`Taskfile.yml`](Taskfile.yml) is included for common workflows. Install [Task](https://taskfile.dev/) (`brew install go-task` on macOS), then run `task --list` to see all available commands:
+
+| Command | Description |
+|---------|-------------|
+| `task dev` | Start Vite dev server with hot-reload |
+| `task build` | Build the production bundle |
+| `task docker:run` | Build and run the Docker container on port 8080 |
+| `task download-pdfs` | Download Compendium PDFs from copyright.gov |
+| `task pdf-to-text` | Extract text from PDFs into `.txt` files |
+| `task process-pdfs` | Convert PDFs to XHTML via Gemini API |
+| `task process-pdfs-chunked` | Convert large PDFs in chunks via Gemini API |
+| `task test` | Run algorithmic QA checks on all chapters |
+| `task test:chapter -- ch200` | Run QA on a specific chapter |
+| `task test:llm` | Run LLM-based QA checks (requires `GOOGLE_API_KEY`) |
+| `task test:all` | Run all QA checks with full reports |
 
 # Using LLMs to convert pdf to xhtml
 

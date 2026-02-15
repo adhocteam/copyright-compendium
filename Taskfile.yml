@@ -1,0 +1,87 @@
+# https://taskfile.dev
+version: '3'
+
+vars:
+  PDF_DIR: ./copyright_compendium_pdfs
+  IMAGE_NAME: copyright-compendium
+
+tasks:
+  # ── Docker ──────────────────────────────────────────────
+  docker:build:
+    desc: Build the Docker image for CompendiumUI
+    cmds:
+      - docker build -t {{.IMAGE_NAME}} ./CompendiumUI
+
+  docker:run:
+    desc: Run the CompendiumUI container on port 8080
+    deps: [docker:build]
+    cmds:
+      - docker run --rm -p 8080:80 {{.IMAGE_NAME}}
+
+  # ── Local dev ───────────────────────────────────────────
+  dev:
+    desc: Start the Vite dev server (hot-reload)
+    dir: CompendiumUI
+    cmds:
+      - npm install
+      - npm run dev
+
+  build:
+    desc: Build the production bundle
+    dir: CompendiumUI
+    cmds:
+      - npm install
+      - npm run build
+
+  preview:
+    desc: Preview the production build locally
+    dir: CompendiumUI
+    cmds:
+      - npm run preview
+
+  # ── PDF processing ─────────────────────────────────────
+  download-pdfs:
+    desc: Download Compendium PDFs from copyright.gov
+    cmds:
+      - python scripts/comp_download.py
+
+  pdf-to-text:
+    desc: Extract text from downloaded PDFs into .txt files
+    cmds:
+      - python scripts/pdf_to_text.py
+
+  process-pdfs:
+    desc: Convert PDFs to XHTML using Gemini API
+    cmds:
+      - python scripts/process_pdfs_gemini.py --directory {{.PDF_DIR}}
+
+  process-pdfs-chunked:
+    desc: Convert large PDFs to XHTML in chunks using Gemini API
+    cmds:
+      - python scripts/process_pdfs_chunked.py --directory {{.PDF_DIR}}
+
+  # ── QA / Tests ─────────────────────────────────────────
+  test:install:
+    desc: Install Python test dependencies
+    cmds:
+      - pip install -r tests/requirements.txt
+
+  test:
+    desc: Run algorithmic QA checks on all chapters
+    cmds:
+      - python -m tests.run_qa --algo
+
+  test:chapter:
+    desc: Run algorithmic QA on a specific chapter (e.g. task test:chapter -- ch200)
+    cmds:
+      - python -m tests.run_qa --algo --chapters {{.CLI_ARGS}}
+
+  test:llm:
+    desc: Run LLM-based QA checks (requires GOOGLE_API_KEY)
+    cmds:
+      - python -m tests.run_qa --llm
+
+  test:all:
+    desc: Run both algorithmic and LLM QA checks with full reports
+    cmds:
+      - python -m tests.run_qa --all --format all --output-dir tests/reports
