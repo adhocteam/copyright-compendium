@@ -1193,23 +1193,36 @@ autocomplete({
 	
 	// Handle translation info link tooltip
 	if (translationInfoLink && translationInfoTooltip) {
+		// Media query for responsive behavior
+		const mobileBreakpoint = window.matchMedia('(max-width: 40em)');
+		
 		// Toggle tooltip on click
 		translationInfoLink.addEventListener('click', (event) => {
 			event.stopPropagation();
 			const isVisible = translationInfoTooltip.style.display !== 'none';
-			translationInfoTooltip.style.display = isVisible ? 'none' : 'block';
+			const newVisibility = isVisible ? 'none' : 'block';
+			translationInfoTooltip.style.display = newVisibility;
+			// Update ARIA attribute for accessibility
+			translationInfoLink.setAttribute('aria-expanded', newVisibility === 'block' ? 'true' : 'false');
 		});
 		
-		// Show tooltip on hover (desktop only)
-		if (window.innerWidth > 640) {
-			translationInfoLink.addEventListener('mouseenter', () => {
+		// Show tooltip on hover (desktop only) - use media query
+		const handleMouseEnter = () => {
+			if (!mobileBreakpoint.matches) {
 				translationInfoTooltip.style.display = 'block';
-			});
-			
-			translationInfoLink.addEventListener('mouseleave', () => {
+				translationInfoLink.setAttribute('aria-expanded', 'true');
+			}
+		};
+		
+		const handleMouseLeave = () => {
+			if (!mobileBreakpoint.matches) {
 				translationInfoTooltip.style.display = 'none';
-			});
-		}
+				translationInfoLink.setAttribute('aria-expanded', 'false');
+			}
+		};
+		
+		translationInfoLink.addEventListener('mouseenter', handleMouseEnter);
+		translationInfoLink.addEventListener('mouseleave', handleMouseLeave);
 		
 		// Close tooltip when clicking outside
 		document.addEventListener('click', (event) => {
@@ -1217,6 +1230,7 @@ autocomplete({
 				!translationInfoLink.contains(event.target) &&
 				!translationInfoTooltip.contains(event.target)) {
 				translationInfoTooltip.style.display = 'none';
+				translationInfoLink.setAttribute('aria-expanded', 'false');
 			}
 		});
 	}
