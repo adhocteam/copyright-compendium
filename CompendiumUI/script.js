@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    { number: "2200", title: "Notice of Copyright", filename: "ch2200-notice.html" },
 	    { number: "2300", title: "Recordation", filename: "ch2300-recordation.html" },
 	    { number: "2400", title: "U.S. Copyright Office Services", filename: "ch2400-office-services.html" },
+	    { number: "", title: "⚠️ Experimental: Registration Guide", filename: "experimental-registration-guide.html" },
 	    { number: "", title: "Glossary", filename: "glossary.html" },
 	    { number: "", title: "Table of Authorities", filename: "table-of-authorities.html" },
 	    { number: "", title: "Revision History", filename: "revision-history.html" }

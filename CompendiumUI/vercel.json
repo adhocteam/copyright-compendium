@@ -6,6 +6,8 @@
 	    "destination": "/index.html" },
 	 {  "source": "/revision-history.html", 
 	    "destination": "/index.html" },
+	 {  "source": "/experimental-registration-guide.html", 
+	    "destination": "/index.html" },
 	 {
 		"source": "/:path*.html",
 		"destination": "/index.html"
