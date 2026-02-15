@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental Registration Guide</title>
+    <style>
+        .experimental-banner {
+            background-color: #fef0e5;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+        
+        .experimental-banner h2 {
+            margin-top: 0;
+            color: #e65100;
+        }
+        
+        .guide-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .flow-diagram {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+        
+        .flow-node {
+            background: white;
+            border: 2px solid #005ea2;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .flow-node.decision {
+            background: #e7f2f8;
+            border-color: #00bfa5;
+        }
+        
+        .flow-node.endpoint {
+            background: #e8f5e9;
+            border-color: #4caf50;
+        }
+        
+        .flow-arrow {
+            text-align: center;
+            color: #005ea2;
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        .interactive-guide {
+            background: white;
+            border: 2px solid #005ea2;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .step-container {
+            display: none;
+        }
+        
+        .step-container.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .choice-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #005ea2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: left;
+            transition: background 0.2s;
+        }
+        
+        .choice-button:hover {
+            background: #1a4480;
+        }
+        
+        .choice-button:before {
+            content: "→ ";
+            font-weight: bold;
+        }
+        
+        .back-button {
+            background: #71767a;
+            margin-top: 1rem;
+        }
+        
+        .back-button:hover {
+            background: #565c65;
+        }
+        
+        .info-box {
+            background: #e7f2f8;
+            border-left: 4px solid #005ea2;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .copyright-gov-link {
+            display: inline-block;
+            background: #00bfa5;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            transition: background 0.2s;
+        }
+        
+        .copyright-gov-link:hover {
+            background: #00897b;
+            color: white;
+        }
+        
+        .progress-tracker {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #005ea2;
+            transition: width 0.3s;
+        }
+        
+        .api-section {
+            background: #f5f5f5;
+            border: 2px solid #673ab7;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .code-block {
+            background: #263238;
+            color: #aed581;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+        }
+        
+        .svg-diagram {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <div class="experimental-banner">
+            <h2>⚠️ Experimental Feature</h2>
+            <p><strong>This is an experimental registration guide.</strong> It provides an interactive walkthrough of the copyright registration process based on the official Copyright Compendium. This guide is for informational purposes and does not replace official Copyright Office guidance. Always refer to <a href="https://www.copyright.gov" target="_blank">www.copyright.gov</a> for the most current information and official registration procedures.</p>
+        </div>
+
+        <h1>Copyright Registration Guide: Choose Your Path</h1>
+        
+        <p>This interactive guide will help you navigate the copyright registration process step by step. Based on your answers to a series of questions, we'll guide you to the appropriate registration method and requirements.</p>
+
+        <h2>Registration Process Flow Diagram</h2>
+        
+        <div class="flow-diagram">
+            <svg class="svg-diagram" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Start Node -->
+                <rect x="300" y="20" width="200" height="60" fill="#005ea2" stroke="#003d73" stroke-width="2" rx="8"/>
+                <text x="400" y="55" fill="white" text-anchor="middle" font-size="16" font-weight="bold">START</text>
+                
+                <!-- Arrow -->
+                <path d="M 400 80 L 400 110" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Decision: Work Type -->
+                <polygon points="400,120 550,180 400,240 250,180" fill="#e7f2f8" stroke="#00bfa5" stroke-width="2"/>
+                <text x="400" y="175" text-anchor="middle" font-size="14" font-weight="bold">What type of</text>
+                <text x="400" y="195" text-anchor="middle" font-size="14" font-weight="bold">work?</text>
+                
+                <!-- Branches from Work Type -->
+                <path d="M 250 180 L 150 180 L 150 280" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 550 180 L 650 180 L 650 280" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Literary/Musical/Dramatic -->
+                <rect x="50" y="280" width="200" height="60" fill="white" stroke="#005ea2" stroke-width="2" rx="8"/>
+                <text x="150" y="305" text-anchor="middle" font-size="12">Literary, Musical,</text>
+                <text x="150" y="325" text-anchor="middle" font-size="12">or Dramatic Work</text>
+                
+                <!-- Visual/Motion Picture -->
+                <rect x="550" y="280" width="200" height="60" fill="white" stroke="#005ea2" stroke-width="2" rx="8"/>
+                <text x="650" y="305" text-anchor="middle" font-size="12">Visual Arts or</text>
+                <text x="650" y="325" text-anchor="middle" font-size="12">Motion Picture</text>
+                
+                <!-- Arrows down -->
+                <path d="M 150 340 L 150 370" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 650 340 L 650 370" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Decision: Published? -->
+                <polygon points="150,380 250,430 150,480 50,430" fill="#e7f2f8" stroke="#00bfa5" stroke-width="2"/>
+                <text x="150" y="430" text-anchor="middle" font-size="14" font-weight="bold">Published?</text>
+                
+                <polygon points="650,380 750,430 650,480 550,430" fill="#e7f2f8" stroke="#00bfa5" stroke-width="2"/>
+                <text x="650" y="430" text-anchor="middle" font-size="14" font-weight="bold">Published?</text>
+                
+                <!-- Arrows to next decision -->
+                <path d="M 150 480 L 150 520" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 650 480 L 650 520" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Decision: Single or Multiple? -->
+                <polygon points="150,530 250,580 150,630 50,580" fill="#e7f2f8" stroke="#00bfa5" stroke-width="2"/>
+                <text x="150" y="575" text-anchor="middle" font-size="14" font-weight="bold">Single work or</text>
+                <text x="150" y="595" text-anchor="middle" font-size="14" font-weight="bold">multiple works?</text>
+                
+                <polygon points="650,530 750,580 650,630 550,580" fill="#e7f2f8" stroke="#00bfa5" stroke-width="2"/>
+                <text x="650" y="575" text-anchor="middle" font-size="14" font-weight="bold">Single work or</text>
+                <text x="650" y="595" text-anchor="middle" font-size="14" font-weight="bold">multiple works?</text>
+                
+                <!-- Final paths -->
+                <path d="M 50 580 L 20 580 L 20 720 L 120 720" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 250 580 L 280 580 L 280 720 L 180 720" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Endpoints -->
+                <rect x="20" y="720" width="160" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="8"/>
+                <text x="100" y="745" text-anchor="middle" font-size="12" font-weight="bold">Basic Registration</text>
+                <text x="100" y="765" text-anchor="middle" font-size="11">eCO Online</text>
+                <text x="100" y="785" text-anchor="middle" font-size="11">Standard Application</text>
+                
+                <rect x="220" y="720" width="160" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="8"/>
+                <text x="300" y="745" text-anchor="middle" font-size="12" font-weight="bold">Group Registration</text>
+                <text x="300" y="765" text-anchor="middle" font-size="11">For eligible works:</text>
+                <text x="300" y="785" text-anchor="middle" font-size="11">Newspapers, Photos, etc.</text>
+                
+                <!-- Right side endpoints -->
+                <path d="M 550 580 L 520 580 L 520 860 L 620 860" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 750 580 L 780 580 L 780 860 L 680 860" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <rect x="520" y="860" width="160" height="80" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="8"/>
+                <text x="600" y="885" text-anchor="middle" font-size="12" font-weight="bold">Standard Online</text>
+                <text x="600" y="905" text-anchor="middle" font-size="11">Visual Arts or</text>
+                <text x="600" y="925" text-anchor="middle" font-size="11">Motion Picture Form</text>
+                
+                <!-- Submission Box -->
+                <rect x="300" y="1000" width="200" height="80" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="8"/>
+                <text x="400" y="1030" text-anchor="middle" font-size="14" font-weight="bold">Submit to Copyright Office</text>
+                <text x="400" y="1050" text-anchor="middle" font-size="11">Application + Fee + Deposit</text>
+                <text x="400" y="1070" text-anchor="middle" font-size="11">via copyright.gov</text>
+                
+                <!-- Arrows to submission -->
+                <path d="M 100 800 L 100 1040 L 300 1040" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 300 800 L 300 1040" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 600 940 L 600 1040 L 500 1040" stroke="#005ea2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Arrow marker definition -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#005ea2"/>
+                    </marker>
+                </defs>
+            </svg>
+            
+            <div style="margin-top: 2rem; padding: 1rem; background: white; border-radius: 4px;">
+                <h3 style="margin-top: 0;">Legend</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <div><span style="display: inline-block; width: 20px; height: 20px; background: #005ea2; border-radius: 4px; vertical-align: middle;"></span> Process Step</div>
+                    <div><span style="display: inline-block; width: 20px; height: 20px; background: #e7f2f8; border: 2px solid #00bfa5; border-radius: 4px; vertical-align: middle;"></span> Decision Point</div>
+                    <div><span style="display: inline-block; width: 20px; height: 20px; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 4px; vertical-align: middle;"></span> Registration Type</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Interactive Registration Guide</h2>
+        
+        <div class="interactive-guide">
+            <div class="progress-tracker">
+                <div><strong>Progress:</strong> <span id="progress-text">Getting Started</span></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Step 0: Start -->
+            <div class="step-container active" id="step-0" data-step-name="Getting Started">
+                <h3>Welcome to the Copyright Registration Guide</h3>
+                <p>This interactive guide will help you determine the best way to register your copyright. We'll ask you a series of questions about your work to direct you to the appropriate registration method.</p>
+                
+                <div class="info-box">
+                    <strong>What you'll need:</strong>
+                    <ul>
+                        <li>Information about your work (title, author, creation date)</li>
+                        <li>A copy of your work for deposit</li>
+                        <li>Payment method (credit card, electronic check, or Copyright Office deposit account)</li>
+                    </ul>
+                </div>
+                
+                <button class="choice-button" onclick="goToStep(1)">Start Registration Process</button>
+            </div>
+            
+            <!-- Step 1: Work Type -->
+            <div class="step-container" id="step-1" data-step-name="Identifying Your Work">
+                <h3>What type of work are you registering?</h3>
+                <p>Select the category that best describes your creative work:</p>
+                
+                <button class="choice-button" onclick="setWorkType('literary'); goToStep(2)">Literary Work (books, articles, computer programs, etc.)</button>
+                <button class="choice-button" onclick="setWorkType('musical'); goToStep(2)">Musical Work or Sound Recording</button>
+                <button class="choice-button" onclick="setWorkType('dramatic'); goToStep(2)">Dramatic Work (plays, screenplays, etc.)</button>
+                <button class="choice-button" onclick="setWorkType('visual'); goToStep(2)">Visual Arts (paintings, photographs, sculptures, graphics)</button>
+                <button class="choice-button" onclick="setWorkType('motion'); goToStep(2)">Motion Picture or Audiovisual Work</button>
+                <button class="choice-button" onclick="setWorkType('choreographic'); goToStep(2)">Choreographic or Pantomime Work</button>
+                <button class="choice-button" onclick="setWorkType('architectural'); goToStep(2)">Architectural Work</button>
+                
+                <button class="choice-button back-button" onclick="goToStep(0)">← Back</button>
+            </div>
+            
+            <!-- Step 2: Publication Status -->
+            <div class="step-container" id="step-2" data-step-name="Publication Status">
+                <h3>Has your work been published?</h3>
+                <p>Publication means distribution of copies to the public by sale, rental, lease, or lending. Offering to distribute copies to a group for further distribution also constitutes publication.</p>
+                
+                <div class="info-box">
+                    <strong>Important:</strong> Public performance or display does not necessarily constitute publication. Online posting may or may not be considered publication depending on the circumstances.
+                </div>
+                
+                <button class="choice-button" onclick="setPublished(true); goToStep(3)">Yes, my work has been published</button>
+                <button class="choice-button" onclick="setPublished(false); goToStep(3)">No, my work is unpublished</button>
+                <button class="choice-button" onclick="goToStep(10)">I'm not sure - Help me determine</button>
+                
+                <button class="choice-button back-button" onclick="goToStep(1)">← Back</button>
+            </div>
+            
+            <!-- Step 3: Single or Multiple Works -->
+            <div class="step-container" id="step-3" data-step-name="Number of Works">
+                <h3>Are you registering a single work or multiple works?</h3>
+                <p>The Copyright Office offers group registration options for certain types of works, which can save time and money when registering multiple related works.</p>
+                
+                <button class="choice-button" onclick="setSingle(true); goToStep(4)">Single work</button>
+                <button class="choice-button" onclick="setSingle(false); goToStep(5)">Multiple related works (group registration)</button>
+                
+                <button class="choice-button back-button" onclick="goToStep(2)">← Back</button>
+            </div>
+            
+            <!-- Step 4: Single Work Registration -->
+            <div class="step-container" id="step-4" data-step-name="Registration Method">
+                <h3>Standard Single Work Registration</h3>
+                <p id="work-type-summary"></p>
+                
+                <div class="info-box">
+                    <strong>Recommended Method: Online Registration</strong>
+                    <ul>
+                        <li>Lower filing fee (typically $45-$65 vs. $125 for paper)</li>
+                        <li>Faster processing time</li>
+                        <li>Ability to upload deposit electronically</li>
+                        <li>Track application status online</li>
+                    </ul>
+                </div>
+                
+                <h4>Next Steps:</h4>
+                <ol>
+                    <li>Create or log into your account at copyright.gov</li>
+                    <li>Complete the online application form (eCO)</li>
+                    <li>Pay the filing fee</li>
+                    <li>Upload your deposit copy (or mail if required)</li>
+                </ol>
+                
+                <a href="https://www.copyright.gov/registration/" class="copyright-gov-link" target="_blank">Go to Copyright.gov Registration →</a>
+                <a href="https://eco.copyright.gov/" class="copyright-gov-link" target="_blank">Access eCO System (Electronic Copyright Office) →</a>
+                
+                <button class="choice-button" onclick="goToStep(7)">Learn about required deposits →</button>
+                <button class="choice-button" onclick="goToStep(8)">View filing fees →</button>
+                
+                <button class="choice-button back-button" onclick="goToStep(3)">← Back</button>
+            </div>
+            
+            <!-- Step 5: Group Registration Options -->
+            <div class="step-container" id="step-5" data-step-name="Group Registration">
+                <h3>Group Registration Options</h3>
+                <p>Select the type of group registration that applies to your works:</p>
+                
+                <button class="choice-button" onclick="goToStep(6, 'GRCP')">Published Contributions to Periodicals (GRCP)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GPH')">Published Photographs (GPH)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GRTW')">Short Online Literary Works (GRTW)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GRVW')">Unpublished Visual Works (GRVW)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GRUW')">Unpublished Works (GRUW)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GRNP')">Newspapers (GRNP)</button>
+                <button class="choice-button" onclick="goToStep(6, 'GRNL')">Newsletters (GRNL)</button>
+                
+                <button class="choice-button back-button" onclick="goToStep(3)">← Back</button>
+            </div>
+            
+            <!-- Step 6: Group Registration Details -->
+            <div class="step-container" id="step-6" data-step-name="Group Registration Details">
+                <h3 id="group-title">Group Registration Details</h3>
+                <div id="group-details"></div>
+                
+                <a href="https://www.copyright.gov/registration/group-registration/" class="copyright-gov-link" target="_blank">Learn More About Group Registration →</a>
+                <a href="https://eco.copyright.gov/" class="copyright-gov-link" target="_blank">Start Group Registration in eCO →</a>
+                
+                <button class="choice-button back-button" onclick="goToStep(5)">← Back</button>
+            </div>
+            
+            <!-- Step 7: Deposit Requirements -->
+            <div class="step-container" id="step-7" data-step-name="Deposit Requirements">
+                <h3>Deposit Requirements</h3>
+                <p>The deposit requirement varies based on your work type and publication status:</p>
+                
+                <div class="info-box">
+                    <strong>General Requirements:</strong>
+                    <ul>
+                        <li><strong>Unpublished works:</strong> One complete copy or phonorecord</li>
+                        <li><strong>Published works:</strong> Two complete copies of the best edition</li>
+                        <li><strong>Works published only outside the US:</strong> One complete copy as first published</li>
+                    </ul>
+                </div>
+                
+                <h4>Electronic vs. Physical Deposits:</h4>
+                <ul>
+                    <li>Many works can be uploaded electronically through the eCO system</li>
+                    <li>Some works require physical deposits to be mailed</li>
+                    <li>Best edition requirements apply to published works</li>
+                </ul>
+                
+                <a href="https://www.copyright.gov/circs/circ01.pdf" class="copyright-gov-link" target="_blank">View Detailed Deposit Requirements (Circular 1) →</a>
+                <a href="https://www.copyright.gov/help/faq-deposit.html" class="copyright-gov-link" target="_blank">Deposit FAQ →</a>
+                
+                <button class="choice-button back-button" onclick="goToStep(4)">← Back to Registration</button>
+            </div>
+            
+            <!-- Step 8: Filing Fees -->
+            <div class="step-container" id="step-8" data-step-name="Filing Fees">
+                <h3>Filing Fees</h3>
+                <p>Copyright registration fees vary depending on the type of registration and filing method:</p>
+                
+                <div class="info-box">
+                    <strong>Standard Online Registration Fees (as of 2024):</strong>
+                    <ul>
+                        <li><strong>Single author, same claimant, one work:</strong> $45</li>
+                        <li><strong>Standard application:</strong> $65</li>
+                        <li><strong>Paper filing:</strong> $125</li>
+                        <li><strong>Group registrations:</strong> Vary by type ($65-$95)</li>
+                    </ul>
+                </div>
+                
+                <h4>Payment Methods:</h4>
+                <ul>
+                    <li>Credit or debit card (online)</li>
+                    <li>Electronic check (online)</li>
+                    <li>Copyright Office deposit account</li>
+                    <li>Check or money order (paper applications only)</li>
+                </ul>
+                
+                <a href="https://www.copyright.gov/about/fees.html" class="copyright-gov-link" target="_blank">View Current Fee Schedule →</a>
+                
+                <button class="choice-button back-button" onclick="goToStep(4)">← Back to Registration</button>
+            </div>
+            
+            <!-- Step 9: Special Registrations -->
+            <div class="step-container" id="step-9" data-step-name="Special Registration Types">
+                <h3>Special Registration Types</h3>
+                
+                <h4>Other registration options you may need:</h4>
+                
+                <div class="info-box">
+                    <strong>Preregistration:</strong> For certain unpublished works that are likely to be infringed before publication (motion pictures, sound recordings, musical compositions, literary works, computer programs, advertising photographs).
+                    <br><a href="https://www.copyright.gov/prereg/" target="_blank">Learn more about preregistration →</a>
+                </div>
+                
+                <div class="info-box">
+                    <strong>Supplementary Registration:</strong> To correct or amplify information in an earlier registration.
+                    <br><a href="https://www.copyright.gov/forms/" target="_blank">Learn more about supplementary registration →</a>
+                </div>
+                
+                <div class="info-box">
+                    <strong>Renewal Registration:</strong> For works copyrighted before January 1, 1978.
+                    <br><a href="https://www.copyright.gov/renewals/" target="_blank">Learn more about renewal →</a>
+                </div>
+                
+                <button class="choice-button back-button" onclick="goToStep(0)">← Start Over</button>
+            </div>
+            
+            <!-- Step 10: Publication Help -->
+            <div class="step-container" id="step-10" data-step-name="Understanding Publication">
+                <h3>Determining If Your Work Is Published</h3>
+                
+                <p>Under copyright law, "publication" is the distribution of copies of a work to the public by sale or other transfer of ownership, or by rental, lease, or lending.</p>
+                
+                <h4>Examples of Publication:</h4>
+                <ul>
+                    <li>Selling books, CDs, or DVDs to the public</li>
+                    <li>Distributing copies of software online for download</li>
+                    <li>Posting content online with no restrictions on copying or sharing</li>
+                    <li>Distributing copies to a group for purposes of further distribution</li>
+                </ul>
+                
+                <h4>NOT Considered Publication:</h4>
+                <ul>
+                    <li>Performing a play or showing a movie to an audience</li>
+                    <li>Displaying artwork in a gallery</li>
+                    <li>Broadcasting a television program</li>
+                    <li>Posting content online with restrictions on copying (e.g., behind a login)</li>
+                </ul>
+                
+                <div class="info-box">
+                    <strong>Still not sure?</strong> When in doubt, it's often safer to treat your work as unpublished for registration purposes. You can also consult with the Copyright Office or a legal professional.
+                </div>
+                
+                <button class="choice-button" onclick="setPublished(true); goToStep(3)">My work is published</button>
+                <button class="choice-button" onclick="setPublished(false); goToStep(3)">My work is unpublished</button>
+                <button class="choice-button back-button" onclick="goToStep(2)">← Back</button>
+            </div>
+        </div>
+
+        <!-- API Section -->
+        <div class="api-section">
+            <h2>🔌 Registration via API: For High-Volume Registrants</h2>
+            
+            <p>The U.S. Copyright Office provides a Registration API for qualified high-volume registrants who need to submit multiple copyright registrations programmatically. This is particularly useful for:</p>
+            
+            <ul>
+                <li>Publishing companies registering hundreds of works</li>
+                <li>News organizations registering daily newspapers</li>
+                <li>Photography agencies registering large photo collections</li>
+                <li>Software companies with frequent releases</li>
+            </ul>
+            
+            <h3>API Access Requirements</h3>
+            
+            <div class="info-box">
+                <strong>To use the Copyright Office API:</strong>
+                <ol>
+                    <li>Establish a Copyright Office deposit account (minimum $450 balance)</li>
+                    <li>Request API credentials through the Copyright Office</li>
+                    <li>Receive your personal API key and authentication credentials</li>
+                    <li>Review API documentation and technical specifications</li>
+                    <li>Implement API integration in your system</li>
+                </ol>
+            </div>
+            
+            <h3>API Capabilities</h3>
+            
+            <p>The Registration API allows you to:</p>
+            <ul>
+                <li><strong>Submit Applications:</strong> Programmatically create and submit registration applications</li>
+                <li><strong>Upload Deposits:</strong> Upload digital deposit files directly</li>
+                <li><strong>Track Status:</strong> Query the status of pending applications</li>
+                <li><strong>Retrieve Certificates:</strong> Download registration certificates when issued</li>
+                <li><strong>Manage Fees:</strong> Automatically deduct fees from your deposit account</li>
+            </ul>
+            
+            <h3>Sample API Workflow</h3>
+            
+            <div class="code-block">
+# 1. Authenticate with API
+POST https://api.copyright.gov/auth/token
+Headers:
+  Content-Type: application/json
+Body:
+  {
+    "api_key": "YOUR_API_KEY",
+    "api_secret": "YOUR_API_SECRET"
+  }
+
+Response:
+  {
+    "access_token": "eyJhbGciOiJI...",
+    "expires_in": 3600
+  }
+
+# 2. Submit Registration Application
+POST https://api.copyright.gov/v1/registrations
+Headers:
+  Authorization: Bearer eyJhbGciOiJI...
+  Content-Type: application/json
+Body:
+  {
+    "work_type": "literary",
+    "title": "My Novel",
+    "author": {
+      "name": "Jane Doe",
+      "citizenship": "USA"
+    },
+    "claimant": {
+      "name": "Jane Doe",
+      "address": "123 Main St, City, ST 12345"
+    },
+    "creation_date": "2024-01-15",
+    "publication": {
+      "published": true,
+      "publication_date": "2024-03-01",
+      "nation": "USA"
+    }
+  }
+
+Response:
+  {
+    "application_id": "SR-2024-123456",
+    "status": "pending",
+    "fee_charged": 65.00,
+    "deposit_upload_url": "https://api.copyright.gov/..."
+  }
+
+# 3. Upload Deposit File
+PUT https://api.copyright.gov/v1/deposits/SR-2024-123456
+Headers:
+  Authorization: Bearer eyJhbGciOiJI...
+  Content-Type: application/pdf
+Body:
+  [Binary file data]
+
+Response:
+  {
+    "status": "received",
+    "filename": "my-novel.pdf",
+    "size_bytes": 2456789
+  }
+
+# 4. Check Application Status
+GET https://api.copyright.gov/v1/registrations/SR-2024-123456
+Headers:
+  Authorization: Bearer eyJhbGciOiJI...
+
+Response:
+  {
+    "application_id": "SR-2024-123456",
+    "status": "registered",
+    "registration_number": "TXu 2-345-678",
+    "registration_date": "2024-03-15",
+    "certificate_url": "https://api.copyright.gov/..."
+  }
+            </div>
+            
+            <h3>Parallel Processing Benefits</h3>
+            
+            <p>With API access, you can:</p>
+            <ul>
+                <li><strong>Batch Processing:</strong> Submit multiple applications simultaneously</li>
+                <li><strong>Automated Workflows:</strong> Integrate registration into your content management system</li>
+                <li><strong>Real-time Updates:</strong> Receive webhooks when application status changes</li>
+                <li><strong>Reduced Errors:</strong> Validate data before submission using API validation endpoints</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>Getting Started:</strong> Contact the Copyright Office to inquire about API access:
+                <br>Email: <a href="mailto:eco@copyright.gov">eco@copyright.gov</a>
+                <br>Phone: (202) 707-3000
+                <br><a href="https://www.copyright.gov/help/api/" target="_blank">API Documentation →</a>
+            </div>
+            
+            <h3>API vs. Manual Registration Comparison</h3>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                <thead>
+                    <tr style="background: #f0f0f0;">
+                        <th style="border: 1px solid #ddd; padding: 0.5rem; text-align: left;">Feature</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem; text-align: left;">Manual (eCO)</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem; text-align: left;">API</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Submission Method</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Web form</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Programmatic</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Volume</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Best for 1-10 works</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Best for 100+ works</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Automation</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Manual entry</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Fully automated</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Status Tracking</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Login to check</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Real-time queries</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Integration</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Standalone</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">CMS/Workflow integration</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 4px;">
+            <h3>Need More Help?</h3>
+            <p>This experimental guide provides general information about the registration process. For specific questions or complex situations:</p>
+            <ul>
+                <li>Visit the official <a href="https://www.copyright.gov" target="_blank">Copyright Office website</a></li>
+                <li>Read the full <a href="/">Copyright Compendium</a></li>
+                <li>Contact the Copyright Office: (202) 707-3000 or <a href="mailto:copyrightinfo@copyright.gov">copyrightinfo@copyright.gov</a></li>
+                <li>Consult with a copyright attorney for legal advice</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // State management
+        let userChoices = {
+            workType: null,
+            published: null,
+            single: null,
+            groupType: null
+        };
+        
+        const stepData = {
+            'GRCP': {
+                title: 'Published Contributions to Periodicals (GRCP)',
+                description: `
+                    <p>This option allows registration of multiple contributions to periodicals (newspapers, magazines, journals) that were published within a 12-month period.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>All works created by the same author</li>
+                            <li>Author must be an individual (not work made for hire)</li>
+                            <li>All works first published within the same 12-month period</li>
+                            <li>Maximum fee: $65</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GPH': {
+                title: 'Published Photographs (GPH)',
+                description: `
+                    <p>Register up to 750 published photographs with a single application.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>All photographs created by same photographer</li>
+                            <li>All published within same calendar year</li>
+                            <li>Photographs must be published works</li>
+                            <li>Fee: $55</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GRTW': {
+                title: 'Short Online Literary Works (GRTW)',
+                description: `
+                    <p>Register multiple short online literary works (blog posts, social media posts, etc.) published on a website within a 3-month period.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Each work must be a literary work</li>
+                            <li>Each work must be short (generally under 17,500 words)</li>
+                            <li>All works must be first published on the same website</li>
+                            <li>All works must be published within a 3-month period</li>
+                            <li>Fee: $65</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GRVW': {
+                title: 'Unpublished Visual Works (GRVW)',
+                description: `
+                    <p>Register a group of unpublished visual works with a single application.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>All works must be visual works (photographs, drawings, paintings, etc.)</li>
+                            <li>All works must be unpublished</li>
+                            <li>All works must be created by the same author</li>
+                            <li>Fee: $85</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GRUW': {
+                title: 'Unpublished Works (GRUW)',
+                description: `
+                    <p>Register a collection of unpublished works that together constitute a single "collection."</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>All works must be unpublished</li>
+                            <li>Must be assembled in an orderly form</li>
+                            <li>Must have a single title for the collection</li>
+                            <li>Created by the same author</li>
+                            <li>Fee: $65</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GRNP': {
+                title: 'Newspapers (GRNP)',
+                description: `
+                    <p>Register multiple issues of a newspaper published within a calendar month.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Must be a qualifying newspaper</li>
+                            <li>All issues published within same calendar month</li>
+                            <li>Same title for all issues</li>
+                            <li>Fee: $95</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'GRNL': {
+                title: 'Newsletters (GRNL)',
+                description: `
+                    <p>Register multiple issues of a newsletter published within a calendar month.</p>
+                    <div class="info-box">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li>Must be a qualifying newsletter</li>
+                            <li>All issues published within same calendar month</li>
+                            <li>Same title for all issues</li>
+                            <li>Fee: $95</li>
+                        </ul>
+                    </div>
+                `
+            }
+        };
+        
+        function setWorkType(type) {
+            userChoices.workType = type;
+        }
+        
+        function setPublished(status) {
+            userChoices.published = status;
+        }
+        
+        function setSingle(status) {
+            userChoices.single = status;
+        }
+        
+        function goToStep(stepNumber, groupType = null) {
+            // Hide all steps
+            document.querySelectorAll('.step-container').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            // Show target step
+            const targetStep = document.getElementById(`step-${stepNumber}`);
+            if (targetStep) {
+                targetStep.classList.add('active');
+                
+                // Update progress
+                const stepName = targetStep.getAttribute('data-step-name');
+                updateProgress(stepNumber, stepName);
+                
+                // Handle specific step logic
+                if (stepNumber === 4) {
+                    updateWorkTypeSummary();
+                } else if (stepNumber === 6 && groupType) {
+                    updateGroupDetails(groupType);
+                }
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        
+        function updateProgress(stepNumber, stepName) {
+            const maxSteps = 10;
+            const percentage = (stepNumber / maxSteps) * 100;
+            
+            document.getElementById('progress-fill').style.width = percentage + '%';
+            document.getElementById('progress-text').textContent = stepName;
+        }
+        
+        function updateWorkTypeSummary() {
+            const workTypeNames = {
+                'literary': 'Literary Work',
+                'musical': 'Musical Work or Sound Recording',
+                'dramatic': 'Dramatic Work',
+                'visual': 'Visual Arts Work',
+                'motion': 'Motion Picture or Audiovisual Work',
+                'choreographic': 'Choreographic Work',
+                'architectural': 'Architectural Work'
+            };
+            
+            const publishedText = userChoices.published ? 'published' : 'unpublished';
+            const workTypeName = workTypeNames[userChoices.workType] || 'your work';
+            
+            document.getElementById('work-type-summary').textContent = 
+                `You are registering a single ${publishedText} ${workTypeName}.`;
+        }
+        
+        function updateGroupDetails(groupType) {
+            userChoices.groupType = groupType;
+            const data = stepData[groupType];
+            
+            if (data) {
+                document.getElementById('group-title').textContent = data.title;
+                document.getElementById('group-details').innerHTML = data.description;
+            }
+        }
+    </script>
+</body>
+</html>
