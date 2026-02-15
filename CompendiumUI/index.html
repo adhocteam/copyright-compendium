@@ -58,9 +58,7 @@
                 </div>
               </div>
               <!-- Version Display -->
-              <div id="version-display" class="version-display">
-                v<span id="version-number"></span>
-              </div>
+
               <button type="button" class="usa-menu-btn">Menu</button>
             </div>
             <nav aria-label="Primary navigation" class="usa-nav">
@@ -82,7 +80,7 @@
                   <div id="autocomplete-search"></div>
                 </section>
                 <!-- Translation Controls -->
-                <section aria-label="Translation controls" id="translation-controls-wrapper">
+                <section aria-label="Translation controls" id="translation-controls-wrapper" style="display: none;">
                   <div class="translation-controls">
                     <label for="language-select" class="usa-label translation-label">
                       <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
@@ -108,6 +106,10 @@
                     </select>
                   </div>
                 </section>
+
+                <div id="version-display" class="version-display">
+                  v<span id="version-number"></span>
+                </div>
             </nav>
           </div>
         </header>
