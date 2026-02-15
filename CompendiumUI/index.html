@@ -1,143 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="algolia-site-verification"  content="24E3347A9759430F" />
-  <!-- <base href="/"> -->
 
-  <title>Compendium Viewer</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="algolia-site-verification" content="24E3347A9759430F" />
+    <!-- <base href="/"> -->
 
-</head>
-<body>
+    <title>Compendium Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Skip Navigation Link for Accessibility -->
-  <a href="#chapter-content" class="usa-skipnav">Skip to main content</a>
+  </head>
 
-  <div class="grid-container">
+  <body>
 
-    <header class="header">
-      <div class="usa-overlay"></div>
-      <header class="usa-header usa-header--basic">
-        <div class="usa-nav-container">
-          <div class="usa-navbar">
-            <div class="usa-logo">
-              <em class="usa-logo__text">
-                <a href="/" title="Compendium Viewer Home">
-                  <span class="logo-main">U.S. Copyright Office</span>
-                  <span class="logo-sub">Compendium of Practices</span>
-                </a>
-              </em>
-            </div>
-            <!-- Translation Info Link (shown when translation is not supported) -->
-            <div id="translation-info-link-wrapper" class="translation-info-wrapper" style="display: none;">
-              <button type="button" id="translation-info-link" class="translation-info-link" aria-label="Translation information" aria-expanded="false">
-                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                  <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
-                </svg>
-                <span>Translation not available</span>
-              </button>
-              <!-- Tooltip/Popover -->
-              <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip" style="display: none;">
-                <h3 class="translation-info-title">Translation Feature</h3>
-                <p>This application supports in-browser translation using the experimental Translation API.</p>
-                <p><strong>Requirements:</strong></p>
-                <ul>
-                  <li>Chrome 120+ or Edge 120+</li>
-                  <li>Translation API enabled in browser settings</li>
-                </ul>
-                <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click → "Translate to...").</p>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#chapter-content" class="usa-skipnav">Skip to main content</a>
+
+    <div class="grid-container">
+
+      <header class="header">
+        <div class="usa-overlay"></div>
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+            <div class="usa-navbar">
+              <div class="usa-logo">
+                <em class="usa-logo__text">
+                  <a href="/" title="Compendium Viewer Home">
+                    <span class="logo-main">U.S. Copyright Office</span>
+                    <span class="logo-sub">Compendium of Practices</span>
+                  </a>
+                </em>
               </div>
-            </div>
-            <button type="button" class="usa-menu-btn">Menu</button>
-          </div>
-          <nav aria-label="Primary navigation" class="usa-nav">
-            <button type="button" class="usa-nav__close" aria-label="Close menu">
-              <img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" alt="" aria-hidden="true" />
-            </button>
-            <!-- **** ADD usa-accordion class here **** -->
-            <ul class="usa-nav__primary usa-accordion">
-              <li class="usa-nav__primary-item">
-                <button
-                  type="button"
-                  class="usa-accordion__button usa-nav__link"
-                  aria-expanded="false"
-                  aria-controls="basic-nav-section-one"
-                >
-                  <span>Chapters</span>
-                </button>
-                <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden aria-hidden="true">
-                  <!-- Chapter list will be populated here -->
-                </ul>
-              </li>
-            <section aria-label="Search component" id="search-component-wrapper">
-              <div id="autocomplete-search"></div>
-            </section>
-            <!-- Translation Controls -->
-            <section aria-label="Translation controls" id="translation-controls-wrapper">
-              <div class="translation-controls">
-                <label for="language-select" class="usa-label translation-label">
+              <!-- Translation Info Link (shown when translation is not supported) -->
+              <div id="translation-info-link-wrapper" class="translation-info-wrapper" style="display: none;">
+                <button type="button" id="translation-info-link" class="translation-info-link"
+                  aria-label="Translation information" aria-expanded="false">
                   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
                     <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
                   </svg>
-                  Translate
-                </label>
-                <select id="language-select" class="usa-select translation-select" aria-label="Select translation language">
-                  <option value="">English (Original)</option>
-                  <option value="es">Español (Spanish)</option>
-                  <option value="zh">中文 (Chinese)</option>
-                  <option value="fr">Français (French)</option>
-                  <option value="de">Deutsch (German)</option>
-                  <option value="ja">日本語 (Japanese)</option>
-                  <option value="ko">한국어 (Korean)</option>
-                  <option value="ru">Русский (Russian)</option>
-                  <option value="ar">العربية (Arabic)</option>
-                  <option value="pt">Português (Portuguese)</option>
-                  <option value="it">Italiano (Italian)</option>
-                  <option value="hi">हिन्दी (Hindi)</option>
-                  <option value="vi">Tiếng Việt (Vietnamese)</option>
-                </select>
+                  <span>Translation not available</span>
+                </button>
+                <!-- Tooltip/Popover -->
+                <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip"
+                  style="display: none;">
+                  <h3 class="translation-info-title">Translation Feature</h3>
+                  <p>This application supports in-browser translation using the experimental Translation API.</p>
+                  <p><strong>Requirements:</strong></p>
+                  <ul>
+                    <li>Chrome 120+ or Edge 120+</li>
+                    <li>Translation API enabled in browser settings</li>
+                  </ul>
+                  <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
+                    → "Translate to...").</p>
+                </div>
               </div>
-            </section>
-          </nav>
-        </div>
+              <!-- Version Display -->
+              <div id="version-display" class="version-display">
+                v<span id="version-number"></span>
+              </div>
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+            <nav aria-label="Primary navigation" class="usa-nav">
+              <button type="button" class="usa-nav__close" aria-label="Close menu">
+                <img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" alt="" aria-hidden="true" />
+              </button>
+              <!-- **** ADD usa-accordion class here **** -->
+              <ul class="usa-nav__primary usa-accordion">
+                <li class="usa-nav__primary-item">
+                  <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                    aria-controls="basic-nav-section-one">
+                    <span>Chapters</span>
+                  </button>
+                  <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden>
+                    <!-- Chapter list will be populated here -->
+                  </ul>
+                </li>
+                <section aria-label="Search component" id="search-component-wrapper">
+                  <div id="autocomplete-search"></div>
+                </section>
+                <!-- Translation Controls -->
+                <section aria-label="Translation controls" id="translation-controls-wrapper">
+                  <div class="translation-controls">
+                    <label for="language-select" class="usa-label translation-label">
+                      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                        <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
+                      </svg>
+                      Translate
+                    </label>
+                    <select id="language-select" class="usa-select translation-select"
+                      aria-label="Select translation language">
+                      <option value="">English (Original)</option>
+                      <option value="es">Español (Spanish)</option>
+                      <option value="zh">中文 (Chinese)</option>
+                      <option value="fr">Français (French)</option>
+                      <option value="de">Deutsch (German)</option>
+                      <option value="ja">日本語 (Japanese)</option>
+                      <option value="ko">한국어 (Korean)</option>
+                      <option value="ru">Русский (Russian)</option>
+                      <option value="ar">العربية (Arabic)</option>
+                      <option value="pt">Português (Portuguese)</option>
+                      <option value="it">Italiano (Italian)</option>
+                      <option value="hi">हिन्दी (Hindi)</option>
+                      <option value="vi">Tiếng Việt (Vietnamese)</option>
+                    </select>
+                  </div>
+                </section>
+            </nav>
+          </div>
+        </header>
       </header>
-    </header>
 
-    <!-- Translation Disclaimer Banner (only shown when translation is active) -->
-    <div id="translation-disclaimer" class="usa-alert usa-alert--warning usa-alert--slim" role="alert" style="display: none;">
-      <div class="usa-alert__body">
-        <p class="usa-alert__text">
-          <strong>⚠️ Experimental Translation:</strong> This is an automatically translated version and is not official. 
-          The translation may contain inaccuracies or errors. For authoritative information, please refer to the 
-          <a href="#" id="view-original-link" class="usa-link">original English version</a>.
-        </p>
+      <!-- Translation Disclaimer Banner (only shown when translation is active) -->
+      <div id="translation-disclaimer" class="usa-alert usa-alert--warning usa-alert--slim" role="alert"
+        style="display: none;">
+        <div class="usa-alert__body">
+          <p class="usa-alert__text">
+            <strong>⚠️ Experimental Translation:</strong> This is an automatically translated version and is not
+            official.
+            The translation may contain inaccuracies or errors. For authoritative information, please refer to the
+            <a href="#" id="view-original-link" class="usa-link">original English version</a>.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <nav class="sidenav" aria-label="Side navigation">
-      <div id="section-list">
-        <!-- Hierarchical Section list will be populated here -->
-      </div>
-    </nav>
+      <nav class="sidenav" aria-label="Side navigation">
+        <div id="section-list">
+          <!-- Hierarchical Section list will be populated here -->
+        </div>
+      </nav>
 
-    <main class="content" id="chapter-content">
-      <!-- Chapter content will be loaded here -->
-      <p>Loading content...</p>
-    </main>
+      <main class="content" id="chapter-content">
+        <!-- Chapter content will be loaded here -->
+        <p>Loading content...</p>
+      </main>
 
-  </div> <!-- End grid-container -->
-  <!-- Algolia Search Client -->
-  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+    </div> <!-- End grid-container -->
+    <!-- Algolia Search Client -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
 
-  <!-- Algolia Autocomplete Core -->
-  <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds-init.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-  <script type="module" src="script.ts" defer></script>
-</body>
+    <!-- Algolia Autocomplete Core -->
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds-init.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <script type="module" src="script.ts" defer></script>
+  </body>
+
 </html>
