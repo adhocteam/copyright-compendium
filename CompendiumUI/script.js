@@ -363,20 +363,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const letter = String.fromCharCode(i);
             const li = document.createElement('li');
             li.className = 'usa-sidenav__item';
-            const a = document.createElement('a');
-            a.textContent = letter;
 
             if (firstTermPerLetter[letter]) {
+                const a = document.createElement('a');
+                a.textContent = letter;
                 a.href = `#${firstTermPerLetter[letter]}`;
                 a.addEventListener('click', handleGlossaryLinkClick);
+                li.appendChild(a);
                 foundLinks = true; // Mark that we have at least one active link
             } else {
-                a.href = '#'; // Make it a non-functional link
-                a.setAttribute('aria-disabled', 'true'); // Indicate it's disabled
-                a.style.color = 'grey'; // Basic disabled style
-                a.style.pointerEvents = 'none'; // Prevent click events
+                // Use span for disabled items instead of link with aria-disabled
+                const span = document.createElement('span');
+                span.textContent = letter;
+                span.className = 'glossary-disabled';
+                span.style.color = 'grey'; // Basic disabled style
+                span.setAttribute('aria-hidden', 'true'); // Hide from screen readers
+                li.appendChild(span);
             }
-            li.appendChild(a);
             ul.appendChild(li);
         }
 
