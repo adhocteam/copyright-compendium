@@ -526,26 +526,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 a.setAttribute('aria-current', 'page');
             }
 
-            li.appendChild(a);
-
             // If this is the active chapter, generate its specific content (sections)
             if (chapter.filename === currentFilename) {
+                let subUl: HTMLUListElement | null = null;
+                let hasSubItems = false;
+
                 if (currentFilename === 'glossary.html') {
                     // Glossary specific logic
-                    const glossaryUl = document.createElement('ul');
-                    glossaryUl.className = 'usa-sidenav__sublist';
-                    // ... (Use existing glossary generation logic here, but adapted to append to this LI) ...
-                    // Re-using the logic from generateGlossaryNavigation but targeting the sublist
-                    const glossaryGenerated = generateGlossaryItems(glossaryUl);
-                    if (glossaryGenerated) li.appendChild(glossaryUl);
-
+                    subUl = document.createElement('ul');
+                    subUl.className = 'usa-sidenav__sublist';
+                    hasSubItems = generateGlossaryItems(subUl);
                 } else {
                     // Standard Hierarchical logic
-                    const subUl = document.createElement('ul');
+                    subUl = document.createElement('ul');
                     subUl.className = 'usa-sidenav__sublist';
-                    const hierarchyGenerated = generateHierarchicalItems(subUl);
-                    if (hierarchyGenerated) li.appendChild(subUl);
+                    hasSubItems = generateHierarchicalItems(subUl);
                 }
+
+                if (hasSubItems && subUl) {
+                    // Wrap link + toggle in a flex container
+                    const innerDiv = document.createElement('div');
+                    innerDiv.className = 'usa-sidenav__item-inner';
+                    innerDiv.style.display = 'flex';
+                    innerDiv.style.alignItems = 'center';
+                    innerDiv.style.justifyContent = 'space-between';
+
+                    a.style.flex = '1';
+                    innerDiv.appendChild(a);
+
+                    // Add toggle button
+                    const toggleBtn = document.createElement('button');
+                    toggleBtn.className = 'usa-sidenav__toggle'; // starts expanded
+                    toggleBtn.setAttribute('aria-expanded', 'true');
+                    toggleBtn.setAttribute('aria-label', `Toggle ${chapter.title}`);
+                    toggleBtn.innerHTML = `
+                        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/>
+                        </svg>
+                    `;
+                    toggleBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggleSidenavItem(toggleBtn);
+                    });
+                    innerDiv.appendChild(toggleBtn);
+
+                    li.appendChild(innerDiv);
+                    // Sublist starts expanded for active chapter
+                    li.appendChild(subUl);
+                } else {
+                    li.appendChild(a);
+                }
+            } else {
+                li.appendChild(a);
             }
 
             // Add click listener for navigation
