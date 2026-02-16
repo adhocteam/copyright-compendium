@@ -1198,5 +1198,18 @@ button:focus,
 	}
 }
 
+/* Mobile: Show chapters list directly without requiring accordion click */
+@media (max-width: 40em) {
+	/* Auto-expand chapters list on mobile */
+	#basic-nav-section-one {
+		display: block !important; /* Override hidden attribute */
+	}
+	
+	/* Hide the accordion button on mobile since list is always visible */
+	button[aria-controls="basic-nav-section-one"] {
+		display: none;
+	}
+}
+
 
 /* --- END OF FILE style.css --- */
