@@ -694,6 +694,90 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- Add Chapter Navigation (Previous/Next Links) ---
+    function addChapterNavigation(currentFilename: string): void {
+        if (!chapterContent) return;
+        
+        // Remove existing navigation if any
+        const existingNav = chapterContent.querySelector('.chapter-navigation');
+        if (existingNav) {
+            existingNav.remove();
+        }
+        
+        // Find current chapter index
+        const currentIndex = chapters.findIndex(c => c.filename === currentFilename);
+        if (currentIndex === -1) return; // Not found in chapters list
+        
+        // Get previous and next chapters
+        const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
+        const nextChapter = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+        
+        // Only create navigation if there's a previous or next chapter
+        if (!prevChapter && !nextChapter) return;
+        
+        // Create navigation container
+        const nav = document.createElement('nav');
+        nav.className = 'chapter-navigation';
+        nav.setAttribute('aria-label', 'Chapter navigation');
+        
+        // Previous chapter link
+        if (prevChapter) {
+            const prevDiv = document.createElement('div');
+            prevDiv.className = 'chapter-navigation__prev';
+            
+            const prevLink = document.createElement('a');
+            prevLink.href = `/${prevChapter.filename}`;
+            prevLink.className = 'chapter-navigation__link chapter-navigation__link--prev';
+            prevLink.onclick = (e) => {
+                e.preventDefault();
+                loadContent(prevChapter.filename, { updateHistory: true });
+            };
+            
+            const prevLabel = document.createElement('span');
+            prevLabel.className = 'chapter-navigation__label';
+            prevLabel.textContent = 'Previous';
+            
+            const prevTitle = document.createElement('span');
+            prevTitle.className = 'chapter-navigation__title';
+            prevTitle.textContent = `${prevChapter.number ? prevChapter.number + ': ' : ''}${prevChapter.title}`;
+            
+            prevLink.appendChild(prevLabel);
+            prevLink.appendChild(prevTitle);
+            prevDiv.appendChild(prevLink);
+            nav.appendChild(prevDiv);
+        }
+        
+        // Next chapter link
+        if (nextChapter) {
+            const nextDiv = document.createElement('div');
+            nextDiv.className = 'chapter-navigation__next';
+            
+            const nextLink = document.createElement('a');
+            nextLink.href = `/${nextChapter.filename}`;
+            nextLink.className = 'chapter-navigation__link chapter-navigation__link--next';
+            nextLink.onclick = (e) => {
+                e.preventDefault();
+                loadContent(nextChapter.filename, { updateHistory: true });
+            };
+            
+            const nextLabel = document.createElement('span');
+            nextLabel.className = 'chapter-navigation__label';
+            nextLabel.textContent = 'Next';
+            
+            const nextTitle = document.createElement('span');
+            nextTitle.className = 'chapter-navigation__title';
+            nextTitle.textContent = `${nextChapter.number ? nextChapter.number + ': ' : ''}${nextChapter.title}`;
+            
+            nextLink.appendChild(nextLabel);
+            nextLink.appendChild(nextTitle);
+            nextDiv.appendChild(nextLink);
+            nav.appendChild(nextDiv);
+        }
+        
+        // Append navigation to content
+        chapterContent.appendChild(nav);
+    }
+
 
     // --- loadContent ---
     async function loadContent(filename: string, options: LoadContentOptions = {}): Promise<void> {
@@ -876,6 +960,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.warn("Glossary tooltip refresh function not available.");
                 // This might happen if the glossary script failed to load or initialize
             }
+
+            // --- Add Chapter Navigation (Previous/Next) ---
+            addChapterNavigation(filename);
 
         } catch (error) {
             // Handle AbortError gracefully (request was cancelled)
@@ -1604,10 +1691,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile menu toggles
     if (uswdsMenuButton && uswdsNavCloseButton && uswdsOverlay && uswdsNav) {
+        const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown?.id}"]`) as HTMLButtonElement;
+        
         const toggleMenu = () => {
             const isExpanded = uswdsNav.classList.toggle('is-visible');
             uswdsOverlay.classList.toggle('is-visible', isExpanded);
             uswdsMenuButton.setAttribute('aria-expanded', String(isExpanded));
+            
+            // On mobile: Auto-expand the Chapters menu when opening the hamburger menu
+            if (isExpanded && window.innerWidth <= 640 && chaptersAccordionButton && chapterListDropdown) {
+                chaptersAccordionButton.setAttribute('aria-expanded', 'true');
+                chapterListDropdown.removeAttribute('hidden');
+            }
         };
         const closeMenu = () => {
             uswdsOverlay.classList.remove('is-visible');

@@ -453,6 +453,7 @@
 @media (max-width: 40em) {
 	.usa-navbar {
 		gap: 0.25rem;         /* Minimal gap on mobile */
+		flex-wrap: wrap;      /* Allow wrapping to prevent overflow */
 	}
 	
 	/* Hide navbar controls on mobile - use hamburger menu instead */
@@ -460,9 +461,27 @@
 		display: none;
 	}
 	
-	/* Show chapter title on mobile */
+	/* Logo should take minimal space needed */
+	.usa-logo {
+		flex-shrink: 1;       /* Allow logo to shrink if needed */
+		min-width: 0;         /* Allow shrinking below content size */
+	}
+	
+	/* Show chapter title on mobile - place it on its own row */
 	.header-chapter-title {
 		display: block;
+		order: 3;             /* Place after logo and menu button */
+		flex-basis: 100%;     /* Take full width, forcing new row */
+		margin-top: 0.25rem;  /* Small spacing from top row */
+		padding: 0.25rem 0.5rem;
+		text-align: left;     /* Align left instead of center on mobile */
+		min-width: 0;         /* Allow full shrinking */
+	}
+	
+	/* Ensure menu button stays on first row */
+	.usa-menu-btn {
+		order: 2;
+		margin-left: auto;    /* Push to right side */
 	}
 }
 
@@ -811,8 +830,11 @@ list {
 
 item {
 	display: list-item;
+	list-style-type: disc; /* Ensure bullet points show */
 	margin-bottom: 0.8em;
 	line-height: 1.7;
+	padding-left: 0; /* Remove any item-level padding */
+	margin-left: 0;  /* Align with parent list padding */
 }
 
 /* Nested lists */
@@ -1042,8 +1064,8 @@ button:focus,
 	.grid-container {
 	    /* Stack elements vertically */
 	    grid-template-columns: 1fr; /* Single column */
-	    /* Header, then Sidenav, then Content */
-	    grid-template-rows: auto auto 1fr;
+	    /* Header, then Content (sidenav hidden by default) */
+	    grid-template-rows: auto 1fr;
 	    height: auto; /* Allow height to grow */
 	    min-height: 100vh;
 	    overflow: visible; /* Reset grid overflow */
@@ -1058,21 +1080,15 @@ button:focus,
 	    z-index: 100; /* Ensure header stays above other content */
 	}
 
+	/* Hide sidenav by default on mobile - shown via hamburger menu */
 	.sidenav {
-	    grid-column: 1 / -1;
-	    grid-row: 2;
-	    border-right: none;
-	    border-bottom: 1px solid #dfe1e2;
-	    height: auto; /* Let it take needed height */
-	    overflow-y: visible; /* Disable internal scroll on mobile */
-	    /* Optional: Limit height & re-enable scroll if needed */
-	    /* max-height: 40vh; */
-	    /* overflow-y: auto; */
+	    display: none;
+	    /* When shown (via menu), it will overlay the content */
 	}
 
 	.content {
 	    grid-column: 1 / -1;
-	    grid-row: 3;
+	    grid-row: 2;
 	    max-width: none; /* Allow content to use full width */
 	    padding: 1rem; /* Adjust mobile padding */
 	    overflow-y: visible; /* Disable internal scroll on mobile */
@@ -1083,6 +1099,103 @@ button:focus,
     page::after {
         display: none;
     }
+}
+
+/* --- Chapter Navigation (Previous/Next) --- */
+.chapter-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	padding-top: 2rem;
+	border-top: 2px solid #dfe1e2;
+	gap: 1rem;
+}
+
+.chapter-navigation__prev,
+.chapter-navigation__next {
+	flex: 1;
+	max-width: 45%;
+}
+
+.chapter-navigation__prev {
+	text-align: left;
+}
+
+.chapter-navigation__next {
+	text-align: right;
+}
+
+.chapter-navigation__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1rem;
+	background-color: #f0f0f0;
+	border: 1px solid #d9e8f6;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #005ea2;
+	font-weight: 600;
+	transition: all 0.2s ease;
+}
+
+.chapter-navigation__link:hover {
+	background-color: #e7f2f5;
+	border-color: #005ea2;
+	color: #1a4480;
+	text-decoration: none;
+}
+
+.chapter-navigation__link--prev::before {
+	content: "←";
+	font-size: 1.2em;
+}
+
+.chapter-navigation__link--next::after {
+	content: "→";
+	font-size: 1.2em;
+}
+
+.chapter-navigation__label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 400;
+	color: #565c65;
+	margin-bottom: 0.25rem;
+}
+
+.chapter-navigation__title {
+	display: block;
+	font-size: 0.95rem;
+}
+
+/* Mobile adjustments for chapter navigation */
+@media (max-width: 40em) {
+	.chapter-navigation {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+	
+	.chapter-navigation__prev,
+	.chapter-navigation__next {
+		max-width: 100%;
+		width: 100%;
+	}
+	
+	.chapter-navigation__prev {
+		text-align: left;
+	}
+	
+	.chapter-navigation__next {
+		text-align: left;
+	}
+	
+	.chapter-navigation__link {
+		width: 100%;
+		justify-content: space-between;
+	}
 }
 
 
