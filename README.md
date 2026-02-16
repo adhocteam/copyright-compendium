@@ -14,7 +14,9 @@ This UI was originally built in April 2025 using Gemini 2.5 Pro Experimental, ba
 
 # Documentation
 
-Comprehensive documentation is available in the `/docs` directory and can be served using [MkDocs](https://www.mkdocs.org/):
+Comprehensive documentation is available in the `/docs` directory. The documentation is automatically deployed to GitHub Pages at [https://adhocteam.github.io/copyright-compendium/](https://adhocteam.github.io/copyright-compendium/).
+
+It can also be served locally using [MkDocs](https://www.mkdocs.org/):
 
 ```bash
 # Install mkdocs and dependencies
