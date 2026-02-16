@@ -15,7 +15,7 @@ jobs:
       - name: Install commitlint
         run: |
           npm install conventional-changelog-conventionalcommits
-          npm install commitlint@latest
+          npm install commitlint@latest @commitlint/config-conventional
 
       - name: Construct commitlint.config.js
         run: |
