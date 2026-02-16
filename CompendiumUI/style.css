@@ -510,13 +510,12 @@ body {
 }
 
 /* --- Grid Layout --- */
-/* --- Grid Layout --- */
 .grid-container {
 	display: grid;
 	/* Default (Desktop): Sidebar | Content */
 	grid-template-columns: 250px auto; /* Fixed sidebar, flexible content */
-	/* Header row, Translation row (auto), Content row fills remaining height */
-	grid-template-rows: auto auto 1fr;
+	/* Header row, Content row fills remaining height */
+	grid-template-rows: auto 1fr;
 	height: 100vh; /* Fill viewport height */
 	/* Prevent grid container itself from scrolling */
 	overflow: hidden;
@@ -532,25 +531,6 @@ body {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-/* New Wrapper for Translation Elements */
-.translation-wrapper {
-	grid-column: 1 / -1; /* Span across all columns (full width) */
-	grid-row: 2;         /* Place in the second row */
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	z-index: 9;          /* Slightly below header but above content if needed */
-	background-color: #faf3d1; /* Match the warning color background if desired, or transparent */
-}
-
-/* Ensure disclaimer and progress take full width inside the wrapper */
-.translation-wrapper .usa-alert,
-.translation-wrapper .translation-progress {
-	width: 100%;
-	border-radius: 0; /* flattened look for full width bar */
-	margin: 0;        /* remove default margins to stack nicely */
-}
-
 /* Make the Chapters submenu scrollable if it gets too long */
 #basic-nav-section-one {
 	max-height: 70vh; /* Limit height to 70% of the viewport height - adjust as needed */
@@ -561,7 +541,7 @@ body {
 
 .sidenav {
 	grid-column: 1; /* First column */
-	grid-row: 3; /* Third row (after header and translation bar) */
+	grid-row: 2; /* Second row */
 	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within sidenav */
 	padding: 1.5rem 1rem;
 	border-right: 2px solid #d9e8f6;
@@ -573,7 +553,7 @@ body {
 
 .content {
 	grid-column: 2; /* Second column */
-	grid-row: 3; /* Third row (after header and translation bar) */
+	grid-row: 2; /* Second row */
 	padding: 2rem 3rem; /* More generous padding */
 	overflow-y: auto; /* <<< IMPORTANT: Allow vertical scrolling ONLY within content */
 	/* Limit line length for readability */
