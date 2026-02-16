@@ -77,7 +77,7 @@ tasks:
     desc: Run algorithmic QA checks on all chapters (in Docker)
     deps: [test:build]
     cmds:
-      - docker run --rm -v {{.ROOT_DIR}}:/workspace {{.IMAGE_NAME}}-tests --algo
+      - docker run --rm -v {{.ROOT_DIR}}:/workspace {{.IMAGE_NAME}}-tests --algo --report PDF_TEXT_TESTS.md
 
   test:chapter:
     desc: Run algorithmic QA on a specific chapter (e.g. task test:chapter -- ch200)
