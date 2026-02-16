@@ -202,6 +202,12 @@
 	border-right: none;
 }
 
+/* Ensure translation disclaimer text flows horizontally on all screen sizes */
+#translation-disclaimer .usa-alert__text {
+	max-width: none; /* Allow text to span full width */
+	width: 100%;
+}
+
 /* Translation Progress Indicator */
 .translation-progress {
 	background-color: #e7f6f8;
@@ -1047,11 +1053,15 @@ button:focus,
 	    height: auto; /* Allow height to grow */
 	    min-height: 100vh;
 	    overflow: visible; /* Reset grid overflow */
+	    padding-top: 0; /* Remove any top padding when header is fixed */
 	}
 
 	.header {
 	    grid-column: 1 / -1;
 	    grid-row: 1;
+	    position: sticky; /* Make header sticky on mobile */
+	    top: 0; /* Stick to top of viewport */
+	    z-index: 100; /* Ensure header stays above other content */
 	}
 
 	.sidenav {
