@@ -30,28 +30,7 @@
       <header class="header">
         <div class="usa-overlay"></div>
         <header class="usa-header usa-header--basic">
-          <!-- Translation Info Link (moved to top bar) -->
-          <div id="translation-info-link-wrapper" class="translation-info-wrapper translation-top-bar">
-            <button type="button" id="translation-info-link" class="translation-info-link"
-              aria-label="Translation information" aria-expanded="false">
-              <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="/assets/img/sprite.svg#language"></use>
-              </svg>
-              <span>Translation not available</span>
-            </button>
-            <!-- Tooltip/Popover -->
-            <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip" style="display: none;">
-              <h3 class="translation-info-title">Translation Feature</h3>
-              <p>This application supports in-browser translation using the experimental Translation API.</p>
-              <p><strong>Requirements:</strong></p>
-              <ul>
-                <li>Chrome 120+ or Edge 120+</li>
-                <li>Translation API enabled in browser settings</li>
-              </ul>
-              <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
-                → "Translate to...").</p>
-            </div>
-          </div>
+
           <div class="usa-nav-container">
             <div class="usa-navbar">
               <div class="usa-logo">
@@ -65,11 +44,52 @@
 
               <!-- Chapters Dropdown (moved from mobile menu) -->
               <div class="navbar-controls">
-                <button type="button" class="usa-accordion__button usa-nav__link navbar-chapters-btn" aria-expanded="false"
-                  aria-controls="basic-nav-section-one">
+                <!-- Translation Controls (Moved here from mobile menu) -->
+                <div id="translation-controls-wrapper" style="display: none;">
+                  <div class="translation-controls">
+                    <!-- Label removed per plan, icon moved to button -->
+                    <div class="translation-controls-row">
+                      <select id="language-select" class="usa-select translation-select"
+                        aria-label="Select translation language">
+                        <option value="">English (Original)</option>
+                        <option value="es">Español (Spanish)</option>
+                        <option value="zh">中文 (Chinese)</option>
+                        <option value="fr">Français (French)</option>
+                        <option value="de">Deutsch (German)</option>
+                        <option value="ja">日本語 (Japanese)</option>
+                        <option value="ko">한국어 (Korean)</option>
+                        <option value="ru">Русский (Russian)</option>
+                        <option value="ar">العربية (Arabic)</option>
+                        <option value="pt">Português (Portuguese)</option>
+                        <option value="it">Italiano (Italian)</option>
+                        <option value="hi">हिन्दी (Hindi)</option>
+                        <option value="vi">Tiếng Việt (Vietnamese)</option>
+                      </select>
+                      <button type="button" id="translate-button"
+                        class="usa-button usa-button--outline translate-button hidden"
+                        aria-label="Translate current chapter">
+                        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"
+                          style="margin-right: 0.25rem;">
+                          <use xlink:href="/assets/img/sprite.svg#language"></use>
+                        </svg>
+                        Translate
+                      </button>
+                    </div>
+                    <!-- Clear button might need better placement or styling in header context, keeping it inside for now -->
+                    <button type="button" id="clear-translations-button"
+                      class="usa-button usa-button--unstyled clear-translations-button"
+                      aria-label="Clear all cached translations" style="display: none;">
+                      <!-- Hidden by default, script shows it -->
+                      Clear cached translations
+                    </button>
+                  </div>
+                </div>
+                <button type="button" class="usa-accordion__button usa-nav__link navbar-chapters-btn"
+                  aria-expanded="false" aria-controls="basic-nav-section-one">
                   <span>Chapters</span>
                 </button>
-                <ul id="basic-nav-section-one" class="usa-nav__submenu navbar-chapters-submenu" hidden aria-label="Available chapters">
+                <ul id="basic-nav-section-one" class="usa-nav__submenu navbar-chapters-submenu" hidden
+                  aria-label="Available chapters">
                   <!-- Chapter list will be populated here -->
                 </ul>
 
@@ -106,47 +126,7 @@
                     <div id="autocomplete-search"></div>
                   </section>
                 </li>
-                <!-- Translation Controls -->
-                <li class="usa-nav__primary-item" id="translation-controls-list-item" style="display: none;">
-                  <section aria-label="Translation controls" id="translation-controls-wrapper">
-                    <div class="translation-controls">
-                      <label for="language-select" class="usa-label translation-label">
-                        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                          <use xlink:href="/assets/img/sprite.svg#language"></use>
-                        </svg>
-                        Translate
-                      </label>
-                      <div class="translation-controls-row">
-                        <select id="language-select" class="usa-select translation-select"
-                          aria-label="Select translation language">
-                          <option value="">English (Original)</option>
-                          <option value="es">Español (Spanish)</option>
-                          <option value="zh">中文 (Chinese)</option>
-                          <option value="fr">Français (French)</option>
-                          <option value="de">Deutsch (German)</option>
-                          <option value="ja">日本語 (Japanese)</option>
-                          <option value="ko">한국어 (Korean)</option>
-                          <option value="ru">Русский (Russian)</option>
-                          <option value="ar">العربية (Arabic)</option>
-                          <option value="pt">Português (Portuguese)</option>
-                          <option value="it">Italiano (Italian)</option>
-                          <option value="hi">हिन्दी (Hindi)</option>
-                          <option value="vi">Tiếng Việt (Vietnamese)</option>
-                        </select>
-                        <button type="button" id="translate-button"
-                          class="usa-button usa-button--outline translate-button hidden"
-                          aria-label="Translate current chapter">
-                          Translate
-                        </button>
-                      </div>
-                      <button type="button" id="clear-translations-button"
-                        class="usa-button usa-button--unstyled clear-translations-button"
-                        aria-label="Clear all cached translations">
-                        Clear cached translations
-                      </button>
-                    </div>
-                  </section>
-                </li>
+
             </nav>
           </div>
         </header>
@@ -157,8 +137,8 @@
         style="display: none;">
         <div class="usa-alert__body">
           <p class="usa-alert__text">
-            <strong>⚠️ Experimental Translation:</strong> This is an automatically translated version and is not
-            official.
+            <strong>⚠️ Experimental Translation:</strong> Any language other than English represents automatically
+            translated text and is not official.
             The translation may contain inaccuracies or errors. For authoritative information, please refer to the
             <a href="#" id="view-original-link" class="usa-link">original English version</a>.
           </p>
