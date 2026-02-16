@@ -39,6 +39,9 @@
                   </a>
                 </em>
               </div>
+
+              <!-- Chapter Title Display in Header -->
+              <div id="header-chapter-title" class="header-chapter-title"></div>
               <!-- Translation Info Link (shown when translation is not supported) -->
               <div id="translation-info-link-wrapper" class="translation-info-wrapper" style="display: none;">
                 <button type="button" id="translation-info-link" class="translation-info-link"
@@ -111,6 +114,16 @@
                     </select>
                   </div>
                 </section>
+
+                <li class="usa-nav__primary-item">
+                  <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
+                    aria-controls="basic-nav-section-one">
+                    <span>Chapters</span>
+                  </button>
+                  <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden>
+                    <!-- Chapter list will be populated here -->
+                  </ul>
+                </li>
 
                 <div id="version-display" class="version-display">
                   v<span id="version-number"></span>
