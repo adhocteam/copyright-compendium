@@ -63,10 +63,35 @@
                 </em>
               </div>
 
-              <!-- Chapter Title Display in Header -->
-              <div id="header-chapter-title" class="header-chapter-title"></div>
+              <!-- Chapters Dropdown (moved from mobile menu) -->
+              <div class="navbar-controls">
+                <button type="button" class="usa-accordion__button usa-nav__link navbar-chapters-btn" aria-expanded="false"
+                  aria-controls="basic-nav-section-one">
+                  <span>Chapters</span>
+                </button>
+                <ul id="basic-nav-section-one" class="usa-nav__submenu navbar-chapters-submenu" hidden aria-label="Available chapters">
+                  <!-- Chapter list will be populated here -->
+                </ul>
 
-              <!-- Version Display -->
+                <!-- Version Display (moved from mobile menu) -->
+                <div id="version-display" class="version-display" tabindex="0" aria-label="About this site">
+                  v<span id="version-number"></span>
+                  <div class="version-tooltip" role="tooltip">
+                    <h3 class="version-tooltip__title">About the Copyright Compendium Viewer</h3>
+                    <p>This site provides a navigable, searchable web display of the U.S. Copyright Office's
+                      <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is the
+                      administrative manual of the Register of Copyrights and provides expert guidance to copyright
+                      applicants, practitioners, scholars, the courts, and the general public regarding copyright law
+                      and institutional practices.
+                    </p>
+                    <p class="version-tooltip__note">This is an <strong>experimental transformation</strong> of the
+                      official Copyright Compendium from PDF format to HTML for web display.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chapter Title Display in Header (kept for mobile) -->
+              <div id="header-chapter-title" class="header-chapter-title"></div>
 
               <button type="button" class="usa-menu-btn">Menu</button>
             </div>
@@ -105,7 +130,7 @@
                           <option value="ar">العربية (Arabic)</option>
                           <option value="pt">Português (Portuguese)</option>
                           <option value="it">Italiano (Italian)</option>
-                          <option value="hi">हिन्दी (Hindi)</option>
+                          <option value="hi">हिन्dी (Hindi)</option>
                           <option value="vi">Tiếng Việt (Vietnamese)</option>
                         </select>
                         <button type="button" id="translate-button"
@@ -122,31 +147,6 @@
                     </div>
                   </section>
                 </li>
-
-                <li class="usa-nav__primary-item">
-                  <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
-                    aria-controls="basic-nav-section-one">
-                    <span>Chapters</span>
-                  </button>
-                  <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden aria-label="Available chapters">
-                    <!-- Chapter list will be populated here -->
-                  </ul>
-                </li>
-
-                <div id="version-display" class="version-display" tabindex="0" aria-label="About this site">
-                  v<span id="version-number"></span>
-                  <div class="version-tooltip" role="tooltip">
-                    <h3 class="version-tooltip__title">About the Copyright Compendium Viewer</h3>
-                    <p>This site provides a navigable, searchable web display of the U.S. Copyright Office's
-                      <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is the
-                      administrative manual of the Register of Copyrights and provides expert guidance to copyright
-                      applicants, practitioners, scholars, the courts, and the general public regarding copyright law
-                      and institutional practices.
-                    </p>
-                    <p class="version-tooltip__note">This is an <strong>experimental transformation</strong> of the
-                      official Copyright Compendium from PDF format to HTML for web display.</p>
-                  </div>
-                </div>
             </nav>
           </div>
         </header>
