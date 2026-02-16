@@ -169,7 +169,7 @@ class TranslationService {
             // Create translator if needed using the new API
             if (!this.translator || this.currentLanguage !== targetLanguage) {
                 if (!window.Translator) return false;
-                
+
                 // Report progress: creating translator
                 this.reportProgress({
                     phase: 'initializing',
@@ -188,12 +188,12 @@ class TranslationService {
 
             // Translate text nodes in the element
             const success = await this.translateElement(element);
-            
+
             // Save to cache if successful and not cancelled
             if (success && !this.cancelRequested && filename) {
                 this.saveTranslation(filename, targetLanguage, element.innerHTML);
             }
-            
+
             return success;
         } catch (error) {
             console.error('Translation failed:', error);
@@ -256,15 +256,15 @@ class TranslationService {
             const textNode = textNodes[i] as Text;
             try {
                 if (!this.translator || !textNode || !textNode.textContent) continue;
-                
+
                 const originalText = textNode.textContent;
                 const translatedText = await this.translator.translate(originalText);
-                
+
                 // Preserve leading/trailing whitespace to prevent spacing issues
                 const leadingWhitespace = originalText.match(/^\s*/)?.[0] || '';
                 const trailingWhitespace = originalText.match(/\s*$/)?.[0] || '';
                 const trimmedTranslation = translatedText.trim();
-                
+
                 textNode.textContent = leadingWhitespace + trimmedTranslation + trailingWhitespace;
             } catch (error) {
                 console.warn('Failed to translate text node:', error);
@@ -312,7 +312,7 @@ class TranslationService {
             total: totalNodes,
             message: 'Translation complete!'
         });
-        
+
         return true;
     }
 
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewOriginalLink = document.getElementById('view-original-link');
     const translateButton = document.getElementById('translate-button');
     const clearTranslationsButton = document.getElementById('clear-translations-button');
-    
+
     // Translation progress elements
     const translationProgress = document.getElementById('translation-progress');
     const translationProgressStatus = document.getElementById('translation-progress-status');
@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentFilename: string | null = null;
     // Persist chapter toggle (expanded/collapsed) state across navigation rebuilds
     const chapterToggleState = new Map<string, boolean>(); // filename -> isExpanded
-    
+
     // Security & Performance: Abort controller for canceling previous fetch operations
     let contentLoadController: AbortController | null = null;
 
@@ -640,7 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Cancel any ongoing translation when switching chapters
         translationService.cancelTranslation();
-        
+
         // Hide translation progress indicator
         if (translationProgress) {
             translationProgress.style.display = 'none';
@@ -813,7 +813,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('Content loading was cancelled for:', filename);
                 return; // Don't show error, this is expected behavior
             }
-            
+
             console.error("Error during loadContent:", error);
             const errorMessage = error instanceof Error ? error.message : 'Unknown error';
             if (chapterContent) { // Check if element exists before modifying
@@ -1282,7 +1282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error("Invalid chapter data (missing filename or title):", chapter);
                 return; // Skip invalid entries
             }
-            
+
             const listItem = document.createElement('li');
             listItem.classList.add('usa-nav__submenu-item');
             const link = document.createElement('a');
@@ -1694,9 +1694,15 @@ document.addEventListener('DOMContentLoaded', () => {
     async function initializeTranslation() {
         const isSupported = await translationService.checkBrowserSupport();
 
+        // Target the list item wrapper for toggling visibility
+        const translationListItem = document.getElementById('translation-controls-list-item');
+
         if (!isSupported) {
             // Hide translation controls in menu
-            if (translationControlsWrapper) {
+            if (translationListItem) {
+                translationListItem.style.display = 'none';
+            } else if (translationControlsWrapper) {
+                // Fallback to hiding the inner wrapper if list item not found
                 translationControlsWrapper.style.display = 'none';
             }
 
@@ -1706,7 +1712,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else {
             // Show translation controls in menu
-            if (translationControlsWrapper) {
+            if (translationListItem) {
+                translationListItem.style.display = 'block';
+            } else if (translationControlsWrapper) {
+                // Fallback
                 translationControlsWrapper.style.display = 'block';
             }
 
@@ -1777,7 +1786,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (clearTranslationsButton) {
         clearTranslationsButton.addEventListener('click', async () => {
             const stats = translationService.getStorageStats();
-            
+
             if (stats.count === 0) {
                 alert('No translations are currently cached.');
                 return;
@@ -1785,7 +1794,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const sizeMBFormatted = stats.sizeMB.toFixed(2);
             const message = `You have ${stats.count} cached translation${stats.count === 1 ? '' : 's'} using approximately ${sizeMBFormatted} MB of storage.\n\nDo you want to clear all cached translations?`;
-            
+
             if (confirm(message)) {
                 const clearedCount = translationService.clearAllTranslations();
                 alert(`Cleared ${clearedCount} cached translation${clearedCount === 1 ? '' : 's'}.`);
@@ -1846,7 +1855,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 translationInfoLink.setAttribute('aria-expanded', 'false');
             }
         });
-        
+
         // Accessibility: Close tooltip with Escape key
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape' && translationInfoTooltip.style.display === 'block') {
@@ -1859,13 +1868,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize translation on page load - set default visibility until check completes
-    if (translationControlsWrapper) {
+    const translationListItem = document.getElementById('translation-controls-list-item');
+    if (translationListItem) {
+        translationListItem.style.display = 'none';
+    } else if (translationControlsWrapper) {
         translationControlsWrapper.style.display = 'none';
     }
     if (translationInfoLinkWrapper) {
         translationInfoLinkWrapper.style.display = 'flex';
     }
-    
+
     // Then run the async check to update based on actual browser support
     initializeTranslation();
 

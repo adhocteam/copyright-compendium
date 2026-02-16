@@ -76,47 +76,52 @@
               </button>
               <!-- **** ADD usa-accordion class here **** -->
               <ul class="usa-nav__primary usa-accordion">
-                <section aria-label="Search component" id="search-component-wrapper">
-                  <div id="autocomplete-search"></div>
-                </section>
+                <li class="usa-nav__primary-item">
+                  <section aria-label="Search component" id="search-component-wrapper">
+                    <div id="autocomplete-search"></div>
+                  </section>
+                </li>
                 <!-- Translation Controls -->
-                <section aria-label="Translation controls" id="translation-controls-wrapper">
-                  <div class="translation-controls">
-                    <label for="language-select" class="usa-label translation-label">
-                      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                        <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
-                      </svg>
-                      Translate
-                    </label>
-                    <div class="translation-controls-row">
-                      <select id="language-select" class="usa-select translation-select"
-                        aria-label="Select translation language">
-                        <option value="">English (Original)</option>
-                        <option value="es">Español (Spanish)</option>
-                        <option value="zh">中文 (Chinese)</option>
-                        <option value="fr">Français (French)</option>
-                        <option value="de">Deutsch (German)</option>
-                        <option value="ja">日本語 (Japanese)</option>
-                        <option value="ko">한국어 (Korean)</option>
-                        <option value="ru">Русский (Russian)</option>
-                        <option value="ar">العربية (Arabic)</option>
-                        <option value="pt">Português (Portuguese)</option>
-                        <option value="it">Italiano (Italian)</option>
-                        <option value="hi">हिन्दी (Hindi)</option>
-                        <option value="vi">Tiếng Việt (Vietnamese)</option>
-                      </select>
-                      <button type="button" id="translate-button"
-                        class="usa-button usa-button--outline translate-button" aria-label="Translate current chapter">
+                <li class="usa-nav__primary-item" id="translation-controls-list-item" style="display: none;">
+                  <section aria-label="Translation controls" id="translation-controls-wrapper">
+                    <div class="translation-controls">
+                      <label for="language-select" class="usa-label translation-label">
+                        <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                          <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
+                        </svg>
                         Translate
+                      </label>
+                      <div class="translation-controls-row">
+                        <select id="language-select" class="usa-select translation-select"
+                          aria-label="Select translation language">
+                          <option value="">English (Original)</option>
+                          <option value="es">Español (Spanish)</option>
+                          <option value="zh">中文 (Chinese)</option>
+                          <option value="fr">Français (French)</option>
+                          <option value="de">Deutsch (German)</option>
+                          <option value="ja">日本語 (Japanese)</option>
+                          <option value="ko">한국어 (Korean)</option>
+                          <option value="ru">Русский (Russian)</option>
+                          <option value="ar">العربية (Arabic)</option>
+                          <option value="pt">Português (Portuguese)</option>
+                          <option value="it">Italiano (Italian)</option>
+                          <option value="hi">हिन्दी (Hindi)</option>
+                          <option value="vi">Tiếng Việt (Vietnamese)</option>
+                        </select>
+                        <button type="button" id="translate-button"
+                          class="usa-button usa-button--outline translate-button"
+                          aria-label="Translate current chapter">
+                          Translate
+                        </button>
+                      </div>
+                      <button type="button" id="clear-translations-button"
+                        class="usa-button usa-button--unstyled clear-translations-button"
+                        aria-label="Clear all cached translations">
+                        Clear cached translations
                       </button>
                     </div>
-                    <button type="button" id="clear-translations-button"
-                      class="usa-button usa-button--unstyled clear-translations-button"
-                      aria-label="Clear all cached translations">
-                      Clear cached translations
-                    </button>
-                  </div>
-                </section>
+                  </section>
+                </li>
 
                 <li class="usa-nav__primary-item">
                   <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
