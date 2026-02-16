@@ -26,6 +26,7 @@
 
 /* --- Header Chapter Title --- */
 .header-chapter-title {
+    display: none;            /* Hidden by default - shown only on mobile */
     flex-grow: 1;
     flex-shrink: 1;           /* Allow shrinking to prevent overflow */
     text-align: center;
@@ -534,6 +535,80 @@
 	flex-wrap: nowrap;        /* Prevent wrapping on desktop */
 }
 
+/* Navbar Controls Container - holds Chapters and Version */
+.navbar-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	position: relative;
+	flex-shrink: 0;
+}
+
+/* Chapters button in navbar */
+.navbar-chapters-btn {
+	background-color: #005ea2;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 0.2s ease;
+}
+
+.navbar-chapters-btn:hover,
+.navbar-chapters-btn:focus {
+	background-color: #1a4480;
+	text-decoration: none;
+}
+
+.navbar-chapters-btn[aria-expanded="true"] {
+	background-color: #1a4480;
+}
+
+/* Chapters submenu in navbar - positioned absolutely */
+.navbar-chapters-submenu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 0.5rem;
+	background-color: #ffffff;
+	border: 2px solid #005ea2;
+	border-radius: 6px;
+	padding: 0.5rem 0;
+	min-width: 250px;
+	max-width: 350px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	z-index: 1000;
+	max-height: 70vh;
+	overflow-y: auto;
+}
+
+.navbar-chapters-submenu[hidden] {
+	display: none;
+}
+
+.navbar-chapters-submenu li {
+	list-style: none;
+}
+
+.navbar-chapters-submenu a {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #005ea2;
+	text-decoration: none;
+	font-size: 0.875rem;
+	transition: background-color 0.2s ease;
+}
+
+.navbar-chapters-submenu a:hover,
+.navbar-chapters-submenu a:focus {
+	background-color: #e7f2f5;
+	color: #1a4480;
+}
+
 .usa-menu-btn {
 	order: 2;
 	flex-shrink: 0;           /* Menu button never shrinks */
@@ -546,17 +621,32 @@
 
 @media (max-width: 64em) {
 	.version-display {
-		display: none;
+		/* Keep version visible in navbar on tablets */
 	}
 	
 	.usa-navbar {
 		gap: 0.25rem;         /* Smaller gap on tablets */
+	}
+	
+	/* Hide chapter title in header on tablets when navbar controls are visible */
+	.header-chapter-title {
+		display: none;
 	}
 }
 
 @media (max-width: 40em) {
 	.usa-navbar {
 		gap: 0.25rem;         /* Minimal gap on mobile */
+	}
+	
+	/* Hide navbar controls on mobile - use hamburger menu instead */
+	.navbar-controls {
+		display: none;
+	}
+	
+	/* Show chapter title on mobile */
+	.header-chapter-title {
+		display: block;
 	}
 }
 
