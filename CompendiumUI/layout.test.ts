@@ -25,39 +25,32 @@ describe('Layout Structure', () => {
 		document.body.innerHTML = '';
 	});
 
-	it('should have the translation top bar', () => {
-		const topBar = document.querySelector('.translation-top-bar');
-		expect(topBar).not.toBeNull();
-		expect(topBar?.classList.contains('translation-info-wrapper')).toBe(true);
+	it('should have the translation controls wrapper', () => {
+		const wrapper = document.getElementById('translation-controls-wrapper');
+		expect(wrapper).not.toBeNull();
 	});
 
-	it('should have the translation info link inside the top bar', () => {
-		const topBar = document.querySelector('.translation-top-bar');
-		const infoLink = topBar?.querySelector('#translation-info-link');
-		expect(infoLink).not.toBeNull();
-		expect(infoLink?.tagName).toBe('BUTTON');
+	it('should have the translation disclaimer banner', () => {
+		const disclaimer = document.getElementById('translation-disclaimer');
+		expect(disclaimer).not.toBeNull();
+		expect(disclaimer?.getAttribute('role')).toBe('alert');
 	});
 
-	it('should have the translation controls properly labeled', () => {
-		const infoLink = document.getElementById('translation-info-link');
-		expect(infoLink?.getAttribute('aria-label')).toBe('Translation information');
-		expect(infoLink?.getAttribute('aria-expanded')).toBe('false');
+	it('should have the language select element', () => {
+		const languageSelect = document.getElementById('language-select');
+		expect(languageSelect).not.toBeNull();
+		expect(languageSelect?.tagName).toBe('SELECT');
+		expect(languageSelect?.getAttribute('aria-label')).toBe('Select translation language');
 	});
 
-	it('should place the top bar before the nav container in the header', () => {
-		const header = document.querySelector('.usa-header');
-		const topBar = header?.querySelector('.translation-top-bar');
-		const navContainer = header?.querySelector('.usa-nav-container');
-
-		expect(header).not.toBeNull();
-		expect(topBar).not.toBeNull();
-		expect(navContainer).not.toBeNull();
-
-		// Verify topBar comes before navContainer
-		const headerChildren = Array.from(header!.children);
-		const topBarIndex = headerChildren.indexOf(topBar!);
-		const navContainerIndex = headerChildren.indexOf(navContainer!);
-
-		expect(topBarIndex).toBeLessThan(navContainerIndex);
+	it('should have the translation disclaimer with proper content', () => {
+		const disclaimer = document.getElementById('translation-disclaimer');
+		expect(disclaimer).not.toBeNull();
+		
+		const alertText = disclaimer?.querySelector('.usa-alert__text');
+		expect(alertText).not.toBeNull();
+		expect(alertText?.textContent).toContain('Chrome 141+');
+		expect(alertText?.textContent).toContain('Translation API');
+		expect(alertText?.textContent).toContain('Additional languages can be added upon request');
 	});
 });
