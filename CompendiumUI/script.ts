@@ -90,12 +90,15 @@ class TranslationService {
     private translator: Translator | null;
     private canTranslate: boolean;
     private progressCallback: ((progress: TranslationProgress) => void) | null;
+    private cancelRequested: boolean;
+    private readonly STORAGE_PREFIX = 'translation_';
 
     constructor() {
         this.currentLanguage = '';
         this.translator = null;
         this.canTranslate = false;
         this.progressCallback = null;
+        this.cancelRequested = false;
         this.checkBrowserSupport();
     }
 
@@ -128,7 +131,7 @@ class TranslationService {
         this.progressCallback = callback;
     }
 
-    async translateContent(element: HTMLElement, targetLanguage: string): Promise<boolean> {
+    async translateContent(element: HTMLElement, targetLanguage: string, filename: string = ''): Promise<boolean> {
         if (!this.canTranslate) {
             console.warn('Translation not available');
             return false;
@@ -137,7 +140,29 @@ class TranslationService {
         if (!targetLanguage || targetLanguage === '') {
             // Reset to original
             this.currentLanguage = '';
+            this.cancelRequested = false;
             return true;
+        }
+
+        // Reset cancel flag at start of new translation
+        this.cancelRequested = false;
+
+        // Check if translation is cached
+        if (filename) {
+            const cachedTranslation = this.loadTranslation(filename, targetLanguage);
+            if (cachedTranslation) {
+                console.log(`Loading cached translation for ${filename} in ${targetLanguage}`);
+                element.innerHTML = cachedTranslation;
+                this.currentLanguage = targetLanguage;
+                this.reportProgress({
+                    phase: 'complete',
+                    percent: 100,
+                    current: 1,
+                    total: 1,
+                    message: 'Translation loaded from cache!'
+                });
+                return true;
+            }
         }
 
         try {
@@ -162,8 +187,14 @@ class TranslationService {
             }
 
             // Translate text nodes in the element
-            await this.translateElement(element);
-            return true;
+            const success = await this.translateElement(element);
+            
+            // Save to cache if successful and not cancelled
+            if (success && !this.cancelRequested && filename) {
+                this.saveTranslation(filename, targetLanguage, element.innerHTML);
+            }
+            
+            return success;
         } catch (error) {
             console.error('Translation failed:', error);
             this.reportProgress({
@@ -177,7 +208,7 @@ class TranslationService {
         }
     }
 
-    async translateElement(element: HTMLElement): Promise<void> {
+    async translateElement(element: HTMLElement): Promise<boolean> {
         // Walk through text nodes and translate them
         const walker = document.createTreeWalker(
             element,
@@ -216,11 +247,25 @@ class TranslationService {
 
         // Translate in batches
         for (let i = 0; i < textNodes.length; i++) {
-            const textNode = textNodes[i];
+            // Check if translation was cancelled
+            if (this.cancelRequested) {
+                console.log('Translation cancelled by user');
+                return false;
+            }
+
+            const textNode = textNodes[i] as Text;
             try {
-                if (!this.translator || !textNode.textContent) continue;
-                const translatedText = await this.translator.translate(textNode.textContent);
-                textNode.textContent = translatedText;
+                if (!this.translator || !textNode || !textNode.textContent) continue;
+                
+                const originalText = textNode.textContent;
+                const translatedText = await this.translator.translate(originalText);
+                
+                // Preserve leading/trailing whitespace to prevent spacing issues
+                const leadingWhitespace = originalText.match(/^\s*/)?.[0] || '';
+                const trailingWhitespace = originalText.match(/\s*$/)?.[0] || '';
+                const trimmedTranslation = translatedText.trim();
+                
+                textNode.textContent = leadingWhitespace + trimmedTranslation + trailingWhitespace;
             } catch (error) {
                 console.warn('Failed to translate text node:', error);
             }
@@ -253,6 +298,12 @@ class TranslationService {
             }
         }
 
+        // Check if cancelled at the end
+        if (this.cancelRequested) {
+            console.log('Translation cancelled before completion');
+            return false;
+        }
+
         // Report completion
         this.reportProgress({
             phase: 'complete',
@@ -261,6 +312,8 @@ class TranslationService {
             total: totalNodes,
             message: 'Translation complete!'
         });
+        
+        return true;
     }
 
     private reportProgress(progress: TranslationProgress): void {
@@ -271,6 +324,87 @@ class TranslationService {
 
     isSupported(): boolean {
         return this.canTranslate;
+    }
+
+    cancelTranslation(): void {
+        this.cancelRequested = true;
+        this.reportProgress({
+            phase: 'error',
+            percent: 0,
+            current: 0,
+            total: 0,
+            message: 'Translation cancelled'
+        });
+    }
+
+    private getStorageKey(filename: string, language: string): string {
+        return `${this.STORAGE_PREFIX}${filename}_${language}`;
+    }
+
+    saveTranslation(filename: string, language: string, content: string): void {
+        try {
+            const key = this.getStorageKey(filename, language);
+            localStorage.setItem(key, content);
+        } catch (error) {
+            console.warn('Failed to save translation to localStorage:', error);
+        }
+    }
+
+    loadTranslation(filename: string, language: string): string | null {
+        try {
+            const key = this.getStorageKey(filename, language);
+            return localStorage.getItem(key);
+        } catch (error) {
+            console.warn('Failed to load translation from localStorage:', error);
+            return null;
+        }
+    }
+
+    getStorageStats(): { count: number; sizeBytes: number; sizeMB: number } {
+        let count = 0;
+        let sizeBytes = 0;
+
+        try {
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key && key.startsWith(this.STORAGE_PREFIX)) {
+                    count++;
+                    const value = localStorage.getItem(key);
+                    if (value) {
+                        // Approximate size: key + value in UTF-16 (2 bytes per character)
+                        sizeBytes += (key.length + value.length) * 2;
+                    }
+                }
+            }
+        } catch (error) {
+            console.warn('Failed to calculate storage stats:', error);
+        }
+
+        return {
+            count,
+            sizeBytes,
+            sizeMB: sizeBytes / (1024 * 1024)
+        };
+    }
+
+    clearAllTranslations(): number {
+        let count = 0;
+        try {
+            const keysToRemove: string[] = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key && key.startsWith(this.STORAGE_PREFIX)) {
+                    keysToRemove.push(key);
+                }
+            }
+            keysToRemove.forEach(key => {
+                localStorage.removeItem(key);
+                count++;
+            });
+        } catch (error) {
+            console.warn('Failed to clear translations:', error);
+        }
+        return count;
     }
 }
 
@@ -307,6 +441,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const translationInfoLink = document.getElementById('translation-info-link');
     const translationInfoTooltip = document.getElementById('translation-info-tooltip');
     const viewOriginalLink = document.getElementById('view-original-link');
+    const translateButton = document.getElementById('translate-button');
+    const clearTranslationsButton = document.getElementById('clear-translations-button');
     
     // Translation progress elements
     const translationProgress = document.getElementById('translation-progress');
@@ -414,6 +550,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- loadContent ---
     async function loadContent(filename: string, options: LoadContentOptions = {}): Promise<void> {
         const { updateHistory = true, isInitialLoad = false, targetHash = null, forceReload = false } = options;
+
+        // Cancel any ongoing translation when switching chapters
+        translationService.cancelTranslation();
+        
+        // Hide translation progress indicator
+        if (translationProgress) {
+            translationProgress.style.display = 'none';
+        }
 
         // --- Same-page hash scrolling logic ---
         if (!forceReload && filename === currentFilename && !isInitialLoad) {
@@ -1570,7 +1714,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Handle language selection change
+    // Handle language selection change - now just updates the dropdown, doesn't auto-translate
     if (languageSelect) {
         languageSelect.addEventListener('change', async (event) => {
             const selectedLanguage = (event.target as HTMLSelectElement).value;
@@ -1590,24 +1734,58 @@ document.addEventListener('DOMContentLoaded', () => {
                     const currentFile = currentFilename || 'introduction.html';
                     loadContent(currentFile, { updateHistory: false, forceReload: true });
                 }
-            } else {
-                // Save original content before translating
-                if (chapterContent) {
-                    originalContent = chapterContent.innerHTML;
-                }
+            }
+        });
+    }
 
-                // Show disclaimer
-                if (translationDisclaimer) {
-                    translationDisclaimer.style.display = 'block';
-                }
+    // Handle translate button click
+    if (translateButton && languageSelect) {
+        translateButton.addEventListener('click', async () => {
+            const selectedLanguage = (languageSelect as HTMLSelectElement).value;
 
-                // Perform translation
-                if (chapterContent) {
-                    const success = await translationService.translateContent(chapterContent, selectedLanguage);
-                    if (!success) {
-                        console.warn('Translation failed');
-                    }
+            if (!selectedLanguage || selectedLanguage === '') {
+                // No language selected
+                alert('Please select a language to translate to.');
+                return;
+            }
+
+            // Save original content before translating
+            if (chapterContent) {
+                originalContent = chapterContent.innerHTML;
+            }
+
+            // Show disclaimer
+            if (translationDisclaimer) {
+                translationDisclaimer.style.display = 'block';
+            }
+
+            // Perform translation with current filename for caching
+            if (chapterContent) {
+                const currentFile = currentFilename || 'introduction.html';
+                const success = await translationService.translateContent(chapterContent, selectedLanguage, currentFile);
+                if (!success) {
+                    console.warn('Translation failed or was cancelled');
                 }
+            }
+        });
+    }
+
+    // Handle clear translations button
+    if (clearTranslationsButton) {
+        clearTranslationsButton.addEventListener('click', async () => {
+            const stats = translationService.getStorageStats();
+            
+            if (stats.count === 0) {
+                alert('No translations are currently cached.');
+                return;
+            }
+
+            const sizeMBFormatted = stats.sizeMB.toFixed(2);
+            const message = `You have ${stats.count} cached translation${stats.count === 1 ? '' : 's'} using approximately ${sizeMBFormatted} MB of storage.\n\nDo you want to clear all cached translations?`;
+            
+            if (confirm(message)) {
+                const clearedCount = translationService.clearAllTranslations();
+                alert(`Cleared ${clearedCount} cached translation${clearedCount === 1 ? '' : 's'}.`);
             }
         });
     }
