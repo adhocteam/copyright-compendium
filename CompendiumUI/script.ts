@@ -1858,7 +1858,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initialize translation on page load
+    // Initialize translation on page load - set default visibility until check completes
+    if (translationControlsWrapper) {
+        translationControlsWrapper.style.display = 'none';
+    }
+    if (translationInfoLinkWrapper) {
+        translationInfoLinkWrapper.style.display = 'flex';
+    }
+    
+    // Then run the async check to update based on actual browser support
     initializeTranslation();
 
 }); // End DOMContentLoaded

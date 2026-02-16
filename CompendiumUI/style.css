@@ -27,21 +27,25 @@
 /* --- Header Chapter Title --- */
 .header-chapter-title {
     flex-grow: 1;
-    flex-shrink: 0;           /* Don't shrink below content width on desktop */
+    flex-shrink: 1;           /* Allow shrinking to prevent overflow */
     text-align: center;
     font-weight: 700;
     font-size: 1.1rem;
     color: #162e51;
     white-space: nowrap;      /* Single line on desktop */
+    overflow: hidden;         /* Hide overflow */
+    text-overflow: ellipsis;  /* Show ellipsis for long titles */
     line-height: 1.3; 
     padding: 0.5rem 1rem;
+    min-width: 0;             /* Allow flex item to shrink below content size */
 }
 
 /* Medium screens: allow wrapping if needed */
 @media (max-width: 64em) {
     .header-chapter-title {
-        flex-shrink: 1;       /* Allow shrinking on smaller screens */
         white-space: normal;  /* Allow wrapping */
+        overflow: visible;    /* Show wrapped content */
+        text-overflow: clip;  /* No ellipsis when wrapping */
         font-size: 1rem;
         padding: 0 0.5rem;
     }
@@ -116,6 +120,11 @@
 #translation-controls-wrapper {
 	padding: 0.5rem 1rem;
 	border-top: 1px solid #dfe1e2;
+	display: none; /* Hidden by default, shown by JS if supported */
+}
+
+#translation-info-link-wrapper {
+	/* Shown by default, hidden by JS if translation is supported */
 }
 
 .translation-controls {
@@ -320,8 +329,8 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* margin-left: auto; <-- Removed to allow title to grow */
-	margin-right: 1rem;
+	margin-left: auto;        /* Push to right side */
+	margin-right: 0.5rem;     /* Space before menu button */
 }
 
 .translation-info-link {
@@ -479,15 +488,33 @@
 .usa-navbar {
 	display: flex;
 	align-items: center;
+	gap: 0.5rem;              /* Add gap between flex items */
+	flex-wrap: nowrap;        /* Prevent wrapping on desktop */
 }
 
 .usa-menu-btn {
 	order: 2;
+	flex-shrink: 0;           /* Menu button never shrinks */
+}
+
+/* Ensure translation info wrapper doesn't shrink */
+.translation-info-wrapper {
+	flex-shrink: 0;
 }
 
 @media (max-width: 64em) {
 	.version-display {
 		display: none;
+	}
+	
+	.usa-navbar {
+		gap: 0.25rem;         /* Smaller gap on tablets */
+	}
+}
+
+@media (max-width: 40em) {
+	.usa-navbar {
+		gap: 0.25rem;         /* Minimal gap on mobile */
 	}
 }
 
