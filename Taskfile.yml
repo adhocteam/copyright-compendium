@@ -67,28 +67,38 @@ tasks:
     cmds:
       - python scripts/process_pdfs_chunked.py --directory {{.PDF_DIR}}
 
-  # ── QA / Tests ─────────────────────────────────────────
-  test:install:
-    desc: Install Python test dependencies
+  # ── Tests ─────────────────────────────────────────────
+  test:build:
+    desc: Build the Python test-runner Docker image
     cmds:
-      - pip install -r tests/requirements.txt
+      - docker build -t {{.IMAGE_NAME}}-tests -f tests/Dockerfile tests
 
-  test:
-    desc: Run algorithmic QA checks on all chapters
+  test:unit:
+    desc: Run CompendiumUI unit tests (Vitest)
+    dir: CompendiumUI
     cmds:
-      - python -m tests.run_qa --algo
+      - npm test
+
+  test:pdf:
+    desc: Run PDF↔HTML text comparison on all chapters (in Docker)
+    deps: [test:build]
+    cmds:
+      - docker run --rm -v {{.ROOT_DIR}}:/workspace -e GIT_COMMIT="$(git log -1 --format='%H %s')" {{.IMAGE_NAME}}-tests --algo --report PDF_TEXT_TESTS.md
 
   test:chapter:
-    desc: Run algorithmic QA on a specific chapter (e.g. task test:chapter -- ch200)
+    desc: Run PDF↔HTML QA on a specific chapter (e.g. task test:chapter -- ch200)
+    deps: [test:build]
     cmds:
-      - python -m tests.run_qa --algo --chapters {{.CLI_ARGS}}
+      - docker run --rm -v {{.ROOT_DIR}}:/workspace {{.IMAGE_NAME}}-tests --algo --chapters {{.CLI_ARGS}}
 
   test:llm:
     desc: Run LLM-based QA checks (requires GOOGLE_API_KEY)
+    deps: [test:build]
     cmds:
-      - python -m tests.run_qa --llm
+      - docker run --rm -v {{.ROOT_DIR}}:/workspace -e GOOGLE_API_KEY {{.IMAGE_NAME}}-tests --llm
 
   test:all:
-    desc: Run both algorithmic and LLM QA checks with full reports
+    desc: Run all tests (unit + PDF text comparison)
     cmds:
-      - python -m tests.run_qa --all --format all --output-dir tests/reports
+      - task: test:unit
+      - task: test:pdf

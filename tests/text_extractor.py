@@ -33,10 +33,11 @@ _PDF_SHORT_HEADER_RE = re.compile(
     re.IGNORECASE,
 )
 
-# PDF footer pattern: "Chapter 200 : 3 01/28/2021"
-# Also match variants like "Chapter 2 00 : 1 01/28/2021"
+# PDF footer / page header pattern: "Chapter 200 : 3 01/28/2021"
+# Also matches: "Introduction : 1 01/28/2021", "Chapter 2 00 : 1 01/28/2021"
+# General form: <AnyTitle> : <PageNum> <MM/DD/YYYY>
 _PDF_FOOTER_RE = re.compile(
-    r"Chapter\s+\d[\s\d]*:\s*\d+\s+\d{2}/\d{2}/\d{4}", re.IGNORECASE
+    r"[\w\s]{3,40}?\s*:\s*\d+\s+\d{2}/\d{2}/\d{4}", re.IGNORECASE
 )
 
 # TOC dot-leaders + page numbers: "What This Chapter Covers ... 3"
@@ -64,6 +65,9 @@ _WORD_FRAGMENT_RE = re.compile(r"\b([a-z]{2,4})\s([a-z]{3,})\b")
 
 # Multiple whitespace
 _MULTI_WS_RE = re.compile(r"\s+")
+
+# HTML/XML tags embedded in PDF text (e.g. <ahref="..."> , </a>)
+_XML_TAG_RE = re.compile(r"<[^>]+>")
 
 
 def normalize_unicode(text: str) -> str:
@@ -118,6 +122,7 @@ def normalize_text(text: str, remove_pdf_artifacts: bool = True) -> str:
     text = normalize_unicode(text)
 
     if remove_pdf_artifacts:
+        text = _XML_TAG_RE.sub("", text)
         text = _PDF_HEADER_RE.sub("", text)
         text = _PDF_SHORT_HEADER_RE.sub("", text)
         text = _PDF_FOOTER_RE.sub("", text)
