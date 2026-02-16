@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/adhocteam/copyright-compendium/compare/v1.2.4...v1.3.0) (2026-02-16)
+
+
+### Features
+
+* add browser-recorded demo video and Demo section in README ([60ce1f8](https://github.com/adhocteam/copyright-compendium/commit/60ce1f8312aaba6c0b92c6d1f6d8234ea34b521c))
+
 ### [1.2.4](https://github.com/adhocteam/copyright-compendium/compare/v1.2.3...v1.2.4) (2026-02-16)
 
 
