@@ -163,6 +163,133 @@
 	border-right: none;
 }
 
+/* Translation Progress Indicator */
+.translation-progress {
+	background-color: #e7f6f8;
+	border-top: 2px solid #00bde3;
+	border-bottom: 2px solid #00bde3;
+	padding: 1.5rem 2rem;
+	margin: 0;
+}
+
+.translation-progress__content {
+	max-width: 64rem;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.translation-progress__spinner {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	flex-shrink: 0;
+}
+
+.translation-progress__spinner-svg {
+	width: 100%;
+	height: 100%;
+	animation: translation-spinner-rotate 2s linear infinite;
+}
+
+.translation-progress__spinner-circle {
+	stroke: #005ea2;
+	stroke-linecap: round;
+	stroke-dasharray: 90, 150;
+	stroke-dashoffset: 0;
+	animation: translation-spinner-dash 1.5s ease-in-out infinite;
+}
+
+@keyframes translation-spinner-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes translation-spinner-dash {
+	0% {
+		stroke-dasharray: 1, 150;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -124;
+	}
+}
+
+.translation-progress__spinner-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: #005ea2;
+	letter-spacing: 0.5px;
+}
+
+.translation-progress__info {
+	flex-grow: 1;
+	min-width: 0;
+}
+
+.translation-progress__status {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #1b1b1b;
+	margin-bottom: 0.5rem;
+}
+
+.translation-progress__bar-container {
+	margin-bottom: 0.5rem;
+}
+
+.translation-progress__bar {
+	width: 100%;
+	height: 1.5rem;
+	background-color: #c9c9c9;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.translation-progress__bar-fill {
+	height: 100%;
+	background-color: #005ea2;
+	transition: width 0.3s ease-out;
+	width: 0%;
+	border-radius: 0.25rem;
+}
+
+.translation-progress__details {
+	font-size: 0.875rem;
+	color: #565c65;
+}
+
+/* Responsive adjustments for translation progress */
+@media (max-width: 40em) {
+	.translation-progress {
+		padding: 1rem;
+	}
+
+	.translation-progress__content {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.translation-progress__spinner {
+		width: 50px;
+		height: 50px;
+		align-self: center;
+	}
+}
+
 /* --- Translation Info Link (for unsupported browsers) --- */
 .translation-info-wrapper {
 	position: relative;
