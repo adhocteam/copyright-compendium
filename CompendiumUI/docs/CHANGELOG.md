@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/adhocteam/copyright-compendium/compare/v1.2.0...v1.2.1) (2026-02-16)
+
+
+### Bug Fixes
+
+* move chapters dropdown to primary nav and fix styling ([6284369](https://github.com/adhocteam/copyright-compendium/commit/62843695893e0d1fc2bbbadea859fde323b6fe2d))
+
 ## [1.2.0](https://github.com/adhocteam/copyright-compendium/compare/v1.1.3...v1.2.0) (2026-02-16)
 
 
