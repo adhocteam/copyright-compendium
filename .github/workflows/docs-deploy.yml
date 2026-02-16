@@ -39,11 +39,11 @@ jobs:
         continue-on-error: true
         run: |
           # Check if the pages environment exists by checking repository settings
-          if gh api repos/${{ github.repository }}/pages &>/dev/null; then
-            echo "pages_enabled=true" >> $GITHUB_OUTPUT
+          if gh api "repos/${{ github.repository }}/pages" &>/dev/null; then
+            echo "pages_enabled=true" >> "$GITHUB_OUTPUT"
             echo "GitHub Pages is configured"
           else
-            echo "pages_enabled=false" >> $GITHUB_OUTPUT
+            echo "pages_enabled=false" >> "$GITHUB_OUTPUT"
             echo "GitHub Pages is not configured - skipping deployment"
           fi
         env:
