@@ -4,6 +4,16 @@ This repository contains a simple web display for the Copyright Compendium. The 
 
 This UI was originally built in April 2025 using Gemini 2.5 Pro Experimental, based on USWDS components and styling. In February 2026, tests, conversion scripts, and other aspects of the site were updated using a combination of GitHub Agents and Antigravity with Claude Opus 4.6 and Gemini 3.0 Pro. The frontend code has been refactored to TypeScript with comprehensive test coverage.
 
+## Demo
+
+Watch a short walkthrough of the Compendium Viewer in action — showing chapter navigation, glossary hover tooltips, translation, and the documentation site:
+
+<p align="center">
+  <img src="demo/demo.webp" alt="Copyright Compendium Viewer Demo" width="720" />
+</p>
+
+> **[Try it live →](https://copyright-compendium.vercel.app/about.html)**
+
 # Technology Stack
 
 - **Frontend**: TypeScript with Vite build system
