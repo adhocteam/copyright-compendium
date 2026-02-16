@@ -40,7 +40,7 @@
     min-width: 0;             /* Allow flex item to shrink below content size */
 }
 
-/* Medium screens: allow wrapping if needed */
+/* Medium screens: restore normal wrapping (overrides desktop ellipsis) */
 @media (max-width: 64em) {
     .header-chapter-title {
         white-space: normal;  /* Allow wrapping */
@@ -121,10 +121,6 @@
 	padding: 0.5rem 1rem;
 	border-top: 1px solid #dfe1e2;
 	display: none; /* Hidden by default, shown by JS if supported */
-}
-
-#translation-info-link-wrapper {
-	/* Shown by default, hidden by JS if translation is supported */
 }
 
 .translation-controls {
