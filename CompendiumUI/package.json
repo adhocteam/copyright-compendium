@@ -4,14 +4,7 @@
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.0",
     "@algolia/autocomplete-theme-classic": "^1.19.0",
-    "@remotion/cli": "^4.0.422",
-    "@remotion/player": "^4.0.422",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "algoliasearch": "^5.23.4",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "remotion": "^4.0.422"
+    "algoliasearch": "^5.23.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.1",

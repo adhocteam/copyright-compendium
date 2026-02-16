@@ -6,15 +6,13 @@ This UI was originally built in April 2025 using Gemini 2.5 Pro Experimental, ba
 
 ## Demo
 
-Watch a short walkthrough of the Compendium Viewer in action — showing chapter navigation, side navigation, chapters menu, and search:
+Watch a short walkthrough of the Compendium Viewer in action — showing chapter navigation, glossary hover tooltips, translation, and the documentation site:
 
 <p align="center">
-  <video src="demo/demo.mp4" width="720" controls>
-    Your browser does not support the video tag.
-  </video>
+  <img src="demo/demo.webp" alt="Copyright Compendium Viewer Demo" width="720" />
 </p>
 
-> **[Try it live →](https://copyright-compendium.vercel.app/ch200-registration-process.html)**
+> **[Try it live →](https://copyright-compendium.vercel.app/about.html)**
 
 # Technology Stack
 
