@@ -155,10 +155,20 @@ def compare_chapters(chapter_ids: list[str]) -> dict[str, list[Discrepancy]]:
         Dict mapping chapter_id → list of Discrepancy objects.
     """
     results = {}
-    for chapter_id in chapter_ids:
+    total = len(chapter_ids)
+    for idx, chapter_id in enumerate(chapter_ids, 1):
+        print(f"  [{idx}/{total}] Checking {chapter_id}...", flush=True)
         try:
-            results[chapter_id] = compare_chapter(chapter_id)
+            discs = compare_chapter(chapter_id)
+            results[chapter_id] = discs
+            high = sum(1 for d in discs if d.severity.name == "HIGH")
+            med = sum(1 for d in discs if d.severity.name == "MEDIUM")
+            low = sum(1 for d in discs if d.severity.name == "LOW")
+            print(
+                f"           → {len(discs)} issues ({high} HIGH, {med} MEDIUM, {low} LOW)",
+                flush=True,
+            )
         except (FileNotFoundError, KeyError) as e:
-            print(f"WARNING: Skipping {chapter_id}: {e}")
+            print(f"  WARNING: Skipping {chapter_id}: {e}", flush=True)
             results[chapter_id] = []
     return results
