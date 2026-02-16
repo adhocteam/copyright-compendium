@@ -66,17 +66,17 @@ The implementation supports translation to the following languages:
 
 ### Translation API Usage
 
-The implementation uses the following API pattern:
+The implementation uses the following API pattern (based on the new Translation API specification):
 
 ```javascript
 // Check API availability
-const canTranslate = await self.translation.canTranslate({
+const availability = await Translator.availability({
     sourceLanguage: 'en',
     targetLanguage: 'es'
 });
 
 // Create translator instance
-const translator = await self.translation.createTranslator({
+const translator = await Translator.create({
     sourceLanguage: 'en',
     targetLanguage: 'es'
 });
