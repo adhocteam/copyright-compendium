@@ -155,6 +155,31 @@
 	outline-offset: 0;
 }
 
+.translation-controls-row {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.translate-button {
+	white-space: nowrap;
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	flex-shrink: 0;
+}
+
+.clear-translations-button {
+	font-size: 0.75rem;
+	padding: 0.25rem 0;
+	color: #005ea2;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.clear-translations-button:hover {
+	color: #1a4480;
+}
+
 /* Translation disclaimer positioning */
 #translation-disclaimer {
 	margin: 0;
