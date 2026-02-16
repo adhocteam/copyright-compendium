@@ -101,6 +101,12 @@ def compare_chapter(chapter_id: str) -> list[Discrepancy]:
         if diff_len < _MIN_DIFF_SIZE:
             continue
 
+        # Skip empty diffs (both sides empty after stripping)
+        pdf_chars = pdf_stripped[i1:i2]
+        html_chars = html_stripped[j1:j2]
+        if not pdf_chars.strip() and not html_chars.strip():
+            continue
+
         # Map back to original positions
         if i1 < len(pdf_map) and i2 > 0:
             pdf_orig_start = pdf_map[i1] if i1 < len(pdf_map) else len(pdf_text)
@@ -118,9 +124,7 @@ def compare_chapter(chapter_id: str) -> list[Discrepancy]:
         else:
             html_snippet = ""
 
-        # Get the actual character diff for classification
-        pdf_chars = pdf_stripped[i1:i2]
-        html_chars = html_stripped[j1:j2]
+        # Use the character diff (already extracted above) for description
 
         if op == "replace":
             desc = f"Text differs: '{pdf_chars[:50]}' → '{html_chars[:50]}'"

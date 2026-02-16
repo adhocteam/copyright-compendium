@@ -65,6 +65,9 @@ _WORD_FRAGMENT_RE = re.compile(r"\b([a-z]{2,4})\s([a-z]{3,})\b")
 # Multiple whitespace
 _MULTI_WS_RE = re.compile(r"\s+")
 
+# HTML/XML tags embedded in PDF text (e.g. <ahref="..."> , </a>)
+_XML_TAG_RE = re.compile(r"<[^>]+>")
+
 
 def normalize_unicode(text: str) -> str:
     """Normalize Unicode characters to ASCII-friendly equivalents."""
@@ -118,6 +121,7 @@ def normalize_text(text: str, remove_pdf_artifacts: bool = True) -> str:
     text = normalize_unicode(text)
 
     if remove_pdf_artifacts:
+        text = _XML_TAG_RE.sub("", text)
         text = _PDF_HEADER_RE.sub("", text)
         text = _PDF_SHORT_HEADER_RE.sub("", text)
         text = _PDF_FOOTER_RE.sub("", text)
