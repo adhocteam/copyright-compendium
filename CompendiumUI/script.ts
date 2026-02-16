@@ -1343,43 +1343,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Initialization and Event Listeners ---
 
-    // Populate Chapters menu
-    if (chapterListDropdown) {
-        console.log(`Starting population of #${chapterListDropdown.id}...`);
+    // Helper function to populate/rebuild chapters menu in English
+    function populateChaptersMenu(): void {
+        if (!chapterListDropdown) return;
+        
+        chapterListDropdown.innerHTML = ''; // Clear current
         chapters.forEach((chapter) => {
-            // Functionality: Validate chapter data before creating links
-            if (!chapter.filename || !chapter.title) {
-                console.error("Invalid chapter data (missing filename or title):", chapter);
-                return; // Skip invalid entries
-            }
-
+            if (!chapter.filename || !chapter.title) return;
+            
             const listItem = document.createElement('li');
             listItem.classList.add('usa-nav__submenu-item');
             const link = document.createElement('a');
-            link.href = `/${chapter.filename}`; // Use relative path
+            link.href = `/${chapter.filename}`;
             link.textContent = `${chapter.number}${chapter.number ? ': ' : ''}${chapter.title}`;
-            link.dataset.filename = chapter.filename; // Store filename for easy access
-
+            link.dataset.filename = chapter.filename;
+            
             link.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent default link navigation
+                e.preventDefault();
                 const filename = link.dataset.filename;
-                // Only load if it's a different chapter
                 if (filename !== currentFilename) {
-                    console.log("Chapter link clicked, calling loadContent for:", filename);
-                    if (filename) {
-                        loadContent(filename, { updateHistory: true, isInitialLoad: false });
-                    }
+                    if (filename) loadContent(filename, { updateHistory: true, isInitialLoad: false });
                 } else {
-                    // If same chapter, scroll to top and clear side nav highlight
-                    console.log("Chapter link clicked for current chapter, scrolling top.");
                     chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
-                    if (filename !== 'glossary.html') {
-                        updateSideNavCurrent(null);
-                    }
-                    // Also update URL to remove hash if any
+                    if (filename !== 'glossary.html') updateSideNavCurrent(null);
                     history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
                 }
-                // Close mobile menu if open
                 if (uswdsNav && uswdsNav.classList.contains('is-visible')) {
                     uswdsOverlay?.classList.remove('is-visible');
                     uswdsNav.classList.remove('is-visible');
@@ -1389,6 +1377,12 @@ document.addEventListener('DOMContentLoaded', () => {
             listItem.appendChild(link);
             chapterListDropdown.appendChild(listItem);
         });
+    }
+
+    // Populate Chapters menu
+    if (chapterListDropdown) {
+        console.log(`Starting population of #${chapterListDropdown.id}...`);
+        populateChaptersMenu();
         console.log(`✅ Finished population. Added ${chapters.length} items to #${chapterListDropdown.id}.`);
 
         // Add accordion toggle functionality for the Chapters button
@@ -1824,37 +1818,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     loadContent(currentFile, { updateHistory: false, forceReload: true });
 
                     // Re-populate chapters dropdown to restore English
-                    if (chapterListDropdown) {
-                        chapterListDropdown.innerHTML = ''; // Clear current
-                        chapters.forEach((chapter) => {
-                            if (!chapter.filename || !chapter.title) return;
-                            const listItem = document.createElement('li');
-                            listItem.classList.add('usa-nav__submenu-item');
-                            const link = document.createElement('a');
-                            // Reconstruct logic from initialization
-                            link.href = `/${chapter.filename}`;
-                            link.textContent = `${chapter.number}${chapter.number ? ': ' : ''}${chapter.title}`;
-                            link.dataset.filename = chapter.filename;
-                            link.addEventListener('click', (e) => {
-                                e.preventDefault();
-                                const filename = link.dataset.filename;
-                                if (filename !== currentFilename) {
-                                    if (filename) loadContent(filename, { updateHistory: true });
-                                } else {
-                                    chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
-                                    if (filename !== 'glossary.html') updateSideNavCurrent(null);
-                                    history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
-                                }
-                                if (uswdsNav && uswdsNav.classList.contains('is-visible')) {
-                                    uswdsOverlay?.classList.remove('is-visible');
-                                    uswdsNav.classList.remove('is-visible');
-                                    if (uswdsMenuButton) uswdsMenuButton.setAttribute('aria-expanded', 'false');
-                                }
-                            });
-                            listItem.appendChild(link);
-                            chapterListDropdown.appendChild(listItem);
-                        });
-                    }
+                    populateChaptersMenu();
                 }
             } else {
                 // A language was selected - show and enable the translate button
@@ -1878,10 +1842,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Save original content before translating
-            if (chapterContent) {
+            // Save original content before first translation
+            if (chapterContent && !originalContent) {
                 originalContent = chapterContent.innerHTML;
             }
+
+            // Restore original English content before translating to new language
+            // This ensures all translations are from English, not from another translation
+            if (chapterContent && originalContent) {
+                chapterContent.innerHTML = originalContent;
+                
+                // Regenerate sidenav from English content
+                const currentFile = currentFilename || 'introduction.html';
+                generateNavigation(currentFile);
+            }
+
+            // Rebuild chapters menu in English before translating
+            // This ensures menu is always translated from English
+            populateChaptersMenu();
 
             // Show disclaimer
             if (translationDisclaimer) {
