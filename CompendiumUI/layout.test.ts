@@ -25,6 +25,38 @@ describe('Layout Structure', () => {
 		document.body.innerHTML = '';
 	});
 
+	it('should have the translation wrapper', () => {
+		const wrapper = document.querySelector('.translation-wrapper');
+		expect(wrapper).not.toBeNull();
+	});
+
+	it('should have the translation progress and disclaimer inside the wrapper', () => {
+		const wrapper = document.querySelector('.translation-wrapper');
+		const progress = wrapper?.querySelector('#translation-progress');
+		const disclaimer = wrapper?.querySelector('#translation-disclaimer');
+
+		expect(progress).not.toBeNull();
+		expect(disclaimer).not.toBeNull();
+	});
+
+	it('should place the translation progress before the disclaimer', () => {
+		const wrapper = document.querySelector('.translation-wrapper');
+		const progress = wrapper?.querySelector('#translation-progress');
+		const disclaimer = wrapper?.querySelector('#translation-disclaimer');
+
+		// Check if progress comes before disclaimer in the DOM
+		expect(progress?.nextElementSibling).toBe(disclaimer);
+	});
+
+	it('should place the translation wrapper in the grid container', () => {
+		const container = document.querySelector('.grid-container');
+		const wrapper = container?.querySelector('.translation-wrapper');
+
+		expect(container).not.toBeNull();
+		expect(wrapper).not.toBeNull();
+		expect(wrapper?.parentElement).toBe(container);
+	});
+
 	it('should have the translation controls wrapper', () => {
 		const wrapper = document.getElementById('translation-controls-wrapper');
 		expect(wrapper).not.toBeNull();
@@ -46,7 +78,7 @@ describe('Layout Structure', () => {
 	it('should have the translation disclaimer with proper content', () => {
 		const disclaimer = document.getElementById('translation-disclaimer');
 		expect(disclaimer).not.toBeNull();
-		
+
 		const alertText = disclaimer?.querySelector('.usa-alert__text');
 		expect(alertText).not.toBeNull();
 		expect(alertText?.textContent).toContain('Chrome 141+');
