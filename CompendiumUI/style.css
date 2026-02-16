@@ -27,23 +27,35 @@
 /* --- Header Chapter Title --- */
 .header-chapter-title {
     flex-grow: 1;
-    flex-shrink: 0;           /* Don't shrink below content width on desktop */
+    flex-shrink: 1;           /* Allow shrinking to prevent overflow */
     text-align: center;
     font-weight: 700;
     font-size: 1.1rem;
     color: #162e51;
     white-space: nowrap;      /* Single line on desktop */
-    line-height: 1.3; 
+    overflow: hidden;         /* Hide overflow */
+    text-overflow: ellipsis;  /* Show ellipsis for long titles */
+    line-height: 1.3;
     padding: 0.5rem 1rem;
+    min-width: 35ch;          /* Enforce ~50 chars visible on desktop per user request */
 }
 
-/* Medium screens: allow wrapping if needed */
+/* Wide screens: Add another ~50 chars visible */
+@media (min-width: 80em) {
+    .header-chapter-title {
+        min-width: 70ch;
+    }
+}
+
+/* Medium screens: restore normal wrapping (overrides desktop ellipsis) */
 @media (max-width: 64em) {
     .header-chapter-title {
-        flex-shrink: 1;       /* Allow shrinking on smaller screens */
         white-space: normal;  /* Allow wrapping */
+        overflow: visible;    /* Show wrapped content */
+        text-overflow: clip;  /* No ellipsis when wrapping */
         font-size: 1rem;
         padding: 0 0.5rem;
+        min-width: 0;         /* Allow shrinking on smaller screens */
     }
 }
 
@@ -116,6 +128,7 @@
 #translation-controls-wrapper {
 	padding: 0.5rem 1rem;
 	border-top: 1px solid #dfe1e2;
+	display: none; /* Hidden by default, shown by JS if supported */
 }
 
 .translation-controls {
@@ -320,8 +333,36 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* margin-left: auto; <-- Removed to allow title to grow */
-	margin-right: 1rem;
+	margin-left: auto;        /* Push to right side */
+	margin-left: auto;        /* Push to right side */
+	margin-right: 0.5rem;     /* Space before menu button */
+}
+
+/* Modification: Top Bar Styling */
+.translation-top-bar {
+	display: flex;
+	justify-content: flex-end; /* Align right */
+	padding: 0.25rem 1rem 0;   /* Top padding */
+	margin-right: 0;           /* Reset margin */
+	margin-bottom: -0.5rem;    /* Pull closer to header elements */
+	width: 100%;
+	background-color: transparent;
+	position: relative;
+	z-index: 20;               /* Ensure above other elements */
+	box-sizing: border-box;    /* Ensure padding doesn't overflow width */
+}
+
+.translation-top-bar .translation-info-link {
+	border: none;              /* Remove border for cleaner look */
+	padding: 0.25rem 0;        /* Compact padding */
+	font-size: 0.8rem;         /* Slightly smaller */
+}
+
+.translation-top-bar .translation-info-link:hover,
+.translation-top-bar .translation-info-link:focus {
+	background-color: transparent;
+	text-decoration: underline;
+	color: #1a4480;
 }
 
 .translation-info-link {
@@ -479,15 +520,33 @@
 .usa-navbar {
 	display: flex;
 	align-items: center;
+	gap: 0.5rem;              /* Add gap between flex items */
+	flex-wrap: nowrap;        /* Prevent wrapping on desktop */
 }
 
 .usa-menu-btn {
 	order: 2;
+	flex-shrink: 0;           /* Menu button never shrinks */
+}
+
+/* Ensure translation info wrapper doesn't shrink */
+.translation-info-wrapper {
+	flex-shrink: 0;
 }
 
 @media (max-width: 64em) {
 	.version-display {
 		display: none;
+	}
+	
+	.usa-navbar {
+		gap: 0.25rem;         /* Smaller gap on tablets */
+	}
+}
+
+@media (max-width: 40em) {
+	.usa-navbar {
+		gap: 0.25rem;         /* Minimal gap on mobile */
 	}
 }
 
@@ -510,15 +569,19 @@
 		right: 0;
 		min-width: 280px;
 	}
+
+	.translation-info-link span {
+		/* Keep text visible on mobile if it fits, or let it wrap naturally since it's in its own bar */
+		/* display: none;  <-- REMOVED per user request */
+	}
 }
 
 @media (max-width: 40em) {
-	.translation-info-wrapper {
-		position: static;
-	}
+
 	
 	.translation-info-link span {
-		display: none;
+		/* Keep text visible on mobile if it fits, or let it wrap naturally since it's in its own bar */
+		/* display: none;  <-- REMOVED per user request */
 	}
 	
 	.translation-info-link {
@@ -537,7 +600,7 @@
 	}
 	
 	.translation-info-tooltip::before {
-		display: none;
+		display: none; /* Keep simplified tooltip for mobile */
 	}
 }
 

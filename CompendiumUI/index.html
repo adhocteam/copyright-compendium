@@ -8,6 +8,7 @@
     <!-- <base href="/"> -->
 
     <title>Compendium Viewer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- 
       Security Note: External CDN resources should use Subresource Integrity (SRI) hashes
       to prevent tampering. Consider self-hosting these assets or adding SRI attributes.
@@ -29,6 +30,28 @@
       <header class="header">
         <div class="usa-overlay"></div>
         <header class="usa-header usa-header--basic">
+          <!-- Translation Info Link (moved to top bar) -->
+          <div id="translation-info-link-wrapper" class="translation-info-wrapper translation-top-bar">
+            <button type="button" id="translation-info-link" class="translation-info-link"
+              aria-label="Translation information" aria-expanded="false">
+              <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
+              </svg>
+              <span>Translation not available</span>
+            </button>
+            <!-- Tooltip/Popover -->
+            <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip" style="display: none;">
+              <h3 class="translation-info-title">Translation Feature</h3>
+              <p>This application supports in-browser translation using the experimental Translation API.</p>
+              <p><strong>Requirements:</strong></p>
+              <ul>
+                <li>Chrome 120+ or Edge 120+</li>
+                <li>Translation API enabled in browser settings</li>
+              </ul>
+              <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
+                → "Translate to...").</p>
+            </div>
+          </div>
           <div class="usa-nav-container">
             <div class="usa-navbar">
               <div class="usa-logo">
@@ -42,29 +65,7 @@
 
               <!-- Chapter Title Display in Header -->
               <div id="header-chapter-title" class="header-chapter-title"></div>
-              <!-- Translation Info Link (shown when translation is not supported) -->
-              <div id="translation-info-link-wrapper" class="translation-info-wrapper" style="display: none;">
-                <button type="button" id="translation-info-link" class="translation-info-link"
-                  aria-label="Translation information" aria-expanded="false">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                    <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
-                  </svg>
-                  <span>Translation not available</span>
-                </button>
-                <!-- Tooltip/Popover -->
-                <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip"
-                  style="display: none;">
-                  <h3 class="translation-info-title">Translation Feature</h3>
-                  <p>This application supports in-browser translation using the experimental Translation API.</p>
-                  <p><strong>Requirements:</strong></p>
-                  <ul>
-                    <li>Chrome 120+ or Edge 120+</li>
-                    <li>Translation API enabled in browser settings</li>
-                  </ul>
-                  <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
-                    → "Translate to...").</p>
-                </div>
-              </div>
+
               <!-- Version Display -->
 
               <button type="button" class="usa-menu-btn">Menu</button>
@@ -79,7 +80,7 @@
                   <div id="autocomplete-search"></div>
                 </section>
                 <!-- Translation Controls -->
-                <section aria-label="Translation controls" id="translation-controls-wrapper" style="display: none;">
+                <section aria-label="Translation controls" id="translation-controls-wrapper">
                   <div class="translation-controls">
                     <label for="language-select" class="usa-label translation-label">
                       <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
@@ -104,11 +105,14 @@
                         <option value="hi">हिन्दी (Hindi)</option>
                         <option value="vi">Tiếng Việt (Vietnamese)</option>
                       </select>
-                      <button type="button" id="translate-button" class="usa-button usa-button--outline translate-button" aria-label="Translate current chapter">
+                      <button type="button" id="translate-button"
+                        class="usa-button usa-button--outline translate-button" aria-label="Translate current chapter">
                         Translate
                       </button>
                     </div>
-                    <button type="button" id="clear-translations-button" class="usa-button usa-button--unstyled clear-translations-button" aria-label="Clear all cached translations">
+                    <button type="button" id="clear-translations-button"
+                      class="usa-button usa-button--unstyled clear-translations-button"
+                      aria-label="Clear all cached translations">
                       Clear cached translations
                     </button>
                   </div>
@@ -132,7 +136,8 @@
                       <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is the
                       administrative manual of the Register of Copyrights and provides expert guidance to copyright
                       applicants, practitioners, scholars, the courts, and the general public regarding copyright law
-                      and institutional practices.</p>
+                      and institutional practices.
+                    </p>
                     <p class="version-tooltip__note">This is an <strong>experimental transformation</strong> of the
                       official Copyright Compendium from PDF format to HTML for web display.</p>
                   </div>
@@ -156,11 +161,13 @@
       </div>
 
       <!-- Translation Progress Indicator (only shown during translation) -->
-      <div id="translation-progress" class="translation-progress" role="status" aria-live="polite" style="display: none;">
+      <div id="translation-progress" class="translation-progress" role="status" aria-live="polite"
+        style="display: none;">
         <div class="translation-progress__content">
           <div class="translation-progress__spinner">
             <svg class="translation-progress__spinner-svg" viewBox="0 0 50 50" aria-hidden="true">
-              <circle class="translation-progress__spinner-circle" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+              <circle class="translation-progress__spinner-circle" cx="25" cy="25" r="20" fill="none" stroke-width="4">
+              </circle>
             </svg>
             <div class="translation-progress__spinner-text" aria-hidden="true">
               <span id="translation-progress-letters">...</span>
@@ -169,7 +176,8 @@
           <div class="translation-progress__info">
             <div class="translation-progress__status" id="translation-progress-status">Preparing translation...</div>
             <div class="translation-progress__bar-container">
-              <div class="translation-progress__bar" id="translation-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div class="translation-progress__bar" id="translation-progress-bar" role="progressbar" aria-valuenow="0"
+                aria-valuemin="0" aria-valuemax="100">
                 <div class="translation-progress__bar-fill" id="translation-progress-bar-fill"></div>
               </div>
             </div>
