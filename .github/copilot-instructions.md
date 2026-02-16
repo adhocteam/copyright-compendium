@@ -109,6 +109,7 @@ The application is deployed on Vercel. Configuration is in `CompendiumUI/vercel.
 - **CSS**: USWDS design system patterns
 - **Python**: Standard Python conventions, no linter configured
 - **Comments**: Minimal; code should be self-explanatory
+- **Commit Messages**: Use conventional commit messages
 - **File Naming**: 
   - XHTML chapters: `ch{number}-{title}.html` (e.g., `ch200-copyrightability.html`)
   - Python scripts: lowercase with underscores
