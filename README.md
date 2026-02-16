@@ -10,7 +10,7 @@ Watch a short walkthrough of the Compendium Viewer in action — showing chapter
 
 [![Copyright Compendium Viewer Demo](demo/demo.webp)](demo/demo.mp4)
 
-> **[Try it live →](https://copyright-compendium.vercel.app/about.html)**
+> **[Try it live →](https://compendium.adhocteam.us)**
 
 # Technology Stack
 
