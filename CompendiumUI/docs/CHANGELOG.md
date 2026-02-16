@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/adhocteam/copyright-compendium/compare/v1.3.2...v1.4.0) (2026-02-16)
+
+
+### Features
+
+* add demo video and remotion setup ([#49](https://github.com/adhocteam/copyright-compendium/issues/49)) ([e13043a](https://github.com/adhocteam/copyright-compendium/commit/e13043a455557c4153b6365f05233997d90802d3))
+
+
+### Bug Fixes
+
+* **ui:** refactor translation layout to full width with progress on top ([#48](https://github.com/adhocteam/copyright-compendium/issues/48)) ([486d9c6](https://github.com/adhocteam/copyright-compendium/commit/486d9c6ccc847e45c91d20ff90806591efcb52c6))
+* **ui:** revert layout changes ([3ffb7be](https://github.com/adhocteam/copyright-compendium/commit/3ffb7bed992458bd287d00656297c5d8790af581))
+
 ### [1.3.1](https://github.com/adhocteam/copyright-compendium/compare/v1.3.0...v1.3.1) (2026-02-16)
 
 ## [1.3.0](https://github.com/adhocteam/copyright-compendium/compare/v1.2.4...v1.3.0) (2026-02-16)
