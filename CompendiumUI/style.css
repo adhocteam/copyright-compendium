@@ -326,7 +326,35 @@
 	display: flex;
 	align-items: center;
 	margin-left: auto;        /* Push to right side */
+	margin-left: auto;        /* Push to right side */
 	margin-right: 0.5rem;     /* Space before menu button */
+}
+
+/* Modification: Top Bar Styling */
+.translation-top-bar {
+	display: flex;
+	justify-content: flex-end; /* Align right */
+	padding: 0.25rem 1rem 0;   /* Top padding */
+	margin-right: 0;           /* Reset margin */
+	margin-bottom: -0.5rem;    /* Pull closer to header elements */
+	width: 100%;
+	background-color: transparent;
+	position: relative;
+	z-index: 20;               /* Ensure above other elements */
+	box-sizing: border-box;    /* Ensure padding doesn't overflow width */
+}
+
+.translation-top-bar .translation-info-link {
+	border: none;              /* Remove border for cleaner look */
+	padding: 0.25rem 0;        /* Compact padding */
+	font-size: 0.8rem;         /* Slightly smaller */
+}
+
+.translation-top-bar .translation-info-link:hover,
+.translation-top-bar .translation-info-link:focus {
+	background-color: transparent;
+	text-decoration: underline;
+	color: #1a4480;
 }
 
 .translation-info-link {
@@ -533,15 +561,19 @@
 		right: 0;
 		min-width: 280px;
 	}
+
+	.translation-info-link span {
+		/* Keep text visible on mobile if it fits, or let it wrap naturally since it's in its own bar */
+		/* display: none;  <-- REMOVED per user request */
+	}
 }
 
 @media (max-width: 40em) {
-	.translation-info-wrapper {
-		position: static;
-	}
+
 	
 	.translation-info-link span {
-		display: none;
+		/* Keep text visible on mobile if it fits, or let it wrap naturally since it's in its own bar */
+		/* display: none;  <-- REMOVED per user request */
 	}
 	
 	.translation-info-link {
@@ -560,7 +592,7 @@
 	}
 	
 	.translation-info-tooltip::before {
-		display: none;
+		display: none; /* Keep simplified tooltip for mobile */
 	}
 }
 

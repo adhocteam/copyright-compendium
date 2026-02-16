@@ -29,6 +29,29 @@
       <header class="header">
         <div class="usa-overlay"></div>
         <header class="usa-header usa-header--basic">
+          <!-- Translation Info Link (moved to top bar) -->
+          <div id="translation-info-link-wrapper" class="translation-info-wrapper translation-top-bar">
+            <button type="button" id="translation-info-link" class="translation-info-link"
+              aria-label="Translation information" aria-expanded="false">
+              <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
+              </svg>
+              <span>Translation not available</span>
+            </button>
+            <!-- Tooltip/Popover -->
+            <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip"
+              style="display: none;">
+              <h3 class="translation-info-title">Translation Feature</h3>
+              <p>This application supports in-browser translation using the experimental Translation API.</p>
+              <p><strong>Requirements:</strong></p>
+              <ul>
+                <li>Chrome 120+ or Edge 120+</li>
+                <li>Translation API enabled in browser settings</li>
+              </ul>
+              <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
+                → "Translate to...").</p>
+            </div>
+          </div>
           <div class="usa-nav-container">
             <div class="usa-navbar">
               <div class="usa-logo">
@@ -42,29 +65,7 @@
 
               <!-- Chapter Title Display in Header -->
               <div id="header-chapter-title" class="header-chapter-title"></div>
-              <!-- Translation Info Link (shown when translation is not supported) -->
-              <div id="translation-info-link-wrapper" class="translation-info-wrapper">
-                <button type="button" id="translation-info-link" class="translation-info-link"
-                  aria-label="Translation information" aria-expanded="false">
-                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                    <use xlink:href="https://designsystem.digital.gov/assets/img/sprite.svg#language"></use>
-                  </svg>
-                  <span>Translation not available</span>
-                </button>
-                <!-- Tooltip/Popover -->
-                <div id="translation-info-tooltip" class="translation-info-tooltip" role="tooltip"
-                  style="display: none;">
-                  <h3 class="translation-info-title">Translation Feature</h3>
-                  <p>This application supports in-browser translation using the experimental Translation API.</p>
-                  <p><strong>Requirements:</strong></p>
-                  <ul>
-                    <li>Chrome 120+ or Edge 120+</li>
-                    <li>Translation API enabled in browser settings</li>
-                  </ul>
-                  <p><strong>Alternative:</strong> You can use your browser's built-in translation feature (right-click
-                    → "Translate to...").</p>
-                </div>
-              </div>
+
               <!-- Version Display -->
 
               <button type="button" class="usa-menu-btn">Menu</button>
