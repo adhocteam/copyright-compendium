@@ -709,6 +709,15 @@ document.addEventListener('DOMContentLoaded', () => {
             translationProgress.style.display = 'none';
         }
 
+        // Re-enable translate button when chapter changes (if a language is selected)
+        if (translateButton && languageSelect) {
+            const selectedLanguage = (languageSelect as HTMLSelectElement).value;
+            if (selectedLanguage && selectedLanguage !== '') {
+                translateButton.removeAttribute('disabled');
+                translateButton.setAttribute('aria-disabled', 'false');
+            }
+        }
+
         // --- Same-page hash scrolling logic ---
         if (!forceReload && filename === currentFilename && !isInitialLoad) {
             console.log(`Content ${filename} already loaded.`);
@@ -1800,6 +1809,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedLanguage = (event.target as HTMLSelectElement).value;
 
             if (!selectedLanguage || selectedLanguage === '') {
+                // Reset to original - hide translate button
+                if (translateButton) {
+                    translateButton.classList.add('hidden');
+                    translateButton.removeAttribute('disabled');
+                }
                 // Reset to original
                 if (translationDisclaimer) {
                     translationDisclaimer.style.display = 'none';
@@ -1813,6 +1827,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Reload the current page to get original content
                     const currentFile = currentFilename || 'introduction.html';
                     loadContent(currentFile, { updateHistory: false, forceReload: true });
+                }
+            } else {
+                // A language was selected - show and enable the translate button
+                if (translateButton) {
+                    translateButton.classList.remove('hidden');
+                    translateButton.removeAttribute('disabled');
+                    translateButton.setAttribute('aria-disabled', 'false');
                 }
             }
         });
@@ -1843,7 +1864,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (chapterContent) {
                 const currentFile = currentFilename || 'introduction.html';
                 const success = await translationService.translateContent(chapterContent, selectedLanguage, currentFile);
-                if (!success) {
+                if (success) {
+                    // Translation completed successfully - disable the button
+                    translateButton.setAttribute('disabled', 'true');
+                    translateButton.setAttribute('aria-disabled', 'true');
+                } else {
                     console.warn('Translation failed or was cancelled');
                 }
             }
