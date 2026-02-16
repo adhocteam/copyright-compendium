@@ -8,9 +8,7 @@ This UI was originally built in April 2025 using Gemini 2.5 Pro Experimental, ba
 
 Watch a short walkthrough of the Compendium Viewer in action — showing chapter navigation, glossary hover tooltips, translation, and the documentation site:
 
-<p align="center">
-  <img src="demo/demo.webp" alt="Copyright Compendium Viewer Demo" width="720" />
-</p>
+[![Copyright Compendium Viewer Demo](demo/demo.webp)](demo/demo.mp4)
 
 > **[Try it live →](https://copyright-compendium.vercel.app/about.html)**
 
