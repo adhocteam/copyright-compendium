@@ -134,41 +134,43 @@
         </header>
       </header>
 
-      <!-- Translation Disclaimer Banner (only shown when translation is active) -->
-      <div id="translation-disclaimer" class="usa-alert usa-alert--warning usa-alert--slim" role="alert"
-        style="display: none;">
-        <div class="usa-alert__body">
-          <p class="usa-alert__text">
-            <strong>⚠️ Experimental Translation:</strong> Any language other than English represents automatically
-            translated text and is not official.
-            The translation may contain inaccuracies or errors. For authoritative information, please refer to the
-            <a href="#" id="view-original-link" class="usa-link">original English version</a>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Translation Progress Indicator (only shown during translation) -->
-      <div id="translation-progress" class="translation-progress" role="status" aria-live="polite"
-        style="display: none;">
-        <div class="translation-progress__content">
-          <div class="translation-progress__spinner">
-            <svg class="translation-progress__spinner-svg" viewBox="0 0 50 50" aria-hidden="true">
-              <circle class="translation-progress__spinner-circle" cx="25" cy="25" r="20" fill="none" stroke-width="4">
-              </circle>
-            </svg>
-            <div class="translation-progress__spinner-text" aria-hidden="true">
-              <span id="translation-progress-letters">...</span>
-            </div>
+      <div class="translation-wrapper">
+        <!-- Translation Disclaimer Banner (only shown when translation is active) -->
+        <div id="translation-disclaimer" class="usa-alert usa-alert--warning usa-alert--slim" role="alert"
+          style="display: none;">
+          <div class="usa-alert__body">
+            <p class="usa-alert__text">
+              <strong>⚠️ Experimental Translation:</strong> Any language other than English represents automatically
+              translated text and is not official.
+              The translation may contain inaccuracies or errors. For authoritative information, please refer to the
+              <a href="#" id="view-original-link" class="usa-link">original English version</a>.
+            </p>
           </div>
-          <div class="translation-progress__info">
-            <div class="translation-progress__status" id="translation-progress-status">Preparing translation...</div>
-            <div class="translation-progress__bar-container">
-              <div class="translation-progress__bar" id="translation-progress-bar" role="progressbar" aria-valuenow="0"
-                aria-valuemin="0" aria-valuemax="100">
-                <div class="translation-progress__bar-fill" id="translation-progress-bar-fill"></div>
+        </div>
+
+        <!-- Translation Progress Indicator (only shown during translation) -->
+        <div id="translation-progress" class="translation-progress" role="status" aria-live="polite"
+          style="display: none;">
+          <div class="translation-progress__content">
+            <div class="translation-progress__spinner">
+              <svg class="translation-progress__spinner-svg" viewBox="0 0 50 50" aria-hidden="true">
+                <circle class="translation-progress__spinner-circle" cx="25" cy="25" r="20" fill="none" stroke-width="4">
+                </circle>
+              </svg>
+              <div class="translation-progress__spinner-text" aria-hidden="true">
+                <span id="translation-progress-letters">...</span>
               </div>
             </div>
-            <div class="translation-progress__details" id="translation-progress-details"></div>
+            <div class="translation-progress__info">
+              <div class="translation-progress__status" id="translation-progress-status">Preparing translation...</div>
+              <div class="translation-progress__bar-container">
+                <div class="translation-progress__bar" id="translation-progress-bar" role="progressbar" aria-valuenow="0"
+                  aria-valuemin="0" aria-valuemax="100">
+                  <div class="translation-progress__bar-fill" id="translation-progress-bar-fill"></div>
+                </div>
+              </div>
+              <div class="translation-progress__details" id="translation-progress-details"></div>
+            </div>
           </div>
         </div>
       </div>

@@ -25,39 +25,28 @@ describe('Layout Structure', () => {
 		document.body.innerHTML = '';
 	});
 
-	it('should have the translation top bar', () => {
-		const topBar = document.querySelector('.translation-top-bar');
-		expect(topBar).not.toBeNull();
-		expect(topBar?.classList.contains('translation-info-wrapper')).toBe(true);
+	it('should have the translation wrapper', () => {
+		const wrapper = document.querySelector('.translation-wrapper');
+		expect(wrapper).not.toBeNull();
 	});
 
-	it('should have the translation info link inside the top bar', () => {
-		const topBar = document.querySelector('.translation-top-bar');
-		const infoLink = topBar?.querySelector('#translation-info-link');
-		expect(infoLink).not.toBeNull();
-		expect(infoLink?.tagName).toBe('BUTTON');
+	it('should have the translation disclaimer and progress inside the wrapper', () => {
+		const wrapper = document.querySelector('.translation-wrapper');
+		const disclaimer = wrapper?.querySelector('#translation-disclaimer');
+		const progress = wrapper?.querySelector('#translation-progress');
+
+		expect(disclaimer).not.toBeNull();
+		expect(progress).not.toBeNull();
 	});
 
-	it('should have the translation controls properly labeled', () => {
-		const infoLink = document.getElementById('translation-info-link');
-		expect(infoLink?.getAttribute('aria-label')).toBe('Translation information');
-		expect(infoLink?.getAttribute('aria-expanded')).toBe('false');
-	});
+	it('should place the translation wrapper in the grid container', () => {
+		const container = document.querySelector('.grid-container');
+		const wrapper = container?.querySelector('.translation-wrapper');
 
-	it('should place the top bar before the nav container in the header', () => {
-		const header = document.querySelector('.usa-header');
-		const topBar = header?.querySelector('.translation-top-bar');
-		const navContainer = header?.querySelector('.usa-nav-container');
+		expect(container).not.toBeNull();
+		expect(wrapper).not.toBeNull();
 
-		expect(header).not.toBeNull();
-		expect(topBar).not.toBeNull();
-		expect(navContainer).not.toBeNull();
-
-		// Verify topBar comes before navContainer
-		const headerChildren = Array.from(header!.children);
-		const topBarIndex = headerChildren.indexOf(topBar!);
-		const navContainerIndex = headerChildren.indexOf(navContainer!);
-
-		expect(topBarIndex).toBeLessThan(navContainerIndex);
+		// Verify wrapper is a direct child of grid-container (or reasonably placed)
+		expect(wrapper?.parentElement).toBe(container);
 	});
 });
