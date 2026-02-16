@@ -81,18 +81,19 @@ interface TranslatorCapabilities {
 interface TranslatorFactory {
     create(options?: TranslatorCreateOptions): Promise<Translator>;
     capabilities?(): Promise<TranslatorCapabilities>;
-    // Older spec
+    // Older spec/polyfil might use availability
     availability?(options: TranslatorCreateOptions): Promise<'unavailable' | 'downloadable' | 'downloading' | 'available'>;
 }
 
 declare global {
     interface Window {
-        // Newer spec often puts it under window.ai.translator
+        // Chrome 141+ puts it under window.Translator
+        Translator?: TranslatorFactory;
+
+        // Deprecated/Early experimental
         ai?: {
             translator?: TranslatorFactory;
         };
-        // Older spec
-        Translator?: TranslatorFactory;
 
         MyAppGlossary?: {
             refreshTooltips?: () => void;
@@ -119,41 +120,47 @@ export class TranslationService {
     }
 
     async checkBrowserSupport(): Promise<boolean> {
-        // Check for Translation API support using the new spec (window.ai.translator) 
-        // and fall back to older spec (window.Translator)
-
+        // Check for Translation API support using window.Translator (Chrome 141+)
         this.canTranslate = false;
 
         try {
-            if (window.ai?.translator) {
-                // Newest spec: window.ai.translator
-                if (window.ai.translator.capabilities) {
-                    const capabilities = await window.ai.translator.capabilities();
+            if (window.Translator) {
+                // Newest spec: window.Translator
+                if (window.Translator.capabilities) {
+                    const capabilities = await window.Translator.capabilities();
                     const availability = capabilities.languagePairAvailable('en', 'es');
                     // 'readily' or 'after-download' means we can translate
                     this.canTranslate = availability !== 'no';
-                    console.log('Translation API (window.ai.translator) availability:', availability, '-> canTranslate:', this.canTranslate);
-                } else {
-                    // Fallback if capabilities is missing but create exists (unlikely but possible in flux specs)
-                    this.canTranslate = true;
-                    console.log('Translation API (window.ai.translator) exists but no capabilities(), assuming supported.');
-                }
-            } else if (window.Translator) {
-                // Older spec: window.Translator
-                if (window.Translator.availability) {
+                    console.log('Translation API (window.Translator) availability:', availability, '-> canTranslate:', this.canTranslate);
+                } else if (window.Translator.availability) {
+                    // Fallback to older availability() method if capabilities() is missing
                     const availability = await window.Translator.availability({
                         sourceLanguage: 'en',
                         targetLanguage: 'es'
                     });
                     // If the API returns anything other than 'unavailable', the API is supported
                     this.canTranslate = availability !== 'unavailable';
-                    console.log('Translation API (window.Translator) availability:', availability, '-> canTranslate:', this.canTranslate);
+                    console.log('Translation API (window.Translator.availability) availability:', availability, '-> canTranslate:', this.canTranslate);
+                } else {
+                    // Assume supported if create exists but no check methods (unlikely)
+                    this.canTranslate = true;
+                    console.log('Translation API (window.Translator) exists but no capabilities()/availability(), assuming supported.');
+                }
+            } else if (window.ai?.translator) {
+                // Formatting update to remove window.ai preference, but keep as fallback if absolutely necessary,
+                // though user asked to Ensure we use 'window.Translator'. 
+                // We will log a warning if we fall back to window.ai
+                console.warn('window.Translator not found, checking deprecated window.ai.translator...');
+                if (window.ai.translator.capabilities) {
+                    const capabilities = await window.ai.translator.capabilities();
+                    const availability = capabilities.languagePairAvailable('en', 'es');
+                    this.canTranslate = availability !== 'no';
                 } else {
                     this.canTranslate = true;
-                    console.log('Translation API (window.Translator) exists but no availability(), assuming supported.');
                 }
+                console.log('Fallback Translation API (window.ai.translator) -> canTranslate:', this.canTranslate);
             } else {
-                console.warn('Translation API not supported in this browser (neither window.ai.translator nor window.Translator found)');
+                console.warn('Translation API not supported in this browser (window.Translator not found)');
                 this.canTranslate = false;
             }
         } catch (error) {
@@ -205,7 +212,7 @@ export class TranslationService {
         try {
             // Create translator if needed using the new API
             if (!this.translator || this.currentLanguage !== targetLanguage) {
-                if (!window.ai?.translator && !window.Translator) return false;
+                if (!window.Translator && !window.ai?.translator) return false;
 
                 // Report progress: creating translator
                 this.reportProgress({
@@ -216,8 +223,8 @@ export class TranslationService {
                     message: 'Initializing translation model...'
                 });
 
-                if (window.ai?.translator) {
-                    this.translator = await window.ai.translator.create({
+                if (window.Translator) {
+                    this.translator = await window.Translator.create({
                         sourceLanguage: 'en',
                         targetLanguage: targetLanguage,
                         monitor: (m: any) => {
@@ -226,10 +233,16 @@ export class TranslationService {
                             });
                         }
                     });
-                } else if (window.Translator) {
-                    this.translator = await window.Translator.create({
+                } else if (window.ai?.translator) {
+                    console.warn('Using deprecated window.ai.translator fallback');
+                    this.translator = await window.ai.translator.create({
                         sourceLanguage: 'en',
-                        targetLanguage: targetLanguage
+                        targetLanguage: targetLanguage,
+                        monitor: (m: any) => {
+                            m.addEventListener('downloadprogress', (e: any) => {
+                                console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+                            });
+                        }
                     });
                 }
 

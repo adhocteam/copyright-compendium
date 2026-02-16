@@ -34,42 +34,25 @@ describe('TranslationService', () => {
       expect(supported).toBe(false);
     });
 
-    it('should support new window.ai.translator API (capabilities)', async () => {
+    it('should support window.Translator (Chrome 141+)', async () => {
       const capabilitiesMock = {
         available: 'readily',
         languagePairAvailable: vi.fn().mockReturnValue('readily')
       };
-      (window as any).ai = {
-        translator: {
-          capabilities: vi.fn().mockResolvedValue(capabilitiesMock),
-          create: vi.fn()
-        }
+      (window as any).Translator = {
+        capabilities: vi.fn().mockResolvedValue(capabilitiesMock),
+        create: vi.fn()
       };
 
       service = new TranslationService();
       const supported = await service.checkBrowserSupport();
 
       expect(supported).toBe(true);
-      expect((window as any).ai.translator.capabilities).toHaveBeenCalled();
+      expect((window as any).Translator.capabilities).toHaveBeenCalled();
       expect(capabilitiesMock.languagePairAvailable).toHaveBeenCalledWith('en', 'es');
     });
 
-    it('should support new window.ai.translator API (no capabilities function)', async () => {
-      // Flux specs sometimes have create but not capabilities yet? Or we fallback safe
-      (window as any).ai = {
-        translator: {
-          create: vi.fn()
-        }
-      };
-
-      service = new TranslationService();
-      const supported = await service.checkBrowserSupport();
-
-      expect(supported).toBe(true);
-    });
-
-
-    it('should support old window.Translator API', async () => {
+    it('should fallback to window.Translator.availability (older spec shim)', async () => {
       (window as any).Translator = {
         availability: vi.fn().mockResolvedValue('available'),
         create: vi.fn()
@@ -81,10 +64,80 @@ describe('TranslationService', () => {
       expect(supported).toBe(true);
       expect((window as any).Translator.availability).toHaveBeenCalled();
     });
+
+
+    // We want to verify that we prefer Translator over ai.translator
+    it('should prefer window.Translator over window.ai.translator', async () => {
+      // Mock both
+      (window as any).Translator = {
+        capabilities: vi.fn().mockResolvedValue({
+          languagePairAvailable: () => 'readily'
+        }),
+        create: vi.fn()
+      };
+      (window as any).ai = {
+        translator: {
+          capabilities: vi.fn()
+        }
+      };
+
+      service = new TranslationService();
+      await service.checkBrowserSupport();
+
+      expect((window as any).Translator.capabilities).toHaveBeenCalled();
+      expect((window as any).ai.translator.capabilities).not.toHaveBeenCalled();
+    });
+
+    it('should fallback to window.ai.translator if window.Translator is missing', async () => {
+      const capabilitiesMock = {
+        languagePairAvailable: vi.fn().mockReturnValue('readily')
+      };
+      (window as any).ai = {
+        translator: {
+          capabilities: vi.fn().mockResolvedValue(capabilitiesMock),
+          create: vi.fn()
+        }
+      };
+      // Ensure Translator is undefined
+      (window as any).Translator = undefined;
+
+      service = new TranslationService();
+      const supported = await service.checkBrowserSupport();
+
+      expect(supported).toBe(true);
+      expect((window as any).ai.translator.capabilities).toHaveBeenCalled();
+    });
   });
 
   describe('Translation Logic', () => {
-    it('should create translator using window.ai.translator', async () => {
+    it('should create translator using window.Translator when available', async () => {
+      const createMock = vi.fn().mockResolvedValue({
+        translate: vi.fn().mockResolvedValue('Hola Mundo')
+      });
+
+      (window as any).Translator = {
+        create: createMock,
+        capabilities: vi.fn().mockResolvedValue({
+          languagePairAvailable: () => 'readily'
+        })
+      };
+
+      service = new TranslationService();
+      await service.checkBrowserSupport(); // Ensure flag is true
+
+      const element = document.createElement('div');
+      element.innerHTML = '<p>Hello World</p>';
+
+      const success = await service.translateContent(element, 'es');
+
+      expect(success).toBe(true);
+      expect(createMock).toHaveBeenCalledWith(expect.objectContaining({
+        sourceLanguage: 'en',
+        targetLanguage: 'es'
+      }));
+    });
+
+    it('should fallback to creating translator using window.ai.translator', async () => {
       const createMock = vi.fn().mockResolvedValue({
         translate: vi.fn().mockResolvedValue('Hola Mundo')
       });
@@ -97,16 +150,13 @@ describe('TranslationService', () => {
           })
         }
       };
+      (window as any).Translator = undefined;
 
       service = new TranslationService();
-      await service.checkBrowserSupport(); // Ensure flag is true
+      await service.checkBrowserSupport();
 
       const element = document.createElement('div');
       element.innerHTML = '<p>Hello World</p>';
-
-      // Mock tree walker for simple content
-      // Note: JSDOM TreeWalker might behave slightly differently, but standard iteration should work.
-      // Our service uses a tree walker.
 
       const success = await service.translateContent(element, 'es');
 
@@ -115,15 +165,11 @@ describe('TranslationService', () => {
         sourceLanguage: 'en',
         targetLanguage: 'es'
       }));
-      // We can't easily check the element content update without more complex DOM setup or mocking the walker, 
-      // but we verified the create call logic.
     });
 
     it('should gracefully handle translation errors', async () => {
-      (window as any).ai = {
-        translator: {
-          create: vi.fn().mockRejectedValue(new Error('Model download failed'))
-        }
+      (window as any).Translator = {
+        create: vi.fn().mockRejectedValue(new Error('Model download failed'))
       };
 
       service = new TranslationService();
