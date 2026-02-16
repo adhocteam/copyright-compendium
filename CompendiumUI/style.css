@@ -1075,8 +1075,8 @@ button:focus,
 	.header {
 	    grid-column: 1 / -1;
 	    grid-row: 1;
-	    position: sticky; /* Make header sticky on mobile */
-	    top: 0; /* Stick to top of viewport */
+	    position: sticky !important; /* Make header sticky on mobile - important to prevent override */
+	    top: 0 !important; /* Stick to top of viewport */
 	    z-index: 100; /* Ensure header stays above other content */
 	}
 
