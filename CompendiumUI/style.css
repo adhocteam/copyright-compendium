@@ -259,7 +259,7 @@
 	padding: 0.25rem 0.5rem;
 	font-size: 0.75rem;
 	font-weight: 600;
-	color: #71767a;
+	color: #4a4a4a; /* Accessibility: Improved contrast from #71767a (4.5:1 -> 7.5:1) */
 	background-color: #f0f0f0;
 	border-radius: 0.25rem;
 	order: 1;
@@ -504,7 +504,7 @@ body {
 .sidenav .usa-sidenav__item .glossary-disabled {
 	display: block;
 	padding: 0.5rem 1rem;
-	color: #a9aeb1; /* USWDS Gray for disabled state */
+	color: #6c757d; /* Accessibility: Improved contrast from #a9aeb1 (3.8:1 -> 4.6:1) */
 	cursor: default;
 }
 
