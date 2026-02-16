@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/adhocteam/copyright-compendium/compare/v1.4.2...v1.4.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* **mobile:** ensure header stays fixed across all pages ([#52](https://github.com/adhocteam/copyright-compendium/issues/52)) ([56e3363](https://github.com/adhocteam/copyright-compendium/commit/56e336345e6643569d3b6d067dd270e4cbfc52ab))
+
 ### [1.4.2](https://github.com/adhocteam/copyright-compendium/compare/v1.4.1...v1.4.2) (2026-02-16)
 
 
