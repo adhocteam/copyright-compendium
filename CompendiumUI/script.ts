@@ -89,11 +89,13 @@ class TranslationService {
     private currentLanguage: string;
     private translator: Translator | null;
     private canTranslate: boolean;
+    private progressCallback: ((progress: TranslationProgress) => void) | null;
 
     constructor() {
         this.currentLanguage = '';
         this.translator = null;
         this.canTranslate = false;
+        this.progressCallback = null;
         this.checkBrowserSupport();
     }
 
@@ -122,6 +124,10 @@ class TranslationService {
         return this.canTranslate;
     }
 
+    setProgressCallback(callback: (progress: TranslationProgress) => void): void {
+        this.progressCallback = callback;
+    }
+
     async translateContent(element: HTMLElement, targetLanguage: string): Promise<boolean> {
         if (!this.canTranslate) {
             console.warn('Translation not available');
@@ -138,6 +144,16 @@ class TranslationService {
             // Create translator if needed using the new API
             if (!this.translator || this.currentLanguage !== targetLanguage) {
                 if (!window.Translator) return false;
+                
+                // Report progress: creating translator
+                this.reportProgress({
+                    phase: 'initializing',
+                    percent: 0,
+                    current: 0,
+                    total: 0,
+                    message: 'Initializing translation model...'
+                });
+
                 this.translator = await window.Translator.create({
                     sourceLanguage: 'en',
                     targetLanguage: targetLanguage
@@ -150,6 +166,13 @@ class TranslationService {
             return true;
         } catch (error) {
             console.error('Translation failed:', error);
+            this.reportProgress({
+                phase: 'error',
+                percent: 0,
+                current: 0,
+                total: 0,
+                message: 'Translation failed. Please try again.'
+            });
             return false;
         }
     }
@@ -172,14 +195,28 @@ class TranslationService {
             }
         );
 
-        const textNodes = [];
+        const textNodes: Node[] = [];
         let node;
         while (node = walker.nextNode()) {
             textNodes.push(node);
         }
 
-        // Translate each text node
-        for (const textNode of textNodes) {
+        const totalNodes = textNodes.length;
+        const batchSize = 20; // Translate 20 nodes at a time
+        const startTime = Date.now();
+
+        // Report progress: starting translation
+        this.reportProgress({
+            phase: 'translating',
+            percent: 0,
+            current: 0,
+            total: totalNodes,
+            message: `Translating content... (0 of ${totalNodes} sections)`
+        });
+
+        // Translate in batches
+        for (let i = 0; i < textNodes.length; i++) {
+            const textNode = textNodes[i];
             try {
                 if (!this.translator || !textNode.textContent) continue;
                 const translatedText = await this.translator.translate(textNode.textContent);
@@ -187,12 +224,63 @@ class TranslationService {
             } catch (error) {
                 console.warn('Failed to translate text node:', error);
             }
+
+            // Update progress after each node (or batch)
+            const current = i + 1;
+            if (current % batchSize === 0 || current === totalNodes) {
+                const percent = Math.round((current / totalNodes) * 100);
+                const elapsed = (Date.now() - startTime) / 1000; // seconds
+                const rate = current / elapsed; // nodes per second
+                const remaining = totalNodes - current;
+                const estimatedTimeRemaining = remaining > 0 ? Math.round(remaining / rate) : 0;
+
+                let message = `Translating content... (${current} of ${totalNodes} sections)`;
+                if (estimatedTimeRemaining > 0) {
+                    message += ` · ~${estimatedTimeRemaining}s remaining`;
+                }
+
+                this.reportProgress({
+                    phase: 'translating',
+                    percent: percent,
+                    current: current,
+                    total: totalNodes,
+                    message: message,
+                    estimatedTimeRemaining: estimatedTimeRemaining
+                });
+
+                // Allow UI to update
+                await new Promise(resolve => setTimeout(resolve, 0));
+            }
+        }
+
+        // Report completion
+        this.reportProgress({
+            phase: 'complete',
+            percent: 100,
+            current: totalNodes,
+            total: totalNodes,
+            message: 'Translation complete!'
+        });
+    }
+
+    private reportProgress(progress: TranslationProgress): void {
+        if (this.progressCallback) {
+            this.progressCallback(progress);
         }
     }
 
     isSupported(): boolean {
         return this.canTranslate;
     }
+}
+
+interface TranslationProgress {
+    phase: 'initializing' | 'translating' | 'complete' | 'error';
+    percent: number;
+    current: number;
+    total: number;
+    message: string;
+    estimatedTimeRemaining?: number;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -219,6 +307,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const translationInfoLink = document.getElementById('translation-info-link');
     const translationInfoTooltip = document.getElementById('translation-info-tooltip');
     const viewOriginalLink = document.getElementById('view-original-link');
+    
+    // Translation progress elements
+    const translationProgress = document.getElementById('translation-progress');
+    const translationProgressStatus = document.getElementById('translation-progress-status');
+    const translationProgressBar = document.getElementById('translation-progress-bar');
+    const translationProgressBarFill = document.getElementById('translation-progress-bar-fill');
+    const translationProgressDetails = document.getElementById('translation-progress-details');
+    const translationProgressLetters = document.getElementById('translation-progress-letters');
 
     // --- Initial Checks ---
     // Check for elements critical for basic functionality
@@ -1364,6 +1460,89 @@ document.addEventListener('DOMContentLoaded', () => {
     const translationService = new TranslationService();
     let originalContent = '';
 
+    // Set up translation progress callback
+    translationService.setProgressCallback((progress: TranslationProgress) => {
+        updateTranslationProgress(progress);
+    });
+
+    // Function to update translation progress UI
+    function updateTranslationProgress(progress: TranslationProgress): void {
+        if (!translationProgress) return;
+
+        if (progress.phase === 'initializing' || progress.phase === 'translating') {
+            // Show progress indicator
+            translationProgress.style.display = 'block';
+
+            // Update status text
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+
+            // Update progress bar
+            if (translationProgressBar && translationProgressBarFill) {
+                translationProgressBar.setAttribute('aria-valuenow', progress.percent.toString());
+                translationProgressBarFill.style.width = `${progress.percent}%`;
+            }
+
+            // Update details with percentage and estimated time
+            if (translationProgressDetails) {
+                let details = `${progress.percent}% complete`;
+                if (progress.estimatedTimeRemaining && progress.estimatedTimeRemaining > 0) {
+                    const timeRemaining = progress.estimatedTimeRemaining;
+                    if (timeRemaining >= 60) {
+                        const minutes = Math.round(timeRemaining / 60);
+                        details += ` · About ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} remaining`;
+                    } else {
+                        details += ` · About ${timeRemaining} ${timeRemaining === 1 ? 'second' : 'seconds'} remaining`;
+                    }
+                }
+                translationProgressDetails.textContent = details;
+            }
+
+            // Animate letters in spinner based on progress
+            if (translationProgressLetters) {
+                const letters = ['T', 'R', 'A', 'N', 'S', 'L', 'A', 'T', 'E'];
+                // Calculate which letter to show (0 at start, 9 at 100%)
+                const letterIndex = Math.min(Math.floor((progress.percent / 100) * letters.length), letters.length - 1);
+                // Show at least one letter if progress > 0
+                const displayLetters = progress.percent > 0 ? Math.max(1, letterIndex) : 0;
+                translationProgressLetters.textContent = displayLetters > 0 ? letters.slice(0, displayLetters).join('') : '...';
+            }
+        } else if (progress.phase === 'complete') {
+            // Show completion briefly, then hide
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+            if (translationProgressBar && translationProgressBarFill) {
+                translationProgressBar.setAttribute('aria-valuenow', '100');
+                translationProgressBarFill.style.width = '100%';
+            }
+            if (translationProgressDetails) {
+                translationProgressDetails.textContent = '100% complete';
+            }
+            if (translationProgressLetters) {
+                translationProgressLetters.textContent = 'TRANSLATE';
+            }
+
+            // Hide progress indicator after a short delay
+            setTimeout(() => {
+                if (translationProgress) {
+                    translationProgress.style.display = 'none';
+                }
+            }, 2000);
+        } else if (progress.phase === 'error') {
+            // Show error briefly, then hide
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+            setTimeout(() => {
+                if (translationProgress) {
+                    translationProgress.style.display = 'none';
+                }
+            }, 3000);
+        }
+    }
+
     // Initialize translation controls
     async function initializeTranslation() {
         const isSupported = await translationService.checkBrowserSupport();
@@ -1400,6 +1579,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Reset to original
                 if (translationDisclaimer) {
                     translationDisclaimer.style.display = 'none';
+                }
+                // Hide progress indicator
+                if (translationProgress) {
+                    translationProgress.style.display = 'none';
                 }
                 // Restore original content if saved
                 if (originalContent && chapterContent) {
