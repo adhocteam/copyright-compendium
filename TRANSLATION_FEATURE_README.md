@@ -169,8 +169,12 @@ Translated DOM
 The feature automatically detects Translation API availability:
 
 ```javascript
-if ('translation' in self && 'createTranslator' in self.translation) {
-    // API available
+if ('Translator' in window && window.Translator) {
+    // API available - check availability for specific language pair
+    const availability = await Translator.availability({
+        sourceLanguage: 'en',
+        targetLanguage: 'es'
+    });
 } else {
     // Show compatibility notice
 }

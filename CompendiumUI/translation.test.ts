@@ -12,15 +12,15 @@ describe('TranslationService', () => {
   describe('Browser Support Check', () => {
     it('should detect when Translation API is not available', () => {
       // Translation API is not available in test environment
-      expect((window as any).translation).toBeUndefined();
+      expect((window as any).Translator).toBeUndefined();
     });
 
     it('should handle missing Translation API gracefully', () => {
       // The service should not throw when API is unavailable
-      // Check if translation exists in self/window (it won't in tests)
-      const hasTranslation = 'translation' in self;
+      // Check if Translator exists in window (it won't in tests)
+      const hasTranslator = 'Translator' in window;
       // Just verify it's a boolean - the actual value doesn't matter for this test
-      expect(typeof hasTranslation).toBe('boolean');
+      expect(typeof hasTranslator).toBe('boolean');
     });
   });
 
@@ -33,9 +33,9 @@ describe('TranslationService', () => {
 
     it('should handle translation when API is not available', () => {
       // Service should return false or handle gracefully when API unavailable
-      const hasTranslation = 'translation' in self;
-      const hasCreateTranslator = hasTranslation && self.translation && 'createTranslator' in self.translation;
-      expect(hasCreateTranslator).toBeFalsy();
+      const hasTranslator = 'Translator' in window;
+      const hasCreate = hasTranslator && window.Translator && 'create' in window.Translator;
+      expect(hasCreate).toBeFalsy();
     });
   });
 

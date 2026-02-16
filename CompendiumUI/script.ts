@@ -60,22 +60,24 @@ interface GlossaryData {
     [termId: string]: string;
 }
 
-// Translation API types (experimental browser API)
-interface TranslationAPI {
-    canTranslate(options: { sourceLanguage: string; targetLanguage: string }): Promise<string>;
-    createTranslator(options: { sourceLanguage: string; targetLanguage: string }): Promise<Translator>;
-}
-
+// Translation API types (experimental browser API - new spec)
 interface Translator {
     translate(text: string): Promise<string>;
 }
 
-declare global {
-    interface WindowOrWorkerGlobalScope {
-        translation?: TranslationAPI;
-    }
+interface TranslatorCreateOptions {
+    sourceLanguage: string;
+    targetLanguage: string;
+}
 
+interface TranslatorConstructor {
+    create(options: TranslatorCreateOptions): Promise<Translator>;
+    availability(options: TranslatorCreateOptions): Promise<'unavailable' | 'downloadable' | 'downloading' | 'available'>;
+}
+
+declare global {
     interface Window {
+        Translator?: TranslatorConstructor;
         MyAppGlossary?: {
             refreshTooltips?: () => void;
         };
@@ -96,20 +98,19 @@ class TranslationService {
     }
 
     async checkBrowserSupport(): Promise<boolean> {
-        // Check for Translation API support
+        // Check for Translation API support using the new spec
         // The Translation API is currently experimental in Chrome 120+
-        if ('translation' in self && self.translation && 'createTranslator' in self.translation) {
+        if ('Translator' in window && window.Translator) {
             try {
-                // Check if we can create a translator
-                // We must check if it's actually usable, not just present
-                const canTranslate = await self.translation.canTranslate({
+                // Check if we can create a translator using the new availability() method
+                const availability = await window.Translator.availability({
                     sourceLanguage: 'en',
                     targetLanguage: 'es'
                 });
 
-                // If the API returns 'no', it means it's not available for this pair or at all
-                this.canTranslate = canTranslate !== 'no';
-                console.log('Translation API available status:', canTranslate, '->', this.canTranslate);
+                // If the API returns anything other than 'unavailable', the API is supported
+                this.canTranslate = availability !== 'unavailable';
+                console.log('Translation API availability:', availability, '-> canTranslate:', this.canTranslate);
             } catch (error) {
                 console.warn('Translation API check failed:', error);
                 this.canTranslate = false;
@@ -134,10 +135,10 @@ class TranslationService {
         }
 
         try {
-            // Create translator if needed
+            // Create translator if needed using the new API
             if (!this.translator || this.currentLanguage !== targetLanguage) {
-                if (!self.translation) return false;
-                this.translator = await self.translation.createTranslator({
+                if (!window.Translator) return false;
+                this.translator = await window.Translator.create({
                     sourceLanguage: 'en',
                     targetLanguage: targetLanguage
                 });
