@@ -109,7 +109,11 @@ The application is deployed on Vercel. Configuration is in `CompendiumUI/vercel.
 - **CSS**: USWDS design system patterns
 - **Python**: Standard Python conventions, no linter configured
 - **Comments**: Minimal; code should be self-explanatory
-- **Commit Messages**: Use conventional commit messages
+- **Commit Messages**: **MUST** use [Conventional Commits](https://www.conventionalcommits.org/) format for all commits:
+  - Format: `<type>(<scope>): <subject>`
+  - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+  - Example: `fix(mobile): ensure header stays fixed on scroll`
+  - Example: `docs: update README with new installation steps`
 - **File Naming**: 
   - XHTML chapters: `ch{number}-{title}.html` (e.g., `ch200-copyrightability.html`)
   - Python scripts: lowercase with underscores
