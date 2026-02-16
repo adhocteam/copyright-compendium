@@ -1775,10 +1775,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else {
             // Show translation controls in menu
+            console.log('Translation supported. Showing controls.');
             if (translationListItem) {
+                console.log('Showing translation list item.');
                 translationListItem.style.display = 'block';
-            } else if (translationControlsWrapper) {
-                // Fallback
+            }
+
+            // ALWAYS ensure the wrapper is visible if supported, as it might be hidden by CSS
+            if (translationControlsWrapper) {
+                console.log('Showing translation controls wrapper.');
                 translationControlsWrapper.style.display = 'block';
             }
 
