@@ -61,10 +61,11 @@ A [`Taskfile.yml`](Taskfile.yml) is included for common workflows. Install [Task
 | `task pdf-to-text` | Extract text from PDFs into `.txt` files |
 | `task process-pdfs` | Convert PDFs to XHTML via Gemini API |
 | `task process-pdfs-chunked` | Convert large PDFs in chunks via Gemini API |
-| `task test` | Run algorithmic QA checks on all chapters |
-| `task test:chapter -- ch200` | Run QA on a specific chapter |
-| `task test:llm` | Run LLM-based QA checks (requires `GOOGLE_API_KEY`) |
-| `task test:all` | Run all QA checks with full reports |
+| `task test:build` | Build the Python test-runner Docker image |
+| `task test` | Run algorithmic QA checks on all chapters (in Docker) |
+| `task test:chapter -- ch200` | Run QA on a specific chapter (in Docker) |
+| `task test:llm` | Run LLM-based QA checks in Docker (requires `GOOGLE_API_KEY`) |
+| `task test:all` | Run all QA checks with full reports (in Docker) |
 
 # Using LLMs to convert pdf to xhtml
 
@@ -119,7 +120,7 @@ The Compendium viewer now includes experimental browser-based translation suppor
 
 ## Quality Assurance
 
-An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. See [QA.md](QA.md) and [tests/README.md](tests/README.md) for details.
+An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. The QA tests run inside a Docker container (via `task test`), so no local Python environment is required. See [QA.md](QA.md) and [tests/README.md](tests/README.md) for details.
 
 ### Frontend Testing
 
