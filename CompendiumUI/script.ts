@@ -473,6 +473,93 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Data ---
     // imported from chapters.ts
 
+    // --- Translation Service (must be initialized early) ---
+    const translationService = new TranslationService();
+    let originalContent = '';
+
+    // Forward declaration for updateTranslationProgress - actual implementation below
+    function updateTranslationProgress(progress: TranslationProgress): void {
+        if (!translationProgress) return;
+
+        if (progress.phase === 'initializing' || progress.phase === 'translating') {
+            // Show progress indicator
+            translationProgress.style.display = 'block';
+
+            // Update status text
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+
+            // Update progress bar
+            if (translationProgressBar && translationProgressBarFill) {
+                translationProgressBar.setAttribute('aria-valuenow', progress.percent.toString());
+                translationProgressBarFill.style.width = `${progress.percent}%`;
+            }
+
+            // Update details with percentage and estimated time
+            if (translationProgressDetails) {
+                let details = `${progress.percent}% complete`;
+                if (progress.estimatedTimeRemaining && progress.estimatedTimeRemaining > 0) {
+                    const timeRemaining = progress.estimatedTimeRemaining;
+                    if (timeRemaining >= 60) {
+                        const minutes = Math.round(timeRemaining / 60);
+                        details += ` · About ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} remaining`;
+                    } else {
+                        details += ` · About ${timeRemaining} ${timeRemaining === 1 ? 'second' : 'seconds'} remaining`;
+                    }
+                }
+                translationProgressDetails.textContent = details;
+            }
+
+            // Animate letters in spinner based on progress
+            if (translationProgressLetters) {
+                const letters = ['T', 'R', 'A', 'N', 'S', 'L', 'A', 'T', 'E'];
+                // Calculate which letter to show (0 at start, 9 at 100%)
+                const letterIndex = Math.min(Math.floor((progress.percent / 100) * letters.length), letters.length - 1);
+                // Show at least one letter if progress > 0
+                const displayLetters = progress.percent > 0 ? Math.max(1, letterIndex) : 0;
+                translationProgressLetters.textContent = displayLetters > 0 ? letters.slice(0, displayLetters).join('') : '...';
+            }
+        } else if (progress.phase === 'complete') {
+            // Show completion briefly, then hide
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+            if (translationProgressBar && translationProgressBarFill) {
+                translationProgressBar.setAttribute('aria-valuenow', '100');
+                translationProgressBarFill.style.width = '100%';
+            }
+            if (translationProgressDetails) {
+                translationProgressDetails.textContent = '100% complete';
+            }
+            if (translationProgressLetters) {
+                translationProgressLetters.textContent = 'TRANSLATE';
+            }
+
+            // Hide progress indicator after a short delay
+            setTimeout(() => {
+                if (translationProgress) {
+                    translationProgress.style.display = 'none';
+                }
+            }, 2000);
+        } else if (progress.phase === 'error') {
+            // Show error briefly, then hide
+            if (translationProgressStatus) {
+                translationProgressStatus.textContent = progress.message;
+            }
+            setTimeout(() => {
+                if (translationProgress) {
+                    translationProgress.style.display = 'none';
+                }
+            }, 3000);
+        }
+    }
+
+    // Set up translation progress callback
+    translationService.setProgressCallback((progress: TranslationProgress) => {
+        updateTranslationProgress(progress);
+    });
+
     // --- State Variables ---
     // --- State Variables ---
     let highlightMarkInstance: MarkInstance;
@@ -1601,91 +1688,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Translation Initialization ---
-    const translationService = new TranslationService();
-    let originalContent = '';
-
-    // Set up translation progress callback
-    translationService.setProgressCallback((progress: TranslationProgress) => {
-        updateTranslationProgress(progress);
-    });
-
-    // Function to update translation progress UI
-    function updateTranslationProgress(progress: TranslationProgress): void {
-        if (!translationProgress) return;
-
-        if (progress.phase === 'initializing' || progress.phase === 'translating') {
-            // Show progress indicator
-            translationProgress.style.display = 'block';
-
-            // Update status text
-            if (translationProgressStatus) {
-                translationProgressStatus.textContent = progress.message;
-            }
-
-            // Update progress bar
-            if (translationProgressBar && translationProgressBarFill) {
-                translationProgressBar.setAttribute('aria-valuenow', progress.percent.toString());
-                translationProgressBarFill.style.width = `${progress.percent}%`;
-            }
-
-            // Update details with percentage and estimated time
-            if (translationProgressDetails) {
-                let details = `${progress.percent}% complete`;
-                if (progress.estimatedTimeRemaining && progress.estimatedTimeRemaining > 0) {
-                    const timeRemaining = progress.estimatedTimeRemaining;
-                    if (timeRemaining >= 60) {
-                        const minutes = Math.round(timeRemaining / 60);
-                        details += ` · About ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} remaining`;
-                    } else {
-                        details += ` · About ${timeRemaining} ${timeRemaining === 1 ? 'second' : 'seconds'} remaining`;
-                    }
-                }
-                translationProgressDetails.textContent = details;
-            }
-
-            // Animate letters in spinner based on progress
-            if (translationProgressLetters) {
-                const letters = ['T', 'R', 'A', 'N', 'S', 'L', 'A', 'T', 'E'];
-                // Calculate which letter to show (0 at start, 9 at 100%)
-                const letterIndex = Math.min(Math.floor((progress.percent / 100) * letters.length), letters.length - 1);
-                // Show at least one letter if progress > 0
-                const displayLetters = progress.percent > 0 ? Math.max(1, letterIndex) : 0;
-                translationProgressLetters.textContent = displayLetters > 0 ? letters.slice(0, displayLetters).join('') : '...';
-            }
-        } else if (progress.phase === 'complete') {
-            // Show completion briefly, then hide
-            if (translationProgressStatus) {
-                translationProgressStatus.textContent = progress.message;
-            }
-            if (translationProgressBar && translationProgressBarFill) {
-                translationProgressBar.setAttribute('aria-valuenow', '100');
-                translationProgressBarFill.style.width = '100%';
-            }
-            if (translationProgressDetails) {
-                translationProgressDetails.textContent = '100% complete';
-            }
-            if (translationProgressLetters) {
-                translationProgressLetters.textContent = 'TRANSLATE';
-            }
-
-            // Hide progress indicator after a short delay
-            setTimeout(() => {
-                if (translationProgress) {
-                    translationProgress.style.display = 'none';
-                }
-            }, 2000);
-        } else if (progress.phase === 'error') {
-            // Show error briefly, then hide
-            if (translationProgressStatus) {
-                translationProgressStatus.textContent = progress.message;
-            }
-            setTimeout(() => {
-                if (translationProgress) {
-                    translationProgress.style.display = 'none';
-                }
-            }, 3000);
-        }
-    }
+    // (translationService and updateTranslationProgress already defined above)
 
     // Initialize translation controls
     async function initializeTranslation() {
