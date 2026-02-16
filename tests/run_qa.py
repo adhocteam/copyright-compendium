@@ -64,7 +64,13 @@ def _parse_severity(value: str) -> Severity | None:
 
 
 def _get_git_commit() -> str:
-    """Get the current git commit hash and subject line."""
+    """Get the current git commit hash and subject line.
+
+    Checks GIT_COMMIT env var first (for containers), then falls back to git.
+    """
+    env_commit = os.environ.get("GIT_COMMIT")
+    if env_commit:
+        return env_commit
     try:
         result = subprocess.run(
             ["git", "log", "-1", "--format=%H %s"],
