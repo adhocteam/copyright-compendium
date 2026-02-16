@@ -2062,6 +2062,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('mouseover', handleMouseOver);
             link.addEventListener('mouseout', handleMouseOut);
             link.addEventListener('mousemove', handleMouseMove as EventListener);
+            // Fix: Close tooltip immediately on click
+            link.addEventListener('click', () => {
+                hideTooltip(link as HTMLAnchorElement);
+            });
             (link as HTMLElement).dataset.glossaryListenerAttached = 'true'; // Mark as attached
         });
         console.log(`Listeners updated for ${links.length} glossary links.`);
