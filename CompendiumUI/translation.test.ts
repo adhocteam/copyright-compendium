@@ -1,119 +1,185 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { TranslationService } from './script';
 
-/**
- * Tests for TranslationService
- * These tests verify the translation functionality works correctly
- * 
- * Note: TranslationService is defined in script.js but not exported.
- * These tests verify the underlying DOM manipulation logic that the service uses.
- */
 describe('TranslationService', () => {
+  let service: TranslationService;
+
+  // Reset mocks and DOM before each test
+  beforeEach(() => {
+    vi.resetAllMocks();
+    // Clear window APIs
+    (window as any).Translator = undefined;
+    (window as any).ai = undefined;
+    document.body.innerHTML = '';
+
+    // Mock localStorage
+    const localStorageMock = (() => {
+      let store: Record<string, string> = {};
+      return {
+        getItem: vi.fn((key: string) => store[key] || null),
+        setItem: vi.fn((key: string, value: string) => { store[key] = value.toString(); }),
+        removeItem: vi.fn((key: string) => { delete store[key]; }),
+        clear: vi.fn(() => { store = {}; }),
+        length: 0,
+        key: vi.fn((index: number) => Object.keys(store)[index] || null),
+      };
+    })();
+    Object.defineProperty(window, 'localStorage', { value: localStorageMock });
+  });
 
   describe('Browser Support Check', () => {
-    it('should detect when Translation API is not available', () => {
-      // Translation API is not available in test environment
-      expect((window as any).Translator).toBeUndefined();
+    it('should return false when no API is available', async () => {
+      service = new TranslationService();
+      const supported = await service.checkBrowserSupport();
+      expect(supported).toBe(false);
     });
 
-    it('should handle missing Translation API gracefully', () => {
-      // The service should not throw when API is unavailable
-      // Check if Translator exists in window (it won't in tests)
-      const hasTranslator = 'Translator' in window;
-      // Just verify it's a boolean - the actual value doesn't matter for this test
-      expect(typeof hasTranslator).toBe('boolean');
+    it('should support window.Translator (Chrome 141+)', async () => {
+      const capabilitiesMock = {
+        available: 'readily',
+        languagePairAvailable: vi.fn().mockReturnValue('readily')
+      };
+      (window as any).Translator = {
+        capabilities: vi.fn().mockResolvedValue(capabilitiesMock),
+        create: vi.fn()
+      };
+
+      service = new TranslationService();
+      const supported = await service.checkBrowserSupport();
+
+      expect(supported).toBe(true);
+      expect((window as any).Translator.capabilities).toHaveBeenCalled();
+      expect(capabilitiesMock.languagePairAvailable).toHaveBeenCalledWith('en', 'es');
+    });
+
+    it('should fallback to window.Translator.availability (older spec shim)', async () => {
+      (window as any).Translator = {
+        availability: vi.fn().mockResolvedValue('available'),
+        create: vi.fn()
+      };
+
+      service = new TranslationService();
+      const supported = await service.checkBrowserSupport();
+
+      expect(supported).toBe(true);
+      expect((window as any).Translator.availability).toHaveBeenCalled();
+    });
+
+
+    // We want to verify that we prefer Translator over ai.translator
+    it('should prefer window.Translator over window.ai.translator', async () => {
+      // Mock both
+      (window as any).Translator = {
+        capabilities: vi.fn().mockResolvedValue({
+          languagePairAvailable: () => 'readily'
+        }),
+        create: vi.fn()
+      };
+      (window as any).ai = {
+        translator: {
+          capabilities: vi.fn()
+        }
+      };
+
+      service = new TranslationService();
+      await service.checkBrowserSupport();
+
+      expect((window as any).Translator.capabilities).toHaveBeenCalled();
+      expect((window as any).ai.translator.capabilities).not.toHaveBeenCalled();
+    });
+
+    it('should fallback to window.ai.translator if window.Translator is missing', async () => {
+      const capabilitiesMock = {
+        languagePairAvailable: vi.fn().mockReturnValue('readily')
+      };
+      (window as any).ai = {
+        translator: {
+          capabilities: vi.fn().mockResolvedValue(capabilitiesMock),
+          create: vi.fn()
+        }
+      };
+      // Ensure Translator is undefined
+      (window as any).Translator = undefined;
+
+      service = new TranslationService();
+      const supported = await service.checkBrowserSupport();
+
+      expect(supported).toBe(true);
+      expect((window as any).ai.translator.capabilities).toHaveBeenCalled();
     });
   });
 
-  describe('Translation State Management', () => {
-    it('should initialize with empty current language', () => {
-      // When Translation API is not available, service should initialize safely
-      // We verify this by checking that the page loads without errors
-      expect(document.body).toBeDefined();
+  describe('Translation Logic', () => {
+    it('should create translator using window.Translator when available', async () => {
+      const createMock = vi.fn().mockResolvedValue({
+        translate: vi.fn().mockResolvedValue('Hola Mundo')
+      });
+
+      (window as any).Translator = {
+        create: createMock,
+        capabilities: vi.fn().mockResolvedValue({
+          languagePairAvailable: () => 'readily'
+        })
+      };
+
+      service = new TranslationService();
+      await service.checkBrowserSupport(); // Ensure flag is true
+
+      const element = document.createElement('div');
+      element.innerHTML = '<p>Hello World</p>';
+
+      const success = await service.translateContent(element, 'es');
+
+      expect(success).toBe(true);
+      expect(createMock).toHaveBeenCalledWith(expect.objectContaining({
+        sourceLanguage: 'en',
+        targetLanguage: 'es'
+      }));
     });
 
-    it('should handle translation when API is not available', () => {
-      // Service should return false or handle gracefully when API unavailable
-      const hasTranslator = 'Translator' in window;
-      const hasCreate = hasTranslator && window.Translator && 'create' in window.Translator;
-      expect(hasCreate).toBeFalsy();
-    });
-  });
+    it('should fallback to creating translator using window.ai.translator', async () => {
+      const createMock = vi.fn().mockResolvedValue({
+        translate: vi.fn().mockResolvedValue('Hola Mundo')
+      });
 
-  describe('Element Translation', () => {
-    it('should not attempt translation when API unavailable', () => {
-      // Create a test element
-      const testElement = document.createElement('div');
-      testElement.textContent = 'Test content';
-      document.body.appendChild(testElement);
-
-      // Should not throw even if translation is attempted
-      expect(testElement.textContent).toBe('Test content');
-      
-      document.body.removeChild(testElement);
-    });
-
-    it('should handle empty text nodes correctly', () => {
-      const testElement = document.createElement('div');
-      testElement.appendChild(document.createTextNode('   '));
-      document.body.appendChild(testElement);
-
-      // Empty text nodes should be skipped
-      const walker = document.createTreeWalker(
-        testElement,
-        NodeFilter.SHOW_TEXT,
-        {
-          acceptNode: (node) => {
-            if (!node.textContent?.trim()) return NodeFilter.FILTER_REJECT;
-            return NodeFilter.FILTER_ACCEPT;
-          }
+      (window as any).ai = {
+        translator: {
+          create: createMock,
+          capabilities: vi.fn().mockResolvedValue({
+            languagePairAvailable: () => 'readily'
+          })
         }
-      );
+      };
+      (window as any).Translator = undefined;
 
-      const textNodes: Node[] = [];
-      let node;
-      while (node = walker.nextNode()) {
-        textNodes.push(node);
-      }
+      service = new TranslationService();
+      await service.checkBrowserSupport();
 
-      expect(textNodes.length).toBe(0);
-      document.body.removeChild(testElement);
+      const element = document.createElement('div');
+      element.innerHTML = '<p>Hello World</p>';
+
+      const success = await service.translateContent(element, 'es');
+
+      expect(success).toBe(true);
+      expect(createMock).toHaveBeenCalledWith(expect.objectContaining({
+        sourceLanguage: 'en',
+        targetLanguage: 'es'
+      }));
     });
 
-    it('should skip script and style tags', () => {
-      const testElement = document.createElement('div');
-      testElement.innerHTML = `
-        <p>Text content</p>
-        <script>console.log('script');</script>
-        <style>.test { color: red; }</style>
-      `;
-      document.body.appendChild(testElement);
+    it('should gracefully handle translation errors', async () => {
+      (window as any).Translator = {
+        create: vi.fn().mockRejectedValue(new Error('Model download failed'))
+      };
 
-      const walker = document.createTreeWalker(
-        testElement,
-        NodeFilter.SHOW_TEXT,
-        {
-          acceptNode: (node) => {
-            if (!node.textContent?.trim()) return NodeFilter.FILTER_REJECT;
-            const parent = node.parentElement;
-            if (parent && (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE')) {
-              return NodeFilter.FILTER_REJECT;
-            }
-            return NodeFilter.FILTER_ACCEPT;
-          }
-        }
-      );
+      service = new TranslationService();
+      // Manually force support to true to bypass check for this test
+      (service as any).canTranslate = true;
 
-      const textNodes: Node[] = [];
-      let node;
-      while (node = walker.nextNode()) {
-        textNodes.push(node);
-      }
+      const element = document.createElement('div');
+      const success = await service.translateContent(element, 'es');
 
-      // Should only find the paragraph text, not script or style content
-      expect(textNodes.length).toBe(1);
-      expect(textNodes[0]?.textContent).toBe('Text content');
-      
-      document.body.removeChild(testElement);
+      expect(success).toBe(false);
     });
   });
 });

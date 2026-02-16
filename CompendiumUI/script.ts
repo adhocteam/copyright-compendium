@@ -61,23 +61,40 @@ interface GlossaryData {
 }
 
 // Translation API types (experimental browser API - new spec)
+// Supporting both window.Translator (older) and window.ai.translator (newer)
 interface Translator {
     translate(text: string): Promise<string>;
+    destroy?(): void;
 }
 
 interface TranslatorCreateOptions {
     sourceLanguage: string;
     targetLanguage: string;
+    monitor?: (monitor: any) => void;
 }
 
-interface TranslatorConstructor {
-    create(options: TranslatorCreateOptions): Promise<Translator>;
-    availability(options: TranslatorCreateOptions): Promise<'unavailable' | 'downloadable' | 'downloading' | 'available'>;
+interface TranslatorCapabilities {
+    available: 'readily' | 'after-download' | 'no';
+    languagePairAvailable(source: string, target: string): 'readily' | 'after-download' | 'no';
+}
+
+interface TranslatorFactory {
+    create(options?: TranslatorCreateOptions): Promise<Translator>;
+    capabilities?(): Promise<TranslatorCapabilities>;
+    // Older spec/polyfil might use availability
+    availability?(options: TranslatorCreateOptions): Promise<'unavailable' | 'downloadable' | 'downloading' | 'available'>;
 }
 
 declare global {
     interface Window {
-        Translator?: TranslatorConstructor;
+        // Chrome 141+ puts it under window.Translator
+        Translator?: TranslatorFactory;
+
+        // Deprecated/Early experimental
+        ai?: {
+            translator?: TranslatorFactory;
+        };
+
         MyAppGlossary?: {
             refreshTooltips?: () => void;
         };
@@ -85,7 +102,7 @@ declare global {
 }
 
 // --- Translation Service ---
-class TranslationService {
+export class TranslationService {
     private currentLanguage: string;
     private translator: Translator | null;
     private canTranslate: boolean;
@@ -103,27 +120,54 @@ class TranslationService {
     }
 
     async checkBrowserSupport(): Promise<boolean> {
-        // Check for Translation API support using the new spec
-        // The Translation API is currently experimental in Chrome 120+
-        if ('Translator' in window && window.Translator) {
-            try {
-                // Check if we can create a translator using the new availability() method
-                const availability = await window.Translator.availability({
-                    sourceLanguage: 'en',
-                    targetLanguage: 'es'
-                });
+        // Check for Translation API support using window.Translator (Chrome 141+)
+        this.canTranslate = false;
 
-                // If the API returns anything other than 'unavailable', the API is supported
-                this.canTranslate = availability !== 'unavailable';
-                console.log('Translation API availability:', availability, '-> canTranslate:', this.canTranslate);
-            } catch (error) {
-                console.warn('Translation API check failed:', error);
+        try {
+            if (window.Translator) {
+                // Newest spec: window.Translator
+                if (window.Translator.capabilities) {
+                    const capabilities = await window.Translator.capabilities();
+                    const availability = capabilities.languagePairAvailable('en', 'es');
+                    // 'readily' or 'after-download' means we can translate
+                    this.canTranslate = availability !== 'no';
+                    console.log('Translation API (window.Translator) availability:', availability, '-> canTranslate:', this.canTranslate);
+                } else if (window.Translator.availability) {
+                    // Fallback to older availability() method if capabilities() is missing
+                    const availability = await window.Translator.availability({
+                        sourceLanguage: 'en',
+                        targetLanguage: 'es'
+                    });
+                    // If the API returns anything other than 'unavailable', the API is supported
+                    this.canTranslate = availability !== 'unavailable';
+                    console.log('Translation API (window.Translator.availability) availability:', availability, '-> canTranslate:', this.canTranslate);
+                } else {
+                    // Assume supported if create exists but no check methods (unlikely)
+                    this.canTranslate = true;
+                    console.log('Translation API (window.Translator) exists but no capabilities()/availability(), assuming supported.');
+                }
+            } else if (window.ai?.translator) {
+                // Formatting update to remove window.ai preference, but keep as fallback if absolutely necessary,
+                // though user asked to Ensure we use 'window.Translator'. 
+                // We will log a warning if we fall back to window.ai
+                console.warn('window.Translator not found, checking deprecated window.ai.translator...');
+                if (window.ai.translator.capabilities) {
+                    const capabilities = await window.ai.translator.capabilities();
+                    const availability = capabilities.languagePairAvailable('en', 'es');
+                    this.canTranslate = availability !== 'no';
+                } else {
+                    this.canTranslate = true;
+                }
+                console.log('Fallback Translation API (window.ai.translator) -> canTranslate:', this.canTranslate);
+            } else {
+                console.warn('Translation API not supported in this browser (window.Translator not found)');
                 this.canTranslate = false;
             }
-        } else {
-            console.warn('Translation API not supported in this browser');
+        } catch (error) {
+            console.warn('Translation API check failed:', error);
             this.canTranslate = false;
         }
+
         return this.canTranslate;
     }
 
@@ -168,7 +212,7 @@ class TranslationService {
         try {
             // Create translator if needed using the new API
             if (!this.translator || this.currentLanguage !== targetLanguage) {
-                if (!window.Translator) return false;
+                if (!window.Translator && !window.ai?.translator) return false;
 
                 // Report progress: creating translator
                 this.reportProgress({
@@ -179,10 +223,29 @@ class TranslationService {
                     message: 'Initializing translation model...'
                 });
 
-                this.translator = await window.Translator.create({
-                    sourceLanguage: 'en',
-                    targetLanguage: targetLanguage
-                });
+                if (window.Translator) {
+                    this.translator = await window.Translator.create({
+                        sourceLanguage: 'en',
+                        targetLanguage: targetLanguage,
+                        monitor: (m: any) => {
+                            m.addEventListener('downloadprogress', (e: any) => {
+                                console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+                            });
+                        }
+                    });
+                } else if (window.ai?.translator) {
+                    console.warn('Using deprecated window.ai.translator fallback');
+                    this.translator = await window.ai.translator.create({
+                        sourceLanguage: 'en',
+                        targetLanguage: targetLanguage,
+                        monitor: (m: any) => {
+                            m.addEventListener('downloadprogress', (e: any) => {
+                                console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+                            });
+                        }
+                    });
+                }
+
                 this.currentLanguage = targetLanguage;
             }
 

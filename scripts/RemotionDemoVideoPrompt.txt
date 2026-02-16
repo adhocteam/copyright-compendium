@@ -1,0 +1,200 @@
+# Remotion Demo Video Prompt
+
+Use this prompt to guide creation of a short demo video for a repository using Remotion, and to attach it to the README.
+
+---
+
+## Part 1: Setup Remotion
+
+1. **Create a new Remotion project** (recommended for first-time use):
+   ```bash
+   npx create-video@latest
+   ```
+   - Choose the "Hello World" template for simplicity
+   - Name the project (e.g., `demo-video` or `repo-demo`)
+   - Or choose "Blank" if you want minimal scaffolding
+
+2. **Alternative: Add Remotion to an existing project**:
+   ```bash
+   npm i remotion @remotion/cli @remotion/player
+   ```
+   Create a `remotion/` folder with:
+   - `index.ts` – entry point that registers compositions
+   - `Root.tsx` – lists your compositions
+   - Your composition component (e.g., `DemoVideo.tsx`)
+
+3. **Start the Remotion Studio** for preview and editing:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## Part 2: Demo Video Content Guidelines
+
+Create a composition that showcases the repository in 30–90 seconds. Include:
+
+### Opening (5–10 seconds)
+- Repository/project name
+- One-line tagline or value proposition
+- Clean, readable typography (large font, high contrast)
+
+### Core Demo (20–60 seconds)
+- **For web apps**: Show the UI in action—key flows, navigation, main features
+- **For CLI/tools**: Show terminal commands and output
+- **For libraries**: Show code snippets and usage examples
+- Use smooth transitions between scenes (fade, slide, or simple cuts)
+- Keep each scene focused on one idea (3–8 seconds per scene)
+- Avoid clutter; highlight 3–5 main features maximum
+
+### Closing (5–10 seconds)
+- Repository URL or "View on GitHub"
+- Optional: call-to-action (e.g., "Star the repo", "Get started")
+
+### Technical Specs
+- **Resolution**: 1280×720 (720p) or 1920×1080 (1080p)
+- **Frame rate**: 30 fps
+- **Duration**: 30–90 seconds total
+- **Format**: MP4 (H.264) for broad compatibility
+
+---
+
+## Part 3: Remotion Composition Structure
+
+Structure your composition with:
+
+```tsx
+// Example composition structure
+import { Composition } from 'remotion';
+import { DemoVideo } from './DemoVideo';
+
+export const RemotionRoot: React.FC = () => {
+  return (
+    <>
+      <Composition
+        id="DemoVideo"
+        component={DemoVideo}
+        durationInFrames={90 * 30}  // 90 seconds at 30fps
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={{
+          repoName: 'Your Repo Name',
+          repoUrl: 'https://github.com/username/repo',
+        }}
+      />
+    </>
+  );
+};
+```
+
+Use `useCurrentFrame()` and `interpolate()` for animations (fade-in, slide, etc.). Use `useVideoConfig()` for `durationInFrames`, `fps`, `width`, `height`.
+
+---
+
+## Part 4: Rendering the Video
+
+1. **Render from the Remotion Studio**:
+   - Click "Render" in the Studio UI
+   - Choose composition, format (MP4), quality
+   - Output path: e.g., `./demo.mp4` or `./assets/demo.mp4`
+
+2. **Render from the command line**:
+   ```bash
+   npx remotion render src/index.ts DemoVideo out/demo.mp4
+   ```
+
+3. **Recommended output location**:
+   - Place the video in the repository root or in a dedicated folder (e.g., `docs/`, `assets/`, or `demo/`)
+   - Filename: `demo.mp4`, `demo-video.mp4`, or `README-demo.mp4`
+
+---
+
+## Part 5: Attaching the Video to the README
+
+### Option A: Host on GitHub (recommended)
+1. Add the video file to the repository (e.g., `demo/demo.mp4`)
+2. Commit and push
+3. Reference it in the README using a relative path or GitHub raw URL:
+
+```markdown
+## Demo
+
+https://github.com/USERNAME/REPO/assets/DEMO_VIDEO_ID/demo.mp4
+
+<!-- Or use the video tag with relative path -->
+<video src="demo/demo.mp4" width="720" controls></video>
+```
+
+**Note**: For GitHub, you can also upload the video via a PR or issue; GitHub will host it and provide a URL. Or use the `assets/` folder in a release.
+
+### Option B: Relative path (for local viewing)
+```markdown
+## Demo
+
+https://github.com/USERNAME/REPO/raw/main/demo/demo.mp4
+
+<!-- Or -->
+![Demo Video](demo/demo.mp4)
+```
+
+### Option C: GIF alternative (smaller, no audio)
+If file size is a concern, convert to GIF:
+```bash
+# Using ffmpeg
+ffmpeg -i demo.mp4 -vf "fps=10,scale=720:-1:flags=lanczos" -c:v gif demo.gif
+```
+Then in README:
+```markdown
+![Demo](demo/demo.gif)
+```
+
+### README placement
+- Add a "Demo" or "Quick Demo" section near the top (after the title/overview)
+- Or immediately after "Running Locally" so users see the app in action before setup
+
+---
+
+## Part 6: Example README Section
+
+```markdown
+# Project Name
+
+Brief description of the project.
+
+## Demo
+
+Watch a short demo of the project in action:
+
+https://github.com/username/repo/raw/main/demo/demo.mp4
+
+<!-- Or with video tag for better control -->
+<video src="demo/demo.mp4" width="720" controls>
+  Your browser does not support the video tag.
+</video>
+```
+
+---
+
+## Part 7: Checklist
+
+- [ ] Remotion project created and runs (`npm run dev`)
+- [ ] Composition built with opening, demo, and closing
+- [ ] Video rendered to MP4 (720p or 1080p, 30fps)
+- [ ] Video file added to repo (e.g., `demo/demo.mp4`)
+- [ ] README updated with video link or embed
+- [ ] Video plays correctly when viewing README on GitHub
+- [ ] File size reasonable (< 10MB preferred for GitHub; consider GIF for very large videos)
+
+---
+
+## Part 8: Tips for Copyright Compendium Specifically
+
+For this repository, the demo could show:
+1. **Opening**: "Copyright Compendium – Navigable Web Version" (3–5 sec)
+2. **Search**: Typing in the search box, selecting a result (5–8 sec)
+3. **Navigation**: Using the side nav to jump between chapters (5–8 sec)
+4. **Translation**: Toggling language (if that feature is prominent) (5–8 sec)
+5. **Closing**: "View on GitHub" or repository URL (3–5 sec)
+
+Use a screen recording of the live app, or recreate the UI in Remotion with static/mock content for a more polished look.
