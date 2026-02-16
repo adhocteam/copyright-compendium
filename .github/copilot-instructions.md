@@ -28,9 +28,10 @@ This repository contains a web display for the U.S. Copyright Office's Copyright
   - `ParsingPrompt-pdf.txt` - LLM prompt for PDF conversion
   - `ParsingPrompt.txt` - LLM prompt for text conversion
 - `/copyright_compendium_pdfs/` - Source PDF files
+- `/docs/` - Documentation served with MkDocs
 - `README.md` - Project documentation
-- `QA.md` - Quality assurance documentation
-- `BROKEN_LINKS_REPORT.md` - Link validation report
+- `Dockerfile.docs` - Dockerfile for serving documentation
+- `mkdocs.yml` - MkDocs configuration
 
 ## Build and Development Commands
 
@@ -91,10 +92,10 @@ python process_pdfs_gemini.py --directory ../copyright_compendium_pdfs --output-
    - Compare PDF source with generated XHTML
    - Check hyperlink preservation
    - Verify formatting (headings, lists, italics)
-   - See `QA.md` for quality assurance methodology
+   - See `docs/qa.md` for quality assurance methodology
 
 3. **Link Validation:**
-   - Check `BROKEN_LINKS_REPORT.md` for known issues
+   - Check `docs/broken-links-report.md` for known issues
 
 ## Deployment
 

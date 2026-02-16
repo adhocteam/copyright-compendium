@@ -83,7 +83,7 @@ tasks:
     desc: Run PDF↔HTML text comparison on all chapters (in Docker)
     deps: [test:build]
     cmds:
-      - docker run --rm -v {{.ROOT_DIR}}:/workspace -e GIT_COMMIT="$(git log -1 --format='%H %s')" {{.IMAGE_NAME}}-tests --algo --report PDF_TEXT_TESTS.md
+      - docker run --rm -v {{.ROOT_DIR}}:/workspace -e GIT_COMMIT="$(git log -1 --format='%H %s')" {{.IMAGE_NAME}}-tests --algo --report docs/pdf-text-tests.md
 
   test:chapter:
     desc: Run PDF↔HTML QA on a specific chapter (e.g. task test:chapter -- ch200)
@@ -102,3 +102,25 @@ tasks:
     cmds:
       - task: test:unit
       - task: test:pdf
+
+  # ── Documentation ───────────────────────────────────
+  docs:serve:
+    desc: Serve documentation locally with mkdocs
+    cmds:
+      - mkdocs serve
+
+  docs:build:
+    desc: Build documentation with mkdocs
+    cmds:
+      - mkdocs build
+
+  docs:docker:build:
+    desc: Build the Docker image for documentation
+    cmds:
+      - docker build -f Dockerfile.docs -t {{.IMAGE_NAME}}-docs .
+
+  docs:docker:run:
+    desc: Run the documentation container on port 8000
+    deps: [docs:docker:build]
+    cmds:
+      - docker run --rm -p 8000:8000 {{.IMAGE_NAME}}-docs

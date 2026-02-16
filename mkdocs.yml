@@ -1,0 +1,53 @@
+site_name: Copyright Compendium Documentation
+site_description: Documentation for the Copyright Compendium Web Display
+site_url: https://copyright-compendium.vercel.app
+repo_url: https://github.com/adhocteam/copyright-compendium
+repo_name: adhocteam/copyright-compendium
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Quality Assurance:
+    - QA Overview: qa.md
+    - Testing: testing.md
+    - UI Testing: ui-testing.md
+    - Translation Testing: testing-translation.md
+    - PDF Text Tests: pdf-text-tests.md
+    - PDF to HTML Comparison: compare-pdf-html.md
+  - Features:
+    - Translation Feature: translation-feature.md
+    - Translation Implementation: translation-implementation.md
+    - Translation Fix Summary: translation-fix-summary.md
+  - Reports:
+    - Broken Links Report: broken-links-report.md
+    - Audit Summary: audit-summary.md
