@@ -124,7 +124,7 @@ An automated content-checking engine compares the web HTML against original PDF 
 
 ### Frontend Testing
 
-The CompendiumUI codebase includes comprehensive unit and integration tests written in TypeScript using Vitest:
+The CompendiumUI codebase includes comprehensive unit and integration tests written in TypeScript using Vitest. Tests can be run in `task` (shown above) or `npm`:
 
 ```bash
 cd CompendiumUI
