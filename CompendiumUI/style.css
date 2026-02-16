@@ -263,6 +263,65 @@
 	background-color: #f0f0f0;
 	border-radius: 0.25rem;
 	order: 1;
+	position: relative;
+	cursor: pointer;
+}
+
+.version-tooltip {
+	display: none;
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	right: 0;
+	min-width: 340px;
+	max-width: 420px;
+	background-color: #ffffff;
+	border: 2px solid #005ea2;
+	border-radius: 6px;
+	padding: 1rem 1.25rem;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+	z-index: 1000;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #1b1b1b;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.version-tooltip::before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: 1rem;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #005ea2;
+}
+
+.version-display:hover .version-tooltip,
+.version-display:focus .version-tooltip,
+.version-display:focus-within .version-tooltip {
+	display: block;
+}
+
+.version-tooltip__title {
+	margin: 0 0 0.5rem 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #162e51;
+}
+
+.version-tooltip p {
+	margin: 0.5rem 0;
+}
+
+.version-tooltip__note {
+	margin-top: 0.75rem;
+	padding-top: 0.5rem;
+	border-top: 1px solid #dfe1e2;
+	font-size: 0.8125rem;
+	color: #565c65;
 }
 
 .usa-navbar {
