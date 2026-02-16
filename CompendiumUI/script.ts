@@ -1488,7 +1488,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (translationProgressDetails) {
                 let details = `${progress.percent}% complete`;
                 if (progress.estimatedTimeRemaining && progress.estimatedTimeRemaining > 0) {
-                    details += ` · About ${progress.estimatedTimeRemaining} seconds remaining`;
+                    const timeRemaining = progress.estimatedTimeRemaining;
+                    if (timeRemaining >= 60) {
+                        const minutes = Math.round(timeRemaining / 60);
+                        details += ` · About ${minutes} ${minutes === 1 ? 'minute' : 'minutes'} remaining`;
+                    } else {
+                        details += ` · About ${timeRemaining} ${timeRemaining === 1 ? 'second' : 'seconds'} remaining`;
+                    }
                 }
                 translationProgressDetails.textContent = details;
             }
@@ -1496,8 +1502,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Animate letters in spinner based on progress
             if (translationProgressLetters) {
                 const letters = ['T', 'R', 'A', 'N', 'S', 'L', 'A', 'T', 'E'];
-                const letterIndex = Math.floor((progress.percent / 100) * letters.length);
-                translationProgressLetters.textContent = letters.slice(0, Math.max(1, letterIndex)).join('');
+                // Calculate which letter to show (0 at start, 9 at 100%)
+                const letterIndex = Math.min(Math.floor((progress.percent / 100) * letters.length), letters.length - 1);
+                // Show at least one letter if progress > 0
+                const displayLetters = progress.percent > 0 ? Math.max(1, letterIndex) : 0;
+                translationProgressLetters.textContent = displayLetters > 0 ? letters.slice(0, displayLetters).join('') : '...';
             }
         } else if (progress.phase === 'complete') {
             // Show completion briefly, then hide
