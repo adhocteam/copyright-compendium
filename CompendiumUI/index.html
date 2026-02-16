@@ -8,6 +8,11 @@
     <!-- <base href="/"> -->
 
     <title>Compendium Viewer</title>
+    <!-- 
+      Security Note: External CDN resources should use Subresource Integrity (SRI) hashes
+      to prevent tampering. Consider self-hosting these assets or adding SRI attributes.
+      Example: <script src="..." integrity="sha384-..." crossorigin="anonymous"></script>
+    -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
     <link rel="stylesheet" href="style.css">
@@ -106,13 +111,23 @@
                     aria-controls="basic-nav-section-one">
                     <span>Chapters</span>
                   </button>
-                  <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden>
+                  <ul id="basic-nav-section-one" class="usa-nav__submenu" hidden aria-label="Available chapters">
                     <!-- Chapter list will be populated here -->
                   </ul>
                 </li>
 
-                <div id="version-display" class="version-display">
+                <div id="version-display" class="version-display" tabindex="0" aria-label="About this site">
                   v<span id="version-number"></span>
+                  <div class="version-tooltip" role="tooltip">
+                    <h3 class="version-tooltip__title">About the Copyright Compendium Viewer</h3>
+                    <p>This site provides a navigable, searchable web display of the U.S. Copyright Office's
+                      <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is the
+                      administrative manual of the Register of Copyrights and provides expert guidance to copyright
+                      applicants, practitioners, scholars, the courts, and the general public regarding copyright law
+                      and institutional practices.</p>
+                    <p class="version-tooltip__note">This is an <strong>experimental transformation</strong> of the
+                      official Copyright Compendium from PDF format to HTML for web display.</p>
+                  </div>
                 </div>
             </nav>
           </div>

@@ -1,189 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <title>
-   About the Copyright Compendium Viewer
-  </title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
- </head>
- <body>
-  <chapter>
-   <head>
-    <title>
-     About This Site
-    </title>
-   </head>
-   <level_title>
-    About the Copyright Compendium Viewer
-   </level_title>
-   <paragraph>
-    This site provides a navigable, searchable web display of the U.S. Copyright Office's <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is the administrative manual of the Register of Copyrights and provides expert guidance to copyright applicants, practitioners, scholars, the courts, and the general public regarding copyright law and institutional practices.
-   </paragraph>
-   <paragraph>
-    <strong>Version:</strong> <span id="about-version-number">Loading...</span>
-   </paragraph>
-   
-   <section id="sec-experimental-transformation">
-    <section_title>
-     <num>1</num>
-     Experimental Transformation
-    </section_title>
-    <paragraph>
-     <strong>This is an experimental transformation</strong> of the official Copyright Compendium from PDF format to HTML for web display. The Compendium is officially published by the U.S. Copyright Office as PDF files, which can be challenging to navigate online. This project aims to make the Compendium more accessible by converting it into a web-friendly format with enhanced navigation and search capabilities.
-    </paragraph>
-    <paragraph>
-     The transformation from PDF to XHTML was accomplished using advanced Large Language Models (LLMs), primarily Google Gemini 2.5 Pro Experimental. Each chapter of the Compendium was processed to extract and convert the text while preserving:
-    </paragraph>
-    <list>
-     <item>Document structure and hierarchy</item>
-     <item>Section numbering and cross-references</item>
-     <item>Internal hyperlinks to other chapters and sections</item>
-     <item>External hyperlinks to legal citations and copyright.gov resources</item>
-     <item>Formatting such as italics, lists, and emphasis</item>
-    </list>
-    <paragraph>
-     While every effort has been made to ensure accuracy, this is an <strong>unofficial, experimental version</strong>. For authoritative information, please consult the <a href="https://www.copyright.gov/comp3/">official PDF version on copyright.gov</a>.
-    </paragraph>
-   </section>
 
-   <section id="sec-quality-assurance">
-    <section_title>
-     <num>2</num>
-     Quality Assurance and Text-Checking
-    </section_title>
-    <paragraph>
-     To ensure the accuracy of the transformation, an <strong>automated quality assurance engine</strong> has been developed to validate the converted content. This QA system compares the HTML output against the original PDF text to detect any discrepancies or conversion errors.
-    </paragraph>
-    <paragraph>
-     The text-checker employs two complementary approaches:
-    </paragraph>
-    <list>
-     <item><strong>Algorithmic validation:</strong> Character-level diff comparisons between the source PDF text and the resulting HTML content</item>
-     <item><strong>LLM-based review:</strong> AI-powered analysis using the Gemini API to identify semantic differences and quality issues</item>
-    </list>
-    <paragraph>
-     Each identified issue is classified by severity (HIGH, MEDIUM, or LOW) to help prioritize corrections. A GitHub Actions workflow automatically runs these quality checks whenever HTML files are updated, ensuring ongoing accuracy as the site evolves.
-    </paragraph>
-    <paragraph>
-     For detailed information about the QA methodology, see the <a href="https://github.com/adhocteam/copyright-compendium/blob/main/QA.md">QA documentation</a> and <a href="https://github.com/adhocteam/copyright-compendium/tree/main/tests">test suite</a> in the project repository.
-    </paragraph>
-   </section>
+        <head>
+                <meta charset="utf-8" />
+                <title>
+                        About the Copyright Compendium Viewer
+                </title>
+                <link href="style.css" rel="stylesheet" type="text/css" />
+        </head>
 
-   <section id="sec-purpose">
-    <section_title>
-     <num>3</num>
-     Purpose of This Site
-    </section_title>
-    <paragraph>
-     The Copyright Compendium is an essential resource for anyone working with U.S. copyright law, but the official PDF format presents several usability challenges:
-    </paragraph>
-    <list>
-     <item>Difficult to navigate between chapters and sections</item>
-     <item>Limited search functionality</item>
-     <item>Not optimized for mobile devices</item>
-     <item>Challenging to link to specific sections from external sources</item>
-    </list>
-    <paragraph>
-     This web viewer addresses these challenges by providing:
-    </paragraph>
-    <list>
-     <item><strong>Easy navigation:</strong> A hierarchical sidebar shows the structure of each chapter, making it simple to jump to any section</item>
-     <item><strong>Powerful search:</strong> Algolia-powered search enables finding specific terms and sections across the entire Compendium</item>
-     <item><strong>Responsive design:</strong> The interface adapts to desktop, tablet, and mobile devices using the U.S. Web Design System (USWDS)</item>
-     <item><strong>Direct linking:</strong> Each section has a stable URL that can be bookmarked or shared</item>
-     <item><strong>Preserved hyperlinks:</strong> All cross-references and citations from the original PDF remain functional</item>
-     <item><strong>Experimental translation:</strong> Browser-based translation support for 12 languages (where supported by browser)</item>
-    </list>
-    <paragraph>
-     By making the Compendium more accessible and user-friendly, this project aims to support copyright applicants, legal practitioners, researchers, and anyone seeking to understand U.S. Copyright Office practices.
-    </paragraph>
-   </section>
+        <body>
+                <chapter>
 
-   <section id="sec-open-source">
-    <section_title>
-     <num>4</num>
-     Open Source Project
-    </section_title>
-    <paragraph>
-     This project is open source and available on <a href="https://github.com/adhocteam/copyright-compendium">GitHub</a>. The repository includes:
-    </paragraph>
-    <list>
-     <item>All converted XHTML chapter files</item>
-     <item>Python scripts for PDF processing and conversion</item>
-     <item>The web interface built with vanilla JavaScript and Vite</item>
-     <item>Quality assurance tools and test suite</item>
-     <item>Documentation for contributors</item>
-    </list>
-    <paragraph>
-     Contributions, feedback, and suggestions are welcome. If you notice any errors or have ideas for improvements, please <a href="https://github.com/adhocteam/copyright-compendium/issues">open an issue</a> on GitHub.
-    </paragraph>
-   </section>
+                        <head>
+                                <title>
+                                        About This Site
+                                </title>
+                        </head>
+                        <level_title>
+                                About the Copyright Compendium Viewer
+                        </level_title>
+                        <paragraph>
+                                This site provides a navigable, searchable web display of the U.S. Copyright Office's
+                                <em>Compendium of U.S. Copyright Office Practices</em>, Third Edition. The Compendium is
+                                the administrative manual of the Register of Copyrights and provides expert guidance to
+                                copyright applicants, practitioners, scholars, the courts, and the general public
+                                regarding copyright law and institutional practices.
+                        </paragraph>
 
-   <section id="sec-disclaimer">
-    <section_title>
-     <num>5</num>
-     Disclaimer
-    </section_title>
-    <paragraph>
-     This website is an <strong>unofficial, experimental resource</strong> and is not affiliated with or endorsed by the U.S. Copyright Office. While the content is derived from the official Compendium, this transformation has not been reviewed or approved by the Copyright Office.
-    </paragraph>
-    <paragraph>
-     For official, authoritative information, please visit:
-    </paragraph>
-    <list>
-     <item><a href="https://www.copyright.gov/comp3/">Official Copyright Compendium (PDF)</a></item>
-     <item><a href="https://www.copyright.gov/">U.S. Copyright Office</a></item>
-    </list>
-    <paragraph>
-     The automated quality checks and review processes help ensure accuracy, but errors may still occur. Users should verify critical information against the official PDF version.
-    </paragraph>
-   </section>
+                        <section id="sec-experimental-transformation">
+                                <section_title>
+                                        <num>1</num>
+                                        Experimental Transformation
+                                </section_title>
+                                <paragraph>
+                                        <strong>This is an experimental transformation</strong> of the official
+                                        Copyright Compendium from PDF format to HTML for web display. The Compendium is
+                                        officially published by the U.S. Copyright Office as PDF files, which can be
+                                        challenging to navigate online. This project aims to make the Compendium more
+                                        accessible by converting it into a web-friendly format with enhanced navigation
+                                        and search capabilities.
+                                </paragraph>
+                                <paragraph>
+                                        The transformation from PDF to XHTML was accomplished using advanced Large
+                                        Language Models (LLMs), primarily Google Gemini 2.5 Pro Experimental. Each
+                                        chapter of the Compendium was processed to extract and convert the text while
+                                        preserving:
+                                </paragraph>
+                                <list>
+                                        <item>Document structure and hierarchy</item>
+                                        <item>Section numbering and cross-references</item>
+                                        <item>Internal hyperlinks to other chapters and sections</item>
+                                        <item>External hyperlinks to legal citations and copyright.gov resources</item>
+                                        <item>Formatting such as italics, lists, and emphasis</item>
+                                </list>
+                                <paragraph>
+                                        While every effort has been made to ensure accuracy, this is an
+                                        <strong>unofficial, experimental version</strong>. For authoritative
+                                        information, please consult the <a
+                                                href="https://www.copyright.gov/comp3/">official PDF version on
+                                                copyright.gov</a>.
+                                </paragraph>
+                        </section>
 
-   <section id="sec-acknowledgments">
-    <section_title>
-     <num>6</num>
-     Acknowledgments
-    </section_title>
-    <paragraph>
-     This project builds on the foundation laid by <a href="https://law.resource.org/pub/us/compendium/introduction.html">Public.Resource.Org</a>, which created the first web version of the 2014 Compendium. Our goal is to provide an updated, maintained version that keeps pace with the Copyright Office's revisions.
-    </paragraph>
-    <paragraph>
-     The project leverages several key technologies:
-    </paragraph>
-    <list>
-     <item><strong>Google Gemini 2.5 Pro Experimental:</strong> Advanced AI for PDF-to-HTML transformation</item>
-     <item><strong>U.S. Web Design System (USWDS):</strong> Accessible, mobile-friendly UI components</item>
-     <item><strong>Algolia:</strong> Fast, relevant search functionality</item>
-     <item><strong>Vite:</strong> Modern build tooling for web development</item>
-    </list>
-    <paragraph>
-     After the initial implementation in February 2026, tests, conversion scripts, and other aspects of the site were updated using a combination of <strong>GitHub Agents</strong> and <strong>Antigravity</strong> with <strong>Claude Opus 4.6</strong> and <strong>Gemini 3.0 Pro</strong>, demonstrating advanced AI-assisted software development techniques.
-    </paragraph>
-   </section>
+                        <section id="sec-quality-assurance">
+                                <section_title>
+                                        <num>2</num>
+                                        Quality Assurance and Text-Checking
+                                </section_title>
+                                <paragraph>
+                                        To ensure the accuracy of the transformation, an <strong>automated quality
+                                                assurance engine</strong> has been developed to validate the converted
+                                        content. This QA system compares the HTML output against the original PDF text
+                                        to detect any discrepancies or conversion errors.
+                                </paragraph>
+                                <paragraph>
+                                        The text-checker employs two complementary approaches:
+                                </paragraph>
+                                <list>
+                                        <item><strong>Algorithmic validation:</strong> Character-level diff comparisons
+                                                between the source PDF text and the resulting HTML content</item>
+                                        <item><strong>LLM-based review:</strong> AI-powered analysis using the Gemini
+                                                API to identify semantic differences and quality issues</item>
+                                </list>
+                                <paragraph>
+                                        Each identified issue is classified by severity (HIGH, MEDIUM, or LOW) to help
+                                        prioritize corrections. A GitHub Actions workflow automatically runs these
+                                        quality checks whenever HTML files are updated, ensuring ongoing accuracy as the
+                                        site evolves.
+                                </paragraph>
+                                <paragraph>
+                                        For detailed information about the QA methodology, see the <a
+                                                href="https://github.com/adhocteam/copyright-compendium/blob/main/QA.md">QA
+                                                documentation</a> and <a
+                                                href="https://github.com/adhocteam/copyright-compendium/tree/main/tests">test
+                                                suite</a> in the project repository.
+                                </paragraph>
+                        </section>
 
-   <section id="sec-getting-started">
-    <section_title>
-     <num>7</num>
-     Getting Started
-    </section_title>
-    <paragraph>
-     To begin exploring the Compendium:
-    </paragraph>
-    <list>
-     <item>Use the <strong>Chapters menu</strong> in the header to browse all available chapters</item>
-     <item>Use the <strong>search box</strong> in the header to find specific terms or sections</item>
-     <item>Click on any chapter to view its content—a hierarchical sidebar will appear showing all sections</item>
-     <item>Click any section in the sidebar to jump directly to that content</item>
-     <item>Use the <strong>translation controls</strong> (experimental) to view content in other languages</item>
-    </list>
-    <paragraph>
-     We recommend starting with the <a href="/introduction.html">Introduction</a> to understand the scope and purpose of the official Compendium, then exploring chapters relevant to your needs.
-    </paragraph>
-   </section>
+                        <section id="sec-purpose">
+                                <section_title>
+                                        <num>3</num>
+                                        Purpose of This Site
+                                </section_title>
+                                <paragraph>
+                                        The Copyright Compendium is an essential resource for anyone working with U.S.
+                                        copyright law, but the official PDF format presents several usability
+                                        challenges:
+                                </paragraph>
+                                <list>
+                                        <item>Difficult to navigate between chapters and sections</item>
+                                        <item>Limited search functionality</item>
+                                        <item>Not optimized for mobile devices</item>
+                                        <item>Challenging to link to specific sections from external sources</item>
+                                </list>
+                                <paragraph>
+                                        This web viewer addresses these challenges by providing:
+                                </paragraph>
+                                <list>
+                                        <item><strong>Easy navigation:</strong> A hierarchical sidebar shows the
+                                                structure of each chapter, making it simple to jump to any section
+                                        </item>
+                                        <item><strong>Powerful search:</strong> Algolia-powered search enables finding
+                                                specific terms and sections across the entire Compendium</item>
+                                        <item><strong>Responsive design:</strong> The interface adapts to desktop,
+                                                tablet, and mobile devices using the U.S. Web Design System (USWDS)
+                                        </item>
+                                        <item><strong>Direct linking:</strong> Each section has a stable URL that can be
+                                                bookmarked or shared</item>
+                                        <item><strong>Preserved hyperlinks:</strong> All cross-references and citations
+                                                from the original PDF remain functional</item>
+                                        <item><strong>Experimental translation:</strong> Browser-based translation
+                                                support for 12 languages (where supported by browser)</item>
+                                </list>
+                                <paragraph>
+                                        By making the Compendium more accessible and user-friendly, this project aims to
+                                        support copyright applicants, legal practitioners, researchers, and anyone
+                                        seeking to understand U.S. Copyright Office practices.
+                                </paragraph>
+                        </section>
 
-   <page label="1">
-   </page>
-  </chapter>
- </body>
+                        <section id="sec-open-source">
+                                <section_title>
+                                        <num>4</num>
+                                        Open Source Project
+                                </section_title>
+                                <paragraph>
+                                        This project is open source and available on <a
+                                                href="https://github.com/adhocteam/copyright-compendium">GitHub</a>. The
+                                        repository includes:
+                                </paragraph>
+                                <list>
+                                        <item>All converted XHTML chapter files</item>
+                                        <item>Python scripts for PDF processing and conversion</item>
+                                        <item>The web interface built with vanilla JavaScript and Vite</item>
+                                        <item>Quality assurance tools and test suite</item>
+                                        <item>Documentation for contributors</item>
+                                </list>
+                                <paragraph>
+                                        Contributions, feedback, and suggestions are welcome. If you notice any errors
+                                        or have ideas for improvements, please <a
+                                                href="https://github.com/adhocteam/copyright-compendium/issues">open an
+                                                issue</a> on GitHub.
+                                </paragraph>
+                        </section>
+
+                        <section id="sec-disclaimer">
+                                <section_title>
+                                        <num>5</num>
+                                        Disclaimer
+                                </section_title>
+                                <paragraph>
+                                        This website is an <strong>unofficial, experimental resource</strong> and is not
+                                        affiliated with or endorsed by the U.S. Copyright Office. While the content is
+                                        derived from the official Compendium, this transformation has not been reviewed
+                                        or approved by the Copyright Office.
+                                </paragraph>
+                                <paragraph>
+                                        For official, authoritative information, please visit:
+                                </paragraph>
+                                <list>
+                                        <item><a href="https://www.copyright.gov/comp3/">Official Copyright Compendium
+                                                        (PDF)</a></item>
+                                        <item><a href="https://www.copyright.gov/">U.S. Copyright Office</a></item>
+                                </list>
+                                <paragraph>
+                                        The automated quality checks and review processes help ensure accuracy, but
+                                        errors may still occur. Users should verify critical information against the
+                                        official PDF version.
+                                </paragraph>
+                        </section>
+
+                        <section id="sec-acknowledgments">
+                                <section_title>
+                                        <num>6</num>
+                                        Acknowledgments
+                                </section_title>
+                                <paragraph>
+                                        This project builds on the foundation laid by <a
+                                                href="https://law.resource.org/pub/us/compendium/introduction.html">Public.Resource.Org</a>,
+                                        which created the first web version of the 2014 Compendium. Our goal is to
+                                        provide an updated, maintained version that keeps pace with the Copyright
+                                        Office's revisions.
+                                </paragraph>
+                                <paragraph>
+                                        The project leverages several key technologies:
+                                </paragraph>
+                                <list>
+                                        <item><strong>Google Gemini 2.5 Pro Experimental:</strong> Advanced AI for
+                                                PDF-to-HTML transformation</item>
+                                        <item><strong>U.S. Web Design System (USWDS):</strong> Accessible,
+                                                mobile-friendly UI components</item>
+                                        <item><strong>Algolia:</strong> Fast, relevant search functionality</item>
+                                        <item><strong>Vite:</strong> Modern build tooling for web development</item>
+                                </list>
+                                <paragraph>
+                                        After the initial implementation in April 2025, updates were incorporated in
+                                        February 2026 that include tests, conversion scripts,
+                                        and other aspects of the site, using a combination of <strong>GitHub
+                                                Agents</strong> and <strong>Antigravity</strong> with <strong>Claude
+                                                Opus 4.6</strong> and <strong>Gemini 3.0 Pro</strong>, demonstrating
+                                        advanced AI-assisted software development techniques with thorough regression
+                                        and quality assurance testing.
+                                </paragraph>
+                        </section>
+
+                        <section id="sec-getting-started">
+                                <section_title>
+                                        <num>7</num>
+                                        Getting Started
+                                </section_title>
+                                <paragraph>
+                                        To begin exploring the Compendium:
+                                </paragraph>
+                                <list>
+                                        <item>Use the <strong>Chapters menu</strong> in the header to browse all
+                                                available chapters</item>
+                                        <item>Use the <strong>search box</strong> in the header to find specific terms
+                                                or sections</item>
+                                        <item>Click on any chapter to view its content—a hierarchical sidebar will
+                                                appear showing all sections</item>
+                                        <item>Click any section in the sidebar to jump directly to that content</item>
+                                        <item>Use the <strong>translation controls</strong> (experimental) to view
+                                                content in other languages</item>
+                                </list>
+                                <paragraph>
+                                        We recommend starting with the <a href="/introduction.html">Introduction</a> to
+                                        understand the scope and purpose of the official Compendium, then exploring
+                                        chapters relevant to your needs.
+                                </paragraph>
+                        </section>
+
+                        <page label="1">
+                        </page>
+                </chapter>
+        </body>
+
 </html>

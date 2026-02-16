@@ -246,6 +246,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentFilename: string | null = null;
     // Persist chapter toggle (expanded/collapsed) state across navigation rebuilds
     const chapterToggleState = new Map<string, boolean>(); // filename -> isExpanded
+    
+    // Security & Performance: Abort controller for canceling previous fetch operations
+    let contentLoadController: AbortController | null = null;
 
     // --- Functions ---
 
@@ -264,6 +267,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 targetElement.classList.add('temp-highlight');
                 setTimeout(() => targetElement.classList.remove('temp-highlight'), 1500);
             }
+            // Accessibility: Make the element programmatically focusable if needed, then set focus
+            if (!targetElement.hasAttribute('tabindex')) {
+                targetElement.setAttribute('tabindex', '-1');
+            }
+            targetElement.focus({ preventScroll: true });
         }, 50);
         return true;
     }
@@ -341,6 +349,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // --- End same-page logic ---
 
+        // Performance: Cancel any previous fetch to prevent race conditions
+        if (contentLoadController) {
+            contentLoadController.abort();
+        }
+        contentLoadController = new AbortController();
+
         // console.log(`Loading content: ${filename}, updateHistory: ${updateHistory}, isInitialLoad: ${isInitialLoad}, targetHash: ${targetHash}`);
         clearHighlighting();
         if (headerSearchInput) (headerSearchInput as HTMLInputElement).value = '';
@@ -365,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- Fetching and parsing content ---
             const fetchPath = filename.replace(/\s*\.html$/i, '-src.html'); // Assuming files are in the same directory or relative paths work
             // console.log("Fetching:", fetchPath);
-            const response = await fetch(fetchPath);
+            const response = await fetch(fetchPath, { signal: contentLoadController.signal });
             // console.log("Fetch response status:", response.status);
             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status} for ${fetchPath}`);
             const html = await response.text();
@@ -466,10 +480,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         } catch (error) {
+            // Handle AbortError gracefully (request was cancelled)
+            if (error instanceof Error && error.name === 'AbortError') {
+                console.log('Content loading was cancelled for:', filename);
+                return; // Don't show error, this is expected behavior
+            }
+            
             console.error("Error during loadContent:", error);
             const errorMessage = error instanceof Error ? error.message : 'Unknown error';
             if (chapterContent) { // Check if element exists before modifying
-                chapterContent.innerHTML = `<p class="usa-alert usa-alert--error">Failed to load content: ${errorMessage}. Check console for details.</p>`;
+                // Security: Create DOM elements instead of using innerHTML to prevent injection
+                const alertDiv = document.createElement('p');
+                alertDiv.className = 'usa-alert usa-alert--error';
+                alertDiv.textContent = `Failed to load content: ${errorMessage}. Check console for details.`;
+                chapterContent.innerHTML = '';
+                chapterContent.appendChild(alertDiv);
             }
             // Ensure sidenav remains hidden on error
             if (sectionListContainer) sectionListContainer.innerHTML = '';
@@ -924,6 +949,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (chapterListDropdown) {
         console.log(`Starting population of #${chapterListDropdown.id}...`);
         chapters.forEach((chapter) => {
+            // Functionality: Validate chapter data before creating links
+            if (!chapter.filename || !chapter.title) {
+                console.error("Invalid chapter data (missing filename or title):", chapter);
+                return; // Skip invalid entries
+            }
+            
             const listItem = document.createElement('li');
             listItem.classList.add('usa-nav__submenu-item');
             const link = document.createElement('a');
@@ -1298,7 +1329,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.log('Selected:', item);
                         // If you have product URLs in your index (e.g., item.url)
                         if (item.url) {
-                            window.location.href = item.url;
+                            // Security: Validate URL origin before navigation to prevent open redirect
+                            try {
+                                const targetUrl = new URL(item.url, window.location.origin);
+                                // Only navigate to URLs on the same origin
+                                if (targetUrl.origin === window.location.origin) {
+                                    window.location.href = targetUrl.toString();
+                                } else {
+                                    console.warn('External URL in search result blocked for security:', item.url);
+                                }
+                            } catch (error) {
+                                console.error('Invalid URL in search result:', item.url, error);
+                            }
                         } else {
                             // Or maybe fill the input with the selected item's name
                             setQuery(item.title);
@@ -1439,6 +1481,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 translationInfoLink.setAttribute('aria-expanded', 'false');
             }
         });
+        
+        // Accessibility: Close tooltip with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && translationInfoTooltip.style.display === 'block') {
+                translationInfoTooltip.style.display = 'none';
+                translationInfoLink.setAttribute('aria-expanded', 'false');
+                // Return focus to the button that opened the tooltip
+                translationInfoLink.focus();
+            }
+        });
     }
 
     // Initialize translation on page load
@@ -1503,7 +1555,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const termId = termElement.id;
                     const nextSibling = termElement.nextElementSibling;
                     if (termId && nextSibling && nextSibling.tagName === 'P') {
-                        glossaryData[termId] = nextSibling.innerHTML;
+                        // Security: Use textContent instead of innerHTML to prevent XSS
+                        glossaryData[termId] = nextSibling.textContent || '';
                     } else if (termId) {
                         console.warn(`Glossary tooltip: Expected <p> after <dt id="${termId}">, found ${nextSibling ? nextSibling.tagName : 'nothing'}.`);
                     }
@@ -1570,9 +1623,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function showTooltip(link: HTMLAnchorElement, termId: string, event: MouseEvent): void {
         // Check flag *here* when the event actually fires
         if (!tooltipElement || !glossaryFetched) return;
-        const definitionHtml = glossaryData[termId];
-        if (definitionHtml) {
-            tooltipElement.innerHTML = definitionHtml;
+        const definitionText = glossaryData[termId];
+        if (definitionText) {
+            // Security: Use textContent instead of innerHTML to prevent XSS
+            tooltipElement.textContent = definitionText;
             positionTooltip(event);
             tooltipElement.style.display = 'block';
             link.setAttribute('aria-describedby', 'glossary-tooltip');
