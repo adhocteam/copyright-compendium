@@ -12,6 +12,44 @@ This UI was originally built in April 2025 using Gemini 2.5 Pro Experimental, ba
 - **Testing**: Vitest with 38 unit and integration tests
 - **Type Checking**: TypeScript with strict mode enabled
 
+# Documentation
+
+Comprehensive documentation is available in the `/docs` directory and can be served using [MkDocs](https://www.mkdocs.org/):
+
+```bash
+# Install mkdocs and dependencies
+pip install -r docs-requirements.txt
+
+# Serve documentation locally (hot-reload on changes)
+mkdocs serve
+
+# Build documentation (outputs to site/)
+mkdocs build
+```
+
+Or use Docker to serve the documentation:
+
+```bash
+# Build and run the documentation server
+docker build -f Dockerfile.docs -t copyright-compendium-docs .
+docker run --rm -p 8000:8000 copyright-compendium-docs
+```
+
+Or use the Task runner:
+
+```bash
+# Serve documentation locally
+task docs:serve
+
+# Build documentation
+task docs:build
+
+# Run documentation in Docker
+task docs:docker:run
+```
+
+The documentation will be available at `http://localhost:8000`.
+
 # Running Locally
 
 The web UI lives in the `CompendiumUI/` directory. You can run it with or without Docker.
@@ -103,9 +141,9 @@ python process_pdfs_gemini.py --directory my_pdfs --output-dir output_html
 
 The Compendium viewer now includes experimental browser-based translation support for 12 languages. This feature uses the emerging Translation API for privacy-preserving, on-device translation.
 
-**📖 See [TRANSLATION_FEATURE_README.md](TRANSLATION_FEATURE_README.md) for user documentation**
+**📖 See [Translation Feature](docs/translation-feature.md) for user documentation**
 
-**🔧 See [TRANSLATION_IMPLEMENTATION.md](TRANSLATION_IMPLEMENTATION.md) for technical documentation**
+**🔧 See [Translation Implementation](docs/translation-implementation.md) for technical documentation**
 
 **Key highlights:**
 - On-device translation (no data sent to servers)
@@ -120,7 +158,7 @@ The Compendium viewer now includes experimental browser-based translation suppor
 
 ## Quality Assurance
 
-An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. The QA tests run inside a Docker container (via `task test`), so no local Python environment is required. See [QA.md](QA.md) and [tests/README.md](tests/README.md) for details.
+An automated content-checking engine compares the web HTML against original PDF text to detect conversion errors. The QA tests run inside a Docker container (via `task test`), so no local Python environment is required. See [QA documentation](docs/qa.md) and [Testing documentation](docs/testing.md) for details.
 
 ### Frontend Testing
 
