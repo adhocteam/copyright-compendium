@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/adhocteam/copyright-compendium/compare/v1.1.3...v1.2.0) (2026-02-16)
+
+
+### Features
+
+* **ui:** refine translation controls and menu behavior ([4b5c7ff](https://github.com/adhocteam/copyright-compendium/commit/4b5c7ff612aafe475464989c0dcea115758fc1ed))
+
 ### [1.1.3](https://github.com/adhocteam/copyright-compendium/compare/v1.1.2...v1.1.3) (2026-02-16)
 
 ### [1.1.2](https://github.com/adhocteam/copyright-compendium/compare/v1.1.1...v1.1.2) (2026-02-16)
