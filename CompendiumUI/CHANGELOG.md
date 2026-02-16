@@ -1,0 +1,26 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2026-02-16)
+
+
+### Features
+
+* add About tooltip on version badge hover, remove version from About page ([5987d03](https://github.com/adhocteam/copyright-compendium/commit/5987d03660681e8e056708410ebce5bdfe176bad))
+* add automated versioning and agent rules ([#36](https://github.com/adhocteam/copyright-compendium/issues/36)) ([3dd140b](https://github.com/adhocteam/copyright-compendium/commit/3dd140bfc726f5c67d52c56e2b7daeaddfe3824a))
+* add header chapter title element to index.html ([395a688](https://github.com/adhocteam/copyright-compendium/commit/395a688ea341f87968f0adb7c25a38a32f38741d))
+* **docs:** add github pages deployment workflow ([eefdef4](https://github.com/adhocteam/copyright-compendium/commit/eefdef416dc0e9aaeb1088de1c581996a5804717))
+
+
+### Bug Fixes
+
+* add toggle button to active chapter in sidenav ([0e2e34e](https://github.com/adhocteam/copyright-compendium/commit/0e2e34e10b3cb6058a86e53cbccb94655ac3f3d2))
+* add toggle to ALL chapters in sidenav with persistent state ([d3410a1](https://github.com/adhocteam/copyright-compendium/commit/d3410a157d826911877a147b3a0eff24a5d2fd6e))
+* close definition popup on click and add test ([#29](https://github.com/adhocteam/copyright-compendium/issues/29)) ([1960a40](https://github.com/adhocteam/copyright-compendium/commit/1960a404dd0515d148e92ea431de8a3e6d00c294))
+* **CompendiumUI:** resolve translation UI visibility issue ([#32](https://github.com/adhocteam/copyright-compendium/issues/32)) ([ce5245b](https://github.com/adhocteam/copyright-compendium/commit/ce5245b351a83669ab99bdf4ddb615d36dabe9ab))
+* de-duplicate Chapters nav and place after search/translation ([7b33272](https://github.com/adhocteam/copyright-compendium/commit/7b33272c64557bddac4911090c1eba2b6cfe5758))
+* only show sidenav toggle buttons on items with sub-content ([f8de3e6](https://github.com/adhocteam/copyright-compendium/commit/f8de3e6754615f2c0ae6517bf9b90b28878e40e3))
+* resolve Chapters menu double-toggle and translation reset bugs ([161bce0](https://github.com/adhocteam/copyright-compendium/commit/161bce0df53a4b6e6b278e4212a7a2320d2506c6))
+* sidenav toggle icons and collapse/expand functionality ([e764cac](https://github.com/adhocteam/copyright-compendium/commit/e764cac4ab7f7dc17665e361e7a402bdae3255ec))
+* sidenav toggle on all chapters + header title width ([a9bbe70](https://github.com/adhocteam/copyright-compendium/commit/a9bbe70609af8249330991bdb1d6ab521e041f2e))
