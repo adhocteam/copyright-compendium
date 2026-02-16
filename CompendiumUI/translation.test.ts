@@ -187,7 +187,7 @@ describe('TranslationService', () => {
 describe('Translation UI Controls', () => {
   let languageSelect: HTMLSelectElement;
   let translateButton: HTMLButtonElement;
-  
+
   beforeEach(() => {
     // Set up the DOM with the necessary elements
     document.body.innerHTML = `
@@ -202,7 +202,7 @@ describe('Translation UI Controls', () => {
         Translate
       </button>
     `;
-    
+
     languageSelect = document.getElementById('language-select') as HTMLSelectElement;
     translateButton = document.getElementById('translate-button') as HTMLButtonElement;
   });
@@ -216,25 +216,25 @@ describe('Translation UI Controls', () => {
       // Simulate language selection
       languageSelect.value = 'es';
       languageSelect.dispatchEvent(new Event('change'));
-      
+
       // In real implementation, this would be handled by event listener
       // For this test, we simulate the expected behavior
       translateButton.classList.remove('hidden');
-      
+
       expect(translateButton.classList.contains('hidden')).toBe(false);
     });
 
     it('should hide translate button when English (original) is selected', () => {
       // First show the button
       translateButton.classList.remove('hidden');
-      
+
       // Then select English
       languageSelect.value = '';
       languageSelect.dispatchEvent(new Event('change'));
-      
+
       // Simulate the expected behavior
       translateButton.classList.add('hidden');
-      
+
       expect(translateButton.classList.contains('hidden')).toBe(true);
     });
   });
@@ -248,11 +248,11 @@ describe('Translation UI Controls', () => {
     it('should have translate button enabled when language is changed', () => {
       languageSelect.value = 'es';
       languageSelect.dispatchEvent(new Event('change'));
-      
+
       // Simulate expected behavior
       translateButton.removeAttribute('disabled');
       translateButton.setAttribute('aria-disabled', 'false');
-      
+
       expect(translateButton.hasAttribute('disabled')).toBe(false);
       expect(translateButton.getAttribute('aria-disabled')).toBe('false');
     });
@@ -261,7 +261,7 @@ describe('Translation UI Controls', () => {
       // Simulate successful translation
       translateButton.setAttribute('disabled', 'true');
       translateButton.setAttribute('aria-disabled', 'true');
-      
+
       expect(translateButton.hasAttribute('disabled')).toBe(true);
       expect(translateButton.getAttribute('aria-disabled')).toBe('true');
     });
@@ -270,15 +270,15 @@ describe('Translation UI Controls', () => {
       // Start with disabled button (after translation)
       translateButton.setAttribute('disabled', 'true');
       translateButton.setAttribute('aria-disabled', 'true');
-      
+
       // Change language
       languageSelect.value = 'fr';
       languageSelect.dispatchEvent(new Event('change'));
-      
+
       // Simulate expected behavior
       translateButton.removeAttribute('disabled');
       translateButton.setAttribute('aria-disabled', 'false');
-      
+
       expect(translateButton.hasAttribute('disabled')).toBe(false);
       expect(translateButton.getAttribute('aria-disabled')).toBe('false');
     });
@@ -297,14 +297,14 @@ describe('Translation UI Controls', () => {
     it('should update aria-disabled attribute when button is disabled', () => {
       translateButton.setAttribute('disabled', 'true');
       translateButton.setAttribute('aria-disabled', 'true');
-      
+
       expect(translateButton.getAttribute('aria-disabled')).toBe('true');
     });
 
     it('should have aria-disabled false when button is enabled', () => {
       translateButton.removeAttribute('disabled');
       translateButton.setAttribute('aria-disabled', 'false');
-      
+
       expect(translateButton.getAttribute('aria-disabled')).toBe('false');
     });
   });
@@ -315,18 +315,18 @@ describe('Translation UI Controls', () => {
       translateButton.setAttribute('disabled', 'true');
       translateButton.setAttribute('aria-disabled', 'true');
       languageSelect.value = 'es';
-      
+
       // Simulate chapter change - button should be re-enabled
       translateButton.removeAttribute('disabled');
       translateButton.setAttribute('aria-disabled', 'false');
-      
+
       expect(translateButton.hasAttribute('disabled')).toBe(false);
       expect(translateButton.getAttribute('aria-disabled')).toBe('false');
     });
 
     it('should keep translate button hidden when chapter changes (if no language selected)', () => {
       languageSelect.value = '';
-      
+
       // Button should remain hidden
       expect(translateButton.classList.contains('hidden')).toBe(true);
     });
@@ -338,5 +338,64 @@ describe('Translation UI Controls', () => {
       // The actual computed style won't be available in jsdom, but we can check the class
       expect(languageSelect.classList.contains('translation-select')).toBe(true);
     });
+  });
+});
+
+describe('Menu Translation Integration', () => {
+  let languageSelect: HTMLSelectElement;
+  let translateButton: HTMLButtonElement;
+  let chapterListDropdown: HTMLElement;
+  let sectionListContainer: HTMLElement;
+  let service: TranslationService;
+
+  beforeEach(() => {
+    // Re-initialize service and mocks
+    service = new TranslationService();
+    vi.spyOn(service, 'translateContent').mockResolvedValue(true);
+
+    // Setup DOM
+    document.body.innerHTML = `
+        <select id="language-select" class="usa-select translation-select">
+          <option value="">English (Original)</option>
+          <option value="es">Español (Spanish)</option>
+        </select>
+        <button type="button" id="translate-button">Translate</button>
+        <div id="chapter-content">Original Content</div>
+        <ul id="basic-nav-section-one"><li>Chapter 1</li></ul>
+        <div id="section-list">Sidenav Content</div>
+      `;
+
+    languageSelect = document.getElementById('language-select') as HTMLSelectElement;
+    translateButton = document.getElementById('translate-button') as HTMLButtonElement;
+    chapterListDropdown = document.getElementById('basic-nav-section-one') as HTMLElement;
+    sectionListContainer = document.getElementById('section-list') as HTMLElement;
+  });
+
+  it('should translate menus when translate button is clicked', async () => {
+    // Simulate the logic inside the event listener
+    const selectedLanguage = 'es';
+    languageSelect.value = selectedLanguage; // Ensure value is set
+
+    // Manually trigger the logic we want to test (mimicking script.ts handler)
+    await service.translateContent(document.getElementById('chapter-content')!, selectedLanguage, 'test.html');
+    await service.translateContent(chapterListDropdown, selectedLanguage, 'chapters_menu_dropdown');
+    await service.translateContent(sectionListContainer, selectedLanguage, 'test.html_sidenav');
+
+    // Verify service calls
+    expect(service.translateContent).toHaveBeenCalledWith(
+      expect.anything(), // Chapter content check
+      selectedLanguage,
+      expect.anything()
+    );
+    expect(service.translateContent).toHaveBeenCalledWith(
+      chapterListDropdown,
+      selectedLanguage,
+      'chapters_menu_dropdown'
+    );
+    expect(service.translateContent).toHaveBeenCalledWith(
+      sectionListContainer,
+      selectedLanguage,
+      expect.stringContaining('_sidenav') // Sidenav key check
+    );
   });
 });

@@ -500,9 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageSelect = document.getElementById('language-select');
     const translationDisclaimer = document.getElementById('translation-disclaimer');
     const translationControlsWrapper = document.getElementById('translation-controls-wrapper');
-    const translationInfoLinkWrapper = document.getElementById('translation-info-link-wrapper');
-    const translationInfoLink = document.getElementById('translation-info-link');
-    const translationInfoTooltip = document.getElementById('translation-info-tooltip');
+    // Removed: translationInfoLinkWrapper, translationInfoLink, translationInfoTooltip
     const viewOriginalLink = document.getElementById('view-original-link');
     const translateButton = document.getElementById('translate-button');
     const clearTranslationsButton = document.getElementById('clear-translations-button');
@@ -1778,10 +1776,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 translationControlsWrapper.style.display = 'none';
             }
 
-            // Show translation info link
-            if (translationInfoLinkWrapper) {
-                translationInfoLinkWrapper.style.display = 'flex';
-            }
+
         } else {
             // Show translation controls in menu
             console.log('Translation supported. Showing controls.');
@@ -1796,14 +1791,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 translationControlsWrapper.style.display = 'block';
             }
 
-            // Hide translation info link
-            if (translationInfoLinkWrapper) {
-                translationInfoLinkWrapper.style.display = 'none';
+            if (translationControlsWrapper) {
+                translationControlsWrapper.style.display = 'block';
             }
         }
     }
 
-    // Handle language selection change - now just updates the dropdown, doesn't auto-translate
+    // Handle language selection change - now just updates the dropdown and resets if empty
     if (languageSelect) {
         languageSelect.addEventListener('change', async (event) => {
             const selectedLanguage = (event.target as HTMLSelectElement).value;
@@ -1824,9 +1818,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 // Restore original content if saved
                 if (originalContent && chapterContent) {
-                    // Reload the current page to get original content
+                    // Reload the current page to get original content - this resets main content
+                    // and triggers side nav regeneration in English
                     const currentFile = currentFilename || 'introduction.html';
                     loadContent(currentFile, { updateHistory: false, forceReload: true });
+
+                    // Re-populate chapters dropdown to restore English
+                    if (chapterListDropdown) {
+                        chapterListDropdown.innerHTML = ''; // Clear current
+                        chapters.forEach((chapter) => {
+                            if (!chapter.filename || !chapter.title) return;
+                            const listItem = document.createElement('li');
+                            listItem.classList.add('usa-nav__submenu-item');
+                            const link = document.createElement('a');
+                            // Reconstruct logic from initialization
+                            link.href = `/${chapter.filename}`;
+                            link.textContent = `${chapter.number}${chapter.number ? ': ' : ''}${chapter.title}`;
+                            link.dataset.filename = chapter.filename;
+                            link.addEventListener('click', (e) => {
+                                e.preventDefault();
+                                const filename = link.dataset.filename;
+                                if (filename !== currentFilename) {
+                                    if (filename) loadContent(filename, { updateHistory: true });
+                                } else {
+                                    chapterContent?.scrollTo({ top: 0, behavior: 'smooth' });
+                                    if (filename !== 'glossary.html') updateSideNavCurrent(null);
+                                    history.replaceState({ filename: filename, hash: null }, document.title, `/${filename}`);
+                                }
+                                if (uswdsNav && uswdsNav.classList.contains('is-visible')) {
+                                    uswdsOverlay?.classList.remove('is-visible');
+                                    uswdsNav.classList.remove('is-visible');
+                                    if (uswdsMenuButton) uswdsMenuButton.setAttribute('aria-expanded', 'false');
+                                }
+                            });
+                            listItem.appendChild(link);
+                            chapterListDropdown.appendChild(listItem);
+                        });
+                    }
                 }
             } else {
                 // A language was selected - show and enable the translate button
@@ -1872,6 +1900,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.warn('Translation failed or was cancelled');
                 }
             }
+
+            // Translate Chapters Menu
+            if (chapterListDropdown) {
+                // We use specific filename for caching menu translation to avoid collisions or re-translation
+                const menuCacheKey = 'chapters_menu_dropdown';
+                await translationService.translateContent(chapterListDropdown as HTMLElement, selectedLanguage, menuCacheKey);
+            }
+
+            // Translate Sidenav
+            if (sectionListContainer) {
+                // Sidenav is dynamic based on content, but we can translate the current state
+                // Cache key based on current filename + 'sidenav'
+                const currentFile = currentFilename || 'introduction.html';
+                const sidenavCacheKey = `${currentFile}_sidenav`;
+                await translationService.translateContent(sectionListContainer as HTMLElement, selectedLanguage, sidenavCacheKey);
+            }
         });
     }
 
@@ -1906,69 +1950,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Handle translation info link tooltip
-    if (translationInfoLink && translationInfoTooltip) {
-        // Media query for responsive behavior
-        const mobileBreakpoint = window.matchMedia('(max-width: 40em)');
-
-        // Toggle tooltip on click
-        translationInfoLink.addEventListener('click', (event) => {
-            event.stopPropagation();
-            const isVisible = translationInfoTooltip.style.display !== 'none';
-            const newVisibility = isVisible ? 'none' : 'block';
-            translationInfoTooltip.style.display = newVisibility;
-            // Update ARIA attribute for accessibility
-            translationInfoLink.setAttribute('aria-expanded', newVisibility === 'block' ? 'true' : 'false');
-        });
-
-        // Show tooltip on hover (desktop only) - use media query
-        const handleMouseEnter = () => {
-            if (!mobileBreakpoint.matches) {
-                translationInfoTooltip.style.display = 'block';
-                translationInfoLink.setAttribute('aria-expanded', 'true');
-            }
-        };
-
-        const handleMouseLeave = () => {
-            if (!mobileBreakpoint.matches) {
-                translationInfoTooltip.style.display = 'none';
-                translationInfoLink.setAttribute('aria-expanded', 'false');
-            }
-        };
-
-        translationInfoLink.addEventListener('mouseenter', handleMouseEnter);
-        translationInfoLink.addEventListener('mouseleave', handleMouseLeave);
-
-        // Close tooltip when clicking outside
-        document.addEventListener('click', (event) => {
-            if (translationInfoTooltip.style.display === 'block' &&
-                !translationInfoLink.contains(event.target as Node) &&
-                !translationInfoTooltip.contains(event.target as Node)) {
-                translationInfoTooltip.style.display = 'none';
-                translationInfoLink.setAttribute('aria-expanded', 'false');
-            }
-        });
-
-        // Accessibility: Close tooltip with Escape key
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && translationInfoTooltip.style.display === 'block') {
-                translationInfoTooltip.style.display = 'none';
-                translationInfoLink.setAttribute('aria-expanded', 'false');
-                // Return focus to the button that opened the tooltip
-                translationInfoLink.focus();
-            }
-        });
-    }
-
     // Initialize translation on page load - set default visibility until check completes
     const translationListItem = document.getElementById('translation-controls-list-item');
     if (translationListItem) {
         translationListItem.style.display = 'none';
     } else if (translationControlsWrapper) {
         translationControlsWrapper.style.display = 'none';
-    }
-    if (translationInfoLinkWrapper) {
-        translationInfoLinkWrapper.style.display = 'flex';
     }
 
     // Then run the async check to update based on actual browser support
