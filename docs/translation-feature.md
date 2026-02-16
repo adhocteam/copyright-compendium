@@ -114,18 +114,41 @@ When you enable translation, you'll see this warning:
 ### Basic Usage
 
 1. **Start Translation:**
-   - Click "Translate" dropdown
-   - Select language
+   - Select a target language from the "Translate" dropdown
+   - The "Translate" button will appear when a language is selected
+   - Click the "Translate" button to begin translation
    - Wait for translation to complete
+   - The button will be disabled after successful translation
 
 2. **Return to Original:**
    - Select "English (Original)" from dropdown
+   - The "Translate" button will hide automatically
    - OR click the "original English version" link in the warning banner
 
 3. **Navigate While Translated:**
-   - Click chapter links to navigate
-   - Translation resets on page load
-   - Re-select language if needed
+   - Click chapter links to navigate to different chapters
+   - The "Translate" button will re-enable automatically when you navigate to a new chapter
+   - Click "Translate" again to translate the new chapter
+   - Re-select a different language if needed (button will re-enable)
+
+### UI Behavior
+
+**Translation Button Visibility:**
+- Hidden by default when "English (Original)" is selected
+- Shows automatically when you select a target language
+- Hides again when you switch back to English
+
+**Translation Button State:**
+- Enabled when a language is selected (ready to translate)
+- Disabled after translation completes (prevents re-translating same content)
+- Re-enables when you:
+  - Change the selected language
+  - Navigate to a different chapter
+
+**Accessibility:**
+- The translate button includes proper ARIA labels for screen readers
+- Button states (enabled/disabled) are communicated via `aria-disabled` attribute
+- All controls are keyboard accessible
 
 ### Tips for Best Results
 
