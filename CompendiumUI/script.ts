@@ -267,8 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 targetElement.classList.add('temp-highlight');
                 setTimeout(() => targetElement.classList.remove('temp-highlight'), 1500);
             }
-            // Accessibility: Set focus to the target element for keyboard users
-            // Only set focus if the element is focusable or make it programmatically focusable
+            // Accessibility: Make the element programmatically focusable if needed, then set focus
             if (!targetElement.hasAttribute('tabindex')) {
                 targetElement.setAttribute('tabindex', '-1');
             }

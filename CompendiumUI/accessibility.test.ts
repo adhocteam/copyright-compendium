@@ -69,11 +69,8 @@ describe('Accessibility - Keyboard Navigation', () => {
       });
       
       // Show first tooltip
-      const firstTooltip = tooltips[0];
-      if (firstTooltip) {
-        firstTooltip.element.style.display = 'block';
-        firstTooltip.button.setAttribute('aria-expanded', 'true');
-      }
+      tooltips[0]!.element.style.display = 'block';
+      tooltips[0]!.button.setAttribute('aria-expanded', 'true');
       
       // Escape should only close visible tooltip
       const handleEscape = (event: KeyboardEvent) => {
@@ -91,10 +88,8 @@ describe('Accessibility - Keyboard Navigation', () => {
       const escapeEvent = new KeyboardEvent('keydown', { key: 'Escape' });
       document.dispatchEvent(escapeEvent);
       
-      if (tooltips[0] && tooltips[1]) {
-        expect(tooltips[0].element.style.display).toBe('none');
-        expect(tooltips[1].element.style.display).toBe('none');
-      }
+      expect(tooltips[0]!.element.style.display).toBe('none');
+      expect(tooltips[1]!.element.style.display).toBe('none');
       
       document.removeEventListener('keydown', handleEscape);
     });
