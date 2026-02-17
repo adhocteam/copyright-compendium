@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/adhocteam/copyright-compendium/compare/v1.5.0...v1.5.1) (2026-02-17)
+
+
+### Bug Fixes
+
+* **UI:** fix tooltip viewport overflow and mobile chapter title overlay ([#56](https://github.com/adhocteam/copyright-compendium/issues/56)) ([#57](https://github.com/adhocteam/copyright-compendium/issues/57)) ([e2899cf](https://github.com/adhocteam/copyright-compendium/commit/e2899cf459b37e33f484ca498a55ab6e7161236c))
+
 ## [1.5.0](https://github.com/adhocteam/copyright-compendium/compare/v1.4.3...v1.5.0) (2026-02-17)
 
 
