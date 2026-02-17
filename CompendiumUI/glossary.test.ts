@@ -2,6 +2,16 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 describe('Glossary Tooltip Behavior', () => {
 	beforeEach(() => {
+		// Mock Algolia to prevent "appId is missing" error
+		vi.mock('algoliasearch/lite', () => ({
+			default: vi.fn(() => ({
+				search: vi.fn(),
+			})),
+			liteClient: vi.fn(() => ({
+				search: vi.fn(),
+			})),
+		}));
+
 		vi.resetModules();
 		document.body.innerHTML = `
             <div id="chapter-content">
@@ -35,6 +45,7 @@ describe('Glossary Tooltip Behavior', () => {
 
 	afterEach(() => {
 		vi.restoreAllMocks();
+		vi.unstubAllGlobals();
 	});
 
 	it('should close the tooltip when a glossary link is clicked', async () => {
