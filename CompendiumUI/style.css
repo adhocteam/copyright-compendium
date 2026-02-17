@@ -385,6 +385,20 @@
 	border-bottom: 8px solid #005ea2;
 }
 
+/* At desktop widths (≥64em) USWDS constrains .usa-navbar to 33% of the page.
+   The default right-aligned tooltip overflows off the left edge of the viewport.
+   Flip it to extend rightward from the badge's left edge instead. */
+@media (min-width: 64em) {
+	.version-tooltip {
+		right: auto;
+		left: 0;
+	}
+	.version-tooltip::before {
+		right: auto;
+		left: 1rem;
+	}
+}
+
 .version-display:hover .version-tooltip,
 .version-display:focus .version-tooltip,
 .version-display:focus-within .version-tooltip {
@@ -439,15 +453,16 @@
 	.version-display {
 		/* Keep version visible in navbar on tablets */
 	}
-	
+
 	.usa-navbar {
 		gap: 0.25rem;         /* Smaller gap on tablets */
 	}
-	
+
 	/* Hide chapter title in header on tablets when navbar controls are visible */
 	.header-chapter-title {
 		display: none;
 	}
+
 }
 
 @media (max-width: 40em) {
@@ -476,6 +491,10 @@
 		padding: 0.25rem 0.5rem;
 		text-align: left;     /* Align left instead of center on mobile */
 		min-width: 0;         /* Allow full shrinking */
+		/* Opaque background + shadow so the sticky header clearly occludes
+		   scrolled content instead of rendering over it transparently */
+		background-color: #ffffff;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 	}
 	
 	/* Ensure menu button stays on first row */
