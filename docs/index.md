@@ -25,6 +25,7 @@ This repository contains a simple web display for the U.S. Copyright Office's Co
 - [PDF to HTML Comparison](compare-pdf-html.md) - Comparison methodology
 
 ### Features
+- [Disclaimer Banner](disclaimer-banner.md) - Prototype vs Generic Gov banner
 - [Translation Feature](translation-feature.md) - Browser-based translation overview
 - [Translation Implementation](translation-implementation.md) - Implementation guide
 - [Translation Fix Summary](translation-fix-summary.md) - Recent fixes and updates

@@ -1,5 +1,119 @@
 /* --- START OF FILE style.css --- */
 
+/* --- Disclaimer Banner (Ad Hoc Branding) --- */
+.disclaimer-banner {
+	background-color: #00966E; /* Ad Hoc dark green */
+	color: #FFFFFF;
+	padding: 0.75rem 1.25rem;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	transition: padding 0.3s ease, font-size 0.3s ease, line-height 0.3s ease;
+	will-change: padding, font-size;
+	z-index: 20;
+	position: relative;
+}
+
+.disclaimer-banner__content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+/* Logo */
+.disclaimer-banner__logo {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	transition: width 0.3s ease;
+}
+
+.disclaimer-banner__logo-img {
+	height: 36px;
+	width: auto;
+	transition: height 0.3s ease;
+}
+
+.disclaimer-banner.compressed .disclaimer-banner__logo-img {
+	height: 20px;
+}
+
+/* Text wrapper */
+.disclaimer-banner__text-wrapper {
+	flex: 1;
+	min-width: 0;
+}
+
+.disclaimer-banner__text {
+	margin: 0;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+}
+
+.disclaimer-banner__text strong {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.disclaimer-banner__text a {
+	color: #DFF4EB; /* Ad Hoc light green */
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.disclaimer-banner__text a:hover,
+.disclaimer-banner__text a:focus {
+	color: #FFFFFF;
+	text-decoration-thickness: 2px;
+}
+
+.disclaimer-banner__links {
+	white-space: nowrap;
+}
+
+/* Expanded/Compressed text toggling */
+.disclaimer-banner__text--compressed {
+	display: none;
+}
+
+.disclaimer-banner.compressed .disclaimer-banner__text--expanded {
+	display: none;
+}
+
+.disclaimer-banner.compressed .disclaimer-banner__text--compressed {
+	display: block;
+}
+
+/* Compressed state — triggered by scroll */
+.disclaimer-banner.compressed {
+	padding: 0.2rem 1.25rem;
+	font-size: 0.78rem;
+	line-height: 1.3;
+}
+
+/* Mobile adjustments */
+@media (max-width: 40em) {
+	.disclaimer-banner {
+		padding: 0.6rem 0.75rem;
+		font-size: 0.85rem;
+		gap: 0.5rem;
+	}
+	.disclaimer-banner__content {
+		gap: 0.6rem;
+	}
+	.disclaimer-banner__logo-img {
+		height: 28px;
+	}
+	/* Compressed on mobile */
+	.disclaimer-banner.compressed {
+		padding: 0.2rem 0.75rem;
+		font-size: 0.72rem;
+	}
+	.disclaimer-banner.compressed .disclaimer-banner__logo-img {
+		height: 16px;
+	}
+}
+
 /* --- Header & Logo Branding --- */
 .usa-logo__text a {
 	display: flex;

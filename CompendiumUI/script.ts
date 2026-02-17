@@ -7,6 +7,17 @@ import { chapters } from './chapters';
 import { version } from './package.json';
 
 // --- Type Definitions ---
+declare global {
+    interface Window {
+        MyAppGlossary: {
+            refreshTooltips?: () => void;
+            initialize?: () => void;
+            glossaryTerms?: Record<string, string>;
+        };
+        // ... any other globals
+    }
+}
+
 interface MarkOptions {
     element?: string;
     className?: string;
@@ -621,6 +632,33 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTranslationProgress(progress);
     });
 
+    // --- Disclaimer Banner Scroll Compression ---
+    const disclaimerBanner = document.getElementById('disclaimer-banner');
+    if (disclaimerBanner && chapterContent) {
+        let disclaimerCompressed = false;
+        const SCROLL_THRESHOLD = 50; // px scrolled before compressing
+
+        function updateDisclaimerState(scrollTop: number): void {
+            if (scrollTop > SCROLL_THRESHOLD && !disclaimerCompressed) {
+                disclaimerBanner!.classList.add('compressed');
+                disclaimerCompressed = true;
+            } else if (scrollTop <= SCROLL_THRESHOLD && disclaimerCompressed) {
+                disclaimerBanner!.classList.remove('compressed');
+                disclaimerCompressed = false;
+            }
+        }
+
+        // Desktop: content area scrolls internally
+        chapterContent.addEventListener('scroll', () => {
+            updateDisclaimerState(chapterContent!.scrollTop);
+        }, { passive: true });
+
+        // Mobile: body/window scrolls instead (content overflow-y is visible)
+        window.addEventListener('scroll', () => {
+            updateDisclaimerState(window.scrollY);
+        }, { passive: true });
+    }
+
     // --- State Variables ---
     // --- State Variables ---
     let highlightMarkInstance: MarkInstance;
@@ -697,34 +735,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Add Chapter Navigation (Previous/Next Links) ---
     function addChapterNavigation(currentFilename: string): void {
         if (!chapterContent) return;
-        
+
         // Remove existing navigation if any
         const existingNav = chapterContent.querySelector('.chapter-navigation');
         if (existingNav) {
             existingNav.remove();
         }
-        
+
         // Find current chapter index
         const currentIndex = chapters.findIndex(c => c.filename === currentFilename);
         if (currentIndex === -1) return; // Not found in chapters list
-        
+
         // Get previous and next chapters
         const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
         const nextChapter = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
-        
+
         // Only create navigation if there's a previous or next chapter
         if (!prevChapter && !nextChapter) return;
-        
+
         // Create navigation container
         const nav = document.createElement('nav');
         nav.className = 'chapter-navigation';
         nav.setAttribute('aria-label', 'Chapter navigation');
-        
+
         // Previous chapter link
         if (prevChapter) {
             const prevDiv = document.createElement('div');
             prevDiv.className = 'chapter-navigation__prev';
-            
+
             const prevLink = document.createElement('a');
             prevLink.href = `/${prevChapter.filename}`;
             prevLink.className = 'chapter-navigation__link chapter-navigation__link--prev';
@@ -732,26 +770,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 loadContent(prevChapter.filename, { updateHistory: true });
             };
-            
+
             const prevLabel = document.createElement('span');
             prevLabel.className = 'chapter-navigation__label';
             prevLabel.textContent = 'Previous';
-            
+
             const prevTitle = document.createElement('span');
             prevTitle.className = 'chapter-navigation__title';
             prevTitle.textContent = `${prevChapter.number ? prevChapter.number + ': ' : ''}${prevChapter.title}`;
-            
+
             prevLink.appendChild(prevLabel);
             prevLink.appendChild(prevTitle);
             prevDiv.appendChild(prevLink);
             nav.appendChild(prevDiv);
         }
-        
+
         // Next chapter link
         if (nextChapter) {
             const nextDiv = document.createElement('div');
             nextDiv.className = 'chapter-navigation__next';
-            
+
             const nextLink = document.createElement('a');
             nextLink.href = `/${nextChapter.filename}`;
             nextLink.className = 'chapter-navigation__link chapter-navigation__link--next';
@@ -759,21 +797,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 loadContent(nextChapter.filename, { updateHistory: true });
             };
-            
+
             const nextLabel = document.createElement('span');
             nextLabel.className = 'chapter-navigation__label';
             nextLabel.textContent = 'Next';
-            
+
             const nextTitle = document.createElement('span');
             nextTitle.className = 'chapter-navigation__title';
             nextTitle.textContent = `${nextChapter.number ? nextChapter.number + ': ' : ''}${nextChapter.title}`;
-            
+
             nextLink.appendChild(nextLabel);
             nextLink.appendChild(nextTitle);
             nextDiv.appendChild(nextLink);
             nav.appendChild(nextDiv);
         }
-        
+
         // Append navigation to content
         chapterContent.appendChild(nav);
     }
@@ -1433,18 +1471,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Helper function to populate/rebuild chapters menu in English
     function populateChaptersMenu(): void {
         if (!chapterListDropdown) return;
-        
+
         chapterListDropdown.innerHTML = ''; // Clear current
         chapters.forEach((chapter) => {
             if (!chapter.filename || !chapter.title) return;
-            
+
             const listItem = document.createElement('li');
             listItem.classList.add('usa-nav__submenu-item');
             const link = document.createElement('a');
             link.href = `/${chapter.filename}`;
             link.textContent = `${chapter.number}${chapter.number ? ': ' : ''}${chapter.title}`;
             link.dataset.filename = chapter.filename;
-            
+
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const filename = link.dataset.filename;
@@ -1692,12 +1730,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggles
     if (uswdsMenuButton && uswdsNavCloseButton && uswdsOverlay && uswdsNav) {
         const chaptersAccordionButton = document.querySelector(`button.usa-accordion__button[aria-controls="${chapterListDropdown?.id}"]`) as HTMLButtonElement;
-        
+
         const toggleMenu = () => {
             const isExpanded = uswdsNav.classList.toggle('is-visible');
             uswdsOverlay.classList.toggle('is-visible', isExpanded);
             uswdsMenuButton.setAttribute('aria-expanded', String(isExpanded));
-            
+
             // On mobile: Auto-expand the Chapters menu when opening the hamburger menu
             if (isExpanded && window.innerWidth <= 640 && chaptersAccordionButton && chapterListDropdown) {
                 chaptersAccordionButton.setAttribute('aria-expanded', 'true');
@@ -1946,7 +1984,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // This ensures all translations are from English, not from another translation
             if (chapterContent && originalContent) {
                 chapterContent.innerHTML = originalContent;
-                
+
                 // Regenerate sidenav from English content
                 const currentFile = currentFilename || 'introduction.html';
                 generateNavigation(currentFile);
@@ -2062,7 +2100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 2. Fetch and Parse Glossary (Run once, ensures data readiness) ---
-    function fetchAndParseGlossary(): Promise<void> {
+    async function fetchAndParseGlossary(): Promise<void> {
         // Prevent concurrent fetches and re-fetching if already done
         if (glossaryFetched || isFetching) {
             // If already fetched, potentially trigger attachment immediately
@@ -2252,11 +2290,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.MyAppGlossary = window.MyAppGlossary || {}; // Create namespace if doesn't exist
     window.MyAppGlossary.refreshTooltips = attachTooltipListeners; // Expose the re-runnable part
     // Optionally expose the full init if needed, though less common
-    // window.MyAppGlossary.initialize = initializeGlossaryTooltips;
+    window.MyAppGlossary.initialize = initializeGlossaryTooltips;
+
+    // Expose data for testing
+    Object.defineProperty(window.MyAppGlossary, 'glossaryTerms', {
+        get: () => glossaryData
+    });
 
     // --- Initial Run ---
     // Use DOMContentLoaded to ensure the body exists for createTooltip
     // and that initial content is ready for the first listener attachment.
-    document.addEventListener('DOMContentLoaded', initializeGlossaryTooltips);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeGlossaryTooltips);
+    } else {
+        initializeGlossaryTooltips();
+    }
 
 })(); // End IIFE
