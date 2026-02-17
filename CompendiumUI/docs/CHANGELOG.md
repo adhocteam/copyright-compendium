@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/adhocteam/copyright-compendium/compare/v1.4.3...v1.5.0) (2026-02-17)
+
+
+### Features
+
+* **UI:** add sticky Ad Hoc disclaimer banner ([#55](https://github.com/adhocteam/copyright-compendium/issues/55)) ([0c8704a](https://github.com/adhocteam/copyright-compendium/commit/0c8704a54b5735121b53f294fded3cce9f5d79a7)), closes [#53](https://github.com/adhocteam/copyright-compendium/issues/53) [#00966](https://github.com/adhocteam/copyright-compendium/issues/00966)
+
 ### [1.4.3](https://github.com/adhocteam/copyright-compendium/compare/v1.4.2...v1.4.3) (2026-02-16)
 
 
