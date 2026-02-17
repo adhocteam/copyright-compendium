@@ -621,6 +621,33 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTranslationProgress(progress);
     });
 
+    // --- Disclaimer Banner Scroll Compression ---
+    const disclaimerBanner = document.getElementById('disclaimer-banner');
+    if (disclaimerBanner && chapterContent) {
+        let disclaimerCompressed = false;
+        const SCROLL_THRESHOLD = 50; // px scrolled before compressing
+
+        function updateDisclaimerState(scrollTop: number): void {
+            if (scrollTop > SCROLL_THRESHOLD && !disclaimerCompressed) {
+                disclaimerBanner!.classList.add('compressed');
+                disclaimerCompressed = true;
+            } else if (scrollTop <= SCROLL_THRESHOLD && disclaimerCompressed) {
+                disclaimerBanner!.classList.remove('compressed');
+                disclaimerCompressed = false;
+            }
+        }
+
+        // Desktop: content area scrolls internally
+        chapterContent.addEventListener('scroll', () => {
+            updateDisclaimerState(chapterContent!.scrollTop);
+        }, { passive: true });
+
+        // Mobile: body/window scrolls instead (content overflow-y is visible)
+        window.addEventListener('scroll', () => {
+            updateDisclaimerState(window.scrollY);
+        }, { passive: true });
+    }
+
     // --- State Variables ---
     // --- State Variables ---
     let highlightMarkInstance: MarkInstance;
