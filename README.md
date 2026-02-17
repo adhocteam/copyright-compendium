@@ -12,6 +12,9 @@ Watch a short walkthrough of the Compendium Viewer in action — showing chapter
 
 > **[Try it live →](https://compendium.adhocteam.us)**
 
+## Features
+- **Prototype Disclaimer**: Clear distinction from official government sites with a [detailed disclaimer banner](docs/disclaimer-banner.md).
+
 # Technology Stack
 
 - **Frontend**: TypeScript with Vite build system

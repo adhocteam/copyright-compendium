@@ -9,6 +9,8 @@ theme:
   palette:
     primary: blue
     accent: blue
+  logo: img/logo.svg
+  favicon: img/logo.svg
   features:
     - navigation.tabs
     - navigation.sections
@@ -17,6 +19,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+copyright: Copyright &copy; 2026 Ad Hoc, LLC
 
 plugins:
   - search
@@ -45,6 +48,7 @@ nav:
     - PDF Text Tests: pdf-text-tests.md
     - PDF to HTML Comparison: compare-pdf-html.md
   - Features:
+    - Disclaimer Banner: disclaimer-banner.md
     - Translation Feature: translation-feature.md
     - Translation Implementation: translation-implementation.md
     - Translation Fix Summary: translation-fix-summary.md
