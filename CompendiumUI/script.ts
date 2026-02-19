@@ -1850,16 +1850,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     // --- Define What Happens On Select ---
                     onSelect({ item, setQuery, setIsOpen }) {
-                        // Example: Navigate to a product page or log the selection
                         console.log('Selected:', item);
-                        // If you have product URLs in your index (e.g., item.url)
+                        setIsOpen(false);
                         if (item.url) {
                             // Security: Validate URL origin before navigation to prevent open redirect
                             try {
                                 const targetUrl = new URL(item.url, window.location.origin);
                                 // Only navigate to URLs on the same origin
                                 if (targetUrl.origin === window.location.origin) {
-                                    window.location.href = targetUrl.toString();
+                                    // Use SPA navigation instead of a full-page reload
+                                    const pathname = targetUrl.pathname;
+                                    const potentialFilename = pathname.startsWith('/') ? pathname.substring(1) : pathname;
+                                    const targetHash = targetUrl.hash ? targetUrl.hash.substring(1) : null;
+                                    if (potentialFilename) {
+                                        loadContent(potentialFilename, { updateHistory: true, targetHash: targetHash, isInitialLoad: false });
+                                    }
                                 } else {
                                     console.warn('External URL in search result blocked for security:', item.url);
                                 }
@@ -1867,15 +1872,20 @@ document.addEventListener('DOMContentLoaded', () => {
                                 console.error('Invalid URL in search result:', item.url, error);
                             }
                         } else {
-                            // Or maybe fill the input with the selected item's name
-                            setQuery(item.title);
-                            setIsOpen(false); // Close the dropdown
-                            // You might want to trigger a full search here if needed
+                            // No URL available — highlight the item title in the current chapter
+                            const searchTerm = item.sectionTitle || item.title;
+                            setQuery(searchTerm);
+                            performSearch(searchTerm);
                         }
                     },
                 },
                 // You can add more sources here (e.g., searching multiple indices)
             ];
+        },
+
+        // Trigger in-page highlighting when the user submits the query (e.g. presses Enter)
+        onSubmit({ state }) {
+            performSearch(state.query);
         },
 
         // Optional: Customize Autocomplete appearance and behavior further
