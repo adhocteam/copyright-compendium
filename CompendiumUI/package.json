@@ -1,6 +1,6 @@
 {
   "name": "copyright-compendium-viewer",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "dependencies": {
     "@algolia/autocomplete-js": "^1.19.0",
     "@algolia/autocomplete-theme-classic": "^1.19.0",

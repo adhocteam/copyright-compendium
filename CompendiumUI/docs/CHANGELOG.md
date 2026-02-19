@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/adhocteam/copyright-compendium/compare/v1.5.1...v1.5.2) (2026-02-19)
+
+
+### Bug Fixes
+
+* **search:** autocomplete suggestions and Enter key now deliver results ([#59](https://github.com/adhocteam/copyright-compendium/issues/59)) ([427d05b](https://github.com/adhocteam/copyright-compendium/commit/427d05bf03f86b13eedc3974dc4fd029d7a23964))
+
 ### [1.5.1](https://github.com/adhocteam/copyright-compendium/compare/v1.5.0...v1.5.1) (2026-02-17)
 
 
