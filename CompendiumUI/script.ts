@@ -46,6 +46,21 @@ interface AlgoliaResult {
     hits: AlgoliaItem[];
 }
 
+export function replaceUrlOrigin(originalUrl: string, newOrigin: string): string {
+    try {
+        const url = new URL(originalUrl);
+        const newOriginUrl = new URL(newOrigin);
+        url.protocol = newOriginUrl.protocol;
+        url.host = newOriginUrl.host;
+        url.port = newOriginUrl.port;
+        return url.toString();
+    } catch {
+        // If it's invalid or a relative path, return as is.
+        return originalUrl;
+    }
+}
+
+
 interface AlgoliaItem {
     objectID: string;
     title: string;
@@ -1855,12 +1870,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (item.url) {
                             // Security: Validate URL origin before navigation to prevent open redirect
                             try {
-                                const targetUrl = new URL(item.url, window.location.origin);
-                                // Only navigate to URLs on the same origin
+                                const targetUrl = new URL(replaceUrlOrigin(item.url, window.location.origin), window.location.origin);
+                                // Only navigate to URLs on the same origin (this will now pass locally)
                                 if (targetUrl.origin === window.location.origin) {
                                     // Use SPA navigation instead of a full-page reload
                                     const pathname = targetUrl.pathname;
                                     const potentialFilename = pathname.startsWith('/') ? pathname.substring(1) : pathname;
+
                                     const targetHash = targetUrl.hash ? targetUrl.hash.substring(1) : null;
                                     if (potentialFilename) {
                                         loadContent(potentialFilename, { updateHistory: true, targetHash: targetHash, isInitialLoad: false });
