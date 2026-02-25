@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/adhocteam/copyright-compendium/compare/v1.5.2...v1.6.0) (2026-02-25)
+
+
+### Features
+
+* extract header disclaimer urls to urls.json ([#61](https://github.com/adhocteam/copyright-compendium/issues/61)) ([867e513](https://github.com/adhocteam/copyright-compendium/commit/867e5139974a12861d90d8721e30db2a669a2f6a))
+
 ### [1.5.2](https://github.com/adhocteam/copyright-compendium/compare/v1.5.1...v1.5.2) (2026-02-19)
 
 
