@@ -5,6 +5,7 @@ import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
 
 import { chapters } from './chapters';
 import { version } from './package.json';
+import urls from './urls.json';
 
 // --- Type Definitions ---
 declare global {
@@ -119,10 +120,6 @@ declare global {
         // Deprecated/Early experimental
         ai?: {
             translator?: TranslatorFactory;
-        };
-
-        MyAppGlossary?: {
-            refreshTooltips?: () => void;
         };
     }
 }
@@ -554,6 +551,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (versionNumberElement) {
         versionNumberElement.textContent = version;
     }
+
+    // Configured URLs
+    const blogPostLinks = document.querySelectorAll('.blog-post-link');
+    blogPostLinks.forEach((link) => {
+        (link as HTMLAnchorElement).href = urls.blogPostUrl;
+    });
+
+    const adHocLinks = document.querySelectorAll('.ad-hoc-link');
+    adHocLinks.forEach((link) => {
+        (link as HTMLAnchorElement).href = urls.adHocUrl;
+    });
+
+    const aboutLinks = document.querySelectorAll('.about-link');
+    aboutLinks.forEach((link) => {
+        (link as HTMLAnchorElement).href = urls.aboutUrl;
+    });
+
+    const githubLinks = document.querySelectorAll('.github-link');
+    githubLinks.forEach((link) => {
+        (link as HTMLAnchorElement).href = urls.githubUrl;
+    });
+
+    const copyrightGovLinks = document.querySelectorAll('.copyright-gov-link');
+    copyrightGovLinks.forEach((link) => {
+        (link as HTMLAnchorElement).href = urls.copyrightGovUrl;
+    });
 
 
     // --- Data ---
