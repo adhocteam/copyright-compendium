@@ -5,3 +5,9 @@ pydantic
 beautifulsoup4
 lxml
 aiohttp
+langchain
+langchain-core
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-community
