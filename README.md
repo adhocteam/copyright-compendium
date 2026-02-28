@@ -96,7 +96,7 @@ docker compose up -d --build
 task docker:compose:up
 ```
 
-The UI will be available at `http://localhost:80` (or `http://localhost:8080` if running just the UI container), and the FastAPI backend at `http://localhost:8000`.
+The UI will be available at `http://localhost:8001` (or `http://localhost:8080` if running just the UI container), and the FastAPI backend at `http://localhost:8000`.
 
 To stop the full stack:
 ```bash
