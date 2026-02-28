@@ -18,6 +18,16 @@ tasks:
     cmds:
       - docker run --rm -p 8080:80 {{.IMAGE_NAME}}
 
+  docker:compose:up:
+    desc: Start the full application stack (UI, API, Elasticsearch)
+    cmds:
+      - docker-compose up -d --build
+
+  docker:compose:down:
+    desc: Stop the application stack and remove containers
+    cmds:
+      - docker-compose down
+
   # ── Local dev ───────────────────────────────────────────
   dev:
     desc: Start the Vite dev server (hot-reload)

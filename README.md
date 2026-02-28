@@ -88,15 +88,23 @@ npm run preview  # preview the production build locally
 
 ### With Docker
 
-A multi-stage `Dockerfile` is included in `CompendiumUI/`. It installs dependencies, builds the Vite app, and serves the output with nginx.
+A multi-stage `Dockerfile` is included in `CompendiumUI/`. It installs dependencies, builds the Vite app, and serves the output with nginx. You can also run the entire application stack (UI, FastAPI backend, and Elasticsearch) using Docker Compose.
 
 ```bash
-# From the repository root
-docker build -t copyright-compendium ./CompendiumUI
-docker run --rm -p 8080:80 copyright-compendium
+# Start the full application stack
+docker-compose up -d --build
+
+# Or using Task
+task docker:compose:up
 ```
 
-The site will be available at `http://localhost:8080`.
+The UI will be available at `http://localhost:80` (or `http://localhost:8080` if running just the UI container), and the FastAPI backend at `http://localhost:8000`.
+
+To stop the full stack:
+```bash
+docker-compose down
+# Or: task docker:compose:down
+```
 
 ### Task Runner
 
@@ -107,7 +115,9 @@ A [`Taskfile.yml`](Taskfile.yml) is included for common workflows. Install [Task
 | `task dev` | Start Vite dev server with hot-reload |
 | `task build` | Build the production bundle |
 | `task typecheck` | Run TypeScript type checking |
-| `task docker:run` | Build and run the Docker container on port 8080 |
+| `task docker:run` | Build and run the UI Docker container on port 8080 |
+| `task docker:compose:up` | Start the full application stack (UI, API, Elasticsearch) |
+| `task docker:compose:down` | Stop the application stack and remove containers |
 | `task download-pdfs` | Download Compendium PDFs from copyright.gov |
 | `task pdf-to-text` | Extract text from PDFs into `.txt` files |
 | `task process-pdfs` | Convert PDFs to XHTML via Gemini API |
