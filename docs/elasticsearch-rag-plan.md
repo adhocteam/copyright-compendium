@@ -57,20 +57,39 @@ A Python script to ingest the content into Elasticsearch.
   - `xhtml_id`: the `id` attribute of the element (e.g., `sec-101` or `subsec-101-1`), used to construct the live link.
   - `filename`: the source HTML filename (e.g. `ch100-general-background.html`).
 
+## Agent Orchestration Strategy
+
+This feature should be implemented modularly, ideally by delegating tasks sequentially to specialized agents or separate sessions. 
+
+1. **Agent 1 (Frontend Setup)**: Focuses entirely on `CompendiumUI`. Given this plan, the agent creates `copyright-bot-src.html`, builds out the UI components per USWDS styling standards, links it in `chapters.ts`, and sets up the reversible highlighting feature in `script.ts`.
+2. **Agent 2 (Backend & Elastic Infrastructure)**: Focuses on setting up the Docker environment and the initial FastAPI skeleton. The agent creates the root `docker-compose.yml`, the `api/Dockerfile`, and `api/main.py` scaffolding exposing the two main endpoints.
+3. **Agent 3 (Data Ingestion)**: Develops the `api/indexer.py` script, parses the HTML locally from `CompendiumUI`, constructs the precise hierarchical Elasticsearch mapping for chunks, and verifies that the Elasticsearch container is correctly populated.
+4. **Agent 4 (RAG Integration & E2E)**: Focuses on the LLM orchestration logic in `/api/rag-query`, connects the FastAPI backend to the `CompendiumUI` frontend, and executes end-to-end testing to verify the complete user flow.
+
 ## Verification Plan
 
-### Automated Tests
-1. **Frontend Tests**: 
-   - Update existing Vitest files (e.g., `CompendiumUI/navigation.test.ts`) to assert `copyright-bot.html` exists in the generated TOC.
-   - Add `CompendiumUI/copyright-bot.test.ts` to mock the FastAPI endpoint and ensure the UI renders the RAG summary and snippets correctly. Run using `npm run test` inside `CompendiumUI/`.
-2. **Backend API Tests**: 
-   - Add Pytest suite in `api/tests/` to mock Elasticsearch and the LLM, validating `GET /api/search` and `POST /api/rag-query` schemas. Run using `pytest` inside the `api/` container.
-3. **Indexer Tests**:
-   - Add Pytest cases for `indexer.py` ensuring it properly chunks a sample `ch100-general-background-src.html` file into the correct number of expected sections with the correct `xhtml_id`s.
+### Automated Tests Strategy
+A robust, automated CI-ready testing suite is required for this new RAG architecture. 
 
-### Manual Verification
-1. Run `docker-compose up` at the root of the repository.
-2. Bash into the `api` container and run the ingestion script `python indexer.py`. Verify `curl http://elasticsearch:9200/compendium/_count` returns the expected number of section documents.
-3. Open the locally served `CompendiumUI` app on the browser (e.g., typically `http://localhost:80`), load `Ask CopyrightBot` from the Chapter menu.
-4. Issue a query like "How do I register a motion picture?"
-5. Verify that the UI displays an AI-generated answer, and below it, exact snippets with clickable links highlighting `ch*-src.html#sec-xxx` that successfully navigate to the respective headings in the viewer.
+1. **Frontend Unit Tests (Vitest)**: 
+   - *Navigation & Layout*: Assert `copyright-bot.html` is generated dynamically in the TOC (`CompendiumUI/navigation.test.ts`).
+   - *Highlighting Logic*: Add unit tests for `script.ts` ensuring the specific hash navigation correctly invokes `mark.js` (or similar) to apply and revert highlights on click.
+   - *Search UI Component*: Add `CompendiumUI/copyright-bot.test.ts` to mock the REST FastAPI responses and ensure both the RAG text and standard ES snippets map to the DOM correctly.
+2. **Backend Unit & Integration Tests (Pytest)**: 
+   - *API Endpoints*: Add a test suite in `api/tests/test_main.py` using FastAPI's `TestClient` to validate the OpenAPI schemas for `GET /api/search` and `POST /api/rag-query`.
+   - *Service Mocking*: In the backend tests, mock out the downstream Elasticsearch connection and LLM API calls to ensure business logic remains isolated and executes quickly.
+3. **Indexer Unit Tests**:
+   - Create `api/tests/test_indexer.py`. Feed it a mocked excerpt of `ch100-general-background-src.html`. 
+   - Verify the HTML parser accurately delineates parent `section_title` and `subsection_title` bounds and that it correctly assigns the `xhtml_id`.
+
+### Integration & End-to-End Tests
+1. **Container Integration test**: 
+   - A shell script or Task runner that spins up the root `docker-compose up -d`.
+   - A test script runs `python indexer.py` and then verifies `curl http://localhost:9200/compendium/_count` returns `> 0` documents.
+2. **End-to-End Browser Flow**:
+   - Utilize Playwright or Selenium (if applicable to the environment) to script user interactions:
+     a. Load the server port.
+     b. Click "Ask CopyrightBot".
+     c. Type a query into the form and submit.
+     d. Wait for the summarized content and the exact citation result list.
+     e. Click a citation link and assert that the browser successfully targets the correct `xhtml_id` anchor on the specific chapter page, and verify the reversible highlight CSS class exists.
