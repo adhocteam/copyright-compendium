@@ -9,7 +9,7 @@ The objective is to replace the existing Algolia search with an Elasticsearch-ba
 #### [NEW] `CompendiumUI/public/copyright-bot-src.html`
 Create a new HTML page following the structure of existing pages like `about-src.html`. This page will include:
 - A search input for natural language queries.
-- A results container to display both the AI-generated RAG summary and the standard Elasticsearch results (with snippets and live links back to the specific sections).
+- A results container to display both the AI-generated RAG summary and the standard Elasticsearch results list (the exact results that the LLM used to generate the summary, complete with highlighted snippets and live links back to the specific sections).
 - JavaScript to interact with the new Dockerized FastAPI backend.
 
 #### [MODIFY] `CompendiumUI/chapters.ts`
@@ -19,7 +19,8 @@ Add the "Ask CopyrightBot" page to the navigation list so it appears in the Comp
 ```
 
 #### [MODIFY] `CompendiumUI/public/index-src.html` & `CompendiumUI/script.ts`
-Remove Algolia-specific scripts, CSS, and API usage (`@algolia/autocomplete-js`, `algoliasearch/lite`). Replace the top header search bar to either directly query the new backend or redirect the user to the `copyright-bot-src.html` page.
+Remove Algolia-specific scripts, CSS, and API usage (`@algolia/autocomplete-js`, `algoliasearch/lite`). Replace the top header search bar to either directly query the new backend or redirect the user to the `copyright-bot-src.html` page. 
+Implement a reversible highlighting mechanism (e.g., using `mark.js`) in `script.ts` that listens for a URL hash containing a specific highlighting parameter or query string passed from the search page. When a user navigates to a live link, the target text will be highlighted temporarily, perhaps fading out or clearing when the user clicks elsewhere.
 
 ---
 
@@ -37,8 +38,8 @@ Create a new backend service directory `api/`.
 
 #### [NEW] `api/main.py`
 FastAPI application with OpenAPI documentation enabled by default. Two main routes:
-- `GET /api/search`: Proxies a query to Elasticsearch. Returns JSON containing hits with `chapter`, `section`, `title`, context `snippet`, and `link` (e.g. `/ch100-general-background.html#sec-101`).
-- `POST /api/rag-query`: Accepts a user query, fetches top K documents from Elasticsearch, constructs a system prompt with the context chunks, queries an LLM (e.g., via Gemini API or a local model), and returns a JSON object containing the RAG summary and the source citations.
+- `GET /api/search`: Proxies a query to Elasticsearch. Exposes an ES highlighting configuration over the `content` field. Returns JSON containing hits with `chapter`, `section`, `subsection`, `title`, context `snippet` (with ES `<em>` highlights), and `link` (e.g. `/ch100-general-background.html#sec-101?hlt=keyword`).
+- `POST /api/rag-query`: Accepts a user query, fetches top K documents using the `search` logic from Elasticsearch, constructs a system prompt with the context chunks, queries an LLM (e.g., via Gemini API or a local model), and returns a JSON object containing **both** the RAG summary and the list of Elasticsearch results that served as the context.
 
 ---
 
@@ -47,12 +48,13 @@ FastAPI application with OpenAPI documentation enabled by default. Two main rout
 #### [NEW] `api/indexer.py`
 A Python script to ingest the content into Elasticsearch. 
 - **Source Data**: It will parse the local `CompendiumUI/public/ch*-src.html` files.
-- **Index Strategy**: It will utilize BeautifulSoup to parse `<chapter>`, `<section>`, `<paragraph>`, and `<list>` tags.
-- **Document Mapping**: Each Elasticsearch document will represent a **Section** or **Subsection** for granularity, reducing the text length per doc natively suited for RAG.
+- **Index Strategy**: It will utilize BeautifulSoup to parse `<chapter>`, `<section>`, `<subsection>`, `<paragraph>`, and `<list>` tags.
+- **Document Mapping**: Each Elasticsearch document will represent a discrete granular element mapped hierarchically. That is, resolving content at the **Chapter**, **Section**, and **Subsection** levels:
   - `chapter_title`: weight boosted.
   - `section_title`: weight boosted.
-  - `content`: the paragraph/list text inside the section.
-  - `xhtml_id`: the `id` attribute of the section (e.g., `sec-101`), used to construct the live link.
+  - `subsection_title`: weight boosted.
+  - `content`: the paragraph/list text inside the lowest-level element.
+  - `xhtml_id`: the `id` attribute of the element (e.g., `sec-101` or `subsec-101-1`), used to construct the live link.
   - `filename`: the source HTML filename (e.g. `ch100-general-background.html`).
 
 ## Verification Plan
