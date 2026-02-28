@@ -1,4 +1,7 @@
 fastapi
 uvicorn
-elasticsearch
+elasticsearch==8.12.1
 pydantic
+beautifulsoup4
+lxml
+aiohttp

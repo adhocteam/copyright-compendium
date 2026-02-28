@@ -17,9 +17,9 @@ async def create_index():
     mapping = {
         "mappings": {
             "properties": {
-                "chapter_title": {"type": "text", "boost": 3},
-                "section_title": {"type": "text", "boost": 2},
-                "subsection_title": {"type": "text", "boost": 1.5},
+                "chapter_title": {"type": "text"},
+                "section_title": {"type": "text"},
+                "subsection_title": {"type": "text"},
                 "content": {"type": "text"},
                 "xhtml_id": {"type": "keyword"},
                 "filename": {"type": "keyword"}
