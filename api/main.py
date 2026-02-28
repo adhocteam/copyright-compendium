@@ -81,8 +81,17 @@ async def rag_query(request: RagQuery):
     Placeholder for the RAG endpoint.
     Should fetch documents from ES, trigger LLM, and return summary + exact results list.
     """
+    llm_model = os.getenv("LLM_MODEL_NAME", "gemma:2b")
+    llm_api_key = os.getenv("LLM_API_KEY", "")
+
+    if not llm_api_key or llm_api_key == "your_api_key_here":
+        return {
+            "summary": "The RAG feature requires an LLM API key to function. Please set LLM_API_KEY and LLM_MODEL_NAME in your environment or api/.env file as detailed in the README.",
+            "sources": []
+        }
+
     # TODO: Implement full RAG pattern with LLM
     return {
-        "summary": "This is an experimental RAG summary feature currently under development.",
+        "summary": f"This is an experimental RAG summary feature currently under development. Configured to use model: {llm_model}.",
         "sources": []
     }
