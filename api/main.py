@@ -23,6 +23,10 @@ INDEX_NAME = "compendium"
 class RagQuery(BaseModel):
     query: str
 
+@app.get("/")
+async def root():
+    return {"status": "ok", "message": "Copyright Compendium API is running"}
+
 @app.get("/api/search")
 async def search(q: str):
     """
