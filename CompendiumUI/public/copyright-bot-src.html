@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Ask CopyrightBot</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<chapter>
+
+			<head>
+				<title>Ask CopyrightBot</title>
+			</head>
+			<level_title>Ask CopyrightBot (Experimental AI Search)</level_title>
+			<paragraph>
+				Ask questions about the U.S. Copyright Office's <em>Compendium of U.S. Copyright Office
+					Practices</em>, Third Edition, using natural language. This feature uses a
+				Retrieval-Augmented Generation (RAG) model to summarize relevant sections.
+			</paragraph>
+
+			<section id="sec-bot-interface">
+				<section_title>Search</section_title>
+				<form id="rag-search-form" class="usa-form" style="max-width: none;"
+					onsubmit="event.preventDefault(); window.submitRagSearch && window.submitRagSearch();">
+					<label class="usa-label" for="rag-query">Ask a question</label>
+					<div style="display: flex; gap: 1rem;">
+						<input class="usa-input" id="rag-query" name="rag-query" type="text"
+							required style="flex-grow: 1; max-width: none;" />
+						<button class="usa-button" type="submit">Ask</button>
+					</div>
+				</form>
+
+				<div id="rag-loading" style="display: none; margin-top: 2rem;">
+					<p><em>Thinking... <span id="rag-loading-text"></span></em></p>
+				</div>
+
+				<div id="rag-results-container" style="display: none; margin-top: 2rem;">
+					<h3>AI Summary</h3>
+					<div id="rag-summary"
+						style="background-color: #f0f0f0; padding: 1rem; border-left: 4px solid #005ea2; margin-bottom: 2rem; white-space: pre-wrap;">
+					</div>
+
+					<h3>Sources</h3>
+					<div id="rag-sources"></div>
+				</div>
+			</section>
+		</chapter>
+	</body>
+
+</html>

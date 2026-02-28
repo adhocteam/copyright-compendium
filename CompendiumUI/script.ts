@@ -1,8 +1,4 @@
 // --- START OF FILE script.ts ---
-import * as algoliasearchLite from 'algoliasearch/lite';
-import { autocomplete } from '@algolia/autocomplete-js';
-import '@algolia/autocomplete-theme-classic/dist/theme.css'; // Import theme CSS
-
 import { chapters } from './chapters';
 import { version } from './package.json';
 import urls from './urls.json';
@@ -42,11 +38,6 @@ declare const Mark: {
     new(context: string | HTMLElement | NodeList | HTMLElement[]): MarkInstance;
 };
 
-// Algolia Types
-interface AlgoliaResult {
-    hits: AlgoliaItem[];
-}
-
 export function replaceUrlOrigin(originalUrl: string, newOrigin: string): string {
     try {
         const url = new URL(originalUrl);
@@ -59,21 +50,6 @@ export function replaceUrlOrigin(originalUrl: string, newOrigin: string): string
         // If it's invalid or a relative path, return as is.
         return originalUrl;
     }
-}
-
-
-interface AlgoliaItem {
-    objectID: string;
-    title: string;
-    content: string;
-    url?: string;
-    sectionTitle?: string;
-    [key: string]: any;
-    _snippetResult?: {
-        content?: {
-            value: string;
-        };
-    };
 }
 
 interface LoadContentOptions {
@@ -880,11 +856,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!forceReload && filename === currentFilename && !isInitialLoad) {
             console.log(`Content ${filename} already loaded.`);
             if (targetHash) {
-                const targetElement = document.getElementById(targetHash);
+                const actualHash = targetHash.split('?')[0] || '';
+                const searchParams = new URLSearchParams(targetHash.split('?')[1] || '');
+                const hltParam = searchParams.get('hlt');
+
+                const targetElement = document.getElementById(actualHash);
                 if (targetElement) {
                     scrollElementIntoView(targetElement, true, 'start');
                     if (filename !== 'glossary.html') {
-                        updateSideNavCurrent(targetHash);
+                        updateSideNavCurrent(actualHash);
                     }
                     if (updateHistory) {
                         const state = { filename: filename, hash: targetHash }; const title = document.title; const url = `/${filename}#${targetHash}`;
@@ -892,6 +872,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         else { history.pushState(state, title, url); }
                         // console.log(`History ${history.state && history.state.filename === filename ? 'replaceState' : 'pushState'} (hash update):`, state, title, url);
                     }
+                }
+
+                if (hltParam) {
+                    performSearch(hltParam);
                 }
             } else {
                 if (!isInitialLoad && chapterContent) {
@@ -1005,18 +989,25 @@ document.addEventListener('DOMContentLoaded', () => {
             if (finalHashToScroll) {
                 // Use a slightly longer delay to ensure layout potentially settles after sidenav show/hide
                 setTimeout(() => {
-                    const targetElement = document.getElementById(finalHashToScroll);
+                    const actualHash = finalHashToScroll.split('?')[0] || '';
+                    const searchParams = new URLSearchParams(finalHashToScroll.split('?')[1] || '');
+                    const hltParam = searchParams.get('hlt');
+
+                    const targetElement = document.getElementById(actualHash);
                     if (targetElement) {
-                        console.log("Scrolling to target:", finalHashToScroll);
+                        console.log("Scrolling to target:", actualHash);
                         scrollElementIntoView(targetElement, true, 'start');
                         if (filename !== 'glossary.html') {
-                            updateSideNavCurrent(finalHashToScroll);
+                            updateSideNavCurrent(actualHash);
                         }
                     } else {
-                        console.warn(`Target element ID "${finalHashToScroll}" not found after loading content.`);
+                        console.warn(`Target element ID "${actualHash}" not found after loading content.`);
                         if (filename !== 'glossary.html') {
                             updateSideNavCurrent(null);
                         }
+                    }
+                    if (hltParam) {
+                        performSearch(hltParam);
                     }
                 }, 200); // Increased delay
             } else if (!isInitialLoad) {
@@ -1749,16 +1740,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (headerSearchForm && headerSearchInput) {
         headerSearchForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            performSearch((headerSearchInput as HTMLInputElement).value);
-        });
-        headerSearchInput.addEventListener('input', () => {
-            if ((headerSearchInput as HTMLInputElement).value.trim() === '') {
-                clearHighlighting();
+            const query = (headerSearchInput as HTMLInputElement).value.trim();
+            if (query) {
+                window.location.hash = `#copyright-bot.html?q=${encodeURIComponent(query)}`;
             }
         });
         headerSearchInput.addEventListener('keyup', (e) => {
             if (e.key === 'Enter') {
-                performSearch((headerSearchInput as HTMLInputElement).value);
+                const query = (headerSearchInput as HTMLInputElement).value.trim();
+                if (query) {
+                    window.location.hash = `#copyright-bot.html?q=${encodeURIComponent(query)}`;
+                }
             }
         });
     } else {
@@ -1798,140 +1790,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleInitialLoad(); // This triggers the first loadContent
     console.log("Initialization complete (event listeners attached, initial load started).");
 
-    // --- Configuration ---
-    // Replace with your actual Algolia credentials
-    const ALGOLIA_APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID;
-    const ALGOLIA_SEARCH_KEY = import.meta.env.VITE_ALGOLIA_SEARCH_KEY;
-    const ALGOLIA_INDEX_NAME = 'copyright_compendium_vercel_app_v8o52jy05q_pages';
-
-    if (!ALGOLIA_APP_ID || !ALGOLIA_SEARCH_KEY) {
-        console.error("Algolia environment variables are missing!");
-        // Potentially disable search functionality here
-    }
-
-    // --- Initialize Algolia Client ---
-    // Use algoliasearch.lite for search-only operations
-    const searchClient = algoliasearchLite.liteClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
-
-    // --- Initialize Autocomplete ---
-    // Ensure the DOM is ready if not using defer or module imports
-    // document.addEventListener('DOMContentLoaded', () => { ... });
-
-    autocomplete<AlgoliaItem>({
-        container: '#autocomplete-search', // CSS selector for your container div
-        placeholder: 'Search sections...', // Placeholder text for the input
-        autoFocus: false, // Don't auto-focus on page load
-        // openOnFocus: true, // Uncomment to show suggestions immediately on focus
-
-        // --- Define How to Get Suggestions ---
-        getSources({ query }: { query: string }) {
-            return [
-                {
-                    sourceId: 'compendium', // Unique identifier for this source
-                    getItems() {
-                        // Fetch suggestions from your Algolia index
-                        return searchClient.search([
-                            {
-                                indexName: ALGOLIA_INDEX_NAME,
-                                params: {
-                                    query: query,
-                                    hitsPerPage: 8, // Limit the number of suggestions
-                                    highlightPreTag: '<mark>', // Highlight start tag
-                                    highlightPostTag: '</mark>', // Highlight end tag
-                                    attributesToHighlight: ['title', 'content'],
-                                    attributesToSnippet: ['content:10'], // Optional: Snippet relevant attributes
-                                    snippetEllipsisText: '...',
-                                },
-                            },
-                        ])
-                            .then(({ results }) => {
-                                // Return the hits array from the results
-                                return (results[0] as unknown as AlgoliaResult)?.hits || [];
-                            });
-                    },
-                    // --- Define How to Render Suggestions ---
-                    templates: {
-                        item({ item, components, html }) {
-                            // Customize how each suggestion item looks
-                            // Use components.Highlight to highlight matching text
-                            // Use item._snippetResult for snippets if configured
-                            // --- Description/Snippet Part ---
-                            // Get the raw snippet string from Algolia. This string contains
-                            // the snippet text PLUS the raw HTML highlight tags (e.g., <em>...</em>)
-                            const rawSnippetHtml = item._snippetResult?.content?.value;
-
-                            // Conditionally create the description element using dangerouslySetInnerHTML
-                            const contentElement = rawSnippetHtml ? html`
-                                      <div class="aa-ItemContentDescription"
-                                           dangerouslySetInnerHTML=${{ __html: rawSnippetHtml }}>
-                                        </div>` : null; // Set to null if no snippet
-
-                            return html`<div class="aa-ItemWrapper">
-                          <div class="aa-ItemContent">
-                            <div class="aa-ItemContentBody">
-                              <div class="aa-ItemContentTitle">
-                                ${components.Highlight({ hit: item, attribute: 'sectionTitle' })}  </div>
-                              ${item._snippetResult?.content ? html`
-                                <div class="aa-ItemContentDescription">
-                                    ${contentElement || '' /* Render description or empty string */}
-                                   <!-- ${components.Snippet({ hit: item, attribute: 'content' })} -->
-                                </div>
-                              ` : ''}
-                            </div>
-                          </div>
-                        </div>`;
-                        },
-                        noResults() {
-                            return 'No results found.';
-                        },
-                        // You can also customize header, footer, etc.
-                    },
-                    // --- Define What Happens On Select ---
-                    onSelect({ item, setQuery, setIsOpen }) {
-                        console.log('Selected:', item);
-                        setIsOpen(false);
-                        if (item.url) {
-                            // Security: Validate URL origin before navigation to prevent open redirect
-                            try {
-                                const targetUrl = new URL(replaceUrlOrigin(item.url, window.location.origin), window.location.origin);
-                                // Only navigate to URLs on the same origin (this will now pass locally)
-                                if (targetUrl.origin === window.location.origin) {
-                                    // Use SPA navigation instead of a full-page reload
-                                    const pathname = targetUrl.pathname;
-                                    const potentialFilename = pathname.startsWith('/') ? pathname.substring(1) : pathname;
-
-                                    const targetHash = targetUrl.hash ? targetUrl.hash.substring(1) : null;
-                                    if (potentialFilename) {
-                                        loadContent(potentialFilename, { updateHistory: true, targetHash: targetHash, isInitialLoad: false });
-                                    }
-                                } else {
-                                    console.warn('External URL in search result blocked for security:', item.url);
-                                }
-                            } catch (error) {
-                                console.error('Invalid URL in search result:', item.url, error);
-                            }
-                        } else {
-                            // No URL available — highlight the item title in the current chapter
-                            const searchTerm = item.sectionTitle || item.title;
-                            setQuery(searchTerm);
-                            performSearch(searchTerm);
-                        }
-                    },
-                },
-                // You can add more sources here (e.g., searching multiple indices)
-            ];
-        },
-
-        // Trigger in-page highlighting when the user submits the query (e.g. presses Enter)
-        onSubmit({ state }) {
-            performSearch(state.query);
-        },
-
-        // Optional: Customize Autocomplete appearance and behavior further
-        // See Autocomplete.js documentation for more options
-        // Example: Detached mode (dropdown appears separate from input)
-        // detachedMediaQuery: '', // Always detached
-    });
+    // Removed Algolia Initialization
 
     // --- Translation Initialization ---
     // (translationService and updateTranslationProgress already defined above)

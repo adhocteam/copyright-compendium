@@ -3,12 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="algolia-site-verification" content="24E3347A9759430F" />
-    <!-- <base href="/"> -->
-
     <title>Compendium Viewer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/css/uswds.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -38,7 +33,14 @@
               <ul class="usa-nav__primary usa-accordion">
                 <li class="usa-nav__primary-item">
                   <section aria-label="Search component" id="search-component-wrapper">
-                    <div id="autocomplete-search"></div>
+                    <form class="usa-search usa-search--small" role="search" id="header-search-form">
+                      <label class="usa-sr-only" for="header-search-input">Search</label>
+                      <input class="usa-input" id="header-search-input" type="search" name="search"
+                        placeholder="Search..." />
+                      <button class="usa-button" type="submit" aria-label="Search">
+                        <img src="/assets/img/usa-icons/search.svg" class="usa-search__submit-icon" alt="Search" />
+                      </button>
+                    </form>
                   </section>
                 </li>
                 <li class="usa-nav__primary-item">
@@ -68,11 +70,7 @@
       </main>
 
     </div> <!-- End grid-container -->
-    <!-- Algolia Search Client -->
-    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
-
-    <!-- Algolia Autocomplete Core -->
-    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1"></script>
+    <!-- USWDS Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds-init.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.12.0/js/uswds.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>

@@ -5,6 +5,7 @@ export interface Chapter {
 }
 
 export const chapters: Chapter[] = [
+	{ number: "", title: "Ask CopyrightBot", filename: "copyright-bot.html" },
 	{ number: "", title: "About This Site", filename: "about.html" },
 	{ number: "", title: "Introduction: Intro to the Compendium", filename: "introduction.html" },
 	{ number: "100", title: "U.S. Copyright Office and the Copyright Law: General Background", filename: "ch100-general-background.html" },
