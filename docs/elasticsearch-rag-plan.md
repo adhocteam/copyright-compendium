@@ -25,11 +25,14 @@ Remove Algolia-specific scripts, CSS, and API usage (`@algolia/autocomplete-js`,
 
 ### 2. Dockerized FastAPI and Elasticsearch App
 
-#### [NEW] `api/Dockerfile` & `api/docker-compose.yml`
+#### [NEW] `docker-compose.yml` (Root Level)
+Create a unified `docker-compose.yml` at the root of the repository to manage the entire application stack. This will orchestrate three services:
+1. `ui`: The frontend application built from the existing `CompendiumUI/Dockerfile` (served via Nginx).
+2. `api`: The FastAPI backend service built from `api/Dockerfile`.
+3. `elasticsearch`: The free version of Elasticsearch (e.g., `docker.elastic.co/elasticsearch/elasticsearch:8.x.x` with `xpack.security.enabled=false` for local dev or configured properly).
+
+#### [NEW] `api/Dockerfile`
 Create a new backend service directory `api/`. 
-- `docker-compose.yml` will run two services:
-  1. `elasticsearch`: The free version of Elasticsearch (e.g. `docker.elastic.co/elasticsearch/elasticsearch:8.x.x` with `xpack.security.enabled=false` for local dev or configured properly).
-  2. `api`: The FastAPI application.
 - `Dockerfile` using `python:3.11-slim` running Uvicorn.
 
 #### [NEW] `api/main.py`
@@ -64,8 +67,8 @@ A Python script to ingest the content into Elasticsearch.
    - Add Pytest cases for `indexer.py` ensuring it properly chunks a sample `ch100-general-background-src.html` file into the correct number of expected sections with the correct `xhtml_id`s.
 
 ### Manual Verification
-1. Run `docker-compose up` in the `api/` directory.
-2. Run the ingestion script `python indexer.py` and verify `curl localhost:9200/compendium/_count` returns the expected number of section documents.
-3. Open the `CompendiumUI` app on the browser (e.g. via `npm run dev`), load `Ask CopyrightBot` from the Chapter menu.
+1. Run `docker-compose up` at the root of the repository.
+2. Bash into the `api` container and run the ingestion script `python indexer.py`. Verify `curl http://elasticsearch:9200/compendium/_count` returns the expected number of section documents.
+3. Open the locally served `CompendiumUI` app on the browser (e.g., typically `http://localhost:80`), load `Ask CopyrightBot` from the Chapter menu.
 4. Issue a query like "How do I register a motion picture?"
 5. Verify that the UI displays an AI-generated answer, and below it, exact snippets with clickable links highlighting `ch*-src.html#sec-xxx` that successfully navigate to the respective headings in the viewer.
