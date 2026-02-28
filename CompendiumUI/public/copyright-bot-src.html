@@ -24,11 +24,14 @@
 				<section_title>Search</section_title>
 				<form id="rag-search-form" class="usa-form" style="max-width: none;"
 					onsubmit="event.preventDefault(); window.submitRagSearch && window.submitRagSearch();">
-					<label class="usa-label" for="rag-query">Ask a question</label>
-					<div style="display: flex; gap: 1rem;">
-						<input class="usa-input" id="rag-query" name="rag-query" type="text"
-							required style="flex-grow: 1; max-width: none;" />
-						<button class="usa-button" type="submit">Ask</button>
+					<label class="usa-label" for="rag-query">Ask a question (Max 2
+						sentences)</label>
+					<div style="display: flex; gap: 1rem; align-items: flex-start;">
+						<textarea class="usa-textarea" id="rag-query" name="rag-query" required
+							style="flex-grow: 1; max-width: none;" rows="2" maxlength="400"
+							placeholder="Example: What is the registration process for a website?"></textarea>
+						<button class="usa-button" type="submit"
+							style="margin-top: 0;">Ask</button>
 					</div>
 				</form>
 
