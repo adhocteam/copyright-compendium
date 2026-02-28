@@ -35,14 +35,38 @@
 					</div>
 				</form>
 
-				<div id="rag-loading" style="display: none; margin-top: 2rem;">
-					<p><em>Thinking... <span id="rag-loading-text"></span></em></p>
+				<div id="rag-es-results" style="display: none; margin-top: 2rem;">
+					<h3>Search Results</h3>
+					<div id="rag-es-list"></div>
+					<button id="rag-es-load-more" class="usa-button usa-button--outline"
+						style="display: none; margin-top: 1rem;" type="button">Load
+						More</button>
+				</div>
+
+				<div id="rag-loading"
+					style="display: none; margin-top: 2rem; align-items: center; gap: 1rem;">
+					<div
+						style="border: 4px solid #f3f3f3; border-top: 4px solid #005ea2; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite;">
+					</div>
+					<style>
+						@keyframes spin {
+							0% {
+								transform: rotate(0deg);
+							}
+
+							100% {
+								transform: rotate(360deg);
+							}
+						}
+					</style>
+					<p style="margin: 0;"><em>Thoughtfully asking CopyrightBot... <span
+								id="rag-loading-text"></span></em></p>
 				</div>
 
 				<div id="rag-results-container" style="display: none; margin-top: 2rem;">
 					<h3>AI Summary</h3>
 					<div id="rag-summary"
-						style="background-color: #f0f0f0; padding: 1rem; border-left: 4px solid #005ea2; margin-bottom: 2rem; white-space: pre-wrap;">
+						style="background-color: #e1f3f8; padding: 1.5rem; border-left: 4px solid #005ea2; margin-bottom: 2rem; white-space: pre-wrap; font-size: 1.05rem; line-height: 1.6;">
 					</div>
 
 					<h3>Sources</h3>

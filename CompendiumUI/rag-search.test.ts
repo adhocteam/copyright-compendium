@@ -13,6 +13,12 @@ describe('CopyrightBot RAG Search Interface', () => {
                 <input id="rag-query" type="text" value="test query" />
             </div>
             <div id="rag-loading" style="display: none;"></div>
+            
+            <div id="rag-es-results" style="display: none;">
+                <div id="rag-es-list"></div>
+                <button id="rag-es-load-more" style="display: none;">Load More</button>
+            </div>
+            
             <div id="rag-results-container" style="display: none;"></div>
             <div id="rag-summary"></div>
             <div id="rag-sources"></div>
@@ -27,13 +33,13 @@ describe('CopyrightBot RAG Search Interface', () => {
 	});
 
 	it('should show loading state and then render results on successful fetch', async () => {
-		// Mock successful responses for both /api/search and /api/rag-query
+		// Mock successful responses
 		mockFetch.mockImplementation(async (url: string) => {
 			if (url.includes('/api/search')) {
 				return {
 					ok: true,
 					json: async () => ({
-						results: [{ link: '/ch100', title: 'Chapter 100', snippet: 'some snippet text' }]
+						results: [{ link: '/ch100', title: 'Chapter 100', chapter: 'Chapter 100', snippet: 'some snippet text' }]
 					})
 				};
 			}
@@ -42,7 +48,7 @@ describe('CopyrightBot RAG Search Interface', () => {
 					ok: true,
 					json: async () => ({
 						summary: "This is a mocked summary.",
-						sources: []
+						sources: [{ link: '/ch100', title: 'Chapter 100', chapter: 'Chapter 100' }]
 					})
 				};
 			}
@@ -54,21 +60,29 @@ describe('CopyrightBot RAG Search Interface', () => {
 
 		const loadingDiv = document.getElementById('rag-loading')!;
 		const resultsContainer = document.getElementById('rag-results-container')!;
+		const esResultsContainer = document.getElementById('rag-es-results')!;
 		const summaryDiv = document.getElementById('rag-summary')!;
 		const sourcesDiv = document.getElementById('rag-sources')!;
+		const esListDiv = document.getElementById('rag-es-list')!;
 
 		// Check if fetched correctly
-		expect(mockFetch).toHaveBeenCalledTimes(2);
+		// Since we decoupled, the searches aren't awaited together in Promise.all
+		// But vitest's await might flush microtasks, let's wait a bit for fetch to settle
+		await new Promise(resolve => setTimeout(resolve, 0));
 
 		// Verify UI states after promise resolution
 		expect(loadingDiv.style.display).toBe('none');
 		expect(resultsContainer.style.display).toBe('block');
+		expect(esResultsContainer.style.display).toBe('block');
 
 		// Verify Content
 		expect(summaryDiv.textContent).toBe('This is a mocked summary.');
 		expect(sourcesDiv.querySelector('ul')).not.toBeNull();
-		expect(sourcesDiv.querySelector('a')?.textContent).toBe('Chapter 100');
-		expect(sourcesDiv.innerHTML).toContain('some snippet text');
+		expect(sourcesDiv.querySelector('a')?.textContent).toBe('Chapter 100 - Chapter 100');
+
+		// Verify ES list
+		expect(esListDiv.innerHTML).toContain('Chapter 100');
+		expect(esListDiv.innerHTML).toContain('some snippet text');
 	});
 
 	it('should handle API errors gracefully', async () => {
@@ -81,10 +95,13 @@ describe('CopyrightBot RAG Search Interface', () => {
 
 		await window.submitRagSearch!();
 
+		// Flush microtasks
+		await new Promise(resolve => setTimeout(resolve, 0));
+
 		const summaryDiv = document.getElementById('rag-summary')!;
-		const sourcesDiv = document.getElementById('rag-sources')!;
+		const esListDiv = document.getElementById('rag-es-list')!;
 
 		expect(summaryDiv.textContent).toBe('Error generating AI summary.');
-		expect(sourcesDiv.innerHTML).toContain('Error retrieving sources.');
+		expect(esListDiv.innerHTML).toContain('Failed to connect to standard search.');
 	});
 });

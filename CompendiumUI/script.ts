@@ -2238,7 +2238,12 @@ window.submitRagSearch = async () => {
     const summaryDiv = document.getElementById('rag-summary');
     const sourcesDiv = document.getElementById('rag-sources');
 
-    if (!queryInput || !loadingDiv || !resultsContainer || !summaryDiv || !sourcesDiv) {
+    // New UI elements
+    const esResultsContainer = document.getElementById('rag-es-results');
+    const esListDiv = document.getElementById('rag-es-list');
+    let loadMoreBtn = document.getElementById('rag-es-load-more') as HTMLButtonElement | null;
+
+    if (!queryInput || !loadingDiv || !resultsContainer || !summaryDiv || !sourcesDiv || !esResultsContainer || !esListDiv) {
         console.warn("Ask CopyrightBot UI elements not found.");
         return;
     }
@@ -2249,61 +2254,133 @@ window.submitRagSearch = async () => {
     // Ensure URL hash stays synced
     window.location.hash = `#copyright-bot-src.html?q=${encodeURIComponent(queryValue)}`;
 
-    // UI states
-    loadingDiv.style.display = 'block';
+    // Reset UI states
+    loadingDiv.style.display = 'flex'; // It's Flex now, from HTML update
     resultsContainer.style.display = 'none';
+    esResultsContainer.style.display = 'none';
     summaryDiv.innerHTML = '';
     sourcesDiv.innerHTML = '';
+    esListDiv.innerHTML = '';
+
+    if (loadMoreBtn) {
+        loadMoreBtn.style.display = 'none';
+        // Clean up old event listeners by cloning the node
+        const newBtn = loadMoreBtn.cloneNode(true) as HTMLButtonElement;
+        loadMoreBtn.parentNode?.replaceChild(newBtn, loadMoreBtn);
+        loadMoreBtn = newBtn;
+    }
 
     try {
-        // Initiate both search requests
         const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/api';
-        const searchPromise = fetch(`${baseUrl}/api/search?q=${encodeURIComponent(queryValue)}`);
-        const ragPromise = fetch(`${baseUrl}/api/rag-query`, {
+
+        // 1. Fetch Standard ES Results immediately
+        fetch(`${baseUrl}/api/search?q=${encodeURIComponent(queryValue)}`)
+            .then(res => res.json())
+            .then(searchData => {
+                const hits = searchData.results || [];
+                esResultsContainer.style.display = 'block';
+
+                if (hits.length === 0) {
+                    esListDiv.innerHTML = '<p>No standard search results found.</p>';
+                } else {
+                    let visibleCount = 5;
+
+                    const renderEsHits = (limit: number) => {
+                        esListDiv.innerHTML = '';
+                        const hitsToShow = hits.slice(0, limit);
+
+                        // Group by chapter
+                        const grouped: Record<string, any[]> = {};
+                        hitsToShow.forEach((h: any) => {
+                            const chap = h.chapter || 'Other Contexts';
+                            if (!grouped[chap]) grouped[chap] = [];
+                            grouped[chap].push(h);
+                        });
+
+                        Object.keys(grouped).forEach(chap => {
+                            const chapHeader = document.createElement('h4');
+                            chapHeader.textContent = chap;
+                            chapHeader.style.marginTop = '1.5rem';
+                            chapHeader.style.marginBottom = '0.5rem';
+                            chapHeader.style.borderBottom = '2px solid #f0f0f0';
+
+                            const ul = document.createElement('ul');
+                            ul.className = 'usa-list';
+                            grouped[chap].forEach((hit: any) => {
+                                const li = document.createElement('li');
+                                li.style.marginBottom = '1rem';
+                                const a = document.createElement('a');
+                                a.href = hit.link;
+                                a.textContent = hit.title;
+                                a.style.fontWeight = 'bold';
+                                const p = document.createElement('p');
+                                p.innerHTML = hit.snippet;
+                                p.style.margin = '0.25rem 0 0 0';
+                                li.appendChild(a);
+                                li.appendChild(p);
+                                ul.appendChild(li);
+                            });
+                            esListDiv.appendChild(chapHeader);
+                            esListDiv.appendChild(ul);
+                        });
+
+                        // Manage Load More button logic
+                        if (loadMoreBtn && limit < hits.length) {
+                            loadMoreBtn.style.display = 'inline-block';
+                            loadMoreBtn.onclick = () => {
+                                visibleCount += 5;
+                                renderEsHits(visibleCount);
+                            };
+                        } else if (loadMoreBtn) {
+                            loadMoreBtn.style.display = 'none';
+                        }
+                    };
+
+                    renderEsHits(visibleCount);
+                }
+            })
+            .catch(err => {
+                console.error("ES search error:", err);
+                esResultsContainer.style.display = 'block';
+                esListDiv.innerHTML = '<p class="usa-alert usa-alert--error">Failed to connect to standard search.</p>';
+            });
+
+        // 2. Await RAG summary from LLM
+        const ragRes = await fetch(`${baseUrl}/api/rag-query`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: queryValue })
         });
 
-        const [searchRes, ragRes] = await Promise.all([searchPromise, ragPromise]);
+        if (ragRes.ok) {
+            const ragData = await ragRes.json();
+            summaryDiv.textContent = ragData.summary || "No summary provided.";
 
-        if (searchRes.ok) {
-            const searchData = await searchRes.json();
-            const hits = searchData.results || [];
-            
-            if (hits.length === 0) {
-                sourcesDiv.innerHTML = '<p>No results found.</p>';
-            } else {
+            // Render specific sources used by LLM if they are provided, else show note
+            const sources = ragData.sources || [];
+            if (sources.length > 0) {
                 const ul = document.createElement('ul');
                 ul.className = 'usa-list';
-                hits.forEach((hit: any) => {
+                sources.forEach((hit: any) => {
                     const li = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = hit.link;
                     a.textContent = hit.chapter ? `${hit.chapter} - ${hit.title}` : hit.title;
-                    const p = document.createElement('p');
-                    p.innerHTML = hit.snippet;
                     li.appendChild(a);
-                    li.appendChild(p);
                     ul.appendChild(li);
                 });
                 sourcesDiv.appendChild(ul);
+            } else {
+                sourcesDiv.innerHTML = '<p><em>Sources correspond to the Search Results listed above.</em></p>';
             }
-        } else {
-            sourcesDiv.innerHTML = '<p class="usa-alert usa-alert--error">Error retrieving sources.</p>';
-        }
-
-        if (ragRes.ok) {
-            const ragData = await ragRes.json();
-            summaryDiv.textContent = ragData.summary || "No summary provided.";
         } else {
             summaryDiv.textContent = "Error generating AI summary.";
         }
 
     } catch (error) {
-        console.error("Error during RAG search:", error);
-        summaryDiv.textContent = "Failed to connect to search service.";
-        sourcesDiv.innerHTML = '<p class="usa-alert usa-alert--error">Failed to connect to search service.</p>';
+        console.error("Error during RAG LLM query:", error);
+        summaryDiv.textContent = "Failed to connect to AI generation service.";
+        sourcesDiv.innerHTML = '';
     } finally {
         loadingDiv.style.display = 'none';
         resultsContainer.style.display = 'block';
