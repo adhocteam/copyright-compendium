@@ -15,13 +15,11 @@ Watch a short walkthrough of the Compendium Viewer in action — showing chapter
 ## Features
 - **Prototype Disclaimer**: Clear distinction from official government sites with a [detailed disclaimer banner](docs/disclaimer-banner.md).
 
-# Technology Stack
-
 - **Frontend**: TypeScript with Vite build system
 - **UI Framework**: USWDS (U.S. Web Design System) components
-- **Search**: Algolia search with autocomplete
-- **Testing**: Vitest with 38 unit and integration tests
-- **Type Checking**: TypeScript with strict mode enabled
+- **Backend API**: FastAPI (Python 3.11)
+- **Search & Storage**: Elasticsearch 8.x for fast vector/text retrieval
+- **Testing**: Vitest with unit and integration tests (Frontend), Pytest (Backend)
 
 # Documentation
 
@@ -178,6 +176,17 @@ The Compendium viewer now includes experimental browser-based translation suppor
 - Chrome 120+ (with experimental flags enabled)
 - Edge Canary (with experimental flags enabled)
 - More browsers coming in 2024-2025
+
+### Ask CopyrightBot (Experimental)
+
+The viewer now features **Ask CopyrightBot**, an AI-powered search assistant utilizing a Retrieval-Augmented Generation (RAG) architecture. This replaces the previous Algolia search implementation entirely, routing queries through a dedicated local backend stack.
+
+**Architecture details:**
+1. **Elasticsearch Index**: The entire Compendium is intelligently chunked at the Section and Subsection hierarchical levels into an Elasticsearch container, persisting live contextual anchors.
+2. **FastAPI Backend**: A Dockerized `/api` service proxies queries to Elasticsearch, returning highly relevant result snippets.
+3. **RAG Orchestration**: A specialized `/api/rag-query` endpoint securely retrieves relevant Compendium sections to synthesize authoritative, summarized natural-language responses directly from the source text.
+
+*Note: The LLM integration for the CopyrightBot is currently in development.*
 
 ## Quality Assurance
 
