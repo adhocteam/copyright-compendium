@@ -98,6 +98,17 @@ task docker:compose:up
 
 The UI will be available at `http://localhost:8001` (or `http://localhost:8080` if running just the UI container), and the FastAPI backend at `http://localhost:8000`.
 
+To view the Interactive API Documentation (Swagger UI) for the FastAPI RAG endpoints, visit: `http://localhost:8000/docs`
+
+### Machine Learning Configuration
+To make queries to an LLM via the CopyrightBot, you must configure the backend environment variables.
+1. Copy the example `.env` file: `cp api/.env-example api/.env`
+2. Open `api/.env` and configure your keys:
+   - `LLM_MODEL_NAME`: The model used for generating summaries (e.g. `gemma:2b`)
+   - `LLM_API_KEY`: Your authentication key for the model provider
+
+In a production environment, you should inject these as secure environment variables during your CI/CD pipeline or directly in the cloud hosting provider console, rather than checking in a `.env` file.
+
 To stop the full stack:
 ```bash
 docker compose down
