@@ -21,12 +21,12 @@ tasks:
   docker:compose:up:
     desc: Start the full application stack (UI, API, Elasticsearch)
     cmds:
-      - docker-compose up -d --build
+      - docker compose up -d --build
 
   docker:compose:down:
     desc: Stop the application stack and remove containers
     cmds:
-      - docker-compose down
+      - docker compose down
 
   # ── Local dev ───────────────────────────────────────────
   dev:

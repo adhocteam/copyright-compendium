@@ -90,7 +90,7 @@ A multi-stage `Dockerfile` is included in `CompendiumUI/`. It installs dependenc
 
 ```bash
 # Start the full application stack
-docker-compose up -d --build
+docker compose up -d --build
 
 # Or using Task
 task docker:compose:up
@@ -100,7 +100,7 @@ The UI will be available at `http://localhost:80` (or `http://localhost:8080` if
 
 To stop the full stack:
 ```bash
-docker-compose down
+docker compose down
 # Or: task docker:compose:down
 ```
 
