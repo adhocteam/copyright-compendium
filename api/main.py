@@ -49,18 +49,26 @@ async def search(q: str):
                 }
             }
         }
-        res = es.search(index=INDEX_NAME, body=body, size=10)
+        res = es.search(index=INDEX_NAME, body=body, size=30)
         hits = res.get("hits", {}).get("hits", [])
         
         results = []
+        seen_links = set()
         for hit in hits:
             source = hit["_source"]
-            highlight = hit.get("highlight", {})
-            snippet = highlight.get("content", [source.get("content", "")])[0]
             
             filename = source.get("filename", "")
             xhtml_id = source.get("xhtml_id", "")
             link = f"/{filename}#{xhtml_id}?hlt={q}" if filename and xhtml_id else ""
+            
+            # Deduplicate by link
+            if link and link in seen_links:
+                continue
+            if link:
+                seen_links.add(link)
+                
+            highlight = hit.get("highlight", {})
+            snippet = highlight.get("content", [source.get("content", "")])[0]
             
             results.append({
                 "chapter": source.get("chapter_title", ""),
@@ -70,6 +78,9 @@ async def search(q: str):
                 "snippet": snippet,
                 "link": link
             })
+            
+            if len(results) >= 10:
+                break
             
         return {"results": results}
     except Exception as e:
@@ -145,28 +156,39 @@ async def rag_query(request: RagQuery):
                 }
             }
         }
-        res = es.search(index=INDEX_NAME, body=body, size=5)
+        res = es.search(index=INDEX_NAME, body=body, size=15)
         hits = res.get("hits", {}).get("hits", [])
         
-        for idx, hit in enumerate(hits):
+        seen_links = set()
+        for hit in hits:
             source = hit["_source"]
-            content = source.get("content", "")
-            title = source.get("section_title", "Unknown Section")
-            chapter = source.get("chapter_title", "Unknown Chapter")
-            
-            # Add to context string
-            context_chunks.append(f"--- Document {idx+1} ---\nChapter: {chapter}\nSection: {title}\nContent:\n{content}\n")
             
             # Construct link for sources array
             filename = source.get("filename", "")
             xhtml_id = source.get("xhtml_id", "")
             link = f"/{filename}#{xhtml_id}?hlt={request.query}" if filename and xhtml_id else ""
             
+            # Deduplicate by link
+            if link and link in seen_links:
+                continue
+            if link:
+                seen_links.add(link)
+                
+            content = source.get("content", "")
+            title = source.get("section_title", "Unknown Section")
+            chapter = source.get("chapter_title", "Unknown Chapter")
+            
+            # Add to context string
+            context_chunks.append(f"--- Document {len(context_chunks)+1} ---\nChapter: {chapter}\nSection: {title}\nContent:\n{content}\n")
+            
             sources.append({
                 "chapter": chapter,
                 "title": title,
                 "link": link
             })
+            
+            if len(sources) >= 5:
+                break
             
     except Exception as e:
         logger.error(f"Failed to fetch context from Elasticsearch: {e}")
@@ -213,10 +235,16 @@ async def rag_query(request: RagQuery):
         
     except Exception as e:
         logger.error(f"LLM Generation failed: {e}")
-        error_msg = str(e)
+        
+        friendly_error = "The AI service is currently unavailable or misconfigured."
         if not LANGCHAIN_AVAILABLE:
-            error_msg = "LangChain packages are missing. Did you pip install -r requirements.txt?"
+            friendly_error = "Required AI packages are missing from the server."
+        elif "Connection refused" in str(e) or "Max retries exceeded" in str(e):
+            friendly_error = f"Could not connect to the local AI model ({llm_model}). Please ensure Ollama or your local AI server is running."
+        elif "authentication" in str(e).lower() or "api_key" in str(e).lower() or "unauthorized" in str(e).lower():
+            friendly_error = "AI service authentication failed. Please check your API key configuration."
+            
         return {
-            "summary": f"Failed to generate AI summary. Error: {error_msg}\n\nRunning experimental model '{llm_model}' requires the correct backend configuration.",
+            "summary": f"Failed to generate AI summary: {friendly_error}\n\nPlease check the standard search results below.",
             "sources": sources
         }
