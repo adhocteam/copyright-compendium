@@ -2256,8 +2256,10 @@ window.submitRagSearch = async () => {
     const queryValue = queryInput.value.trim();
     if (!queryValue) return;
 
-    // Ensure URL hash stays synced
-    window.location.hash = `#copyright-bot-src.html?q=${encodeURIComponent(queryValue)}`;
+    // Ensure URL hash stays synced without triggering popstate reload
+    const currentBaseHash = window.location.hash.split('?')[0] || '#copyright-bot.html';
+    const newHash = `${currentBaseHash}?q=${encodeURIComponent(queryValue)}`;
+    history.replaceState(history.state, document.title, window.location.pathname + newHash);
 
     // Reset UI states
     loadingDiv.style.display = 'flex'; // It's Flex now, from HTML update
@@ -2277,7 +2279,7 @@ window.submitRagSearch = async () => {
 
     try {
         const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/api';
-        
+
         const loadingTextSpan = document.getElementById('rag-loading-text');
         if (loadingTextSpan) loadingTextSpan.textContent = "Finding relevant sections...";
 
@@ -2295,7 +2297,7 @@ window.submitRagSearch = async () => {
         if (contextRes.ok) {
             const contextData = await contextRes.json();
             if (contextData.error) {
-                 throw new Error(contextData.error);
+                throw new Error(contextData.error);
             }
             contextChunks = contextData.context_chunks || [];
             sources = contextData.sources || [];
@@ -2373,7 +2375,7 @@ window.submitRagSearch = async () => {
         const ragRes = await fetch(`${baseUrl}/api/rag-summary`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
+            body: JSON.stringify({
                 query: queryValue,
                 context_chunks: contextChunks,
                 sources: sources

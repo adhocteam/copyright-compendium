@@ -11,3 +11,4 @@ langchain-openai
 langchain-anthropic
 langchain-google-genai
 langchain-community
+langchain-huggingface
