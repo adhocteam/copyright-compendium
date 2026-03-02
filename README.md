@@ -43,7 +43,7 @@ Or use Docker to serve the documentation:
 ```bash
 # Build and run the documentation server
 docker build -f Dockerfile.docs -t copyright-compendium-docs .
-docker run --rm -p 8000:8000 copyright-compendium-docs
+docker run --rm -d -p 8002:8000 --name copyright-compendium-docs-container copyright-compendium-docs
 ```
 
 Or use the Task runner:
@@ -59,7 +59,7 @@ task docs:build
 task docs:docker:run
 ```
 
-The documentation will be available at `http://localhost:8000`.
+The documentation will be available at `http://localhost:8002`.
 
 # Running Locally
 
@@ -125,8 +125,9 @@ A [`Taskfile.yml`](Taskfile.yml) is included for common workflows. Install [Task
 | `task build` | Build the production bundle |
 | `task typecheck` | Run TypeScript type checking |
 | `task docker:run` | Build and run the UI Docker container on port 8080 |
-| `task docker:compose:up` | Start the full application stack (UI, API, Elasticsearch) |
+| `task docker:compose:up` | Start the full application stack (UI, API, Elasticsearch, Docs) |
 | `task docker:compose:down` | Stop the application stack and remove containers |
+| `task app-restart` | Safely stop and restart the full application stack completely |
 | `task download-pdfs` | Download Compendium PDFs from copyright.gov |
 | `task pdf-to-text` | Extract text from PDFs into `.txt` files |
 | `task process-pdfs` | Convert PDFs to XHTML via Gemini API |
@@ -194,10 +195,10 @@ The viewer now features **Ask CopyrightBot**, an AI-powered search assistant uti
 
 **Architecture details:**
 1. **Elasticsearch Index**: The entire Compendium is intelligently chunked at the Section and Subsection hierarchical levels into an Elasticsearch container, persisting live contextual anchors.
-2. **FastAPI Backend**: A Dockerized `/api` service proxies queries to Elasticsearch, returning highly relevant result snippets.
-3. **RAG Orchestration**: A specialized `/api/rag-query` endpoint securely retrieves relevant Compendium sections to synthesize authoritative, summarized natural-language responses directly from the source text.
-
-*Note: The LLM integration for the CopyrightBot is currently in development.*
+2. **Two-Step API Workflow**:
+   - **`/api/rag-context`**: Extracts keyword search terms from a natural language query using an LLM. It searches Elasticsearch with those terms and immediately returns the relevant Compendium section snippets for display.
+   - **`/api/rag-summary`**: Asynchronously calls the LLM with the retrieved section snippets to synthesize an authoritative, summarized natural-language response directly based on the source text.
+3. **UI Integration**: The Compendium UI dynamically renders search snippets in the first step while seamlessly polling the AI engine to generate the final semantic summary in the second step.
 
 ## Quality Assurance
 

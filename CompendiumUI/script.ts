@@ -1006,6 +1006,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     const searchParams = new URLSearchParams(finalHashToScroll.split('?')[1] || '');
                     const hltParam = searchParams.get('hlt');
 
+                    // Skip trying to scroll to the bot routing hash since it's not a real DOM element
+                    if (actualHash === 'copyright-bot-src.html') {
+                        return;
+                    }
+
                     const targetElement = document.getElementById(actualHash);
                     if (targetElement) {
                         console.log("Scrolling to target:", actualHash);
@@ -2272,96 +2277,118 @@ window.submitRagSearch = async () => {
 
     try {
         const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:8000' : '/api';
+        
+        const loadingTextSpan = document.getElementById('rag-loading-text');
+        if (loadingTextSpan) loadingTextSpan.textContent = "Finding relevant sections...";
 
-        // 1. Fetch Standard ES Results immediately
-        fetch(`${baseUrl}/api/search?q=${encodeURIComponent(queryValue)}`)
-            .then(res => res.json())
-            .then(searchData => {
-                const hits = searchData.results || [];
-                esResultsContainer.style.display = 'block';
-
-                if (hits.length === 0) {
-                    esListDiv.innerHTML = '<p>No standard search results found.</p>';
-                } else {
-                    let visibleCount = 5;
-
-                    const renderEsHits = (limit: number) => {
-                        esListDiv.innerHTML = '';
-                        const hitsToShow = hits.slice(0, limit);
-
-                        // Group by chapter
-                        const grouped: Record<string, any[]> = {};
-                        hitsToShow.forEach((h: any) => {
-                            const chap = h.chapter || 'Other Contexts';
-                            if (!grouped[chap]) grouped[chap] = [];
-                            grouped[chap].push(h);
-                        });
-
-                        Object.keys(grouped).forEach(chap => {
-                            const chapHeader = document.createElement('h4');
-                            chapHeader.textContent = chap;
-                            chapHeader.style.marginTop = '1.5rem';
-                            chapHeader.style.marginBottom = '0.5rem';
-                            chapHeader.style.borderBottom = '2px solid #f0f0f0';
-
-                            const ul = document.createElement('ul');
-                            ul.className = 'usa-list';
-                            grouped[chap].forEach((hit: any) => {
-                                const li = document.createElement('li');
-                                li.style.marginBottom = '1rem';
-                                const a = document.createElement('a');
-                                a.href = hit.link;
-                                a.textContent = hit.title;
-                                a.style.fontWeight = 'bold';
-                                const p = document.createElement('p');
-                                p.innerHTML = hit.snippet;
-                                p.style.margin = '0.25rem 0 0 0';
-                                li.appendChild(a);
-                                li.appendChild(p);
-                                ul.appendChild(li);
-                            });
-                            esListDiv.appendChild(chapHeader);
-                            esListDiv.appendChild(ul);
-                        });
-
-                        // Manage Load More button logic
-                        if (loadMoreBtn && limit < hits.length) {
-                            loadMoreBtn.style.display = 'inline-block';
-                            loadMoreBtn.onclick = () => {
-                                visibleCount += 5;
-                                renderEsHits(visibleCount);
-                            };
-                        } else if (loadMoreBtn) {
-                            loadMoreBtn.style.display = 'none';
-                        }
-                    };
-
-                    renderEsHits(visibleCount);
-                }
-            })
-            .catch(err => {
-                console.error("ES search error:", err);
-                esResultsContainer.style.display = 'block';
-                esListDiv.innerHTML = '<p class="usa-alert usa-alert--error">Failed to connect to standard search.</p>';
-            });
-
-        // 2. Await RAG summary from LLM
-        const ragRes = await fetch(`${baseUrl}/api/rag-query`, {
+        // 1. Fetch ES Results and extract context
+        const contextRes = await fetch(`${baseUrl}/api/rag-context`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: queryValue })
+        });
+
+        let contextChunks: string[] = [];
+        let sources: any[] = [];
+        let hits: any[] = [];
+
+        if (contextRes.ok) {
+            const contextData = await contextRes.json();
+            if (contextData.error) {
+                 throw new Error(contextData.error);
+            }
+            contextChunks = contextData.context_chunks || [];
+            sources = contextData.sources || [];
+            hits = sources; // Sources contain the snippets now
+        } else {
+            throw new Error("Failed to fetch search context.");
+        }
+
+        esResultsContainer.style.display = 'block';
+
+        if (hits.length === 0) {
+            esListDiv.innerHTML = '<p>No standard search results found.</p>';
+        } else {
+            let visibleCount = 5;
+
+            const renderEsHits = (limit: number) => {
+                esListDiv.innerHTML = '';
+                const hitsToShow = hits.slice(0, limit);
+
+                // Group by chapter
+                const grouped: Record<string, any[]> = {};
+                hitsToShow.forEach((h: any) => {
+                    const chap = h.chapter || 'Other Contexts';
+                    if (!grouped[chap]) grouped[chap] = [];
+                    grouped[chap].push(h);
+                });
+
+                Object.keys(grouped).forEach(chap => {
+                    const chapHeader = document.createElement('h4');
+                    chapHeader.textContent = chap;
+                    chapHeader.style.marginTop = '1.5rem';
+                    chapHeader.style.marginBottom = '0.5rem';
+                    chapHeader.style.borderBottom = '2px solid #f0f0f0';
+
+                    const ul = document.createElement('ul');
+                    ul.className = 'usa-list';
+                    const chapItems = grouped[chap];
+                    if (chapItems) {
+                        chapItems.forEach((hit: any) => {
+                            const li = document.createElement('li');
+                            li.style.marginBottom = '1rem';
+                            const a = document.createElement('a');
+                            a.href = hit.link;
+                            a.textContent = hit.title;
+                            a.style.fontWeight = 'bold';
+                            const p = document.createElement('p');
+                            p.innerHTML = hit.snippet || "";
+                            p.style.margin = '0.25rem 0 0 0';
+                            li.appendChild(a);
+                            li.appendChild(p);
+                            ul.appendChild(li);
+                        });
+                    }
+                    esListDiv.appendChild(chapHeader);
+                    esListDiv.appendChild(ul);
+                });
+
+                if (loadMoreBtn && limit < hits.length) {
+                    loadMoreBtn.style.display = 'inline-block';
+                    loadMoreBtn.onclick = () => {
+                        visibleCount += 5;
+                        renderEsHits(visibleCount);
+                    };
+                } else if (loadMoreBtn) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            };
+
+            renderEsHits(visibleCount);
+        }
+
+        if (loadingTextSpan) loadingTextSpan.textContent = "Generating summary...";
+
+        // 2. Await RAG summary from LLM
+        const ragRes = await fetch(`${baseUrl}/api/rag-summary`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                query: queryValue,
+                context_chunks: contextChunks,
+                sources: sources
+            })
         });
 
         if (ragRes.ok) {
             const ragData = await ragRes.json();
             summaryDiv.textContent = ragData.summary || "No summary provided.";
 
-            // Render specific sources used by LLM if they are provided, else show note
-            const sources = ragData.sources || [];
-            if (sources.length > 0) {
+            const resSources = ragData.sources || sources;
+            if (resSources.length > 0) {
                 const ul = document.createElement('ul');
                 ul.className = 'usa-list';
-                sources.forEach((hit: any) => {
+                resSources.forEach((hit: any) => {
                     const li = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = hit.link;
@@ -2378,7 +2405,11 @@ window.submitRagSearch = async () => {
         }
 
     } catch (error) {
-        console.error("Error during RAG LLM query:", error);
+        console.error("Error during search sequence:", error);
+        esResultsContainer.style.display = 'block';
+        if (esListDiv.innerHTML === '') {
+            esListDiv.innerHTML = '<p class="usa-alert usa-alert--error">Failed to connect to standard search.</p>';
+        }
         summaryDiv.textContent = "Failed to connect to AI generation service.";
         sourcesDiv.innerHTML = '';
     } finally {

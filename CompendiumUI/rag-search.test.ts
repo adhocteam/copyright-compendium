@@ -35,15 +35,16 @@ describe('CopyrightBot RAG Search Interface', () => {
 	it('should show loading state and then render results on successful fetch', async () => {
 		// Mock successful responses
 		mockFetch.mockImplementation(async (url: string) => {
-			if (url.includes('/api/search')) {
+			if (url.includes('/api/rag-context')) {
 				return {
 					ok: true,
 					json: async () => ({
-						results: [{ link: '/ch100', title: 'Chapter 100', chapter: 'Chapter 100', snippet: 'some snippet text' }]
+						context_chunks: ["some context chunks"],
+						sources: [{ link: '/ch100', title: 'Chapter 100', chapter: 'Chapter 100', snippet: 'some snippet text' }]
 					})
 				};
 			}
-			if (url.includes('/api/rag-query')) {
+			if (url.includes('/api/rag-summary')) {
 				return {
 					ok: true,
 					json: async () => ({
@@ -101,7 +102,7 @@ describe('CopyrightBot RAG Search Interface', () => {
 		const summaryDiv = document.getElementById('rag-summary')!;
 		const esListDiv = document.getElementById('rag-es-list')!;
 
-		expect(summaryDiv.textContent).toBe('Error generating AI summary.');
+		expect(summaryDiv.textContent).toBe('Failed to connect to AI generation service.');
 		expect(esListDiv.innerHTML).toContain('Failed to connect to standard search.');
 	});
 });

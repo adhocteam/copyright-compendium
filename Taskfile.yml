@@ -19,14 +19,22 @@ tasks:
       - docker run --rm -p 8080:80 {{.IMAGE_NAME}}
 
   docker:compose:up:
-    desc: Start the full application stack (UI, API, Elasticsearch)
+    desc: Start the full application stack (UI, API, Elasticsearch) and docs container
     cmds:
       - docker compose up -d --build
+      - task docs:docker:run
 
   docker:compose:down:
     desc: Stop the application stack and remove containers
     cmds:
       - docker compose down
+      - docker stop {{.IMAGE_NAME}}-docs-container || true
+
+  app-restart:
+    desc: Stop and restart the full application stack completely
+    cmds:
+      - task: docker:compose:down
+      - task: docker:compose:up
 
   # ── Local dev ───────────────────────────────────────────
   dev:
@@ -117,7 +125,7 @@ tasks:
   docs:serve:
     desc: Serve documentation locally with mkdocs
     cmds:
-      - mkdocs serve
+      - mkdocs serve -a 0.0.0.0:8002
 
   docs:build:
     desc: Build documentation with mkdocs
@@ -130,7 +138,7 @@ tasks:
       - docker build -f Dockerfile.docs -t {{.IMAGE_NAME}}-docs .
 
   docs:docker:run:
-    desc: Run the documentation container on port 8000
+    desc: Run the documentation container on port 8002
     deps: [docs:docker:build]
     cmds:
-      - docker run --rm -p 8000:8000 {{.IMAGE_NAME}}-docs
+      - docker run --rm -d -p 8002:8000 --name {{.IMAGE_NAME}}-docs-container {{.IMAGE_NAME}}-docs

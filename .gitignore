@@ -5,3 +5,7 @@ tests/reports/
 # MkDocs
 site/
 actionlint
+
+# Secrets
+.env
+*.env
