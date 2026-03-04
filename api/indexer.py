@@ -15,12 +15,31 @@ es = AsyncElasticsearch([ES_URL])
 async def create_index():
     """Create the Elasticsearch index with appropriate mappings."""
     mapping = {
+        "settings": {
+            "analysis": {
+                "filter": {
+                    "english_stop": {
+                        "type": "stop",
+                        "stopwords": "_english_"
+                    }
+                },
+                "analyzer": {
+                    "custom_english": {
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase",
+                            "english_stop"
+                        ]
+                    }
+                }
+            }
+        },
         "mappings": {
             "properties": {
-                "chapter_title": {"type": "text"},
-                "section_title": {"type": "text"},
-                "subsection_title": {"type": "text"},
-                "content": {"type": "text"},
+                "chapter_title": {"type": "text", "analyzer": "custom_english"},
+                "section_title": {"type": "text", "analyzer": "custom_english"},
+                "subsection_title": {"type": "text", "analyzer": "custom_english"},
+                "content": {"type": "text", "analyzer": "custom_english"},
                 "xhtml_id": {"type": "keyword"},
                 "filename": {"type": "keyword"}
             }

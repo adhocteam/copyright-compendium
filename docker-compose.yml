@@ -18,6 +18,8 @@ services:
       - api/.env
     environment:
       - ELASTICSEARCH_URL=http://elasticsearch:9200
+    volumes:
+      - ./CompendiumUI/public:/CompendiumUI/public
     depends_on:
       elasticsearch:
         condition: service_healthy

@@ -34,16 +34,38 @@ class RagSummaryRequest(BaseModel):
 async def root():
     return {"status": "ok", "message": "Copyright Compendium API is running"}
 
+import re
+
+def filter_es_query(q: str) -> str:
+    """Removes stop words unless they are part of a quoted phrase."""
+    stop_words = {"a", "an", "the", "in", "copyright"}
+    parts = re.split(r'("[^"]*")', q)
+    filtered_parts = []
+    for part in parts:
+        if not part:
+            continue
+        if part.startswith('"') and part.endswith('"'):
+            # Pre-quoted phrases perfectly skip the filter
+            filtered_parts.append(part)
+        else:
+            words = part.split()
+            filtered_words = [w for w in words if w.lower() not in stop_words]
+            if filtered_words:
+                filtered_parts.append(" ".join(filtered_words))
+    filtered_query = " ".join(filtered_parts)
+    return filtered_query if filtered_query.strip() else q
+
 @app.get("/api/search")
 async def search(q: str):
     """
     Standard Elasticsearch query returning hits with snippets for UI rendering.
     """
     try:
+        filtered_q = filter_es_query(q)
         body = {
             "query": {
                 "multi_match": {
-                    "query": q,
+                    "query": filtered_q,
                     "fields": ["chapter_title^3", "section_title^2", "subsection_title^1.5", "content"]
                 }
             },
@@ -60,19 +82,23 @@ async def search(q: str):
         hits = res.get("hits", {}).get("hits", [])
         
         results = []
-        seen_links = set()
+        seen_sections = set()
         for hit in hits:
             source = hit["_source"]
             
             filename = source.get("filename", "")
+            chapter_title = source.get("chapter_title", "")
+            section_title = source.get("section_title", "")
+            subsection_title = source.get("subsection_title", "")
+            
+            section_key = f"{filename}-{chapter_title}-{section_title}-{subsection_title}"
+            
+            if section_key in seen_sections:
+                continue
+            seen_sections.add(section_key)
+            
             xhtml_id = source.get("xhtml_id", "")
             link = f"/{filename}#{xhtml_id}?hlt={q}" if filename and xhtml_id else ""
-            
-            # Deduplicate by link
-            if link and link in seen_links:
-                continue
-            if link:
-                seen_links.add(link)
                 
             highlight = hit.get("highlight", {})
             snippet = highlight.get("content", [source.get("content", "")])[0]
@@ -145,31 +171,56 @@ async def rag_context(request: RagContextRequest):
     extracted_terms = [request.query]
     
     try:
+        import ast
         import json
         prompt = ChatPromptTemplate.from_messages([
-            ("user", f"{request.query}\n\nAbove is a user query about copyright regulations and procedures. Please provide a list, in array format, of 15 words or exact phrases that can be used to retrieve relevant text from a search engine about this query. Do not provide any introductory or following text. Respond with only the array of terms.")
+            ("user", f"This is a query for information about copyright. Please generate an array of 15 words or phrases related to this query for an elasticsearch query to gather relevant documents that will be used as context as a follow-up query to an LLM. Only return the array, in the following Python format (['term', 'phrase one', 'phrase two of two']).\n\nQuery: {request.query}")
         ])
         
         llm = get_llm(llm_model, llm_api_key)
         chain = prompt | llm
         
         response = chain.invoke({})
-        content = response.content.strip()
+        content = response.content
+        if isinstance(content, list):
+            content = content[0].get("text", "") if content else ""
+        content = content.strip()
         
-        if content.startswith("```json"):
+        if content.startswith("```python"):
+            content = content[9:-3].strip()
+        elif content.startswith("```json"):
             content = content[7:-3].strip()
         elif content.startswith("```"):
             content = content[3:-3].strip()
             
-        parsed_terms = json.loads(content)
+        try:
+            parsed_terms = ast.literal_eval(content)
+        except (ValueError, SyntaxError):
+            try:
+                # Fallback to json after attempting to normalize single quotes
+                parsed_terms = json.loads(content.replace("'", '"'))
+            except Exception:
+                parsed_terms = json.loads(content)
+
         if isinstance(parsed_terms, list):
             extracted_terms = parsed_terms
     except Exception as e:
         logger.error(f"Failed to extract search terms: {e}")
 
-    es_query = " ".join(extracted_terms)
+    filtered_terms = []
+    stop_words = {"a", "an", "the", "in", "copyright"}
+    for term in extracted_terms:
+        term = str(term).strip()
+        if not term:
+            continue
+        if " " in term:
+            filtered_terms.append(f'"{term}"')
+        elif term.lower() not in stop_words:
+            filtered_terms.append(term)
+            
+    es_query = " ".join(filtered_terms)
     if not es_query.strip():
-        es_query = request.query
+        es_query = filter_es_query(request.query)
 
     context_chunks = []
     sources = []
@@ -193,18 +244,23 @@ async def rag_context(request: RagContextRequest):
         res = es.search(index=INDEX_NAME, body=body, size=15)
         hits = res.get("hits", {}).get("hits", [])
         
-        seen_links = set()
+        seen_sections = set()
         for hit in hits:
             source = hit["_source"]
             
             filename = source.get("filename", "")
+            chapter_title = source.get("chapter_title", "")
+            section_title = source.get("section_title", "")
+            subsection_title = source.get("subsection_title", "")
+            
+            section_key = f"{filename}-{chapter_title}-{section_title}-{subsection_title}"
+            
+            if section_key in seen_sections:
+                continue
+            seen_sections.add(section_key)
+            
             xhtml_id = source.get("xhtml_id", "")
             link = f"/{filename}#{xhtml_id}?hlt={request.query}" if filename and xhtml_id else ""
-            
-            if link and link in seen_links:
-                continue
-            if link:
-                seen_links.add(link)
                 
             content = source.get("content", "")
             title = source.get("section_title", "Unknown Section")
@@ -277,8 +333,13 @@ async def rag_summary(request: RagSummaryRequest):
             "question": request.query
         })
         
+        content = response.content
+        if isinstance(content, list):
+            content = content[0].get("text", "") if content else ""
+        content = content.strip()
+        
         return {
-            "summary": response.content,
+            "summary": content,
             "sources": request.sources
         }
         
