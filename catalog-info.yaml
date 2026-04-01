@@ -1,0 +1,63 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: copyright-compendium
+  description: Display of Copyright Compendium
+  annotations:
+    github.com/project-slug: adhocteam/copyright-compendium
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: copyright-compendium
+  tags:
+    - nodejs
+    - adopted
+
+  links:
+    - url: https://github.com/adhocteam/copyright-compendium
+      title: Source Code
+      icon: github
+    - url: https://github.com/adhocteam/env-config-copyright-compendium
+      title: Environment Config
+      icon: dashboard
+    - url: https://argocd.mvp.adhoc.team/applications/copyright-compendium
+      title: ArgoCD
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/groundwork-eng
+  system: groundwork-platform
+  providesApis:
+    - copyright-compendium-api
+
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: copyright-compendium-api
+  description: Display of Copyright Compendium API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:default/groundwork-eng
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: Copyright-compendium API
+      version: 1.0.0
+      description: Display of Copyright Compendium
+    paths:
+      /health:
+        get:
+          summary: Health check endpoint (liveness probe)
+          responses:
+            '200':
+              description: Service is healthy
+      /ready:
+        get:
+          summary: Readiness check endpoint
+          responses:
+            '200':
+              description: Service is ready to accept traffic
+      # TODO: Add your actual API endpoints here
+
